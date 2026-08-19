@@ -109,12 +109,24 @@ function mapMatch(match) {
 
 const POSITION_ORDER = ["Goalkeeper", "Defence", "Midfield", "Offence"];
 
+async function fetchTeamWithRetry(teamId, attempts = 3) {
+  for (let attempt = 1; attempt <= attempts; attempt++) {
+    try {
+      return await footballDataRequestThrottled(`/teams/${teamId}`);
+    } catch (err) {
+      if (attempt === attempts) throw err;
+      console.error(`  retrying team ${teamId} after error: ${err.message}`);
+      await sleep(RATE_LIMIT_DELAY_MS);
+    }
+  }
+}
+
 async function fetchSquads(teamIds) {
   const teams = {};
 
   for (const teamId of teamIds) {
     try {
-      const data = await footballDataRequestThrottled(`/teams/${teamId}`);
+      const data = await fetchTeamWithRetry(teamId);
       const squad = (data.squad ?? [])
         .map((player) => ({
           id: player.id,
@@ -155,12 +167,30 @@ function extractTag(xml, tag) {
   return match ? decodeXmlEntities(match[1]) : null;
 }
 
+// BBC uses a single self-closing <media:thumbnail width="w" url="...">.
+// Guardian repeats <media:content width="w" url="..."> at several sizes;
+// pick the one closest to a good card-thumbnail width.
+function extractImage(xml) {
+  const thumbnail = xml.match(/<media:thumbnail[^>]*\surl="([^"]*)"/i);
+  if (thumbnail) return decodeXmlEntities(thumbnail[1]);
+
+  const contentMatches = [...xml.matchAll(/<media:content[^>]*\swidth="(\d+)"[^>]*\surl="([^"]*)"/gi)];
+  if (contentMatches.length === 0) return null;
+
+  const TARGET_WIDTH = 460;
+  contentMatches.sort(
+    (a, b) => Math.abs(Number(a[1]) - TARGET_WIDTH) - Math.abs(Number(b[1]) - TARGET_WIDTH),
+  );
+  return decodeXmlEntities(contentMatches[0][2]);
+}
+
 function parseRssItems(xml) {
   const items = [...xml.matchAll(/<item[^>]*>([\s\S]*?)<\/item>/gi)].map((m) => m[1]);
   return items.map((item) => ({
     title: extractTag(item, "title"),
     link: extractTag(item, "link"),
     pubDate: extractTag(item, "pubDate"),
+    image: extractImage(item),
   }));
 }
 

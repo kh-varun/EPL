@@ -6,12 +6,13 @@ import StandingsTable from "./components/StandingsTable.jsx";
 import MatchRow from "./components/MatchRow.jsx";
 import Headlines from "./components/Headlines.jsx";
 import TeamDetail from "./components/TeamDetail.jsx";
+import { TrophyIcon, CalendarIcon, WhistleIcon, NewspaperIcon } from "./components/icons.jsx";
 
 const TABS = [
-  { id: "standings", label: "Table" },
-  { id: "fixtures", label: "Fixtures" },
-  { id: "results", label: "Results" },
-  { id: "headlines", label: "News" },
+  { id: "standings", label: "Table", icon: TrophyIcon },
+  { id: "fixtures", label: "Fixtures", icon: CalendarIcon },
+  { id: "results", label: "Results", icon: WhistleIcon },
+  { id: "headlines", label: "News", icon: NewspaperIcon },
 ];
 
 export default function App() {
@@ -42,10 +43,14 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-50 pb-10">
-      <header className="bg-epl-purple text-white px-4 py-4">
-        <div className="max-w-2xl mx-auto">
-          <h1 className="text-lg font-extrabold tracking-tight">Premier League 2026-27</h1>
-          <p className="text-xs text-white/70">Standings · Fixtures · Headlines</p>
+      <header className="bg-epl-gradient text-white px-4 pt-4 pb-3 shadow-lg">
+        <div className="max-w-2xl mx-auto space-y-3">
+          <div>
+            <h1 className="text-xl font-extrabold tracking-tight">Premier League 2026-27</h1>
+            {data && <LastUpdated fetchedAt={data.fetchedAt} />}
+          </div>
+
+          <TabBar tabs={TABS} activeTab={activeTab} onChange={setActiveTab} />
         </div>
       </header>
 
@@ -56,10 +61,6 @@ export default function App() {
           </div>
         )}
 
-        {data && <LastUpdated fetchedAt={data.fetchedAt} />}
-
-        <TabBar tabs={TABS} activeTab={activeTab} onChange={setActiveTab} />
-
         {activeTab === "standings" && (
           <Section title="Standings">
             <StandingsTable standings={data?.standings} onSelectTeam={setSelectedTeam} />
@@ -69,7 +70,7 @@ export default function App() {
         {activeTab === "fixtures" && (
           <Section title="Next Fixtures">
             {data?.nextFixtures?.length ? (
-              <ul>
+              <ul className="space-y-2">
                 {data.nextFixtures.map((match) => (
                   <MatchRow
                     key={match.id}
@@ -88,7 +89,7 @@ export default function App() {
         {activeTab === "results" && (
           <Section title="Last Results">
             {data?.lastResults?.length ? (
-              <ul>
+              <ul className="space-y-2">
                 {data.lastResults.map((match) => (
                   <MatchRow
                     key={match.id}
