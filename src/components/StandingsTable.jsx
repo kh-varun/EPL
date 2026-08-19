@@ -9,7 +9,7 @@ function zoneColor(position) {
 
 export default function StandingsTable({ standings, onSelectTeam }) {
   if (!standings?.length) {
-    return <p className="text-sm text-epl-purple/60">Standings not available yet.</p>;
+    return <p className="text-sm text-white/50">Standings not available yet.</p>;
   }
 
   return (
@@ -17,10 +17,10 @@ export default function StandingsTable({ standings, onSelectTeam }) {
       <div className="overflow-x-auto -mx-4 px-4">
         <table className="w-full min-w-[580px] text-sm border-collapse">
           <thead>
-            <tr className="text-left text-[11px] uppercase tracking-wide text-epl-purple/50">
-              <th className="py-2 w-1.5 sticky left-0 bg-white" />
-              <th className="py-2 pr-2 w-6 sticky left-1.5 bg-white">#</th>
-              <th className="py-2 pr-3 sticky left-[26px] bg-white">Team</th>
+            <tr className="text-left text-[11px] uppercase tracking-wide text-white/40">
+              <th className="py-2 w-1.5 sticky left-0 bg-epl-surface" />
+              <th className="py-2 pr-2 w-6 sticky left-1.5 bg-epl-surface">#</th>
+              <th className="py-2 pr-3 sticky left-[26px] bg-epl-surface">Team</th>
               <th className="py-2 px-1.5 text-center">P</th>
               <th className="py-2 px-1.5 text-center">W</th>
               <th className="py-2 px-1.5 text-center">D</th>
@@ -34,13 +34,13 @@ export default function StandingsTable({ standings, onSelectTeam }) {
           <tbody>
             {standings.map((row) => {
               const isHighlighted = row.team.tla === HIGHLIGHT_TLA;
-              const rowBg = isHighlighted ? "bg-[#e6fdff]" : "bg-white";
+              const rowBg = isHighlighted ? "bg-epl-cyan/10" : "bg-epl-surface";
               return (
-                <tr key={row.team.id} className={"border-t border-epl-purple/10 " + rowBg}>
+                <tr key={row.team.id} className={"border-t border-white/10 " + rowBg}>
                   <td className={"sticky left-0 " + rowBg}>
                     <div className={"h-full w-1.5 " + zoneColor(row.position)} />
                   </td>
-                  <td className={"py-2 pr-2 text-epl-purple/60 tabular-nums sticky left-1.5 " + rowBg}>
+                  <td className={"py-2 pr-2 text-white/50 tabular-nums sticky left-1.5 " + rowBg}>
                     {row.position}
                   </td>
                   <td className={"py-2 pr-3 sticky left-[26px] " + rowBg}>
@@ -57,24 +57,36 @@ export default function StandingsTable({ standings, onSelectTeam }) {
                       />
                       <span
                         className={
-                          "underline decoration-epl-purple/20 whitespace-nowrap " +
-                          (isHighlighted ? "font-bold" : "")
+                          "underline decoration-white/20 whitespace-nowrap text-white " +
+                          (isHighlighted ? "font-bold text-epl-cyan" : "")
                         }
                       >
                         {row.team.shortName}
                       </span>
                     </button>
                   </td>
-                  <td className="py-2 px-1.5 text-center tabular-nums">{row.playedGames}</td>
-                  <td className="py-2 px-1.5 text-center tabular-nums">{row.won}</td>
-                  <td className="py-2 px-1.5 text-center tabular-nums">{row.draw}</td>
-                  <td className="py-2 px-1.5 text-center tabular-nums">{row.lost}</td>
-                  <td className="py-2 px-1.5 text-center tabular-nums">{row.goalsFor}</td>
-                  <td className="py-2 px-1.5 text-center tabular-nums">{row.goalsAgainst}</td>
-                  <td className="py-2 px-1.5 text-center tabular-nums">
+                  <td className="py-2 px-1.5 text-center tabular-nums text-white/80">
+                    {row.playedGames}
+                  </td>
+                  <td className="py-2 px-1.5 text-center tabular-nums text-white/80">
+                    {row.won}
+                  </td>
+                  <td className="py-2 px-1.5 text-center tabular-nums text-white/80">
+                    {row.draw}
+                  </td>
+                  <td className="py-2 px-1.5 text-center tabular-nums text-white/80">
+                    {row.lost}
+                  </td>
+                  <td className="py-2 px-1.5 text-center tabular-nums text-white/80">
+                    {row.goalsFor}
+                  </td>
+                  <td className="py-2 px-1.5 text-center tabular-nums text-white/80">
+                    {row.goalsAgainst}
+                  </td>
+                  <td className="py-2 px-1.5 text-center tabular-nums text-white/80">
                     {row.goalDifference > 0 ? `+${row.goalDifference}` : row.goalDifference}
                   </td>
-                  <td className="py-2 pl-1.5 text-center font-extrabold tabular-nums">
+                  <td className="py-2 pl-1.5 text-center font-extrabold tabular-nums text-white">
                     {row.points}
                   </td>
                 </tr>
@@ -84,7 +96,7 @@ export default function StandingsTable({ standings, onSelectTeam }) {
         </table>
       </div>
 
-      <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-epl-purple/60">
+      <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-white/50">
         <span className="inline-flex items-center gap-1">
           <span className="h-2 w-2 rounded-sm bg-emerald-500" /> Champions League
         </span>

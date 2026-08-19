@@ -8,7 +8,7 @@ function TeamColumn({ team, onSelectTeam }) {
       className="flex flex-1 min-w-0 flex-col items-center gap-1.5 text-center"
     >
       <img src={team.crest} alt="" className="h-10 w-10 shrink-0" loading="lazy" />
-      <span className="truncate max-w-full text-xs font-semibold underline decoration-epl-purple/20">
+      <span className="truncate max-w-full text-xs font-semibold text-white underline decoration-white/20">
         {team.shortName}
       </span>
     </button>
@@ -21,8 +21,8 @@ export default function MatchRow({ match, showScore, onSelectTeam }) {
   const awayWon = hasScore && match.score.away > match.score.home;
 
   return (
-    <li className="rounded-xl bg-slate-50 ring-1 ring-black/5 p-3">
-      <div className="flex items-center justify-between text-[10px] font-semibold uppercase tracking-wide text-epl-purple/40 mb-2">
+    <li className="rounded-xl bg-epl-surface2 ring-1 ring-white/10 p-3">
+      <div className="flex items-center justify-between text-[10px] font-semibold uppercase tracking-wide text-white/40 mb-2">
         <span>Matchday {match.matchday}</span>
         {!hasScore && <span>{formatMatchDateTime(match.utcDate)}</span>}
       </div>
@@ -32,13 +32,13 @@ export default function MatchRow({ match, showScore, onSelectTeam }) {
 
         <div className="shrink-0 flex flex-col items-center justify-center px-1">
           {hasScore ? (
-            <div className="flex items-center gap-1.5 rounded-full bg-epl-purple text-white px-3 py-1 text-sm font-extrabold tabular-nums">
+            <div className="flex items-center gap-1.5 rounded-full bg-epl-magenta text-white px-3 py-1 text-sm font-extrabold tabular-nums">
               <span className={awayWon ? "opacity-50" : ""}>{match.score.home}</span>
               <span className="opacity-50">–</span>
               <span className={homeWon ? "opacity-50" : ""}>{match.score.away}</span>
             </div>
           ) : (
-            <div className="rounded-full bg-epl-purple/10 text-epl-purple px-2.5 py-1 text-xs font-bold">
+            <div className="rounded-full bg-white/10 text-white px-2.5 py-1 text-xs font-bold">
               VS
             </div>
           )}

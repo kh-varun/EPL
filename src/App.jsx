@@ -42,7 +42,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 pb-10">
+    <div className="min-h-screen bg-epl-bg pb-10">
       <header className="bg-epl-gradient text-white px-4 pt-4 pb-3 shadow-lg">
         <div className="max-w-2xl mx-auto space-y-3">
           <div>
@@ -56,7 +56,7 @@ export default function App() {
 
       <main className="max-w-2xl mx-auto px-4 mt-4 space-y-4">
         {error && (
-          <div className="rounded-lg bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700">
+          <div className="rounded-lg bg-red-950 border border-red-500/30 px-4 py-3 text-sm text-red-300">
             Couldn&apos;t load data: {error}
           </div>
         )}
@@ -81,7 +81,7 @@ export default function App() {
                 ))}
               </ul>
             ) : (
-              <p className="text-sm text-epl-purple/60">No upcoming fixtures.</p>
+              <p className="text-sm text-white/50">No upcoming fixtures.</p>
             )}
           </Section>
         )}
@@ -100,7 +100,7 @@ export default function App() {
                 ))}
               </ul>
             ) : (
-              <p className="text-sm text-epl-purple/60">
+              <p className="text-sm text-white/50">
                 No results yet — the season hasn&apos;t kicked off.
               </p>
             )}
@@ -109,7 +109,7 @@ export default function App() {
 
         {activeTab === "headlines" && (
           <Section title="Headlines">
-            <Headlines headlines={data?.headlines} />
+            <Headlines headlines={data?.headlines} standings={data?.standings} />
           </Section>
         )}
       </main>

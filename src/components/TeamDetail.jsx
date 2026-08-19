@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { ChevronLeftIcon, ShirtIcon, PitchIcon } from "./icons.jsx";
+import { ChevronLeftIcon } from "./icons.jsx";
 import Pitch from "./Pitch.jsx";
+import PlayerDialog from "./PlayerDialog.jsx";
 
 const POSITION_LABELS = {
   Goalkeeper: "Goalkeepers",
@@ -28,14 +29,14 @@ function initials(name) {
 }
 
 export default function TeamDetail({ team, teamData, onClose }) {
-  const [view, setView] = useState("squad");
+  const [selectedPlayer, setSelectedPlayer] = useState(null);
   const squad = teamData?.squad ?? [];
   const groups = groupByPosition(squad);
 
   return (
-    <div className="fixed inset-0 z-50 bg-slate-50 overflow-y-auto">
+    <div className="fixed inset-0 z-50 bg-epl-bg overflow-y-auto">
       <header className="bg-epl-gradient text-white px-4 py-4 sticky top-0 z-10 shadow-lg">
-        <div className="max-w-2xl mx-auto flex items-center gap-3">
+        <div className="max-w-4xl mx-auto flex items-center gap-3">
           <button
             type="button"
             onClick={onClose}
@@ -50,74 +51,69 @@ export default function TeamDetail({ team, teamData, onClose }) {
             {teamData?.coach && <p className="text-xs text-white/70">Coach: {teamData.coach}</p>}
           </div>
         </div>
-
-        {squad.length > 0 && (
-          <div className="max-w-2xl mx-auto mt-3 grid grid-cols-2 gap-1 rounded-xl bg-white/10 p-1">
-            <button
-              type="button"
-              onClick={() => setView("squad")}
-              className={
-                "flex items-center justify-center gap-1.5 rounded-lg py-1.5 text-xs font-bold uppercase tracking-wide transition-all " +
-                (view === "squad" ? "bg-white text-epl-purple shadow-md" : "text-white/70")
-              }
-            >
-              <ShirtIcon className="h-4 w-4" /> Squad
-            </button>
-            <button
-              type="button"
-              onClick={() => setView("formation")}
-              className={
-                "flex items-center justify-center gap-1.5 rounded-lg py-1.5 text-xs font-bold uppercase tracking-wide transition-all " +
-                (view === "formation" ? "bg-white text-epl-purple shadow-md" : "text-white/70")
-              }
-            >
-              <PitchIcon className="h-4 w-4" /> Formation
-            </button>
-          </div>
-        )}
       </header>
 
-      <main className="max-w-2xl mx-auto px-4 py-4 space-y-4">
-        {!teamData && <p className="text-sm text-epl-purple/60">Squad data not available.</p>}
+      <main className="max-w-4xl mx-auto px-4 py-4">
+        {!teamData && <p className="text-sm text-white/50">Squad data not available.</p>}
 
-        {teamData && view === "formation" && <Pitch squad={squad} />}
+        {teamData && (
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
+            <div className="space-y-4">
+              {groups.map(([position, players]) => (
+                <section
+                  key={position}
+                  className="bg-epl-surface rounded-2xl shadow-lg ring-1 ring-white/10 p-4"
+                >
+                  <h2 className="text-sm font-extrabold uppercase tracking-wide text-white mb-2">
+                    {POSITION_LABELS[position] ?? position}
+                  </h2>
+                  <ul className="space-y-1">
+                    {players.map((player) => (
+                      <li key={player.id}>
+                        <button
+                          type="button"
+                          onClick={() => setSelectedPlayer(player)}
+                          className="w-full flex items-center gap-3 py-1.5 border-t border-white/10 first:border-t-0 text-left hover:bg-white/5 rounded-md px-1 -mx-1 transition-colors"
+                        >
+                          <div className="h-8 w-8 shrink-0 rounded-full bg-white/10 text-white text-xs font-extrabold flex items-center justify-center">
+                            {initials(player.name)}
+                          </div>
+                          <span className="flex-1 min-w-0 text-sm font-medium truncate text-white">
+                            {player.name}
+                          </span>
+                          <span className="text-xs text-white/40 shrink-0">
+                            {player.nationality}
+                          </span>
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              ))}
+            </div>
 
-        {teamData &&
-          view === "squad" &&
-          groups.map(([position, players]) => (
-            <section
-              key={position}
-              className="bg-white rounded-2xl shadow-sm ring-1 ring-black/5 p-4"
-            >
-              <h2 className="text-sm font-extrabold uppercase tracking-wide text-epl-purple mb-2">
-                {POSITION_LABELS[position] ?? position}
+            <div className="lg:sticky lg:top-20 bg-epl-surface rounded-2xl shadow-lg ring-1 ring-white/10 p-4">
+              <h2 className="text-sm font-extrabold uppercase tracking-wide text-white mb-2">
+                Formation
               </h2>
-              <ul className="space-y-1">
-                {players.map((player) => (
-                  <li
-                    key={player.id}
-                    className="flex items-center gap-3 py-1.5 border-t border-epl-purple/10 first:border-t-0"
-                  >
-                    <div className="h-8 w-8 shrink-0 rounded-full bg-epl-purple/10 text-epl-purple text-xs font-extrabold flex items-center justify-center">
-                      {initials(player.name)}
-                    </div>
-                    <span className="flex-1 min-w-0 text-sm font-medium truncate">
-                      {player.name}
-                    </span>
-                    <span className="text-xs text-epl-purple/50 shrink-0">
-                      {player.nationality}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          ))}
+              <Pitch squad={squad} onSelectPlayer={setSelectedPlayer} />
+            </div>
+          </div>
+        )}
 
-        <p className="text-xs text-epl-purple/40 text-center pt-2">
+        <p className="text-xs text-white/30 text-center pt-4">
           Full squad roster. Match-day starting lineups and injury status aren&apos;t available
           from the free data source this dashboard uses.
         </p>
       </main>
+
+      {selectedPlayer && (
+        <PlayerDialog
+          player={selectedPlayer}
+          team={team}
+          onClose={() => setSelectedPlayer(null)}
+        />
+      )}
     </div>
   );
 }
