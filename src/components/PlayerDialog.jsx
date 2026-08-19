@@ -84,7 +84,9 @@ export default function PlayerDialog({ player, team, onClose }) {
           <div className="grid grid-cols-2 gap-2">
             <div className="rounded-lg bg-white/5 p-2.5">
               <p className="text-[10px] uppercase tracking-wide text-white/40">Position</p>
-              <p className="text-sm font-semibold text-white">{player.position}</p>
+              <p className="text-sm font-semibold text-white">
+                {player.positionLabel ?? player.position}
+              </p>
             </div>
             <div className="rounded-lg bg-white/5 p-2.5">
               <p className="text-[10px] uppercase tracking-wide text-white/40">Age</p>
