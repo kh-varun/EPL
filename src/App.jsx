@@ -1,13 +1,24 @@
 import { useEffect, useState } from "react";
 import LastUpdated from "./components/LastUpdated.jsx";
 import Section from "./components/Section.jsx";
+import TabBar from "./components/TabBar.jsx";
 import StandingsTable from "./components/StandingsTable.jsx";
 import MatchRow from "./components/MatchRow.jsx";
 import Headlines from "./components/Headlines.jsx";
+import TeamDetail from "./components/TeamDetail.jsx";
+
+const TABS = [
+  { id: "standings", label: "Table" },
+  { id: "fixtures", label: "Fixtures" },
+  { id: "results", label: "Results" },
+  { id: "headlines", label: "News" },
+];
 
 export default function App() {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
+  const [activeTab, setActiveTab] = useState("standings");
+  const [selectedTeam, setSelectedTeam] = useState(null);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data.json`)
@@ -18,6 +29,16 @@ export default function App() {
       .then(setData)
       .catch((err) => setError(err.message));
   }, []);
+
+  if (selectedTeam) {
+    return (
+      <TeamDetail
+        team={selectedTeam}
+        teamData={data?.teams?.[selectedTeam.id]}
+        onClose={() => setSelectedTeam(null)}
+      />
+    );
+  }
 
   return (
     <div className="min-h-screen bg-slate-50 pb-10">
@@ -37,39 +58,59 @@ export default function App() {
 
         {data && <LastUpdated fetchedAt={data.fetchedAt} />}
 
-        <Section title="Standings">
-          <StandingsTable standings={data?.standings} />
-        </Section>
+        <TabBar tabs={TABS} activeTab={activeTab} onChange={setActiveTab} />
 
-        <Section title="Next Fixtures">
-          {data?.nextFixtures?.length ? (
-            <ul>
-              {data.nextFixtures.map((match) => (
-                <MatchRow key={match.id} match={match} showScore={false} />
-              ))}
-            </ul>
-          ) : (
-            <p className="text-sm text-epl-purple/60">No upcoming fixtures.</p>
-          )}
-        </Section>
+        {activeTab === "standings" && (
+          <Section title="Standings">
+            <StandingsTable standings={data?.standings} onSelectTeam={setSelectedTeam} />
+          </Section>
+        )}
 
-        <Section title="Last Results">
-          {data?.lastResults?.length ? (
-            <ul>
-              {data.lastResults.map((match) => (
-                <MatchRow key={match.id} match={match} showScore={true} />
-              ))}
-            </ul>
-          ) : (
-            <p className="text-sm text-epl-purple/60">
-              No results yet — the season hasn&apos;t kicked off.
-            </p>
-          )}
-        </Section>
+        {activeTab === "fixtures" && (
+          <Section title="Next Fixtures">
+            {data?.nextFixtures?.length ? (
+              <ul>
+                {data.nextFixtures.map((match) => (
+                  <MatchRow
+                    key={match.id}
+                    match={match}
+                    showScore={false}
+                    onSelectTeam={setSelectedTeam}
+                  />
+                ))}
+              </ul>
+            ) : (
+              <p className="text-sm text-epl-purple/60">No upcoming fixtures.</p>
+            )}
+          </Section>
+        )}
 
-        <Section title="Headlines">
-          <Headlines headlines={data?.headlines} />
-        </Section>
+        {activeTab === "results" && (
+          <Section title="Last Results">
+            {data?.lastResults?.length ? (
+              <ul>
+                {data.lastResults.map((match) => (
+                  <MatchRow
+                    key={match.id}
+                    match={match}
+                    showScore={true}
+                    onSelectTeam={setSelectedTeam}
+                  />
+                ))}
+              </ul>
+            ) : (
+              <p className="text-sm text-epl-purple/60">
+                No results yet — the season hasn&apos;t kicked off.
+              </p>
+            )}
+          </Section>
+        )}
+
+        {activeTab === "headlines" && (
+          <Section title="Headlines">
+            <Headlines headlines={data?.headlines} />
+          </Section>
+        )}
       </main>
     </div>
   );
