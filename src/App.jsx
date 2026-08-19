@@ -31,7 +31,7 @@ export default function App() {
       <main className="max-w-2xl mx-auto px-4 mt-4 space-y-4">
         {error && (
           <div className="rounded-lg bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700">
-            Couldn't load data: {error}
+            Couldn&apos;t load data: {error}
           </div>
         )}
 
@@ -62,7 +62,7 @@ export default function App() {
             </ul>
           ) : (
             <p className="text-sm text-epl-purple/60">
-              No results yet — the season hasn't kicked off.
+              No results yet — the season hasn&apos;t kicked off.
             </p>
           )}
         </Section>
