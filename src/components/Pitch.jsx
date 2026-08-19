@@ -19,31 +19,35 @@ function pickFormation(squad) {
   })).filter((row) => row.players.length > 0);
 }
 
-function PlayerChip({ player }) {
+function PlayerChip({ player, onSelectPlayer }) {
   return (
-    <div className="flex flex-col items-center gap-1 w-16">
+    <button
+      type="button"
+      onClick={() => onSelectPlayer?.(player)}
+      className="flex flex-col items-center gap-1 w-16"
+    >
       <div className="h-10 w-10 rounded-full bg-white text-epl-purple font-extrabold text-sm flex items-center justify-center shadow-md ring-2 ring-white/60">
         {initials(player.name)}
       </div>
       <span className="text-[10px] font-semibold text-white text-center leading-tight drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)] line-clamp-2">
         {player.name}
       </span>
-    </div>
+    </button>
   );
 }
 
-export default function Pitch({ squad }) {
+export default function Pitch({ squad, onSelectPlayer }) {
   const rows = pickFormation(squad);
   const totalPlayers = rows.reduce((sum, row) => sum + row.players.length, 0);
 
   if (totalPlayers === 0) {
-    return <p className="text-sm text-epl-purple/60">Not enough squad data for a formation view.</p>;
+    return <p className="text-sm text-white/50">Not enough squad data for a formation view.</p>;
   }
 
   return (
     <div>
       <div
-        className="relative rounded-2xl overflow-hidden ring-1 ring-black/10 p-4 flex flex-col justify-between gap-4"
+        className="relative rounded-2xl overflow-hidden ring-1 ring-black/20 p-4 flex flex-col justify-between gap-4"
         style={{
           minHeight: 420,
           backgroundImage:
@@ -58,15 +62,15 @@ export default function Pitch({ squad }) {
         {rows.map((row) => (
           <div key={row.position} className="relative z-10 flex justify-evenly">
             {row.players.map((player) => (
-              <PlayerChip key={player.id} player={player} />
+              <PlayerChip key={player.id} player={player} onSelectPlayer={onSelectPlayer} />
             ))}
           </div>
         ))}
       </div>
 
-      <p className="mt-3 text-xs text-epl-purple/50 text-center">
+      <p className="mt-3 text-xs text-white/40 text-center">
         Illustrative lineup from the squad list, in a 4-3-3 shape — not the confirmed match-day XI
-        (not available from this dashboard&apos;s free data source).
+        (not available from this dashboard&apos;s free data source). Tap a player for details.
       </p>
     </div>
   );

@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-19T05:34:38.612Z",
+  "fetchedAt": "2026-08-19T05:49:58.169Z",
   "standings": [
     {
       "position": 1,
@@ -637,109 +637,130 @@
   ],
   "headlines": [
     {
+      "title": "Five in Five: Football quiz No 3",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c74gde30nryo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 19 Aug 2026 05:37:16 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4147/live/f4347c70-95ac-11f1-a7ab-8b30adf0800a.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
       "title": "How will your club fare? Phil McNulty's Premier League predictions",
       "link": "https://www.bbc.co.uk/sport/football/articles/c5ye50qz7yqo?at_medium=RSS&at_campaign=rss",
       "pubDate": "Wed, 19 Aug 2026 05:21:19 GMT",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/eaee/live/8a1167d0-9ae9-11f1-930b-57cfba7235f9.jpg",
-      "source": "BBC Sport"
+      "source": "BBC Sport",
+      "teams": []
     },
     {
       "title": "Premier League 2026-27 preview No 15: Manchester City",
       "link": "https://www.theguardian.com/football/2026/aug/19/premier-league-2026-27-preview-no-15-manchester-city",
       "pubDate": "Tue, 18 Aug 2026 23:01:03 GMT",
       "image": "https://i.guim.co.uk/img/media/a8f404684ec4ea7fe46b99f056eb1746b3098469/661_225_4468_3577/master/4468.jpg?width=460&quality=85&auto=format&fit=max&s=ac0a8b89fcbd937a3bfd72210bf3e5d8",
-      "source": "The Guardian"
+      "source": "The Guardian",
+      "teams": [
+        65
+      ]
     },
     {
       "title": "In Zavier Gozo, Crystal Palace land a US prospect living up to the hype",
       "link": "https://www.theguardian.com/football/2026/aug/18/zavier-gozo-crystal-palace-mls-real-salt-lake-transfer",
       "pubDate": "Tue, 18 Aug 2026 21:32:42 GMT",
       "image": "https://i.guim.co.uk/img/media/4fef751d146d32ad3e895a07a65e3860b7223122/443_0_4164_3333/master/4164.jpg?width=460&quality=85&auto=format&fit=max&s=0fbdcf9e03b4983cc62e8eddc7465647",
-      "source": "The Guardian"
+      "source": "The Guardian",
+      "teams": [
+        354
+      ]
     },
     {
       "title": "Palace sign United States prospect Gozo",
       "link": "https://www.bbc.co.uk/sport/football/articles/cpq80q88dyqo?at_medium=RSS&at_campaign=rss",
       "pubDate": "Tue, 18 Aug 2026 21:26:12 GMT",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4e59/live/869e1160-9b49-11f1-a98d-2d938d056219.jpg",
-      "source": "BBC Sport"
+      "source": "BBC Sport",
+      "teams": []
     },
     {
       "title": "Al Hilal target England's Kane - Wednesday's gossip",
       "link": "https://www.bbc.co.uk/sport/football/articles/c70gdd61kk4o?at_medium=RSS&at_campaign=rss",
       "pubDate": "Tue, 18 Aug 2026 21:02:44 GMT",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9aa4/live/6775d0f0-9b41-11f1-a291-b542ee92de7c.png",
-      "source": "BBC Sport"
+      "source": "BBC Sport",
+      "teams": []
     },
     {
       "title": "Brighton sign Canada striker David on loan",
       "link": "https://www.bbc.co.uk/sport/football/articles/c30450z6pmmo?at_medium=RSS&at_campaign=rss",
       "pubDate": "Tue, 18 Aug 2026 20:43:01 GMT",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6019/live/2d88af90-9b44-11f1-bd52-f9704e8e5c82.jpg",
-      "source": "BBC Sport"
+      "source": "BBC Sport",
+      "teams": []
     },
     {
       "title": "Serie A's Trepy out of coma after pool rescue",
       "link": "https://www.bbc.co.uk/sport/football/articles/cp8xdx7ypr6o?at_medium=RSS&at_campaign=rss",
       "pubDate": "Tue, 18 Aug 2026 20:37:22 GMT",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b601/live/242d7790-9b04-11f1-bb80-c1b1e1adeea5.jpg",
-      "source": "BBC Sport"
+      "source": "BBC Sport",
+      "teams": []
     },
     {
       "title": "Man found dead at Charlton Athletic's ground",
       "link": "https://www.bbc.co.uk/news/articles/c934e3pgp9lo?at_medium=RSS&at_campaign=rss",
       "pubDate": "Tue, 18 Aug 2026 20:14:04 GMT",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1049/live/77903360-9b3f-11f1-bd52-f9704e8e5c82.jpg",
-      "source": "BBC Sport"
+      "source": "BBC Sport",
+      "teams": []
     },
     {
       "title": "Jamal Musiala says ‘treatable seizures’ are reason for two collapses in four days",
       "link": "https://www.theguardian.com/football/2026/aug/18/jamal-musiala-treatable-seizures-statement-collapses-bayern-munich",
       "pubDate": "Tue, 18 Aug 2026 20:08:04 GMT",
       "image": "https://i.guim.co.uk/img/media/db27ecc99db5325d7af567aacd1af3c6f7aaf489/440_0_5284_4229/master/5284.jpg?width=460&quality=85&auto=format&fit=max&s=fc1f62061dd97bdc44e269d2a2d38408",
-      "source": "The Guardian"
+      "source": "The Guardian",
+      "teams": []
     },
     {
       "title": "Musiala collapses during match for second time in four-day period",
       "link": "https://www.bbc.co.uk/sport/football/articles/c330kg5xm8no?at_medium=RSS&at_campaign=rss",
       "pubDate": "Tue, 18 Aug 2026 19:57:08 GMT",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/da05/live/27df2cc0-9b37-11f1-a794-9d45cb2a51de.jpg",
-      "source": "BBC Sport"
+      "source": "BBC Sport",
+      "teams": []
     },
     {
       "title": "Barcelona steal Rodri away from Real Madrid and plan to make him new Busquets",
       "link": "https://www.theguardian.com/football/2026/aug/18/barcelona-snatch-rodri-from-madrid-and-make-him-new-busquets",
       "pubDate": "Tue, 18 Aug 2026 19:49:19 GMT",
       "image": "https://i.guim.co.uk/img/media/3e0bd585267b6c10cdda72a47e637efde6bb04f0/311_40_4139_3312/master/4139.jpg?width=460&quality=85&auto=format&fit=max&s=b85e9a604770f218bcc1475aa3aa367e",
-      "source": "The Guardian"
+      "source": "The Guardian",
+      "teams": []
     },
     {
       "title": "Irish striker Parrott on brink of Real Betis move",
       "link": "https://www.bbc.co.uk/sport/football/articles/c935vrgrn0vo?at_medium=RSS&at_campaign=rss",
       "pubDate": "Tue, 18 Aug 2026 19:25:40 GMT",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/80f8/live/1b731730-9b37-11f1-a794-9d45cb2a51de.jpg",
-      "source": "BBC Sport"
+      "source": "BBC Sport",
+      "teams": []
     },
     {
       "title": "Hull City interested in Japan winger Nakamura",
       "link": "https://www.bbc.co.uk/sport/football/articles/c5ywee6y2qlo?at_medium=RSS&at_campaign=rss",
       "pubDate": "Tue, 18 Aug 2026 19:09:31 GMT",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/eff1/live/00620bb0-9b3a-11f1-adfc-97cecc6f1ad1.jpg",
-      "source": "BBC Sport"
+      "source": "BBC Sport",
+      "teams": [
+        322
+      ]
     },
     {
       "title": "Pep’s final act of passion: Amazon’s revealing Guardiola series pulls no punches",
       "link": "https://www.theguardian.com/football/2026/aug/18/peps-final-act-of-passion-amazons-revealing-guardiola-series-pulls-no-punches",
       "pubDate": "Tue, 18 Aug 2026 19:00:53 GMT",
       "image": "https://i.guim.co.uk/img/media/cdd47b26519a2bd905511168140c3fda8af80de2/576_52_6358_5087/master/6358.jpg?width=460&quality=85&auto=format&fit=max&s=749499775868aefb17618875d9b458b7",
-      "source": "The Guardian"
-    },
-    {
-      "title": "Jeff Bezos consortium could be majority Liverpool shareholder within a year",
-      "link": "https://www.theguardian.com/football/2026/aug/18/jeff-bezos-liverpool-1892-holdings-fenway-bid",
-      "pubDate": "Tue, 18 Aug 2026 18:49:29 GMT",
-      "image": "https://i.guim.co.uk/img/media/c67f6a932b1970999267fd9717d1bec5140a9520/1266_556_6075_4860/master/6075.jpg?width=460&quality=85&auto=format&fit=max&s=0f45db76c64cbc17fefc3375c751fdd9",
-      "source": "The Guardian"
+      "source": "The Guardian",
+      "teams": []
     }
   ],
   "teams": {

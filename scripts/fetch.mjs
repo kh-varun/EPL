@@ -234,6 +234,23 @@ async function fetchHeadlines() {
   return deduped.slice(0, 15);
 }
 
+// Tags each headline with the PL teams mentioned in its title, so the UI
+// can offer a "filter by team" control without a dedicated news API.
+function tagHeadlineTeams(headlines, standings) {
+  const teams = standings.map((row) => ({
+    id: row.team.id,
+    names: [row.team.shortName, row.team.name.replace(/\s*(FC|AFC)$/i, "")],
+  }));
+
+  return headlines.map((headline) => {
+    const title = headline.title.toLowerCase();
+    const teamIds = teams
+      .filter(({ names }) => names.some((name) => title.includes(name.toLowerCase())))
+      .map(({ id }) => id);
+    return { ...headline, teams: teamIds };
+  });
+}
+
 async function main() {
   console.log("Fetching PL standings, results, fixtures, and headlines...");
 
@@ -252,7 +269,7 @@ async function main() {
     standings,
     lastResults,
     nextFixtures,
-    headlines,
+    headlines: tagHeadlineTeams(headlines, standings),
     teams,
   };
 
