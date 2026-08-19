@@ -17,6 +17,7 @@ const TABS = [
 
 export default function App() {
   const [data, setData] = useState(null);
+  const [lineups, setLineups] = useState(null);
   const [error, setError] = useState(null);
   const [activeTab, setActiveTab] = useState("standings");
   const [selectedTeam, setSelectedTeam] = useState(null);
@@ -29,6 +30,13 @@ export default function App() {
       })
       .then(setData)
       .catch((err) => setError(err.message));
+
+    // Confirmed lineups are optional - the file may not exist yet, and a
+    // failure here must never block the rest of the dashboard.
+    fetch(`${import.meta.env.BASE_URL}lineups.json`, { cache: "no-store" })
+      .then((res) => (res.ok ? res.json() : null))
+      .then(setLineups)
+      .catch(() => setLineups(null));
   }, []);
 
   if (selectedTeam) {
@@ -36,6 +44,7 @@ export default function App() {
       <TeamDetail
         team={selectedTeam}
         teamData={data?.teams?.[selectedTeam.id]}
+        lineups={lineups?.lineups}
         onClose={() => setSelectedTeam(null)}
       />
     );

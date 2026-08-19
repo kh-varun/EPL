@@ -28,10 +28,46 @@ function initials(name) {
   return (first + last).toUpperCase();
 }
 
-export default function TeamDetail({ team, teamData, onClose }) {
+// Confirmed-lineup players carry only name/number/position code, so pull
+// nationality and date of birth off the squad entry when the names line up.
+// `position` stays the API-Football code (G/D/M/F) because the pitch groups
+// rows by it; the readable label rides along separately for the dialog.
+function enrichWithSquad(players, squad) {
+  return players.map((player) => {
+    const match = squad.find((s) => s.name === player.name);
+    if (!match) return player;
+    return {
+      ...player,
+      nationality: match.nationality,
+      dateOfBirth: match.dateOfBirth,
+      positionLabel: match.position,
+    };
+  });
+}
+
+function findConfirmedLineup(lineups, teamId) {
+  if (!lineups) return null;
+
+  const entries = Object.values(lineups)
+    .filter((entry) => entry.byTeam?.[teamId])
+    .sort((a, b) => new Date(b.utcDate) - new Date(a.utcDate));
+
+  return entries[0]?.byTeam?.[teamId] ?? null;
+}
+
+export default function TeamDetail({ team, teamData, lineups, onClose }) {
   const [selectedPlayer, setSelectedPlayer] = useState(null);
   const squad = teamData?.squad ?? [];
   const groups = groupByPosition(squad);
+
+  const rawConfirmed = findConfirmedLineup(lineups, team.id);
+  const confirmed = rawConfirmed
+    ? {
+        ...rawConfirmed,
+        startXI: enrichWithSquad(rawConfirmed.startXI ?? [], squad),
+        substitutes: enrichWithSquad(rawConfirmed.substitutes ?? [], squad),
+      }
+    : null;
 
   return (
     <div className="fixed inset-0 z-50 bg-epl-bg overflow-y-auto">
@@ -96,7 +132,11 @@ export default function TeamDetail({ team, teamData, onClose }) {
               <h2 className="text-sm font-extrabold uppercase tracking-wide text-white mb-2">
                 Formation
               </h2>
-              <Pitch squad={squad} onSelectPlayer={setSelectedPlayer} />
+              <Pitch
+                squad={squad}
+                confirmed={confirmed}
+                onSelectPlayer={setSelectedPlayer}
+              />
             </div>
           </div>
         )}
