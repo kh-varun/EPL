@@ -21,7 +21,7 @@ export default function App() {
   const [selectedTeam, setSelectedTeam] = useState(null);
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}data.json`)
+    fetch(`${import.meta.env.BASE_URL}data.json`, { cache: "no-store" })
       .then((res) => {
         if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
         return res.json();
