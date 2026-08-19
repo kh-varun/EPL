@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "fetch-data": "node scripts/fetch.mjs",
     "fetch-lineups": "node scripts/fetch-lineups.mjs",
+    "fetch-history": "node scripts/fetch-history.mjs",
     "lint": "eslint ."
   },
   "dependencies": {

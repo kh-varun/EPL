@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ChevronLeftIcon } from "./icons.jsx";
 import Pitch from "./Pitch.jsx";
 import PlayerDialog from "./PlayerDialog.jsx";
+import LastSeasonCard from "./LastSeasonCard.jsx";
 
 const POSITION_LABELS = {
   Goalkeeper: "Goalkeepers",
@@ -55,7 +56,7 @@ function findConfirmedLineup(lineups, teamId) {
   return entries[0]?.byTeam?.[teamId] ?? null;
 }
 
-export default function TeamDetail({ team, teamData, lineups, onClose }) {
+export default function TeamDetail({ team, teamData, lineups, history, onClose }) {
   const [selectedPlayer, setSelectedPlayer] = useState(null);
   const squad = teamData?.squad ?? [];
   const groups = groupByPosition(squad);
@@ -89,7 +90,13 @@ export default function TeamDetail({ team, teamData, lineups, onClose }) {
         </div>
       </header>
 
-      <main className="max-w-4xl mx-auto px-4 py-4">
+      <main className="max-w-4xl mx-auto px-4 py-4 space-y-4">
+        <LastSeasonCard
+          record={history?.teams?.[team.id]}
+          seasonLabel={history?.seasonLabel}
+          totalTeams={history?.totalTeams}
+        />
+
         {!teamData && <p className="text-sm text-white/50">Squad data not available.</p>}
 
         {teamData && (
@@ -151,6 +158,7 @@ export default function TeamDetail({ team, teamData, lineups, onClose }) {
         <PlayerDialog
           player={selectedPlayer}
           team={team}
+          history={history}
           onClose={() => setSelectedPlayer(null)}
         />
       )}
