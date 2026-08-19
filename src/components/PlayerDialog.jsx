@@ -26,7 +26,27 @@ async function fetchWikipediaSummary(name) {
   return null;
 }
 
-export default function PlayerDialog({ player, team, onClose }) {
+// Matches the name-normalisation used when history.json is built, so a
+// player keyed as "marc guehi" still resolves from "Marc Guéhi".
+function normalizeName(name) {
+  return name
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function SeasonStat({ label, value }) {
+  return (
+    <div className="rounded-lg bg-white/5 px-2 py-1.5 text-center">
+      <p className="text-[10px] uppercase tracking-wide text-white/40">{label}</p>
+      <p className="text-sm font-bold text-white tabular-nums">{value}</p>
+    </div>
+  );
+}
+
+export default function PlayerDialog({ player, team, history, onClose }) {
   const [bio, setBio] = useState({ status: "loading", data: null });
 
   useEffect(() => {
@@ -44,6 +64,9 @@ export default function PlayerDialog({ player, team, onClose }) {
   }, [player.name]);
 
   const age = calculateAge(player.dateOfBirth);
+  const lastSeason = history?.playersAvailable
+    ? history.players?.[normalizeName(player.name)]
+    : null;
 
   return (
     <div
@@ -102,6 +125,27 @@ export default function PlayerDialog({ player, team, onClose }) {
             </div>
           </div>
 
+          {lastSeason && (
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-wide text-white/50 mb-1.5">
+                Last season ({history.seasonLabel})
+              </h4>
+              <div className="grid grid-cols-4 gap-2">
+                <SeasonStat label="Apps" value={lastSeason.appearances} />
+                <SeasonStat label="Goals" value={lastSeason.goals} />
+                <SeasonStat label="Assists" value={lastSeason.assists} />
+                <SeasonStat label="Rating" value={lastSeason.rating ?? "—"} />
+              </div>
+            </div>
+          )}
+
+          {!lastSeason && history && !history.playersAvailable && (
+            <p className="text-xs text-white/30 italic">
+              Last season&apos;s player stats aren&apos;t available right now (API-Football&apos;s
+              free plan restricts historical player data).
+            </p>
+          )}
+
           <div>
             <h4 className="text-xs font-bold uppercase tracking-wide text-white/50 mb-1.5">
               About
@@ -120,9 +164,9 @@ export default function PlayerDialog({ player, team, onClose }) {
           </div>
 
           <p className="text-xs text-white/30 border-t border-white/10 pt-3">
-            This season&apos;s performance stats (goals, assists, appearances) aren&apos;t
-            available from this dashboard&apos;s free data source. The bio above is pulled live
-            from Wikipedia and may occasionally match the wrong person for common names.
+            Live, in-progress stats for the current season aren&apos;t available from this
+            dashboard&apos;s free data source. The bio above is pulled live from Wikipedia and may
+            occasionally match the wrong person for common names.
           </p>
         </div>
       </div>

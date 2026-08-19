@@ -1,0 +1,231 @@
+{
+  "fetchedAt": "2026-08-19T06:19:23.734Z",
+  "season": 2025,
+  "seasonLabel": "2025-26",
+  "totalTeams": 20,
+  "teams": {
+    "57": {
+      "position": 1,
+      "playedGames": 38,
+      "won": 26,
+      "draw": 7,
+      "lost": 5,
+      "goalsFor": 71,
+      "goalsAgainst": 27,
+      "goalDifference": 44,
+      "points": 85
+    },
+    "58": {
+      "position": 4,
+      "playedGames": 38,
+      "won": 19,
+      "draw": 8,
+      "lost": 11,
+      "goalsFor": 56,
+      "goalsAgainst": 49,
+      "goalDifference": 7,
+      "points": 65
+    },
+    "61": {
+      "position": 10,
+      "playedGames": 38,
+      "won": 14,
+      "draw": 10,
+      "lost": 14,
+      "goalsFor": 58,
+      "goalsAgainst": 52,
+      "goalDifference": 6,
+      "points": 52
+    },
+    "62": {
+      "position": 13,
+      "playedGames": 38,
+      "won": 13,
+      "draw": 10,
+      "lost": 15,
+      "goalsFor": 47,
+      "goalsAgainst": 50,
+      "goalDifference": -3,
+      "points": 49
+    },
+    "63": {
+      "position": 11,
+      "playedGames": 38,
+      "won": 15,
+      "draw": 7,
+      "lost": 16,
+      "goalsFor": 47,
+      "goalsAgainst": 51,
+      "goalDifference": -4,
+      "points": 52
+    },
+    "64": {
+      "position": 5,
+      "playedGames": 38,
+      "won": 17,
+      "draw": 9,
+      "lost": 12,
+      "goalsFor": 63,
+      "goalsAgainst": 53,
+      "goalDifference": 10,
+      "points": 60
+    },
+    "65": {
+      "position": 2,
+      "playedGames": 38,
+      "won": 23,
+      "draw": 9,
+      "lost": 6,
+      "goalsFor": 77,
+      "goalsAgainst": 35,
+      "goalDifference": 42,
+      "points": 78
+    },
+    "66": {
+      "position": 3,
+      "playedGames": 38,
+      "won": 20,
+      "draw": 11,
+      "lost": 7,
+      "goalsFor": 69,
+      "goalsAgainst": 50,
+      "goalDifference": 19,
+      "points": 71
+    },
+    "67": {
+      "position": 12,
+      "playedGames": 38,
+      "won": 14,
+      "draw": 7,
+      "lost": 17,
+      "goalsFor": 53,
+      "goalsAgainst": 55,
+      "goalDifference": -2,
+      "points": 49
+    },
+    "71": {
+      "position": 7,
+      "playedGames": 38,
+      "won": 14,
+      "draw": 12,
+      "lost": 12,
+      "goalsFor": 42,
+      "goalsAgainst": 48,
+      "goalDifference": -6,
+      "points": 54
+    },
+    "73": {
+      "position": 17,
+      "playedGames": 38,
+      "won": 10,
+      "draw": 11,
+      "lost": 17,
+      "goalsFor": 48,
+      "goalsAgainst": 57,
+      "goalDifference": -9,
+      "points": 41
+    },
+    "76": {
+      "position": 20,
+      "playedGames": 38,
+      "won": 3,
+      "draw": 11,
+      "lost": 24,
+      "goalsFor": 27,
+      "goalsAgainst": 68,
+      "goalDifference": -41,
+      "points": 20
+    },
+    "328": {
+      "position": 19,
+      "playedGames": 38,
+      "won": 4,
+      "draw": 10,
+      "lost": 24,
+      "goalsFor": 38,
+      "goalsAgainst": 75,
+      "goalDifference": -37,
+      "points": 22
+    },
+    "341": {
+      "position": 14,
+      "playedGames": 38,
+      "won": 11,
+      "draw": 14,
+      "lost": 13,
+      "goalsFor": 49,
+      "goalsAgainst": 56,
+      "goalDifference": -7,
+      "points": 47
+    },
+    "351": {
+      "position": 16,
+      "playedGames": 38,
+      "won": 11,
+      "draw": 11,
+      "lost": 16,
+      "goalsFor": 48,
+      "goalsAgainst": 51,
+      "goalDifference": -3,
+      "points": 44
+    },
+    "354": {
+      "position": 15,
+      "playedGames": 38,
+      "won": 11,
+      "draw": 12,
+      "lost": 15,
+      "goalsFor": 41,
+      "goalsAgainst": 51,
+      "goalDifference": -10,
+      "points": 45
+    },
+    "397": {
+      "position": 8,
+      "playedGames": 38,
+      "won": 14,
+      "draw": 11,
+      "lost": 13,
+      "goalsFor": 52,
+      "goalsAgainst": 46,
+      "goalDifference": 6,
+      "points": 53
+    },
+    "402": {
+      "position": 9,
+      "playedGames": 38,
+      "won": 14,
+      "draw": 11,
+      "lost": 13,
+      "goalsFor": 55,
+      "goalsAgainst": 52,
+      "goalDifference": 3,
+      "points": 53
+    },
+    "563": {
+      "position": 18,
+      "playedGames": 38,
+      "won": 10,
+      "draw": 9,
+      "lost": 19,
+      "goalsFor": 46,
+      "goalsAgainst": 65,
+      "goalDifference": -19,
+      "points": 39
+    },
+    "1044": {
+      "position": 6,
+      "playedGames": 38,
+      "won": 13,
+      "draw": 18,
+      "lost": 7,
+      "goalsFor": 58,
+      "goalsAgainst": 54,
+      "goalDifference": 4,
+      "points": 57
+    }
+  },
+  "playersAvailable": false,
+  "playersUnavailableReason": "fetch failed",
+  "players": {}
+}

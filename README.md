@@ -27,6 +27,9 @@ npm run dev
   and RSS headlines (BBC Sport, The Guardian)
 - `npm run fetch-lineups` — refresh `public/lineups.json` with confirmed
   starting XIs from API-Football
+- `npm run fetch-history` — refresh `public/history.json` with last
+  season's final table (football-data.org) and player stats
+  (API-Football, best-effort - see below)
 
 ## Confirmed lineups
 
@@ -42,6 +45,19 @@ illustrative 4-3-3 built from the squad list. The two are labeled
 distinctly — "Confirmed XI" vs "Illustrative" — so it's always clear which
 you're looking at.
 
+## Last-season history
+
+Team detail shows last season's final position, record and goal stats -
+this comes from football-data.org and works reliably on the free tier.
+
+Player detail additionally shows last season's appearances/goals/assists/
+rating when available, from API-Football's `/players` endpoint. This is
+best-effort: API-Football's free plan restricts how far back you can query
+player statistics, so on some accounts this may come back empty. When it
+does, the dashboard says so explicitly instead of showing broken or
+misleading data - the team history above is unaffected either way, since
+the two are fetched and degrade independently.
+
 ## Automation
 
 - `.github/workflows/update.yml` refreshes `public/data.json` every
@@ -50,6 +66,9 @@ you're looking at.
 - `.github/workflows/lineups.yml` refreshes `public/lineups.json` every 15
   minutes, committing only when lineups actually change. Requires an
   `API_FOOTBALL_KEY` repository secret.
+- `.github/workflows/history.yml` refreshes `public/history.json` monthly
+  (last season's numbers don't change mid-season) and on manual dispatch.
+  Uses both `FOOTBALL_DATA_TOKEN` and `API_FOOTBALL_KEY`.
 - `.github/workflows/pr-review.yml` runs ESLint on every PR and posts
   findings as inline review comments via reviewdog.
 - `.github/workflows/deploy.yml` builds and deploys to GitHub Pages on

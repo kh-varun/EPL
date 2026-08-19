@@ -18,6 +18,7 @@ const TABS = [
 export default function App() {
   const [data, setData] = useState(null);
   const [lineups, setLineups] = useState(null);
+  const [history, setHistory] = useState(null);
   const [error, setError] = useState(null);
   const [activeTab, setActiveTab] = useState("standings");
   const [selectedTeam, setSelectedTeam] = useState(null);
@@ -37,6 +38,12 @@ export default function App() {
       .then((res) => (res.ok ? res.json() : null))
       .then(setLineups)
       .catch(() => setLineups(null));
+
+    // Last-season history is likewise optional.
+    fetch(`${import.meta.env.BASE_URL}history.json`, { cache: "no-store" })
+      .then((res) => (res.ok ? res.json() : null))
+      .then(setHistory)
+      .catch(() => setHistory(null));
   }, []);
 
   if (selectedTeam) {
@@ -45,6 +52,7 @@ export default function App() {
         team={selectedTeam}
         teamData={data?.teams?.[selectedTeam.id]}
         lineups={lineups?.lineups}
+        history={history}
         onClose={() => setSelectedTeam(null)}
       />
     );
