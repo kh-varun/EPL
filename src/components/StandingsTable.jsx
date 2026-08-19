@@ -1,6 +1,6 @@
 const HIGHLIGHT_TLA = "MCI";
 
-export default function StandingsTable({ standings }) {
+export default function StandingsTable({ standings, onSelectTeam }) {
   if (!standings?.length) {
     return <p className="text-sm text-epl-purple/60">Standings not available yet.</p>;
   }
@@ -30,17 +30,25 @@ export default function StandingsTable({ standings }) {
               >
                 <td className="py-2 pr-2 text-epl-purple/60 tabular-nums">{row.position}</td>
                 <td className="py-2 pr-2">
-                  <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => onSelectTeam(row.team)}
+                    className="flex items-center gap-2 text-left"
+                  >
                     <img
                       src={row.team.crest}
                       alt=""
                       className="h-5 w-5 shrink-0"
                       loading="lazy"
                     />
-                    <span className={isHighlighted ? "font-semibold" : ""}>
+                    <span
+                      className={
+                        "underline decoration-epl-purple/20 " + (isHighlighted ? "font-semibold" : "")
+                      }
+                    >
                       {row.team.shortName}
                     </span>
-                  </div>
+                  </button>
                 </td>
                 <td className="py-2 px-1.5 text-center tabular-nums">{row.playedGames}</td>
                 <td className="py-2 px-1.5 text-center tabular-nums">

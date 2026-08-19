@@ -5,6 +5,7 @@ import TabBar from "./components/TabBar.jsx";
 import StandingsTable from "./components/StandingsTable.jsx";
 import MatchRow from "./components/MatchRow.jsx";
 import Headlines from "./components/Headlines.jsx";
+import TeamDetail from "./components/TeamDetail.jsx";
 
 const TABS = [
   { id: "standings", label: "Table" },
@@ -17,6 +18,7 @@ export default function App() {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [activeTab, setActiveTab] = useState("standings");
+  const [selectedTeam, setSelectedTeam] = useState(null);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data.json`)
@@ -27,6 +29,16 @@ export default function App() {
       .then(setData)
       .catch((err) => setError(err.message));
   }, []);
+
+  if (selectedTeam) {
+    return (
+      <TeamDetail
+        team={selectedTeam}
+        teamData={data?.teams?.[selectedTeam.id]}
+        onClose={() => setSelectedTeam(null)}
+      />
+    );
+  }
 
   return (
     <div className="min-h-screen bg-slate-50 pb-10">
@@ -50,7 +62,7 @@ export default function App() {
 
         {activeTab === "standings" && (
           <Section title="Standings">
-            <StandingsTable standings={data?.standings} />
+            <StandingsTable standings={data?.standings} onSelectTeam={setSelectedTeam} />
           </Section>
         )}
 
@@ -59,7 +71,12 @@ export default function App() {
             {data?.nextFixtures?.length ? (
               <ul>
                 {data.nextFixtures.map((match) => (
-                  <MatchRow key={match.id} match={match} showScore={false} />
+                  <MatchRow
+                    key={match.id}
+                    match={match}
+                    showScore={false}
+                    onSelectTeam={setSelectedTeam}
+                  />
                 ))}
               </ul>
             ) : (
@@ -73,7 +90,12 @@ export default function App() {
             {data?.lastResults?.length ? (
               <ul>
                 {data.lastResults.map((match) => (
-                  <MatchRow key={match.id} match={match} showScore={true} />
+                  <MatchRow
+                    key={match.id}
+                    match={match}
+                    showScore={true}
+                    onSelectTeam={setSelectedTeam}
+                  />
                 ))}
               </ul>
             ) : (

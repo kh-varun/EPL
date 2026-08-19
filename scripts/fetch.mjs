@@ -34,6 +34,19 @@ async function footballDataRequest(endpoint) {
   return res.json();
 }
 
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+// Free tier allows 10 requests/minute; space calls out to stay under that.
+const RATE_LIMIT_DELAY_MS = 6500;
+
+async function footballDataRequestThrottled(endpoint) {
+  const data = await footballDataRequest(endpoint);
+  await sleep(RATE_LIMIT_DELAY_MS);
+  return data;
+}
+
 function mapTeam(team) {
   return {
     id: team.id,
@@ -92,6 +105,36 @@ function mapMatch(match) {
       winner: match.score?.winner ?? null,
     },
   };
+}
+
+const POSITION_ORDER = ["Goalkeeper", "Defence", "Midfield", "Offence"];
+
+async function fetchSquads(teamIds) {
+  const teams = {};
+
+  for (const teamId of teamIds) {
+    try {
+      const data = await footballDataRequestThrottled(`/teams/${teamId}`);
+      const squad = (data.squad ?? [])
+        .map((player) => ({
+          id: player.id,
+          name: player.name,
+          position: player.position,
+          dateOfBirth: player.dateOfBirth,
+          nationality: player.nationality,
+        }))
+        .sort((a, b) => POSITION_ORDER.indexOf(a.position) - POSITION_ORDER.indexOf(b.position));
+
+      teams[teamId] = {
+        coach: data.coach?.name ?? null,
+        squad,
+      };
+    } catch (err) {
+      console.error(`Failed to fetch squad for team ${teamId}: ${err.message}`);
+    }
+  }
+
+  return teams;
 }
 
 // --- Minimal RSS parsing (no external deps) ---
@@ -171,12 +214,16 @@ async function main() {
     fetchHeadlines(),
   ]);
 
+  console.log(`Fetching squads for ${standings.length} teams (rate-limited, this takes a while)...`);
+  const teams = await fetchSquads(standings.map((row) => row.team.id));
+
   const data = {
     fetchedAt: new Date().toISOString(),
     standings,
     lastResults,
     nextFixtures,
     headlines,
+    teams,
   };
 
   await mkdir(path.dirname(OUT_PATH), { recursive: true });
@@ -185,7 +232,8 @@ async function main() {
   console.log(`Wrote ${OUT_PATH}`);
   console.log(
     `  standings: ${standings.length}, lastResults: ${lastResults.length}, ` +
-      `nextFixtures: ${nextFixtures.length}, headlines: ${headlines.length}`,
+      `nextFixtures: ${nextFixtures.length}, headlines: ${headlines.length}, ` +
+      `teams: ${Object.keys(teams).length}`,
   );
 }
 
