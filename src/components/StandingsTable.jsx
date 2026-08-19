@@ -1,67 +1,100 @@
 const HIGHLIGHT_TLA = "MCI";
 
+function zoneColor(position) {
+  if (position <= 4) return "bg-emerald-500"; // Champions League
+  if (position === 5) return "bg-sky-400"; // Europa/Conference
+  if (position >= 18) return "bg-rose-500"; // Relegation
+  return "bg-transparent";
+}
+
 export default function StandingsTable({ standings, onSelectTeam }) {
   if (!standings?.length) {
     return <p className="text-sm text-epl-purple/60">Standings not available yet.</p>;
   }
 
   return (
-    <div className="overflow-x-auto -mx-4 px-4">
-      <table className="w-full min-w-[420px] text-sm border-collapse">
-        <thead>
-          <tr className="text-left text-xs uppercase tracking-wide text-epl-purple/50">
-            <th className="py-2 pr-2 w-6">#</th>
-            <th className="py-2 pr-2">Team</th>
-            <th className="py-2 px-1.5 text-center">P</th>
-            <th className="py-2 px-1.5 text-center">GD</th>
-            <th className="py-2 pl-1.5 text-center font-semibold">Pts</th>
-          </tr>
-        </thead>
-        <tbody>
-          {standings.map((row) => {
-            const isHighlighted = row.team.tla === HIGHLIGHT_TLA;
-            return (
-              <tr
-                key={row.team.id}
-                className={
-                  "border-t border-epl-purple/10 " +
-                  (isHighlighted ? "bg-epl-cyan/20" : "")
-                }
-              >
-                <td className="py-2 pr-2 text-epl-purple/60 tabular-nums">{row.position}</td>
-                <td className="py-2 pr-2">
-                  <button
-                    type="button"
-                    onClick={() => onSelectTeam(row.team)}
-                    className="flex items-center gap-2 text-left"
-                  >
-                    <img
-                      src={row.team.crest}
-                      alt=""
-                      className="h-5 w-5 shrink-0"
-                      loading="lazy"
-                    />
-                    <span
-                      className={
-                        "underline decoration-epl-purple/20 " + (isHighlighted ? "font-semibold" : "")
-                      }
+    <div>
+      <div className="overflow-x-auto -mx-4 px-4">
+        <table className="w-full min-w-[580px] text-sm border-collapse">
+          <thead>
+            <tr className="text-left text-[11px] uppercase tracking-wide text-epl-purple/50">
+              <th className="py-2 w-1.5 sticky left-0 bg-white" />
+              <th className="py-2 pr-2 w-6 sticky left-1.5 bg-white">#</th>
+              <th className="py-2 pr-3 sticky left-[26px] bg-white">Team</th>
+              <th className="py-2 px-1.5 text-center">P</th>
+              <th className="py-2 px-1.5 text-center">W</th>
+              <th className="py-2 px-1.5 text-center">D</th>
+              <th className="py-2 px-1.5 text-center">L</th>
+              <th className="py-2 px-1.5 text-center">GF</th>
+              <th className="py-2 px-1.5 text-center">GA</th>
+              <th className="py-2 px-1.5 text-center">GD</th>
+              <th className="py-2 pl-1.5 text-center font-semibold">Pts</th>
+            </tr>
+          </thead>
+          <tbody>
+            {standings.map((row) => {
+              const isHighlighted = row.team.tla === HIGHLIGHT_TLA;
+              const rowBg = isHighlighted ? "bg-[#e6fdff]" : "bg-white";
+              return (
+                <tr key={row.team.id} className={"border-t border-epl-purple/10 " + rowBg}>
+                  <td className={"sticky left-0 " + rowBg}>
+                    <div className={"h-full w-1.5 " + zoneColor(row.position)} />
+                  </td>
+                  <td className={"py-2 pr-2 text-epl-purple/60 tabular-nums sticky left-1.5 " + rowBg}>
+                    {row.position}
+                  </td>
+                  <td className={"py-2 pr-3 sticky left-[26px] " + rowBg}>
+                    <button
+                      type="button"
+                      onClick={() => onSelectTeam(row.team)}
+                      className="flex items-center gap-2 text-left"
                     >
-                      {row.team.shortName}
-                    </span>
-                  </button>
-                </td>
-                <td className="py-2 px-1.5 text-center tabular-nums">{row.playedGames}</td>
-                <td className="py-2 px-1.5 text-center tabular-nums">
-                  {row.goalDifference > 0 ? `+${row.goalDifference}` : row.goalDifference}
-                </td>
-                <td className="py-2 pl-1.5 text-center font-semibold tabular-nums">
-                  {row.points}
-                </td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+                      <img
+                        src={row.team.crest}
+                        alt=""
+                        className="h-6 w-6 shrink-0"
+                        loading="lazy"
+                      />
+                      <span
+                        className={
+                          "underline decoration-epl-purple/20 whitespace-nowrap " +
+                          (isHighlighted ? "font-bold" : "")
+                        }
+                      >
+                        {row.team.shortName}
+                      </span>
+                    </button>
+                  </td>
+                  <td className="py-2 px-1.5 text-center tabular-nums">{row.playedGames}</td>
+                  <td className="py-2 px-1.5 text-center tabular-nums">{row.won}</td>
+                  <td className="py-2 px-1.5 text-center tabular-nums">{row.draw}</td>
+                  <td className="py-2 px-1.5 text-center tabular-nums">{row.lost}</td>
+                  <td className="py-2 px-1.5 text-center tabular-nums">{row.goalsFor}</td>
+                  <td className="py-2 px-1.5 text-center tabular-nums">{row.goalsAgainst}</td>
+                  <td className="py-2 px-1.5 text-center tabular-nums">
+                    {row.goalDifference > 0 ? `+${row.goalDifference}` : row.goalDifference}
+                  </td>
+                  <td className="py-2 pl-1.5 text-center font-extrabold tabular-nums">
+                    {row.points}
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+
+      <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-epl-purple/60">
+        <span className="inline-flex items-center gap-1">
+          <span className="h-2 w-2 rounded-sm bg-emerald-500" /> Champions League
+        </span>
+        <span className="inline-flex items-center gap-1">
+          <span className="h-2 w-2 rounded-sm bg-sky-400" /> Europa/Conference
+        </span>
+        <span className="inline-flex items-center gap-1">
+          <span className="h-2 w-2 rounded-sm bg-rose-500" /> Relegation
+        </span>
+      </div>
     </div>
   );
 }

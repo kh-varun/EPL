@@ -4,12 +4,12 @@ export default function LastUpdated({ fetchedAt }) {
   if (!fetchedAt) return null;
 
   return (
-    <div className="rounded-lg bg-epl-purple/5 border border-epl-purple/10 px-4 py-2 text-sm text-epl-purple/80 flex items-center justify-between gap-2">
+    <div className="flex items-center justify-between gap-2 text-xs text-white/70">
       <span className="inline-flex items-center gap-1.5">
-        <span className="h-2 w-2 rounded-full bg-emerald-500" />
-        Last updated {formatRelativeUpdated(fetchedAt)}
+        <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_6px_2px_rgba(52,211,153,0.6)]" />
+        Updated {formatRelativeUpdated(fetchedAt)}
       </span>
-      <span className="text-xs text-epl-purple/50">{formatUpdatedTimestamp(fetchedAt)}</span>
+      <span>{formatUpdatedTimestamp(fetchedAt)}</span>
     </div>
   );
 }
