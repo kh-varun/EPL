@@ -1,0 +1,730 @@
+{
+  "fetchedAt": "2026-08-19T04:28:34.485Z",
+  "standings": [
+    {
+      "position": 1,
+      "team": {
+        "id": 1044,
+        "name": "AFC Bournemouth",
+        "shortName": "Bournemouth",
+        "tla": "BOU",
+        "crest": "https://crests.football-data.org/bournemouth.png"
+      },
+      "playedGames": 0,
+      "won": 0,
+      "draw": 0,
+      "lost": 0,
+      "points": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 1,
+      "team": {
+        "id": 57,
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "tla": "ARS",
+        "crest": "https://crests.football-data.org/57.png"
+      },
+      "playedGames": 0,
+      "won": 0,
+      "draw": 0,
+      "lost": 0,
+      "points": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 1,
+      "team": {
+        "id": 58,
+        "name": "Aston Villa FC",
+        "shortName": "Aston Villa",
+        "tla": "AVL",
+        "crest": "https://crests.football-data.org/58.png"
+      },
+      "playedGames": 0,
+      "won": 0,
+      "draw": 0,
+      "lost": 0,
+      "points": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 1,
+      "team": {
+        "id": 402,
+        "name": "Brentford FC",
+        "shortName": "Brentford",
+        "tla": "BRE",
+        "crest": "https://crests.football-data.org/402.png"
+      },
+      "playedGames": 0,
+      "won": 0,
+      "draw": 0,
+      "lost": 0,
+      "points": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 1,
+      "team": {
+        "id": 397,
+        "name": "Brighton & Hove Albion FC",
+        "shortName": "Brighton Hove",
+        "tla": "BHA",
+        "crest": "https://crests.football-data.org/397.png"
+      },
+      "playedGames": 0,
+      "won": 0,
+      "draw": 0,
+      "lost": 0,
+      "points": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 1,
+      "team": {
+        "id": 61,
+        "name": "Chelsea FC",
+        "shortName": "Chelsea",
+        "tla": "CHE",
+        "crest": "https://crests.football-data.org/61.png"
+      },
+      "playedGames": 0,
+      "won": 0,
+      "draw": 0,
+      "lost": 0,
+      "points": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 1,
+      "team": {
+        "id": 1076,
+        "name": "Coventry City FC",
+        "shortName": "Coventry City",
+        "tla": "COV",
+        "crest": "https://crests.football-data.org/1076.png"
+      },
+      "playedGames": 0,
+      "won": 0,
+      "draw": 0,
+      "lost": 0,
+      "points": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 1,
+      "team": {
+        "id": 354,
+        "name": "Crystal Palace FC",
+        "shortName": "Crystal Palace",
+        "tla": "CRY",
+        "crest": "https://crests.football-data.org/354.png"
+      },
+      "playedGames": 0,
+      "won": 0,
+      "draw": 0,
+      "lost": 0,
+      "points": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 1,
+      "team": {
+        "id": 62,
+        "name": "Everton FC",
+        "shortName": "Everton",
+        "tla": "EVE",
+        "crest": "https://crests.football-data.org/62.png"
+      },
+      "playedGames": 0,
+      "won": 0,
+      "draw": 0,
+      "lost": 0,
+      "points": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 1,
+      "team": {
+        "id": 63,
+        "name": "Fulham FC",
+        "shortName": "Fulham",
+        "tla": "FUL",
+        "crest": "https://crests.football-data.org/63.png"
+      },
+      "playedGames": 0,
+      "won": 0,
+      "draw": 0,
+      "lost": 0,
+      "points": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 1,
+      "team": {
+        "id": 322,
+        "name": "Hull City AFC",
+        "shortName": "Hull City",
+        "tla": "HUL",
+        "crest": "https://crests.football-data.org/322.png"
+      },
+      "playedGames": 0,
+      "won": 0,
+      "draw": 0,
+      "lost": 0,
+      "points": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 1,
+      "team": {
+        "id": 349,
+        "name": "Ipswich Town FC",
+        "shortName": "Ipswich Town",
+        "tla": "IPS",
+        "crest": "https://crests.football-data.org/349.png"
+      },
+      "playedGames": 0,
+      "won": 0,
+      "draw": 0,
+      "lost": 0,
+      "points": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 1,
+      "team": {
+        "id": 341,
+        "name": "Leeds United FC",
+        "shortName": "Leeds United",
+        "tla": "LEE",
+        "crest": "https://crests.football-data.org/341.png"
+      },
+      "playedGames": 0,
+      "won": 0,
+      "draw": 0,
+      "lost": 0,
+      "points": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 1,
+      "team": {
+        "id": 64,
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "tla": "LIV",
+        "crest": "https://crests.football-data.org/64.png"
+      },
+      "playedGames": 0,
+      "won": 0,
+      "draw": 0,
+      "lost": 0,
+      "points": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 1,
+      "team": {
+        "id": 65,
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "tla": "MCI",
+        "crest": "https://crests.football-data.org/65.png"
+      },
+      "playedGames": 0,
+      "won": 0,
+      "draw": 0,
+      "lost": 0,
+      "points": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 1,
+      "team": {
+        "id": 66,
+        "name": "Manchester United FC",
+        "shortName": "Man United",
+        "tla": "MUN",
+        "crest": "https://crests.football-data.org/66.png"
+      },
+      "playedGames": 0,
+      "won": 0,
+      "draw": 0,
+      "lost": 0,
+      "points": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 1,
+      "team": {
+        "id": 67,
+        "name": "Newcastle United FC",
+        "shortName": "Newcastle",
+        "tla": "NEW",
+        "crest": "https://crests.football-data.org/67.png"
+      },
+      "playedGames": 0,
+      "won": 0,
+      "draw": 0,
+      "lost": 0,
+      "points": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 1,
+      "team": {
+        "id": 351,
+        "name": "Nottingham Forest FC",
+        "shortName": "Nottingham",
+        "tla": "NOT",
+        "crest": "https://crests.football-data.org/351.png"
+      },
+      "playedGames": 0,
+      "won": 0,
+      "draw": 0,
+      "lost": 0,
+      "points": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 1,
+      "team": {
+        "id": 71,
+        "name": "Sunderland AFC",
+        "shortName": "Sunderland",
+        "tla": "SUN",
+        "crest": "https://crests.football-data.org/71.png"
+      },
+      "playedGames": 0,
+      "won": 0,
+      "draw": 0,
+      "lost": 0,
+      "points": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 1,
+      "team": {
+        "id": 73,
+        "name": "Tottenham Hotspur FC",
+        "shortName": "Tottenham",
+        "tla": "TOT",
+        "crest": "https://crests.football-data.org/73.png"
+      },
+      "playedGames": 0,
+      "won": 0,
+      "draw": 0,
+      "lost": 0,
+      "points": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "goalDifference": 0,
+      "form": null
+    }
+  ],
+  "lastResults": [],
+  "nextFixtures": [
+    {
+      "id": 560542,
+      "utcDate": "2026-08-21T19:00:00Z",
+      "status": "TIMED",
+      "matchday": 1,
+      "homeTeam": {
+        "id": 57,
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "tla": "ARS",
+        "crest": "https://crests.football-data.org/57.png"
+      },
+      "awayTeam": {
+        "id": 1076,
+        "name": "Coventry City FC",
+        "shortName": "Coventry City",
+        "tla": "COV",
+        "crest": "https://crests.football-data.org/1076.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      }
+    },
+    {
+      "id": 560543,
+      "utcDate": "2026-08-22T11:30:00Z",
+      "status": "TIMED",
+      "matchday": 1,
+      "homeTeam": {
+        "id": 322,
+        "name": "Hull City AFC",
+        "shortName": "Hull City",
+        "tla": "HUL",
+        "crest": "https://crests.football-data.org/322.png"
+      },
+      "awayTeam": {
+        "id": 66,
+        "name": "Manchester United FC",
+        "shortName": "Man United",
+        "tla": "MUN",
+        "crest": "https://crests.football-data.org/66.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      }
+    },
+    {
+      "id": 560544,
+      "utcDate": "2026-08-22T14:00:00Z",
+      "status": "TIMED",
+      "matchday": 1,
+      "homeTeam": {
+        "id": 349,
+        "name": "Ipswich Town FC",
+        "shortName": "Ipswich Town",
+        "tla": "IPS",
+        "crest": "https://crests.football-data.org/349.png"
+      },
+      "awayTeam": {
+        "id": 71,
+        "name": "Sunderland AFC",
+        "shortName": "Sunderland",
+        "tla": "SUN",
+        "crest": "https://crests.football-data.org/71.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      }
+    },
+    {
+      "id": 560545,
+      "utcDate": "2026-08-22T14:00:00Z",
+      "status": "TIMED",
+      "matchday": 1,
+      "homeTeam": {
+        "id": 351,
+        "name": "Nottingham Forest FC",
+        "shortName": "Nottingham",
+        "tla": "NOT",
+        "crest": "https://crests.football-data.org/351.png"
+      },
+      "awayTeam": {
+        "id": 341,
+        "name": "Leeds United FC",
+        "shortName": "Leeds United",
+        "tla": "LEE",
+        "crest": "https://crests.football-data.org/341.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      }
+    },
+    {
+      "id": 560546,
+      "utcDate": "2026-08-22T14:00:00Z",
+      "status": "TIMED",
+      "matchday": 1,
+      "homeTeam": {
+        "id": 62,
+        "name": "Everton FC",
+        "shortName": "Everton",
+        "tla": "EVE",
+        "crest": "https://crests.football-data.org/62.png"
+      },
+      "awayTeam": {
+        "id": 354,
+        "name": "Crystal Palace FC",
+        "shortName": "Crystal Palace",
+        "tla": "CRY",
+        "crest": "https://crests.football-data.org/354.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      }
+    },
+    {
+      "id": 560547,
+      "utcDate": "2026-08-22T16:30:00Z",
+      "status": "TIMED",
+      "matchday": 1,
+      "homeTeam": {
+        "id": 402,
+        "name": "Brentford FC",
+        "shortName": "Brentford",
+        "tla": "BRE",
+        "crest": "https://crests.football-data.org/402.png"
+      },
+      "awayTeam": {
+        "id": 73,
+        "name": "Tottenham Hotspur FC",
+        "shortName": "Tottenham",
+        "tla": "TOT",
+        "crest": "https://crests.football-data.org/73.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      }
+    },
+    {
+      "id": 560548,
+      "utcDate": "2026-08-23T13:00:00Z",
+      "status": "TIMED",
+      "matchday": 1,
+      "homeTeam": {
+        "id": 65,
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "tla": "MCI",
+        "crest": "https://crests.football-data.org/65.png"
+      },
+      "awayTeam": {
+        "id": 1044,
+        "name": "AFC Bournemouth",
+        "shortName": "Bournemouth",
+        "tla": "BOU",
+        "crest": "https://crests.football-data.org/bournemouth.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      }
+    },
+    {
+      "id": 560549,
+      "utcDate": "2026-08-23T13:00:00Z",
+      "status": "TIMED",
+      "matchday": 1,
+      "homeTeam": {
+        "id": 397,
+        "name": "Brighton & Hove Albion FC",
+        "shortName": "Brighton Hove",
+        "tla": "BHA",
+        "crest": "https://crests.football-data.org/397.png"
+      },
+      "awayTeam": {
+        "id": 58,
+        "name": "Aston Villa FC",
+        "shortName": "Aston Villa",
+        "tla": "AVL",
+        "crest": "https://crests.football-data.org/58.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      }
+    },
+    {
+      "id": 560550,
+      "utcDate": "2026-08-23T15:30:00Z",
+      "status": "TIMED",
+      "matchday": 1,
+      "homeTeam": {
+        "id": 67,
+        "name": "Newcastle United FC",
+        "shortName": "Newcastle",
+        "tla": "NEW",
+        "crest": "https://crests.football-data.org/67.png"
+      },
+      "awayTeam": {
+        "id": 64,
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "tla": "LIV",
+        "crest": "https://crests.football-data.org/64.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      }
+    },
+    {
+      "id": 560551,
+      "utcDate": "2026-08-24T19:00:00Z",
+      "status": "TIMED",
+      "matchday": 1,
+      "homeTeam": {
+        "id": 63,
+        "name": "Fulham FC",
+        "shortName": "Fulham",
+        "tla": "FUL",
+        "crest": "https://crests.football-data.org/63.png"
+      },
+      "awayTeam": {
+        "id": 61,
+        "name": "Chelsea FC",
+        "shortName": "Chelsea",
+        "tla": "CHE",
+        "crest": "https://crests.football-data.org/61.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      }
+    }
+  ],
+  "headlines": [
+    {
+      "title": "Premier League 2026-27 preview No 15: Manchester City",
+      "link": "https://www.theguardian.com/football/2026/aug/19/premier-league-2026-27-preview-no-15-manchester-city",
+      "pubDate": "Tue, 18 Aug 2026 23:01:03 GMT",
+      "source": "The Guardian"
+    },
+    {
+      "title": "In Zavier Gozo, Crystal Palace land a US prospect living up to the hype",
+      "link": "https://www.theguardian.com/football/2026/aug/18/zavier-gozo-crystal-palace-mls-real-salt-lake-transfer",
+      "pubDate": "Tue, 18 Aug 2026 21:32:42 GMT",
+      "source": "The Guardian"
+    },
+    {
+      "title": "Palace sign United States prospect Gozo",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cpq80q88dyqo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Tue, 18 Aug 2026 21:26:12 GMT",
+      "source": "BBC Sport"
+    },
+    {
+      "title": "Al Hilal target England's Kane - Wednesday's gossip",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c70gdd61kk4o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Tue, 18 Aug 2026 21:02:44 GMT",
+      "source": "BBC Sport"
+    },
+    {
+      "title": "Brighton sign Canada striker David on loan",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c30450z6pmmo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Tue, 18 Aug 2026 20:43:01 GMT",
+      "source": "BBC Sport"
+    },
+    {
+      "title": "Serie A's Trepy out of coma after pool rescue",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cp8xdx7ypr6o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Tue, 18 Aug 2026 20:37:22 GMT",
+      "source": "BBC Sport"
+    },
+    {
+      "title": "Man found dead at Charlton Athletic's ground",
+      "link": "https://www.bbc.co.uk/news/articles/c934e3pgp9lo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Tue, 18 Aug 2026 20:14:04 GMT",
+      "source": "BBC Sport"
+    },
+    {
+      "title": "Jamal Musiala says ‘treatable seizures’ are reason for two collapses in four days",
+      "link": "https://www.theguardian.com/football/2026/aug/18/jamal-musiala-treatable-seizures-statement-collapses-bayern-munich",
+      "pubDate": "Tue, 18 Aug 2026 20:08:04 GMT",
+      "source": "The Guardian"
+    },
+    {
+      "title": "Musiala collapses during match for second time in four-day period",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c330kg5xm8no?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Tue, 18 Aug 2026 19:57:08 GMT",
+      "source": "BBC Sport"
+    },
+    {
+      "title": "Barcelona steal Rodri away from Real Madrid and plan to make him new Busquets",
+      "link": "https://www.theguardian.com/football/2026/aug/18/barcelona-snatch-rodri-from-madrid-and-make-him-new-busquets",
+      "pubDate": "Tue, 18 Aug 2026 19:49:19 GMT",
+      "source": "The Guardian"
+    },
+    {
+      "title": "Irish striker Parrott on brink of Real Betis move",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c935vrgrn0vo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Tue, 18 Aug 2026 19:25:40 GMT",
+      "source": "BBC Sport"
+    },
+    {
+      "title": "Hull City interested in Japan winger Nakamura",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c5ywee6y2qlo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Tue, 18 Aug 2026 19:09:31 GMT",
+      "source": "BBC Sport"
+    },
+    {
+      "title": "Pep’s final act of passion: Amazon’s revealing Guardiola series pulls no punches",
+      "link": "https://www.theguardian.com/football/2026/aug/18/peps-final-act-of-passion-amazons-revealing-guardiola-series-pulls-no-punches",
+      "pubDate": "Tue, 18 Aug 2026 19:00:53 GMT",
+      "source": "The Guardian"
+    },
+    {
+      "title": "Jeff Bezos consortium could be majority Liverpool shareholder within a year",
+      "link": "https://www.theguardian.com/football/2026/aug/18/jeff-bezos-liverpool-1892-holdings-fenway-bid",
+      "pubDate": "Tue, 18 Aug 2026 18:49:29 GMT",
+      "source": "The Guardian"
+    },
+    {
+      "title": "Rodri ready for 'excitement again' after Barca complete £65m deal",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c2k7w3vwv5yo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Tue, 18 Aug 2026 18:14:01 GMT",
+      "source": "BBC Sport"
+    }
+  ]
+}
