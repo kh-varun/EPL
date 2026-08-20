@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-20T06:09:04.813Z",
+  "fetchedAt": "2026-08-20T06:21:37.233Z",
   "standings": [
     {
       "position": 1,
@@ -763,7 +763,7 @@
   ],
   "teams": {
     "57": {
-      "coach": null,
+      "coach": "F. Ljungberg",
       "squad": [
         {
           "id": 3189,
@@ -978,7 +978,7 @@
       ]
     },
     "58": {
-      "coach": null,
+      "coach": "Unai Emery",
       "squad": [
         {
           "id": 3141,
@@ -1207,7 +1207,7 @@
       ]
     },
     "61": {
-      "coach": null,
+      "coach": "Xabi Alonso",
       "squad": [
         {
           "id": 135555,
@@ -1506,7 +1506,7 @@
       ]
     },
     "62": {
-      "coach": null,
+      "coach": "D. Moyes",
       "squad": [
         {
           "id": 3309,
@@ -1686,7 +1686,7 @@
       ]
     },
     "63": {
-      "coach": null,
+      "coach": "Alvaro Arbeloa",
       "squad": [
         {
           "id": 3174,
@@ -1866,7 +1866,7 @@
       ]
     },
     "64": {
-      "coach": null,
+      "coach": "J. Klopp",
       "squad": [
         {
           "id": 1795,
@@ -2595,7 +2595,7 @@
       ]
     },
     "67": {
-      "coach": null,
+      "coach": "E. Howe",
       "squad": [
         {
           "id": 3310,
@@ -2803,7 +2803,7 @@
       ]
     },
     "71": {
-      "coach": null,
+      "coach": "R. Le Bris",
       "squad": [
         {
           "id": 4292,
@@ -3032,7 +3032,7 @@
       ]
     },
     "73": {
-      "coach": null,
+      "coach": "T. Frank",
       "squad": [
         {
           "id": 3086,
@@ -3296,7 +3296,7 @@
       ]
     },
     "322": {
-      "coach": null,
+      "coach": "T. Walter",
       "squad": [
         {
           "id": 3308,
@@ -3546,7 +3546,7 @@
       ]
     },
     "341": {
-      "coach": null,
+      "coach": "S. Gardner",
       "squad": [
         {
           "id": 1331,
@@ -3768,7 +3768,7 @@
       ]
     },
     "349": {
-      "coach": null,
+      "coach": "J. Sheehan",
       "squad": [
         {
           "id": 3954,
@@ -4025,7 +4025,7 @@
       ]
     },
     "351": {
-      "coach": null,
+      "coach": "S. Dyche",
       "squad": [
         {
           "id": 1299,
@@ -4240,7 +4240,7 @@
       ]
     },
     "354": {
-      "coach": null,
+      "coach": "R. Hodgson",
       "squad": [
         {
           "id": 5457,
@@ -4754,7 +4754,7 @@
       ]
     },
     "402": {
-      "coach": null,
+      "coach": "Keith Andrews",
       "squad": [
         {
           "id": 4419,
@@ -5004,7 +5004,7 @@
       ]
     },
     "1044": {
-      "coach": null,
+      "coach": "J. Woodgate",
       "squad": [
         {
           "id": 8079,
