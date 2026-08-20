@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-20T11:03:41.063Z",
+  "fetchedAt": "2026-08-20T11:41:45.861Z",
   "odds": {
     "560542": {
       "eventTicker": "KXEPLGAME-26AUG21ARSCOV",
@@ -11,7 +11,7 @@
       },
       "away": {
         "label": "Coventry City",
-        "probability": 6,
+        "probability": 5,
         "ticker": "KXEPLGAME-26AUG21ARSCOV-COV"
       },
       "draw": {
