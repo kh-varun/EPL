@@ -122,9 +122,17 @@ async function findApiFootballTeamId(ourTeam) {
   }
 }
 
+// /coachs?team= returns every coach with a career entry at that team, not
+// just the current one (confirmed live - Arsenal came back with Ljungberg,
+// a 2019 caretaker, ahead of the actual current manager). Pick the one whose
+// career entry for this team has no end date; fall back to the first result
+// if none look current rather than than returning nothing.
 async function fetchCurrentCoach(apiFootballTeamId) {
   const coaches = await apiFootballRequestThrottled(`/coachs?team=${apiFootballTeamId}`);
-  return coaches[0]?.name ?? null;
+  const current = coaches.find((coach) =>
+    (coach.career ?? []).some((c) => c.team?.id === apiFootballTeamId && !c.end),
+  );
+  return current?.name ?? coaches[0]?.name ?? null;
 }
 
 function mapTeam(team) {
@@ -218,12 +226,13 @@ async function fetchSquads(standingsTeams) {
         }))
         .sort((a, b) => POSITION_ORDER.indexOf(a.position) - POSITION_ORDER.indexOf(b.position));
 
-      // API-Football's free tier can look up the current manager, since
-      // football-data.org's free tier never returns one. Optional: if
-      // there's no key, or the lookup fails, coach just stays whatever
-      // football-data.org gave us (usually null) - squads are unaffected.
-      let coach = data.coach?.name ?? null;
-      if (!coach && API_FOOTBALL_KEY) {
+      // football-data.org's free tier does sometimes return a coach name,
+      // but it's frequently stale (confirmed live - Chelsea, Liverpool and
+      // Fulham all came back with managers who left years ago). API-Football
+      // is looked up first when a key is available; football-data.org's
+      // value is only a fallback if that lookup fails outright.
+      let coach = null;
+      if (API_FOOTBALL_KEY) {
         try {
           const apiFootballId = await findApiFootballTeamId(ourTeam);
           if (apiFootballId) coach = await fetchCurrentCoach(apiFootballId);
@@ -231,6 +240,7 @@ async function fetchSquads(standingsTeams) {
           console.error(`  could not fetch coach for team ${teamId}: ${err.message}`);
         }
       }
+      if (!coach) coach = data.coach?.name ?? null;
 
       teams[teamId] = { coach, squad };
     } catch (err) {

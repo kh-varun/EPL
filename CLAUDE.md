@@ -39,8 +39,15 @@ these scripts.
   the real reason in the response body — `footballDataRequest` in
   `fetch.mjs` logs that body, don't strip it back down to just the status
   code.
-- **football-data.org's free tier never returns a coach name** via
-  `/teams/{id}` — that's why `fetch.mjs` falls back to API-Football.
+- **football-data.org's free tier does return a `coach` field, but it's
+  often stale** via `/teams/{id}` (confirmed live — it returned Ljungberg
+  for Arsenal, Klopp for Liverpool, Xabi Alonso for Chelsea, all long gone).
+  `fetch.mjs` always prefers the API-Football lookup when a key is set and
+  only falls back to football-data.org's value if that lookup fails.
+- **API-Football's `/coachs?team=` returns every coach who's ever had a
+  career entry at that team, not just the current one** — `fetchCurrentCoach`
+  in `fetch.mjs` picks the entry whose career record for that team has no
+  `end` date rather than trusting the first result.
 - Rate limits: football-data.org free tier is 10 req/min; API-Football
   free tier is 10 req/min / 100 req/day. Every script throttles with a
   ~6.5s delay between calls — don't remove it, and be aware that adding
