@@ -36,7 +36,12 @@ async function footballDataRequest(endpoint) {
     headers: { "X-Auth-Token": FOOTBALL_DATA_TOKEN },
   });
   if (!res.ok) {
-    throw new Error(`football-data.org ${endpoint} failed: ${res.status} ${res.statusText}`);
+    // football-data.org returns 400 (not 401/403) for a bad/malformed token,
+    // and its response body explains why - surface it instead of just the
+    // status code, or a bad-token misconfiguration looks identical to any
+    // other API error in the logs.
+    const body = await res.text().catch(() => "");
+    throw new Error(`football-data.org ${endpoint} failed: ${res.status} ${res.statusText} ${body}`);
   }
   return res.json();
 }
