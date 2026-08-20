@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-20T15:18:01.326Z",
+  "fetchedAt": "2026-08-20T15:58:32.128Z",
   "odds": {
     "560542": {
       "eventTicker": "KXEPLGAME-26AUG21ARSCOV",
@@ -149,7 +149,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 27,
+        "probability": 26,
         "ticker": "KXEPLGAME-26AUG23BRIAVL-TIE"
       }
     },
@@ -182,7 +182,7 @@
       },
       "away": {
         "label": "Chelsea",
-        "probability": 51,
+        "probability": 52,
         "ticker": "KXEPLGAME-26AUG24FULCFC-CFC"
       },
       "draw": {
