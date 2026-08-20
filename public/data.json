@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-20T06:33:30.222Z",
+  "fetchedAt": "2026-08-20T06:48:18.247Z",
   "standings": [
     {
       "position": 1,
@@ -2595,7 +2595,7 @@
       ]
     },
     "67": {
-      "coach": "E. Howe",
+      "coach": null,
       "squad": [
         {
           "id": 3310,
@@ -2803,7 +2803,7 @@
       ]
     },
     "71": {
-      "coach": "R. Le Bris",
+      "coach": null,
       "squad": [
         {
           "id": 4292,
@@ -3032,7 +3032,7 @@
       ]
     },
     "73": {
-      "coach": "T. Frank",
+      "coach": null,
       "squad": [
         {
           "id": 3086,
@@ -4025,7 +4025,7 @@
       ]
     },
     "351": {
-      "coach": "S. Dyche",
+      "coach": null,
       "squad": [
         {
           "id": 1299,
