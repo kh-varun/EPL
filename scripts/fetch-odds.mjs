@@ -125,6 +125,11 @@ function classifyMarket(market, fixture) {
   return null;
 }
 
+// Once per run, dump one full market object verbatim so a classification
+// failure is diagnosable from the Actions log - which field actually holds
+// the outcome name is the thing we can't verify without a live response.
+let dumpedSampleMarket = false;
+
 async function buildOddsForEvent(event, fixture) {
   const markets = event.markets?.length ? event.markets : await fetchMarketsForEvent(event.event_ticker);
 
@@ -144,7 +149,17 @@ async function buildOddsForEvent(event, fixture) {
     };
   }
 
-  if (!result.home && !result.away && !result.draw) return null;
+  if (!result.home && !result.away && !result.draw) {
+    console.log(
+      `  matched "${event.title}" to a fixture but couldn't classify any of its ` +
+        `${markets.length} market(s)`,
+    );
+    if (!dumpedSampleMarket && markets.length > 0) {
+      console.log(`  sample market object: ${JSON.stringify(markets[0])}`);
+      dumpedSampleMarket = true;
+    }
+    return null;
+  }
 
   const slug = event.event_ticker.toLowerCase();
   result.kalshiUrl = `https://kalshi.com/markets/${SERIES_TICKER.toLowerCase()}/english-premier-league-game/${slug}`;
