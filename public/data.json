@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-20T06:21:37.233Z",
+  "fetchedAt": "2026-08-20T06:33:30.222Z",
   "standings": [
     {
       "position": 1,
@@ -637,6 +637,14 @@
   ],
   "headlines": [
     {
+      "title": "Five in Five: Football quiz No 4",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c5yr3w58qnlo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Thu, 20 Aug 2026 06:19:41 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b0a0/live/25455e60-95ad-11f1-870d-5d08c49babb2.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
       "title": "Who am I? Guess Premier League star No 31",
       "link": "https://www.bbc.co.uk/sport/football/articles/cj36grvmrz4o?at_medium=RSS&at_campaign=rss",
       "pubDate": "Thu, 20 Aug 2026 05:57:38 GMT",
@@ -751,19 +759,11 @@
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8fea/live/91b7b210-9c14-11f1-b109-879e35c24276.jpg",
       "source": "BBC Sport",
       "teams": []
-    },
-    {
-      "title": "Celje fight back to earn draw against Slovan Bratislava",
-      "link": "https://www.bbc.co.uk/sport/football/videos/crl7673348xo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 19 Aug 2026 21:22:24 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3e4e/live/4bb104c0-9c13-11f1-a291-b542ee92de7c.jpg",
-      "source": "BBC Sport",
-      "teams": []
     }
   ],
   "teams": {
     "57": {
-      "coach": "F. Ljungberg",
+      "coach": "Mikel Arteta",
       "squad": [
         {
           "id": 3189,
@@ -1866,7 +1866,7 @@
       ]
     },
     "64": {
-      "coach": "J. Klopp",
+      "coach": "A. Slot",
       "squad": [
         {
           "id": 1795,
@@ -3296,7 +3296,7 @@
       ]
     },
     "322": {
-      "coach": "T. Walter",
+      "coach": "S. Jakirović",
       "squad": [
         {
           "id": 3308,
@@ -4240,7 +4240,7 @@
       ]
     },
     "354": {
-      "coach": "R. Hodgson",
+      "coach": "O. Glasner",
       "squad": [
         {
           "id": 5457,
@@ -5004,7 +5004,7 @@
       ]
     },
     "1044": {
-      "coach": "J. Woodgate",
+      "coach": "J. Tindall",
       "squad": [
         {
           "id": 8079,
