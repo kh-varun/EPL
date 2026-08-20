@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-20T05:48:40.364Z",
+  "fetchedAt": "2026-08-20T06:09:04.813Z",
   "standings": [
     {
       "position": 1,
@@ -637,6 +637,14 @@
   ],
   "headlines": [
     {
+      "title": "Who am I? Guess Premier League star No 31",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cj36grvmrz4o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Thu, 20 Aug 2026 05:57:38 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/572f/live/e6ff1b60-85b1-11f1-bee8-53ce494e1abc.png",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
       "title": "Premier League predictions 2026-27: BBC Sport pundits pick their top four",
       "link": "https://www.bbc.co.uk/sport/football/articles/cp8edryd7plo?at_medium=RSS&at_campaign=rss",
       "pubDate": "Thu, 20 Aug 2026 05:24:16 GMT",
@@ -750,14 +758,6 @@
       "pubDate": "Wed, 19 Aug 2026 21:22:24 GMT",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3e4e/live/4bb104c0-9c13-11f1-a291-b542ee92de7c.jpg",
       "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "‘Believe your eyes’: Masters says Premier League’s integrity cannot be doubted",
-      "link": "https://www.theguardian.com/football/2026/aug/19/referees-chief-howard-webb-really-troubled-by-folarin-balogun-escaping-world-cup-ban",
-      "pubDate": "Wed, 19 Aug 2026 21:08:21 GMT",
-      "image": "https://i.guim.co.uk/img/media/02138692f76e7596bb5340a783939e38bf736a8b/483_234_2459_1968/master/2459.jpg?width=460&quality=85&auto=format&fit=max&s=a3490b4f11fbd25f89c19bdfbb5adfb7",
-      "source": "The Guardian",
       "teams": []
     }
   ],
