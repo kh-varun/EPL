@@ -24,7 +24,6 @@ const API_FOOTBALL_KEY = process.env.API_FOOTBALL_KEY;
 
 const FOOTBALL_DATA_BASE = "https://api.football-data.org/v4";
 const API_FOOTBALL_BASE = "https://v3.football.api-sports.io";
-const PL_LEAGUE_ID = 39; // API-Football's id for the Premier League
 
 const RSS_FEEDS = [
   { source: "BBC Sport", url: "http://feeds.bbci.co.uk/sport/football/rss.xml" },
@@ -103,22 +102,23 @@ function teamsLikelyMatch(ourTeam, theirName) {
   );
 }
 
-// Builds a football-data.org team id -> API-Football team id map via one
-// API call, so per-team coach lookups don't each need their own team-search.
-async function buildApiFootballTeamMap(ourTeams, season) {
+// Resolves our team to its API-Football id via a name search rather than
+// /teams?league=&season=, which the free plan restricts to a handful of
+// past seasons ("Free plans do not have access to this season, try from
+// 2022 to 2024" - confirmed against the live API) and would silently miss
+// this season's newly promoted clubs even for an allowed year. A team's
+// identity doesn't change season to season, so a plain name search sidesteps
+// the restriction entirely and covers every club, promoted or not.
+async function findApiFootballTeamId(ourTeam) {
   try {
-    const apiTeams = await apiFootballRequestThrottled(
-      `/teams?league=${PL_LEAGUE_ID}&season=${season}`,
+    const results = await apiFootballRequestThrottled(
+      `/teams?search=${encodeURIComponent(ourTeam.shortName)}`,
     );
-    const map = {};
-    for (const ourTeam of ourTeams) {
-      const match = apiTeams.find(({ team }) => teamsLikelyMatch(ourTeam, team.name));
-      if (match) map[ourTeam.id] = match.team.id;
-    }
-    return map;
+    const match = results.find(({ team }) => teamsLikelyMatch(ourTeam, team.name));
+    return match?.team.id ?? null;
   } catch (err) {
-    console.error(`Could not fetch API-Football team list: ${err.message}`);
-    return {};
+    console.error(`  could not resolve API-Football id for ${ourTeam.name}: ${err.message}`);
+    return null;
   }
 }
 
@@ -204,16 +204,6 @@ async function fetchTeamWithRetry(teamId, attempts = 3) {
 async function fetchSquads(standingsTeams) {
   const teams = {};
 
-  // API-Football's free tier can look up the current manager, since
-  // football-data.org's free tier never returns one. Optional: if there's
-  // no key, or the lookup fails, coach just stays whatever football-data.org
-  // gave us (usually null) - squads are unaffected either way.
-  // API-Football identifies a season by its starting year, which for
-  // Jan-Jun is the previous calendar year.
-  const now = new Date();
-  const season = now.getUTCMonth() < 6 ? now.getUTCFullYear() - 1 : now.getUTCFullYear();
-  const apiFootballTeamIds = API_FOOTBALL_KEY ? await buildApiFootballTeamMap(standingsTeams, season) : {};
-
   for (const ourTeam of standingsTeams) {
     const teamId = ourTeam.id;
     try {
@@ -228,11 +218,15 @@ async function fetchSquads(standingsTeams) {
         }))
         .sort((a, b) => POSITION_ORDER.indexOf(a.position) - POSITION_ORDER.indexOf(b.position));
 
+      // API-Football's free tier can look up the current manager, since
+      // football-data.org's free tier never returns one. Optional: if
+      // there's no key, or the lookup fails, coach just stays whatever
+      // football-data.org gave us (usually null) - squads are unaffected.
       let coach = data.coach?.name ?? null;
-      const apiFootballId = apiFootballTeamIds[teamId];
-      if (!coach && apiFootballId) {
+      if (!coach && API_FOOTBALL_KEY) {
         try {
-          coach = await fetchCurrentCoach(apiFootballId);
+          const apiFootballId = await findApiFootballTeamId(ourTeam);
+          if (apiFootballId) coach = await fetchCurrentCoach(apiFootballId);
         } catch (err) {
           console.error(`  could not fetch coach for team ${teamId}: ${err.message}`);
         }
