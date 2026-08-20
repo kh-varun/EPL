@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-20T13:10:56.006Z",
+  "fetchedAt": "2026-08-20T13:59:26.523Z",
   "odds": {
     "560542": {
       "eventTicker": "KXEPLGAME-26AUG21ARSCOV",
@@ -11,7 +11,7 @@
       },
       "away": {
         "label": "Coventry City",
-        "probability": 6,
+        "probability": 5,
         "ticker": "KXEPLGAME-26AUG21ARSCOV-COV"
       },
       "draw": {
@@ -54,7 +54,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 30,
+        "probability": 29,
         "ticker": "KXEPLGAME-26AUG22IPSSUN-TIE"
       }
     },
@@ -82,7 +82,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug22evecry",
       "home": {
         "label": "Everton",
-        "probability": 44,
+        "probability": 43,
         "ticker": "KXEPLGAME-26AUG22EVECRY-EVE"
       },
       "away": {
@@ -182,7 +182,7 @@
       },
       "away": {
         "label": "Chelsea",
-        "probability": 52,
+        "probability": 50,
         "ticker": "KXEPLGAME-26AUG24FULCFC-CFC"
       },
       "draw": {
