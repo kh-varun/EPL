@@ -27,6 +27,7 @@ jobs:
       - name: Fetch latest PL data
         env:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
         run: npm run fetch-data
 
       - name: Commit data.json if changed

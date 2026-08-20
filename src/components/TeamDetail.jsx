@@ -85,7 +85,9 @@ export default function TeamDetail({ team, teamData, lineups, history, onClose }
           <img src={team.crest} alt="" className="h-9 w-9 shrink-0 drop-shadow" />
           <div className="min-w-0">
             <h1 className="text-lg font-extrabold tracking-tight truncate">{team.name}</h1>
-            {teamData?.coach && <p className="text-xs text-white/70">Coach: {teamData.coach}</p>}
+            {teamData?.coach && (
+              <p className="text-xs text-white/70">Manager: {teamData.coach}</p>
+            )}
           </div>
         </div>
       </header>
