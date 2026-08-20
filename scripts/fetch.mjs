@@ -93,13 +93,18 @@ const NAME_ALIASES = {
   "wolverhampton wanderers": ["wolves"],
 };
 
+// Word-boundary match, not raw substring - a plain `includes()` check matched
+// "Man City" against "Techiman City" and "Man United" against "Cwmamman
+// United FC" (confirmed live), since "man city"/"man united" are literal
+// substrings of those unrelated clubs' names once you cross a word boundary.
 function teamsLikelyMatch(ourTeam, theirName) {
   const ours = [normalizeTeamName(ourTeam.name), normalizeTeamName(ourTeam.shortName)];
   const withAliases = ours.flatMap((name) => [name, ...(NAME_ALIASES[name] ?? [])]);
-  const theirs = normalizeTeamName(theirName);
-  return withAliases.some(
-    (name) => name === theirs || theirs.includes(name) || name.includes(theirs),
-  );
+  const theirWords = new Set(normalizeTeamName(theirName).split(" "));
+  return withAliases.some((name) => {
+    const ourWords = name.split(" ").filter(Boolean);
+    return ourWords.length > 0 && ourWords.every((word) => theirWords.has(word));
+  });
 }
 
 // Resolves our team to its API-Football id via a name search rather than
@@ -109,22 +114,44 @@ function teamsLikelyMatch(ourTeam, theirName) {
 // this season's newly promoted clubs even for an allowed year. A team's
 // identity doesn't change season to season, so a plain name search sidesteps
 // the restriction entirely and covers every club, promoted or not.
+//
+// Tries shortName first, then the full name - API-Football's search seems
+// to do its own raw substring match server-side, so a two-word shortName
+// like "Man City"/"Man United" returns nothing useful (it isn't a literal
+// substring of "Manchester City"/"Manchester United") and needs the fuller
+// name to surface the real club.
 async function findApiFootballTeamId(ourTeam) {
-  try {
-    const results = await apiFootballRequestThrottled(
-      `/teams?search=${encodeURIComponent(ourTeam.shortName)}`,
-    );
-    const match = results.find(({ team }) => teamsLikelyMatch(ourTeam, team.name));
-    return match?.team.id ?? null;
-  } catch (err) {
-    console.error(`  could not resolve API-Football id for ${ourTeam.name}: ${err.message}`);
-    return null;
+  const searchTerms = [...new Set([ourTeam.shortName, ourTeam.name])];
+  for (const term of searchTerms) {
+    try {
+      const results = await apiFootballRequestThrottled(`/teams?search=${encodeURIComponent(term)}`);
+      const match = results.find(({ team }) => teamsLikelyMatch(ourTeam, team.name));
+      console.log(
+        `  ${ourTeam.name}: search "${term}" candidates [${results.map((r) => r.team.name).join(", ")}] -> matched "${match?.team.name ?? "none"}" (id ${match?.team.id ?? "n/a"})`,
+      );
+      if (match) return match.team.id;
+    } catch (err) {
+      console.error(`  could not resolve API-Football id for ${ourTeam.name}: ${err.message}`);
+      return null;
+    }
   }
+  return null;
 }
 
+// /coachs?team= returns every coach with a career entry at that team, not
+// just the current one (confirmed live - Arsenal came back with Ljungberg,
+// a 2019 caretaker, ahead of the actual current manager). Pick the one whose
+// career entry for this team has no end date; fall back to the first result
+// if none look current rather than returning nothing.
 async function fetchCurrentCoach(apiFootballTeamId) {
   const coaches = await apiFootballRequestThrottled(`/coachs?team=${apiFootballTeamId}`);
-  return coaches[0]?.name ?? null;
+  console.log(
+    `  team ${apiFootballTeamId}: /coachs candidates [${coaches.map((c) => c.name).join(", ")}]`,
+  );
+  const current = coaches.find((coach) =>
+    (coach.career ?? []).some((c) => c.team?.id === apiFootballTeamId && !c.end),
+  );
+  return current?.name ?? coaches[0]?.name ?? null;
 }
 
 function mapTeam(team) {
@@ -218,12 +245,13 @@ async function fetchSquads(standingsTeams) {
         }))
         .sort((a, b) => POSITION_ORDER.indexOf(a.position) - POSITION_ORDER.indexOf(b.position));
 
-      // API-Football's free tier can look up the current manager, since
-      // football-data.org's free tier never returns one. Optional: if
-      // there's no key, or the lookup fails, coach just stays whatever
-      // football-data.org gave us (usually null) - squads are unaffected.
-      let coach = data.coach?.name ?? null;
-      if (!coach && API_FOOTBALL_KEY) {
+      // football-data.org's free tier does sometimes return a coach name,
+      // but it's frequently stale (confirmed live - Chelsea, Liverpool and
+      // Fulham all came back with managers who left years ago). API-Football
+      // is looked up first when a key is available; football-data.org's
+      // value is only a fallback if that lookup fails outright.
+      let coach = null;
+      if (API_FOOTBALL_KEY) {
         try {
           const apiFootballId = await findApiFootballTeamId(ourTeam);
           if (apiFootballId) coach = await fetchCurrentCoach(apiFootballId);
@@ -231,6 +259,7 @@ async function fetchSquads(standingsTeams) {
           console.error(`  could not fetch coach for team ${teamId}: ${err.message}`);
         }
       }
+      if (!coach) coach = data.coach?.name ?? null;
 
       teams[teamId] = { coach, squad };
     } catch (err) {

@@ -39,13 +39,41 @@ these scripts.
   the real reason in the response body — `footballDataRequest` in
   `fetch.mjs` logs that body, don't strip it back down to just the status
   code.
-- **football-data.org's free tier never returns a coach name** via
-  `/teams/{id}` — that's why `fetch.mjs` falls back to API-Football.
+- **football-data.org's free tier does return a `coach` field, but it's
+  often stale** via `/teams/{id}` (confirmed live — it returned Ljungberg
+  for Arsenal, Klopp for Liverpool, Xabi Alonso for Chelsea, all long gone).
+  `fetch.mjs` always prefers the API-Football lookup when a key is set and
+  only falls back to football-data.org's value if that lookup fails.
+- **API-Football's `/coachs?team=` returns every coach who's ever had a
+  career entry at that team, not just the current one** — `fetchCurrentCoach`
+  in `fetch.mjs` picks the entry whose career record for that team has no
+  `end` date rather than trusting the first result. Even with that filter,
+  **API-Football's own coach data is sometimes just wrong** (confirmed
+  live: Chelsea's real manager, Maresca, is in the candidate list but his
+  career entry isn't flagged as current, so the code falls back to the
+  first entry, Xabi Alonso; Fulham's `/coachs` response doesn't contain
+  Marco Silva at all, only one unrelated name) — this is a data-quality
+  gap on API-Football's end for those two clubs specifically, not
+  something fixable in our code.
+- **API-Football's `/teams?search=` does its own raw substring match
+  server-side** — searching "Man City" or "Man United" (the shortNames)
+  returns nothing useful because those two-word shortNames aren't literal
+  substrings of "Manchester City"/"Manchester United" ("chester" sits in
+  between). `findApiFootballTeamId` tries the fuller team name as a second
+  search term when the shortName search doesn't produce a match. Relatedly,
+  never match team names with plain `includes()` - "man city" is a literal
+  substring of "**techi**man city" and "man united" of "cwma**mman**
+  united", both real unrelated clubs API-Football returned (confirmed
+  live) - `teamsLikelyMatch` requires whole-word overlap instead.
 - Rate limits: football-data.org free tier is 10 req/min; API-Football
-  free tier is 10 req/min / 100 req/day. Every script throttles with a
-  ~6.5s delay between calls — don't remove it, and be aware that adding
-  more per-team API calls multiplies total job runtime linearly (~20
-  teams × Ns delay per call).
+  free tier is 10 req/min / 100 req/day, **shared across every workflow
+  using the key** (`lineups.yml` polls every 15 min on the same key) - a
+  couple of manual `update.yml` re-triggers in one day is enough to burn
+  the rest of the day's quota, after which lookups fail (loudly, with a
+  `"reached the request limit for the day"` error) rather than returning
+  bad data. Every script throttles with a ~6.5s delay between calls -
+  don't remove it, and be aware that adding more per-team API calls
+  multiplies total job runtime linearly (~20 teams × Ns delay per call).
 
 ## Debugging a workflow you can't test locally
 
