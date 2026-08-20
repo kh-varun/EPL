@@ -170,12 +170,20 @@ async function main() {
     return;
   }
   console.log(`Found ${events.length} open event(s) in the series.`);
+  console.log(
+    `Our upcoming fixtures: ${fixtures.map((f) => `${f.homeTeam.shortName} v ${f.awayTeam.shortName}`).join(", ")}`,
+  );
 
   const odds = {};
 
   for (const event of events) {
     const fixture = matchEventToFixture(event, fixtures);
-    if (!fixture) continue; // not one of our upcoming fixtures (or title didn't parse)
+    if (!fixture) {
+      // Log every miss with the raw title, so a run that matches nothing
+      // is debuggable from the Actions log instead of a bare zero.
+      console.log(`  no fixture match for "${event.title}" (${event.event_ticker})`);
+      continue;
+    }
 
     try {
       const entry = await buildOddsForEvent(event, fixture);
