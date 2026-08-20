@@ -6,6 +6,7 @@ import StandingsTable from "./components/StandingsTable.jsx";
 import MatchRow from "./components/MatchRow.jsx";
 import Headlines from "./components/Headlines.jsx";
 import TeamDetail from "./components/TeamDetail.jsx";
+import MatchOddsDialog from "./components/MatchOddsDialog.jsx";
 import { TrophyIcon, CalendarIcon, WhistleIcon, NewspaperIcon } from "./components/icons.jsx";
 
 const TABS = [
@@ -19,9 +20,11 @@ export default function App() {
   const [data, setData] = useState(null);
   const [lineups, setLineups] = useState(null);
   const [history, setHistory] = useState(null);
+  const [odds, setOdds] = useState(null);
   const [error, setError] = useState(null);
   const [activeTab, setActiveTab] = useState("standings");
   const [selectedTeam, setSelectedTeam] = useState(null);
+  const [selectedMatch, setSelectedMatch] = useState(null);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data.json`, { cache: "no-store" })
@@ -44,6 +47,13 @@ export default function App() {
       .then((res) => (res.ok ? res.json() : null))
       .then(setHistory)
       .catch(() => setHistory(null));
+
+    // So is Kalshi market data - a match simply may not have a listed
+    // market yet, and that's a normal, expected state, not an error.
+    fetch(`${import.meta.env.BASE_URL}odds.json`, { cache: "no-store" })
+      .then((res) => (res.ok ? res.json() : null))
+      .then(setOdds)
+      .catch(() => setOdds(null));
   }, []);
 
   if (selectedTeam) {
@@ -94,6 +104,8 @@ export default function App() {
                     match={match}
                     showScore={false}
                     onSelectTeam={setSelectedTeam}
+                    onSelectMatch={setSelectedMatch}
+                    odds={odds?.odds?.[match.id]}
                   />
                 ))}
               </ul>
@@ -130,6 +142,14 @@ export default function App() {
           </Section>
         )}
       </main>
+
+      {selectedMatch && (
+        <MatchOddsDialog
+          match={selectedMatch}
+          odds={odds?.odds?.[selectedMatch.id]}
+          onClose={() => setSelectedMatch(null)}
+        />
+      )}
     </div>
   );
 }

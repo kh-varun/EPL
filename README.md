@@ -1,8 +1,9 @@
 # EPL
 
-A static Premier League 2026-27 dashboard: standings, upcoming fixtures,
-recent results, squads with formation views, and football headlines. Built
-with Vite + React + Tailwind, deployed to GitHub Pages.
+A static Premier League 2026-27 dashboard: standings, upcoming fixtures with
+live match-outcome odds, recent results, squads with formation views, and
+football headlines. Built with Vite + React + Tailwind, deployed to GitHub
+Pages.
 
 ## Setup
 
@@ -30,6 +31,8 @@ npm run dev
 - `npm run fetch-history` — refresh `public/history.json` with last
   season's final table (football-data.org) and player stats
   (API-Football, best-effort - see below)
+- `npm run fetch-odds` — refresh `public/odds.json` with live match-outcome
+  odds from Kalshi (no key required - see below)
 
 ## Confirmed lineups
 
@@ -58,6 +61,21 @@ does, the dashboard says so explicitly instead of showing broken or
 misleading data - the team history above is unaffected either way, since
 the two are fetched and degrade independently.
 
+## Match odds
+
+Clicking a fixture in the Fixtures tab opens a dialog with live win/draw/win
+probabilities, sourced from [Kalshi](https://kalshi.com/category/sports/soccer/epl),
+a CFTC-regulated prediction market — no API key needed, since Kalshi's market
+data is fully public. Each fixture card also shows a compact three-segment
+probability bar as a preview.
+
+This is real-money trading data (Kalshi lists per-match win/draw/win
+contracts under its `KXEPLGAME` series), so it's presented as an informational
+market-implied probability with a link back to Kalshi — not betting advice,
+and not guaranteed to line up with any bookmaker's odds. If a match doesn't
+have a market listed yet (common for fixtures more than a few days out), the
+dialog says so instead of showing nothing.
+
 ## Automation
 
 - `.github/workflows/update.yml` refreshes `public/data.json` every
@@ -69,6 +87,8 @@ the two are fetched and degrade independently.
 - `.github/workflows/history.yml` refreshes `public/history.json` monthly
   (last season's numbers don't change mid-season) and on manual dispatch.
   Uses both `FOOTBALL_DATA_TOKEN` and `API_FOOTBALL_KEY`.
+- `.github/workflows/odds.yml` refreshes `public/odds.json` every 15
+  minutes. No secrets required - Kalshi's market data is public.
 - `.github/workflows/pr-review.yml` runs ESLint on every PR and posts
   findings as inline review comments via reviewdog.
 - `.github/workflows/deploy.yml` builds and deploys to GitHub Pages on
