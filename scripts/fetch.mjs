@@ -17,7 +17,14 @@ if (!FOOTBALL_DATA_TOKEN) {
   process.exit(1);
 }
 
+// Optional: football-data.org's free tier never returns a coach name (every
+// team comes back null), so when this is set we look the current manager up
+// on API-Football instead. Squads still work fine without it.
+const API_FOOTBALL_KEY = process.env.API_FOOTBALL_KEY;
+
 const FOOTBALL_DATA_BASE = "https://api.football-data.org/v4";
+const API_FOOTBALL_BASE = "https://v3.football.api-sports.io";
+const PL_LEAGUE_ID = 39; // API-Football's id for the Premier League
 
 const RSS_FEEDS = [
   { source: "BBC Sport", url: "http://feeds.bbci.co.uk/sport/football/rss.xml" },
@@ -45,6 +52,74 @@ async function footballDataRequestThrottled(endpoint) {
   const data = await footballDataRequest(endpoint);
   await sleep(RATE_LIMIT_DELAY_MS);
   return data;
+}
+
+async function apiFootballRequest(endpoint) {
+  const res = await fetch(`${API_FOOTBALL_BASE}${endpoint}`, {
+    headers: { "x-apisports-key": API_FOOTBALL_KEY },
+  });
+  if (!res.ok) {
+    throw new Error(`API-Football ${endpoint} failed: ${res.status} ${res.statusText}`);
+  }
+  const body = await res.json();
+  if (body.errors && Object.keys(body.errors).length > 0) {
+    throw new Error(`API-Football ${endpoint} returned errors: ${JSON.stringify(body.errors)}`);
+  }
+  return body.response ?? [];
+}
+
+async function apiFootballRequestThrottled(endpoint) {
+  const data = await apiFootballRequest(endpoint);
+  await sleep(RATE_LIMIT_DELAY_MS);
+  return data;
+}
+
+function normalizeTeamName(name) {
+  return name
+    .toLowerCase()
+    .replace(/\bfc\b|\bafc\b/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+// Clubs whose common short name doesn't share a word with the name
+// API-Football uses, so substring matching alone can't connect them.
+const NAME_ALIASES = {
+  wolverhampton: ["wolves"],
+  "wolverhampton wanderers": ["wolves"],
+};
+
+function teamsLikelyMatch(ourTeam, theirName) {
+  const ours = [normalizeTeamName(ourTeam.name), normalizeTeamName(ourTeam.shortName)];
+  const withAliases = ours.flatMap((name) => [name, ...(NAME_ALIASES[name] ?? [])]);
+  const theirs = normalizeTeamName(theirName);
+  return withAliases.some(
+    (name) => name === theirs || theirs.includes(name) || name.includes(theirs),
+  );
+}
+
+// Builds a football-data.org team id -> API-Football team id map via one
+// API call, so per-team coach lookups don't each need their own team-search.
+async function buildApiFootballTeamMap(ourTeams, season) {
+  try {
+    const apiTeams = await apiFootballRequestThrottled(
+      `/teams?league=${PL_LEAGUE_ID}&season=${season}`,
+    );
+    const map = {};
+    for (const ourTeam of ourTeams) {
+      const match = apiTeams.find(({ team }) => teamsLikelyMatch(ourTeam, team.name));
+      if (match) map[ourTeam.id] = match.team.id;
+    }
+    return map;
+  } catch (err) {
+    console.error(`Could not fetch API-Football team list: ${err.message}`);
+    return {};
+  }
+}
+
+async function fetchCurrentCoach(apiFootballTeamId) {
+  const coaches = await apiFootballRequestThrottled(`/coachs?team=${apiFootballTeamId}`);
+  return coaches[0]?.name ?? null;
 }
 
 function mapTeam(team) {
@@ -121,10 +196,21 @@ async function fetchTeamWithRetry(teamId, attempts = 3) {
   }
 }
 
-async function fetchSquads(teamIds) {
+async function fetchSquads(standingsTeams) {
   const teams = {};
 
-  for (const teamId of teamIds) {
+  // API-Football's free tier can look up the current manager, since
+  // football-data.org's free tier never returns one. Optional: if there's
+  // no key, or the lookup fails, coach just stays whatever football-data.org
+  // gave us (usually null) - squads are unaffected either way.
+  // API-Football identifies a season by its starting year, which for
+  // Jan-Jun is the previous calendar year.
+  const now = new Date();
+  const season = now.getUTCMonth() < 6 ? now.getUTCFullYear() - 1 : now.getUTCFullYear();
+  const apiFootballTeamIds = API_FOOTBALL_KEY ? await buildApiFootballTeamMap(standingsTeams, season) : {};
+
+  for (const ourTeam of standingsTeams) {
+    const teamId = ourTeam.id;
     try {
       const data = await fetchTeamWithRetry(teamId);
       const squad = (data.squad ?? [])
@@ -137,10 +223,17 @@ async function fetchSquads(teamIds) {
         }))
         .sort((a, b) => POSITION_ORDER.indexOf(a.position) - POSITION_ORDER.indexOf(b.position));
 
-      teams[teamId] = {
-        coach: data.coach?.name ?? null,
-        squad,
-      };
+      let coach = data.coach?.name ?? null;
+      const apiFootballId = apiFootballTeamIds[teamId];
+      if (!coach && apiFootballId) {
+        try {
+          coach = await fetchCurrentCoach(apiFootballId);
+        } catch (err) {
+          console.error(`  could not fetch coach for team ${teamId}: ${err.message}`);
+        }
+      }
+
+      teams[teamId] = { coach, squad };
     } catch (err) {
       console.error(`Failed to fetch squad for team ${teamId}: ${err.message}`);
     }
@@ -262,7 +355,7 @@ async function main() {
   ]);
 
   console.log(`Fetching squads for ${standings.length} teams (rate-limited, this takes a while)...`);
-  const teams = await fetchSquads(standings.map((row) => row.team.id));
+  const teams = await fetchSquads(standings.map((row) => row.team));
 
   const data = {
     fetchedAt: new Date().toISOString(),
