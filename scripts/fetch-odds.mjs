@@ -106,14 +106,19 @@ function matchEventToFixture(event, fixtures) {
   );
 }
 
-// A market's implied probability, as a whole-number percentage. Prefer the
-// last traded price; if nothing has traded yet, fall back to the mid of the
-// current bid/ask spread.
+// A market's implied probability, as a whole-number percentage. Kalshi
+// prices these as decimal-dollar strings (e.g. "0.8400" = 84%), not the
+// plain cents integers used elsewhere in their docs/examples - confirmed
+// against a real market response. Prefer the last traded price; if nothing
+// has traded yet, fall back to the mid of the current bid/ask spread.
 function impliedProbability(market) {
-  if (market.last_price) return market.last_price;
-  if (market.yes_bid != null && market.yes_ask != null) {
-    return Math.round((market.yes_bid + market.yes_ask) / 2);
-  }
+  const last = Number(market.last_price_dollars);
+  if (last > 0) return Math.round(last * 100);
+
+  const bid = Number(market.yes_bid_dollars);
+  const ask = Number(market.yes_ask_dollars);
+  if (!Number.isNaN(bid) && !Number.isNaN(ask)) return Math.round(((bid + ask) / 2) * 100);
+
   return null;
 }
 
