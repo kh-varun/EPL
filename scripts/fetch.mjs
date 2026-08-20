@@ -115,6 +115,9 @@ async function findApiFootballTeamId(ourTeam) {
       `/teams?search=${encodeURIComponent(ourTeam.shortName)}`,
     );
     const match = results.find(({ team }) => teamsLikelyMatch(ourTeam, team.name));
+    console.log(
+      `  ${ourTeam.name}: API-Football search candidates [${results.map((r) => r.team.name).join(", ")}] -> matched "${match?.team.name ?? "none"}" (id ${match?.team.id ?? "n/a"})`,
+    );
     return match?.team.id ?? null;
   } catch (err) {
     console.error(`  could not resolve API-Football id for ${ourTeam.name}: ${err.message}`);
@@ -126,9 +129,12 @@ async function findApiFootballTeamId(ourTeam) {
 // just the current one (confirmed live - Arsenal came back with Ljungberg,
 // a 2019 caretaker, ahead of the actual current manager). Pick the one whose
 // career entry for this team has no end date; fall back to the first result
-// if none look current rather than than returning nothing.
+// if none look current rather than returning nothing.
 async function fetchCurrentCoach(apiFootballTeamId) {
   const coaches = await apiFootballRequestThrottled(`/coachs?team=${apiFootballTeamId}`);
+  console.log(
+    `  team ${apiFootballTeamId}: /coachs candidates [${coaches.map((c) => c.name).join(", ")}]`,
+  );
   const current = coaches.find((coach) =>
     (coach.career ?? []).some((c) => c.team?.id === apiFootballTeamId && !c.end),
   );
