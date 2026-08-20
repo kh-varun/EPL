@@ -106,6 +106,20 @@ usually reachable. When you can't reproduce something locally:
    and found the actual bug (wrong field names) that no amount of
    re-reading the code would have caught.
 
+## All four fetch workflows retry their push
+
+`update.yml`, `lineups.yml`, `odds.yml`, and `history.yml` each fetch,
+commit, and `git push` straight to `main` independently. Since
+`lineups.yml`/`odds.yml` fire every 15 minutes and `update.yml`'s full
+squad-fetch loop alone takes several minutes, two of them landing at once
+is a real, confirmed-live race - not theoretical: `update.yml` fetched
+successfully, committed locally, then got its push rejected as
+non-fast-forward because another workflow had pushed to `main` in the
+meantime, and the whole run's fetched data was discarded since there was
+no retry. Every commit step now does fetch + rebase + push in a retry loop
+instead of a single bare `git push` - keep that pattern on any new
+scheduled-write workflow added to this repo.
+
 ## Git workflow for this repo
 
 Every PR here gets merged (squash) as soon as its `eslint` check passes —

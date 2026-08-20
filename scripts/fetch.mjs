@@ -295,8 +295,17 @@ async function hasApiFootballQuotaFor(requestsNeeded) {
     }
     return true;
   } catch (err) {
+    // The /status call itself counts against the quota, so if it fails with
+    // this exact message the quota is definitely exhausted (confirmed live)
+    // - fail closed rather than proceeding into 20 more calls that are all
+    // guaranteed to fail the same way. Any other error is unknown/transient,
+    // so fail open and let individual calls succeed or degrade as normal.
+    const exhausted = /reached the request limit for the day/i.test(err.message);
     console.error(`  could not check API-Football quota: ${err.message}`);
-    return true;
+    if (exhausted) {
+      console.log("  quota is exhausted for today - skipping manager lookups this run.");
+    }
+    return !exhausted;
   }
 }
 
