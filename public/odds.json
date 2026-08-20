@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-20T05:47:58.664Z",
+  "fetchedAt": "2026-08-20T06:02:35.437Z",
   "odds": {
     "560542": {
       "eventTicker": "KXEPLGAME-26AUG21ARSCOV",
@@ -11,7 +11,7 @@
       },
       "away": {
         "label": "Coventry City",
-        "probability": 5,
+        "probability": 6,
         "ticker": "KXEPLGAME-26AUG21ARSCOV-COV"
       },
       "draw": {
@@ -106,7 +106,7 @@
       },
       "away": {
         "label": "Tottenham",
-        "probability": 34,
+        "probability": 35,
         "ticker": "KXEPLGAME-26AUG22BRETOT-TOT"
       },
       "draw": {
