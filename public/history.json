@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-19T06:19:23.734Z",
+  "fetchedAt": "2026-08-20T06:10:39.785Z",
   "season": 2025,
   "seasonLabel": "2025-26",
   "totalTeams": 20,
@@ -226,6 +226,6 @@
     }
   },
   "playersAvailable": false,
-  "playersUnavailableReason": "fetch failed",
+  "playersUnavailableReason": "API-Football /teams?league=39&season=2025: {\"plan\":\"Free plans do not have access to this season, try from 2022 to 2024.\"}",
   "players": {}
 }
