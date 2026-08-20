@@ -9,7 +9,7 @@ APIs via scheduled GitHub Actions workflows that commit static JSON into
 
 | Script | Writes | Workflow | Schedule | Needs |
 |---|---|---|---|---|
-| `fetch.mjs` | `public/data.json` | `update.yml` | Weekly (Wed) | `FOOTBALL_DATA_TOKEN`, `API_FOOTBALL_KEY` (optional, for manager names) |
+| `fetch.mjs` | `public/data.json`, `public/api-football-team-ids.json` | `update.yml` | Weekly (Wed) | `FOOTBALL_DATA_TOKEN`, `API_FOOTBALL_KEY` (optional, for manager names) |
 | `fetch-lineups.mjs` | `public/lineups.json` | `lineups.yml` | Every 15 min | `API_FOOTBALL_KEY` |
 | `fetch-history.mjs` | `public/history.json` | `history.yml` | Monthly | `FOOTBALL_DATA_TOKEN`, `API_FOOTBALL_KEY` (optional) |
 | `fetch-odds.mjs` | `public/odds.json` | `odds.yml` | Every 15 min | none (Kalshi is public) |
@@ -18,6 +18,19 @@ All scripts degrade gracefully: a missing key or a failed call never
 crashes the run or corrupts existing JSON — it just leaves that piece of
 data as `null`/empty and logs why. Never remove that pattern when editing
 these scripts.
+
+`fetch.mjs`'s manager-name lookup is API-Football-call-conscious given the
+shared daily quota (see below): `public/api-football-team-ids.json` caches
+the resolved team-name → API-Football-id mapping permanently (team identity
+never changes, so this search never needs re-running once a team is
+resolved), it reuses the coach name `fetch-lineups.mjs` already pulled from
+a team's most recent confirmed match-day lineup at zero extra cost before
+ever calling API-Football itself, and it checks `/status` up front to skip
+the whole manager-lookup pass outright if there isn't enough of today's
+quota left, rather than burning it on calls partway through a run that were
+always going to fail. Keep all three whenever touching this code - they're
+what keeps a routine weekly run to roughly one call per team instead of up
+to three.
 
 ## Known API quirks (found the hard way — don't relitigate these)
 
