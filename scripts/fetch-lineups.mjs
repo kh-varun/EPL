@@ -153,16 +153,23 @@ async function main() {
     return kickoff - now <= LOOKAHEAD_MS && now - kickoff <= GRACE_PERIOD_MS;
   });
 
-  const existingLineups = pruneStale(await loadExistingLineups());
+  const rawExisting = await loadExistingLineups();
+  const existingLineups = pruneStale(rawExisting);
 
   if (imminentMatches.length === 0) {
     console.log("No imminent fixtures - skipping API-Football calls to save quota.");
-    await mkdir(path.dirname(OUT_PATH), { recursive: true });
-    await writeFile(
-      OUT_PATH,
-      JSON.stringify({ fetchedAt: new Date().toISOString(), lineups: existingLineups }, null, 2) +
-        "\n",
-    );
+    // Only touch the file (and bump fetchedAt) if pruning actually removed
+    // something. Otherwise leave it alone so there's nothing to commit -
+    // this job runs every 15 minutes and would otherwise trigger a pointless
+    // redeploy on every single run, forever.
+    if (JSON.stringify(existingLineups) !== JSON.stringify(rawExisting)) {
+      await mkdir(path.dirname(OUT_PATH), { recursive: true });
+      await writeFile(
+        OUT_PATH,
+        JSON.stringify({ fetchedAt: new Date().toISOString(), lineups: existingLineups }, null, 2) +
+          "\n",
+      );
+    }
     return;
   }
 

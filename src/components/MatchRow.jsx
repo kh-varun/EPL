@@ -4,7 +4,10 @@ function TeamColumn({ team, onSelectTeam }) {
   return (
     <button
       type="button"
-      onClick={() => onSelectTeam(team)}
+      onClick={(e) => {
+        e.stopPropagation();
+        onSelectTeam(team);
+      }}
       className="flex flex-1 min-w-0 flex-col items-center gap-1.5 text-center"
     >
       <img src={team.crest} alt="" className="h-10 w-10 shrink-0" loading="lazy" />
@@ -15,13 +18,39 @@ function TeamColumn({ team, onSelectTeam }) {
   );
 }
 
-export default function MatchRow({ match, showScore, onSelectTeam }) {
+function OddsPreview({ odds }) {
+  if (!odds?.home || !odds?.draw || !odds?.away) return null;
+
+  return (
+    <div className="mt-2.5 pt-2.5 border-t border-white/10">
+      <div className="h-1.5 rounded-full overflow-hidden flex">
+        <div className="bg-epl-magenta h-full" style={{ width: `${odds.home.probability}%` }} />
+        <div className="bg-white/40 h-full" style={{ width: `${odds.draw.probability}%` }} />
+        <div className="bg-epl-cyan h-full" style={{ width: `${odds.away.probability}%` }} />
+      </div>
+      <div className="mt-1 flex items-center justify-between text-[10px] font-bold text-white/50 tabular-nums">
+        <span>{odds.home.probability}%</span>
+        <span>Draw {odds.draw.probability}%</span>
+        <span>{odds.away.probability}%</span>
+      </div>
+    </div>
+  );
+}
+
+export default function MatchRow({ match, showScore, onSelectTeam, onSelectMatch, odds }) {
   const hasScore = showScore && match.score.home !== null && match.score.away !== null;
   const homeWon = hasScore && match.score.home > match.score.away;
   const awayWon = hasScore && match.score.away > match.score.home;
+  const clickable = Boolean(onSelectMatch);
 
   return (
-    <li className="rounded-xl bg-epl-surface2 ring-1 ring-white/10 p-3">
+    <li
+      onClick={clickable ? () => onSelectMatch(match) : undefined}
+      className={
+        "rounded-xl bg-epl-surface2 ring-1 ring-white/10 p-3" +
+        (clickable ? " cursor-pointer hover:ring-white/20 transition-shadow" : "")
+      }
+    >
       <div className="flex items-center justify-between text-[10px] font-semibold uppercase tracking-wide text-white/40 mb-2">
         <span>Matchday {match.matchday}</span>
         {!hasScore && <span>{formatMatchDateTime(match.utcDate)}</span>}
@@ -46,6 +75,8 @@ export default function MatchRow({ match, showScore, onSelectTeam }) {
 
         <TeamColumn team={match.awayTeam} onSelectTeam={onSelectTeam} />
       </div>
+
+      {clickable && !hasScore && <OddsPreview odds={odds} />}
     </li>
   );
 }

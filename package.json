@@ -10,6 +10,7 @@
     "fetch-data": "node scripts/fetch.mjs",
     "fetch-lineups": "node scripts/fetch-lineups.mjs",
     "fetch-history": "node scripts/fetch-history.mjs",
+    "fetch-odds": "node scripts/fetch-odds.mjs",
     "lint": "eslint ."
   },
   "dependencies": {
