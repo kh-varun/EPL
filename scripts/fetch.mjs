@@ -4,12 +4,17 @@
 //
 // Requires FOOTBALL_DATA_TOKEN in the environment (see .env.example).
 
-import { writeFile, mkdir } from "node:fs/promises";
+import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_PATH = path.join(__dirname, "..", "public", "data.json");
+const LINEUPS_PATH = path.join(__dirname, "..", "public", "lineups.json");
+// Our team id -> API-Football team id. Team identity never changes, so once
+// resolved this never needs a fresh /teams?search= call again - only the
+// /coachs lookup itself needs to re-run each time for freshness.
+const TEAM_ID_CACHE_PATH = path.join(__dirname, "..", "public", "api-football-team-ids.json");
 
 const FOOTBALL_DATA_TOKEN = process.env.FOOTBALL_DATA_TOKEN;
 if (!FOOTBALL_DATA_TOKEN) {
@@ -17,9 +22,9 @@ if (!FOOTBALL_DATA_TOKEN) {
   process.exit(1);
 }
 
-// Optional: football-data.org's free tier never returns a coach name (every
-// team comes back null), so when this is set we look the current manager up
-// on API-Football instead. Squads still work fine without it.
+// Optional: football-data.org's coach field is frequently stale, so when
+// this is set we look the current manager up on API-Football instead.
+// Squads still work fine without it.
 const API_FOOTBALL_KEY = process.env.API_FOOTBALL_KEY;
 
 const FOOTBALL_DATA_BASE = "https://api.football-data.org/v4";
@@ -120,7 +125,12 @@ function teamsLikelyMatch(ourTeam, theirName) {
 // like "Man City"/"Man United" returns nothing useful (it isn't a literal
 // substring of "Manchester City"/"Manchester United") and needs the fuller
 // name to surface the real club.
-async function findApiFootballTeamId(ourTeam) {
+//
+// `cache` maps our team id -> API-Football id and is checked first so a
+// resolved team never needs this search again (see TEAM_ID_CACHE_PATH).
+async function findApiFootballTeamId(ourTeam, cache) {
+  if (cache[ourTeam.id]) return cache[ourTeam.id];
+
   const searchTerms = [...new Set([ourTeam.shortName, ourTeam.name])];
   for (const term of searchTerms) {
     try {
@@ -129,7 +139,10 @@ async function findApiFootballTeamId(ourTeam) {
       console.log(
         `  ${ourTeam.name}: search "${term}" candidates [${results.map((r) => r.team.name).join(", ")}] -> matched "${match?.team.name ?? "none"}" (id ${match?.team.id ?? "n/a"})`,
       );
-      if (match) return match.team.id;
+      if (match) {
+        cache[ourTeam.id] = match.team.id;
+        return match.team.id;
+      }
     } catch (err) {
       console.error(`  could not resolve API-Football id for ${ourTeam.name}: ${err.message}`);
       return null;
@@ -228,8 +241,80 @@ async function fetchTeamWithRetry(teamId, attempts = 3) {
   }
 }
 
+async function loadTeamIdCache() {
+  try {
+    return JSON.parse(await readFile(TEAM_ID_CACHE_PATH, "utf-8"));
+  } catch {
+    return {};
+  }
+}
+
+// fetch-lineups.mjs already pulls each side's coach straight from the
+// official match-day team sheet (public/lineups.json), every 15 minutes,
+// at zero extra cost to us. That's both free and more current than a fresh
+// API-Football team-level lookup, so use it as the first coach source for
+// any team that's played (or is about to play) recently.
+async function loadConfirmedCoaches() {
+  try {
+    const { lineups } = JSON.parse(await readFile(LINEUPS_PATH, "utf-8"));
+    const latest = {};
+    for (const entry of Object.values(lineups ?? {})) {
+      for (const [teamId, side] of Object.entries(entry.byTeam ?? {})) {
+        if (!side?.coach) continue;
+        if (!latest[teamId] || new Date(entry.utcDate) > new Date(latest[teamId].utcDate)) {
+          latest[teamId] = { utcDate: entry.utcDate, coach: side.coach };
+        }
+      }
+    }
+    return Object.fromEntries(Object.entries(latest).map(([id, v]) => [id, v.coach]));
+  } catch {
+    return {};
+  }
+}
+
+// One /status call up front tells us how much of today's shared 100 req/day
+// budget is left (lineups.yml polls the same key every 15 min). Skip the
+// whole manager-lookup pass outright if there's not enough left for it,
+// rather than burning the remaining requests - and their 6.5s throttle
+// delays - on calls that are guaranteed to fail partway through anyway.
+async function hasApiFootballQuotaFor(requestsNeeded) {
+  if (requestsNeeded === 0) return true;
+  try {
+    const status = await apiFootballRequestThrottled("/status");
+    const used = status?.requests?.current;
+    const limit = status?.requests?.limit_day;
+    if (typeof used !== "number" || typeof limit !== "number") return true;
+    const remaining = limit - used;
+    console.log(`API-Football quota: ${used}/${limit} used today, ${remaining} remaining.`);
+    if (remaining < requestsNeeded) {
+      console.log(
+        `  only ${remaining} left but up to ${requestsNeeded} could be needed - skipping ` +
+          `manager lookups this run, falling back to lineups.json/football-data.org.`,
+      );
+      return false;
+    }
+    return true;
+  } catch (err) {
+    console.error(`  could not check API-Football quota: ${err.message}`);
+    return true;
+  }
+}
+
 async function fetchSquads(standingsTeams) {
   const teams = {};
+  const teamIdCache = await loadTeamIdCache();
+  const confirmedCoaches = await loadConfirmedCoaches();
+
+  // Worst case per team still needing a lookup: 2 calls to resolve the id
+  // (shortName then full-name search) + 1 to fetch its coach. Teams already
+  // cached or covered by a confirmed lineup need 0 or 1.
+  const needingLookup = standingsTeams.filter((t) => !confirmedCoaches[t.id]);
+  const needingResolution = needingLookup.filter((t) => !teamIdCache[t.id]);
+  const worstCaseRequests = needingResolution.length * 2 + needingLookup.length;
+  const apiFootballAvailable =
+    Boolean(API_FOOTBALL_KEY) && (await hasApiFootballQuotaFor(worstCaseRequests));
+
+  let cacheDirty = false;
 
   for (const ourTeam of standingsTeams) {
     const teamId = ourTeam.id;
@@ -247,13 +332,16 @@ async function fetchSquads(standingsTeams) {
 
       // football-data.org's free tier does sometimes return a coach name,
       // but it's frequently stale (confirmed live - Chelsea, Liverpool and
-      // Fulham all came back with managers who left years ago). API-Football
-      // is looked up first when a key is available; football-data.org's
-      // value is only a fallback if that lookup fails outright.
-      let coach = null;
-      if (API_FOOTBALL_KEY) {
+      // Fulham all came back with managers who left years ago), so it's
+      // only used as a last-resort fallback below.
+      let coach = confirmedCoaches[teamId] ?? null;
+      if (coach) {
+        console.log(`  ${ourTeam.name}: using confirmed match-day coach "${coach}" (no API call needed)`);
+      } else if (apiFootballAvailable) {
         try {
-          const apiFootballId = await findApiFootballTeamId(ourTeam);
+          const cacheSizeBefore = Object.keys(teamIdCache).length;
+          const apiFootballId = await findApiFootballTeamId(ourTeam, teamIdCache);
+          if (Object.keys(teamIdCache).length !== cacheSizeBefore) cacheDirty = true;
           if (apiFootballId) coach = await fetchCurrentCoach(apiFootballId);
         } catch (err) {
           console.error(`  could not fetch coach for team ${teamId}: ${err.message}`);
@@ -265,6 +353,12 @@ async function fetchSquads(standingsTeams) {
     } catch (err) {
       console.error(`Failed to fetch squad for team ${teamId}: ${err.message}`);
     }
+  }
+
+  if (cacheDirty) {
+    await mkdir(path.dirname(TEAM_ID_CACHE_PATH), { recursive: true });
+    await writeFile(TEAM_ID_CACHE_PATH, JSON.stringify(teamIdCache, null, 2) + "\n");
+    console.log(`Updated ${TEAM_ID_CACHE_PATH}`);
   }
 
   return teams;

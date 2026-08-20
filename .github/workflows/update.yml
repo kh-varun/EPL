@@ -30,14 +30,22 @@ jobs:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
         run: npm run fetch-data
 
-      - name: Commit data.json if changed
+      - name: Commit data if changed
         run: |
-          if git diff --quiet -- public/data.json; then
-            echo "No changes to public/data.json"
+          # api-football-team-ids.json is a cache that's only written when it
+          # changes (see fetch.mjs) and may not exist at all without an
+          # API_FOOTBALL_KEY - `git add` it conditionally so a plain
+          # `git diff` (which ignores untracked files) doesn't miss it, and
+          # so this step doesn't fail when there's nothing new to stage.
+          git add public/data.json
+          if [ -f public/api-football-team-ids.json ]; then
+            git add public/api-football-team-ids.json
+          fi
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data.json
           git commit -m "chore: update PL data"
           git push
