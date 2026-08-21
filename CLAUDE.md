@@ -130,13 +130,18 @@ or broken secondary source can't corrupt the dashboard:
   shortName term.
 - **Even the sanitized full name can still return zero results** (confirmed
   live for Brighton: both "Brighton Hove" and "Brighton Hove Albion" search
-  as empty) - presumably API-Football stores their name with different
-  punctuation in a spot that breaks a literal-substring match no matter how
-  the query is cleaned up. `findApiFootballTeamId` falls back to just the
-  first word of the shortName as a third, narrower attempt - a single common
-  word is far more likely to appear literally in their name however it's
-  punctuated, and `teamsLikelyMatch`'s word-boundary check afterward still
-  guards against a too-broad query matching the wrong club.
+  as empty). `findApiFootballTeamId` falls back to just the first word of
+  the shortName as a third, narrower attempt - and this one actually found
+  it: the search for "Brighton" returned the real club. It just wasn't
+  picked, because **API-Football's own name for the club is apparently just
+  "Brighton"** (confirmed live - the candidate is literally `{name:
+  "Brighton"}`, no "Hove"/"Albion" at all), and `teamsLikelyMatch` originally
+  only checked that all of *our* words appear in *theirs* - which can never
+  pass when their name has fewer words than ours. It now checks both
+  directions (all of ours in theirs, OR all of theirs in ours), which fixes
+  this without reopening the original false-positive bug (verified: "man
+  city"/"man united" still correctly reject "Techiman City"/"Cwmamman
+  United FC", since neither direction's subset check passes for those).
 - Rate limits: football-data.org free tier is 10 req/min; API-Football
   free tier is 10 req/min / 100 req/day, **shared across every workflow
   using the key** (`lineups.yml` polls every 15 min on the same key) - a

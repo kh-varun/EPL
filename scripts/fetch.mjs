@@ -102,13 +102,21 @@ const NAME_ALIASES = {
 // "Man City" against "Techiman City" and "Man United" against "Cwmamman
 // United FC" (confirmed live), since "man city"/"man united" are literal
 // substrings of those unrelated clubs' names once you cross a word boundary.
+//
+// Checked in both directions - API-Football's own name is sometimes shorter
+// than ours (confirmed live: their name for Brighton & Hove Albion is
+// apparently just "Brighton", so requiring all of *our* words in *theirs*
+// never matched; requiring all of *theirs* in *ours* catches this case too).
 function teamsLikelyMatch(ourTeam, theirName) {
   const ours = [normalizeTeamName(ourTeam.name), normalizeTeamName(ourTeam.shortName)];
   const withAliases = ours.flatMap((name) => [name, ...(NAME_ALIASES[name] ?? [])]);
-  const theirWords = new Set(normalizeTeamName(theirName).split(" "));
+  const theirWords = normalizeTeamName(theirName).split(" ").filter(Boolean);
+  const theirSet = new Set(theirWords);
   return withAliases.some((name) => {
     const ourWords = name.split(" ").filter(Boolean);
-    return ourWords.length > 0 && ourWords.every((word) => theirWords.has(word));
+    if (ourWords.length === 0 || theirWords.length === 0) return false;
+    const ourSet = new Set(ourWords);
+    return ourWords.every((w) => theirSet.has(w)) || theirWords.every((w) => ourSet.has(w));
   });
 }
 

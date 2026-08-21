@@ -76,15 +76,19 @@ const NAME_ALIASES = {
   "wolverhampton wanderers": ["wolves"],
 };
 
-// Word-boundary match, not raw substring - see the identical fix (and its
-// "Techiman City"/"Cwmamman United FC" false-positive story) in fetch.mjs.
+// Word-boundary match, not raw substring, checked in both directions - see
+// the identical fix (and its "Techiman City"/"Cwmamman United FC" and
+// Brighton-is-just-"Brighton" stories) in fetch.mjs.
 function teamsLikelyMatch(ourTeam, theirName) {
   const ours = [normalizeTeamName(ourTeam.name), normalizeTeamName(ourTeam.shortName)];
   const withAliases = ours.flatMap((name) => [name, ...(NAME_ALIASES[name] ?? [])]);
-  const theirWords = new Set(normalizeTeamName(theirName).split(" "));
+  const theirWords = normalizeTeamName(theirName).split(" ").filter(Boolean);
+  const theirSet = new Set(theirWords);
   return withAliases.some((name) => {
     const ourWords = name.split(" ").filter(Boolean);
-    return ourWords.length > 0 && ourWords.every((word) => theirWords.has(word));
+    if (ourWords.length === 0 || theirWords.length === 0) return false;
+    const ourSet = new Set(ourWords);
+    return ourWords.every((w) => theirSet.has(w)) || theirWords.every((w) => ourSet.has(w));
   });
 }
 
