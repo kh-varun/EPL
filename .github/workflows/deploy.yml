@@ -3,6 +3,26 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # A push made with the default GITHUB_TOKEN - which is how every
+  # scheduled fetch workflow (update.yml, lineups.yml, odds.yml,
+  # history.yml, live-scores.yml) commits its data - does NOT fire this
+  # workflow's `on: push` trigger (a deliberate GitHub restriction to
+  # avoid infinite workflow loops). Without this, only a PR-merge push
+  # ever redeploys the site, so any fresh JSON those workflows commit
+  # sits unreachable on main until the next PR happens to land -
+  # confirmed live: every prior "Deploy to GitHub Pages" run lined up
+  # with a PR merge, never with a `chore: update ...` bot commit.
+  # `workflow_run` doesn't have that restriction, since it listens for
+  # the upstream workflow's completion rather than re-triggering off its
+  # push - use it to redeploy after each of those five finishes.
+  workflow_run:
+    workflows:
+      - "Update PL data"
+      - "Update confirmed lineups"
+      - "Update Kalshi odds"
+      - "Update last-season history"
+      - "Update live scores"
+    types: [completed]
   workflow_dispatch: {}
 
 permissions:
@@ -16,9 +36,12 @@ concurrency:
 
 jobs:
   build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-node@v4
         with:

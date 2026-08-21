@@ -213,6 +213,29 @@ new scheduled-write workflow added to this repo. Also remember `git diff
 conditionally (`if [ -f ... ]`) before diffing, every time, not just when
 the file is already known to exist.
 
+## Scheduled-workflow commits never trigger a redeploy on their own
+
+`deploy.yml` builds the site and publishes `dist/` to GitHub Pages. A push
+made with the default `GITHUB_TOKEN` - which is how every one of the five
+scheduled fetch workflows above commits its data - does **not** fire
+another workflow's `on: push` trigger (a deliberate GitHub restriction to
+prevent infinite workflow-triggering loops). Confirmed live: every prior
+"Deploy to GitHub Pages" run lined up exactly with a PR merge, never with
+a `chore: update ...` bot commit - so the live site was silently frozen at
+whatever `dist/` was built at the last PR merge, no matter how often the
+fetch workflows ran and successfully pushed fresh JSON to `main` in
+between. This is almost certainly why the dashboard looked stale earlier
+in this project's life (e.g. an out-of-date Arsenal squad) even though
+`update.yml` itself was running and succeeding on schedule.
+
+Fixed by adding a `workflow_run` trigger to `deploy.yml` that fires on
+completion of each of the five fetch workflows (matched by their `name:`
+field, not filename) - `workflow_run` listens for the upstream run's
+completion rather than re-triggering off its push, so it isn't subject to
+the same `GITHUB_TOKEN` restriction. Keep every new scheduled-write
+workflow's `name:` added to that list, or its commits will keep landing on
+`main` without ever reaching production.
+
 ## Git workflow for this repo
 
 Every PR here gets merged (squash) as soon as its `eslint` check passes —
