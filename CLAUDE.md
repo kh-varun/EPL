@@ -103,6 +103,17 @@ or broken secondary source can't corrupt the dashboard:
   substring of "**techi**man city" and "man united" of "cwma**mman**
   united", both real unrelated clubs API-Football returned (confirmed
   live) - `teamsLikelyMatch` requires whole-word overlap instead.
+- **The fuller-name search term itself needs sanitizing** (confirmed live)
+  - searching "Manchester City FC"/"Manchester United FC" (our full names,
+  with the "FC" suffix) returns zero results, because API-Football's own
+  name for both is just "Manchester City"/"Manchester United" and its
+  substring search wants the query to literally appear in that name -
+  the trailing " FC" breaks the match. Separately, searching "Brighton &
+  Hove Albion FC" fails outright with `"The Search field may only contain
+  alpha-numeric characters and spaces"` - the "&" isn't allowed at all.
+  `searchableTeamName` in `fetch.mjs` strips the FC/AFC suffix and any
+  non-alphanumeric characters before every search call, not just the
+  shortName term.
 - Rate limits: football-data.org free tier is 10 req/min; API-Football
   free tier is 10 req/min / 100 req/day, **shared across every workflow
   using the key** (`lineups.yml` polls every 15 min on the same key) - a
