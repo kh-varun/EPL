@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-21T08:08:17.561Z",
+  "fetchedAt": "2026-08-21T08:57:44.379Z",
   "odds": {
     "560542": {
       "eventTicker": "KXEPLGAME-26AUG21ARSCOV",
@@ -68,7 +68,7 @@
       },
       "away": {
         "label": "Leeds United",
-        "probability": 30,
+        "probability": 31,
         "ticker": "KXEPLGAME-26AUG22NFOLEE-LEE"
       },
       "draw": {
