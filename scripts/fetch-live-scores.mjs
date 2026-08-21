@@ -7,9 +7,13 @@
 // PAUSED list, it also refreshes standings/lastResults/nextFixtures in
 // data.json - otherwise a finished match would keep showing as an
 // upcoming fixture, and the table wouldn't reflect its result, until the
-// next weekly fetch.mjs run.
+// next weekly fetch.mjs run - and, if API_FOOTBALL_KEY is set, fetches that
+// match's team stats (shots, possession, passes, cards, etc.) once and
+// caches them permanently in match-stats.json for the Results tab's stats
+// dialog.
 //
-// Requires FOOTBALL_DATA_TOKEN in the environment.
+// Requires FOOTBALL_DATA_TOKEN in the environment. API_FOOTBALL_KEY is
+// optional - match stats are simply skipped without it.
 
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
@@ -20,16 +24,28 @@ import {
   fetchLastResults,
   fetchNextFixtures,
 } from "./lib/football-data.mjs";
+import {
+  apiFootballRequest,
+  teamsLikelyMatch,
+  findApiFootballFixtureId,
+  hasApiFootballQuotaFor,
+} from "./lib/api-football.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = path.join(__dirname, "..", "public", "data.json");
 const OUT_PATH = path.join(__dirname, "..", "public", "live-scores.json");
+const MATCH_STATS_PATH = path.join(__dirname, "..", "public", "match-stats.json");
 
 const FOOTBALL_DATA_TOKEN = process.env.FOOTBALL_DATA_TOKEN;
 if (!FOOTBALL_DATA_TOKEN) {
   console.error("Missing FOOTBALL_DATA_TOKEN env var.");
   process.exit(1);
 }
+
+// Optional: team stats (shots, possession, passes, cards, etc.) for the
+// Results tab's stats dialog. Everything still works without it - a
+// finished match just won't have a stats breakdown.
+const API_FOOTBALL_KEY = process.env.API_FOOTBALL_KEY;
 
 // Start checking a bit before the scheduled kickoff (matches sometimes go
 // IN_PLAY a few minutes early) and keep checking for a few hours after in
@@ -57,6 +73,105 @@ async function refreshCoreData() {
 
   await writeFile(DATA_PATH, JSON.stringify(data, null, 2) + "\n");
   console.log(`Refreshed standings/lastResults/nextFixtures in ${DATA_PATH}`);
+
+  return lastResults;
+}
+
+// API-Football's stat "type" strings, mapped to the clean shape the stats
+// dialog renders. Field names/casing confirmed against API-Football's
+// documented /fixtures/statistics response shape.
+function mapFixtureStats(rawStats) {
+  const byType = Object.fromEntries((rawStats ?? []).map((s) => [s.type, s.value]));
+  const percent = (value) => {
+    const n = typeof value === "string" ? parseInt(value, 10) : value;
+    return Number.isFinite(n) ? n : null;
+  };
+  return {
+    shots: byType["Total Shots"] ?? null,
+    shotsOnTarget: byType["Shots on Goal"] ?? null,
+    possession: percent(byType["Ball Possession"]),
+    passes: byType["Total passes"] ?? null,
+    passAccuracy: percent(byType["Passes %"]),
+    fouls: byType["Fouls"] ?? null,
+    corners: byType["Corner Kicks"] ?? null,
+    offsides: byType["Offsides"] ?? null,
+    yellowCards: byType["Yellow Cards"] ?? null,
+    redCards: byType["Red Cards"] ?? null,
+  };
+}
+
+async function fetchFixtureStatistics(fixtureId, ourMatch) {
+  const response = await apiFootballRequest(`/fixtures/statistics?fixture=${fixtureId}`);
+  if (response.length < 2) return null; // not published yet
+
+  const byTeamId = {};
+  for (const side of response) {
+    const theirName = side.team?.name ?? "";
+    if (teamsLikelyMatch(ourMatch.homeTeam, theirName)) {
+      byTeamId[ourMatch.homeTeam.id] = mapFixtureStats(side.statistics);
+    } else if (teamsLikelyMatch(ourMatch.awayTeam, theirName)) {
+      byTeamId[ourMatch.awayTeam.id] = mapFixtureStats(side.statistics);
+    }
+  }
+  return Object.keys(byTeamId).length === 2 ? byTeamId : null;
+}
+
+async function loadExistingMatchStats() {
+  try {
+    const raw = await readFile(MATCH_STATS_PATH, "utf-8");
+    return JSON.parse(raw).stats ?? {};
+  } catch {
+    return {};
+  }
+}
+
+// A finished match's stats never change, so this only ever needs to fetch
+// each match once - cached permanently once found. Optional and gracefully
+// degrading like every other API-Football feature in this project: skipped
+// entirely without a key, and a per-match failure just leaves that match
+// without a stats breakdown rather than breaking the run.
+async function fetchMatchStatsFor(finishedMatches) {
+  if (!API_FOOTBALL_KEY || finishedMatches.length === 0) return;
+
+  const existingStats = await loadExistingMatchStats();
+  const needed = finishedMatches.filter((m) => !existingStats[m.id]);
+  if (needed.length === 0) return;
+
+  // Worst case per match: 1 call to resolve the fixture id + 1 for its
+  // statistics.
+  if (!(await hasApiFootballQuotaFor(needed.length * 2))) return;
+
+  for (const match of needed) {
+    const label = `${match.homeTeam.shortName} v ${match.awayTeam.shortName}`;
+    try {
+      const fixtureId = await findApiFootballFixtureId(match);
+      if (!fixtureId) {
+        console.log(`  ${label}: no matching API-Football fixture found for stats`);
+        continue;
+      }
+      const stats = await fetchFixtureStatistics(fixtureId, match);
+      if (!stats) {
+        console.log(`  ${label}: stats not published yet`);
+        continue;
+      }
+      existingStats[match.id] = {
+        utcDate: match.utcDate,
+        homeTeamId: match.homeTeam.id,
+        awayTeamId: match.awayTeam.id,
+        stats,
+      };
+      console.log(`  ${label}: got match stats`);
+    } catch (err) {
+      console.error(`  ${label}: could not fetch match stats: ${err.message}`);
+    }
+  }
+
+  await mkdir(path.dirname(MATCH_STATS_PATH), { recursive: true });
+  await writeFile(
+    MATCH_STATS_PATH,
+    JSON.stringify({ fetchedAt: new Date().toISOString(), stats: existingStats }, null, 2) + "\n",
+  );
+  console.log(`Wrote ${MATCH_STATS_PATH}`);
 }
 
 async function loadExistingLive() {
@@ -111,10 +226,12 @@ async function main() {
       // Nothing should still be live - clear stale entries so old scores
       // don't linger on the dashboard, and refresh the result/table/fixture
       // data now that whatever was live has definitely finished.
+      const finishedIds = Object.keys(existing);
       console.log(
-        `${Object.keys(existing).length} match(es) fell out of their live window - refreshing standings/results/fixtures...`,
+        `${finishedIds.length} match(es) fell out of their live window - refreshing standings/results/fixtures...`,
       );
-      await refreshCoreData();
+      const lastResults = await refreshCoreData();
+      await fetchMatchStatsFor(lastResults.filter((m) => finishedIds.includes(String(m.id))));
       await writeLive({});
     }
     return;
@@ -146,7 +263,8 @@ async function main() {
   const justFinished = Object.keys(existing).filter((id) => !matches[id]);
   if (justFinished.length > 0) {
     console.log(`${justFinished.length} match(es) no longer live - refreshing standings/results/fixtures...`);
-    await refreshCoreData();
+    const lastResults = await refreshCoreData();
+    await fetchMatchStatsFor(lastResults.filter((m) => justFinished.includes(String(m.id))));
   }
 
   await writeLive(matches);
