@@ -135,11 +135,18 @@ function searchableTeamName(name) {
 // identity doesn't change season to season, so a plain name search sidesteps
 // the restriction entirely and covers every club, promoted or not.
 //
-// Tries shortName first, then the full name - API-Football's search seems
-// to do its own raw substring match server-side, so a two-word shortName
-// like "Man City"/"Man United" returns nothing useful (it isn't a literal
-// substring of "Manchester City"/"Manchester United") and needs the fuller
-// name to surface the real club.
+// Tries shortName, then the full name, then just the shortName's first word
+// - API-Football's search seems to do its own raw substring match
+// server-side, so a two-word shortName like "Man City"/"Man United" returns
+// nothing useful (it isn't a literal substring of "Manchester City"/
+// "Manchester United") and needs the fuller name to surface the real club.
+// Brighton needs the third, narrower attempt: even the sanitized full name
+// ("Brighton Hove Albion") isn't a literal substring of whatever punctuated
+// form API-Football stores their name in (confirmed live - both the
+// shortName and full-name searches return zero results) - a single word
+// is far more likely to appear literally inside their name no matter how
+// it's punctuated, and teamsLikelyMatch still verifies the actual match
+// afterward so a too-broad query can't cause a wrong pick.
 //
 // `cache` maps our team id -> API-Football id and is checked first so a
 // resolved team never needs this search again (see TEAM_ID_CACHE_PATH).
@@ -147,7 +154,11 @@ async function findApiFootballTeamId(ourTeam, cache) {
   if (cache[ourTeam.id]) return cache[ourTeam.id];
 
   const searchTerms = [
-    ...new Set([searchableTeamName(ourTeam.shortName), searchableTeamName(ourTeam.name)]),
+    ...new Set([
+      searchableTeamName(ourTeam.shortName),
+      searchableTeamName(ourTeam.name),
+      searchableTeamName(ourTeam.shortName).split(" ")[0],
+    ]),
   ].filter(Boolean);
   for (const term of searchTerms) {
     try {

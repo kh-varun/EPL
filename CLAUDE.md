@@ -90,9 +90,11 @@ or broken secondary source can't corrupt the dashboard:
   live: Chelsea's real manager, Maresca, is in the candidate list but his
   career entry isn't flagged as current, so the code falls back to the
   first entry, Xabi Alonso; Fulham's `/coachs` response doesn't contain
-  Marco Silva at all, only one unrelated name) — this is a data-quality
-  gap on API-Football's end for those two clubs specifically, not
-  something fixable in our code.
+  Marco Silva at all, only one unrelated name; Man United's `/coachs`
+  response is `[E. ten Hag, Michael Carrick]` - no Ruben Amorim at all,
+  and Carrick's stale entry is the one flagged current) — this is a
+  data-quality gap on API-Football's end for those clubs specifically,
+  not something fixable in our code.
 - **API-Football's `/teams?search=` does its own raw substring match
   server-side** — searching "Man City" or "Man United" (the shortNames)
   returns nothing useful because those two-word shortNames aren't literal
@@ -114,6 +116,15 @@ or broken secondary source can't corrupt the dashboard:
   `searchableTeamName` in `fetch.mjs` strips the FC/AFC suffix and any
   non-alphanumeric characters before every search call, not just the
   shortName term.
+- **Even the sanitized full name can still return zero results** (confirmed
+  live for Brighton: both "Brighton Hove" and "Brighton Hove Albion" search
+  as empty) - presumably API-Football stores their name with different
+  punctuation in a spot that breaks a literal-substring match no matter how
+  the query is cleaned up. `findApiFootballTeamId` falls back to just the
+  first word of the shortName as a third, narrower attempt - a single common
+  word is far more likely to appear literally in their name however it's
+  punctuated, and `teamsLikelyMatch`'s word-boundary check afterward still
+  guards against a too-broad query matching the wrong club.
 - Rate limits: football-data.org free tier is 10 req/min; API-Football
   free tier is 10 req/min / 100 req/day, **shared across every workflow
   using the key** (`lineups.yml` polls every 15 min on the same key) - a
