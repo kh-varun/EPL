@@ -11,6 +11,7 @@
     "fetch-lineups": "node scripts/fetch-lineups.mjs",
     "fetch-history": "node scripts/fetch-history.mjs",
     "fetch-odds": "node scripts/fetch-odds.mjs",
+    "fetch-live-scores": "node scripts/fetch-live-scores.mjs",
     "lint": "eslint ."
   },
   "dependencies": {

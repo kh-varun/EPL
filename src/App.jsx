@@ -16,11 +16,21 @@ const TABS = [
   { id: "headlines", label: "News", icon: NewspaperIcon },
 ];
 
+// Overlays a match with its live score/status when one's in progress -
+// live-scores.json only ever holds entries for matches currently IN_PLAY
+// or PAUSED, so any hit here is real live data, not stale leftovers.
+function withLiveScore(match, liveMatches) {
+  const live = liveMatches?.[match.id];
+  if (!live) return match;
+  return { ...match, score: live.score, liveStatus: live.status };
+}
+
 export default function App() {
   const [data, setData] = useState(null);
   const [lineups, setLineups] = useState(null);
   const [history, setHistory] = useState(null);
   const [odds, setOdds] = useState(null);
+  const [liveScores, setLiveScores] = useState(null);
   const [error, setError] = useState(null);
   const [activeTab, setActiveTab] = useState("standings");
   const [selectedTeam, setSelectedTeam] = useState(null);
@@ -54,6 +64,21 @@ export default function App() {
       .then((res) => (res.ok ? res.json() : null))
       .then(setOdds)
       .catch(() => setOdds(null));
+
+    // Live scores are likewise optional - empty whenever nothing's kicked
+    // off right now, which is most of the time. The backing file only
+    // changes every ~10 min (while a match is live), but a tab left open
+    // wouldn't otherwise ever see that - poll it on an interval too, so a
+    // live score updates without the user having to reload the page.
+    const fetchLiveScores = () =>
+      fetch(`${import.meta.env.BASE_URL}live-scores.json`, { cache: "no-store" })
+        .then((res) => (res.ok ? res.json() : null))
+        .then(setLiveScores)
+        .catch(() => setLiveScores(null));
+
+    fetchLiveScores();
+    const liveScoresInterval = setInterval(fetchLiveScores, 60 * 1000);
+    return () => clearInterval(liveScoresInterval);
   }, []);
 
   if (selectedTeam) {
@@ -98,16 +123,19 @@ export default function App() {
           <Section title="Next Fixtures">
             {data?.nextFixtures?.length ? (
               <ul className="space-y-2">
-                {data.nextFixtures.map((match) => (
-                  <MatchRow
-                    key={match.id}
-                    match={match}
-                    showScore={false}
-                    onSelectTeam={setSelectedTeam}
-                    onSelectMatch={setSelectedMatch}
-                    odds={odds?.odds?.[match.id]}
-                  />
-                ))}
+                {data.nextFixtures.map((match) => {
+                  const liveMatch = withLiveScore(match, liveScores?.matches);
+                  return (
+                    <MatchRow
+                      key={match.id}
+                      match={liveMatch}
+                      showScore={Boolean(liveMatch.liveStatus)}
+                      onSelectTeam={setSelectedTeam}
+                      onSelectMatch={liveMatch.liveStatus ? undefined : setSelectedMatch}
+                      odds={odds?.odds?.[match.id]}
+                    />
+                  );
+                })}
               </ul>
             ) : (
               <p className="text-sm text-white/50">No upcoming fixtures.</p>
@@ -122,7 +150,7 @@ export default function App() {
                 {data.lastResults.map((match) => (
                   <MatchRow
                     key={match.id}
-                    match={match}
+                    match={withLiveScore(match, liveScores?.matches)}
                     showScore={true}
                     onSelectTeam={setSelectedTeam}
                   />

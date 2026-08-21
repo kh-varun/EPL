@@ -37,23 +37,37 @@ function OddsPreview({ odds }) {
   );
 }
 
+const LIVE_STATUS_LABELS = {
+  IN_PLAY: "LIVE",
+  PAUSED: "HT",
+};
+
 export default function MatchRow({ match, showScore, onSelectTeam, onSelectMatch, odds }) {
+  const isLive = Boolean(match.liveStatus);
   const hasScore = showScore && match.score.home !== null && match.score.away !== null;
-  const homeWon = hasScore && match.score.home > match.score.away;
-  const awayWon = hasScore && match.score.away > match.score.home;
+  const homeWon = !isLive && hasScore && match.score.home > match.score.away;
+  const awayWon = !isLive && hasScore && match.score.away > match.score.home;
   const clickable = Boolean(onSelectMatch);
 
   return (
     <li
       onClick={clickable ? () => onSelectMatch(match) : undefined}
       className={
-        "rounded-xl bg-epl-surface2 ring-1 ring-white/10 p-3" +
+        "rounded-xl bg-epl-surface2 ring-1 p-3" +
+        (isLive ? " ring-red-500/40" : " ring-white/10") +
         (clickable ? " cursor-pointer hover:ring-white/20 transition-shadow" : "")
       }
     >
       <div className="flex items-center justify-between text-[10px] font-semibold uppercase tracking-wide text-white/40 mb-2">
         <span>Matchday {match.matchday}</span>
-        {!hasScore && <span>{formatMatchDateTime(match.utcDate)}</span>}
+        {isLive ? (
+          <span className="flex items-center gap-1 text-red-400">
+            <span className="h-1.5 w-1.5 rounded-full bg-red-500 animate-pulse" />
+            {LIVE_STATUS_LABELS[match.liveStatus] ?? match.liveStatus}
+          </span>
+        ) : (
+          !hasScore && <span>{formatMatchDateTime(match.utcDate)}</span>
+        )}
       </div>
 
       <div className="flex items-center gap-2">
@@ -61,7 +75,12 @@ export default function MatchRow({ match, showScore, onSelectTeam, onSelectMatch
 
         <div className="shrink-0 flex flex-col items-center justify-center px-1">
           {hasScore ? (
-            <div className="flex items-center gap-1.5 rounded-full bg-epl-magenta text-white px-3 py-1 text-sm font-extrabold tabular-nums">
+            <div
+              className={
+                "flex items-center gap-1.5 rounded-full text-white px-3 py-1 text-sm font-extrabold tabular-nums" +
+                (isLive ? " bg-red-600" : " bg-epl-magenta")
+              }
+            >
               <span className={awayWon ? "opacity-50" : ""}>{match.score.home}</span>
               <span className="opacity-50">–</span>
               <span className={homeWon ? "opacity-50" : ""}>{match.score.away}</span>

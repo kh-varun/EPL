@@ -1,0 +1,63 @@
+name: Update live scores
+
+on:
+  # Only makes a real football-data.org call when a match's kickoff window
+  # is active - the script exits immediately otherwise.
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: live-scores
+  cancel-in-progress: false
+
+jobs:
+  update-live-scores:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Fetch live scores
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+        run: npm run fetch-live-scores
+
+      - name: Commit live-scores.json if changed
+        run: |
+          # live-scores.json may not exist yet on the very first run - `git
+          # add` it conditionally so a plain `git diff` (which ignores
+          # untracked files) doesn't miss it.
+          if [ -f public/live-scores.json ]; then
+            git add public/live-scores.json
+          fi
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: update live scores"
+          # main moves often (update.yml/lineups.yml/odds.yml can push too),
+          # so a plain push here can lose the race and get rejected as
+          # non-fast-forward - rebase onto whatever's new and retry instead
+          # of discarding this run's fetched data.
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt) - fetching and rebasing..."
+            git fetch origin main
+            git rebase origin/main
+          done
+          echo "Failed to push after retries"
+          exit 1
