@@ -1,12 +1,12 @@
 {
-  "fetchedAt": "2026-08-21T05:04:06.037Z",
+  "fetchedAt": "2026-08-21T05:48:09.615Z",
   "odds": {
     "560542": {
       "eventTicker": "KXEPLGAME-26AUG21ARSCOV",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug21arscov",
       "home": {
         "label": "Arsenal",
-        "probability": 84,
+        "probability": 83,
         "ticker": "KXEPLGAME-26AUG21ARSCOV-ARS"
       },
       "away": {
@@ -54,7 +54,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 29,
+        "probability": 28,
         "ticker": "KXEPLGAME-26AUG22IPSSUN-TIE"
       }
     },
@@ -68,7 +68,7 @@
       },
       "away": {
         "label": "Leeds United",
-        "probability": 31,
+        "probability": 30,
         "ticker": "KXEPLGAME-26AUG22NFOLEE-LEE"
       },
       "draw": {
