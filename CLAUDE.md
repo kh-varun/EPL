@@ -13,6 +13,7 @@ APIs via scheduled GitHub Actions workflows that commit static JSON into
 | `fetch-lineups.mjs` | `public/lineups.json` | `lineups.yml` | Every 15 min | `API_FOOTBALL_KEY`; `HIGHLIGHTLY_API_KEY` optional |
 | `fetch-history.mjs` | `public/history.json` | `history.yml` | Monthly | `FOOTBALL_DATA_TOKEN`, `API_FOOTBALL_KEY` (optional) |
 | `fetch-odds.mjs` | `public/odds.json` | `odds.yml` | Every 15 min | none (Kalshi is public) |
+| `fetch-live-scores.mjs` | `public/live-scores.json` | `live-scores.yml` | Every 10 min | `FOOTBALL_DATA_TOKEN` |
 
 All scripts degrade gracefully: a missing key or a failed call never
 crashes the run or corrupts existing JSON — it just leaves that piece of
@@ -178,19 +179,39 @@ usually reachable. When you can't reproduce something locally:
    and found the actual bug (wrong field names) that no amount of
    re-reading the code would have caught.
 
-## All four fetch workflows retry their push
+## Live scores
 
-`update.yml`, `lineups.yml`, `odds.yml`, and `history.yml` each fetch,
-commit, and `git push` straight to `main` independently. Since
-`lineups.yml`/`odds.yml` fire every 15 minutes and `update.yml`'s full
-squad-fetch loop alone takes several minutes, two of them landing at once
-is a real, confirmed-live race - not theoretical: `update.yml` fetched
-successfully, committed locally, then got its push rejected as
-non-fast-forward because another workflow had pushed to `main` in the
-meantime, and the whole run's fetched data was discarded since there was
-no retry. Every commit step now does fetch + rebase + push in a retry loop
-instead of a single bare `git push` - keep that pattern on any new
-scheduled-write workflow added to this repo.
+`fetch-live-scores.mjs` runs every 10 minutes but only makes a
+football-data.org call when some match's kickoff time falls within its
+polling window (15 min before through 3 hours after) - checked against the
+already-cached `nextFixtures`/`lastResults` in `data.json`, at zero API
+cost, before ever hitting the network. When something's actually live, it
+queries `/matches?status=IN_PLAY,PAUSED` and writes `live-scores.json`
+keyed by match id; when nothing is, it clears the file so a finished
+match's score doesn't linger with a stale "LIVE" badge. `App.jsx` also
+polls this file client-side every 60s (unlike the other JSON files, which
+are only fetched once on load) so a tab left open updates without a
+reload - the underlying file only changes every ~10 min regardless.
+`MatchRow` reads `match.liveStatus` (set by `withLiveScore` in `App.jsx`)
+to swap in the red "LIVE"/"HT" badge and score pill.
+
+## All five fetch workflows retry their push
+
+`update.yml`, `lineups.yml`, `odds.yml`, `history.yml`, and
+`live-scores.yml` each fetch, commit, and `git push` straight to `main`
+independently. Since several of these fire every 10-15 minutes and
+`update.yml`'s full squad-fetch loop alone takes several minutes, two of
+them landing at once is a real, confirmed-live race - not theoretical:
+`update.yml` fetched successfully, committed locally, then got its push
+rejected as non-fast-forward because another workflow had pushed to `main`
+in the meantime, and the whole run's fetched data was discarded since
+there was no retry. Every commit step now does fetch + rebase + push in a
+retry loop instead of a single bare `git push` - keep that pattern on any
+new scheduled-write workflow added to this repo. Also remember `git diff
+--quiet` alone never detects a brand-new untracked file (confirmed to bite
+`api-football-team-ids.json` on its first run) - `git add` the output file
+conditionally (`if [ -f ... ]`) before diffing, every time, not just when
+the file is already known to exist.
 
 ## Git workflow for this repo
 
