@@ -13,7 +13,7 @@ APIs via scheduled GitHub Actions workflows that commit static JSON into
 | `fetch-lineups.mjs` | `public/lineups.json` | `lineups.yml` | Every 15 min | `API_FOOTBALL_KEY`; `HIGHLIGHTLY_API_KEY` optional |
 | `fetch-history.mjs` | `public/history.json` | `history.yml` | Monthly | `FOOTBALL_DATA_TOKEN`, `API_FOOTBALL_KEY` (optional) |
 | `fetch-odds.mjs` | `public/odds.json` | `odds.yml` | Every 15 min | none (Kalshi is public) |
-| `fetch-live-scores.mjs` | `public/live-scores.json` | `live-scores.yml` | Every 10 min | `FOOTBALL_DATA_TOKEN` |
+| `fetch-live-scores.mjs` | `public/live-scores.json`, `public/match-stats.json` | `live-scores.yml` | Every 10 min | `FOOTBALL_DATA_TOKEN`; `API_FOOTBALL_KEY` (optional, for match stats) |
 
 All scripts degrade gracefully: a missing key or a failed call never
 crashes the run or corrupts existing JSON — it just leaves that piece of
@@ -210,6 +210,37 @@ full time instead of waiting up to a week. It deliberately leaves
 `teams`/`headlines` untouched (squads and news don't change mid-match) and
 does not re-run the expensive per-team squad/coach fetch.
 
+## Match stats dialog
+
+Clicking a finished match on the Results tab opens `MatchStatsDialog`
+(shots, shots on target, possession, passes, pass accuracy, fouls, corners,
+offsides, cards per side) - deliberately just the stats breakdown, not an
+embedded highlights video or a goal-scorer timeline (the latter would need
+a third API-Football call per match - `/fixtures/events` - which wasn't
+worth the extra shared-quota spend for what was asked).
+
+The same moment `fetch-live-scores.mjs` detects a match just went from live
+to finished, it also resolves that match's API-Football fixture id (reusing
+`findApiFootballFixtureId`, the same date+`teamsLikelyMatch` lookup
+`fetch-lineups.mjs` already relies on) and calls
+`/fixtures/statistics?fixture=` for both teams' stats, writing the result to
+`public/match-stats.json` keyed by our (football-data.org) match id. A
+finished match's stats never change, so each match is only ever fetched
+once - already-cached matches are skipped on every later run. Optional and
+gracefully degrading like every other API-Football feature here: skipped
+entirely without `API_FOOTBALL_KEY`, gated behind the same
+`hasApiFootballQuotaFor` pre-check, and a per-match failure just leaves that
+match without a stats breakdown rather than failing the run.
+
+`scripts/lib/api-football.mjs` now holds the API-Football client and all the
+team/fixture name-matching helpers (`teamsLikelyMatch`, `searchableTeamName`,
+`findApiFootballTeamId`, `findApiFootballFixtureId`,
+`hasApiFootballQuotaFor`) shared by `fetch.mjs`, `fetch-lineups.mjs`, and
+`fetch-live-scores.mjs` - extracted so a third consumer of the
+fixture-lookup logic didn't mean a third copy of it (and a third place to
+apply every hard-won matching fix documented above, from the word-boundary
+rule through the Brighton bidirectional-matching case).
+
 ## All five fetch workflows retry their push
 
 `update.yml`, `lineups.yml`, `odds.yml`, `history.yml`, and
@@ -272,5 +303,8 @@ branching, not just before pushing.
 - Team detail: squad list + illustrative/confirmed formation view
   side-by-side (desktop) / stacked (mobile) — never a toggle, both are
   always visible when data exists.
-- Match odds (Kalshi) only apply to the **Fixtures** tab, never Results —
-  `onSelectMatch` is only wired up there in `App.jsx`.
+- Match odds (Kalshi) only apply to the **Fixtures** tab, never Results.
+  Both tabs wire `onSelectMatch` in `App.jsx`, but to different dialogs:
+  Fixtures opens `MatchOddsDialog`, Results opens `MatchStatsDialog` - a
+  live match in either tab has `onSelectMatch` set to `undefined` instead
+  (odds don't apply mid-match, and stats aren't final yet).

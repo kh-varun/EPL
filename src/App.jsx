@@ -7,6 +7,7 @@ import MatchRow from "./components/MatchRow.jsx";
 import Headlines from "./components/Headlines.jsx";
 import TeamDetail from "./components/TeamDetail.jsx";
 import MatchOddsDialog from "./components/MatchOddsDialog.jsx";
+import MatchStatsDialog from "./components/MatchStatsDialog.jsx";
 import { TrophyIcon, CalendarIcon, WhistleIcon, NewspaperIcon } from "./components/icons.jsx";
 
 const TABS = [
@@ -31,10 +32,12 @@ export default function App() {
   const [history, setHistory] = useState(null);
   const [odds, setOdds] = useState(null);
   const [liveScores, setLiveScores] = useState(null);
+  const [matchStats, setMatchStats] = useState(null);
   const [error, setError] = useState(null);
   const [activeTab, setActiveTab] = useState("standings");
   const [selectedTeam, setSelectedTeam] = useState(null);
   const [selectedMatch, setSelectedMatch] = useState(null);
+  const [selectedStatsMatch, setSelectedStatsMatch] = useState(null);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data.json`, { cache: "no-store" })
@@ -64,6 +67,14 @@ export default function App() {
       .then((res) => (res.ok ? res.json() : null))
       .then(setOdds)
       .catch(() => setOdds(null));
+
+    // Match stats (shots, possession, etc.) are likewise optional - only
+    // finished matches have them, and even then only once fetch-live-scores.mjs
+    // has picked them up after full time.
+    fetch(`${import.meta.env.BASE_URL}match-stats.json`, { cache: "no-store" })
+      .then((res) => (res.ok ? res.json() : null))
+      .then(setMatchStats)
+      .catch(() => setMatchStats(null));
 
     // Live scores are likewise optional - empty whenever nothing's kicked
     // off right now, which is most of the time. The backing file only
@@ -147,14 +158,18 @@ export default function App() {
           <Section title="Last Results">
             {data?.lastResults?.length ? (
               <ul className="space-y-2">
-                {data.lastResults.map((match) => (
-                  <MatchRow
-                    key={match.id}
-                    match={withLiveScore(match, liveScores?.matches)}
-                    showScore={true}
-                    onSelectTeam={setSelectedTeam}
-                  />
-                ))}
+                {data.lastResults.map((match) => {
+                  const liveMatch = withLiveScore(match, liveScores?.matches);
+                  return (
+                    <MatchRow
+                      key={match.id}
+                      match={liveMatch}
+                      showScore={true}
+                      onSelectTeam={setSelectedTeam}
+                      onSelectMatch={liveMatch.liveStatus ? undefined : setSelectedStatsMatch}
+                    />
+                  );
+                })}
               </ul>
             ) : (
               <p className="text-sm text-white/50">
@@ -176,6 +191,14 @@ export default function App() {
           match={selectedMatch}
           odds={odds?.odds?.[selectedMatch.id]}
           onClose={() => setSelectedMatch(null)}
+        />
+      )}
+
+      {selectedStatsMatch && (
+        <MatchStatsDialog
+          match={selectedStatsMatch}
+          stats={matchStats?.stats?.[selectedStatsMatch.id]?.stats}
+          onClose={() => setSelectedStatsMatch(null)}
         />
       )}
     </div>

@@ -18,6 +18,7 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { apiFootballRequest, teamsLikelyMatch, findApiFootballFixtureId } from "./lib/api-football.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = path.join(__dirname, "..", "public", "data.json");
@@ -34,7 +35,6 @@ if (!API_FOOTBALL_KEY) {
 // as every other optional key in this project.
 const HIGHLIGHTLY_API_KEY = process.env.HIGHLIGHTLY_API_KEY;
 
-const API_BASE = "https://v3.football.api-sports.io";
 const ESPN_BASE = "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1";
 const HIGHLIGHTLY_BASE = "https://soccer.highlightly.net";
 
@@ -45,72 +45,6 @@ const GRACE_PERIOD_MS = 90 * 60 * 1000; // keep trying up to 90 min after kickof
 // Once a match is this old, drop it from lineups.json so the file doesn't
 // grow forever.
 const PRUNE_AFTER_MS = 24 * 60 * 60 * 1000;
-
-async function apiFootballRequest(endpoint) {
-  const res = await fetch(`${API_BASE}${endpoint}`, {
-    headers: { "x-apisports-key": API_FOOTBALL_KEY },
-  });
-  if (!res.ok) {
-    throw new Error(`API-Football ${endpoint} failed: ${res.status} ${res.statusText}`);
-  }
-  const body = await res.json();
-  if (body.errors && Object.keys(body.errors).length > 0) {
-    throw new Error(`API-Football ${endpoint} returned errors: ${JSON.stringify(body.errors)}`);
-  }
-  return body.response ?? [];
-}
-
-function normalizeTeamName(name) {
-  return name
-    .toLowerCase()
-    .replace(/\bfc\b|\bafc\b/g, "")
-    .replace(/[^a-z0-9]+/g, " ")
-    .trim();
-}
-
-// Clubs whose API-Football name doesn't share a word with the
-// football-data.org name, so substring matching alone can't connect them.
-const NAME_ALIASES = {
-  wolverhampton: ["wolves"],
-  "wolverhampton wanderers": ["wolves"],
-};
-
-// Word-boundary match, not raw substring, checked in both directions - see
-// the identical fix (and its "Techiman City"/"Cwmamman United FC" and
-// Brighton-is-just-"Brighton" stories) in fetch.mjs.
-function teamsLikelyMatch(ourTeam, theirName) {
-  const ours = [normalizeTeamName(ourTeam.name), normalizeTeamName(ourTeam.shortName)];
-  const withAliases = ours.flatMap((name) => [name, ...(NAME_ALIASES[name] ?? [])]);
-  const theirWords = normalizeTeamName(theirName).split(" ").filter(Boolean);
-  const theirSet = new Set(theirWords);
-  return withAliases.some((name) => {
-    const ourWords = name.split(" ").filter(Boolean);
-    if (ourWords.length === 0 || theirWords.length === 0) return false;
-    const ourSet = new Set(ourWords);
-    return ourWords.every((w) => theirSet.has(w)) || theirWords.every((w) => ourSet.has(w));
-  });
-}
-
-// Deliberately NOT passing league/season - confirmed live that /fixtures
-// with season=2026 hits the exact same free-plan restriction already
-// documented for /teams?league=&season= in CLAUDE.md ("Free plans do not
-// have access to this season, try from 2022 to 2024"), which meant this
-// endpoint has been failing on every single run so far. Querying by date
-// alone returns every fixture worldwide that day, but teamsLikelyMatch
-// below still filters down to the real match, so the extra volume doesn't
-// cost correctness - only a slightly bigger response to fetch and filter.
-async function findApiFootballFixtureId(ourMatch) {
-  const date = ourMatch.utcDate.slice(0, 10); // YYYY-MM-DD
-  const fixtures = await apiFootballRequest(`/fixtures?date=${date}`);
-
-  const match = fixtures.find(
-    (f) =>
-      teamsLikelyMatch(ourMatch.homeTeam, f.teams?.home?.name ?? "") &&
-      teamsLikelyMatch(ourMatch.awayTeam, f.teams?.away?.name ?? ""),
-  );
-
-  return match?.fixture?.id ?? null;
-}
 
 function mapLineupSide(sideData) {
   if (!sideData) return null;
