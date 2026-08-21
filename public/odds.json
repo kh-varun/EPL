@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-21T10:06:04.849Z",
+  "fetchedAt": "2026-08-21T10:46:59.954Z",
   "odds": {
     "560542": {
       "eventTicker": "KXEPLGAME-26AUG21ARSCOV",
@@ -16,7 +16,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 12,
+        "probability": 13,
         "ticker": "KXEPLGAME-26AUG21ARSCOV-TIE"
       }
     },
@@ -139,7 +139,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug23briavl",
       "home": {
         "label": "Brighton Hove",
-        "probability": 44,
+        "probability": 43,
         "ticker": "KXEPLGAME-26AUG23BRIAVL-BRI"
       },
       "away": {
