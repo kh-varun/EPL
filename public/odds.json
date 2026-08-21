@@ -1,12 +1,12 @@
 {
-  "fetchedAt": "2026-08-21T18:14:09.031Z",
+  "fetchedAt": "2026-08-21T18:58:57.851Z",
   "odds": {
     "560542": {
       "eventTicker": "KXEPLGAME-26AUG21ARSCOV",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug21arscov",
       "home": {
         "label": "Arsenal",
-        "probability": 82,
+        "probability": 81,
         "ticker": "KXEPLGAME-26AUG21ARSCOV-ARS"
       },
       "away": {
@@ -44,7 +44,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug22ipssun",
       "home": {
         "label": "Ipswich Town",
-        "probability": 35,
+        "probability": 34,
         "ticker": "KXEPLGAME-26AUG22IPSSUN-IPS"
       },
       "away": {
@@ -82,7 +82,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug22evecry",
       "home": {
         "label": "Everton",
-        "probability": 43,
+        "probability": 44,
         "ticker": "KXEPLGAME-26AUG22EVECRY-EVE"
       },
       "away": {
@@ -177,7 +177,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug24fulcfc",
       "home": {
         "label": "Fulham",
-        "probability": 25,
+        "probability": 24,
         "ticker": "KXEPLGAME-26AUG24FULCFC-FUL"
       },
       "away": {
