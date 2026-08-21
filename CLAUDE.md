@@ -79,22 +79,34 @@ or broken secondary source can't corrupt the dashboard:
   code.
 - **football-data.org's free tier does return a `coach` field, but it's
   often stale** via `/teams/{id}` (confirmed live — it returned Ljungberg
-  for Arsenal, Klopp for Liverpool, Xabi Alonso for Chelsea, all long gone).
-  `fetch.mjs` always prefers the API-Football lookup when a key is set and
-  only falls back to football-data.org's value if that lookup fails.
+  for Arsenal and Klopp for Liverpool, both long gone). `fetch.mjs` always
+  prefers the API-Football lookup when a key is set and only falls back to
+  football-data.org's value if that lookup fails.
 - **API-Football's `/coachs?team=` returns every coach who's ever had a
   career entry at that team, not just the current one** — `fetchCurrentCoach`
   in `fetch.mjs` picks the entry whose career record for that team has no
   `end` date rather than trusting the first result. Even with that filter,
-  **API-Football's own coach data is sometimes just wrong** (confirmed
-  live: Chelsea's real manager, Maresca, is in the candidate list but his
-  career entry isn't flagged as current, so the code falls back to the
-  first entry, Xabi Alonso; Fulham's `/coachs` response doesn't contain
-  Marco Silva at all, only one unrelated name; Man United's `/coachs`
-  response is `[E. ten Hag, Michael Carrick]` - no Ruben Amorim at all,
-  and Carrick's stale entry is the one flagged current) — this is a
-  data-quality gap on API-Football's end for those clubs specifically,
-  not something fixable in our code.
+  **API-Football's own coach data can still be wrong or simply missing the
+  real current manager** (confirmed live: Man City's `/coachs` response is
+  `[Guardiola]` only, with no Enzo Maresca at all despite Maresca replacing
+  him as manager in June 2026; Fulham's `/coachs` response is `[Alvaro
+  Arbeloa]` only, and Arbeloa is actually Real Madrid's manager, unrelated
+  to Fulham) — a data-quality gap on API-Football's end for those clubs
+  specifically, not something fixable in our code.
+
+  **Warning for future sessions, learned the hard way**: don't trust your
+  own training-cutoff knowledge of "who manages which club" over what this
+  pipeline actually returns. This project's in-story "today" keeps moving
+  forward, and a full wave of real Premier League managerial changes
+  happened between a typical model's training cutoff and whatever "today"
+  is when you're reading this (Chelsea, Man City, Man United, Fulham, and
+  Real Madrid all changed manager within the same few months). Earlier the
+  same day this was written, a session wrongly concluded Chelsea's "Xabi
+  Alonso" and Man United's "Michael Carrick" results were API-Football bugs
+  — its assumption that Maresca/Amorim were still in charge was itself the
+  stale data; both API-Football results were actually correct. If a
+  returned manager name looks surprising, verify with a live web search
+  before assuming the API or the code is wrong.
 - **API-Football's `/teams?search=` does its own raw substring match
   server-side** — searching "Man City" or "Man United" (the shortNames)
   returns nothing useful because those two-word shortNames aren't literal
