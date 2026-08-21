@@ -7,6 +7,12 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import {
+  footballDataRequest,
+  fetchStandings,
+  fetchLastResults,
+  fetchNextFixtures,
+} from "./lib/football-data.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_PATH = path.join(__dirname, "..", "public", "data.json");
@@ -27,28 +33,12 @@ if (!FOOTBALL_DATA_TOKEN) {
 // Squads still work fine without it.
 const API_FOOTBALL_KEY = process.env.API_FOOTBALL_KEY;
 
-const FOOTBALL_DATA_BASE = "https://api.football-data.org/v4";
 const API_FOOTBALL_BASE = "https://v3.football.api-sports.io";
 
 const RSS_FEEDS = [
   { source: "BBC Sport", url: "http://feeds.bbci.co.uk/sport/football/rss.xml" },
   { source: "The Guardian", url: "https://www.theguardian.com/football/rss" },
 ];
-
-async function footballDataRequest(endpoint) {
-  const res = await fetch(`${FOOTBALL_DATA_BASE}${endpoint}`, {
-    headers: { "X-Auth-Token": FOOTBALL_DATA_TOKEN },
-  });
-  if (!res.ok) {
-    // football-data.org returns 400 (not 401/403) for a bad/malformed token,
-    // and its response body explains why - surface it instead of just the
-    // status code, or a bad-token misconfiguration looks identical to any
-    // other API error in the logs.
-    const body = await res.text().catch(() => "");
-    throw new Error(`football-data.org ${endpoint} failed: ${res.status} ${res.statusText} ${body}`);
-  }
-  return res.json();
-}
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -201,66 +191,6 @@ async function fetchCurrentCoach(apiFootballTeamId) {
     (coach.career ?? []).some((c) => c.team?.id === apiFootballTeamId && !c.end),
   );
   return current?.name ?? coaches[0]?.name ?? null;
-}
-
-function mapTeam(team) {
-  return {
-    id: team.id,
-    name: team.name,
-    shortName: team.shortName,
-    tla: team.tla,
-    crest: team.crest,
-  };
-}
-
-async function fetchStandings() {
-  const data = await footballDataRequest("/competitions/PL/standings");
-  const total = data.standings.find((s) => s.type === "TOTAL");
-  return (total?.table ?? []).map((row) => ({
-    position: row.position,
-    team: mapTeam(row.team),
-    playedGames: row.playedGames,
-    won: row.won,
-    draw: row.draw,
-    lost: row.lost,
-    points: row.points,
-    goalsFor: row.goalsFor,
-    goalsAgainst: row.goalsAgainst,
-    goalDifference: row.goalDifference,
-    form: row.form,
-  }));
-}
-
-async function fetchLastResults(limit = 5) {
-  const data = await footballDataRequest("/competitions/PL/matches?status=FINISHED");
-  const matches = [...(data.matches ?? [])].sort(
-    (a, b) => new Date(b.utcDate) - new Date(a.utcDate),
-  );
-  return matches.slice(0, limit).map(mapMatch);
-}
-
-async function fetchNextFixtures(limit = 10) {
-  const data = await footballDataRequest("/competitions/PL/matches?status=SCHEDULED");
-  const matches = [...(data.matches ?? [])].sort(
-    (a, b) => new Date(a.utcDate) - new Date(b.utcDate),
-  );
-  return matches.slice(0, limit).map(mapMatch);
-}
-
-function mapMatch(match) {
-  return {
-    id: match.id,
-    utcDate: match.utcDate,
-    status: match.status,
-    matchday: match.matchday,
-    homeTeam: mapTeam(match.homeTeam),
-    awayTeam: mapTeam(match.awayTeam),
-    score: {
-      home: match.score?.fullTime?.home ?? null,
-      away: match.score?.fullTime?.away ?? null,
-      winner: match.score?.winner ?? null,
-    },
-  };
 }
 
 const POSITION_ORDER = ["Goalkeeper", "Defence", "Midfield", "Offence"];
