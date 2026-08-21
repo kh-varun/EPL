@@ -1,8 +1,27 @@
 {
-  "fetchedAt": "2026-08-21T18:38:38.720Z",
+  "fetchedAt": "2026-08-21T22:49:47.084Z",
   "standings": [
     {
       "position": 1,
+      "team": {
+        "id": 57,
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "tla": "ARS",
+        "crest": "https://crests.football-data.org/57.png"
+      },
+      "playedGames": 1,
+      "won": 1,
+      "draw": 0,
+      "lost": 0,
+      "points": 3,
+      "goalsFor": 3,
+      "goalsAgainst": 0,
+      "goalDifference": 3,
+      "form": null
+    },
+    {
+      "position": 2,
       "team": {
         "id": 1044,
         "name": "AFC Bournemouth",
@@ -21,26 +40,7 @@
       "form": null
     },
     {
-      "position": 1,
-      "team": {
-        "id": 57,
-        "name": "Arsenal FC",
-        "shortName": "Arsenal",
-        "tla": "ARS",
-        "crest": "https://crests.football-data.org/57.png"
-      },
-      "playedGames": 0,
-      "won": 0,
-      "draw": 0,
-      "lost": 0,
-      "points": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0,
-      "form": null
-    },
-    {
-      "position": 1,
+      "position": 2,
       "team": {
         "id": 58,
         "name": "Aston Villa FC",
@@ -59,7 +59,7 @@
       "form": null
     },
     {
-      "position": 1,
+      "position": 2,
       "team": {
         "id": 402,
         "name": "Brentford FC",
@@ -78,7 +78,7 @@
       "form": null
     },
     {
-      "position": 1,
+      "position": 2,
       "team": {
         "id": 397,
         "name": "Brighton & Hove Albion FC",
@@ -97,7 +97,7 @@
       "form": null
     },
     {
-      "position": 1,
+      "position": 2,
       "team": {
         "id": 61,
         "name": "Chelsea FC",
@@ -116,26 +116,7 @@
       "form": null
     },
     {
-      "position": 1,
-      "team": {
-        "id": 1076,
-        "name": "Coventry City FC",
-        "shortName": "Coventry City",
-        "tla": "COV",
-        "crest": "https://crests.football-data.org/1076.png"
-      },
-      "playedGames": 0,
-      "won": 0,
-      "draw": 0,
-      "lost": 0,
-      "points": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0,
-      "form": null
-    },
-    {
-      "position": 1,
+      "position": 2,
       "team": {
         "id": 354,
         "name": "Crystal Palace FC",
@@ -154,7 +135,7 @@
       "form": null
     },
     {
-      "position": 1,
+      "position": 2,
       "team": {
         "id": 62,
         "name": "Everton FC",
@@ -173,7 +154,7 @@
       "form": null
     },
     {
-      "position": 1,
+      "position": 2,
       "team": {
         "id": 63,
         "name": "Fulham FC",
@@ -192,7 +173,7 @@
       "form": null
     },
     {
-      "position": 1,
+      "position": 2,
       "team": {
         "id": 322,
         "name": "Hull City AFC",
@@ -211,7 +192,7 @@
       "form": null
     },
     {
-      "position": 1,
+      "position": 2,
       "team": {
         "id": 349,
         "name": "Ipswich Town FC",
@@ -230,7 +211,7 @@
       "form": null
     },
     {
-      "position": 1,
+      "position": 2,
       "team": {
         "id": 341,
         "name": "Leeds United FC",
@@ -249,7 +230,7 @@
       "form": null
     },
     {
-      "position": 1,
+      "position": 2,
       "team": {
         "id": 64,
         "name": "Liverpool FC",
@@ -268,7 +249,7 @@
       "form": null
     },
     {
-      "position": 1,
+      "position": 2,
       "team": {
         "id": 65,
         "name": "Manchester City FC",
@@ -287,7 +268,7 @@
       "form": null
     },
     {
-      "position": 1,
+      "position": 2,
       "team": {
         "id": 66,
         "name": "Manchester United FC",
@@ -306,7 +287,7 @@
       "form": null
     },
     {
-      "position": 1,
+      "position": 2,
       "team": {
         "id": 67,
         "name": "Newcastle United FC",
@@ -325,7 +306,7 @@
       "form": null
     },
     {
-      "position": 1,
+      "position": 2,
       "team": {
         "id": 351,
         "name": "Nottingham Forest FC",
@@ -344,7 +325,7 @@
       "form": null
     },
     {
-      "position": 1,
+      "position": 2,
       "team": {
         "id": 71,
         "name": "Sunderland AFC",
@@ -363,7 +344,7 @@
       "form": null
     },
     {
-      "position": 1,
+      "position": 2,
       "team": {
         "id": 73,
         "name": "Tottenham Hotspur FC",
@@ -380,14 +361,32 @@
       "goalsAgainst": 0,
       "goalDifference": 0,
       "form": null
+    },
+    {
+      "position": 20,
+      "team": {
+        "id": 1076,
+        "name": "Coventry City FC",
+        "shortName": "Coventry City",
+        "tla": "COV",
+        "crest": "https://crests.football-data.org/1076.png"
+      },
+      "playedGames": 1,
+      "won": 0,
+      "draw": 0,
+      "lost": 1,
+      "points": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 3,
+      "goalDifference": -3,
+      "form": null
     }
   ],
-  "lastResults": [],
-  "nextFixtures": [
+  "lastResults": [
     {
       "id": 560542,
       "utcDate": "2026-08-21T19:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 1,
       "homeTeam": {
         "id": 57,
@@ -404,11 +403,13 @@
         "crest": "https://crests.football-data.org/1076.png"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "winner": null
+        "home": 3,
+        "away": 0,
+        "winner": "HOME_TEAM"
       }
-    },
+    }
+  ],
+  "nextFixtures": [
     {
       "id": 560543,
       "utcDate": "2026-08-22T11:30:00Z",
@@ -633,18 +634,154 @@
         "away": null,
         "winner": null
       }
+    },
+    {
+      "id": 560555,
+      "utcDate": "2026-08-28T19:00:00Z",
+      "status": "TIMED",
+      "matchday": 2,
+      "homeTeam": {
+        "id": 354,
+        "name": "Crystal Palace FC",
+        "shortName": "Crystal Palace",
+        "tla": "CRY",
+        "crest": "https://crests.football-data.org/354.png"
+      },
+      "awayTeam": {
+        "id": 65,
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "tla": "MCI",
+        "crest": "https://crests.football-data.org/65.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      }
     }
   ],
   "headlines": [
     {
-      "title": "Arsenal v Coventry City: Premier League – live",
-      "link": "https://www.theguardian.com/football/live/2026/aug/21/arsenal-v-coventry-city-premier-league-live",
-      "pubDate": "Fri, 21 Aug 2026 18:20:09 GMT",
-      "image": "https://i.guim.co.uk/img/media/13214b39204d99ebe03a058a8527c7c2d97adb7c/244_0_7920_6336/master/7920.jpg?width=460&quality=85&auto=format&fit=max&s=98d7c2e8773f0421cc1bd8feebc22eb8",
+      "title": "Lampard praises Coventry's courage in 3-0 defeat by Arsenal",
+      "link": "https://www.bbc.co.uk/sport/football/videos/ckg97d082wyo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Fri, 21 Aug 2026 22:00:36 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6841/live/317c58f0-9daa-11f1-b109-879e35c24276.jpg",
+      "source": "BBC Sport",
+      "teams": [
+        57
+      ]
+    },
+    {
+      "title": "'A lot to like!' Arteta delighted with opening win for Arsenal",
+      "link": "https://www.bbc.co.uk/sport/football/videos/c4gjn9j3d47o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Fri, 21 Aug 2026 21:56:44 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3669/live/490c4210-9da9-11f1-aed2-8d6da8d75094.jpg",
+      "source": "BBC Sport",
+      "teams": [
+        57
+      ]
+    },
+    {
+      "title": "Arsenal start title defence with comfortable win over Coventry",
+      "link": "https://www.bbc.co.uk/sport/football/videos/cgr7e17010go?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Fri, 21 Aug 2026 21:35:28 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f4ad/live/ec1ad730-9da6-11f1-a291-b542ee92de7c.jpg",
+      "source": "BBC Sport",
+      "teams": [
+        57
+      ]
+    },
+    {
+      "title": "Manchester United agree deal for Carlos Baleba to continue midfield rebuild",
+      "link": "https://www.theguardian.com/football/2026/aug/21/manchester-united-continue-midfield-regeneration-with-carlos-baleba-deal",
+      "pubDate": "Fri, 21 Aug 2026 21:30:45 GMT",
+      "image": "https://i.guim.co.uk/img/media/973059bdc681cee7d513966afe1f97c86c733d3e/306_0_2993_2395/master/2993.jpg?width=460&quality=85&auto=format&fit=max&s=0e2265c2d61ebe35d18984dd3ae2a671",
       "source": "The Guardian",
       "teams": [
-        57,
-        1076
+        66
+      ]
+    },
+    {
+      "title": "Premier League news: Iraola warns against writing off Liverpool title hopes",
+      "link": "https://www.theguardian.com/football/2026/aug/21/premier-league-news-liverpool-iraola-aston-villa-emery",
+      "pubDate": "Fri, 21 Aug 2026 21:30:45 GMT",
+      "image": "https://i.guim.co.uk/img/media/4f29d948830bb1dcde1b18af7f9f1c8b2c983953/1676_338_1354_1083/master/1354.jpg?width=460&quality=85&auto=format&fit=max&s=502b0c2a2fd14147271a4c274b61f9e6",
+      "source": "The Guardian",
+      "teams": [
+        64
+      ]
+    },
+    {
+      "title": "De Zerbi defends Spurs transfer spree and claims every club ‘wanted to kill us’",
+      "link": "https://www.theguardian.com/football/2026/aug/21/roberto-de-zerbi-tottenham-transfer-spree-brentford-premier-league",
+      "pubDate": "Fri, 21 Aug 2026 21:30:45 GMT",
+      "image": "https://i.guim.co.uk/img/media/7d41eaaebb0b44777e6c8b83444aede2a51e810b/234_46_2337_1870/master/2337.jpg?width=460&quality=85&auto=format&fit=max&s=ef82699fec9652e985f91eb81b02f53f",
+      "source": "The Guardian",
+      "teams": []
+    },
+    {
+      "title": "Inter complete £30m deal for Liverpool's Jones",
+      "link": "https://www.bbc.co.uk/sport/football/articles/czdm9pjd0ero?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Fri, 21 Aug 2026 21:23:29 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2100/live/de0dcb70-9cac-11f1-84cf-fd4cfd9d6c84.jpg",
+      "source": "BBC Sport",
+      "teams": [
+        64
+      ]
+    },
+    {
+      "title": "Arsenal sweep Coventry aside to start Premier League title defence in style",
+      "link": "https://www.theguardian.com/football/2026/aug/21/arsenal-coventry-premier-league-match-report",
+      "pubDate": "Fri, 21 Aug 2026 21:07:53 GMT",
+      "image": "https://i.guim.co.uk/img/media/1ee01e952da009bce8b1235d164d246158b1cdc7/694_0_4077_3263/master/4077.jpg?width=460&quality=85&auto=format&fit=max&s=a1d5406a8f7b1686669492d36b684e03",
+      "source": "The Guardian",
+      "teams": [
+        57
+      ]
+    },
+    {
+      "title": "Tzolis shines in Premier League opener - Arsenal v Coventry player ratings",
+      "link": "https://www.bbc.co.uk/sport/football/articles/crl7g4e4pdno?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Fri, 21 Aug 2026 20:52:32 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5e02/live/71987740-9da8-11f1-a291-b542ee92de7c.jpg",
+      "source": "BBC Sport",
+      "teams": [
+        57
+      ]
+    },
+    {
+      "title": "Bavidge earns Inverness CT a point against Partick Thistle",
+      "link": "https://www.bbc.co.uk/sport/videos/cvgl2zz12xeo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Fri, 21 Aug 2026 20:42:09 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/11f8/live/a36290b0-9da0-11f1-b109-879e35c24276.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Man Utd agree £70m fee for Brighton's Baleba",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cwy452d662ko?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Fri, 21 Aug 2026 19:58:11 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/30b6/live/c4242c40-9d9c-11f1-bff5-1bcd013e5a56.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Usain Bolt set to play Sunday league football for star-studded veterans’ team",
+      "link": "https://www.theguardian.com/sport/2026/aug/21/usain-bolt-to-play-sunday-league-football-wythenshawe-veterans",
+      "pubDate": "Fri, 21 Aug 2026 19:52:06 GMT",
+      "image": "https://i.guim.co.uk/img/media/72a245edbc8ecb88b96040346838999bd442fe90/0_0_4348_3478/master/4348.jpg?width=460&quality=85&auto=format&fit=max&s=4cbca52d180c6bc4fcb016ca1e7b7f39",
+      "source": "The Guardian",
+      "teams": []
+    },
+    {
+      "title": "Liverpool make Endrick enquiry - Saturday's gossip",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cy4kjg3j4d3o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Fri, 21 Aug 2026 19:48:23 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/90aa/live/fb636880-9d95-11f1-a291-b542ee92de7c.png",
+      "source": "BBC Sport",
+      "teams": [
+        64
       ]
     },
     {
@@ -660,112 +797,6 @@
       "link": "https://www.bbc.co.uk/sport/football/articles/c9v4d2z2p7yo?at_medium=RSS&at_campaign=rss",
       "pubDate": "Fri, 21 Aug 2026 17:34:27 GMT",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/aec0/live/fd14b290-e25e-11ef-a819-277e390a7a08.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Brighton reject Liverpool's new £60m Minteh bid",
-      "link": "https://www.bbc.co.uk/sport/football/articles/ce97ky3vkx4o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Fri, 21 Aug 2026 17:26:49 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4457/live/9f853380-9cb0-11f1-84cf-fd4cfd9d6c84.jpg",
-      "source": "BBC Sport",
-      "teams": [
-        64
-      ]
-    },
-    {
-      "title": "Where next for Chelsea's Delap and can he bounce back?",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c4g3n9zryx8o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Fri, 21 Aug 2026 17:17:08 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8958/live/0a3c0fe0-9d57-11f1-a979-27696fc3a013.jpg",
-      "source": "BBC Sport",
-      "teams": [
-        61
-      ]
-    },
-    {
-      "title": "Bolt registers to play for Manchester Sunday league team",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cx2reg3de87o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Fri, 21 Aug 2026 17:14:32 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2a3d/live/ee7ae710-9d81-11f1-adf5-2dc21c9cc109.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Leandro Paredes receives 10-match ban as Argentina punished for World Cup final brawl",
-      "link": "https://www.theguardian.com/football/2026/aug/21/fifa-leandro-paredes-argentina-spain-world-cup-final-brawl",
-      "pubDate": "Fri, 21 Aug 2026 16:14:16 GMT",
-      "image": "https://i.guim.co.uk/img/media/c6a8af535072c441882aba756824c37f917c5862/419_39_3032_2426/master/3032.jpg?width=460&quality=85&auto=format&fit=max&s=1ed443237651824f8ac6c5b2538972eb",
-      "source": "The Guardian",
-      "teams": []
-    },
-    {
-      "title": "The Premier League returns, F1’s Dutch Grand Prix and The Greatest Rivalry – follow with us",
-      "link": "https://www.theguardian.com/sport/2026/aug/21/the-premier-league-returns-f1s-dutch-grand-prix-and-the-greatest-rivalry-follow-with-us",
-      "pubDate": "Fri, 21 Aug 2026 16:03:02 GMT",
-      "image": "https://i.guim.co.uk/img/media/7a3de7ea46cb849aee0b4285c4510b5be0c5d553/0_0_5000_4000/master/5000.jpg?width=460&quality=85&auto=format&fit=max&s=a5e5765f476bf75fbb49dba84bd4af1d",
-      "source": "The Guardian",
-      "teams": []
-    },
-    {
-      "title": "What does Heggebo's deception ban mean for football?",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c05q3946r6ro?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Fri, 21 Aug 2026 15:45:19 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0560/live/46d3d580-9d6d-11f1-a2d1-59489fee904d.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Shakhtar agree to play Champions League ties at Chelsea",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cpw9e1dz9kko?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Fri, 21 Aug 2026 15:40:04 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/360c/live/c5f213b0-97e4-11f1-a76b-f1c27c51f3da.jpg",
-      "source": "BBC Sport",
-      "teams": [
-        61
-      ]
-    },
-    {
-      "title": "Argentina's Paredes banned for 10 games after World Cup clashes",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c98v7p1pr3eo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Fri, 21 Aug 2026 15:26:05 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4619/live/4e75a6e0-9d6f-11f1-bdcc-8926c4a74c43.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Chelsea reject initial Leeds loan bid for Mudryk",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c4gjv4xq2l8o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Fri, 21 Aug 2026 15:22:37 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6737/live/d3936e50-9aec-11f1-930b-57cfba7235f9.jpg",
-      "source": "BBC Sport",
-      "teams": [
-        61
-      ]
-    },
-    {
-      "title": "'Hungry to win' - Villa's Konsa joins Arsenal in £55m deal",
-      "link": "https://www.bbc.co.uk/sport/football/articles/ckg97jpkkego?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Fri, 21 Aug 2026 15:20:45 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3d64/live/46e0da90-9d7d-11f1-8bc3-150f4c5f088b.jpg",
-      "source": "BBC Sport",
-      "teams": [
-        57
-      ]
-    },
-    {
-      "title": "Bellingham, Vinicius Jr and Mbappe not incompatible - Mourinho",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cdrv1nx150jo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Fri, 21 Aug 2026 15:17:27 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1fec/live/14f36c60-9d5e-11f1-a979-27696fc3a013.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Partey signs for Al-Shabab in Saudi Pro League",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwyq4vyxzxwo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Fri, 21 Aug 2026 15:10:27 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0fd6/live/a5470290-9d68-11f1-a07c-85afe5c51b6f.jpg",
       "source": "BBC Sport",
       "teams": []
     }
