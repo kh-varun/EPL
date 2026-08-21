@@ -47,6 +47,14 @@ if (!FOOTBALL_DATA_TOKEN) {
 // finished match just won't have a stats breakdown.
 const API_FOOTBALL_KEY = process.env.API_FOOTBALL_KEY;
 
+// Optional manual override (see live-scores.yml's workflow_dispatch input):
+// force-fetches stats for this one match id from lastResults, bypassing the
+// normal just-finished-transition detection below. Needed for a match that
+// finished before this feature existed - by the time the feature shipped,
+// live-scores.json had already cleared that match's "was live" entry, so
+// there was no transition left to detect naturally.
+const MATCH_STATS_BACKFILL_ID = process.env.MATCH_STATS_BACKFILL_ID || null;
+
 // Start checking a bit before the scheduled kickoff (matches sometimes go
 // IN_PLAY a few minutes early) and keep checking for a few hours after in
 // case of delays - stoppage time, weather, whatever. Once the match is
@@ -206,6 +214,18 @@ async function writeLive(matches) {
 
 async function main() {
   const data = JSON.parse(await readFile(DATA_PATH, "utf-8"));
+
+  if (MATCH_STATS_BACKFILL_ID) {
+    const match = (data.lastResults ?? []).find((m) => String(m.id) === MATCH_STATS_BACKFILL_ID);
+    if (!match) {
+      console.log(`Backfill requested for match ${MATCH_STATS_BACKFILL_ID}, but it's not in lastResults.`);
+      return;
+    }
+    console.log(`Manual stats backfill for ${match.homeTeam.shortName} v ${match.awayTeam.shortName}...`);
+    await fetchMatchStatsFor([match]);
+    return;
+  }
+
   const now = Date.now();
 
   // A match that's gone IN_PLAY still sits in nextFixtures/lastResults

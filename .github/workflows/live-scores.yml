@@ -5,7 +5,17 @@ on:
   # is active - the script exits immediately otherwise.
   schedule:
     - cron: "*/10 * * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      backfill_match_id:
+        description: >
+          Optional: force-fetch match stats for this football-data.org match
+          id from data.json's lastResults, bypassing the normal
+          just-finished-transition detection. Useful for a match that
+          finished before this feature existed, or whose stats fetch failed
+          and needs a retry.
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -30,16 +40,22 @@ jobs:
       - name: Fetch live scores
         env:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          MATCH_STATS_BACKFILL_ID: ${{ github.event.inputs.backfill_match_id }}
         run: npm run fetch-live-scores
 
-      - name: Commit live-scores.json if changed
+      - name: Commit changed files
         run: |
-          # live-scores.json may not exist yet on the very first run - `git
-          # add` it conditionally so a plain `git diff` (which ignores
-          # untracked files) doesn't miss it.
-          if [ -f public/live-scores.json ]; then
-            git add public/live-scores.json
-          fi
+          # live-scores.json always exists after a run, but data.json is only
+          # touched when a match just finished, and match-stats.json may not
+          # exist yet on its very first-ever write - `git add` each
+          # conditionally so a plain `git diff` (which ignores untracked
+          # files) doesn't miss a brand-new one.
+          for f in public/live-scores.json public/data.json public/match-stats.json; do
+            if [ -f "$f" ]; then
+              git add "$f"
+            fi
+          done
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0
