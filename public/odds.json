@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-21T22:50:15.365Z",
+  "fetchedAt": "2026-08-21T23:20:20.824Z",
   "odds": {
     "560543": {
       "eventTicker": "KXEPLGAME-26AUG22HULMUN",
@@ -144,7 +144,7 @@
       },
       "away": {
         "label": "Liverpool",
-        "probability": 52,
+        "probability": 51,
         "ticker": "KXEPLGAME-26AUG23NEWLFC-LFC"
       },
       "draw": {
@@ -182,7 +182,7 @@
       },
       "away": {
         "label": "Man City",
-        "probability": 70,
+        "probability": 71,
         "ticker": "KXEPLGAME-26AUG28CRYMCI-MCI"
       },
       "draw": {
