@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-21T19:56:46.560Z",
+  "fetchedAt": "2026-08-21T20:26:45.845Z",
   "odds": {
     "560542": {
       "eventTicker": "KXEPLGAME-26AUG21ARSCOV",
@@ -16,7 +16,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 2,
+        "probability": 1,
         "ticker": "KXEPLGAME-26AUG21ARSCOV-TIE"
       }
     },
@@ -25,7 +25,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug22hulmun",
       "home": {
         "label": "Hull City",
-        "probability": 10,
+        "probability": 11,
         "ticker": "KXEPLGAME-26AUG22HULMUN-HUL"
       },
       "away": {
@@ -35,7 +35,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 18,
+        "probability": 19,
         "ticker": "KXEPLGAME-26AUG22HULMUN-TIE"
       }
     },
@@ -163,7 +163,7 @@
       },
       "away": {
         "label": "Liverpool",
-        "probability": 52,
+        "probability": 51,
         "ticker": "KXEPLGAME-26AUG23NEWLFC-LFC"
       },
       "draw": {
