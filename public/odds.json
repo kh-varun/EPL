@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-21T16:29:54.527Z",
+  "fetchedAt": "2026-08-21T17:03:30.345Z",
   "odds": {
     "560542": {
       "eventTicker": "KXEPLGAME-26AUG21ARSCOV",
@@ -101,7 +101,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug22bretot",
       "home": {
         "label": "Brentford",
-        "probability": 40,
+        "probability": 41,
         "ticker": "KXEPLGAME-26AUG22BRETOT-BRE"
       },
       "away": {
