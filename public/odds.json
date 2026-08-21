@@ -1,12 +1,12 @@
 {
-  "fetchedAt": "2026-08-21T21:48:34.686Z",
+  "fetchedAt": "2026-08-21T22:20:40.051Z",
   "odds": {
     "560543": {
       "eventTicker": "KXEPLGAME-26AUG22HULMUN",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug22hulmun",
       "home": {
         "label": "Hull City",
-        "probability": 11,
+        "probability": 9,
         "ticker": "KXEPLGAME-26AUG22HULMUN-HUL"
       },
       "away": {
@@ -16,7 +16,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 19,
+        "probability": 18,
         "ticker": "KXEPLGAME-26AUG22HULMUN-TIE"
       }
     },
@@ -25,7 +25,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug22ipssun",
       "home": {
         "label": "Ipswich Town",
-        "probability": 34,
+        "probability": 35,
         "ticker": "KXEPLGAME-26AUG22IPSSUN-IPS"
       },
       "away": {
@@ -63,7 +63,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug22evecry",
       "home": {
         "label": "Everton",
-        "probability": 44,
+        "probability": 43,
         "ticker": "KXEPLGAME-26AUG22EVECRY-EVE"
       },
       "away": {
@@ -139,7 +139,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug23newlfc",
       "home": {
         "label": "Newcastle",
-        "probability": 24,
+        "probability": 25,
         "ticker": "KXEPLGAME-26AUG23NEWLFC-NEW"
       },
       "away": {
