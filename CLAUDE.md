@@ -64,6 +64,14 @@ or broken secondary source can't corrupt the dashboard:
   plan. `/teams?search={name}` is NOT season-gated and works for any
   team/season, since team identity doesn't change year to year — use that
   instead whenever you need to resolve a team name to an API-Football id.
+  **The same restriction hits `/fixtures?league=&season=` too** (confirmed
+  live, same "Free plans do not have access to this season" error) - this
+  meant `fetch-lineups.mjs`'s fixture lookup had been failing on every
+  single run since the feature was built, so `lineups.json` had never
+  actually held a confirmed lineup in production. `findApiFootballFixtureId`
+  now queries `/fixtures?date=` with no league/season at all (returns every
+  fixture worldwide that day) and relies on `teamsLikelyMatch` to filter
+  down to the real one, same trade-off as the team-search fix above.
 - **Last-season (2025-26) player stats are permanently unavailable** on
   this API-Football plan for the same reason — the data itself is outside
   the allowed 2022-2024 range, not a code bug. Would need a paid plan.

@@ -35,7 +35,6 @@ if (!API_FOOTBALL_KEY) {
 const HIGHLIGHTLY_API_KEY = process.env.HIGHLIGHTLY_API_KEY;
 
 const API_BASE = "https://v3.football.api-sports.io";
-const PL_LEAGUE_ID = 39; // API-Football's id for the Premier League
 const ESPN_BASE = "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1";
 const HIGHLIGHTLY_BASE = "https://soccer.highlightly.net";
 
@@ -92,11 +91,17 @@ function teamsLikelyMatch(ourTeam, theirName) {
   });
 }
 
-async function findApiFootballFixtureId(ourMatch, season) {
+// Deliberately NOT passing league/season - confirmed live that /fixtures
+// with season=2026 hits the exact same free-plan restriction already
+// documented for /teams?league=&season= in CLAUDE.md ("Free plans do not
+// have access to this season, try from 2022 to 2024"), which meant this
+// endpoint has been failing on every single run so far. Querying by date
+// alone returns every fixture worldwide that day, but teamsLikelyMatch
+// below still filters down to the real match, so the extra volume doesn't
+// cost correctness - only a slightly bigger response to fetch and filter.
+async function findApiFootballFixtureId(ourMatch) {
   const date = ourMatch.utcDate.slice(0, 10); // YYYY-MM-DD
-  const fixtures = await apiFootballRequest(
-    `/fixtures?league=${PL_LEAGUE_ID}&season=${season}&date=${date}`,
-  );
+  const fixtures = await apiFootballRequest(`/fixtures?date=${date}`);
 
   const match = fixtures.find(
     (f) =>
@@ -395,14 +400,8 @@ async function main() {
       continue;
     }
 
-    // API-Football identifies a season by its starting year, which for a
-    // fixture in Jan-Jun is the previous calendar year.
-    const kickoff = new Date(match.utcDate);
-    const season =
-      kickoff.getUTCMonth() < 6 ? kickoff.getUTCFullYear() - 1 : kickoff.getUTCFullYear();
-
     try {
-      const fixtureId = await findApiFootballFixtureId(match, season);
+      const fixtureId = await findApiFootballFixtureId(match);
       if (!fixtureId) {
         console.log(
           `  ${match.homeTeam.shortName} v ${match.awayTeam.shortName}: no matching API-Football fixture found`,
