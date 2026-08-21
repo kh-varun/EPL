@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-21T09:40:14.076Z",
+  "fetchedAt": "2026-08-21T10:06:04.849Z",
   "odds": {
     "560542": {
       "eventTicker": "KXEPLGAME-26AUG21ARSCOV",
@@ -30,7 +30,7 @@
       },
       "away": {
         "label": "Man United",
-        "probability": 71,
+        "probability": 72,
         "ticker": "KXEPLGAME-26AUG22HULMUN-MUN"
       },
       "draw": {
