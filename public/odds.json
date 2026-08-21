@@ -1,17 +1,17 @@
 {
-  "fetchedAt": "2026-08-21T13:32:11.452Z",
+  "fetchedAt": "2026-08-21T14:19:21.674Z",
   "odds": {
     "560542": {
       "eventTicker": "KXEPLGAME-26AUG21ARSCOV",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug21arscov",
       "home": {
         "label": "Arsenal",
-        "probability": 82,
+        "probability": 81,
         "ticker": "KXEPLGAME-26AUG21ARSCOV-ARS"
       },
       "away": {
         "label": "Coventry City",
-        "probability": 6,
+        "probability": 5,
         "ticker": "KXEPLGAME-26AUG21ARSCOV-COV"
       },
       "draw": {
@@ -44,7 +44,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug22ipssun",
       "home": {
         "label": "Ipswich Town",
-        "probability": 34,
+        "probability": 35,
         "ticker": "KXEPLGAME-26AUG22IPSSUN-IPS"
       },
       "away": {
@@ -54,7 +54,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 30,
+        "probability": 29,
         "ticker": "KXEPLGAME-26AUG22IPSSUN-TIE"
       }
     },
@@ -101,12 +101,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug22bretot",
       "home": {
         "label": "Brentford",
-        "probability": 39,
+        "probability": 40,
         "ticker": "KXEPLGAME-26AUG22BRETOT-BRE"
       },
       "away": {
         "label": "Tottenham",
-        "probability": 36,
+        "probability": 35,
         "ticker": "KXEPLGAME-26AUG22BRETOT-TOT"
       },
       "draw": {
@@ -139,12 +139,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug23briavl",
       "home": {
         "label": "Brighton Hove",
-        "probability": 43,
+        "probability": 44,
         "ticker": "KXEPLGAME-26AUG23BRIAVL-BRI"
       },
       "away": {
         "label": "Aston Villa",
-        "probability": 30,
+        "probability": 31,
         "ticker": "KXEPLGAME-26AUG23BRIAVL-AVL"
       },
       "draw": {
@@ -158,7 +158,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug23newlfc",
       "home": {
         "label": "Newcastle",
-        "probability": 24,
+        "probability": 25,
         "ticker": "KXEPLGAME-26AUG23NEWLFC-NEW"
       },
       "away": {
