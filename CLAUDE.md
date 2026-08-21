@@ -195,6 +195,21 @@ reload - the underlying file only changes every ~10 min regardless.
 `MatchRow` reads `match.liveStatus` (set by `withLiveScore` in `App.jsx`)
 to swap in the red "LIVE"/"HT" badge and score pill.
 
+When a match that was previously live drops off the `IN_PLAY`/`PAUSED`
+query (or its kickoff window elapses entirely - `data.js`'s own cached
+`nextFixtures`/`lastResults` reflect that the transition happened), it's
+finished (or, rarely, postponed/abandoned) - either way `data.json`'s
+`standings`/`lastResults`/`nextFixtures` are now stale, and would
+otherwise stay stale until the next Wednesday `update.yml` run. Rather
+than duplicate the standings/fixtures fetch-and-map logic that `fetch.mjs`
+already has, both scripts import it from `scripts/lib/football-data.mjs`;
+`fetch-live-scores.mjs` calls that shared `fetchStandings`/
+`fetchLastResults`/`fetchNextFixtures` itself the moment it detects a
+match just finished, so the result and table land within ~10 minutes of
+full time instead of waiting up to a week. It deliberately leaves
+`teams`/`headlines` untouched (squads and news don't change mid-match) and
+does not re-run the expensive per-team squad/coach fetch.
+
 ## All five fetch workflows retry their push
 
 `update.yml`, `lineups.yml`, `odds.yml`, `history.yml`, and
