@@ -10,7 +10,7 @@ APIs via scheduled GitHub Actions workflows that commit static JSON into
 | Script | Writes | Workflow | Schedule | Needs |
 |---|---|---|---|---|
 | `fetch.mjs` | `public/data.json`, `public/api-football-team-ids.json` | `update.yml` | Weekly (Wed) | `FOOTBALL_DATA_TOKEN`, `API_FOOTBALL_KEY` (optional, for manager names) |
-| `fetch-lineups.mjs` | `public/lineups.json` | `lineups.yml` | Every 15 min | `API_FOOTBALL_KEY` |
+| `fetch-lineups.mjs` | `public/lineups.json` | `lineups.yml` | Every 15 min | `API_FOOTBALL_KEY`; `HIGHLIGHTLY_API_KEY` optional |
 | `fetch-history.mjs` | `public/history.json` | `history.yml` | Monthly | `FOOTBALL_DATA_TOKEN`, `API_FOOTBALL_KEY` (optional) |
 | `fetch-odds.mjs` | `public/odds.json` | `odds.yml` | Every 15 min | none (Kalshi is public) |
 
@@ -31,6 +31,31 @@ quota left, rather than burning it on calls partway through a run that were
 always going to fail. Keep all three whenever touching this code - they're
 what keeps a routine weekly run to roughly one call per team instead of up
 to three.
+
+## Lineup cross-checking
+
+`fetch-lineups.mjs` treats API-Football as the single source of truth for
+what gets written to `lineups.json` and shown to users. Two extra sources
+run *after* API-Football returns a lineup, purely to log agreement/
+disagreement in the Actions log — they never change what ships, so a wrong
+or broken secondary source can't corrupt the dashboard:
+
+- **ESPN's site API** (`site.api.espn.com/apis/site/v2/sports/soccer/eng.1`)
+  — public, no key, no signup, but unofficial and undocumented. Can change
+  shape or disappear without notice; treat any parsing failure here as
+  expected, not a bug to chase.
+- **Highlightly** (`soccer.highlightly.net`) — a real free tier (100
+  req/day, no card), but this integration is **provisional and unverified**:
+  its docs site is blocked from the dev sandbox's egress allowlist, so the
+  `/matches` and `/lineups/{id}` endpoint paths, the `x-api-key` auth header,
+  and the response field names in `findHighlightlyMatchId`/
+  `fetchHighlightlyLineup` are all best-effort reads of public search
+  results, not confirmed against real docs or a real response. It's
+  also completely untestable — even via `workflow_dispatch` — until
+  `HIGHLIGHTLY_API_KEY` is actually set, since without a key it just skips.
+  The first real run after that key is added needs the full
+  ship-logging → trigger → read-log debugging cycle (see below) before
+  trusting anything it logs.
 
 ## Known API quirks (found the hard way — don't relitigate these)
 
@@ -78,6 +103,17 @@ to three.
   substring of "**techi**man city" and "man united" of "cwma**mman**
   united", both real unrelated clubs API-Football returned (confirmed
   live) - `teamsLikelyMatch` requires whole-word overlap instead.
+- **The fuller-name search term itself needs sanitizing** (confirmed live)
+  - searching "Manchester City FC"/"Manchester United FC" (our full names,
+  with the "FC" suffix) returns zero results, because API-Football's own
+  name for both is just "Manchester City"/"Manchester United" and its
+  substring search wants the query to literally appear in that name -
+  the trailing " FC" breaks the match. Separately, searching "Brighton &
+  Hove Albion FC" fails outright with `"The Search field may only contain
+  alpha-numeric characters and spaces"` - the "&" isn't allowed at all.
+  `searchableTeamName` in `fetch.mjs` strips the FC/AFC suffix and any
+  non-alphanumeric characters before every search call, not just the
+  shortName term.
 - Rate limits: football-data.org free tier is 10 req/min; API-Football
   free tier is 10 req/min / 100 req/day, **shared across every workflow
   using the key** (`lineups.yml` polls every 15 min on the same key) - a

@@ -112,6 +112,21 @@ function teamsLikelyMatch(ourTeam, theirName) {
   });
 }
 
+// A query string suitable for API-Football's own search: no "FC"/"AFC"
+// suffix (confirmed live - searching "Manchester City FC" or "Manchester
+// United FC" returns zero results, since API-Football's own name for both
+// is just "Manchester City"/"Manchester United" and their search wants a
+// literal substring of it) and no punctuation (confirmed live - searching
+// "Brighton & Hove Albion FC" fails outright with "The Search field may
+// only contain alpha-numeric characters and spaces").
+function searchableTeamName(name) {
+  return name
+    .replace(/\bfc\b|\bafc\b/gi, "")
+    .replace(/[^a-zA-Z0-9\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 // Resolves our team to its API-Football id via a name search rather than
 // /teams?league=&season=, which the free plan restricts to a handful of
 // past seasons ("Free plans do not have access to this season, try from
@@ -131,7 +146,9 @@ function teamsLikelyMatch(ourTeam, theirName) {
 async function findApiFootballTeamId(ourTeam, cache) {
   if (cache[ourTeam.id]) return cache[ourTeam.id];
 
-  const searchTerms = [...new Set([ourTeam.shortName, ourTeam.name])];
+  const searchTerms = [
+    ...new Set([searchableTeamName(ourTeam.shortName), searchableTeamName(ourTeam.name)]),
+  ].filter(Boolean);
   for (const term of searchTerms) {
     try {
       const results = await apiFootballRequestThrottled(`/teams?search=${encodeURIComponent(term)}`);
