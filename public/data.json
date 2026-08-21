@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-21T18:01:26.583Z",
+  "fetchedAt": "2026-08-21T18:16:03.873Z",
   "standings": [
     {
       "position": 1,
@@ -637,23 +637,31 @@
   ],
   "headlines": [
     {
+      "title": "Arsenal v Coventry City: Premier League – live",
+      "link": "https://www.theguardian.com/football/live/2026/aug/21/arsenal-v-coventry-city-premier-league-live",
+      "pubDate": "Fri, 21 Aug 2026 17:47:30 GMT",
+      "image": "https://i.guim.co.uk/img/media/13214b39204d99ebe03a058a8527c7c2d97adb7c/244_0_7920_6336/master/7920.jpg?width=460&quality=85&auto=format&fit=max&s=98d7c2e8773f0421cc1bd8feebc22eb8",
+      "source": "The Guardian",
+      "teams": [
+        57,
+        1076
+      ]
+    },
+    {
+      "title": "Mohamed Salah: Inside his move to Trabzonspor",
+      "link": "https://www.bbc.co.uk/sport/football/videos/cx2reg4knn5o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Fri, 21 Aug 2026 17:44:55 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/15e5/live/ccc38130-9d82-11f1-b109-879e35c24276.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
       "title": "All done deals in August 2026",
       "link": "https://www.bbc.co.uk/sport/football/articles/c9v4d2z2p7yo?at_medium=RSS&at_campaign=rss",
       "pubDate": "Fri, 21 Aug 2026 17:34:27 GMT",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/aec0/live/fd14b290-e25e-11ef-a819-277e390a7a08.jpg",
       "source": "BBC Sport",
       "teams": []
-    },
-    {
-      "title": "Arsenal v Coventry City: Premier League – live",
-      "link": "https://www.theguardian.com/football/live/2026/aug/21/arsenal-v-coventry-city-premier-league-live",
-      "pubDate": "Fri, 21 Aug 2026 17:30:56 GMT",
-      "image": "https://i.guim.co.uk/img/media/234a1e15459236916b2484b66f9542323a21659b/784_0_5000_4000/master/5000.jpg?width=460&quality=85&auto=format&fit=max&s=a5aca5fb15215b189010a7c2ce26b034",
-      "source": "The Guardian",
-      "teams": [
-        57,
-        1076
-      ]
     },
     {
       "title": "Brighton reject Liverpool's new £60m Minteh bid",
@@ -758,14 +766,6 @@
       "link": "https://www.bbc.co.uk/sport/football/articles/cwyq4vyxzxwo?at_medium=RSS&at_campaign=rss",
       "pubDate": "Fri, 21 Aug 2026 15:10:27 GMT",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0fd6/live/a5470290-9d68-11f1-a07c-85afe5c51b6f.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Football Daily",
-      "link": "https://www.bbc.co.uk/sounds/play/m00310qd?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Fri, 21 Aug 2026 14:00:00 GMT",
-      "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0p57dv1.jpg",
       "source": "BBC Sport",
       "teams": []
     }
@@ -2111,7 +2111,7 @@
       ]
     },
     "65": {
-      "coach": null,
+      "coach": "Guardiola",
       "squad": [
         {
           "id": 6,
@@ -2354,7 +2354,7 @@
       ]
     },
     "66": {
-      "coach": null,
+      "coach": "Michael Carrick",
       "squad": [
         {
           "id": 7913,
