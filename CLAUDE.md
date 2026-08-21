@@ -241,6 +241,33 @@ fixture-lookup logic didn't mean a third copy of it (and a third place to
 apply every hard-won matching fix documented above, from the word-boundary
 rule through the Brighton bidirectional-matching case).
 
+**Two bugs found shipping this feature, both confirmed live before a real
+match ever exercised the code path:**
+
+- `live-scores.yml`'s commit step only ever staged `public/live-scores.json`
+  (`git add public/live-scores.json` unconditionally, nothing else) even
+  though `refreshCoreData()` and `fetchMatchStatsFor()` in
+  `fetch-live-scores.mjs` also write `public/data.json` and
+  `public/match-stats.json` - so any changes those two make would be
+  silently discarded when the runner terminates, never committed, no error
+  raised. Fixed by looping the same conditional `git add` over all three
+  files.
+- The workflow never passed `API_FOOTBALL_KEY` to the fetch step at all
+  (only `FOOTBALL_DATA_TOKEN`), so `fetchMatchStatsFor` would always see it
+  as unset and skip - match stats could never have been fetched in
+  production regardless of the staging bug above. Fixed by adding
+  `API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}` alongside the existing
+  token, same as `lineups.yml`/`update.yml` already do.
+
+Also added a `backfill_match_id` `workflow_dispatch` input (piped through as
+`MATCH_STATS_BACKFILL_ID`) that force-fetches stats for one specific match
+id from `lastResults`, bypassing the normal just-finished-transition
+detection - needed because the very first match of the season (Arsenal v
+Coventry) had already fallen out of `live-scores.json`'s tracked "was live"
+state by the time this feature shipped, so there was no transition left for
+the normal path to detect naturally. Useful going forward too, as a retry
+knob for any match whose stats fetch failed the first time.
+
 ## All five fetch workflows retry their push
 
 `update.yml`, `lineups.yml`, `odds.yml`, `history.yml`, and
