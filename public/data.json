@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-21T18:28:26.309Z",
+  "fetchedAt": "2026-08-21T18:38:38.720Z",
   "standings": [
     {
       "position": 1,
@@ -639,7 +639,7 @@
     {
       "title": "Arsenal v Coventry City: Premier League – live",
       "link": "https://www.theguardian.com/football/live/2026/aug/21/arsenal-v-coventry-city-premier-league-live",
-      "pubDate": "Fri, 21 Aug 2026 18:14:16 GMT",
+      "pubDate": "Fri, 21 Aug 2026 18:20:09 GMT",
       "image": "https://i.guim.co.uk/img/media/13214b39204d99ebe03a058a8527c7c2d97adb7c/244_0_7920_6336/master/7920.jpg?width=460&quality=85&auto=format&fit=max&s=98d7c2e8773f0421cc1bd8feebc22eb8",
       "source": "The Guardian",
       "teams": [
@@ -772,7 +772,7 @@
   ],
   "teams": {
     "57": {
-      "coach": "Mikel Arteta",
+      "coach": null,
       "squad": [
         {
           "id": 3189,
@@ -987,7 +987,7 @@
       ]
     },
     "58": {
-      "coach": "Unai Emery",
+      "coach": null,
       "squad": [
         {
           "id": 3141,
@@ -1230,7 +1230,7 @@
       ]
     },
     "61": {
-      "coach": "Xabi Alonso",
+      "coach": null,
       "squad": [
         {
           "id": 135555,
@@ -1529,7 +1529,7 @@
       ]
     },
     "62": {
-      "coach": "D. Moyes",
+      "coach": null,
       "squad": [
         {
           "id": 3309,
@@ -1709,7 +1709,7 @@
       ]
     },
     "63": {
-      "coach": "Alvaro Arbeloa",
+      "coach": null,
       "squad": [
         {
           "id": 3174,
@@ -1896,7 +1896,7 @@
       ]
     },
     "64": {
-      "coach": "A. Slot",
+      "coach": null,
       "squad": [
         {
           "id": 1795,
@@ -2111,7 +2111,7 @@
       ]
     },
     "65": {
-      "coach": "Guardiola",
+      "coach": null,
       "squad": [
         {
           "id": 6,
@@ -2354,7 +2354,7 @@
       ]
     },
     "66": {
-      "coach": "Michael Carrick",
+      "coach": null,
       "squad": [
         {
           "id": 7913,
@@ -2625,7 +2625,7 @@
       ]
     },
     "67": {
-      "coach": "E. Howe",
+      "coach": null,
       "squad": [
         {
           "id": 3310,
@@ -2833,7 +2833,7 @@
       ]
     },
     "71": {
-      "coach": "R. Le Bris",
+      "coach": null,
       "squad": [
         {
           "id": 4292,
@@ -3062,7 +3062,7 @@
       ]
     },
     "73": {
-      "coach": "T. Frank",
+      "coach": null,
       "squad": [
         {
           "id": 3086,
@@ -3326,7 +3326,7 @@
       ]
     },
     "322": {
-      "coach": "S. Jakirović",
+      "coach": null,
       "squad": [
         {
           "id": 3308,
@@ -3576,7 +3576,7 @@
       ]
     },
     "341": {
-      "coach": "S. Gardner",
+      "coach": null,
       "squad": [
         {
           "id": 1331,
@@ -3805,7 +3805,7 @@
       ]
     },
     "349": {
-      "coach": "J. Sheehan",
+      "coach": null,
       "squad": [
         {
           "id": 3954,
@@ -4062,7 +4062,7 @@
       ]
     },
     "351": {
-      "coach": "S. Dyche",
+      "coach": null,
       "squad": [
         {
           "id": 1299,
@@ -4277,7 +4277,7 @@
       ]
     },
     "354": {
-      "coach": "O. Glasner",
+      "coach": null,
       "squad": [
         {
           "id": 5457,
@@ -4805,7 +4805,7 @@
       ]
     },
     "402": {
-      "coach": "Keith Andrews",
+      "coach": null,
       "squad": [
         {
           "id": 4419,
@@ -5055,7 +5055,7 @@
       ]
     },
     "1044": {
-      "coach": "J. Tindall",
+      "coach": null,
       "squad": [
         {
           "id": 8079,
