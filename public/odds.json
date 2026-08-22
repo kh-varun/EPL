@@ -1,22 +1,22 @@
 {
-  "fetchedAt": "2026-08-22T05:23:46.233Z",
+  "fetchedAt": "2026-08-22T05:52:30.456Z",
   "odds": {
     "560543": {
       "eventTicker": "KXEPLGAME-26AUG22HULMUN",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug22hulmun",
       "home": {
         "label": "Hull City",
-        "probability": 10,
+        "probability": 9,
         "ticker": "KXEPLGAME-26AUG22HULMUN-HUL"
       },
       "away": {
         "label": "Man United",
-        "probability": 72,
+        "probability": 74,
         "ticker": "KXEPLGAME-26AUG22HULMUN-MUN"
       },
       "draw": {
         "label": "Draw",
-        "probability": 19,
+        "probability": 18,
         "ticker": "KXEPLGAME-26AUG22HULMUN-TIE"
       }
     },
@@ -73,7 +73,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 28,
+        "probability": 29,
         "ticker": "KXEPLGAME-26AUG22EVECRY-TIE"
       }
     },
@@ -187,7 +187,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 36,
         "ticker": "KXEPLGAME-26AUG28CRYMCI-TIE"
       }
     }
