@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-22T13:42:34.839Z",
+  "fetchedAt": "2026-08-22T13:57:57.456Z",
   "lineups": {
     "560543": {
       "utcDate": "2026-08-22T11:30:00Z",
@@ -572,6 +572,293 @@
             }
           ],
           "coach": "Gary O'Neil"
+        }
+      }
+    },
+    "560545": {
+      "utcDate": "2026-08-22T14:00:00Z",
+      "homeTeamId": 351,
+      "awayTeamId": 341,
+      "byTeam": {
+        "341": {
+          "teamName": "Leeds",
+          "formation": "3-4-2-1",
+          "startXI": [
+            {
+              "id": 162489,
+              "name": "James Trafford",
+              "number": 1,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 833,
+              "name": "Jaka Bijol",
+              "number": 15,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 19321,
+              "name": "Joe Rodon",
+              "number": 6,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 271350,
+              "name": "Tarik Muharemović",
+              "number": 5,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 19201,
+              "name": "Jayden Bogle",
+              "number": 2,
+              "position": "M",
+              "grid": "3:4"
+            },
+            {
+              "id": 177665,
+              "name": "Anton Stach",
+              "number": 18,
+              "position": "M",
+              "grid": "3:3"
+            },
+            {
+              "id": 2279,
+              "name": "Ethan Ampadu",
+              "number": 4,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 19760,
+              "name": "James Justin",
+              "number": 24,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 19221,
+              "name": "Harry Wilson",
+              "number": 10,
+              "position": "F",
+              "grid": "4:2"
+            },
+            {
+              "id": 50739,
+              "name": "Brenden Aaronson",
+              "number": 11,
+              "position": "F",
+              "grid": "4:1"
+            },
+            {
+              "id": 18766,
+              "name": "Dominic Calvert-Lewin",
+              "number": 9,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 80296,
+              "name": "Lucas Perri",
+              "number": 23,
+              "position": "G"
+            },
+            {
+              "id": 545996,
+              "name": "Jayden Lienou",
+              "number": 65,
+              "position": "D"
+            },
+            {
+              "id": 2803,
+              "name": "Nico Elvedi",
+              "number": 30,
+              "position": "D"
+            },
+            {
+              "id": 557342,
+              "name": "Alfie Cresswell",
+              "number": 50,
+              "position": "M"
+            },
+            {
+              "id": 18901,
+              "name": "Sean Longstaff",
+              "number": 8,
+              "position": "M"
+            },
+            {
+              "id": 32966,
+              "name": "Ao Tanaka",
+              "number": 22,
+              "position": "M"
+            },
+            {
+              "id": 19329,
+              "name": "Daniel James",
+              "number": 7,
+              "position": "F"
+            },
+            {
+              "id": 48389,
+              "name": "Noah Okafor",
+              "number": 19,
+              "position": "F"
+            },
+            {
+              "id": 19461,
+              "name": "Lukas Nmecha",
+              "number": 14,
+              "position": "F"
+            }
+          ],
+          "coach": "Daniel Farke"
+        },
+        "351": {
+          "teamName": "Nottingham Forest",
+          "formation": "3-4-2-1",
+          "startXI": [
+            {
+              "id": 2919,
+              "name": "Matz Sels",
+              "number": 26,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 362711,
+              "name": "Jair",
+              "number": 23,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 363695,
+              "name": "Murillo",
+              "number": 5,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 2817,
+              "name": "Nikola Milenković",
+              "number": 31,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 2771,
+              "name": "Ola Aina",
+              "number": 34,
+              "position": "M",
+              "grid": "3:4"
+            },
+            {
+              "id": 22149,
+              "name": "Ibrahim Sangaré",
+              "number": 6,
+              "position": "M",
+              "grid": "3:3"
+            },
+            {
+              "id": 158697,
+              "name": "James McAtee",
+              "number": 24,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 138780,
+              "name": "Neco Williams",
+              "number": 3,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 48648,
+              "name": "Dan Ndoye",
+              "number": 14,
+              "position": "F",
+              "grid": "4:2"
+            },
+            {
+              "id": 18746,
+              "name": "Morgan Gibbs-White",
+              "number": 10,
+              "position": "F",
+              "grid": "4:1"
+            },
+            {
+              "id": 9366,
+              "name": "Igor Jesus",
+              "number": 11,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 70366,
+              "name": "John Victor",
+              "number": 12,
+              "position": "G"
+            },
+            {
+              "id": 354753,
+              "name": "Ousmane Diomande",
+              "number": 2,
+              "position": "D"
+            },
+            {
+              "id": 163069,
+              "name": "Luca Netz",
+              "number": 25,
+              "position": "D"
+            },
+            {
+              "id": 329357,
+              "name": "Zach Abbott",
+              "number": 44,
+              "position": "D"
+            },
+            {
+              "id": 6056,
+              "name": "Nicolás Domínguez",
+              "number": 8,
+              "position": "M"
+            },
+            {
+              "id": 2298,
+              "name": "Callum Hudson Odoi",
+              "number": 7,
+              "position": "F"
+            },
+            {
+              "id": 1095,
+              "name": "Xaver Schlager",
+              "number": 21,
+              "position": "M"
+            },
+            {
+              "id": 18931,
+              "name": "Chris Wood",
+              "number": 9,
+              "position": "F"
+            },
+            {
+              "id": 147831,
+              "name": "Arnaud Kalimuendo",
+              "number": 15,
+              "position": "F"
+            }
+          ],
+          "coach": "Oliver Glasner"
         }
       }
     },
