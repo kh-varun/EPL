@@ -1,22 +1,22 @@
 {
-  "fetchedAt": "2026-08-22T14:27:07.865Z",
+  "fetchedAt": "2026-08-22T14:49:29.088Z",
   "odds": {
     "560544": {
       "eventTicker": "KXEPLGAME-26AUG22IPSSUN",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug22ipssun",
       "home": {
         "label": "Ipswich Town",
-        "probability": 58,
+        "probability": 25,
         "ticker": "KXEPLGAME-26AUG22IPSSUN-IPS"
       },
       "away": {
         "label": "Sunderland",
-        "probability": 17,
+        "probability": 36,
         "ticker": "KXEPLGAME-26AUG22IPSSUN-SUN"
       },
       "draw": {
         "label": "Draw",
-        "probability": 27,
+        "probability": 39,
         "ticker": "KXEPLGAME-26AUG22IPSSUN-TIE"
       }
     },
@@ -30,12 +30,12 @@
       },
       "away": {
         "label": "Leeds United",
-        "probability": 37,
+        "probability": 29,
         "ticker": "KXEPLGAME-26AUG22NFOLEE-LEE"
       },
       "draw": {
         "label": "Draw",
-        "probability": 35,
+        "probability": 42,
         "ticker": "KXEPLGAME-26AUG22NFOLEE-TIE"
       }
     },
@@ -44,12 +44,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug22evecry",
       "home": {
         "label": "Everton",
-        "probability": 48,
+        "probability": 65,
         "ticker": "KXEPLGAME-26AUG22EVECRY-EVE"
       },
       "away": {
         "label": "Crystal Palace",
-        "probability": 30,
+        "probability": 11,
         "ticker": "KXEPLGAME-26AUG22EVECRY-CRY"
       },
       "draw": {
@@ -63,7 +63,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug22bretot",
       "home": {
         "label": "Brentford",
-        "probability": 45,
+        "probability": 44,
         "ticker": "KXEPLGAME-26AUG22BRETOT-BRE"
       },
       "away": {
@@ -73,7 +73,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 26,
         "ticker": "KXEPLGAME-26AUG22BRETOT-TIE"
       }
     },
@@ -130,7 +130,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 24,
+        "probability": 25,
         "ticker": "KXEPLGAME-26AUG23NEWLFC-TIE"
       }
     },
@@ -177,7 +177,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug28crymci",
       "home": {
         "label": "Crystal Palace",
-        "probability": 27,
+        "probability": 9,
         "ticker": "KXEPLGAME-26AUG28CRYMCI-CRY"
       },
       "away": {
