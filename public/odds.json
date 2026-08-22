@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-22T08:57:05.822Z",
+  "fetchedAt": "2026-08-22T09:28:16.494Z",
   "odds": {
     "560543": {
       "eventTicker": "KXEPLGAME-26AUG22HULMUN",
@@ -11,7 +11,7 @@
       },
       "away": {
         "label": "Man United",
-        "probability": 74,
+        "probability": 73,
         "ticker": "KXEPLGAME-26AUG22HULMUN-MUN"
       },
       "draw": {
@@ -68,7 +68,7 @@
       },
       "away": {
         "label": "Crystal Palace",
-        "probability": 29,
+        "probability": 28,
         "ticker": "KXEPLGAME-26AUG22EVECRY-CRY"
       },
       "draw": {
@@ -82,7 +82,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug22bretot",
       "home": {
         "label": "Brentford",
-        "probability": 46,
+        "probability": 45,
         "ticker": "KXEPLGAME-26AUG22BRETOT-BRE"
       },
       "away": {
@@ -182,7 +182,7 @@
       },
       "away": {
         "label": "Man City",
-        "probability": 72,
+        "probability": 75,
         "ticker": "KXEPLGAME-26AUG28CRYMCI-MCI"
       },
       "draw": {
