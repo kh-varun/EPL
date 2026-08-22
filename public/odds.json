@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-22T20:18:45.768Z",
+  "fetchedAt": "2026-08-22T20:48:33.110Z",
   "odds": {
     "560548": {
       "eventTicker": "KXEPLGAME-26AUG23MCIBOU",
@@ -11,7 +11,7 @@
       },
       "away": {
         "label": "Bournemouth",
-        "probability": 15,
+        "probability": 16,
         "ticker": "KXEPLGAME-26AUG23MCIBOU-BOU"
       },
       "draw": {
@@ -87,7 +87,7 @@
       },
       "away": {
         "label": "Nottingham",
-        "probability": 12,
+        "probability": 15,
         "ticker": "KXEPLGAME-26AUG29LFCNFO-NFO"
       },
       "draw": {
@@ -130,7 +130,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 36,
+        "probability": 21,
         "ticker": "KXEPLGAME-26AUG28CRYMCI-TIE"
       }
     },
@@ -182,7 +182,7 @@
       },
       "away": {
         "label": "Hull City",
-        "probability": 25,
+        "probability": 26,
         "ticker": "KXEPLGAME-26AUG29COVHUL-HUL"
       },
       "draw": {
