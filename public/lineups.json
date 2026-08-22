@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-22T13:07:27.606Z",
+  "fetchedAt": "2026-08-22T13:42:34.839Z",
   "lineups": {
     "560543": {
       "utcDate": "2026-08-22T11:30:00Z",
@@ -285,6 +285,580 @@
             }
           ],
           "coach": "Sergej Jakirovic"
+        }
+      }
+    },
+    "560544": {
+      "utcDate": "2026-08-22T14:00:00Z",
+      "homeTeamId": 349,
+      "awayTeamId": 71,
+      "byTeam": {
+        "71": {
+          "teamName": "Sunderland",
+          "formation": "4-2-3-1",
+          "startXI": [
+            {
+              "id": 194536,
+              "name": "Robin Roefs",
+              "number": 22,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 264,
+              "name": "Thomas Meunier",
+              "number": 12,
+              "position": "D",
+              "grid": "2:4"
+            },
+            {
+              "id": 55904,
+              "name": "Daniel Ballard",
+              "number": 5,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 19911,
+              "name": "Luke O'Nien",
+              "number": 13,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 22225,
+              "name": "Reinildo Mandava",
+              "number": 17,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 365331,
+              "name": "Noah Sadiki",
+              "number": 27,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 1464,
+              "name": "Granit Xhaka",
+              "number": 34,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 119121,
+              "name": "Trai Hume",
+              "number": 32,
+              "position": "M",
+              "grid": "4:3"
+            },
+            {
+              "id": 20638,
+              "name": "Enzo Le Fée",
+              "number": 28,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 311543,
+              "name": "Nilson Angulo",
+              "number": 10,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 38750,
+              "name": "Brian Brobbey",
+              "number": 9,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 278454,
+              "name": "Melker Ellborg",
+              "number": 31,
+              "position": "G"
+            },
+            {
+              "id": 6168,
+              "name": "Omar Alderete",
+              "number": 15,
+              "position": "D"
+            },
+            {
+              "id": 1146,
+              "name": "Nordi Mukiele",
+              "number": 20,
+              "position": "D"
+            },
+            {
+              "id": 336659,
+              "name": "Chemsdine Talbi",
+              "number": 7,
+              "position": "F"
+            },
+            {
+              "id": 339201,
+              "name": "Chris Rigg",
+              "number": 11,
+              "position": "M"
+            },
+            {
+              "id": 327631,
+              "name": "Habib Diarra",
+              "number": 19,
+              "position": "M"
+            },
+            {
+              "id": 554280,
+              "name": "Jocelin Ta Bi",
+              "number": 37,
+              "position": "F"
+            },
+            {
+              "id": 284414,
+              "name": "Romaine Mundle",
+              "number": 14,
+              "position": "F"
+            },
+            {
+              "id": 84087,
+              "name": "Wilson Isidor",
+              "number": 18,
+              "position": "F"
+            }
+          ],
+          "coach": "Regis Le Bris"
+        },
+        "349": {
+          "teamName": "Ipswich",
+          "formation": "4-2-3-1",
+          "startXI": [
+            {
+              "id": 37276,
+              "name": "Kjell Scherpen",
+              "number": 37,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 17597,
+              "name": "Dara O'Shea",
+              "number": 26,
+              "position": "D",
+              "grid": "2:4"
+            },
+            {
+              "id": 18814,
+              "name": "Issa Diop",
+              "number": 6,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 127579,
+              "name": "Jacob Greaves",
+              "number": 24,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 19119,
+              "name": "Leif Davis",
+              "number": 3,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 195121,
+              "name": "Marcelino Núñez",
+              "number": 32,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 2823,
+              "name": "Saša Lukić",
+              "number": 23,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 303467,
+              "name": "Abdul Fatawu Issahaku",
+              "number": 7,
+              "position": "M",
+              "grid": "4:3"
+            },
+            {
+              "id": 33224,
+              "name": "Daizen Maeda",
+              "number": 38,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 70747,
+              "name": "Julio Enciso",
+              "number": 10,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 321648,
+              "name": "Emersonn",
+              "number": 19,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 19541,
+              "name": "Christian Walton",
+              "number": 28,
+              "position": "G"
+            },
+            {
+              "id": 19577,
+              "name": "Darnell Furlong",
+              "number": 2,
+              "position": "D"
+            },
+            {
+              "id": 19546,
+              "name": "Cédric Kipré",
+              "number": 4,
+              "position": "D"
+            },
+            {
+              "id": 358166,
+              "name": "Abdoul Ouattara",
+              "number": 42,
+              "position": "D"
+            },
+            {
+              "id": 326763,
+              "name": "Cameron Humphreys",
+              "number": 30,
+              "position": "M"
+            },
+            {
+              "id": 283290,
+              "name": "Kasey McAteer",
+              "number": 20,
+              "position": "M"
+            },
+            {
+              "id": 342654,
+              "name": "Sindre Walle Egeli",
+              "number": 8,
+              "position": "F"
+            },
+            {
+              "id": 19136,
+              "name": "Jack Clarke",
+              "number": 47,
+              "position": "F"
+            },
+            {
+              "id": 2380,
+              "name": "Chuba Akpom",
+              "number": 29,
+              "position": "F"
+            }
+          ],
+          "coach": "Gary O'Neil"
+        }
+      }
+    },
+    "560546": {
+      "utcDate": "2026-08-22T14:00:00Z",
+      "homeTeamId": 62,
+      "awayTeamId": 354,
+      "byTeam": {
+        "62": {
+          "teamName": "Everton",
+          "formation": "4-2-3-1",
+          "startXI": [
+            {
+              "id": 2932,
+              "name": "Jordan Pickford",
+              "number": 1,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 202854,
+              "name": "Merlin Röhl",
+              "number": 34,
+              "position": "D",
+              "grid": "2:4"
+            },
+            {
+              "id": 2936,
+              "name": "James Tarkowski",
+              "number": 6,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 17661,
+              "name": "Jarrad Branthwaite",
+              "number": 4,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 2165,
+              "name": "Vitaliy Mykolenko",
+              "number": 16,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 405360,
+              "name": "Harrison Armstrong",
+              "number": 45,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 179685,
+              "name": "Hayden Hackney",
+              "number": 30,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 18592,
+              "name": "Iliman Ndiaye",
+              "number": 10,
+              "position": "M",
+              "grid": "4:3"
+            },
+            {
+              "id": 148099,
+              "name": "Kiernan Dewsbury-Hall",
+              "number": 8,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 334037,
+              "name": "Tyrique George",
+              "number": 19,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 343684,
+              "name": "Thierno Barry",
+              "number": 11,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 18860,
+              "name": "Mark Travers",
+              "number": 12,
+              "position": "G"
+            },
+            {
+              "id": 138417,
+              "name": "Nathan Patterson",
+              "number": 2,
+              "position": "D"
+            },
+            {
+              "id": 2934,
+              "name": "Michael Keane",
+              "number": 5,
+              "position": "D"
+            },
+            {
+              "id": 270139,
+              "name": "Jake O'Brien",
+              "number": 15,
+              "position": "D"
+            },
+            {
+              "id": 304317,
+              "name": "Tyler Dibling",
+              "number": 20,
+              "position": "F"
+            },
+            {
+              "id": 195993,
+              "name": "Carlos Alcaraz",
+              "number": 24,
+              "position": "M"
+            },
+            {
+              "id": 895,
+              "name": "James Garner",
+              "number": 37,
+              "position": "M"
+            },
+            {
+              "id": 125743,
+              "name": "Beto",
+              "number": 9,
+              "position": "F"
+            },
+            {
+              "id": 129711,
+              "name": "Brennan Johnson",
+              "number": 22,
+              "position": "F"
+            }
+          ],
+          "coach": "Leighton Baines"
+        },
+        "354": {
+          "teamName": "Crystal Palace",
+          "formation": "3-4-2-1",
+          "startXI": [
+            {
+              "id": 19088,
+              "name": "Dean Henderson",
+              "number": 1,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 412759,
+              "name": "Jaydee Canvot",
+              "number": 6,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 126949,
+              "name": "Chris Richards",
+              "number": 26,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 278898,
+              "name": "Chadi Riad",
+              "number": 4,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 13736,
+              "name": "Daniel Muñoz",
+              "number": 2,
+              "position": "M",
+              "grid": "3:4"
+            },
+            {
+              "id": 2601,
+              "name": "Daichi Kamada",
+              "number": 18,
+              "position": "M",
+              "grid": "3:3"
+            },
+            {
+              "id": 288102,
+              "name": "Adam Wharton",
+              "number": 20,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 182201,
+              "name": "Tyrick Mitchell",
+              "number": 3,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 1468,
+              "name": "Eddie Nketiah",
+              "number": 9,
+              "position": "F",
+              "grid": "4:2"
+            },
+            {
+              "id": 18929,
+              "name": "Dwight McNeil",
+              "number": 11,
+              "position": "F",
+              "grid": "4:1"
+            },
+            {
+              "id": 25927,
+              "name": "Jean-Philippe Mateta",
+              "number": 14,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 22157,
+              "name": "Walter Benítez",
+              "number": 44,
+              "position": "G"
+            },
+            {
+              "id": 2597,
+              "name": "Takehiro Tomiyasu",
+              "number": 17,
+              "position": "D"
+            },
+            {
+              "id": 26303,
+              "name": "Borna Sosa",
+              "number": 24,
+              "position": "D"
+            },
+            {
+              "id": 162712,
+              "name": "Óscar Mingueza",
+              "number": 30,
+              "position": "D"
+            },
+            {
+              "id": 18806,
+              "name": "Will Hughes",
+              "number": 19,
+              "position": "M"
+            },
+            {
+              "id": 338735,
+              "name": "Anan Khalaili",
+              "number": 25,
+              "position": "F"
+            },
+            {
+              "id": 2032,
+              "name": "Jørgen Strand Larsen",
+              "number": 22,
+              "position": "F"
+            },
+            {
+              "id": 184226,
+              "name": "Yéremy Pino",
+              "number": 10,
+              "position": "M"
+            },
+            {
+              "id": 137303,
+              "name": "Evann Guessand",
+              "number": 29,
+              "position": "F"
+            }
+          ],
+          "coach": "Pierre Sage"
         }
       }
     }
