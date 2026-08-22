@@ -1,4 +1,292 @@
 {
-  "fetchedAt": "2026-08-22T10:46:20.614Z",
-  "lineups": {}
+  "fetchedAt": "2026-08-22T11:11:37.129Z",
+  "lineups": {
+    "560543": {
+      "utcDate": "2026-08-22T11:30:00Z",
+      "homeTeamId": 322,
+      "awayTeamId": 66,
+      "byTeam": {
+        "66": {
+          "teamName": "Manchester United",
+          "formation": "4-2-3-1",
+          "startXI": [
+            {
+              "id": 162511,
+              "name": "Senne Lammens",
+              "number": 1,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 545,
+              "name": "Noussair Mazraoui",
+              "number": 3,
+              "position": "D",
+              "grid": "2:4"
+            },
+            {
+              "id": 2935,
+              "name": "Harry Maguire",
+              "number": 5,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 402329,
+              "name": "Ayden Heaven",
+              "number": 26,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 891,
+              "name": "Luke Shaw",
+              "number": 23,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 305834,
+              "name": "Andrey Santos",
+              "number": 17,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 2926,
+              "name": "Youri Tielemans",
+              "number": 18,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 20589,
+              "name": "Bryan Mbeumo",
+              "number": 19,
+              "position": "M",
+              "grid": "4:3"
+            },
+            {
+              "id": 1485,
+              "name": "Bruno Fernandes",
+              "number": 8,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 382452,
+              "name": "Patrick Dorgu",
+              "number": 13,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 1165,
+              "name": "Matheus Cunha",
+              "number": 10,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 18885,
+              "name": "Karl Darlow",
+              "number": 12,
+              "position": "G"
+            },
+            {
+              "id": 886,
+              "name": "Diogo Dalot",
+              "number": 2,
+              "position": "D"
+            },
+            {
+              "id": 342970,
+              "name": "Leny Yoro",
+              "number": 15,
+              "position": "D"
+            },
+            {
+              "id": 2467,
+              "name": "Lisandro Martínez",
+              "number": 6,
+              "position": "D"
+            },
+            {
+              "id": 284322,
+              "name": "Kobbie Mainoo",
+              "number": 37,
+              "position": "M"
+            },
+            {
+              "id": 115589,
+              "name": "Benjamin Šeško",
+              "number": 30,
+              "position": "F"
+            },
+            {
+              "id": 909,
+              "name": "Marcus Rashford",
+              "number": 9,
+              "position": "F"
+            },
+            {
+              "id": 70100,
+              "name": "Joshua Zirkzee",
+              "number": 11,
+              "position": "F"
+            },
+            {
+              "id": 557462,
+              "name": "Shea Lacey",
+              "number": 31,
+              "position": "F"
+            }
+          ],
+          "coach": "Michael Carrick"
+        },
+        "322": {
+          "teamName": "Hull City",
+          "formation": "3-4-2-1",
+          "startXI": [
+            {
+              "id": 1591,
+              "name": "Konstantinos Tzolakis",
+              "number": 19,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 358431,
+              "name": "Nobel Mendy",
+              "number": 32,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 19093,
+              "name": "John Egan",
+              "number": 15,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 2769,
+              "name": "Semi Ajayi",
+              "number": 6,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 20073,
+              "name": "Lewie Coyle",
+              "number": 2,
+              "position": "M",
+              "grid": "3:4"
+            },
+            {
+              "id": 19666,
+              "name": "Matt Crooks",
+              "number": 25,
+              "position": "M",
+              "grid": "3:3"
+            },
+            {
+              "id": 17670,
+              "name": "Regan Slater",
+              "number": 27,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 18747,
+              "name": "Ryan Giles",
+              "number": 3,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 226765,
+              "name": "Elliot Stroud",
+              "number": 21,
+              "position": "F",
+              "grid": "4:2"
+            },
+            {
+              "id": 299923,
+              "name": "Mohamed Belloumi",
+              "number": 10,
+              "position": "F",
+              "grid": "4:1"
+            },
+            {
+              "id": 19337,
+              "name": "Oli McBurnie",
+              "number": 9,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 19811,
+              "name": "Dillon Phillips",
+              "number": 12,
+              "position": "G"
+            },
+            {
+              "id": 426480,
+              "name": "Lucas Herrington",
+              "number": 22,
+              "position": "D"
+            },
+            {
+              "id": 18941,
+              "name": "Matt Targett",
+              "number": 23,
+              "position": "D"
+            },
+            {
+              "id": 19242,
+              "name": "Paddy McNair",
+              "number": 17,
+              "position": "D"
+            },
+            {
+              "id": 153411,
+              "name": "Cody Drameh",
+              "number": 18,
+              "position": "D"
+            },
+            {
+              "id": 44798,
+              "name": "Liam Millar",
+              "number": 7,
+              "position": "F"
+            },
+            {
+              "id": 396407,
+              "name": "Jens Hjertø-Dahl",
+              "number": 14,
+              "position": "M"
+            },
+            {
+              "id": 179843,
+              "name": "Lucas Gourna-Douath",
+              "number": 29,
+              "position": "M"
+            },
+            {
+              "id": 19100,
+              "name": "Kieran Dowell",
+              "number": 26,
+              "position": "M"
+            }
+          ],
+          "coach": "Sergej Jakirovic"
+        }
+      }
+    }
+  }
 }
