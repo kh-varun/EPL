@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-22T08:25:03.168Z",
+  "fetchedAt": "2026-08-22T08:57:05.822Z",
   "odds": {
     "560543": {
       "eventTicker": "KXEPLGAME-26AUG22HULMUN",
@@ -82,7 +82,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug22bretot",
       "home": {
         "label": "Brentford",
-        "probability": 45,
+        "probability": 46,
         "ticker": "KXEPLGAME-26AUG22BRETOT-BRE"
       },
       "away": {
