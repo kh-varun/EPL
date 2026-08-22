@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-21T22:49:47.084Z",
+  "fetchedAt": "2026-08-22T13:39:33.211Z",
   "standings": [
     {
       "position": 1,
@@ -23,6 +23,25 @@
     {
       "position": 2,
       "team": {
+        "id": 322,
+        "name": "Hull City AFC",
+        "shortName": "Hull City",
+        "tla": "HUL",
+        "crest": "https://crests.football-data.org/322.png"
+      },
+      "playedGames": 1,
+      "won": 1,
+      "draw": 0,
+      "lost": 0,
+      "points": 3,
+      "goalsFor": 2,
+      "goalsAgainst": 0,
+      "goalDifference": 2,
+      "form": null
+    },
+    {
+      "position": 3,
+      "team": {
         "id": 1044,
         "name": "AFC Bournemouth",
         "shortName": "Bournemouth",
@@ -40,7 +59,7 @@
       "form": null
     },
     {
-      "position": 2,
+      "position": 3,
       "team": {
         "id": 58,
         "name": "Aston Villa FC",
@@ -59,7 +78,7 @@
       "form": null
     },
     {
-      "position": 2,
+      "position": 3,
       "team": {
         "id": 402,
         "name": "Brentford FC",
@@ -78,7 +97,7 @@
       "form": null
     },
     {
-      "position": 2,
+      "position": 3,
       "team": {
         "id": 397,
         "name": "Brighton & Hove Albion FC",
@@ -97,7 +116,7 @@
       "form": null
     },
     {
-      "position": 2,
+      "position": 3,
       "team": {
         "id": 61,
         "name": "Chelsea FC",
@@ -116,7 +135,7 @@
       "form": null
     },
     {
-      "position": 2,
+      "position": 3,
       "team": {
         "id": 354,
         "name": "Crystal Palace FC",
@@ -135,7 +154,7 @@
       "form": null
     },
     {
-      "position": 2,
+      "position": 3,
       "team": {
         "id": 62,
         "name": "Everton FC",
@@ -154,7 +173,7 @@
       "form": null
     },
     {
-      "position": 2,
+      "position": 3,
       "team": {
         "id": 63,
         "name": "Fulham FC",
@@ -173,26 +192,7 @@
       "form": null
     },
     {
-      "position": 2,
-      "team": {
-        "id": 322,
-        "name": "Hull City AFC",
-        "shortName": "Hull City",
-        "tla": "HUL",
-        "crest": "https://crests.football-data.org/322.png"
-      },
-      "playedGames": 0,
-      "won": 0,
-      "draw": 0,
-      "lost": 0,
-      "points": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0,
-      "form": null
-    },
-    {
-      "position": 2,
+      "position": 3,
       "team": {
         "id": 349,
         "name": "Ipswich Town FC",
@@ -211,7 +211,7 @@
       "form": null
     },
     {
-      "position": 2,
+      "position": 3,
       "team": {
         "id": 341,
         "name": "Leeds United FC",
@@ -230,7 +230,7 @@
       "form": null
     },
     {
-      "position": 2,
+      "position": 3,
       "team": {
         "id": 64,
         "name": "Liverpool FC",
@@ -249,7 +249,7 @@
       "form": null
     },
     {
-      "position": 2,
+      "position": 3,
       "team": {
         "id": 65,
         "name": "Manchester City FC",
@@ -268,26 +268,7 @@
       "form": null
     },
     {
-      "position": 2,
-      "team": {
-        "id": 66,
-        "name": "Manchester United FC",
-        "shortName": "Man United",
-        "tla": "MUN",
-        "crest": "https://crests.football-data.org/66.png"
-      },
-      "playedGames": 0,
-      "won": 0,
-      "draw": 0,
-      "lost": 0,
-      "points": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0,
-      "form": null
-    },
-    {
-      "position": 2,
+      "position": 3,
       "team": {
         "id": 67,
         "name": "Newcastle United FC",
@@ -306,7 +287,7 @@
       "form": null
     },
     {
-      "position": 2,
+      "position": 3,
       "team": {
         "id": 351,
         "name": "Nottingham Forest FC",
@@ -325,7 +306,7 @@
       "form": null
     },
     {
-      "position": 2,
+      "position": 3,
       "team": {
         "id": 71,
         "name": "Sunderland AFC",
@@ -344,7 +325,7 @@
       "form": null
     },
     {
-      "position": 2,
+      "position": 3,
       "team": {
         "id": 73,
         "name": "Tottenham Hotspur FC",
@@ -360,6 +341,25 @@
       "goalsFor": 0,
       "goalsAgainst": 0,
       "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 19,
+      "team": {
+        "id": 66,
+        "name": "Manchester United FC",
+        "shortName": "Man United",
+        "tla": "MUN",
+        "crest": "https://crests.football-data.org/66.png"
+      },
+      "playedGames": 1,
+      "won": 0,
+      "draw": 0,
+      "lost": 1,
+      "points": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 2,
+      "goalDifference": -2,
       "form": null
     },
     {
@@ -383,6 +383,31 @@
     }
   ],
   "lastResults": [
+    {
+      "id": 560543,
+      "utcDate": "2026-08-22T11:30:00Z",
+      "status": "FINISHED",
+      "matchday": 1,
+      "homeTeam": {
+        "id": 322,
+        "name": "Hull City AFC",
+        "shortName": "Hull City",
+        "tla": "HUL",
+        "crest": "https://crests.football-data.org/322.png"
+      },
+      "awayTeam": {
+        "id": 66,
+        "name": "Manchester United FC",
+        "shortName": "Man United",
+        "tla": "MUN",
+        "crest": "https://crests.football-data.org/66.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 0,
+        "winner": "HOME_TEAM"
+      }
+    },
     {
       "id": 560542,
       "utcDate": "2026-08-21T19:00:00Z",
@@ -410,31 +435,6 @@
     }
   ],
   "nextFixtures": [
-    {
-      "id": 560543,
-      "utcDate": "2026-08-22T11:30:00Z",
-      "status": "TIMED",
-      "matchday": 1,
-      "homeTeam": {
-        "id": 322,
-        "name": "Hull City AFC",
-        "shortName": "Hull City",
-        "tla": "HUL",
-        "crest": "https://crests.football-data.org/322.png"
-      },
-      "awayTeam": {
-        "id": 66,
-        "name": "Manchester United FC",
-        "shortName": "Man United",
-        "tla": "MUN",
-        "crest": "https://crests.football-data.org/66.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      }
-    },
     {
       "id": 560544,
       "utcDate": "2026-08-22T14:00:00Z",
@@ -653,6 +653,31 @@
         "shortName": "Man City",
         "tla": "MCI",
         "crest": "https://crests.football-data.org/65.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      }
+    },
+    {
+      "id": 560552,
+      "utcDate": "2026-08-29T11:30:00Z",
+      "status": "TIMED",
+      "matchday": 2,
+      "homeTeam": {
+        "id": 64,
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "tla": "LIV",
+        "crest": "https://crests.football-data.org/64.png"
+      },
+      "awayTeam": {
+        "id": 351,
+        "name": "Nottingham Forest FC",
+        "shortName": "Nottingham",
+        "tla": "NOT",
+        "crest": "https://crests.football-data.org/351.png"
       },
       "score": {
         "home": null,
