@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-22T16:12:12.888Z",
+  "fetchedAt": "2026-08-22T18:50:17.922Z",
   "standings": [
     {
       "position": 1,
@@ -21,7 +21,26 @@
       "form": null
     },
     {
-      "position": 2,
+      "position": 1,
+      "team": {
+        "id": 402,
+        "name": "Brentford FC",
+        "shortName": "Brentford",
+        "tla": "BRE",
+        "crest": "https://crests.football-data.org/402.png"
+      },
+      "playedGames": 1,
+      "won": 1,
+      "draw": 0,
+      "lost": 0,
+      "points": 3,
+      "goalsFor": 3,
+      "goalsAgainst": 0,
+      "goalDifference": 3,
+      "form": null
+    },
+    {
+      "position": 3,
       "team": {
         "id": 62,
         "name": "Everton FC",
@@ -40,7 +59,7 @@
       "form": null
     },
     {
-      "position": 2,
+      "position": 3,
       "team": {
         "id": 322,
         "name": "Hull City AFC",
@@ -59,7 +78,7 @@
       "form": null
     },
     {
-      "position": 4,
+      "position": 5,
       "team": {
         "id": 349,
         "name": "Ipswich Town FC",
@@ -78,7 +97,7 @@
       "form": null
     },
     {
-      "position": 5,
+      "position": 6,
       "team": {
         "id": 341,
         "name": "Leeds United FC",
@@ -97,7 +116,7 @@
       "form": null
     },
     {
-      "position": 6,
+      "position": 7,
       "team": {
         "id": 1044,
         "name": "AFC Bournemouth",
@@ -116,7 +135,7 @@
       "form": null
     },
     {
-      "position": 6,
+      "position": 7,
       "team": {
         "id": 58,
         "name": "Aston Villa FC",
@@ -135,26 +154,7 @@
       "form": null
     },
     {
-      "position": 6,
-      "team": {
-        "id": 402,
-        "name": "Brentford FC",
-        "shortName": "Brentford",
-        "tla": "BRE",
-        "crest": "https://crests.football-data.org/402.png"
-      },
-      "playedGames": 0,
-      "won": 0,
-      "draw": 0,
-      "lost": 0,
-      "points": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0,
-      "form": null
-    },
-    {
-      "position": 6,
+      "position": 7,
       "team": {
         "id": 397,
         "name": "Brighton & Hove Albion FC",
@@ -173,7 +173,7 @@
       "form": null
     },
     {
-      "position": 6,
+      "position": 7,
       "team": {
         "id": 61,
         "name": "Chelsea FC",
@@ -192,7 +192,7 @@
       "form": null
     },
     {
-      "position": 6,
+      "position": 7,
       "team": {
         "id": 63,
         "name": "Fulham FC",
@@ -211,7 +211,7 @@
       "form": null
     },
     {
-      "position": 6,
+      "position": 7,
       "team": {
         "id": 64,
         "name": "Liverpool FC",
@@ -230,7 +230,7 @@
       "form": null
     },
     {
-      "position": 6,
+      "position": 7,
       "team": {
         "id": 65,
         "name": "Manchester City FC",
@@ -249,7 +249,7 @@
       "form": null
     },
     {
-      "position": 6,
+      "position": 7,
       "team": {
         "id": 67,
         "name": "Newcastle United FC",
@@ -268,26 +268,7 @@
       "form": null
     },
     {
-      "position": 6,
-      "team": {
-        "id": 73,
-        "name": "Tottenham Hotspur FC",
-        "shortName": "Tottenham",
-        "tla": "TOT",
-        "crest": "https://crests.football-data.org/73.png"
-      },
-      "playedGames": 0,
-      "won": 0,
-      "draw": 0,
-      "lost": 0,
-      "points": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0,
-      "form": null
-    },
-    {
-      "position": 16,
+      "position": 15,
       "team": {
         "id": 71,
         "name": "Sunderland AFC",
@@ -306,7 +287,7 @@
       "form": null
     },
     {
-      "position": 17,
+      "position": 16,
       "team": {
         "id": 351,
         "name": "Nottingham Forest FC",
@@ -325,7 +306,7 @@
       "form": null
     },
     {
-      "position": 18,
+      "position": 17,
       "team": {
         "id": 354,
         "name": "Crystal Palace FC",
@@ -344,7 +325,7 @@
       "form": null
     },
     {
-      "position": 18,
+      "position": 17,
       "team": {
         "id": 66,
         "name": "Manchester United FC",
@@ -363,7 +344,7 @@
       "form": null
     },
     {
-      "position": 20,
+      "position": 19,
       "team": {
         "id": 1076,
         "name": "Coventry City FC",
@@ -380,9 +361,53 @@
       "goalsAgainst": 3,
       "goalDifference": -3,
       "form": null
+    },
+    {
+      "position": 19,
+      "team": {
+        "id": 73,
+        "name": "Tottenham Hotspur FC",
+        "shortName": "Tottenham",
+        "tla": "TOT",
+        "crest": "https://crests.football-data.org/73.png"
+      },
+      "playedGames": 1,
+      "won": 0,
+      "draw": 0,
+      "lost": 1,
+      "points": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 3,
+      "goalDifference": -3,
+      "form": null
     }
   ],
   "lastResults": [
+    {
+      "id": 560547,
+      "utcDate": "2026-08-22T16:30:00Z",
+      "status": "FINISHED",
+      "matchday": 1,
+      "homeTeam": {
+        "id": 402,
+        "name": "Brentford FC",
+        "shortName": "Brentford",
+        "tla": "BRE",
+        "crest": "https://crests.football-data.org/402.png"
+      },
+      "awayTeam": {
+        "id": 73,
+        "name": "Tottenham Hotspur FC",
+        "shortName": "Tottenham",
+        "tla": "TOT",
+        "crest": "https://crests.football-data.org/73.png"
+      },
+      "score": {
+        "home": 3,
+        "away": 0,
+        "winner": "HOME_TEAM"
+      }
+    },
     {
       "id": 560544,
       "utcDate": "2026-08-22T14:00:00Z",
@@ -482,59 +507,9 @@
         "away": 0,
         "winner": "HOME_TEAM"
       }
-    },
-    {
-      "id": 560542,
-      "utcDate": "2026-08-21T19:00:00Z",
-      "status": "FINISHED",
-      "matchday": 1,
-      "homeTeam": {
-        "id": 57,
-        "name": "Arsenal FC",
-        "shortName": "Arsenal",
-        "tla": "ARS",
-        "crest": "https://crests.football-data.org/57.png"
-      },
-      "awayTeam": {
-        "id": 1076,
-        "name": "Coventry City FC",
-        "shortName": "Coventry City",
-        "tla": "COV",
-        "crest": "https://crests.football-data.org/1076.png"
-      },
-      "score": {
-        "home": 3,
-        "away": 0,
-        "winner": "HOME_TEAM"
-      }
     }
   ],
   "nextFixtures": [
-    {
-      "id": 560547,
-      "utcDate": "2026-08-22T16:30:00Z",
-      "status": "TIMED",
-      "matchday": 1,
-      "homeTeam": {
-        "id": 402,
-        "name": "Brentford FC",
-        "shortName": "Brentford",
-        "tla": "BRE",
-        "crest": "https://crests.football-data.org/402.png"
-      },
-      "awayTeam": {
-        "id": 73,
-        "name": "Tottenham Hotspur FC",
-        "shortName": "Tottenham",
-        "tla": "TOT",
-        "crest": "https://crests.football-data.org/73.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      }
-    },
     {
       "id": 560548,
       "utcDate": "2026-08-23T13:00:00Z",
@@ -753,6 +728,31 @@
         "shortName": "Newcastle",
         "tla": "NEW",
         "crest": "https://crests.football-data.org/67.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      }
+    },
+    {
+      "id": 560554,
+      "utcDate": "2026-08-30T13:00:00Z",
+      "status": "TIMED",
+      "matchday": 2,
+      "homeTeam": {
+        "id": 71,
+        "name": "Sunderland AFC",
+        "shortName": "Sunderland",
+        "tla": "SUN",
+        "crest": "https://crests.football-data.org/71.png"
+      },
+      "awayTeam": {
+        "id": 63,
+        "name": "Fulham FC",
+        "shortName": "Fulham",
+        "tla": "FUL",
+        "crest": "https://crests.football-data.org/63.png"
       },
       "score": {
         "home": null,

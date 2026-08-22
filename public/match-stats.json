@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-22T16:12:20.819Z",
+  "fetchedAt": "2026-08-22T18:50:24.992Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -151,6 +151,37 @@
           "fouls": 9,
           "corners": 0,
           "offsides": 0,
+          "yellowCards": 1,
+          "redCards": null
+        }
+      }
+    },
+    "560547": {
+      "utcDate": "2026-08-22T16:30:00Z",
+      "homeTeamId": 402,
+      "awayTeamId": 73,
+      "stats": {
+        "73": {
+          "shots": 9,
+          "shotsOnTarget": 4,
+          "possession": 59,
+          "passes": 523,
+          "passAccuracy": 88,
+          "fouls": 14,
+          "corners": 3,
+          "offsides": 2,
+          "yellowCards": 1,
+          "redCards": null
+        },
+        "402": {
+          "shots": 26,
+          "shotsOnTarget": 8,
+          "possession": 41,
+          "passes": 354,
+          "passAccuracy": 83,
+          "fouls": 17,
+          "corners": 7,
+          "offsides": 3,
           "yellowCards": 1,
           "redCards": null
         }
