@@ -1,4 +1,35 @@
 {
-  "fetchedAt": "2026-08-22T13:56:37.685Z",
-  "matches": {}
+  "fetchedAt": "2026-08-22T14:14:46.495Z",
+  "matches": {
+    "560544": {
+      "status": "IN_PLAY",
+      "utcDate": "2026-08-22T14:00:00Z",
+      "homeTeamId": 349,
+      "awayTeamId": 71,
+      "score": {
+        "home": 0,
+        "away": 0
+      }
+    },
+    "560545": {
+      "status": "IN_PLAY",
+      "utcDate": "2026-08-22T14:00:00Z",
+      "homeTeamId": 351,
+      "awayTeamId": 341,
+      "score": {
+        "home": 0,
+        "away": 0
+      }
+    },
+    "560546": {
+      "status": "IN_PLAY",
+      "utcDate": "2026-08-22T14:00:00Z",
+      "homeTeamId": 62,
+      "awayTeamId": 354,
+      "score": {
+        "home": 0,
+        "away": 0
+      }
+    }
+  }
 }
