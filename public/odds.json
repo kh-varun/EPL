@@ -1,12 +1,12 @@
 {
-  "fetchedAt": "2026-08-23T10:31:43.166Z",
+  "fetchedAt": "2026-08-23T10:59:16.883Z",
   "odds": {
     "560548": {
       "eventTicker": "KXEPLGAME-26AUG23MCIBOU",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug23mcibou",
       "home": {
         "label": "Man City",
-        "probability": 67,
+        "probability": 68,
         "ticker": "KXEPLGAME-26AUG23MCIBOU-MCI"
       },
       "away": {
@@ -16,7 +16,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 19,
+        "probability": 20,
         "ticker": "KXEPLGAME-26AUG23MCIBOU-TIE"
       }
     },
