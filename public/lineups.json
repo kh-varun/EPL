@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-23T11:57:26.047Z",
+  "fetchedAt": "2026-08-23T12:30:55.875Z",
   "lineups": {
     "560544": {
       "utcDate": "2026-08-22T14:00:00Z",
@@ -1146,6 +1146,580 @@
             }
           ],
           "coach": "Keith Andrews"
+        }
+      }
+    },
+    "560548": {
+      "utcDate": "2026-08-23T13:00:00Z",
+      "homeTeamId": 65,
+      "awayTeamId": 1044,
+      "byTeam": {
+        "65": {
+          "teamName": "Manchester City",
+          "formation": "4-2-3-1",
+          "startXI": [
+            {
+              "id": 1622,
+              "name": "Gianluigi Donnarumma",
+              "number": 1,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 360114,
+              "name": "Abdukodir Khusanov",
+              "number": 45,
+              "position": "D",
+              "grid": "2:4"
+            },
+            {
+              "id": 567,
+              "name": "Rúben Dias",
+              "number": 3,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 67971,
+              "name": "Marc Guéhi",
+              "number": 6,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 129033,
+              "name": "Joško Gvardiol",
+              "number": 24,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 138908,
+              "name": "Elliot Anderson",
+              "number": 5,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 284230,
+              "name": "Rico Lewis",
+              "number": 82,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 19281,
+              "name": "Antoine Semenyo",
+              "number": 42,
+              "position": "M",
+              "grid": "4:3"
+            },
+            {
+              "id": 307123,
+              "name": "Nico O'Reilly",
+              "number": 33,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 631,
+              "name": "Phil Foden",
+              "number": 47,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 1100,
+              "name": "Erling Haaland",
+              "number": 9,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 47296,
+              "name": "Gerónimo Rulli",
+              "number": 28,
+              "position": "G"
+            },
+            {
+              "id": 21138,
+              "name": "Rayan Aït-Nouri",
+              "number": 21,
+              "position": "D"
+            },
+            {
+              "id": 41621,
+              "name": "Matheus Nunes",
+              "number": 27,
+              "position": "M"
+            },
+            {
+              "id": 414359,
+              "name": "Vitor Reis",
+              "number": 22,
+              "position": "D"
+            },
+            {
+              "id": 2291,
+              "name": "Mateo Kovačić",
+              "number": 8,
+              "position": "M"
+            },
+            {
+              "id": 156477,
+              "name": "Rayan Cherki",
+              "number": 10,
+              "position": "M"
+            },
+            {
+              "id": 161933,
+              "name": "Nico González",
+              "number": 14,
+              "position": "M"
+            },
+            {
+              "id": 19187,
+              "name": "Jack Grealish",
+              "number": 18,
+              "position": "M"
+            },
+            {
+              "id": 81573,
+              "name": "Omar Marmoush",
+              "number": 7,
+              "position": "F"
+            }
+          ],
+          "coach": "Enzo Maresca"
+        },
+        "1044": {
+          "teamName": "Bournemouth",
+          "formation": "4-2-3-1",
+          "startXI": [
+            {
+              "id": 118307,
+              "name": "Đorđe Petrović",
+              "number": 1,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 18869,
+              "name": "Adam Smith",
+              "number": 15,
+              "position": "D",
+              "grid": "2:4"
+            },
+            {
+              "id": 331832,
+              "name": "António Silva",
+              "number": 14,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 20093,
+              "name": "James Hill",
+              "number": 5,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 162267,
+              "name": "Adrien Truffert",
+              "number": 3,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 18872,
+              "name": "Lewis Cook",
+              "number": 4,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 304853,
+              "name": "Alex Scott",
+              "number": 8,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 407806,
+              "name": "Rayan",
+              "number": 37,
+              "position": "M",
+              "grid": "4:3"
+            },
+            {
+              "id": 792,
+              "name": "Justin Kluivert",
+              "number": 19,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 19245,
+              "name": "Marcus Tavernier",
+              "number": 16,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 152856,
+              "name": "Evanilson",
+              "number": 9,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 151756,
+              "name": "Will Dennis",
+              "number": 40,
+              "position": "G"
+            },
+            {
+              "id": 22136,
+              "name": "Bafodé Diakité",
+              "number": 18,
+              "position": "D"
+            },
+            {
+              "id": 343576,
+              "name": "Ben Gannon-Doak",
+              "number": 11,
+              "position": "F"
+            },
+            {
+              "id": 361485,
+              "name": "Alex Tóth",
+              "number": 27,
+              "position": "M"
+            },
+            {
+              "id": 182772,
+              "name": "Juanlu Sánchez",
+              "number": 24,
+              "position": "M"
+            },
+            {
+              "id": 18870,
+              "name": "David Brooks",
+              "number": 7,
+              "position": "M"
+            },
+            {
+              "id": 1150,
+              "name": "Tyler Adams",
+              "number": 12,
+              "position": "M"
+            },
+            {
+              "id": 343202,
+              "name": "Álvaro Rodriguez",
+              "number": 30,
+              "position": "F"
+            },
+            {
+              "id": 296458,
+              "name": "Daniel Jebbison",
+              "number": 29,
+              "position": "F"
+            }
+          ],
+          "coach": "Marco Rose"
+        }
+      }
+    },
+    "560549": {
+      "utcDate": "2026-08-23T13:00:00Z",
+      "homeTeamId": 397,
+      "awayTeamId": 58,
+      "byTeam": {
+        "58": {
+          "teamName": "Aston Villa",
+          "formation": "4-2-3-1",
+          "startXI": [
+            {
+              "id": 36878,
+              "name": "Marco Bizot",
+              "number": 40,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 19298,
+              "name": "Matty Cash",
+              "number": 2,
+              "position": "D",
+              "grid": "2:4"
+            },
+            {
+              "id": 46815,
+              "name": "Pau Torres",
+              "number": 14,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 889,
+              "name": "Victor Lindelöf",
+              "number": 3,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 138816,
+              "name": "Ian Maatsen",
+              "number": 22,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 2287,
+              "name": "Ross Barkley",
+              "number": 6,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 1904,
+              "name": "Boubacar Kamara",
+              "number": 8,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 19191,
+              "name": "John McGinn",
+              "number": 7,
+              "position": "M",
+              "grid": "4:3"
+            },
+            {
+              "id": 195103,
+              "name": "João Gomes",
+              "number": 35,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 364566,
+              "name": "George Hemmings",
+              "number": 53,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 19071,
+              "name": "Emiliano Buendía",
+              "number": 10,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 199578,
+              "name": "Zion Suzuki",
+              "number": 1,
+              "position": "G"
+            },
+            {
+              "id": 19179,
+              "name": "Tyrone Mings",
+              "number": 5,
+              "position": "D"
+            },
+            {
+              "id": 162012,
+              "name": "Matteo Ruggeri",
+              "number": 13,
+              "position": "D"
+            },
+            {
+              "id": 284457,
+              "name": "Lamare Bogarde",
+              "number": 26,
+              "position": "M"
+            },
+            {
+              "id": 464004,
+              "name": "Alysson",
+              "number": 47,
+              "position": "F"
+            },
+            {
+              "id": 546703,
+              "name": "Triston Rowe",
+              "number": 45,
+              "position": "D"
+            },
+            {
+              "id": 453101,
+              "name": "Bradley Burrowes",
+              "number": 49,
+              "position": "F"
+            },
+            {
+              "id": 284324,
+              "name": "Alejandro Garnacho",
+              "number": 17,
+              "position": "F"
+            },
+            {
+              "id": 357247,
+              "name": "Luka Lynch",
+              "number": 74,
+              "position": "F"
+            }
+          ],
+          "coach": "Unai Emery"
+        },
+        "397": {
+          "teamName": "Brighton",
+          "formation": "4-2-3-1",
+          "startXI": [
+            {
+              "id": 129058,
+              "name": "Bart Verbruggen",
+              "number": 1,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 92993,
+              "name": "Mats Wieffer",
+              "number": 27,
+              "position": "D",
+              "grid": "2:4"
+            },
+            {
+              "id": 387521,
+              "name": "Luka Vušković",
+              "number": 44,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 22160,
+              "name": "Olivier Boscagli",
+              "number": 21,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 18963,
+              "name": "Lewis Dunk",
+              "number": 5,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 18970,
+              "name": "Pascal Groß",
+              "number": 13,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 265820,
+              "name": "Yasin Ayari",
+              "number": 26,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 278370,
+              "name": "Diego Gómez",
+              "number": 25,
+              "position": "M",
+              "grid": "4:3"
+            },
+            {
+              "id": 305730,
+              "name": "Jack Hinshelwood",
+              "number": 8,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 162007,
+              "name": "Maxim De Cuyper",
+              "number": 29,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 90590,
+              "name": "Georginio Rutter",
+              "number": 10,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 18960,
+              "name": "Jason Steele",
+              "number": 23,
+              "position": "G"
+            },
+            {
+              "id": 64003,
+              "name": "Pascal Struijk",
+              "number": 4,
+              "position": "D"
+            },
+            {
+              "id": 204037,
+              "name": "Costinha",
+              "number": 20,
+              "position": "D"
+            },
+            {
+              "id": 7090,
+              "name": "Michael Svoboda",
+              "number": 30,
+              "position": "D"
+            },
+            {
+              "id": 293643,
+              "name": "Ibrahim Osman",
+              "number": 15,
+              "position": "F"
+            },
+            {
+              "id": 410125,
+              "name": "Malick Yalcouyé",
+              "number": 35,
+              "position": "M"
+            },
+            {
+              "id": 313353,
+              "name": "Promise David",
+              "number": 12,
+              "position": "F"
+            },
+            {
+              "id": 392482,
+              "name": "Charalampos Kostoulas",
+              "number": 19,
+              "position": "F"
+            },
+            {
+              "id": 524411,
+              "name": "Zadok Yohanna",
+              "number": 36,
+              "position": "F"
+            }
+          ],
+          "coach": "Fabian Hurzeler"
         }
       }
     }
