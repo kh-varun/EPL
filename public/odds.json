@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-23T09:59:24.933Z",
+  "fetchedAt": "2026-08-23T10:31:43.166Z",
   "odds": {
     "560548": {
       "eventTicker": "KXEPLGAME-26AUG23MCIBOU",
@@ -16,7 +16,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 20,
+        "probability": 19,
         "ticker": "KXEPLGAME-26AUG23MCIBOU-TIE"
       }
     },
