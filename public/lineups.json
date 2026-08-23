@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-23T14:58:18.301Z",
+  "fetchedAt": "2026-08-23T15:19:32.181Z",
   "lineups": {
     "560547": {
       "utcDate": "2026-08-22T16:30:00Z",
@@ -859,6 +859,293 @@
             }
           ],
           "coach": "Fabian Hurzeler"
+        }
+      }
+    },
+    "560550": {
+      "utcDate": "2026-08-23T15:30:00Z",
+      "homeTeamId": 67,
+      "awayTeamId": 64,
+      "byTeam": {
+        "64": {
+          "teamName": "Liverpool",
+          "formation": "4-2-3-1",
+          "startXI": [
+            {
+              "id": 280,
+              "name": "Alisson",
+              "number": 1,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 152654,
+              "name": "Jeremie Frimpong",
+              "number": 30,
+              "position": "D",
+              "grid": "2:4"
+            },
+            {
+              "id": 367636,
+              "name": "Jérémy Jacquet",
+              "number": 5,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 290,
+              "name": "Virgil van Dijk",
+              "number": 4,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 206254,
+              "name": "Miloš Kerkez",
+              "number": 6,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 1096,
+              "name": "Dominik Szoboszlai",
+              "number": 8,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 542,
+              "name": "Ryan Gravenberch",
+              "number": 38,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 452685,
+              "name": "Rio Ngumoha",
+              "number": 73,
+              "position": "M",
+              "grid": "4:3"
+            },
+            {
+              "id": 203224,
+              "name": "Florian Wirtz",
+              "number": 7,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 247,
+              "name": "Cody Gakpo",
+              "number": 18,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 2864,
+              "name": "Alexander Isak",
+              "number": 9,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 24760,
+              "name": "Giorgi Mamardashvili",
+              "number": 25,
+              "position": "G"
+            },
+            {
+              "id": 1600,
+              "name": "Kostas Tsimikas",
+              "number": 21,
+              "position": "D"
+            },
+            {
+              "id": 101814,
+              "name": "Ronald Araújo",
+              "number": 33,
+              "position": "D"
+            },
+            {
+              "id": 8500,
+              "name": "Wataru Endo",
+              "number": 3,
+              "position": "M"
+            },
+            {
+              "id": 6716,
+              "name": "Alexis Mac Allister",
+              "number": 10,
+              "position": "M"
+            },
+            {
+              "id": 397997,
+              "name": "Trey Nyoni",
+              "number": 42,
+              "position": "M"
+            },
+            {
+              "id": 287109,
+              "name": "James McConnell",
+              "number": 53,
+              "position": "M"
+            },
+            {
+              "id": 338751,
+              "name": "Víctor Muñoz",
+              "number": 23,
+              "position": "F"
+            },
+            {
+              "id": 328107,
+              "name": "Lewis Koumas",
+              "number": 67,
+              "position": "F"
+            }
+          ],
+          "coach": "Andoni Iraola"
+        },
+        "67": {
+          "teamName": "Newcastle",
+          "formation": "4-2-3-1",
+          "startXI": [
+            {
+              "id": 269349,
+              "name": "Lukáš Horníček",
+              "number": 21,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 7318,
+              "name": "Amar Dedić",
+              "number": 37,
+              "position": "D",
+              "grid": "2:4"
+            },
+            {
+              "id": 163189,
+              "name": "Malick Thiaw",
+              "number": 12,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 38734,
+              "name": "Sven Botman",
+              "number": 4,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 284492,
+              "name": "Lewis Hall",
+              "number": 3,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 328105,
+              "name": "Lewis Miley",
+              "number": 67,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 469321,
+              "name": "Sean Steur",
+              "number": 14,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 153430,
+              "name": "Anthony Elanga",
+              "number": 19,
+              "position": "M",
+              "grid": "4:3"
+            },
+            {
+              "id": 20649,
+              "name": "Yoane Wissa",
+              "number": 9,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 18778,
+              "name": "Harvey Barnes",
+              "number": 11,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 315237,
+              "name": "William Osula",
+              "number": 10,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 329640,
+              "name": "Ewen Jaouen",
+              "number": 24,
+              "position": "G"
+            },
+            {
+              "id": 2806,
+              "name": "Fabian Schär",
+              "number": 5,
+              "position": "D"
+            },
+            {
+              "id": 337934,
+              "name": "Leo Shahar",
+              "number": 51,
+              "position": "D"
+            },
+            {
+              "id": 453792,
+              "name": "Aladji Bamba",
+              "number": 8,
+              "position": "M"
+            },
+            {
+              "id": 387643,
+              "name": "Bazoumana Touré",
+              "number": 17,
+              "position": "F"
+            },
+            {
+              "id": 1463,
+              "name": "Joe Willock",
+              "number": 28,
+              "position": "M"
+            },
+            {
+              "id": 19192,
+              "name": "Jacob Ramsey",
+              "number": 41,
+              "position": "M"
+            },
+            {
+              "id": 19163,
+              "name": "Jacob Murphy",
+              "number": 23,
+              "position": "M"
+            },
+            {
+              "id": 158054,
+              "name": "Nick Woltemade",
+              "number": 27,
+              "position": "F"
+            }
+          ],
+          "coach": "Matthias Jaissle"
         }
       }
     }
