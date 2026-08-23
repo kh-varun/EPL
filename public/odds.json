@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-23T19:34:32.679Z",
+  "fetchedAt": "2026-08-23T19:55:56.434Z",
   "odds": {
     "560551": {
       "eventTicker": "KXEPLGAME-26AUG24FULCFC",
@@ -44,7 +44,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug30munips",
       "home": {
         "label": "Man United",
-        "probability": 69,
+        "probability": 70,
         "ticker": "KXEPLGAME-26AUG30MUNIPS-MUN"
       },
       "away": {
@@ -63,7 +63,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug30sunful",
       "home": {
         "label": "Sunderland",
-        "probability": 37,
+        "probability": 38,
         "ticker": "KXEPLGAME-26AUG30SUNFUL-SUN"
       },
       "away": {
@@ -177,7 +177,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug29covhul",
       "home": {
         "label": "Coventry City",
-        "probability": 53,
+        "probability": 52,
         "ticker": "KXEPLGAME-26AUG29COVHUL-COV"
       },
       "away": {
