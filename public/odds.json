@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-23T01:53:46.278Z",
+  "fetchedAt": "2026-08-23T02:59:24.518Z",
   "odds": {
     "560548": {
       "eventTicker": "KXEPLGAME-26AUG23MCIBOU",
@@ -25,7 +25,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug23briavl",
       "home": {
         "label": "Brighton Hove",
-        "probability": 44,
+        "probability": 43,
         "ticker": "KXEPLGAME-26AUG23BRIAVL-BRI"
       },
       "away": {
@@ -106,7 +106,7 @@
       },
       "away": {
         "label": "Fulham",
-        "probability": 36,
+        "probability": 33,
         "ticker": "KXEPLGAME-26AUG30SUNFUL-FUL"
       },
       "draw": {
@@ -158,7 +158,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug29boueve",
       "home": {
         "label": "Bournemouth",
-        "probability": 50,
+        "probability": 47,
         "ticker": "KXEPLGAME-26AUG29BOUEVE-BOU"
       },
       "away": {
