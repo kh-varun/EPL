@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-23T15:12:21.462Z",
+  "fetchedAt": "2026-08-23T17:46:48.952Z",
   "standings": [
     {
       "position": 1,
@@ -156,6 +156,44 @@
     {
       "position": 9,
       "team": {
+        "id": 64,
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "tla": "LIV",
+        "crest": "https://crests.football-data.org/64.png"
+      },
+      "playedGames": 1,
+      "won": 0,
+      "draw": 1,
+      "lost": 0,
+      "points": 1,
+      "goalsFor": 2,
+      "goalsAgainst": 2,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 9,
+      "team": {
+        "id": 67,
+        "name": "Newcastle United FC",
+        "shortName": "Newcastle",
+        "tla": "NEW",
+        "crest": "https://crests.football-data.org/67.png"
+      },
+      "playedGames": 1,
+      "won": 0,
+      "draw": 1,
+      "lost": 0,
+      "points": 1,
+      "goalsFor": 2,
+      "goalsAgainst": 2,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 11,
+      "team": {
         "id": 61,
         "name": "Chelsea FC",
         "shortName": "Chelsea",
@@ -173,51 +211,13 @@
       "form": null
     },
     {
-      "position": 9,
+      "position": 11,
       "team": {
         "id": 63,
         "name": "Fulham FC",
         "shortName": "Fulham",
         "tla": "FUL",
         "crest": "https://crests.football-data.org/63.png"
-      },
-      "playedGames": 0,
-      "won": 0,
-      "draw": 0,
-      "lost": 0,
-      "points": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0,
-      "form": null
-    },
-    {
-      "position": 9,
-      "team": {
-        "id": 64,
-        "name": "Liverpool FC",
-        "shortName": "Liverpool",
-        "tla": "LIV",
-        "crest": "https://crests.football-data.org/64.png"
-      },
-      "playedGames": 0,
-      "won": 0,
-      "draw": 0,
-      "lost": 0,
-      "points": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0,
-      "form": null
-    },
-    {
-      "position": 9,
-      "team": {
-        "id": 67,
-        "name": "Newcastle United FC",
-        "shortName": "Newcastle",
-        "tla": "NEW",
-        "crest": "https://crests.football-data.org/67.png"
       },
       "playedGames": 0,
       "won": 0,
@@ -384,6 +384,31 @@
   ],
   "lastResults": [
     {
+      "id": 560550,
+      "utcDate": "2026-08-23T15:30:00Z",
+      "status": "FINISHED",
+      "matchday": 1,
+      "homeTeam": {
+        "id": 67,
+        "name": "Newcastle United FC",
+        "shortName": "Newcastle",
+        "tla": "NEW",
+        "crest": "https://crests.football-data.org/67.png"
+      },
+      "awayTeam": {
+        "id": 64,
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "tla": "LIV",
+        "crest": "https://crests.football-data.org/64.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 2,
+        "winner": "DRAW"
+      }
+    },
+    {
       "id": 560548,
       "utcDate": "2026-08-23T13:00:00Z",
       "status": "FINISHED",
@@ -482,59 +507,9 @@
         "away": 1,
         "winner": "HOME_TEAM"
       }
-    },
-    {
-      "id": 560545,
-      "utcDate": "2026-08-22T14:00:00Z",
-      "status": "FINISHED",
-      "matchday": 1,
-      "homeTeam": {
-        "id": 351,
-        "name": "Nottingham Forest FC",
-        "shortName": "Nottingham",
-        "tla": "NOT",
-        "crest": "https://crests.football-data.org/351.png"
-      },
-      "awayTeam": {
-        "id": 341,
-        "name": "Leeds United FC",
-        "shortName": "Leeds United",
-        "tla": "LEE",
-        "crest": "https://crests.football-data.org/341.png"
-      },
-      "score": {
-        "home": 0,
-        "away": 1,
-        "winner": "AWAY_TEAM"
-      }
     }
   ],
   "nextFixtures": [
-    {
-      "id": 560550,
-      "utcDate": "2026-08-23T15:30:00Z",
-      "status": "TIMED",
-      "matchday": 1,
-      "homeTeam": {
-        "id": 67,
-        "name": "Newcastle United FC",
-        "shortName": "Newcastle",
-        "tla": "NEW",
-        "crest": "https://crests.football-data.org/67.png"
-      },
-      "awayTeam": {
-        "id": 64,
-        "name": "Liverpool FC",
-        "shortName": "Liverpool",
-        "tla": "LIV",
-        "crest": "https://crests.football-data.org/64.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      }
-    },
     {
       "id": 560551,
       "utcDate": "2026-08-24T19:00:00Z",
@@ -753,6 +728,31 @@
         "shortName": "Brentford",
         "tla": "BRE",
         "crest": "https://crests.football-data.org/402.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      }
+    },
+    {
+      "id": 560553,
+      "utcDate": "2026-08-30T15:30:00Z",
+      "status": "TIMED",
+      "matchday": 2,
+      "homeTeam": {
+        "id": 66,
+        "name": "Manchester United FC",
+        "shortName": "Man United",
+        "tla": "MUN",
+        "crest": "https://crests.football-data.org/66.png"
+      },
+      "awayTeam": {
+        "id": 349,
+        "name": "Ipswich Town FC",
+        "shortName": "Ipswich Town",
+        "tla": "IPS",
+        "crest": "https://crests.football-data.org/349.png"
       },
       "score": {
         "home": null,
