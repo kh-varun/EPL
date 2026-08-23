@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-23T23:18:01.253Z",
+  "fetchedAt": "2026-08-23T23:44:47.537Z",
   "odds": {
     "560551": {
       "eventTicker": "KXEPLGAME-26AUG24FULCFC",
@@ -106,7 +106,7 @@
       },
       "away": {
         "label": "Brighton Hove",
-        "probability": 28,
+        "probability": 27,
         "ticker": "KXEPLGAME-26AUG30CFCBRI-BRI"
       },
       "draw": {
