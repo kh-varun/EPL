@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-24T01:50:27.759Z",
+  "fetchedAt": "2026-08-24T03:00:05.035Z",
   "odds": {
     "560551": {
       "eventTicker": "KXEPLGAME-26AUG24FULCFC",
@@ -49,7 +49,7 @@
       },
       "away": {
         "label": "Ipswich Town",
-        "probability": 13,
+        "probability": 11,
         "ticker": "KXEPLGAME-26AUG30MUNIPS-IPS"
       },
       "draw": {
@@ -87,12 +87,12 @@
       },
       "away": {
         "label": "Man City",
-        "probability": 61,
+        "probability": 60,
         "ticker": "KXEPLGAME-26AUG28CRYMCI-MCI"
       },
       "draw": {
         "label": "Draw",
-        "probability": 23,
+        "probability": 22,
         "ticker": "KXEPLGAME-26AUG28CRYMCI-TIE"
       }
     },
@@ -125,7 +125,7 @@
       },
       "away": {
         "label": "Newcastle",
-        "probability": 30,
+        "probability": 31,
         "ticker": "KXEPLGAME-26AUG29TOTNEW-NEW"
       },
       "draw": {
