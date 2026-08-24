@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-24T22:44:00.251Z",
+  "fetchedAt": "2026-08-24T23:03:34.684Z",
   "odds": {
     "560552": {
       "eventTicker": "KXEPLGAME-26AUG29LFCNFO",
@@ -30,7 +30,7 @@
       },
       "away": {
         "label": "Ipswich Town",
-        "probability": 13,
+        "probability": 12,
         "ticker": "KXEPLGAME-26AUG30MUNIPS-IPS"
       },
       "draw": {
@@ -73,7 +73,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 21,
+        "probability": 22,
         "ticker": "KXEPLGAME-26AUG28CRYMCI-TIE"
       }
     },
