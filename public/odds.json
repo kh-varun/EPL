@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-24T08:45:05.586Z",
+  "fetchedAt": "2026-08-24T09:31:25.026Z",
   "odds": {
     "560551": {
       "eventTicker": "KXEPLGAME-26AUG24FULCFC",
@@ -82,7 +82,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug28crymci",
       "home": {
         "label": "Crystal Palace",
-        "probability": 17,
+        "probability": 18,
         "ticker": "KXEPLGAME-26AUG28CRYMCI-CRY"
       },
       "away": {
