@@ -1,4 +1,292 @@
 {
-  "fetchedAt": "2026-08-24T18:24:08.059Z",
-  "lineups": {}
+  "fetchedAt": "2026-08-24T19:08:29.231Z",
+  "lineups": {
+    "560551": {
+      "utcDate": "2026-08-24T19:00:00Z",
+      "homeTeamId": 63,
+      "awayTeamId": 61,
+      "byTeam": {
+        "61": {
+          "teamName": "Chelsea",
+          "formation": "3-4-3",
+          "startXI": [
+            {
+              "id": 18959,
+              "name": "Robert Sánchez",
+              "number": 1,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 366735,
+              "name": "Josh Acheampong",
+              "number": 34,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 20995,
+              "name": "Maxence Lacroix",
+              "number": 5,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 152953,
+              "name": "Levi Colwill",
+              "number": 6,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 161907,
+              "name": "Malo Gusto",
+              "number": 27,
+              "position": "M",
+              "grid": "3:4"
+            },
+            {
+              "id": 19545,
+              "name": "Reece James",
+              "number": 24,
+              "position": "M",
+              "grid": "3:3"
+            },
+            {
+              "id": 282125,
+              "name": "Roméo Lavia",
+              "number": 45,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 341642,
+              "name": "Jorrel Hato",
+              "number": 21,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 152982,
+              "name": "Cole Palmer",
+              "number": 10,
+              "position": "F",
+              "grid": "4:3"
+            },
+            {
+              "id": 10329,
+              "name": "João Pedro",
+              "number": 9,
+              "position": "F",
+              "grid": "4:2"
+            },
+            {
+              "id": 19170,
+              "name": "Morgan Rogers",
+              "number": 17,
+              "position": "F",
+              "grid": "4:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 340151,
+              "name": "Mike Penders",
+              "number": 39,
+              "position": "G"
+            },
+            {
+              "id": 181734,
+              "name": "Pep Chavarría",
+              "number": 29,
+              "position": "D"
+            },
+            {
+              "id": 319572,
+              "name": "Valentín Barco",
+              "number": 4,
+              "position": "M"
+            },
+            {
+              "id": 5996,
+              "name": "Enzo Fernández",
+              "number": 8,
+              "position": "M"
+            },
+            {
+              "id": 425733,
+              "name": "Estêvão",
+              "number": 41,
+              "position": "F"
+            },
+            {
+              "id": 286894,
+              "name": "Jamie Gittens",
+              "number": 11,
+              "position": "F"
+            },
+            {
+              "id": 1864,
+              "name": "Pedro Neto",
+              "number": 7,
+              "position": "F"
+            },
+            {
+              "id": 419582,
+              "name": "Geovany Quenda",
+              "number": 23,
+              "position": "M"
+            },
+            {
+              "id": 1469,
+              "name": "Danny Welbeck",
+              "number": 18,
+              "position": "F"
+            }
+          ],
+          "coach": "Xabi Alonso"
+        },
+        "63": {
+          "teamName": "Fulham",
+          "formation": "4-2-3-1",
+          "startXI": [
+            {
+              "id": 1438,
+              "name": "Bernd Leno",
+              "number": 1,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 2920,
+              "name": "Timothy Castagne",
+              "number": 21,
+              "position": "D",
+              "grid": "2:4"
+            },
+            {
+              "id": 152967,
+              "name": "Calvin Bassey",
+              "number": 3,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 131,
+              "name": "Jorge Cuenca",
+              "number": 4,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 19549,
+              "name": "Antonee Robinson",
+              "number": 33,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 389315,
+              "name": "Joshua King",
+              "number": 24,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 1934,
+              "name": "Sander Berge",
+              "number": 16,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 278133,
+              "name": "Oscar Bobb",
+              "number": 14,
+              "position": "M",
+              "grid": "4:3"
+            },
+            {
+              "id": 1455,
+              "name": "Alex Iwobi",
+              "number": 17,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 386306,
+              "name": "César Palacios",
+              "number": 8,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 336711,
+              "name": "Gonzalo García",
+              "number": 7,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 21566,
+              "name": "Benjamin Lecomte",
+              "number": 23,
+              "position": "G"
+            },
+            {
+              "id": 657,
+              "name": "Kenny Tete",
+              "number": 2,
+              "position": "D"
+            },
+            {
+              "id": 19032,
+              "name": "Ryan Sessegnon",
+              "number": 30,
+              "position": "M"
+            },
+            {
+              "id": 327738,
+              "name": "Luc De Fougerolles",
+              "number": 44,
+              "position": "D"
+            },
+            {
+              "id": 1161,
+              "name": "Emile Smith Rowe",
+              "number": 32,
+              "position": "M"
+            },
+            {
+              "id": 19480,
+              "name": "Harrison Reed",
+              "number": 6,
+              "position": "M"
+            },
+            {
+              "id": 237819,
+              "name": "Kevin",
+              "number": 11,
+              "position": "F"
+            },
+            {
+              "id": 284356,
+              "name": "Shea Charles",
+              "number": 19,
+              "position": "M"
+            },
+            {
+              "id": 195106,
+              "name": "Rodrigo Muniz",
+              "number": 9,
+              "position": "F"
+            }
+          ],
+          "coach": "Alvaro Arbeloa"
+        }
+      }
+    }
+  }
 }
