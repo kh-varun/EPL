@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-24T19:08:33.452Z",
+  "fetchedAt": "2026-08-24T19:39:38.127Z",
   "matches": {
     "560551": {
       "status": "IN_PLAY",
@@ -7,7 +7,7 @@
       "homeTeamId": 63,
       "awayTeamId": 61,
       "score": {
-        "home": 0,
+        "home": 1,
         "away": 1
       }
     }
