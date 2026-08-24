@@ -1,12 +1,12 @@
 {
-  "fetchedAt": "2026-08-24T16:33:24.675Z",
+  "fetchedAt": "2026-08-24T17:15:36.632Z",
   "odds": {
     "560551": {
       "eventTicker": "KXEPLGAME-26AUG24FULCFC",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug24fulcfc",
       "home": {
         "label": "Fulham",
-        "probability": 24,
+        "probability": 23,
         "ticker": "KXEPLGAME-26AUG24FULCFC-FUL"
       },
       "away": {
@@ -49,7 +49,7 @@
       },
       "away": {
         "label": "Ipswich Town",
-        "probability": 12,
+        "probability": 13,
         "ticker": "KXEPLGAME-26AUG30MUNIPS-IPS"
       },
       "draw": {
