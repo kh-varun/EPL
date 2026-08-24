@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-24T05:52:53.334Z",
+  "fetchedAt": "2026-08-24T06:52:34.640Z",
   "odds": {
     "560551": {
       "eventTicker": "KXEPLGAME-26AUG24FULCFC",
@@ -182,7 +182,7 @@
       },
       "away": {
         "label": "Hull City",
-        "probability": 23,
+        "probability": 22,
         "ticker": "KXEPLGAME-26AUG29COVHUL-HUL"
       },
       "draw": {
