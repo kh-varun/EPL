@@ -1,25 +1,6 @@
 {
-  "fetchedAt": "2026-08-24T20:26:39.586Z",
+  "fetchedAt": "2026-08-24T20:59:11.700Z",
   "odds": {
-    "560551": {
-      "eventTicker": "KXEPLGAME-26AUG24FULCFC",
-      "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug24fulcfc",
-      "home": {
-        "label": "Fulham",
-        "probability": 5,
-        "ticker": "KXEPLGAME-26AUG24FULCFC-FUL"
-      },
-      "away": {
-        "label": "Chelsea",
-        "probability": 75,
-        "ticker": "KXEPLGAME-26AUG24FULCFC-CFC"
-      },
-      "draw": {
-        "label": "Draw",
-        "probability": 20,
-        "ticker": "KXEPLGAME-26AUG24FULCFC-TIE"
-      }
-    },
     "560552": {
       "eventTicker": "KXEPLGAME-26AUG29LFCNFO",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug29lfcnfo",
@@ -30,7 +11,7 @@
       },
       "away": {
         "label": "Nottingham",
-        "probability": 16,
+        "probability": 15,
         "ticker": "KXEPLGAME-26AUG29LFCNFO-NFO"
       },
       "draw": {
@@ -49,7 +30,7 @@
       },
       "away": {
         "label": "Ipswich Town",
-        "probability": 12,
+        "probability": 13,
         "ticker": "KXEPLGAME-26AUG30MUNIPS-IPS"
       },
       "draw": {
@@ -82,7 +63,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug28crymci",
       "home": {
         "label": "Crystal Palace",
-        "probability": 19,
+        "probability": 17,
         "ticker": "KXEPLGAME-26AUG28CRYMCI-CRY"
       },
       "away": {
@@ -92,7 +73,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 22,
+        "probability": 21,
         "ticker": "KXEPLGAME-26AUG28CRYMCI-TIE"
       }
     },
@@ -120,7 +101,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug29totnew",
       "home": {
         "label": "Tottenham",
-        "probability": 43,
+        "probability": 44,
         "ticker": "KXEPLGAME-26AUG29TOTNEW-TOT"
       },
       "away": {
@@ -144,7 +125,7 @@
       },
       "away": {
         "label": "Brentford",
-        "probability": 34,
+        "probability": 35,
         "ticker": "KXEPLGAME-26AUG30LEEBRE-BRE"
       },
       "draw": {
