@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-24T13:12:19.174Z",
+  "fetchedAt": "2026-08-24T14:03:45.372Z",
   "odds": {
     "560551": {
       "eventTicker": "KXEPLGAME-26AUG24FULCFC",
@@ -11,12 +11,12 @@
       },
       "away": {
         "label": "Chelsea",
-        "probability": 51,
+        "probability": 52,
         "ticker": "KXEPLGAME-26AUG24FULCFC-CFC"
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 26,
         "ticker": "KXEPLGAME-26AUG24FULCFC-TIE"
       }
     },
@@ -30,7 +30,7 @@
       },
       "away": {
         "label": "Nottingham",
-        "probability": 16,
+        "probability": 15,
         "ticker": "KXEPLGAME-26AUG29LFCNFO-NFO"
       },
       "draw": {
@@ -49,7 +49,7 @@
       },
       "away": {
         "label": "Ipswich Town",
-        "probability": 12,
+        "probability": 13,
         "ticker": "KXEPLGAME-26AUG30MUNIPS-IPS"
       },
       "draw": {
@@ -82,7 +82,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug28crymci",
       "home": {
         "label": "Crystal Palace",
-        "probability": 18,
+        "probability": 17,
         "ticker": "KXEPLGAME-26AUG28CRYMCI-CRY"
       },
       "away": {
@@ -101,7 +101,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug30cfcbri",
       "home": {
         "label": "Chelsea",
-        "probability": 47,
+        "probability": 48,
         "ticker": "KXEPLGAME-26AUG30CFCBRI-CFC"
       },
       "away": {
@@ -177,7 +177,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug29covhul",
       "home": {
         "label": "Coventry City",
-        "probability": 52,
+        "probability": 53,
         "ticker": "KXEPLGAME-26AUG29COVHUL-COV"
       },
       "away": {
@@ -187,7 +187,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 27,
+        "probability": 26,
         "ticker": "KXEPLGAME-26AUG29COVHUL-TIE"
       }
     }
