@@ -1,14 +1,14 @@
 {
-  "fetchedAt": "2026-08-24T20:00:02.116Z",
+  "fetchedAt": "2026-08-24T20:32:59.590Z",
   "matches": {
     "560551": {
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-24T19:00:00Z",
       "homeTeamId": 63,
       "awayTeamId": 61,
       "score": {
-        "home": 1,
-        "away": 2
+        "home": 2,
+        "away": 3
       }
     }
   }
