@@ -271,12 +271,21 @@ match ever exercised the code path:**
 
 Also added a `backfill_match_id` `workflow_dispatch` input (piped through as
 `MATCH_STATS_BACKFILL_ID`) that force-fetches stats for one specific match
-id from `lastResults`, bypassing the normal just-finished-transition
-detection - needed because the very first match of the season (Arsenal v
-Coventry) had already fallen out of `live-scores.json`'s tracked "was live"
-state by the time this feature shipped, so there was no transition left for
-the normal path to detect naturally. Useful going forward too, as a retry
-knob for any match whose stats fetch failed the first time.
+id, bypassing the normal just-finished-transition detection - needed because
+the very first match of the season (Arsenal v Coventry) had already fallen
+out of `live-scores.json`'s tracked "was live" state by the time this
+feature shipped, so there was no transition left for the normal path to
+detect naturally. Useful going forward too, as a retry knob for any match
+whose stats fetch failed the first time. `findMatchForBackfill` looks the
+id up in `data.lastResults` first, but that list only ever keeps the 5 most
+recent matches - confirmed live when backfilling Arsenal v Coventry a
+second time (to add scorers) failed with "not in lastResults", since a full
+extra round had finished by then and pushed it out of the window. Falls
+back to the match's own already-cached `match-stats.json` entry (which
+already recorded `homeTeamId`/`awayTeamId`/`utcDate`) plus `data.standings`
+for full team objects (name/shortName, needed for `teamsLikelyMatch`) -
+`standings` always lists every team regardless of recent results, so this
+works for a backfill target of any age.
 
 ## All five fetch workflows retry their push
 
