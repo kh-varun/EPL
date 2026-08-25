@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-25T20:33:46.450Z",
+  "fetchedAt": "2026-08-25T20:43:45.099Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -286,30 +286,72 @@
       "awayTeamId": 61,
       "stats": {
         "61": {
-          "shots": 17,
+          "shots": 18,
           "shotsOnTarget": 6,
           "possession": 39,
-          "passes": 384,
-          "passAccuracy": 82,
+          "passes": 394,
+          "passAccuracy": null,
           "fouls": 7,
           "corners": 4,
           "offsides": 3,
           "yellowCards": 3,
-          "redCards": null
+          "redCards": 0
         },
         "63": {
-          "shots": 12,
-          "shotsOnTarget": 5,
+          "shots": 14,
+          "shotsOnTarget": 6,
           "possession": 61,
-          "passes": 600,
-          "passAccuracy": 87,
+          "passes": 639,
+          "passAccuracy": null,
           "fouls": 12,
           "corners": 6,
           "offsides": 0,
           "yellowCards": 2,
-          "redCards": null
+          "redCards": 0
         }
-      }
+      },
+      "scorers": [
+        {
+          "teamId": 61,
+          "player": "Joao Pedro",
+          "minute": 1,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 63,
+          "player": "J. King",
+          "minute": 23,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 61,
+          "player": "M. Rogers",
+          "minute": 41,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 61,
+          "player": "C. Palmer",
+          "minute": 49,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 63,
+          "player": "G. Garcia",
+          "minute": 54,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
     }
   }
 }
