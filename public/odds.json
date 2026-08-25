@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-25T22:44:32.760Z",
+  "fetchedAt": "2026-08-25T23:05:41.046Z",
   "odds": {
     "560552": {
       "eventTicker": "KXEPLGAME-26AUG29LFCNFO",
@@ -68,7 +68,7 @@
       },
       "away": {
         "label": "Man City",
-        "probability": 60,
+        "probability": 61,
         "ticker": "KXEPLGAME-26AUG28CRYMCI-MCI"
       },
       "draw": {
