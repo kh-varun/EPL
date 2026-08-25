@@ -224,35 +224,38 @@ async function fetchEspnMatchData(ourMatch) {
     return null;
   }
 
+  // Confirmed live (Arsenal v Coventry, match 560542): a real goal event
+  // looks like {scoringPlay: true, team: {id, displayName}, participants:
+  // [{athlete: {id, displayName}}, ...scorer then assist(s)...], clock:
+  // {value, displayValue: "15'"}, text: "Goal! Arsenal 1, Coventry City 0.
+  // Kai Havertz (Arsenal) ..."}. team.id is ESPN's own id, not ours, so it
+  // can't be compared to ourMatch's ids directly - match team.displayName
+  // with teamsLikelyMatch instead. clock.displayValue's minute format was
+  // a correct guess; athletesInvolved was not a real field - the scorer is
+  // participants[0].athlete.
   const keyEvents = data.keyEvents ?? [];
   const goalEvents = keyEvents.filter((e) => e.scoringPlay === true || e.type?.text === "Goal");
   const scorers = goalEvents
     .map((e) => {
-      const teamId =
-        String(e.team?.id) === String(ourMatch.homeTeam.id)
-          ? ourMatch.homeTeam.id
-          : String(e.team?.id) === String(ourMatch.awayTeam.id)
-            ? ourMatch.awayTeam.id
-            : null;
+      const teamName = e.team?.displayName ?? "";
+      const teamId = teamsLikelyMatch(ourMatch.homeTeam, teamName)
+        ? ourMatch.homeTeam.id
+        : teamsLikelyMatch(ourMatch.awayTeam, teamName)
+          ? ourMatch.awayTeam.id
+          : null;
       const minuteMatch = /(\d+)(?:\+(\d+))?/.exec(e.clock?.displayValue ?? "");
       return {
         teamId,
-        player: e.athletesInvolved?.[0]?.displayName ?? null,
+        player: e.participants?.[0]?.athlete?.displayName ?? null,
         minute: minuteMatch ? Number(minuteMatch[1]) : null,
         extraMinute: minuteMatch?.[2] ? Number(minuteMatch[2]) : null,
         ownGoal: /own goal/i.test(e.text ?? ""),
-        penalty: /penalty/i.test(e.text ?? ""),
+        penalty: /\bpenalty\b/i.test(e.text ?? ""),
       };
     })
     .filter((g) => g.teamId && g.player && g.minute != null)
     .sort((a, b) => a.minute - b.minute || (a.extraMinute ?? 0) - (b.extraMinute ?? 0));
 
-  // Confirmed live (Arsenal v Coventry): scoringPlay is a reliable goal
-  // marker (3/3 real goals had it, 0/19 other events did) and `text` is a
-  // rich human-readable sentence ("Goal! Arsenal 1, Coventry City 0. Kai
-  // Havertz (Arsenal) ... Assisted by ..."), but team.id/athletesInvolved/
-  // clock.displayValue are still unconfirmed guesses - dump the raw goal
-  // event(s) so those fields can be fixed against the real shape.
   if (goalEvents.length > 0 && scorers.length !== goalEvents.length) {
     console.log(
       `    ESPN: found ${goalEvents.length} goal event(s) but only mapped ${scorers.length} - ` +
