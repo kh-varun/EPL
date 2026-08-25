@@ -13,6 +13,48 @@ const STAT_ROWS = [
   { key: "redCards", label: "Red cards" },
 ];
 
+function formatMinute(goal) {
+  return goal.extraMinute ? `${goal.minute}+${goal.extraMinute}'` : `${goal.minute}'`;
+}
+
+function GoalLine({ goal, align }) {
+  return (
+    <div
+      className={
+        "flex items-center gap-1.5 text-xs text-white/80" +
+        (align === "right" ? " flex-row-reverse text-right" : "")
+      }
+    >
+      <span className="truncate">
+        {goal.player}
+        {goal.ownGoal ? " (OG)" : goal.penalty ? " (pen)" : ""}
+      </span>
+      <span className="text-white/40 tabular-nums shrink-0">{formatMinute(goal)}</span>
+    </div>
+  );
+}
+
+function Scorers({ scorers, match }) {
+  if (!scorers || scorers.length === 0) return null;
+  const homeGoals = scorers.filter((g) => g.teamId === match.homeTeam.id);
+  const awayGoals = scorers.filter((g) => g.teamId === match.awayTeam.id);
+
+  return (
+    <div className="flex justify-between gap-4 px-1 pt-1">
+      <div className="flex-1 space-y-1">
+        {homeGoals.map((g, i) => (
+          <GoalLine key={i} goal={g} align="left" />
+        ))}
+      </div>
+      <div className="flex-1 space-y-1">
+        {awayGoals.map((g, i) => (
+          <GoalLine key={i} goal={g} align="right" />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function StatRow({ label, home, away, suffix = "" }) {
   if (home == null && away == null) return null;
   const homeWins = home != null && (away == null || home > away);
@@ -41,7 +83,7 @@ function StatRow({ label, home, away, suffix = "" }) {
   );
 }
 
-export default function MatchStatsDialog({ match, stats, onClose }) {
+export default function MatchStatsDialog({ match, stats, scorers, onClose }) {
   const homeStats = stats?.[match.homeTeam.id];
   const awayStats = stats?.[match.awayTeam.id];
 
@@ -85,6 +127,8 @@ export default function MatchStatsDialog({ match, stats, onClose }) {
               </span>
             </div>
           </div>
+
+          <Scorers scorers={scorers} match={match} />
         </div>
 
         <div className="p-4">
