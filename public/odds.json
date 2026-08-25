@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-25T15:04:40.018Z",
+  "fetchedAt": "2026-08-25T15:59:17.138Z",
   "odds": {
     "560552": {
       "eventTicker": "KXEPLGAME-26AUG29LFCNFO",
@@ -49,12 +49,12 @@
       },
       "away": {
         "label": "Fulham",
-        "probability": 33,
+        "probability": 32,
         "ticker": "KXEPLGAME-26AUG30SUNFUL-FUL"
       },
       "draw": {
         "label": "Draw",
-        "probability": 29,
+        "probability": 28,
         "ticker": "KXEPLGAME-26AUG30SUNFUL-TIE"
       }
     },
