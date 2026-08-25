@@ -10,10 +10,14 @@
 // next weekly fetch.mjs run - and, if API_FOOTBALL_KEY is set, fetches that
 // match's team stats (shots, possession, passes, cards, etc.) and goal
 // scorers once, caching them permanently in match-stats.json for the
-// Results tab's stats dialog.
+// Results tab's stats dialog. API-Football is tried first (more precise,
+// structured data) but falls back to ESPN's free public site API - no key
+// needed - whenever API-Football can't serve the match at all (no key, no
+// quota, or the fixture's date has aged out of the free plan's rolling
+// date-window restriction - see CLAUDE.md).
 //
 // Requires FOOTBALL_DATA_TOKEN in the environment. API_FOOTBALL_KEY is
-// optional - match stats are simply skipped without it.
+// optional - match stats just come from ESPN alone without it.
 
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
@@ -30,6 +34,7 @@ import {
   findApiFootballFixtureId,
   hasApiFootballQuotaFor,
 } from "./lib/api-football.mjs";
+import { espnRequest, findEspnEventId } from "./lib/espn.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = path.join(__dirname, "..", "public", "data.json");
@@ -151,6 +156,108 @@ async function fetchFixtureGoals(fixtureId, ourMatch) {
     .sort((a, b) => a.minute - b.minute || (a.extraMinute ?? 0) - (b.extraMinute ?? 0));
 }
 
+// ESPN's own stat "name" strings for a soccer boxscore, mapped to the same
+// clean shape mapFixtureStats produces from API-Football - best-effort
+// reading of ESPN's public (but undocumented) response shape, since ESPN's
+// own docs aren't reachable to confirm exactly. Tries a couple of aliases
+// per field since ESPN's naming isn't fully consistent across sports/write-ups.
+function mapEspnStats(statsArray) {
+  const byName = Object.fromEntries(
+    (statsArray ?? []).map((s) => [s.name, s.displayValue ?? s.value ?? null]),
+  );
+  const pick = (...names) => {
+    for (const name of names) {
+      if (byName[name] != null) return byName[name];
+    }
+    return null;
+  };
+  const num = (value) => {
+    const n = typeof value === "string" ? parseFloat(value) : value;
+    return Number.isFinite(n) ? n : null;
+  };
+  return {
+    shots: num(pick("totalShots", "shotsTotal")),
+    shotsOnTarget: num(pick("shotsOnTarget", "onTargetScoringAtt")),
+    possession: num(pick("possessionPct", "possession")),
+    passes: num(pick("totalPasses", "passes")),
+    passAccuracy: num(pick("passPct", "passingAccuracy")),
+    fouls: num(pick("foulsCommitted", "fouls")),
+    corners: num(pick("cornerKicks", "wonCorners")),
+    offsides: num(pick("offsides")),
+    yellowCards: num(pick("yellowCards")),
+    redCards: num(pick("redCards")),
+  };
+}
+
+// Fallback source for match stats + scorers, used whenever API-Football
+// can't serve the match at all (no key, quota exhausted, or - the common
+// case for anything more than a day or two old - its free plan's rolling
+// date-window restriction on /fixtures?date=, see CLAUDE.md). ESPN's site
+// API has no such restriction and needs no key, but is unofficial/
+// undocumented, so this dumps the raw shape on anything unexpected rather
+// than silently guessing wrong, per this repo's ship-logging-first
+// convention for unverified integrations.
+async function fetchEspnMatchData(ourMatch) {
+  const eventId = await findEspnEventId(ourMatch);
+  if (!eventId) {
+    console.log(`    ESPN: no matching event found`);
+    return null;
+  }
+
+  const data = await espnRequest(`/summary?event=${eventId}`);
+  const boxscoreTeams = data.boxscore?.teams ?? [];
+  const byTeamId = {};
+  for (const entry of boxscoreTeams) {
+    const teamName = entry.team?.displayName ?? entry.team?.name ?? "";
+    if (teamsLikelyMatch(ourMatch.homeTeam, teamName)) {
+      byTeamId[ourMatch.homeTeam.id] = mapEspnStats(entry.statistics);
+    } else if (teamsLikelyMatch(ourMatch.awayTeam, teamName)) {
+      byTeamId[ourMatch.awayTeam.id] = mapEspnStats(entry.statistics);
+    }
+  }
+  if (Object.keys(byTeamId).length !== 2) {
+    console.log(
+      `    ESPN: couldn't map boxscore to both teams - sample team keys: ` +
+        `[${Object.keys(boxscoreTeams[0] ?? {}).join(", ")}], ` +
+        `sample stat names: [${(boxscoreTeams[0]?.statistics ?? []).map((s) => s.name).join(", ")}]`,
+    );
+    return null;
+  }
+
+  const keyEvents = data.keyEvents ?? [];
+  const scorers = keyEvents
+    .filter((e) => e.scoringPlay === true || e.type?.text === "Goal")
+    .map((e) => {
+      const teamId =
+        String(e.team?.id) === String(ourMatch.homeTeam.id)
+          ? ourMatch.homeTeam.id
+          : String(e.team?.id) === String(ourMatch.awayTeam.id)
+            ? ourMatch.awayTeam.id
+            : null;
+      const minuteMatch = /(\d+)(?:\+(\d+))?/.exec(e.clock?.displayValue ?? "");
+      return {
+        teamId,
+        player: e.athletesInvolved?.[0]?.displayName ?? null,
+        minute: minuteMatch ? Number(minuteMatch[1]) : null,
+        extraMinute: minuteMatch?.[2] ? Number(minuteMatch[2]) : null,
+        ownGoal: /own goal/i.test(e.text ?? ""),
+        penalty: /penalty/i.test(e.text ?? ""),
+      };
+    })
+    .filter((g) => g.teamId && g.player && g.minute != null)
+    .sort((a, b) => a.minute - b.minute || (a.extraMinute ?? 0) - (b.extraMinute ?? 0));
+
+  if (keyEvents.length > 0 && scorers.length === 0) {
+    console.log(
+      `    ESPN: found ${keyEvents.length} key event(s) but none mapped to a goal - ` +
+        `sample event keys: [${Object.keys(keyEvents[0] ?? {}).join(", ")}], ` +
+        `sample type: ${JSON.stringify(keyEvents[0]?.type)}`,
+    );
+  }
+
+  return { stats: byTeamId, scorers };
+}
+
 async function loadExistingMatchStats() {
   try {
     const raw = await readFile(MATCH_STATS_PATH, "utf-8");
@@ -160,56 +267,84 @@ async function loadExistingMatchStats() {
   }
 }
 
+// Tries API-Football first (more precise, structured data), falling back to
+// ESPN whenever API-Football can't serve this particular match - no
+// matching fixture, stats not published yet there, or (the common case for
+// anything more than a day or two old) its free-plan date-window
+// restriction rejects the lookup outright. Returns null if neither source
+// has it yet.
+async function fetchStatsForMatch(match, apiFootballAvailable) {
+  const label = `${match.homeTeam.shortName} v ${match.awayTeam.shortName}`;
+
+  if (apiFootballAvailable) {
+    try {
+      const fixtureId = await findApiFootballFixtureId(match);
+      if (!fixtureId) {
+        console.log(`  ${label}: no matching API-Football fixture found for stats`);
+      } else {
+        const stats = await fetchFixtureStatistics(fixtureId, match);
+        if (!stats) {
+          console.log(`  ${label}: stats not published yet on API-Football`);
+        } else {
+          let scorers = [];
+          try {
+            scorers = await fetchFixtureGoals(fixtureId, match);
+          } catch (err) {
+            console.error(`  ${label}: could not fetch goal scorers from API-Football: ${err.message}`);
+          }
+          console.log(`  ${label}: got match stats from API-Football (${scorers.length} goal(s))`);
+          return { stats, scorers };
+        }
+      }
+    } catch (err) {
+      console.log(`  ${label}: API-Football stats fetch failed (${err.message}) - trying ESPN...`);
+    }
+  }
+
+  try {
+    const espnData = await fetchEspnMatchData(match);
+    if (espnData) {
+      console.log(`  ${label}: got match stats from ESPN (${espnData.scorers.length} goal(s))`);
+      return espnData;
+    }
+  } catch (err) {
+    console.error(`  ${label}: ESPN fallback failed: ${err.message}`);
+  }
+
+  console.log(`  ${label}: stats not available from any source`);
+  return null;
+}
+
 // A finished match's stats never change, so this only ever needs to fetch
-// each match once - cached permanently once found. Optional and gracefully
-// degrading like every other API-Football feature in this project: skipped
-// entirely without a key, and a per-match failure just leaves that match
-// without a stats breakdown rather than breaking the run. `force` re-fetches
-// even an already-cached match - only used by the manual backfill path, to
-// retry or enrich (e.g. after adding a new field) a match already on file.
+// each match once - cached permanently once found. Gracefully degrading
+// like every other integration in this project: a per-match failure just
+// leaves that match without a stats breakdown rather than breaking the
+// run. `force` re-fetches even an already-cached match - only used by the
+// manual backfill path, to retry or enrich (e.g. after adding a new field)
+// a match already on file.
 async function fetchMatchStatsFor(finishedMatches, { force = false } = {}) {
-  if (!API_FOOTBALL_KEY || finishedMatches.length === 0) return;
+  if (finishedMatches.length === 0) return;
 
   const existingStats = await loadExistingMatchStats();
   const needed = force ? finishedMatches : finishedMatches.filter((m) => !existingStats[m.id]);
   if (needed.length === 0) return;
 
   // Worst case per match: 1 call to resolve the fixture id + 1 for its
-  // statistics + 1 for its goal events.
-  if (!(await hasApiFootballQuotaFor(needed.length * 3))) return;
+  // statistics + 1 for its goal events. Quota exhaustion only rules out the
+  // API-Football attempt below - the ESPN fallback needs no key or quota.
+  const apiFootballAvailable =
+    Boolean(API_FOOTBALL_KEY) && (await hasApiFootballQuotaFor(needed.length * 3));
 
   for (const match of needed) {
-    const label = `${match.homeTeam.shortName} v ${match.awayTeam.shortName}`;
-    try {
-      const fixtureId = await findApiFootballFixtureId(match);
-      if (!fixtureId) {
-        console.log(`  ${label}: no matching API-Football fixture found for stats`);
-        continue;
-      }
-      const stats = await fetchFixtureStatistics(fixtureId, match);
-      if (!stats) {
-        console.log(`  ${label}: stats not published yet`);
-        continue;
-      }
-
-      let scorers = [];
-      try {
-        scorers = await fetchFixtureGoals(fixtureId, match);
-      } catch (err) {
-        console.error(`  ${label}: could not fetch goal scorers: ${err.message}`);
-      }
-
-      existingStats[match.id] = {
-        utcDate: match.utcDate,
-        homeTeamId: match.homeTeam.id,
-        awayTeamId: match.awayTeam.id,
-        stats,
-        scorers,
-      };
-      console.log(`  ${label}: got match stats (${scorers.length} goal(s))`);
-    } catch (err) {
-      console.error(`  ${label}: could not fetch match stats: ${err.message}`);
-    }
+    const result = await fetchStatsForMatch(match, apiFootballAvailable);
+    if (!result) continue;
+    existingStats[match.id] = {
+      utcDate: match.utcDate,
+      homeTeamId: match.homeTeam.id,
+      awayTeamId: match.awayTeam.id,
+      stats: result.stats,
+      scorers: result.scorers,
+    };
   }
 
   await mkdir(path.dirname(MATCH_STATS_PATH), { recursive: true });
