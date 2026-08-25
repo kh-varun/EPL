@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-25T16:47:28.928Z",
+  "fetchedAt": "2026-08-25T17:29:04.767Z",
   "odds": {
     "560552": {
       "eventTicker": "KXEPLGAME-26AUG29LFCNFO",
@@ -125,7 +125,7 @@
       },
       "away": {
         "label": "Newcastle",
-        "probability": 31,
+        "probability": 32,
         "ticker": "KXEPLGAME-26AUG29TOTNEW-NEW"
       },
       "draw": {
@@ -139,7 +139,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug30leebre",
       "home": {
         "label": "Leeds United",
-        "probability": 37,
+        "probability": 38,
         "ticker": "KXEPLGAME-26AUG30LEEBRE-LEE"
       },
       "away": {
@@ -163,7 +163,7 @@
       },
       "away": {
         "label": "Everton",
-        "probability": 27,
+        "probability": 26,
         "ticker": "KXEPLGAME-26AUG29BOUEVE-EVE"
       },
       "draw": {
@@ -182,7 +182,7 @@
       },
       "away": {
         "label": "Hull City",
-        "probability": 21,
+        "probability": 22,
         "ticker": "KXEPLGAME-26AUG29COVHUL-HUL"
       },
       "draw": {
