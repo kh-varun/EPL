@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-25T21:09:51.146Z",
+  "fetchedAt": "2026-08-25T22:42:41.373Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -190,28 +190,54 @@
         "73": {
           "shots": 9,
           "shotsOnTarget": 4,
-          "possession": 59,
+          "possession": 58.9,
           "passes": 523,
-          "passAccuracy": 88,
+          "passAccuracy": 0.9,
           "fouls": 14,
           "corners": 3,
           "offsides": 2,
           "yellowCards": 1,
-          "redCards": null
+          "redCards": 0
         },
         "402": {
           "shots": 26,
           "shotsOnTarget": 8,
-          "possession": 41,
+          "possession": 41.1,
           "passes": 354,
-          "passAccuracy": 83,
+          "passAccuracy": 0.8,
           "fouls": 17,
           "corners": 7,
           "offsides": 3,
           "yellowCards": 1,
-          "redCards": null
+          "redCards": 0
         }
-      }
+      },
+      "scorers": [
+        {
+          "teamId": 402,
+          "player": "Keane Lewis-Potter",
+          "minute": 12,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 402,
+          "player": "Vitaly Janelt",
+          "minute": 33,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 402,
+          "player": "Michael Kayode",
+          "minute": 49,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
     },
     "560548": {
       "utcDate": "2026-08-23T13:00:00Z",
