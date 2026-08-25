@@ -248,10 +248,14 @@ async function fetchEspnMatchData(ourMatch) {
     .sort((a, b) => a.minute - b.minute || (a.extraMinute ?? 0) - (b.extraMinute ?? 0));
 
   if (keyEvents.length > 0 && scorers.length === 0) {
+    const summary = keyEvents.map((e) => ({
+      type: e.type,
+      scoringPlay: e.scoringPlay,
+      text: e.text,
+    }));
     console.log(
       `    ESPN: found ${keyEvents.length} key event(s) but none mapped to a goal - ` +
-        `sample event keys: [${Object.keys(keyEvents[0] ?? {}).join(", ")}], ` +
-        `sample type: ${JSON.stringify(keyEvents[0]?.type)}`,
+        `all event type/scoringPlay/text: ${JSON.stringify(summary)}`,
     );
   }
 
