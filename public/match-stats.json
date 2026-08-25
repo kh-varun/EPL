@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-25T21:06:52.433Z",
+  "fetchedAt": "2026-08-25T21:09:51.146Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -31,7 +31,32 @@
           "redCards": 0
         }
       },
-      "scorers": []
+      "scorers": [
+        {
+          "teamId": 57,
+          "player": "Kai Havertz",
+          "minute": 15,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 57,
+          "player": "Bukayo Saka",
+          "minute": 23,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 57,
+          "player": "Martin Ødegaard",
+          "minute": 49,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
     },
     "560543": {
       "utcDate": "2026-08-22T11:30:00Z",
