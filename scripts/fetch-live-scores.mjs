@@ -8,9 +8,9 @@
 // data.json - otherwise a finished match would keep showing as an
 // upcoming fixture, and the table wouldn't reflect its result, until the
 // next weekly fetch.mjs run - and, if API_FOOTBALL_KEY is set, fetches that
-// match's team stats (shots, possession, passes, cards, etc.) once and
-// caches them permanently in match-stats.json for the Results tab's stats
-// dialog.
+// match's team stats (shots, possession, passes, cards, etc.) and goal
+// scorers once, caching them permanently in match-stats.json for the
+// Results tab's stats dialog.
 //
 // Requires FOOTBALL_DATA_TOKEN in the environment. API_FOOTBALL_KEY is
 // optional - match stats are simply skipped without it.
@@ -124,6 +124,33 @@ async function fetchFixtureStatistics(fixtureId, ourMatch) {
   return Object.keys(byTeamId).length === 2 ? byTeamId : null;
 }
 
+// Goal scorers + minute, for the stats dialog's scoring summary. Sourced
+// from /fixtures/events rather than parsed out of the stats call above -
+// API-Football reports goals as timeline events, not a statistic.
+async function fetchFixtureGoals(fixtureId, ourMatch) {
+  const events = await apiFootballRequest(`/fixtures/events?fixture=${fixtureId}`);
+  return events
+    .filter((e) => e.type === "Goal")
+    .map((e) => {
+      const theirName = e.team?.name ?? "";
+      const teamId = teamsLikelyMatch(ourMatch.homeTeam, theirName)
+        ? ourMatch.homeTeam.id
+        : teamsLikelyMatch(ourMatch.awayTeam, theirName)
+          ? ourMatch.awayTeam.id
+          : null;
+      return {
+        teamId,
+        player: e.player?.name ?? null,
+        minute: e.time?.elapsed ?? null,
+        extraMinute: e.time?.extra ?? null,
+        ownGoal: e.detail === "Own Goal",
+        penalty: e.detail === "Penalty",
+      };
+    })
+    .filter((g) => g.teamId && g.player && g.minute != null)
+    .sort((a, b) => a.minute - b.minute || (a.extraMinute ?? 0) - (b.extraMinute ?? 0));
+}
+
 async function loadExistingMatchStats() {
   try {
     const raw = await readFile(MATCH_STATS_PATH, "utf-8");
@@ -137,17 +164,19 @@ async function loadExistingMatchStats() {
 // each match once - cached permanently once found. Optional and gracefully
 // degrading like every other API-Football feature in this project: skipped
 // entirely without a key, and a per-match failure just leaves that match
-// without a stats breakdown rather than breaking the run.
-async function fetchMatchStatsFor(finishedMatches) {
+// without a stats breakdown rather than breaking the run. `force` re-fetches
+// even an already-cached match - only used by the manual backfill path, to
+// retry or enrich (e.g. after adding a new field) a match already on file.
+async function fetchMatchStatsFor(finishedMatches, { force = false } = {}) {
   if (!API_FOOTBALL_KEY || finishedMatches.length === 0) return;
 
   const existingStats = await loadExistingMatchStats();
-  const needed = finishedMatches.filter((m) => !existingStats[m.id]);
+  const needed = force ? finishedMatches : finishedMatches.filter((m) => !existingStats[m.id]);
   if (needed.length === 0) return;
 
   // Worst case per match: 1 call to resolve the fixture id + 1 for its
-  // statistics.
-  if (!(await hasApiFootballQuotaFor(needed.length * 2))) return;
+  // statistics + 1 for its goal events.
+  if (!(await hasApiFootballQuotaFor(needed.length * 3))) return;
 
   for (const match of needed) {
     const label = `${match.homeTeam.shortName} v ${match.awayTeam.shortName}`;
@@ -162,13 +191,22 @@ async function fetchMatchStatsFor(finishedMatches) {
         console.log(`  ${label}: stats not published yet`);
         continue;
       }
+
+      let scorers = [];
+      try {
+        scorers = await fetchFixtureGoals(fixtureId, match);
+      } catch (err) {
+        console.error(`  ${label}: could not fetch goal scorers: ${err.message}`);
+      }
+
       existingStats[match.id] = {
         utcDate: match.utcDate,
         homeTeamId: match.homeTeam.id,
         awayTeamId: match.awayTeam.id,
         stats,
+        scorers,
       };
-      console.log(`  ${label}: got match stats`);
+      console.log(`  ${label}: got match stats (${scorers.length} goal(s))`);
     } catch (err) {
       console.error(`  ${label}: could not fetch match stats: ${err.message}`);
     }
@@ -222,7 +260,7 @@ async function main() {
       return;
     }
     console.log(`Manual stats backfill for ${match.homeTeam.shortName} v ${match.awayTeam.shortName}...`);
-    await fetchMatchStatsFor([match]);
+    await fetchMatchStatsFor([match], { force: true });
     return;
   }
 

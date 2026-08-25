@@ -198,6 +198,7 @@ export default function App() {
         <MatchStatsDialog
           match={selectedStatsMatch}
           stats={matchStats?.stats?.[selectedStatsMatch.id]?.stats}
+          scorers={matchStats?.stats?.[selectedStatsMatch.id]?.scorers}
           onClose={() => setSelectedStatsMatch(null)}
         />
       )}

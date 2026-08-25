@@ -212,12 +212,22 @@ does not re-run the expensive per-team squad/coach fetch.
 
 ## Match stats dialog
 
-Clicking a finished match on the Results tab opens `MatchStatsDialog`
-(shots, shots on target, possession, passes, pass accuracy, fouls, corners,
-offsides, cards per side) - deliberately just the stats breakdown, not an
-embedded highlights video or a goal-scorer timeline (the latter would need
-a third API-Football call per match - `/fixtures/events` - which wasn't
-worth the extra shared-quota spend for what was asked).
+Clicking a finished match on the Results tab opens `MatchStatsDialog`:
+goal scorers with the minute scored (under each team's name in the header,
+right below the score) and a stats breakdown (shots, shots on target,
+possession, passes, pass accuracy, fouls, corners, offsides, cards per
+side) - deliberately no embedded highlights video.
+
+Scorers come from a second API-Football call per match, `/fixtures/events`
+filtered to `type === "Goal"`, alongside the `/fixtures/statistics` call for
+the stats breakdown - so a finished match now costs 3 API-Football calls
+total (fixture-id resolve + stats + events) instead of 2, still gated
+behind the same `hasApiFootballQuotaFor` pre-check. An own goal or penalty
+is annotated inline (`(OG)` / `(pen)`); extra time is rendered as `45+2'`
+using API-Football's `time.elapsed`/`time.extra` fields. `fetchMatchStatsFor`
+takes an optional `force` flag (used only by the manual backfill path) to
+re-fetch an already-cached match - needed to backfill scorers onto matches
+that were already fetched before this field existed.
 
 The same moment `fetch-live-scores.mjs` detects a match just went from live
 to finished, it also resolves that match's API-Football fixture id (reusing
