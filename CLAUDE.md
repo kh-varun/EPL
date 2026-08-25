@@ -73,6 +73,22 @@ or broken secondary source can't corrupt the dashboard:
   now queries `/fixtures?date=` with no league/season at all (returns every
   fixture worldwide that day) and relies on `teamsLikelyMatch` to filter
   down to the real one, same trade-off as the team-search fix above.
+- **`/fixtures?date=` is ALSO restricted to a rolling ~3-day window around
+  today on this free plan** - a second, separate restriction from the
+  season-gate above, confirmed live via the `backfill_match_id` path four
+  days after the season opener: `/fixtures?date=2026-08-22` (a Saturday)
+  failed on Wednesday the 26th with `"Free plans do not have access to
+  this date, try from 2026-08-24 to 2026-08-26"` - i.e. roughly
+  yesterday-to-tomorrow, not the fixed 2022-2024 season range. This means
+  `findApiFootballFixtureId` - and therefore match stats/scorers - can
+  only ever be resolved for a match within about a day of "today", not
+  arbitrarily far in the past. Not a problem for the normal, designed-for
+  code path (`fetch-live-scores.mjs` resolves the fixture the same day the
+  match finishes), but it means `backfill_match_id` can only backfill a
+  match from the last day or two - confirmed live when re-backfilling
+  Arsenal v Coventry and Hull v Man United (season-opener matches, by then
+  4-5 days old) both failed with this exact error, while a 1-day-old match
+  succeeded. There is no code fix for this - it would need a paid plan.
 - **Last-season (2025-26) player stats are permanently unavailable** on
   this API-Football plan for the same reason — the data itself is outside
   the allowed 2022-2024 range, not a code bug. Would need a paid plan.
@@ -304,6 +320,29 @@ new scheduled-write workflow added to this repo. Also remember `git diff
 `api-football-team-ids.json` on its first run) - `git add` the output file
 conditionally (`if [ -f ... ]`) before diffing, every time, not just when
 the file is already known to exist.
+
+The retry-rebase loop only protects against a clean non-fast-forward
+rejection - it does **not** make concurrent edits to the *same JSON file*
+safe in general. Confirmed live: firing off ~9 `backfill_match_id`
+`workflow_dispatch` runs back-to-back to backfill several matches at once
+caused two separate failure modes. First, `concurrency: cancel-in-progress:
+false` only keeps the run currently executing plus the single
+*most-recently-queued* one waiting behind it - GitHub silently cancels
+every other already-queued run in between, so most of a rapid-fire batch
+never runs at all (7 of 9 in this case). Second, the one straggler that
+did run had its own in-memory copy of `match-stats.json` (loaded at
+checkout, before the runs ahead of it had pushed their changes) - when its
+push was rejected and it rebased onto the newer commit, git's line-based
+merge hit a real content conflict inside the JSON (both versions edited
+the same `stats` object), the rebase failed outright, and the script's
+`set -e` shell killed the job right there - discarding that run's freshly-
+fetched data entirely, not just delaying it. `git add`+`git diff --quiet`
+protects against losing data to a clean fast-forward race; it does nothing
+for two runs that both modify overlapping regions of the same file. Trigger
+this kind of manual multi-match backfill one at a time, waiting for each to
+land, rather than batching - the normal (non-backfill) path is unaffected
+since a single scheduled run already handles every match that finished in
+its own 10-minute window in one commit.
 
 ## Scheduled-workflow commits never trigger a redeploy on their own
 
