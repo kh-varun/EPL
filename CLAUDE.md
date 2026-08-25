@@ -267,17 +267,29 @@ ESPN's free public site API - no key, no signup, already used for lineup
 cross-checks - whenever API-Football can't serve the match at all: no key
 set, quota exhausted, no matching fixture, or that date-window rejection.
 `fetchEspnMatchData` in `fetch-live-scores.mjs` reads team stats from
-`data.boxscore.teams[].statistics` and goals from `data.keyEvents`
-(filtered to `scoringPlay === true` or `type.text === "Goal"`, minute
-parsed out of `clock.displayValue`) via the same `/summary?event=` ESPN
-endpoint `fetch-lineups.mjs` already uses for lineups - like every
-ESPN-derived field in this project, the exact stat/event key names are a
-best-effort reading of its undocumented shape, not confirmed docs, so both
-functions dump the raw shape to the log when nothing maps, per this
-repo's ship-logging-first convention. `scripts/lib/espn.mjs` now holds the
-shared `espnRequest`/`findEspnEventId` client, extracted for the same
-reason as `api-football.mjs` - a third consumer (this fallback) of the
-event-lookup logic shouldn't mean a third copy of it.
+`data.boxscore.teams[].statistics` and goals from `data.keyEvents` via the
+same `/summary?event=` ESPN endpoint `fetch-lineups.mjs` already uses for
+lineups. The goal-event shape needed two real backfill runs (against
+match 560542, Arsenal v Coventry) to pin down, both confirmed live:
+`scoringPlay === true` is a reliable goal marker, but the scoring team is
+`team.displayName` (ESPN's own numeric `team.id` is in ESPN's id space,
+not ours, and will never match `ourMatch.homeTeam/awayTeam.id` - match on
+name via `teamsLikelyMatch` instead) and the scorer is
+`participants[0].athlete.displayName` (`athletesInvolved`, the first
+guess, was never a real field - later `participants` entries are assists).
+`clock.displayValue`'s `"N'"`/`"N+M'"` format was a correct guess and
+needed no fix. Confirmed end-to-end: match 560542 now carries real scorer
+data (Havertz 15', Saka 23', Ødegaard 49'). Team stat key names
+(`mapEspnStats` in `fetch-live-scores.mjs`) are still unconfirmed best-effort
+guesses, though, since no real match has exercised that path with logging
+sharp enough to tell success from a silent wrong-value mapping - if a
+`MatchStatsDialog` ever shows suspicious ESPN-sourced stats (all nulls, or
+values that don't look like a real match), suspect `mapEspnStats`'s field
+names first and re-run the same dump-raw-shape-then-fix cycle used for the
+scorers fix. `scripts/lib/espn.mjs` holds the shared `espnRequest`/
+`findEspnEventId` client, extracted for the same reason as
+`api-football.mjs` - a third consumer (this fallback) of the event-lookup
+logic shouldn't mean a third copy of it.
 
 `scripts/lib/api-football.mjs` now holds the API-Football client and all the
 team/fixture name-matching helpers (`teamsLikelyMatch`, `searchableTeamName`,
