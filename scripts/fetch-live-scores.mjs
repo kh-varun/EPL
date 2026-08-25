@@ -250,13 +250,37 @@ async function writeLive(matches) {
   );
 }
 
+// data.json's lastResults only keeps the 5 most recent matches, so a match
+// from an earlier round (like a retry/backfill target) can easily have
+// scrolled out of it by the time someone asks to re-fetch it. Fall back to
+// its own already-cached match-stats.json entry - which already recorded
+// homeTeamId/awayTeamId/utcDate - and look up full team objects (name,
+// shortName, needed for teamsLikelyMatch) from data.standings, which always
+// lists every team regardless of recent results.
+async function findMatchForBackfill(matchId, data) {
+  const fromLastResults = (data.lastResults ?? []).find((m) => String(m.id) === matchId);
+  if (fromLastResults) return fromLastResults;
+
+  const cached = (await loadExistingMatchStats())[matchId];
+  if (!cached) return null;
+
+  const teamsById = Object.fromEntries((data.standings ?? []).map((row) => [row.team.id, row.team]));
+  const homeTeam = teamsById[cached.homeTeamId];
+  const awayTeam = teamsById[cached.awayTeamId];
+  if (!homeTeam || !awayTeam) return null;
+
+  return { id: Number(matchId), utcDate: cached.utcDate, homeTeam, awayTeam };
+}
+
 async function main() {
   const data = JSON.parse(await readFile(DATA_PATH, "utf-8"));
 
   if (MATCH_STATS_BACKFILL_ID) {
-    const match = (data.lastResults ?? []).find((m) => String(m.id) === MATCH_STATS_BACKFILL_ID);
+    const match = await findMatchForBackfill(MATCH_STATS_BACKFILL_ID, data);
     if (!match) {
-      console.log(`Backfill requested for match ${MATCH_STATS_BACKFILL_ID}, but it's not in lastResults.`);
+      console.log(
+        `Backfill requested for match ${MATCH_STATS_BACKFILL_ID}, but it's not in lastResults or match-stats.json.`,
+      );
       return;
     }
     console.log(`Manual stats backfill for ${match.homeTeam.shortName} v ${match.awayTeam.shortName}...`);
