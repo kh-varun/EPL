@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-25T20:43:45.099Z",
+  "fetchedAt": "2026-08-25T20:59:08.536Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -9,28 +9,29 @@
         "57": {
           "shots": 20,
           "shotsOnTarget": 6,
-          "possession": 65,
+          "possession": 64.5,
           "passes": 613,
-          "passAccuracy": 92,
+          "passAccuracy": 0.9,
           "fouls": 10,
           "corners": 8,
           "offsides": 5,
           "yellowCards": 1,
-          "redCards": null
+          "redCards": 0
         },
         "1076": {
           "shots": 4,
           "shotsOnTarget": 1,
-          "possession": 35,
+          "possession": 35.5,
           "passes": 337,
-          "passAccuracy": 79,
+          "passAccuracy": 0.8,
           "fouls": 13,
           "corners": 2,
           "offsides": 0,
           "yellowCards": 1,
-          "redCards": null
+          "redCards": 0
         }
-      }
+      },
+      "scorers": []
     },
     "560543": {
       "utcDate": "2026-08-22T11:30:00Z",
