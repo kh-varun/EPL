@@ -225,8 +225,8 @@ async function fetchEspnMatchData(ourMatch) {
   }
 
   const keyEvents = data.keyEvents ?? [];
-  const scorers = keyEvents
-    .filter((e) => e.scoringPlay === true || e.type?.text === "Goal")
+  const goalEvents = keyEvents.filter((e) => e.scoringPlay === true || e.type?.text === "Goal");
+  const scorers = goalEvents
     .map((e) => {
       const teamId =
         String(e.team?.id) === String(ourMatch.homeTeam.id)
@@ -247,16 +247,19 @@ async function fetchEspnMatchData(ourMatch) {
     .filter((g) => g.teamId && g.player && g.minute != null)
     .sort((a, b) => a.minute - b.minute || (a.extraMinute ?? 0) - (b.extraMinute ?? 0));
 
-  if (keyEvents.length > 0 && scorers.length === 0) {
-    const summary = keyEvents.map((e) => ({
-      type: e.type,
-      scoringPlay: e.scoringPlay,
-      text: e.text,
-    }));
+  // Confirmed live (Arsenal v Coventry): scoringPlay is a reliable goal
+  // marker (3/3 real goals had it, 0/19 other events did) and `text` is a
+  // rich human-readable sentence ("Goal! Arsenal 1, Coventry City 0. Kai
+  // Havertz (Arsenal) ... Assisted by ..."), but team.id/athletesInvolved/
+  // clock.displayValue are still unconfirmed guesses - dump the raw goal
+  // event(s) so those fields can be fixed against the real shape.
+  if (goalEvents.length > 0 && scorers.length !== goalEvents.length) {
     console.log(
-      `    ESPN: found ${keyEvents.length} key event(s) but none mapped to a goal - ` +
-        `all event type/scoringPlay/text: ${JSON.stringify(summary)}`,
+      `    ESPN: found ${goalEvents.length} goal event(s) but only mapped ${scorers.length} - ` +
+        `raw goal events: ${JSON.stringify(goalEvents)}`,
     );
+  } else if (keyEvents.length > 0 && scorers.length === 0) {
+    console.log(`    ESPN: found ${keyEvents.length} key event(s), no goal events among them`);
   }
 
   return { stats: byTeamId, scorers };
