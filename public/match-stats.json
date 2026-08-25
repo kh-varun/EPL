@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-25T22:42:41.373Z",
+  "fetchedAt": "2026-08-25T22:43:29.587Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -247,28 +247,54 @@
         "65": {
           "shots": 13,
           "shotsOnTarget": 6,
-          "possession": 66,
-          "passes": 633,
-          "passAccuracy": 89,
+          "possession": 66.1,
+          "passes": 641,
+          "passAccuracy": 0.9,
           "fouls": 11,
           "corners": 8,
           "offsides": 2,
           "yellowCards": 1,
-          "redCards": null
+          "redCards": 0
         },
         "1044": {
           "shots": 5,
           "shotsOnTarget": 4,
-          "possession": 34,
-          "passes": 328,
-          "passAccuracy": 80,
+          "possession": 33.9,
+          "passes": 333,
+          "passAccuracy": 0.8,
           "fouls": 11,
           "corners": 3,
           "offsides": 1,
           "yellowCards": 2,
-          "redCards": null
+          "redCards": 0
         }
-      }
+      },
+      "scorers": [
+        {
+          "teamId": 1044,
+          "player": "Marcus Tavernier",
+          "minute": 26,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 65,
+          "player": "Marc Guéhi",
+          "minute": 84,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 65,
+          "player": "Josko Gvardiol",
+          "minute": 90,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
     },
     "560549": {
       "utcDate": "2026-08-23T13:00:00Z",
