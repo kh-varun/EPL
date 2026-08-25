@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-25T22:44:24.154Z",
+  "fetchedAt": "2026-08-25T22:45:29.600Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -369,28 +369,62 @@
         "64": {
           "shots": 27,
           "shotsOnTarget": 7,
-          "possession": 61,
+          "possession": 60.8,
           "passes": 440,
-          "passAccuracy": 84,
+          "passAccuracy": 0.8,
           "fouls": 15,
           "corners": 6,
           "offsides": 1,
           "yellowCards": 3,
-          "redCards": null
+          "redCards": 0
         },
         "67": {
           "shots": 13,
           "shotsOnTarget": 4,
-          "possession": 39,
+          "possession": 39.2,
           "passes": 293,
-          "passAccuracy": 76,
+          "passAccuracy": 0.8,
           "fouls": 16,
           "corners": 2,
           "offsides": 2,
           "yellowCards": 5,
-          "redCards": null
+          "redCards": 0
         }
-      }
+      },
+      "scorers": [
+        {
+          "teamId": 67,
+          "player": "Anthony Elanga",
+          "minute": 5,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 64,
+          "player": "Cody Gakpo",
+          "minute": 55,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 67,
+          "player": "Joe Willock",
+          "minute": 57,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 64,
+          "player": "Dominik Szoboszlai",
+          "minute": 90,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": true
+        }
+      ]
     },
     "560551": {
       "utcDate": "2026-08-24T19:00:00Z",
