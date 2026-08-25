@@ -252,11 +252,32 @@ to finished, it also resolves that match's API-Football fixture id (reusing
 `/fixtures/statistics?fixture=` for both teams' stats, writing the result to
 `public/match-stats.json` keyed by our (football-data.org) match id. A
 finished match's stats never change, so each match is only ever fetched
-once - already-cached matches are skipped on every later run. Optional and
-gracefully degrading like every other API-Football feature here: skipped
-entirely without `API_FOOTBALL_KEY`, gated behind the same
-`hasApiFootballQuotaFor` pre-check, and a per-match failure just leaves that
-match without a stats breakdown rather than failing the run.
+once - already-cached matches are skipped on every later run. Gated behind
+the same `hasApiFootballQuotaFor` pre-check, and a per-match failure just
+leaves that match without a stats breakdown rather than failing the run.
+
+**ESPN fallback**: API-Football's free plan restricts `/fixtures?date=` to
+a rolling ~3-day window around today (see the "Known API quirks" entry
+below) - fine for the normal same-day path, but it means the manual
+`backfill_match_id` retry knob (below) can't reach anything older than a
+day or two, confirmed live when re-backfilling the season's first two
+matches for scorer data 4-5 days later. `fetchStatsForMatch` now tries
+API-Football first (more precise, structured data) and falls back to
+ESPN's free public site API - no key, no signup, already used for lineup
+cross-checks - whenever API-Football can't serve the match at all: no key
+set, quota exhausted, no matching fixture, or that date-window rejection.
+`fetchEspnMatchData` in `fetch-live-scores.mjs` reads team stats from
+`data.boxscore.teams[].statistics` and goals from `data.keyEvents`
+(filtered to `scoringPlay === true` or `type.text === "Goal"`, minute
+parsed out of `clock.displayValue`) via the same `/summary?event=` ESPN
+endpoint `fetch-lineups.mjs` already uses for lineups - like every
+ESPN-derived field in this project, the exact stat/event key names are a
+best-effort reading of its undocumented shape, not confirmed docs, so both
+functions dump the raw shape to the log when nothing maps, per this
+repo's ship-logging-first convention. `scripts/lib/espn.mjs` now holds the
+shared `espnRequest`/`findEspnEventId` client, extracted for the same
+reason as `api-football.mjs` - a third consumer (this fallback) of the
+event-lookup logic shouldn't mean a third copy of it.
 
 `scripts/lib/api-football.mjs` now holds the API-Football client and all the
 team/fixture name-matching helpers (`teamsLikelyMatch`, `searchableTeamName`,

@@ -19,6 +19,7 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { apiFootballRequest, teamsLikelyMatch, findApiFootballFixtureId } from "./lib/api-football.mjs";
+import { espnRequest, findEspnEventId } from "./lib/espn.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = path.join(__dirname, "..", "public", "data.json");
@@ -35,7 +36,6 @@ if (!API_FOOTBALL_KEY) {
 // as every other optional key in this project.
 const HIGHLIGHTLY_API_KEY = process.env.HIGHLIGHTLY_API_KEY;
 
-const ESPN_BASE = "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1";
 const HIGHLIGHTLY_BASE = "https://soccer.highlightly.net";
 
 // How soon a match must be (in ms) before we start polling for its lineup,
@@ -115,32 +115,6 @@ function logLineupAgreement(primarySide, secondarySide, sourceLabel, teamLabel) 
       `only in API-Football: [${onlyInPrimary.join(", ") || "none"}], ` +
       `only in ${sourceLabel}: [${onlyInSecondary.join(", ") || "none"}]`,
   );
-}
-
-async function espnRequest(path) {
-  const res = await fetch(`${ESPN_BASE}${path}`);
-  if (!res.ok) throw new Error(`ESPN ${path} failed: ${res.status} ${res.statusText}`);
-  return res.json();
-}
-
-// ESPN's site API is public but unofficial and undocumented (no key, no
-// signup) - used only to cross-check API-Football, never as a primary
-// source, since it can change shape or disappear without notice.
-async function findEspnEventId(ourMatch) {
-  const date = ourMatch.utcDate.slice(0, 10).replace(/-/g, "");
-  const data = await espnRequest(`/scoreboard?dates=${date}`);
-  const event = (data.events ?? []).find((e) => {
-    const competitors = e.competitions?.[0]?.competitors ?? [];
-    const home = competitors.find((c) => c.homeAway === "home");
-    const away = competitors.find((c) => c.homeAway === "away");
-    return (
-      home &&
-      away &&
-      teamsLikelyMatch(ourMatch.homeTeam, home.team?.displayName ?? "") &&
-      teamsLikelyMatch(ourMatch.awayTeam, away.team?.displayName ?? "")
-    );
-  });
-  return event?.id ?? null;
 }
 
 async function fetchEspnLineup(eventId, ourMatch) {
