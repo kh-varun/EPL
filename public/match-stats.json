@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-25T22:43:29.587Z",
+  "fetchedAt": "2026-08-25T22:44:24.154Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -304,28 +304,62 @@
         "58": {
           "shots": 6,
           "shotsOnTarget": 0,
-          "possession": 27,
-          "passes": 239,
-          "passAccuracy": 77,
-          "fouls": 8,
+          "possession": 27.1,
+          "passes": 240,
+          "passAccuracy": 0.8,
+          "fouls": 9,
           "corners": 2,
           "offsides": 2,
-          "yellowCards": 2,
+          "yellowCards": 3,
           "redCards": 1
         },
         "397": {
           "shots": 21,
           "shotsOnTarget": 6,
-          "possession": 73,
-          "passes": 628,
-          "passAccuracy": 93,
+          "possession": 72.9,
+          "passes": 642,
+          "passAccuracy": 0.9,
           "fouls": 12,
           "corners": 5,
           "offsides": 6,
           "yellowCards": 2,
           "redCards": 0
         }
-      }
+      },
+      "scorers": [
+        {
+          "teamId": 397,
+          "player": "Victor Lindelöf",
+          "minute": 8,
+          "extraMinute": null,
+          "ownGoal": true,
+          "penalty": false
+        },
+        {
+          "teamId": 397,
+          "player": "Maxim De Cuyper",
+          "minute": 18,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 397,
+          "player": "Jack Hinshelwood",
+          "minute": 30,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 397,
+          "player": "Jack Hinshelwood",
+          "minute": 31,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
     },
     "560550": {
       "utcDate": "2026-08-23T15:30:00Z",
