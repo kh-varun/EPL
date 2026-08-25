@@ -1,12 +1,12 @@
 {
-  "fetchedAt": "2026-08-25T23:36:55.330Z",
+  "fetchedAt": "2026-08-25T23:59:07.683Z",
   "odds": {
     "560552": {
       "eventTicker": "KXEPLGAME-26AUG29LFCNFO",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug29lfcnfo",
       "home": {
         "label": "Liverpool",
-        "probability": 65,
+        "probability": 66,
         "ticker": "KXEPLGAME-26AUG29LFCNFO-LFC"
       },
       "away": {
@@ -82,7 +82,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug30cfcbri",
       "home": {
         "label": "Chelsea",
-        "probability": 52,
+        "probability": 51,
         "ticker": "KXEPLGAME-26AUG30CFCBRI-CFC"
       },
       "away": {
