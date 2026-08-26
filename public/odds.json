@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-26T03:01:48.971Z",
+  "fetchedAt": "2026-08-26T04:02:31.452Z",
   "odds": {
     "560552": {
       "eventTicker": "KXEPLGAME-26AUG29LFCNFO",
@@ -16,7 +16,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 20,
+        "probability": 19,
         "ticker": "KXEPLGAME-26AUG29LFCNFO-TIE"
       }
     },
@@ -120,7 +120,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug29totnew",
       "home": {
         "label": "Tottenham",
-        "probability": 43,
+        "probability": 42,
         "ticker": "KXEPLGAME-26AUG29TOTNEW-TOT"
       },
       "away": {
