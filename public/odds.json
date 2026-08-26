@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-26T01:48:46.387Z",
+  "fetchedAt": "2026-08-26T03:01:48.971Z",
   "odds": {
     "560552": {
       "eventTicker": "KXEPLGAME-26AUG29LFCNFO",
@@ -68,7 +68,7 @@
       },
       "away": {
         "label": "Man City",
-        "probability": 60,
+        "probability": 61,
         "ticker": "KXEPLGAME-26AUG28CRYMCI-MCI"
       },
       "draw": {
@@ -87,7 +87,7 @@
       },
       "away": {
         "label": "Brighton Hove",
-        "probability": 25,
+        "probability": 24,
         "ticker": "KXEPLGAME-26AUG30CFCBRI-BRI"
       },
       "draw": {
@@ -101,7 +101,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug31avlars",
       "home": {
         "label": "Aston Villa",
-        "probability": 14,
+        "probability": 15,
         "ticker": "KXEPLGAME-26AUG31AVLARS-AVL"
       },
       "away": {
