@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-26T07:08:07.336Z",
+  "fetchedAt": "2026-08-26T07:58:40.435Z",
   "odds": {
     "560552": {
       "eventTicker": "KXEPLGAME-26AUG29LFCNFO",
@@ -158,7 +158,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug29boueve",
       "home": {
         "label": "Bournemouth",
-        "probability": 45,
+        "probability": 46,
         "ticker": "KXEPLGAME-26AUG29BOUEVE-BOU"
       },
       "away": {
