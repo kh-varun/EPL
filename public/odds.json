@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-26T08:52:12.789Z",
+  "fetchedAt": "2026-08-26T09:37:30.324Z",
   "odds": {
     "560552": {
       "eventTicker": "KXEPLGAME-26AUG29LFCNFO",
@@ -25,7 +25,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug30munips",
       "home": {
         "label": "Man United",
-        "probability": 68,
+        "probability": 69,
         "ticker": "KXEPLGAME-26AUG30MUNIPS-MUN"
       },
       "away": {
