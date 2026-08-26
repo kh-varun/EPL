@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-26T10:17:41.515Z",
+  "fetchedAt": "2026-08-26T11:00:55.606Z",
   "odds": {
     "560552": {
       "eventTicker": "KXEPLGAME-26AUG29LFCNFO",
@@ -54,7 +54,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 29,
+        "probability": 30,
         "ticker": "KXEPLGAME-26AUG30SUNFUL-TIE"
       }
     },
@@ -73,7 +73,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 22,
+        "probability": 23,
         "ticker": "KXEPLGAME-26AUG28CRYMCI-TIE"
       }
     },
@@ -87,12 +87,12 @@
       },
       "away": {
         "label": "Brighton Hove",
-        "probability": 25,
+        "probability": 24,
         "ticker": "KXEPLGAME-26AUG30CFCBRI-BRI"
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 24,
         "ticker": "KXEPLGAME-26AUG30CFCBRI-TIE"
       }
     },
@@ -177,7 +177,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug29covhul",
       "home": {
         "label": "Coventry City",
-        "probability": 52,
+        "probability": 53,
         "ticker": "KXEPLGAME-26AUG29COVHUL-COV"
       },
       "away": {
