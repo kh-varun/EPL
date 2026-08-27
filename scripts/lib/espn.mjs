@@ -63,7 +63,14 @@ function extractBroadcastName(event, label) {
   const comp = event.competitions?.[0];
   const geo = comp?.geoBroadcasts ?? [];
   const usGeo = geo.find((g) => g.region === "US" || g.lang === "en") ?? geo[0];
-  if (usGeo?.media?.shortName) return usGeo.media.shortName;
+  if (usGeo?.media?.shortName) {
+    // TEMPORARY: confirm live whether media has a fuller name than
+    // shortName - "USA Network" showed up truncated as "USA Net" on the
+    // first real run, while "Peacock"/"NBC" looked fine. Remove this log
+    // once the real field shape is confirmed and the picked field is final.
+    console.log(`    ESPN: broadcast media entry for ${label}: ${JSON.stringify(usGeo.media)}`);
+    return usGeo.media.shortName;
+  }
 
   const broadcasts = comp?.broadcasts ?? [];
   if (broadcasts[0]?.names?.[0]) return broadcasts[0].names[0];
