@@ -34,7 +34,7 @@ import {
   findApiFootballFixtureId,
   hasApiFootballQuotaFor,
 } from "./lib/api-football.mjs";
-import { espnRequest, findEspnEventId } from "./lib/espn.mjs";
+import { espnRequest, findEspnEventId, attachBroadcasts } from "./lib/espn.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = path.join(__dirname, "..", "public", "data.json");
@@ -81,7 +81,7 @@ async function refreshCoreData() {
   const data = JSON.parse(await readFile(DATA_PATH, "utf-8"));
   data.standings = standings;
   data.lastResults = lastResults;
-  data.nextFixtures = nextFixtures;
+  data.nextFixtures = await attachBroadcasts(nextFixtures);
   data.fetchedAt = new Date().toISOString();
 
   await writeFile(DATA_PATH, JSON.stringify(data, null, 2) + "\n");

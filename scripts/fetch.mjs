@@ -18,6 +18,7 @@ import {
   findApiFootballTeamId,
   hasApiFootballQuotaFor,
 } from "./lib/api-football.mjs";
+import { attachBroadcasts } from "./lib/espn.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_PATH = path.join(__dirname, "..", "public", "data.json");
@@ -296,11 +297,14 @@ async function main() {
   console.log(`Fetching squads for ${standings.length} teams (rate-limited, this takes a while)...`);
   const teams = await fetchSquads(standings.map((row) => row.team));
 
+  console.log(`Resolving broadcasters for ${nextFixtures.length} upcoming fixture(s) via ESPN...`);
+  const nextFixturesWithBroadcasts = await attachBroadcasts(nextFixtures);
+
   const data = {
     fetchedAt: new Date().toISOString(),
     standings,
     lastResults,
-    nextFixtures,
+    nextFixtures: nextFixturesWithBroadcasts,
     headlines: tagHeadlineTeams(headlines, standings),
     teams,
   };
@@ -308,11 +312,12 @@ async function main() {
   await mkdir(path.dirname(OUT_PATH), { recursive: true });
   await writeFile(OUT_PATH, JSON.stringify(data, null, 2) + "\n");
 
+  const broadcastsFound = nextFixturesWithBroadcasts.filter((m) => m.broadcast).length;
   console.log(`Wrote ${OUT_PATH}`);
   console.log(
     `  standings: ${standings.length}, lastResults: ${lastResults.length}, ` +
-      `nextFixtures: ${nextFixtures.length}, headlines: ${headlines.length}, ` +
-      `teams: ${Object.keys(teams).length}`,
+      `nextFixtures: ${nextFixtures.length} (${broadcastsFound} with a broadcaster), ` +
+      `headlines: ${headlines.length}, teams: ${Object.keys(teams).length}`,
   );
 }
 
