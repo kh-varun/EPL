@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-27T19:13:03.687Z",
+  "fetchedAt": "2026-08-27T19:21:26.650Z",
   "standings": [
     {
       "position": 1,
@@ -773,6 +773,14 @@
   ],
   "headlines": [
     {
+      "title": "Uefa raises stakes with criminal complaint in battle to unseat Infantino | Matt Hughes",
+      "link": "https://www.theguardian.com/football/2026/aug/27/uefa-criminal-complaint-plan-fifa-gianni-infantino-analysis",
+      "pubDate": "Thu, 27 Aug 2026 19:00:36 GMT",
+      "image": "https://i.guim.co.uk/img/media/15b7d537fad1f3439ddcaf838d3fa0a55e1bb785/224_0_3391_2712/master/3391.jpg?width=460&quality=85&auto=format&fit=max&s=49dac98c0fc2fab82a927156f4b18a06",
+      "source": "The Guardian",
+      "teams": []
+    },
+    {
       "title": "Who is in the Conference League draw and who is in each pot?",
       "link": "https://www.bbc.co.uk/sport/football/articles/c4gjdn9xw42o?at_medium=RSS&at_campaign=rss",
       "pubDate": "Thu, 27 Aug 2026 18:48:37 GMT",
@@ -897,14 +905,6 @@
         61,
         351
       ]
-    },
-    {
-      "title": "Villa sign Goretzka - what went wrong at Bayern and what will he bring?",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c20vm630grxo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Thu, 27 Aug 2026 15:39:49 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b916/live/253dca40-a153-11f1-92f3-2381193e5eb4.jpg",
-      "source": "BBC Sport",
-      "teams": []
     }
   ],
   "teams": {
