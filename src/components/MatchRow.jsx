@@ -48,13 +48,14 @@ export default function MatchRow({ match, showScore, onSelectTeam, onSelectMatch
   const homeWon = !isLive && hasScore && match.score.home > match.score.away;
   const awayWon = !isLive && hasScore && match.score.away > match.score.home;
   const clickable = Boolean(onSelectMatch);
+  const hasBroadcast = !isLive && !hasScore && Boolean(match.broadcast);
 
   return (
     <li
       onClick={clickable ? () => onSelectMatch(match) : undefined}
       className={
         "rounded-xl bg-epl-surface2 ring-1 p-3" +
-        (isLive ? " ring-red-500/40" : " ring-white/10") +
+        (isLive ? " ring-red-500/40" : hasBroadcast ? " ring-orange-500/50" : " ring-white/10") +
         (clickable ? " cursor-pointer hover:ring-white/20 transition-shadow" : "")
       }
     >
@@ -69,6 +70,14 @@ export default function MatchRow({ match, showScore, onSelectTeam, onSelectMatch
           !hasScore && <span>{formatMatchDateTime(match.utcDate)}</span>
         )}
       </div>
+
+      {hasBroadcast && (
+        <div className="flex justify-end mb-2 -mt-1">
+          <span className="rounded-full bg-orange-500/15 text-orange-400 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide">
+            Streaming on {match.broadcast}
+          </span>
+        </div>
+      )}
 
       <div className="flex items-center gap-2">
         <TeamColumn team={match.homeTeam} onSelectTeam={onSelectTeam} />

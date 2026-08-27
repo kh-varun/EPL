@@ -336,6 +336,37 @@ for full team objects (name/shortName, needed for `teamsLikelyMatch`) -
 `standings` always lists every team regardless of recent results, so this
 works for a backfill target of any age.
 
+## Fixture broadcasters (Fixtures tab)
+
+Each upcoming fixture in `data.nextFixtures` carries a `broadcast` field -
+the US TV/streaming outlet showing it (e.g. `"Peacock"`), or `null` when
+none was found. `MatchRow` highlights a fixture with a known broadcaster
+with an orange ring and a "Streaming on {broadcast}" badge instead of the
+default white ring - only for upcoming (non-live, unscored) fixtures, so it
+never fights with the red live-match ring or a finished-match score pill.
+
+`attachBroadcasts` in `scripts/lib/espn.mjs` resolves this from ESPN's
+public site API (already used elsewhere in this project) by looking up
+each fixture's date on `/scoreboard?dates=` and matching the team names via
+the existing `teamsLikelyMatch` helper, then reading `geoBroadcasts` (tried
+first - typed by region/lang, matches other ESPN sports APIs) or the
+flatter `broadcasts[].names[]` as a fallback. Like every other ESPN field
+in this project, the exact shape is an unconfirmed guess dumped raw to the
+log when a match is found but neither field yields a name - the usual
+ship-logging-first cycle applies if the log shows that.
+
+Both `fetch.mjs` (the weekly full refresh) and `fetch-live-scores.mjs`'s
+`refreshCoreData` (which re-pulls `nextFixtures` the moment a match
+finishes) call the same shared `attachBroadcasts`, so the field can't drift
+between the two paths the way `nextFixtures` itself already doesn't
+(`scripts/lib/football-data.mjs`'s existing rationale). A per-fixture ESPN
+lookup failure never fails the run - it just leaves that fixture's
+`broadcast` as `null`, same degrade-gracefully pattern as every other
+optional field in this pipeline. `findEspnEvent`'s scoreboard fetch is
+cached per calendar date within a single run, since several of the ~10
+upcoming fixtures usually share a matchday and would otherwise repeat the
+same ESPN call.
+
 ## All five fetch workflows retry their push
 
 `update.yml`, `lineups.yml`, `odds.yml`, `history.yml`, and
