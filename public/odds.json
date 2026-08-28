@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-28T05:23:29.917Z",
+  "fetchedAt": "2026-08-28T17:35:25.919Z",
   "odds": {
     "560552": {
       "eventTicker": "KXEPLGAME-26AUG29LFCNFO",
@@ -49,12 +49,12 @@
       },
       "away": {
         "label": "Fulham",
-        "probability": 31,
+        "probability": 32,
         "ticker": "KXEPLGAME-26AUG30SUNFUL-FUL"
       },
       "draw": {
         "label": "Draw",
-        "probability": 30,
+        "probability": 29,
         "ticker": "KXEPLGAME-26AUG30SUNFUL-TIE"
       }
     },
@@ -63,12 +63,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug28crymci",
       "home": {
         "label": "Crystal Palace",
-        "probability": 19,
+        "probability": 18,
         "ticker": "KXEPLGAME-26AUG28CRYMCI-CRY"
       },
       "away": {
         "label": "Man City",
-        "probability": 59,
+        "probability": 60,
         "ticker": "KXEPLGAME-26AUG28CRYMCI-MCI"
       },
       "draw": {
@@ -82,12 +82,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug30cfcbri",
       "home": {
         "label": "Chelsea",
-        "probability": 52,
+        "probability": 54,
         "ticker": "KXEPLGAME-26AUG30CFCBRI-CFC"
       },
       "away": {
         "label": "Brighton Hove",
-        "probability": 23,
+        "probability": 24,
         "ticker": "KXEPLGAME-26AUG30CFCBRI-BRI"
       },
       "draw": {
@@ -106,7 +106,7 @@
       },
       "away": {
         "label": "Arsenal",
-        "probability": 65,
+        "probability": 64,
         "ticker": "KXEPLGAME-26AUG31AVLARS-ARS"
       },
       "draw": {
@@ -120,7 +120,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug29totnew",
       "home": {
         "label": "Tottenham",
-        "probability": 42,
+        "probability": 43,
         "ticker": "KXEPLGAME-26AUG29TOTNEW-TOT"
       },
       "away": {
@@ -144,12 +144,12 @@
       },
       "away": {
         "label": "Brentford",
-        "probability": 34,
+        "probability": 35,
         "ticker": "KXEPLGAME-26AUG30LEEBRE-BRE"
       },
       "draw": {
         "label": "Draw",
-        "probability": 28,
+        "probability": 29,
         "ticker": "KXEPLGAME-26AUG30LEEBRE-TIE"
       }
     },
@@ -182,7 +182,7 @@
       },
       "away": {
         "label": "Hull City",
-        "probability": 22,
+        "probability": 21,
         "ticker": "KXEPLGAME-26AUG29COVHUL-HUL"
       },
       "draw": {
