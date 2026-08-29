@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-29T02:20:02.169Z",
+  "fetchedAt": "2026-08-29T17:45:51.962Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -566,6 +566,96 @@
           "teamId": 65,
           "player": "E. Haaland",
           "minute": 84,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560560": {
+      "utcDate": "2026-08-29T14:00:00Z",
+      "homeTeamId": 1044,
+      "awayTeamId": 62,
+      "stats": {
+        "62": {
+          "shots": 13,
+          "shotsOnTarget": 7,
+          "possession": 42,
+          "passes": 313,
+          "passAccuracy": 78,
+          "fouls": 14,
+          "corners": 7,
+          "offsides": 1,
+          "yellowCards": 2,
+          "redCards": null
+        },
+        "1044": {
+          "shots": 17,
+          "shotsOnTarget": 5,
+          "possession": 58,
+          "passes": 444,
+          "passAccuracy": 82,
+          "fouls": 11,
+          "corners": 10,
+          "offsides": 0,
+          "yellowCards": 3,
+          "redCards": null
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 1044,
+          "player": "A. Scott",
+          "minute": 41,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 62,
+          "player": "J. Tarkowski",
+          "minute": 90,
+          "extraMinute": 1,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560561": {
+      "utcDate": "2026-08-29T14:00:00Z",
+      "homeTeamId": 1076,
+      "awayTeamId": 322,
+      "stats": {
+        "322": {
+          "shots": 5,
+          "shotsOnTarget": 2,
+          "possession": 31,
+          "passes": 263,
+          "passAccuracy": 67,
+          "fouls": 8,
+          "corners": 2,
+          "offsides": 0,
+          "yellowCards": 4,
+          "redCards": null
+        },
+        "1076": {
+          "shots": 11,
+          "shotsOnTarget": 3,
+          "possession": 69,
+          "passes": 571,
+          "passAccuracy": 86,
+          "fouls": 11,
+          "corners": 6,
+          "offsides": 3,
+          "yellowCards": 1,
+          "redCards": null
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 322,
+          "player": "L. Millar",
+          "minute": 82,
           "extraMinute": null,
           "ownGoal": false,
           "penalty": false
