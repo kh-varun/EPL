@@ -40,6 +40,17 @@ export default function App() {
   const [selectedStatsMatch, setSelectedStatsMatch] = useState(null);
 
   useEffect(() => {
+    // Resolves null on any failure - the optional files may simply not
+    // exist yet, and a failed refresh must keep showing whatever data is
+    // already on screen rather than blanking it.
+    const loadJson = (name) =>
+      fetch(`${import.meta.env.BASE_URL}${name}`, { cache: "no-store" })
+        .then((res) => (res.ok ? res.json() : null))
+        .catch(() => null);
+
+    // Only data.json failing on the very first load is surfaced as an
+    // error banner - without it there's no dashboard at all. Later
+    // refreshes of it go through refreshData below and fail silently.
     fetch(`${import.meta.env.BASE_URL}data.json`, { cache: "no-store" })
       .then((res) => {
         if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
@@ -48,48 +59,71 @@ export default function App() {
       .then(setData)
       .catch((err) => setError(err.message));
 
-    // Confirmed lineups are optional - the file may not exist yet, and a
-    // failure here must never block the rest of the dashboard.
-    fetch(`${import.meta.env.BASE_URL}lineups.json`, { cache: "no-store" })
-      .then((res) => (res.ok ? res.json() : null))
-      .then(setLineups)
-      .catch(() => setLineups(null));
+    // Last-season history only changes monthly - fetching it once per
+    // page load is plenty.
+    loadJson("history.json").then(setHistory);
 
-    // Last-season history is likewise optional.
-    fetch(`${import.meta.env.BASE_URL}history.json`, { cache: "no-store" })
-      .then((res) => (res.ok ? res.json() : null))
-      .then(setHistory)
-      .catch(() => setHistory(null));
+    const refreshData = () => loadJson("data.json").then((json) => json && setData(json));
+    const refreshOptional = () => {
+      loadJson("lineups.json").then((json) => json && setLineups(json));
+      loadJson("odds.json").then((json) => json && setOdds(json));
+      loadJson("match-stats.json").then((json) => json && setMatchStats(json));
+    };
+    refreshOptional();
 
-    // So is Kalshi market data - a match simply may not have a listed
-    // market yet, and that's a normal, expected state, not an error.
-    fetch(`${import.meta.env.BASE_URL}odds.json`, { cache: "no-store" })
-      .then((res) => (res.ok ? res.json() : null))
-      .then(setOdds)
-      .catch(() => setOdds(null));
-
-    // Match stats (shots, possession, etc.) are likewise optional - only
-    // finished matches have them, and even then only once fetch-live-scores.mjs
-    // has picked them up after full time.
-    fetch(`${import.meta.env.BASE_URL}match-stats.json`, { cache: "no-store" })
-      .then((res) => (res.ok ? res.json() : null))
-      .then(setMatchStats)
-      .catch(() => setMatchStats(null));
-
-    // Live scores are likewise optional - empty whenever nothing's kicked
-    // off right now, which is most of the time. The backing file only
-    // changes every ~10 min (while a match is live), but a tab left open
-    // wouldn't otherwise ever see that - poll it on an interval too, so a
-    // live score updates without the user having to reload the page.
+    // How the dashboard stays fresh without a reload, in three layers:
+    //
+    // 1. live-scores.json is polled every 60s - it's the only file that
+    //    changes mid-match (every ~5 min while something is live).
+    // 2. When the set of live match ids changes - a kickoff or a full-time
+    //    whistle - data.json/match-stats.json/odds.json are refetched
+    //    immediately. This is exact, not hopeful: the workflow run that
+    //    clears a finished match from live-scores.json refreshes data.json
+    //    and match-stats.json in the same commit, so by the time the client
+    //    can observe the transition, the refreshed files are already
+    //    deployed alongside it. Without this, a finished match snapped
+    //    back to an upcoming "VS" fixture (its live overlay gone, the
+    //    page-load-time data.json still listing it as SCHEDULED) until the
+    //    user manually reloaded.
+    // 3. A slow 5-minute catch-all refresh of the same files, since
+    //    odds/lineups/fixtures all change server-side every ~15 min even
+    //    with nothing live, plus an immediate refresh whenever the tab
+    //    becomes visible again (a phone that switched apps, a laptop that
+    //    slept through full time).
+    let prevLiveIds = null;
     const fetchLiveScores = () =>
-      fetch(`${import.meta.env.BASE_URL}live-scores.json`, { cache: "no-store" })
-        .then((res) => (res.ok ? res.json() : null))
-        .then(setLiveScores)
-        .catch(() => setLiveScores(null));
+      loadJson("live-scores.json").then((json) => {
+        if (!json) return; // transient fetch failure - keep what we have
+        setLiveScores(json);
+        const ids = Object.keys(json.matches ?? {}).sort().join(",");
+        if (prevLiveIds !== null && ids !== prevLiveIds) {
+          refreshData();
+          refreshOptional();
+        }
+        prevLiveIds = ids;
+      });
 
     fetchLiveScores();
-    const liveScoresInterval = setInterval(fetchLiveScores, 60 * 1000);
-    return () => clearInterval(liveScoresInterval);
+    const liveInterval = setInterval(fetchLiveScores, 60 * 1000);
+    const slowInterval = setInterval(() => {
+      refreshData();
+      refreshOptional();
+    }, 5 * 60 * 1000);
+
+    const onVisibilityChange = () => {
+      if (document.visibilityState === "visible") {
+        fetchLiveScores();
+        refreshData();
+        refreshOptional();
+      }
+    };
+    document.addEventListener("visibilitychange", onVisibilityChange);
+
+    return () => {
+      clearInterval(liveInterval);
+      clearInterval(slowInterval);
+      document.removeEventListener("visibilitychange", onVisibilityChange);
+    };
   }, []);
 
   if (selectedTeam) {

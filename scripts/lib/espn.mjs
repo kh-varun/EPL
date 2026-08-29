@@ -59,18 +59,22 @@ export async function findEspnEventId(ourMatch) {
 // sports APIs; broadcasts (a flatter names[] list) is the fallback. Dumps
 // the raw shape when an event is found but neither field yields a name, per
 // this repo's ship-logging-first convention for unverified integrations.
+// ESPN's media object carries nothing but a shortName - confirmed live by
+// dumping it for all 10 fixtures of a real run, every entry was literally
+// just e.g. {"shortName":"USA Net"} - so there is no fuller name field to
+// prefer. Some of those shortNames are ESPN's own abbreviations that read
+// poorly on a badge; map the known ones to their full names and ship
+// anything unmapped as-is.
+const BROADCAST_DISPLAY_NAMES = {
+  "USA Net": "USA Network",
+};
+
 function extractBroadcastName(event, label) {
   const comp = event.competitions?.[0];
   const geo = comp?.geoBroadcasts ?? [];
   const usGeo = geo.find((g) => g.region === "US" || g.lang === "en") ?? geo[0];
-  if (usGeo?.media?.shortName) {
-    // TEMPORARY: confirm live whether media has a fuller name than
-    // shortName - "USA Network" showed up truncated as "USA Net" on the
-    // first real run, while "Peacock"/"NBC" looked fine. Remove this log
-    // once the real field shape is confirmed and the picked field is final.
-    console.log(`    ESPN: broadcast media entry for ${label}: ${JSON.stringify(usGeo.media)}`);
-    return usGeo.media.shortName;
-  }
+  const shortName = usGeo?.media?.shortName;
+  if (shortName) return BROADCAST_DISPLAY_NAMES[shortName] ?? shortName;
 
   const broadcasts = comp?.broadcasts ?? [];
   if (broadcasts[0]?.names?.[0]) return broadcasts[0].names[0];

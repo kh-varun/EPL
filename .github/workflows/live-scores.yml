@@ -1,10 +1,13 @@
 name: Update live scores
 
 on:
-  # Only makes a real football-data.org call when a match's kickoff window
-  # is active - the script exits immediately otherwise.
+  # Every 5 minutes so live scores lag real play by at most ~5 min plus a
+  # deploy. Cheap to run this often: the script checks kickoff windows
+  # against the already-cached fixture list and exits without any API call
+  # (or commit) unless a match could actually be live right now, and
+  # deploy.yml skips its build entirely when a run pushed nothing.
   schedule:
-    - cron: "*/10 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
     inputs:
       backfill_match_id:

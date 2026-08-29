@@ -13,7 +13,7 @@ APIs via scheduled GitHub Actions workflows that commit static JSON into
 | `fetch-lineups.mjs` | `public/lineups.json` | `lineups.yml` | Every 15 min | `API_FOOTBALL_KEY`; `HIGHLIGHTLY_API_KEY` optional |
 | `fetch-history.mjs` | `public/history.json` | `history.yml` | Monthly | `FOOTBALL_DATA_TOKEN`, `API_FOOTBALL_KEY` (optional) |
 | `fetch-odds.mjs` | `public/odds.json` | `odds.yml` | Every 15 min | none (Kalshi is public) |
-| `fetch-live-scores.mjs` | `public/live-scores.json`, `public/match-stats.json` | `live-scores.yml` | Every 10 min | `FOOTBALL_DATA_TOKEN`; `API_FOOTBALL_KEY` (optional, for match stats) |
+| `fetch-live-scores.mjs` | `public/live-scores.json`, `public/match-stats.json` | `live-scores.yml` | Every 5 min | `FOOTBALL_DATA_TOKEN`; `API_FOOTBALL_KEY` (optional, for match stats) |
 
 All scripts degrade gracefully: a missing key or a failed call never
 crashes the run or corrupts existing JSON — it just leaves that piece of
@@ -197,19 +197,33 @@ usually reachable. When you can't reproduce something locally:
 
 ## Live scores
 
-`fetch-live-scores.mjs` runs every 10 minutes but only makes a
+`fetch-live-scores.mjs` runs every 5 minutes but only makes a
 football-data.org call when some match's kickoff time falls within its
 polling window (15 min before through 3 hours after) - checked against the
 already-cached `nextFixtures`/`lastResults` in `data.json`, at zero API
 cost, before ever hitting the network. When something's actually live, it
 queries `/matches?status=IN_PLAY,PAUSED` and writes `live-scores.json`
 keyed by match id; when nothing is, it clears the file so a finished
-match's score doesn't linger with a stale "LIVE" badge. `App.jsx` also
-polls this file client-side every 60s (unlike the other JSON files, which
-are only fetched once on load) so a tab left open updates without a
-reload - the underlying file only changes every ~10 min regardless.
-`MatchRow` reads `match.liveStatus` (set by `withLiveScore` in `App.jsx`)
-to swap in the red "LIVE"/"HT" badge and score pill.
+match's score doesn't linger with a stale "LIVE" badge (but skips the
+write entirely when the file was already empty - the pre-kickoff lookahead
+and the post-match tail of the window would otherwise churn `fetchedAt`
+into a commit and a full Pages deploy on every poll for no visible
+change). `MatchRow` reads `match.liveStatus` (set by `withLiveScore` in
+`App.jsx`) to swap in the red "LIVE"/"HT" badge and score pill.
+
+`App.jsx` keeps an open tab fresh in three layers (its `useEffect` has the
+full rationale): `live-scores.json` polled every 60s; an immediate refetch
+of `data.json`/`match-stats.json`/`odds.json`/`lineups.json` whenever the
+set of live match ids changes - which is exact, not hopeful, because the
+workflow run that clears a finished match from `live-scores.json`
+refreshes `data.json`/`match-stats.json` in the same commit, so those
+files are always deployed alongside the transition the client just
+observed; and a 5-minute catch-all refresh of the same files plus a
+refresh on `visibilitychange` (a phone that switched apps mid-match).
+Only `history.json` is fetched once per page load - it changes monthly.
+Without the transition refetch, full time made a match snap back to an
+upcoming "VS" fixture (live overlay gone, page-load-time `data.json`
+still listing it as SCHEDULED) until a manual reload.
 
 When a match that was previously live drops off the `IN_PLAY`/`PAUSED`
 query (or its kickoff window elapses entirely - `data.js`'s own cached
@@ -221,7 +235,7 @@ than duplicate the standings/fixtures fetch-and-map logic that `fetch.mjs`
 already has, both scripts import it from `scripts/lib/football-data.mjs`;
 `fetch-live-scores.mjs` calls that shared `fetchStandings`/
 `fetchLastResults`/`fetchNextFixtures` itself the moment it detects a
-match just finished, so the result and table land within ~10 minutes of
+match just finished, so the result and table land within ~5 minutes of
 full time instead of waiting up to a week. It deliberately leaves
 `teams`/`headlines` untouched (squads and news don't change mid-match) and
 does not re-run the expensive per-team squad/coach fetch.
@@ -430,6 +444,28 @@ completion rather than re-triggering off its push, so it isn't subject to
 the same `GITHUB_TOKEN` restriction. Keep every new scheduled-write
 workflow's `name:` added to that list, or its commits will keep landing on
 `main` without ever reaching production.
+
+Most of those completions push nothing, though (a no-match `live-scores.yml`
+run alone completes every 5 minutes around the clock), so `deploy.yml` has
+a `precheck` job that skips the whole build when the triggering run pushed
+nothing: if the run had pushed, `main`'s HEAD would no longer equal the
+`workflow_run.head_sha` the run started from; if HEAD still equals it,
+the site was already built from this exact commit. The check is
+deliberately fail-open - it only applies to `workflow_run` events (push
+and `workflow_dispatch` deploys always build) and an empty output builds.
+Two invariants to preserve when touching this:
+
+- `concurrency: cancel-in-progress` must stay **false**. With the
+  precheck, a no-op run's deploy skips cheaply anyway - but if it instead
+  *cancelled* an in-flight build of a real change, that change would never
+  deploy, and every later no-op run's precheck would see `main` unchanged
+  and keep skipping: the site frozen at old content, the exact failure
+  mode described above, reintroduced by the optimization. (Cancelled
+  deploy runs from the old `cancel-in-progress: true` era are visible in
+  the Actions history - this wasn't hypothetical.)
+- The precheck compares against the *triggering run's* start SHA, not the
+  last-deployed SHA, so its correctness depends on in-flight deploys never
+  being cancelled - which is exactly what the first invariant guarantees.
 
 ## Git workflow for this repo
 
