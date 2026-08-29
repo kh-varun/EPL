@@ -1,17 +1,17 @@
 {
-  "fetchedAt": "2026-08-29T01:10:24.373Z",
+  "fetchedAt": "2026-08-29T07:53:01.109Z",
   "odds": {
     "560552": {
       "eventTicker": "KXEPLGAME-26AUG29LFCNFO",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug29lfcnfo",
       "home": {
         "label": "Liverpool",
-        "probability": 65,
+        "probability": 68,
         "ticker": "KXEPLGAME-26AUG29LFCNFO-LFC"
       },
       "away": {
         "label": "Nottingham",
-        "probability": 15,
+        "probability": 14,
         "ticker": "KXEPLGAME-26AUG29LFCNFO-NFO"
       },
       "draw": {
@@ -25,7 +25,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug30munips",
       "home": {
         "label": "Man United",
-        "probability": 69,
+        "probability": 70,
         "ticker": "KXEPLGAME-26AUG30MUNIPS-MUN"
       },
       "away": {
@@ -63,7 +63,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug30cfcbri",
       "home": {
         "label": "Chelsea",
-        "probability": 54,
+        "probability": 55,
         "ticker": "KXEPLGAME-26AUG30CFCBRI-CFC"
       },
       "away": {
@@ -106,7 +106,7 @@
       },
       "away": {
         "label": "Newcastle",
-        "probability": 32,
+        "probability": 31,
         "ticker": "KXEPLGAME-26AUG29TOTNEW-NEW"
       },
       "draw": {
@@ -125,7 +125,7 @@
       },
       "away": {
         "label": "Brentford",
-        "probability": 36,
+        "probability": 35,
         "ticker": "KXEPLGAME-26AUG30LEEBRE-BRE"
       },
       "draw": {
@@ -170,6 +170,25 @@
         "label": "Draw",
         "probability": 27,
         "ticker": "KXEPLGAME-26AUG29COVHUL-TIE"
+      }
+    },
+    "560566": {
+      "eventTicker": "KXEPLGAME-26SEP04IPSLFC",
+      "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep04ipslfc",
+      "home": {
+        "label": "Ipswich Town",
+        "probability": 18,
+        "ticker": "KXEPLGAME-26SEP04IPSLFC-IPS"
+      },
+      "away": {
+        "label": "Liverpool",
+        "probability": 61,
+        "ticker": "KXEPLGAME-26SEP04IPSLFC-LFC"
+      },
+      "draw": {
+        "label": "Draw",
+        "probability": 19,
+        "ticker": "KXEPLGAME-26SEP04IPSLFC-TIE"
       }
     }
   }
