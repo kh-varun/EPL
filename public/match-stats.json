@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-29T17:45:51.962Z",
+  "fetchedAt": "2026-08-29T18:50:54.647Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -566,6 +566,55 @@
           "teamId": 65,
           "player": "E. Haaland",
           "minute": 84,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560558": {
+      "utcDate": "2026-08-29T16:30:00Z",
+      "homeTeamId": 73,
+      "awayTeamId": 67,
+      "stats": {
+        "67": {
+          "shots": 11,
+          "shotsOnTarget": 2,
+          "possession": 42,
+          "passes": 368,
+          "passAccuracy": null,
+          "fouls": 9,
+          "corners": 7,
+          "offsides": 1,
+          "yellowCards": 2,
+          "redCards": 0
+        },
+        "73": {
+          "shots": 17,
+          "shotsOnTarget": 6,
+          "possession": 58,
+          "passes": 491,
+          "passAccuracy": null,
+          "fouls": 15,
+          "corners": 9,
+          "offsides": 2,
+          "yellowCards": 1,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 67,
+          "player": "Anthony Elanga",
+          "minute": 62,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 67,
+          "player": "Yoane Wissa",
+          "minute": 72,
           "extraMinute": null,
           "ownGoal": false,
           "penalty": false
