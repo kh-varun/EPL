@@ -344,6 +344,15 @@ async function main() {
     }
   }
 
+  // Same no-churn rule as the no-imminent path above: when every imminent
+  // match's lineup was already on file and nothing got pruned, rewriting
+  // would only bump fetchedAt - which costs a commit and a full redeploy
+  // every 15 minutes for the whole pre-kickoff window.
+  if (JSON.stringify(lineups) === JSON.stringify(rawExisting)) {
+    console.log("No lineup changes - leaving lineups.json untouched.");
+    return;
+  }
+
   await mkdir(path.dirname(OUT_PATH), { recursive: true });
   await writeFile(
     OUT_PATH,

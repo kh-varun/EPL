@@ -30,13 +30,47 @@ permissions:
   pages: write
   id-token: write
 
+# cancel-in-progress must stay false: with the precheck below, a no-op
+# fetch run's deploy skips at the precheck, so if it instead CANCELLED an
+# in-flight build of a real change, that change would never deploy - the
+# skip logic would then see main unchanged on every later no-op run and
+# keep skipping, leaving the site frozen at the old content (the exact
+# failure mode this repo already lived through once, see CLAUDE.md).
+# Queued-run collapse still keeps bursts from piling up.
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
+  # Every completed fetch workflow triggers this deploy, but most of those
+  # runs commit nothing (live-scores.yml alone completes ~288 no-op runs a
+  # day when no match is on) - skip the full build/deploy for those. If the
+  # triggering run pushed a commit, main's HEAD no longer equals the SHA
+  # that run started from; if HEAD still equals it, nothing new has landed
+  # since the site was last built from this very commit. Deliberately
+  # fail-open: the step only runs for workflow_run events, so push/dispatch
+  # deploys always build, and an empty/absent output also builds.
+  precheck:
+    runs-on: ubuntu-latest
+    outputs:
+      skip: ${{ steps.compare.outputs.skip }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - id: compare
+        if: github.event_name == 'workflow_run'
+        run: |
+          if [ "$(git rev-parse HEAD)" = "${{ github.event.workflow_run.head_sha }}" ]; then
+            echo "Triggering run pushed nothing and main hasn't moved - skipping deploy."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
   build:
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    needs: precheck
+    if: >-
+      needs.precheck.outputs.skip != 'true' &&
+      (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

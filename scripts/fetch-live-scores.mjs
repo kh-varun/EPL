@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Fetches LIVE scores for any Premier League match currently in progress,
 // so the dashboard can show up-to-date scores while a game is being
-// played. Designed to run every ~10 minutes via a scheduled workflow, and
+// played. Designed to run every ~5 minutes via a scheduled workflow, and
 // does nothing - zero API calls - unless some match's kickoff window
 // overlaps right now. Once a match that was live drops off the IN_PLAY/
 // PAUSED list, it also refreshes standings/lastResults/nextFixtures in
@@ -492,6 +492,16 @@ async function main() {
     console.log(`${justFinished.length} match(es) no longer live - refreshing standings/results/fixtures...`);
     const lastResults = await refreshCoreData();
     await fetchMatchStatsFor(lastResults.filter((m) => justFinished.includes(String(m.id))));
+  }
+
+  if (Object.keys(matches).length === 0 && Object.keys(existing).length === 0) {
+    // In a kickoff window but nothing was live before and nothing is live
+    // now (the pre-kickoff lookahead, or the tail of the window after a
+    // finished match has already been cleared). Rewriting the file here
+    // would only churn fetchedAt - which costs a commit and a full Pages
+    // deploy on every poll for no visible change.
+    console.log("Nothing was or is live - leaving live-scores.json untouched.");
+    return;
   }
 
   await writeLive(matches);
