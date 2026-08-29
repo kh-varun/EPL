@@ -1,22 +1,22 @@
 {
-  "fetchedAt": "2026-08-29T07:53:01.109Z",
+  "fetchedAt": "2026-08-29T13:36:09.923Z",
   "odds": {
     "560552": {
       "eventTicker": "KXEPLGAME-26AUG29LFCNFO",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug29lfcnfo",
       "home": {
         "label": "Liverpool",
-        "probability": 68,
+        "probability": 1,
         "ticker": "KXEPLGAME-26AUG29LFCNFO-LFC"
       },
       "away": {
         "label": "Nottingham",
-        "probability": 14,
+        "probability": 1,
         "ticker": "KXEPLGAME-26AUG29LFCNFO-NFO"
       },
       "draw": {
         "label": "Draw",
-        "probability": 21,
+        "probability": 99,
         "ticker": "KXEPLGAME-26AUG29LFCNFO-TIE"
       }
     },
@@ -63,7 +63,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug30cfcbri",
       "home": {
         "label": "Chelsea",
-        "probability": 55,
+        "probability": 54,
         "ticker": "KXEPLGAME-26AUG30CFCBRI-CFC"
       },
       "away": {
@@ -101,7 +101,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug29totnew",
       "home": {
         "label": "Tottenham",
-        "probability": 44,
+        "probability": 43,
         "ticker": "KXEPLGAME-26AUG29TOTNEW-TOT"
       },
       "away": {
@@ -139,12 +139,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug29boueve",
       "home": {
         "label": "Bournemouth",
-        "probability": 47,
+        "probability": 46,
         "ticker": "KXEPLGAME-26AUG29BOUEVE-BOU"
       },
       "away": {
         "label": "Everton",
-        "probability": 27,
+        "probability": 29,
         "ticker": "KXEPLGAME-26AUG29BOUEVE-EVE"
       },
       "draw": {
@@ -158,12 +158,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug29covhul",
       "home": {
         "label": "Coventry City",
-        "probability": 55,
+        "probability": 56,
         "ticker": "KXEPLGAME-26AUG29COVHUL-COV"
       },
       "away": {
         "label": "Hull City",
-        "probability": 21,
+        "probability": 20,
         "ticker": "KXEPLGAME-26AUG29COVHUL-HUL"
       },
       "draw": {
@@ -177,7 +177,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep04ipslfc",
       "home": {
         "label": "Ipswich Town",
-        "probability": 18,
+        "probability": 19,
         "ticker": "KXEPLGAME-26SEP04IPSLFC-IPS"
       },
       "away": {
