@@ -1,8 +1,27 @@
 {
-  "fetchedAt": "2026-08-27T19:21:26.650Z",
+  "fetchedAt": "2026-08-29T02:19:54.882Z",
   "standings": [
     {
       "position": 1,
+      "team": {
+        "id": 65,
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "tla": "MCI",
+        "crest": "https://crests.football-data.org/65.png"
+      },
+      "playedGames": 2,
+      "won": 2,
+      "draw": 0,
+      "lost": 0,
+      "points": 6,
+      "goalsFor": 6,
+      "goalsAgainst": 2,
+      "goalDifference": 4,
+      "form": null
+    },
+    {
+      "position": 2,
       "team": {
         "id": 397,
         "name": "Brighton & Hove Albion FC",
@@ -21,7 +40,7 @@
       "form": null
     },
     {
-      "position": 2,
+      "position": 3,
       "team": {
         "id": 57,
         "name": "Arsenal FC",
@@ -40,7 +59,7 @@
       "form": null
     },
     {
-      "position": 2,
+      "position": 3,
       "team": {
         "id": 402,
         "name": "Brentford FC",
@@ -59,7 +78,7 @@
       "form": null
     },
     {
-      "position": 4,
+      "position": 5,
       "team": {
         "id": 62,
         "name": "Everton FC",
@@ -78,7 +97,7 @@
       "form": null
     },
     {
-      "position": 4,
+      "position": 5,
       "team": {
         "id": 322,
         "name": "Hull City AFC",
@@ -97,7 +116,7 @@
       "form": null
     },
     {
-      "position": 6,
+      "position": 7,
       "team": {
         "id": 61,
         "name": "Chelsea FC",
@@ -116,32 +135,13 @@
       "form": null
     },
     {
-      "position": 7,
+      "position": 8,
       "team": {
         "id": 349,
         "name": "Ipswich Town FC",
         "shortName": "Ipswich Town",
         "tla": "IPS",
         "crest": "https://crests.football-data.org/349.png"
-      },
-      "playedGames": 1,
-      "won": 1,
-      "draw": 0,
-      "lost": 0,
-      "points": 3,
-      "goalsFor": 2,
-      "goalsAgainst": 1,
-      "goalDifference": 1,
-      "form": null
-    },
-    {
-      "position": 7,
-      "team": {
-        "id": 65,
-        "name": "Manchester City FC",
-        "shortName": "Man City",
-        "tla": "MCI",
-        "crest": "https://crests.football-data.org/65.png"
       },
       "playedGames": 1,
       "won": 1,
@@ -289,25 +289,6 @@
     {
       "position": 16,
       "team": {
-        "id": 354,
-        "name": "Crystal Palace FC",
-        "shortName": "Crystal Palace",
-        "tla": "CRY",
-        "crest": "https://crests.football-data.org/354.png"
-      },
-      "playedGames": 1,
-      "won": 0,
-      "draw": 0,
-      "lost": 1,
-      "points": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 2,
-      "goalDifference": -2,
-      "form": null
-    },
-    {
-      "position": 16,
-      "team": {
         "id": 66,
         "name": "Manchester United FC",
         "shortName": "Man United",
@@ -325,7 +306,7 @@
       "form": null
     },
     {
-      "position": 18,
+      "position": 17,
       "team": {
         "id": 1076,
         "name": "Coventry City FC",
@@ -344,7 +325,7 @@
       "form": null
     },
     {
-      "position": 18,
+      "position": 17,
       "team": {
         "id": 73,
         "name": "Tottenham Hotspur FC",
@@ -363,7 +344,7 @@
       "form": null
     },
     {
-      "position": 20,
+      "position": 19,
       "team": {
         "id": 58,
         "name": "Aston Villa FC",
@@ -380,9 +361,53 @@
       "goalsAgainst": 4,
       "goalDifference": -4,
       "form": null
+    },
+    {
+      "position": 20,
+      "team": {
+        "id": 354,
+        "name": "Crystal Palace FC",
+        "shortName": "Crystal Palace",
+        "tla": "CRY",
+        "crest": "https://crests.football-data.org/354.png"
+      },
+      "playedGames": 2,
+      "won": 0,
+      "draw": 0,
+      "lost": 2,
+      "points": 0,
+      "goalsFor": 1,
+      "goalsAgainst": 6,
+      "goalDifference": -5,
+      "form": null
     }
   ],
   "lastResults": [
+    {
+      "id": 560555,
+      "utcDate": "2026-08-28T19:00:00Z",
+      "status": "FINISHED",
+      "matchday": 2,
+      "homeTeam": {
+        "id": 354,
+        "name": "Crystal Palace FC",
+        "shortName": "Crystal Palace",
+        "tla": "CRY",
+        "crest": "https://crests.football-data.org/354.png"
+      },
+      "awayTeam": {
+        "id": 65,
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "tla": "MCI",
+        "crest": "https://crests.football-data.org/65.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 4,
+        "winner": "AWAY_TEAM"
+      }
+    },
     {
       "id": 560551,
       "utcDate": "2026-08-24T19:00:00Z",
@@ -482,60 +507,9 @@
         "away": 0,
         "winner": "HOME_TEAM"
       }
-    },
-    {
-      "id": 560547,
-      "utcDate": "2026-08-22T16:30:00Z",
-      "status": "FINISHED",
-      "matchday": 1,
-      "homeTeam": {
-        "id": 402,
-        "name": "Brentford FC",
-        "shortName": "Brentford",
-        "tla": "BRE",
-        "crest": "https://crests.football-data.org/402.png"
-      },
-      "awayTeam": {
-        "id": 73,
-        "name": "Tottenham Hotspur FC",
-        "shortName": "Tottenham",
-        "tla": "TOT",
-        "crest": "https://crests.football-data.org/73.png"
-      },
-      "score": {
-        "home": 3,
-        "away": 0,
-        "winner": "HOME_TEAM"
-      }
     }
   ],
   "nextFixtures": [
-    {
-      "id": 560555,
-      "utcDate": "2026-08-28T19:00:00Z",
-      "status": "TIMED",
-      "matchday": 2,
-      "homeTeam": {
-        "id": 354,
-        "name": "Crystal Palace FC",
-        "shortName": "Crystal Palace",
-        "tla": "CRY",
-        "crest": "https://crests.football-data.org/354.png"
-      },
-      "awayTeam": {
-        "id": 65,
-        "name": "Manchester City FC",
-        "shortName": "Man City",
-        "tla": "MCI",
-        "crest": "https://crests.football-data.org/65.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": "USA Net"
-    },
     {
       "id": 560552,
       "utcDate": "2026-08-29T11:30:00Z",
@@ -762,6 +736,32 @@
         "shortName": "Arsenal",
         "tla": "ARS",
         "crest": "https://crests.football-data.org/57.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": "USA Net"
+    },
+    {
+      "id": 560566,
+      "utcDate": "2026-09-04T19:00:00Z",
+      "status": "TIMED",
+      "matchday": 3,
+      "homeTeam": {
+        "id": 349,
+        "name": "Ipswich Town FC",
+        "shortName": "Ipswich Town",
+        "tla": "IPS",
+        "crest": "https://crests.football-data.org/349.png"
+      },
+      "awayTeam": {
+        "id": 64,
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "tla": "LIV",
+        "crest": "https://crests.football-data.org/64.png"
       },
       "score": {
         "home": null,

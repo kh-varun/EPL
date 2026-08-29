@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-25T22:45:29.600Z",
+  "fetchedAt": "2026-08-29T02:20:02.169Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -493,6 +493,79 @@
           "teamId": 63,
           "player": "G. Garcia",
           "minute": 54,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560555": {
+      "utcDate": "2026-08-28T19:00:00Z",
+      "homeTeamId": 354,
+      "awayTeamId": 65,
+      "stats": {
+        "65": {
+          "shots": 18,
+          "shotsOnTarget": 9,
+          "possession": 72,
+          "passes": 779,
+          "passAccuracy": 93,
+          "fouls": 10,
+          "corners": 6,
+          "offsides": 0,
+          "yellowCards": 2,
+          "redCards": null
+        },
+        "354": {
+          "shots": 9,
+          "shotsOnTarget": 1,
+          "possession": 28,
+          "passes": 281,
+          "passAccuracy": 82,
+          "fouls": 8,
+          "corners": 2,
+          "offsides": 3,
+          "yellowCards": 1,
+          "redCards": null
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 65,
+          "player": "E. Haaland",
+          "minute": 17,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 65,
+          "player": "R. Cherki",
+          "minute": 54,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 354,
+          "player": "G. Donnarumma",
+          "minute": 56,
+          "extraMinute": null,
+          "ownGoal": true,
+          "penalty": false
+        },
+        {
+          "teamId": 65,
+          "player": "R. Cherki",
+          "minute": 59,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 65,
+          "player": "E. Haaland",
+          "minute": 84,
           "extraMinute": null,
           "ownGoal": false,
           "penalty": false
