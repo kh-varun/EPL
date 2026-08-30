@@ -1,17 +1,17 @@
 {
-  "fetchedAt": "2026-08-30T00:32:44.370Z",
+  "fetchedAt": "2026-08-30T05:51:01.302Z",
   "odds": {
     "560553": {
       "eventTicker": "KXEPLGAME-26AUG30MUNIPS",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug30munips",
       "home": {
         "label": "Man United",
-        "probability": 70,
+        "probability": 71,
         "ticker": "KXEPLGAME-26AUG30MUNIPS-MUN"
       },
       "away": {
         "label": "Ipswich Town",
-        "probability": 13,
+        "probability": 11,
         "ticker": "KXEPLGAME-26AUG30MUNIPS-IPS"
       },
       "draw": {
@@ -25,7 +25,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug30sunful",
       "home": {
         "label": "Sunderland",
-        "probability": 40,
+        "probability": 39,
         "ticker": "KXEPLGAME-26AUG30SUNFUL-SUN"
       },
       "away": {
@@ -44,17 +44,17 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug30cfcbri",
       "home": {
         "label": "Chelsea",
-        "probability": 53,
+        "probability": 50,
         "ticker": "KXEPLGAME-26AUG30CFCBRI-CFC"
       },
       "away": {
         "label": "Brighton Hove",
-        "probability": 24,
+        "probability": 26,
         "ticker": "KXEPLGAME-26AUG30CFCBRI-BRI"
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 26,
         "ticker": "KXEPLGAME-26AUG30CFCBRI-TIE"
       }
     },
@@ -82,7 +82,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug30leebre",
       "home": {
         "label": "Leeds United",
-        "probability": 36,
+        "probability": 38,
         "ticker": "KXEPLGAME-26AUG30LEEBRE-LEE"
       },
       "away": {
@@ -101,7 +101,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep05nfotot",
       "home": {
         "label": "Nottingham",
-        "probability": 38,
+        "probability": 36,
         "ticker": "KXEPLGAME-26SEP05NFOTOT-NFO"
       },
       "away": {
@@ -125,7 +125,7 @@
       },
       "away": {
         "label": "Coventry City",
-        "probability": 7,
+        "probability": 6,
         "ticker": "KXEPLGAME-26SEP05MCICOV-COV"
       },
       "draw": {
@@ -182,7 +182,7 @@
       },
       "away": {
         "label": "Bournemouth",
-        "probability": 34,
+        "probability": 32,
         "ticker": "KXEPLGAME-26SEP05NEWBOU-BOU"
       },
       "draw": {
