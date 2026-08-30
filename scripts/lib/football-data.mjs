@@ -75,6 +75,18 @@ export async function fetchLastResults(limit = 5) {
   return matches.slice(0, limit).map(mapMatch);
 }
 
+// A SCHEDULED/TIMED/IN_PLAY/PAUSED match whose kickoff is this far in the
+// past is impossible - no real Premier League match is still unstarted or
+// still going hours after its kickoff time. Confirmed live: football-data.org
+// kept reporting four matches from the previous matchday (kicked off up to
+// ~30h earlier) as still SCHEDULED/TIMED well after they'd actually finished
+// (independently confirmed via lastResults before they aged out of its
+// 5-match window) - a caching quirk on their status-filtered endpoint, not a
+// real status. Same magnitude as fetch-live-scores.mjs's STALE_LIVE_ENTRY_MS,
+// for the same reason: drop it here rather than let a stale "upcoming"
+// fixture linger on the Fixtures tab indefinitely.
+const STALE_FIXTURE_MS = 4 * 60 * 60 * 1000;
+
 // Deliberately includes IN_PLAY/PAUSED alongside SCHEDULED - confirmed live
 // that omitting them is a real bug, not just an unlikely edge case: any full
 // refresh that lands while a match is live (this project's own manual
@@ -86,8 +98,9 @@ export async function fetchLastResults(limit = 5) {
 // entirely until full time instead of just losing its "next fixture" framing.
 export async function fetchNextFixtures(limit = 10) {
   const data = await footballDataRequest("/competitions/PL/matches?status=SCHEDULED,IN_PLAY,PAUSED");
-  const matches = [...(data.matches ?? [])].sort(
-    (a, b) => new Date(a.utcDate) - new Date(b.utcDate),
-  );
+  const now = Date.now();
+  const matches = (data.matches ?? [])
+    .filter((m) => now - new Date(m.utcDate).getTime() <= STALE_FIXTURE_MS)
+    .sort((a, b) => new Date(a.utcDate) - new Date(b.utcDate));
   return matches.slice(0, limit).map(mapMatch);
 }

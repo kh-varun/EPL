@@ -294,6 +294,19 @@ hit the exact same gap. Any future consumer of `fetchNextFixtures` should
 assume its result can include an in-progress match, not just ones that
 haven't kicked off yet.
 
+**Widening that query surfaced a second football-data.org staleness bug**,
+confirmed live the same day: four matches from the previous matchday
+(kicked off up to ~30h earlier) kept coming back under
+`status=SCHEDULED,IN_PLAY,PAUSED` as still `TIMED`, well after they'd
+actually finished - independently confirmed via `lastResults` before they
+aged out of its 5-match window. Their filtered "not yet finished" endpoint
+was simply stuck for these specific matches, cluttering the Fixtures tab
+with games that had already been decided a day earlier.
+`fetchNextFixtures` now drops any result whose kickoff is more than
+`STALE_FIXTURE_MS` (4h, same magnitude as `STALE_LIVE_ENTRY_MS` above and
+for the same reason) in the past - no real SCHEDULED/TIMED/IN_PLAY/PAUSED
+match is ever legitimately that old.
+
 ## Match stats dialog
 
 Clicking a finished match on the Results tab opens `MatchStatsDialog`:
