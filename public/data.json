@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-30T17:30:15.162Z",
+  "fetchedAt": "2026-08-30T17:42:14.118Z",
   "standings": [
     {
       "position": 1,
@@ -187,8 +187,8 @@
       "lost": 1,
       "points": 3,
       "goalsFor": 5,
-      "goalsAgainst": 3,
-      "goalDifference": 2,
+      "goalsAgainst": 4,
+      "goalDifference": 1,
       "form": null
     },
     {
@@ -224,9 +224,9 @@
       "draw": 0,
       "lost": 1,
       "points": 3,
-      "goalsFor": 3,
+      "goalsFor": 4,
       "goalsAgainst": 6,
-      "goalDifference": -3,
+      "goalDifference": -2,
       "form": null
     },
     {
@@ -384,6 +384,31 @@
   ],
   "lastResults": [
     {
+      "id": 560553,
+      "utcDate": "2026-08-30T15:30:00Z",
+      "status": "FINISHED",
+      "matchday": 2,
+      "homeTeam": {
+        "id": 66,
+        "name": "Manchester United FC",
+        "shortName": "Man United",
+        "tla": "MUN",
+        "crest": "https://crests.football-data.org/66.png"
+      },
+      "awayTeam": {
+        "id": 349,
+        "name": "Ipswich Town FC",
+        "shortName": "Ipswich Town",
+        "tla": "IPS",
+        "crest": "https://crests.football-data.org/349.png"
+      },
+      "score": {
+        "home": 5,
+        "away": 2,
+        "winner": "HOME_TEAM"
+      }
+    },
+    {
       "id": 560554,
       "utcDate": "2026-08-30T13:00:00Z",
       "status": "FINISHED",
@@ -480,31 +505,6 @@
       "score": {
         "home": 1,
         "away": 4,
-        "winner": "AWAY_TEAM"
-      }
-    },
-    {
-      "id": 560551,
-      "utcDate": "2026-08-24T19:00:00Z",
-      "status": "FINISHED",
-      "matchday": 1,
-      "homeTeam": {
-        "id": 63,
-        "name": "Fulham FC",
-        "shortName": "Fulham",
-        "tla": "FUL",
-        "crest": "https://crests.football-data.org/63.png"
-      },
-      "awayTeam": {
-        "id": 61,
-        "name": "Chelsea FC",
-        "shortName": "Chelsea",
-        "tla": "CHE",
-        "crest": "https://crests.football-data.org/61.png"
-      },
-      "score": {
-        "home": 2,
-        "away": 3,
         "winner": "AWAY_TEAM"
       }
     }

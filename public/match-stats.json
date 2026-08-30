@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-29T18:50:54.647Z",
+  "fetchedAt": "2026-08-30T17:42:21.382Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -494,6 +494,95 @@
           "player": "G. Garcia",
           "minute": 54,
           "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560553": {
+      "utcDate": "2026-08-30T15:30:00Z",
+      "homeTeamId": 66,
+      "awayTeamId": 349,
+      "stats": {
+        "66": {
+          "shots": 33,
+          "shotsOnTarget": 12,
+          "possession": 60,
+          "passes": 546,
+          "passAccuracy": 89,
+          "fouls": 7,
+          "corners": 8,
+          "offsides": 0,
+          "yellowCards": 1,
+          "redCards": null
+        },
+        "349": {
+          "shots": 9,
+          "shotsOnTarget": 5,
+          "possession": 40,
+          "passes": 359,
+          "passAccuracy": 83,
+          "fouls": 12,
+          "corners": 4,
+          "offsides": 1,
+          "yellowCards": 3,
+          "redCards": null
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 349,
+          "player": "L. Davis",
+          "minute": 29,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 66,
+          "player": "B. Fernandes",
+          "minute": 40,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 66,
+          "player": "J. Greaves",
+          "minute": 56,
+          "extraMinute": null,
+          "ownGoal": true,
+          "penalty": false
+        },
+        {
+          "teamId": 66,
+          "player": "B. Fernandes",
+          "minute": 61,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": true
+        },
+        {
+          "teamId": 66,
+          "player": "B. Fernandes",
+          "minute": 68,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 66,
+          "player": "B. Mbeumo",
+          "minute": 82,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 349,
+          "player": "C. Akpom",
+          "minute": 90,
+          "extraMinute": 1,
           "ownGoal": false,
           "penalty": false
         }
