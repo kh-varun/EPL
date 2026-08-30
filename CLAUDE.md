@@ -279,6 +279,21 @@ full time instead of waiting up to a week. It deliberately leaves
 `teams`/`headlines` untouched (squads and news don't change mid-match) and
 does not re-run the expensive per-team squad/coach fetch.
 
+**`fetchNextFixtures` must query `IN_PLAY`/`PAUSED` alongside `SCHEDULED`,
+not just `SCHEDULED`** - confirmed live as a real, currently-happening bug,
+not a theoretical edge case: a manual `update.yml` re-trigger landed while
+Man United v Ipswich was in progress, and the resulting `data.json` had
+that match in neither `nextFixtures` (no longer `SCHEDULED`) nor
+`lastResults` (not yet `FINISHED`) - `App.jsx`'s `withLiveScore` only
+overlays `live-scores.json` onto a match it can already find in one of
+those two lists, so the live match disappeared from the dashboard
+entirely until full time instead of just losing its "upcoming" framing.
+This isn't limited to a manual re-trigger - the weekly scheduled
+`update.yml` run landing mid-match on a rescheduled/midweek fixture would
+hit the exact same gap. Any future consumer of `fetchNextFixtures` should
+assume its result can include an in-progress match, not just ones that
+haven't kicked off yet.
+
 ## Match stats dialog
 
 Clicking a finished match on the Results tab opens `MatchStatsDialog`:
