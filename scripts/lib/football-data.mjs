@@ -75,8 +75,17 @@ export async function fetchLastResults(limit = 5) {
   return matches.slice(0, limit).map(mapMatch);
 }
 
+// Deliberately includes IN_PLAY/PAUSED alongside SCHEDULED - confirmed live
+// that omitting them is a real bug, not just an unlikely edge case: any full
+// refresh that lands while a match is live (this project's own manual
+// workflow_dispatch re-trigger included, not just the Wednesday schedule)
+// drops that match from both nextFixtures (no longer SCHEDULED) and
+// lastResults (not FINISHED yet) at the same time - App.jsx's withLiveScore
+// only overlays live-scores.json onto a match it can already find in one of
+// those two lists, so the currently-live match vanishes from the dashboard
+// entirely until full time instead of just losing its "next fixture" framing.
 export async function fetchNextFixtures(limit = 10) {
-  const data = await footballDataRequest("/competitions/PL/matches?status=SCHEDULED");
+  const data = await footballDataRequest("/competitions/PL/matches?status=SCHEDULED,IN_PLAY,PAUSED");
   const matches = [...(data.matches ?? [])].sort(
     (a, b) => new Date(a.utcDate) - new Date(b.utcDate),
   );

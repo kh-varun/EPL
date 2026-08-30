@@ -67,6 +67,37 @@ const MATCH_STATS_BACKFILL_ID = process.env.MATCH_STATS_BACKFILL_ID || null;
 const LOOKAHEAD_MS = 15 * 60 * 1000;
 const MAX_MATCH_WINDOW_MS = 3 * 60 * 60 * 1000;
 
+// GitHub's `schedule:` cron trigger is not reliably honored at this
+// workflow's configured 5-minute interval on this repo - confirmed live via
+// run-history gaps of several hours between consecutive live-scores.yml
+// runs. A fixed-duration window measured from "now" (MAX_MATCH_WINDOW_MS)
+// assumes a run lands at least once inside it; when a cron gap swallows a
+// match's entire kickoff-to-+3h span, the match is never queried even once,
+// so the "was live, now isn't" transition that refreshes standings/results/
+// fixtures can never fire - the fixture just sits stale in nextFixtures
+// forever (confirmed live: Chelsea v Brighton, kickoff 13:00, was still
+// listed as an upcoming TIMED fixture in data.json at 17:20 the same day,
+// well past full time, because every run in between had it just outside the
+// 3h window). A still-unresolved fixture (one refreshCoreData() hasn't yet
+// moved out of nextFixtures) has no such expiry below - it stays a
+// candidate on every run no matter how long the gap, since checking it
+// costs nothing extra (all inWindow candidates share one API call) and it
+// naturally stops being a candidate the moment a refresh confirms it
+// finished. MAX_PENDING_FIXTURE_AGE_MS is just a sanity backstop against a
+// fixture that never resolves at all (postponed with no rescheduled date
+// yet reflected in nextFixtures).
+const MAX_PENDING_FIXTURE_AGE_MS = 20 * 60 * 60 * 1000;
+
+// football-data.org's own IN_PLAY/PAUSED status filter can itself return a
+// stale entry - confirmed live: Tottenham v Newcastle (kicked off the
+// previous day) was still reported as PAUSED with a null score by
+// `/matches?status=IN_PLAY,PAUSED` more than 24h after kickoff, well after
+// the general match-data endpoint already had it as FINISHED 0-2. No real
+// Premier League match stays IN_PLAY/PAUSED anywhere near this long -
+// ignore a "live" entry this old rather than let a stale status linger in
+// live-scores.json indefinitely.
+const STALE_LIVE_ENTRY_MS = 4 * 60 * 60 * 1000;
+
 // A match that was live last run but isn't anymore has finished (or, rarely,
 // been postponed/abandoned) - either way nextFixtures/lastResults/standings
 // are now stale. Re-pull just those three from football-data.org; no need to
@@ -435,15 +466,24 @@ async function main() {
 
   const now = Date.now();
 
-  // A match that's gone IN_PLAY still sits in nextFixtures/lastResults
-  // exactly as it was at the last weekly fetch.mjs run (neither list gets
-  // live-refiltered), so check both for anything whose kickoff falls in
-  // our polling window.
-  const candidates = [...(data.nextFixtures ?? []), ...(data.lastResults ?? [])];
-  const inWindow = candidates.filter((m) => {
+  // A match that's gone IN_PLAY still sits in nextFixtures exactly as it
+  // was at the last core refresh (nextFixtures doesn't get live-refiltered)
+  // until refreshCoreData() confirms it finished and moves it into
+  // lastResults - so a nextFixtures entry whose kickoff has passed stays a
+  // candidate indefinitely (bounded only by the sanity backstop above),
+  // instead of expiring after a fixed window that assumes runs land
+  // frequently enough to catch it. lastResults entries are already
+  // resolved, so they only need the short fixed window (to catch a
+  // just-finished match's stats-backfill pass shortly after the fact).
+  const pendingFixtures = (data.nextFixtures ?? []).filter((m) => {
+    const kickoff = new Date(m.utcDate).getTime();
+    return now - kickoff >= -LOOKAHEAD_MS && now - kickoff <= MAX_PENDING_FIXTURE_AGE_MS;
+  });
+  const recentResults = (data.lastResults ?? []).filter((m) => {
     const kickoff = new Date(m.utcDate).getTime();
     return now - kickoff >= -LOOKAHEAD_MS && now - kickoff <= MAX_MATCH_WINDOW_MS;
   });
+  const inWindow = [...pendingFixtures, ...recentResults];
 
   const existing = await loadExistingLive();
 
@@ -471,6 +511,14 @@ async function main() {
 
   const matches = {};
   for (const match of liveMatches) {
+    const kickoff = new Date(match.utcDate).getTime();
+    if (now - kickoff > STALE_LIVE_ENTRY_MS) {
+      console.log(
+        `  ignoring stale live entry for ${match.homeTeam?.shortName} v ${match.awayTeam?.shortName} - ` +
+          `status ${match.status} but kickoff was ${Math.round((now - kickoff) / 3600000)}h ago`,
+      );
+      continue;
+    }
     matches[match.id] = mapLiveMatch(match);
   }
 
