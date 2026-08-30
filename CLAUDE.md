@@ -198,9 +198,8 @@ usually reachable. When you can't reproduce something locally:
 ## Live scores
 
 `fetch-live-scores.mjs` runs every 5 minutes but only makes a
-football-data.org call when some match's kickoff time falls within its
-polling window (15 min before through 3 hours after) - checked against the
-already-cached `nextFixtures`/`lastResults` in `data.json`, at zero API
+football-data.org call when some match is worth checking - checked against
+the already-cached `nextFixtures`/`lastResults` in `data.json`, at zero API
 cost, before ever hitting the network. When something's actually live, it
 queries `/matches?status=IN_PLAY,PAUSED` and writes `live-scores.json`
 keyed by match id; when nothing is, it clears the file so a finished
@@ -210,6 +209,46 @@ and the post-match tail of the window would otherwise churn `fetchedAt`
 into a commit and a full Pages deploy on every poll for no visible
 change). `MatchRow` reads `match.liveStatus` (set by `withLiveScore` in
 `App.jsx`) to swap in the red "LIVE"/"HT" badge and score pill.
+
+**GitHub's `schedule:` cron is not reliable at this workflow's 5-minute
+interval on this repo** - confirmed live via run-history gaps of several
+hours between consecutive `live-scores.yml` runs (also seen on `odds.yml`'s
+15-minute schedule) - a GitHub-side deprioritization of high-frequency cron
+on free-tier/personal repos, not a bug here. `workflow_dispatch` (manual or
+via the REST API) still runs immediately, unaffected.
+
+This made an original design assumption wrong, confirmed live: a
+`nextFixtures` candidate was only "in window" for a fixed 15-min-before to
+3-hours-after span measured from kickoff, on the assumption that some run
+would land inside that span. A large enough cron gap can swallow a match's
+*entire* window - kickoff, full 90+ minutes, and full time - between two
+runs, so the match is never queried even once and the "was live, now
+isn't" transition that refreshes `standings`/`lastResults`/`nextFixtures`
+never fires. Confirmed live: Chelsea v Brighton (13:00 kickoff) was still
+sitting in `nextFixtures` as an upcoming `TIMED` fixture in `data.json` at
+17:20 the same day - well past full time - because every run in between
+happened to land just outside the old 3-hour cutoff. Fixed by splitting
+the two candidate sources: a `nextFixtures` entry whose kickoff has passed
+stays a candidate indefinitely (bounded only by a generous
+`MAX_PENDING_FIXTURE_AGE_MS` sanity backstop, currently 20h) since checking
+it costs nothing extra and it naturally stops being a candidate the moment
+`refreshCoreData()` confirms it finished and moves it into `lastResults`;
+only `lastResults` entries (already resolved) keep the original fixed
+3-hour window, used just to catch the stats-backfill pass shortly after a
+just-finished match. Keep this distinction if this logic is touched again
+- collapsing it back to one fixed window from "now" reintroduces the bug.
+
+**football-data.org's own `/matches?status=IN_PLAY,PAUSED` filter can
+itself return a stale entry** - confirmed live in the same incident:
+Tottenham v Newcastle (kicked off the previous day) was still reported as
+`PAUSED` with a null score by that endpoint more than 24h after kickoff,
+well after the general match-data endpoint already had it as `FINISHED`
+0-2. No real Premier League match stays `IN_PLAY`/`PAUSED` anywhere near
+that long, so any "live" entry more than `STALE_LIVE_ENTRY_MS` (4h) past
+its own kickoff is now dropped rather than written to `live-scores.json` -
+this also makes the entry disappear from `existing` on the next run,
+which correctly triggers the "no longer live" refresh and self-heals the
+file instead of leaving a stale score/status stuck indefinitely.
 
 `App.jsx` keeps an open tab fresh in three layers (its `useEffect` has the
 full rationale): `live-scores.json` polled every 60s; an immediate refetch
