@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-30T23:53:17.188Z",
+  "fetchedAt": "2026-08-31T03:30:46.118Z",
   "odds": {
     "560557": {
       "eventTicker": "KXEPLGAME-26AUG31AVLARS",
@@ -54,7 +54,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 11,
+        "probability": 12,
         "ticker": "KXEPLGAME-26SEP05MCICOV-TIE"
       }
     },
@@ -77,6 +77,25 @@
         "ticker": "KXEPLGAME-26SEP05BRILEE-TIE"
       }
     },
+    "560565": {
+      "eventTicker": "KXEPLGAME-26SEP05BRESUN",
+      "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep05bresun",
+      "home": {
+        "label": "Brentford",
+        "probability": 61,
+        "ticker": "KXEPLGAME-26SEP05BRESUN-BRE"
+      },
+      "away": {
+        "label": "Sunderland",
+        "probability": 17,
+        "ticker": "KXEPLGAME-26SEP05BRESUN-SUN"
+      },
+      "draw": {
+        "label": "Draw",
+        "probability": 24,
+        "ticker": "KXEPLGAME-26SEP05BRESUN-TIE"
+      }
+    },
     "560566": {
       "eventTicker": "KXEPLGAME-26SEP04IPSLFC",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep04ipslfc",
@@ -94,6 +113,63 @@
         "label": "Draw",
         "probability": 20,
         "ticker": "KXEPLGAME-26SEP04IPSLFC-TIE"
+      }
+    },
+    "560567": {
+      "eventTicker": "KXEPLGAME-26SEP06EVEMUN",
+      "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep06evemun",
+      "home": {
+        "label": "Everton",
+        "probability": 31,
+        "ticker": "KXEPLGAME-26SEP06EVEMUN-EVE"
+      },
+      "away": {
+        "label": "Man United",
+        "probability": 42,
+        "ticker": "KXEPLGAME-26SEP06EVEMUN-MUN"
+      },
+      "draw": {
+        "label": "Draw",
+        "probability": 27,
+        "ticker": "KXEPLGAME-26SEP06EVEMUN-TIE"
+      }
+    },
+    "560568": {
+      "eventTicker": "KXEPLGAME-26SEP05FULCRY",
+      "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep05fulcry",
+      "home": {
+        "label": "Fulham",
+        "probability": 42,
+        "ticker": "KXEPLGAME-26SEP05FULCRY-FUL"
+      },
+      "away": {
+        "label": "Crystal Palace",
+        "probability": 30,
+        "ticker": "KXEPLGAME-26SEP05FULCRY-CRY"
+      },
+      "draw": {
+        "label": "Draw",
+        "probability": 29,
+        "ticker": "KXEPLGAME-26SEP05FULCRY-TIE"
+      }
+    },
+    "560569": {
+      "eventTicker": "KXEPLGAME-26SEP05HULAVL",
+      "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep05hulavl",
+      "home": {
+        "label": "Hull City",
+        "probability": 24,
+        "ticker": "KXEPLGAME-26SEP05HULAVL-HUL"
+      },
+      "away": {
+        "label": "Aston Villa",
+        "probability": 52,
+        "ticker": "KXEPLGAME-26SEP05HULAVL-AVL"
+      },
+      "draw": {
+        "label": "Draw",
+        "probability": 27,
+        "ticker": "KXEPLGAME-26SEP05HULAVL-TIE"
       }
     },
     "560571": {
