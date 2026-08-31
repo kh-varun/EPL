@@ -1,12 +1,12 @@
 {
-  "fetchedAt": "2026-08-31T03:30:46.118Z",
+  "fetchedAt": "2026-08-31T10:05:33.261Z",
   "odds": {
     "560557": {
       "eventTicker": "KXEPLGAME-26AUG31AVLARS",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26aug31avlars",
       "home": {
         "label": "Aston Villa",
-        "probability": 15,
+        "probability": 14,
         "ticker": "KXEPLGAME-26AUG31AVLARS-AVL"
       },
       "away": {
@@ -25,7 +25,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep05nfotot",
       "home": {
         "label": "Nottingham",
-        "probability": 37,
+        "probability": 38,
         "ticker": "KXEPLGAME-26SEP05NFOTOT-NFO"
       },
       "away": {
@@ -54,7 +54,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 12,
+        "probability": 11,
         "ticker": "KXEPLGAME-26SEP05MCICOV-TIE"
       }
     },
@@ -101,7 +101,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep04ipslfc",
       "home": {
         "label": "Ipswich Town",
-        "probability": 19,
+        "probability": 18,
         "ticker": "KXEPLGAME-26SEP04IPSLFC-IPS"
       },
       "away": {
@@ -111,7 +111,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 20,
+        "probability": 19,
         "ticker": "KXEPLGAME-26SEP04IPSLFC-TIE"
       }
     },
