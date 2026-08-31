@@ -536,10 +536,28 @@ async function main() {
   // finished (or, rarely, been postponed/abandoned) - either way the result/
   // table/fixture list is now stale and needs a refresh.
   const justFinished = Object.keys(existing).filter((id) => !matches[id]);
-  if (justFinished.length > 0) {
-    console.log(`${justFinished.length} match(es) no longer live - refreshing standings/results/fixtures...`);
+
+  // A pendingFixture can also finish without ever being observed live at
+  // all, if the whole kickoff-to-full-time window falls inside a single
+  // cron gap - confirmed live: Aston Villa v Arsenal (19:00 kickoff) was
+  // still sitting in nextFixtures as upcoming almost 4 hours later, because
+  // the only two runs that straddled its window landed at 18:07 (before
+  // kickoff) and 22:45 (long after full time) - `existing` was empty both
+  // times, so the "was live, now isn't" check above never had anything to
+  // compare against and never fired. Once a pendingFixture's entire
+  // MAX_MATCH_WINDOW_MS has elapsed and it's still not showing as live,
+  // it must be decided (or postponed/abandoned) - treat it the same as a
+  // just-finished transition rather than waiting on a live sighting that
+  // will now never happen.
+  const overdueIds = pendingFixtures
+    .filter((m) => now - new Date(m.utcDate).getTime() > MAX_MATCH_WINDOW_MS && !matches[m.id])
+    .map((m) => String(m.id));
+
+  const finishedIds = [...new Set([...justFinished, ...overdueIds])];
+  if (finishedIds.length > 0) {
+    console.log(`${finishedIds.length} match(es) no longer live or overdue - refreshing standings/results/fixtures...`);
     const lastResults = await refreshCoreData();
-    await fetchMatchStatsFor(lastResults.filter((m) => justFinished.includes(String(m.id))));
+    await fetchMatchStatsFor(lastResults.filter((m) => finishedIds.includes(String(m.id))));
   }
 
   if (Object.keys(matches).length === 0 && Object.keys(existing).length === 0) {

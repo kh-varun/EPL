@@ -238,6 +238,24 @@ only `lastResults` entries (already resolved) keep the original fixed
 just-finished match. Keep this distinction if this logic is touched again
 - collapsing it back to one fixed window from "now" reintroduces the bug.
 
+**Staying a candidate forever isn't enough on its own - a match can finish
+without ever being observed live at all**, if its entire kickoff-to-full-time
+window falls inside a single cron gap. Confirmed live: Aston Villa v Arsenal
+(19:00 kickoff) was still sitting in `nextFixtures` as upcoming almost 4
+hours later, because the only two runs that straddled its window landed at
+18:07 (before kickoff) and 22:45 (long after full time) - `existing` was
+empty both times, so the "was live, now isn't" transition check had nothing
+to compare against and never fired, even though the fixture had correctly
+stayed a polling candidate the whole time per the fix above. Fixed by also
+treating a `pendingFixtures` entry as needing a refresh once its own
+`MAX_MATCH_WINDOW_MS` has fully elapsed and it's still not showing up live -
+merged with the existing-based `justFinished` list before deciding whether
+to call `refreshCoreData()`. The two failure modes are independent and both
+still need their own fix: the candidate-expiry fix (above) ensures a match
+is still *checked*; this one ensures a check that finds nothing live still
+*acts* on a fixture that's clearly overdue, instead of only acting on an
+observed live-to-not-live transition.
+
 **football-data.org's own `/matches?status=IN_PLAY,PAUSED` filter can
 itself return a stale entry** - confirmed live in the same incident:
 Tottenham v Newcastle (kicked off the previous day) was still reported as
