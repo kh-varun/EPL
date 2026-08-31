@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-30T17:42:21.382Z",
+  "fetchedAt": "2026-08-31T23:26:53.619Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -655,6 +655,47 @@
           "teamId": 65,
           "player": "E. Haaland",
           "minute": 84,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560557": {
+      "utcDate": "2026-08-31T19:00:00Z",
+      "homeTeamId": 58,
+      "awayTeamId": 57,
+      "stats": {
+        "57": {
+          "shots": 7,
+          "shotsOnTarget": 2,
+          "possession": 61,
+          "passes": 528,
+          "passAccuracy": 88,
+          "fouls": 6,
+          "corners": 4,
+          "offsides": 8,
+          "yellowCards": 1,
+          "redCards": null
+        },
+        "58": {
+          "shots": 7,
+          "shotsOnTarget": 0,
+          "possession": 39,
+          "passes": 337,
+          "passAccuracy": 81,
+          "fouls": 17,
+          "corners": 2,
+          "offsides": 0,
+          "yellowCards": 3,
+          "redCards": null
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 57,
+          "player": "B. Saka",
+          "minute": 59,
           "extraMinute": null,
           "ownGoal": false,
           "penalty": false
