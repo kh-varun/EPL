@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-30T17:42:14.118Z",
+  "fetchedAt": "2026-08-31T01:04:33.903Z",
   "standings": [
     {
       "position": 1,
@@ -484,114 +484,9 @@
       }
     },
     {
-      "id": 560555,
-      "utcDate": "2026-08-28T19:00:00Z",
-      "status": "FINISHED",
-      "matchday": 2,
-      "homeTeam": {
-        "id": 354,
-        "name": "Crystal Palace FC",
-        "shortName": "Crystal Palace",
-        "tla": "CRY",
-        "crest": "https://crests.football-data.org/354.png"
-      },
-      "awayTeam": {
-        "id": 65,
-        "name": "Manchester City FC",
-        "shortName": "Man City",
-        "tla": "MCI",
-        "crest": "https://crests.football-data.org/65.png"
-      },
-      "score": {
-        "home": 1,
-        "away": 4,
-        "winner": "AWAY_TEAM"
-      }
-    }
-  ],
-  "nextFixtures": [
-    {
-      "id": 560552,
-      "utcDate": "2026-08-29T11:30:00Z",
-      "status": "TIMED",
-      "matchday": 2,
-      "homeTeam": {
-        "id": 64,
-        "name": "Liverpool FC",
-        "shortName": "Liverpool",
-        "tla": "LIV",
-        "crest": "https://crests.football-data.org/64.png"
-      },
-      "awayTeam": {
-        "id": 351,
-        "name": "Nottingham Forest FC",
-        "shortName": "Nottingham",
-        "tla": "NOT",
-        "crest": "https://crests.football-data.org/351.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": "USA Network"
-    },
-    {
-      "id": 560560,
-      "utcDate": "2026-08-29T14:00:00Z",
-      "status": "TIMED",
-      "matchday": 2,
-      "homeTeam": {
-        "id": 1044,
-        "name": "AFC Bournemouth",
-        "shortName": "Bournemouth",
-        "tla": "BOU",
-        "crest": "https://crests.football-data.org/bournemouth.png"
-      },
-      "awayTeam": {
-        "id": 62,
-        "name": "Everton FC",
-        "shortName": "Everton",
-        "tla": "EVE",
-        "crest": "https://crests.football-data.org/62.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": "Peacock"
-    },
-    {
-      "id": 560561,
-      "utcDate": "2026-08-29T14:00:00Z",
-      "status": "TIMED",
-      "matchday": 2,
-      "homeTeam": {
-        "id": 1076,
-        "name": "Coventry City FC",
-        "shortName": "Coventry City",
-        "tla": "COV",
-        "crest": "https://crests.football-data.org/1076.png"
-      },
-      "awayTeam": {
-        "id": 322,
-        "name": "Hull City AFC",
-        "shortName": "Hull City",
-        "tla": "HUL",
-        "crest": "https://crests.football-data.org/322.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": "USA Network"
-    },
-    {
       "id": 560558,
       "utcDate": "2026-08-29T16:30:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 2,
       "homeTeam": {
         "id": 73,
@@ -608,12 +503,13 @@
         "crest": "https://crests.football-data.org/67.png"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": "NBC"
-    },
+        "home": 0,
+        "away": 2,
+        "winner": "AWAY_TEAM"
+      }
+    }
+  ],
+  "nextFixtures": [
     {
       "id": 560557,
       "utcDate": "2026-08-31T19:00:00Z",
@@ -769,143 +665,240 @@
         "winner": null
       },
       "broadcast": "Peacock"
+    },
+    {
+      "id": 560565,
+      "utcDate": "2026-09-05T14:00:00Z",
+      "status": "TIMED",
+      "matchday": 3,
+      "homeTeam": {
+        "id": 402,
+        "name": "Brentford FC",
+        "shortName": "Brentford",
+        "tla": "BRE",
+        "crest": "https://crests.football-data.org/402.png"
+      },
+      "awayTeam": {
+        "id": 71,
+        "name": "Sunderland AFC",
+        "shortName": "Sunderland",
+        "tla": "SUN",
+        "crest": "https://crests.football-data.org/71.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": "Peacock"
+    },
+    {
+      "id": 560568,
+      "utcDate": "2026-09-05T14:00:00Z",
+      "status": "TIMED",
+      "matchday": 3,
+      "homeTeam": {
+        "id": 63,
+        "name": "Fulham FC",
+        "shortName": "Fulham",
+        "tla": "FUL",
+        "crest": "https://crests.football-data.org/63.png"
+      },
+      "awayTeam": {
+        "id": 354,
+        "name": "Crystal Palace FC",
+        "shortName": "Crystal Palace",
+        "tla": "CRY",
+        "crest": "https://crests.football-data.org/354.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": "Peacock"
+    },
+    {
+      "id": 560569,
+      "utcDate": "2026-09-05T16:30:00Z",
+      "status": "TIMED",
+      "matchday": 3,
+      "homeTeam": {
+        "id": 322,
+        "name": "Hull City AFC",
+        "shortName": "Hull City",
+        "tla": "HUL",
+        "crest": "https://crests.football-data.org/322.png"
+      },
+      "awayTeam": {
+        "id": 58,
+        "name": "Aston Villa FC",
+        "shortName": "Aston Villa",
+        "tla": "AVL",
+        "crest": "https://crests.football-data.org/58.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": "NBC"
+    },
+    {
+      "id": 560567,
+      "utcDate": "2026-09-06T13:00:00Z",
+      "status": "TIMED",
+      "matchday": 3,
+      "homeTeam": {
+        "id": 62,
+        "name": "Everton FC",
+        "shortName": "Everton",
+        "tla": "EVE",
+        "crest": "https://crests.football-data.org/62.png"
+      },
+      "awayTeam": {
+        "id": 66,
+        "name": "Manchester United FC",
+        "shortName": "Man United",
+        "tla": "MUN",
+        "crest": "https://crests.football-data.org/66.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": "USA Network"
     }
   ],
   "headlines": [
     {
-      "title": "Manchester United v Ipswich Town: Premier League – live",
-      "link": "https://www.theguardian.com/football/live/2026/aug/30/manchester-united-v-ipswich-town-premier-league-live",
-      "pubDate": "Sun, 30 Aug 2026 17:19:01 GMT",
-      "image": "https://i.guim.co.uk/img/media/bbad9a398ae149e9706811a42588da3f99746ac8/678_332_2231_1784/master/2231.jpg?width=460&quality=85&auto=format&fit=max&s=f52b0d46750a22893656ecfc7a75be4a",
-      "source": "The Guardian",
+      "title": "Given credits Farke's second-half tactical shift in Brentford draw",
+      "link": "https://www.bbc.co.uk/sport/football/videos/c770rlyx817o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Sun, 30 Aug 2026 23:09:18 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8f96/live/719838b0-a4c5-11f1-a291-b542ee92de7c.jpg",
+      "source": "BBC Sport",
       "teams": [
-        66,
-        349
+        402
       ]
     },
     {
-      "title": "Watkins completes £51m move to Saudi side Al-Hilal",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c70le5gllyeo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Sun, 30 Aug 2026 17:12:52 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/454d/live/9bb600a0-a493-11f1-8395-fb1eae51ae18.jpg",
-      "source": "BBC Sport",
+      "title": "Women’s Super League 2026-27 preview No 10: London City Lionesses",
+      "link": "https://www.theguardian.com/football/2026/aug/31/womens-super-league-2026-27-preview-no-10-london-city-lionesses",
+      "pubDate": "Sun, 30 Aug 2026 23:01:08 GMT",
+      "image": "https://i.guim.co.uk/img/media/04b9671c213c8f28cdbfc1947a74e5365ed2fa25/1028_252_3129_2504/master/3129.jpg?width=460&quality=85&auto=format&fit=max&s=cb2cd27eb9a9c7c9d2042121792a1a10",
+      "source": "The Guardian",
       "teams": []
     },
     {
-      "title": "Why Chelsea need more than a new goalkeeper to be title challengers",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwyzpez3x3go?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Sun, 30 Aug 2026 17:12:39 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7c36/live/afabb460-a484-11f1-bed8-470734b5b662.jpg",
+      "title": "Can Chelsea win the league with three at the back? - Given's verdict",
+      "link": "https://www.bbc.co.uk/sport/football/videos/cwyz17d1vy9o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Sun, 30 Aug 2026 22:59:49 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b0b7/live/22b9c020-a4c4-11f1-aed2-8d6da8d75094.jpg",
       "source": "BBC Sport",
       "teams": [
         61
       ]
     },
     {
-      "title": "All done deals in August 2026",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c9v4d2z2p7yo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Sun, 30 Aug 2026 17:11:42 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/aec0/live/fd14b290-e25e-11ef-a819-277e390a7a08.jpg",
+      "title": "MOTD pundits debate controversial own goal in Man Utd victory",
+      "link": "https://www.bbc.co.uk/sport/football/videos/cp93xrk5k5xo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Sun, 30 Aug 2026 22:47:53 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7e1b/live/20ded080-a4c2-11f1-aed2-8d6da8d75094.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "Transfer roundup: Ollie Watkins completes move to Al-Hilal from Aston Villa",
-      "link": "https://www.theguardian.com/football/2026/aug/30/transfer-roundup-ollie-watkins-al-hilal-aston-villa",
-      "pubDate": "Sun, 30 Aug 2026 16:46:29 GMT",
-      "image": "https://i.guim.co.uk/img/media/9875b878c7968ebee7277b14a0e5dabe42447744/1148_601_1929_1543/master/1929.jpg?width=460&quality=85&auto=format&fit=max&s=ee84db0d85cdfa8f86b0c03cd61f600d",
-      "source": "The Guardian",
-      "teams": [
-        58
-      ]
-    },
-    {
-      "title": "Is 'bitty' Pittodrie win turning point for McInnes and Rangers?",
-      "link": "https://www.bbc.co.uk/sport/football/articles/ckgwz6g45lpo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Sun, 30 Aug 2026 16:38:50 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/adc9/live/61ef5b60-a488-11f1-8395-fb1eae51ae18.jpg",
+      "title": "'He's on it all the time' - White praises 'unbelievable' Fernandes",
+      "link": "https://www.bbc.co.uk/sport/football/videos/cy4zmlrrpxxo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Sun, 30 Aug 2026 22:37:24 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a037/live/41f7ac70-a4c1-11f1-aed2-8d6da8d75094.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "'A hard but precious point' - Farke praises Leeds character",
-      "link": "https://www.bbc.co.uk/sport/football/videos/cx2zvzpdyjdo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Sun, 30 Aug 2026 16:37:47 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9d19/live/11e42d30-a488-11f1-aed2-8d6da8d75094.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Alonso praises Joao Pedro's 'desire' after seven-goal Brighton thriller",
-      "link": "https://www.bbc.co.uk/sport/football/videos/cpq09095xjzo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Sun, 30 Aug 2026 16:37:02 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/065e/live/ace419d0-a48d-11f1-a291-b542ee92de7c.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Scottish Premiership: Shankland on the spot to ease pressure on McInnes and Rangers",
-      "link": "https://www.theguardian.com/football/2026/aug/29/scottish-premiership-celtic-hearts-rangers-aberdeen",
-      "pubDate": "Sun, 30 Aug 2026 16:31:12 GMT",
-      "image": "https://i.guim.co.uk/img/media/1471628e02327000bc9dcb01161170c474dc0581/458_450_6897_5520/master/6897.jpg?width=460&quality=85&auto=format&fit=max&s=9565f1fe2dbf421515b452a7b2c58ca3",
+      "title": "Mikel Arteta ‘begging’ Premier League to expand 20-man matchday squads",
+      "link": "https://www.theguardian.com/football/2026/aug/30/mikel-arteta-premier-league-matchday-squad-player-welfare-arsenal",
+      "pubDate": "Sun, 30 Aug 2026 21:30:06 GMT",
+      "image": "https://i.guim.co.uk/img/media/ba51ac6c1860ec8cb44650b68345da405eee922d/531_184_1733_1386/master/1733.jpg?width=460&quality=85&auto=format&fit=max&s=3b5839b3e466b6a05b1e2c6f2304772e",
       "source": "The Guardian",
       "teams": []
     },
     {
-      "title": "Man Utd pay tribute to 'proud Red' officer who died in A66 crash",
-      "link": "https://www.bbc.co.uk/sport/football/articles/ckg8x0ex8gno?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Sun, 30 Aug 2026 16:30:05 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/969c/live/419ac790-a48e-11f1-8395-fb1eae51ae18.jpg",
+      "title": "European football: Bellingham sparks Real Madrid’s cruise to maintain perfect start",
+      "link": "https://www.theguardian.com/football/2026/aug/30/european-football-real-madrid-malaga-napoli-como-inter",
+      "pubDate": "Sun, 30 Aug 2026 21:19:56 GMT",
+      "image": "https://i.guim.co.uk/img/media/7fff533acad60866596499dc5732263eb059be25/488_241_1927_1543/master/1927.jpg?width=460&quality=85&auto=format&fit=max&s=480fec4dccbee7b4a59336576cffccb9",
+      "source": "The Guardian",
+      "teams": []
+    },
+    {
+      "title": "Tottenham enquire about Pulisic - Monday's gossip",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c89jxnelpywo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Sun, 30 Aug 2026 20:59:21 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ad6f/live/6dc27a90-a4af-11f1-b109-879e35c24276.png",
+      "source": "BBC Sport",
+      "teams": [
+        73
+      ]
+    },
+    {
+      "title": "Football Daily",
+      "link": "https://www.bbc.co.uk/sounds/play/m003123c?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Sun, 30 Aug 2026 20:10:00 GMT",
+      "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0p74hnw.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "Chelsea had the 'quality to punish us' - Hurzeler",
-      "link": "https://www.bbc.co.uk/sport/football/videos/c0lrgrzjnpxo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Sun, 30 Aug 2026 16:29:56 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/738a/live/68eedcd0-a48b-11f1-b109-879e35c24276.jpg",
-      "source": "BBC Sport",
-      "teams": [
-        61
-      ]
-    },
-    {
-      "title": "'Never underestimate Daniel'- Andrews hails Farke after Leeds comeback",
-      "link": "https://www.bbc.co.uk/sport/football/videos/cy9zqzd0vvzo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Sun, 30 Aug 2026 16:23:30 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2b49/live/a56e2550-a489-11f1-a291-b542ee92de7c.jpg",
+      "title": "A new Man Utd era - but Fernandes still sets the standard",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cpwl248p5vgo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Sun, 30 Aug 2026 20:04:26 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3f3a/live/69c52ee0-a4a7-11f1-b109-879e35c24276.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "'A new chapter to write' - Le Bris on Sunderland victory",
-      "link": "https://www.bbc.co.uk/sport/football/videos/cvgyxy18d03o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Sun, 30 Aug 2026 16:15:08 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/06ee/live/ef5ef000-a488-11f1-b109-879e35c24276.jpg",
+      "title": "'It doesn't feel like a goal' - O'Neil questions law after 'blatant' Maguire handball",
+      "link": "https://www.bbc.co.uk/sport/football/videos/cwyzxz0yvz0o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Sun, 30 Aug 2026 20:01:40 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/96e2/live/7e31e660-a4a3-11f1-aed2-8d6da8d75094.jpg",
       "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Marcus Rashford’s Manchester United return feels like a marriage of convenience | Will Unwin",
+      "link": "https://www.theguardian.com/football/2026/aug/30/marcus-rashford-manchester-united-return-old-trafford",
+      "pubDate": "Sun, 30 Aug 2026 19:45:41 GMT",
+      "image": "https://i.guim.co.uk/img/media/e58b1e9f48e081de436e32c65d62e943e8cfcc32/202_0_4100_3281/master/4100.jpg?width=460&quality=85&auto=format&fit=max&s=c08788fe25c4ffdabb30271b6f73c512",
+      "source": "The Guardian",
       "teams": [
-        71
+        66
       ]
     },
     {
-      "title": "Barcelona close to deal for Arsenal's Jesus",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c9qr79jr1qqo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Sun, 30 Aug 2026 16:01:28 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/46bd/live/0cb9e950-a477-11f1-bed8-470734b5b662.jpg",
+      "title": "Carrick 'really pleased' as Fernandes hat-trick sparks Man Utd comeback",
+      "link": "https://www.bbc.co.uk/sport/football/videos/c05rprn1ld1o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Sun, 30 Aug 2026 19:41:31 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5283/live/76553970-a4a2-11f1-b109-879e35c24276.jpg",
       "source": "BBC Sport",
-      "teams": [
-        57
-      ]
+      "teams": []
     },
     {
-      "title": "Fulham must improve 'energy and attitude' - Arbeloa",
-      "link": "https://www.bbc.co.uk/sport/football/videos/cwyzdzqj997o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Sun, 30 Aug 2026 15:54:41 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0c8c/live/e07d14f0-a487-11f1-a291-b542ee92de7c.jpg",
+      "title": "Watch: Sportscene - Sunday's Scottish Premiership highlights",
+      "link": "https://www.bbc.co.uk/iplayer/episode/m00312t8?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Sun, 30 Aug 2026 19:15:44 GMT",
+      "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0p73m2j.jpg",
       "source": "BBC Sport",
-      "teams": [
-        63
-      ]
+      "teams": []
+    },
+    {
+      "title": "Fernandes hat-trick inspires five-goal Man Utd comeback against Ipswich",
+      "link": "https://www.bbc.co.uk/sport/football/videos/cy0z9e5g209o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Sun, 30 Aug 2026 19:08:36 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9ddb/live/e3eae550-a4a4-11f1-aed2-8d6da8d75094.jpg",
+      "source": "BBC Sport",
+      "teams": []
     }
   ],
   "teams": {
