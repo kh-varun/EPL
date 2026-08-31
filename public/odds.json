@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-31T10:05:33.261Z",
+  "fetchedAt": "2026-08-31T17:37:17.546Z",
   "odds": {
     "560557": {
       "eventTicker": "KXEPLGAME-26AUG31AVLARS",
@@ -16,7 +16,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 22,
+        "probability": 21,
         "ticker": "KXEPLGAME-26AUG31AVLARS-TIE"
       }
     },
@@ -111,7 +111,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 19,
+        "probability": 20,
         "ticker": "KXEPLGAME-26SEP04IPSLFC-TIE"
       }
     },
@@ -120,12 +120,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep06evemun",
       "home": {
         "label": "Everton",
-        "probability": 31,
+        "probability": 30,
         "ticker": "KXEPLGAME-26SEP06EVEMUN-EVE"
       },
       "away": {
         "label": "Man United",
-        "probability": 42,
+        "probability": 43,
         "ticker": "KXEPLGAME-26SEP06EVEMUN-MUN"
       },
       "draw": {
@@ -149,7 +149,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 29,
+        "probability": 28,
         "ticker": "KXEPLGAME-26SEP05FULCRY-TIE"
       }
     },
@@ -158,7 +158,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep05hulavl",
       "home": {
         "label": "Hull City",
-        "probability": 24,
+        "probability": 23,
         "ticker": "KXEPLGAME-26SEP05HULAVL-HUL"
       },
       "away": {
