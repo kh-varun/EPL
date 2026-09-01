@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-01T16:39:12.892Z",
+  "fetchedAt": "2026-09-01T19:36:31.756Z",
   "odds": {
     "560562": {
       "eventTicker": "KXEPLGAME-26SEP05NFOTOT",
@@ -68,7 +68,7 @@
       },
       "away": {
         "label": "Sunderland",
-        "probability": 15,
+        "probability": 16,
         "ticker": "KXEPLGAME-26SEP05BRESUN-SUN"
       },
       "draw": {
@@ -168,7 +168,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 24,
+        "probability": 26,
         "ticker": "KXEPLGAME-26SEP06ARSCFC-TIE"
       }
     },
@@ -182,7 +182,7 @@
       },
       "away": {
         "label": "Bournemouth",
-        "probability": 31,
+        "probability": 30,
         "ticker": "KXEPLGAME-26SEP05NEWBOU-BOU"
       },
       "draw": {
