@@ -1,6 +1,6 @@
 import { formatMatchDateTime } from "../lib/format.js";
 
-function TeamColumn({ team, onSelectTeam }) {
+function TeamColumn({ team, position, onSelectTeam }) {
   return (
     <button
       type="button"
@@ -11,8 +11,15 @@ function TeamColumn({ team, onSelectTeam }) {
       className="flex flex-1 min-w-0 flex-col items-center gap-1.5 text-center"
     >
       <img src={team.crest} alt="" className="h-10 w-10 shrink-0" loading="lazy" />
-      <span className="truncate max-w-full text-xs font-semibold text-white underline decoration-white/20">
-        {team.shortName}
+      <span className="flex items-center gap-1 min-w-0 max-w-full">
+        {position != null && (
+          <span className="shrink-0 text-[10px] font-bold text-white/40 tabular-nums">
+            {position}
+          </span>
+        )}
+        <span className="truncate text-xs font-semibold text-white underline decoration-white/20">
+          {team.shortName}
+        </span>
       </span>
     </button>
   );
@@ -42,7 +49,7 @@ const LIVE_STATUS_LABELS = {
   PAUSED: "HT",
 };
 
-export default function MatchRow({ match, showScore, onSelectTeam, onSelectMatch, odds }) {
+export default function MatchRow({ match, showScore, positions, onSelectTeam, onSelectMatch, odds }) {
   const isLive = Boolean(match.liveStatus);
   const hasScore = showScore && match.score.home !== null && match.score.away !== null;
   const homeWon = !isLive && hasScore && match.score.home > match.score.away;
@@ -80,7 +87,11 @@ export default function MatchRow({ match, showScore, onSelectTeam, onSelectMatch
       )}
 
       <div className="flex items-center gap-2">
-        <TeamColumn team={match.homeTeam} onSelectTeam={onSelectTeam} />
+        <TeamColumn
+          team={match.homeTeam}
+          position={positions?.[match.homeTeam.id]}
+          onSelectTeam={onSelectTeam}
+        />
 
         <div className="shrink-0 flex flex-col items-center justify-center px-1">
           {hasScore ? (
@@ -101,7 +112,11 @@ export default function MatchRow({ match, showScore, onSelectTeam, onSelectMatch
           )}
         </div>
 
-        <TeamColumn team={match.awayTeam} onSelectTeam={onSelectTeam} />
+        <TeamColumn
+          team={match.awayTeam}
+          position={positions?.[match.awayTeam.id]}
+          onSelectTeam={onSelectTeam}
+        />
       </div>
 
       {clickable && !hasScore && <OddsPreview odds={odds} />}

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import LastUpdated from "./components/LastUpdated.jsx";
 import Section from "./components/Section.jsx";
 import TabBar from "./components/TabBar.jsx";
@@ -38,6 +38,14 @@ export default function App() {
   const [selectedTeam, setSelectedTeam] = useState(null);
   const [selectedMatch, setSelectedMatch] = useState(null);
   const [selectedStatsMatch, setSelectedStatsMatch] = useState(null);
+
+  const positionByTeamId = useMemo(() => {
+    const map = {};
+    for (const row of data?.standings ?? []) {
+      map[row.team.id] = row.position;
+    }
+    return map;
+  }, [data?.standings]);
 
   useEffect(() => {
     // Resolves null on any failure - the optional files may simply not
@@ -175,6 +183,7 @@ export default function App() {
                       key={match.id}
                       match={liveMatch}
                       showScore={Boolean(liveMatch.liveStatus)}
+                      positions={positionByTeamId}
                       onSelectTeam={setSelectedTeam}
                       onSelectMatch={liveMatch.liveStatus ? undefined : setSelectedMatch}
                       odds={odds?.odds?.[match.id]}
@@ -199,6 +208,7 @@ export default function App() {
                       key={match.id}
                       match={liveMatch}
                       showScore={true}
+                      positions={positionByTeamId}
                       onSelectTeam={setSelectedTeam}
                       onSelectMatch={liveMatch.liveStatus ? undefined : setSelectedStatsMatch}
                     />
