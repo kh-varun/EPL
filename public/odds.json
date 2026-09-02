@@ -1,12 +1,12 @@
 {
-  "fetchedAt": "2026-09-02T17:22:44.124Z",
+  "fetchedAt": "2026-09-02T19:58:46.731Z",
   "odds": {
     "560562": {
       "eventTicker": "KXEPLGAME-26SEP05NFOTOT",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep05nfotot",
       "home": {
         "label": "Nottingham",
-        "probability": 38,
+        "probability": 39,
         "ticker": "KXEPLGAME-26SEP05NFOTOT-NFO"
       },
       "away": {
@@ -144,7 +144,7 @@
       },
       "away": {
         "label": "Aston Villa",
-        "probability": 51,
+        "probability": 50,
         "ticker": "KXEPLGAME-26SEP05HULAVL-AVL"
       },
       "draw": {
@@ -177,7 +177,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep05newbou",
       "home": {
         "label": "Newcastle",
-        "probability": 45,
+        "probability": 46,
         "ticker": "KXEPLGAME-26SEP05NEWBOU-NEW"
       },
       "away": {
