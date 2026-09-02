@@ -1,12 +1,12 @@
 {
-  "fetchedAt": "2026-09-02T04:38:04.033Z",
+  "fetchedAt": "2026-09-02T09:03:16.977Z",
   "odds": {
     "560562": {
       "eventTicker": "KXEPLGAME-26SEP05NFOTOT",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep05nfotot",
       "home": {
         "label": "Nottingham",
-        "probability": 38,
+        "probability": 39,
         "ticker": "KXEPLGAME-26SEP05NFOTOT-NFO"
       },
       "away": {
@@ -30,7 +30,7 @@
       },
       "away": {
         "label": "Coventry City",
-        "probability": 7,
+        "probability": 6,
         "ticker": "KXEPLGAME-26SEP05MCICOV-COV"
       },
       "draw": {
@@ -44,7 +44,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep05brilee",
       "home": {
         "label": "Brighton Hove",
-        "probability": 53,
+        "probability": 52,
         "ticker": "KXEPLGAME-26SEP05BRILEE-BRI"
       },
       "away": {
@@ -68,7 +68,7 @@
       },
       "away": {
         "label": "Sunderland",
-        "probability": 16,
+        "probability": 17,
         "ticker": "KXEPLGAME-26SEP05BRESUN-SUN"
       },
       "draw": {
@@ -111,7 +111,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 27,
+        "probability": 26,
         "ticker": "KXEPLGAME-26SEP06EVEMUN-TIE"
       }
     },
@@ -158,12 +158,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep06arscfc",
       "home": {
         "label": "Arsenal",
-        "probability": 58,
+        "probability": 57,
         "ticker": "KXEPLGAME-26SEP06ARSCFC-ARS"
       },
       "away": {
         "label": "Chelsea",
-        "probability": 20,
+        "probability": 19,
         "ticker": "KXEPLGAME-26SEP06ARSCFC-CFC"
       },
       "draw": {
@@ -182,7 +182,7 @@
       },
       "away": {
         "label": "Bournemouth",
-        "probability": 29,
+        "probability": 30,
         "ticker": "KXEPLGAME-26SEP05NEWBOU-BOU"
       },
       "draw": {
