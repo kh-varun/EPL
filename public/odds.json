@@ -1,17 +1,17 @@
 {
-  "fetchedAt": "2026-09-03T05:05:04.986Z",
+  "fetchedAt": "2026-09-03T09:48:43.144Z",
   "odds": {
     "560562": {
       "eventTicker": "KXEPLGAME-26SEP05NFOTOT",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep05nfotot",
       "home": {
         "label": "Nottingham",
-        "probability": 39,
+        "probability": 40,
         "ticker": "KXEPLGAME-26SEP05NFOTOT-NFO"
       },
       "away": {
         "label": "Tottenham",
-        "probability": 34,
+        "probability": 35,
         "ticker": "KXEPLGAME-26SEP05NFOTOT-TOT"
       },
       "draw": {
@@ -73,7 +73,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 24,
+        "probability": 23,
         "ticker": "KXEPLGAME-26SEP05BRESUN-TIE"
       }
     },
@@ -106,7 +106,7 @@
       },
       "away": {
         "label": "Man United",
-        "probability": 45,
+        "probability": 46,
         "ticker": "KXEPLGAME-26SEP06EVEMUN-MUN"
       },
       "draw": {
