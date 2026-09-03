@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-03T20:28:29.997Z",
+  "fetchedAt": "2026-09-03T22:47:38.508Z",
   "odds": {
     "560562": {
       "eventTicker": "KXEPLGAME-26SEP05NFOTOT",
@@ -68,7 +68,7 @@
       },
       "away": {
         "label": "Sunderland",
-        "probability": 16,
+        "probability": 17,
         "ticker": "KXEPLGAME-26SEP05BRESUN-SUN"
       },
       "draw": {
@@ -82,7 +82,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep04ipslfc",
       "home": {
         "label": "Ipswich Town",
-        "probability": 15,
+        "probability": 16,
         "ticker": "KXEPLGAME-26SEP04IPSLFC-IPS"
       },
       "away": {
@@ -144,12 +144,12 @@
       },
       "away": {
         "label": "Aston Villa",
-        "probability": 51,
+        "probability": 52,
         "ticker": "KXEPLGAME-26SEP05HULAVL-AVL"
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 27,
         "ticker": "KXEPLGAME-26SEP05HULAVL-TIE"
       }
     },
@@ -163,7 +163,7 @@
       },
       "away": {
         "label": "Chelsea",
-        "probability": 19,
+        "probability": 20,
         "ticker": "KXEPLGAME-26SEP06ARSCFC-CFC"
       },
       "draw": {
@@ -182,7 +182,7 @@
       },
       "away": {
         "label": "Bournemouth",
-        "probability": 28,
+        "probability": 29,
         "ticker": "KXEPLGAME-26SEP05NEWBOU-BOU"
       },
       "draw": {
