@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-02T22:30:28.360Z",
+  "fetchedAt": "2026-09-03T00:40:36.571Z",
   "odds": {
     "560562": {
       "eventTicker": "KXEPLGAME-26SEP05NFOTOT",
@@ -11,7 +11,7 @@
       },
       "away": {
         "label": "Tottenham",
-        "probability": 35,
+        "probability": 34,
         "ticker": "KXEPLGAME-26SEP05NFOTOT-TOT"
       },
       "draw": {
@@ -35,7 +35,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 10,
+        "probability": 11,
         "ticker": "KXEPLGAME-26SEP05MCICOV-TIE"
       }
     },
@@ -92,7 +92,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 19,
+        "probability": 20,
         "ticker": "KXEPLGAME-26SEP04IPSLFC-TIE"
       }
     },
@@ -101,12 +101,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep06evemun",
       "home": {
         "label": "Everton",
-        "probability": 29,
+        "probability": 30,
         "ticker": "KXEPLGAME-26SEP06EVEMUN-EVE"
       },
       "away": {
         "label": "Man United",
-        "probability": 44,
+        "probability": 45,
         "ticker": "KXEPLGAME-26SEP06EVEMUN-MUN"
       },
       "draw": {
@@ -125,7 +125,7 @@
       },
       "away": {
         "label": "Crystal Palace",
-        "probability": 31,
+        "probability": 30,
         "ticker": "KXEPLGAME-26SEP05FULCRY-CRY"
       },
       "draw": {
