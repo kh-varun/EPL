@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-03T14:06:54.252Z",
+  "fetchedAt": "2026-09-03T17:51:11.907Z",
   "odds": {
     "560562": {
       "eventTicker": "KXEPLGAME-26SEP05NFOTOT",
@@ -44,7 +44,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep05brilee",
       "home": {
         "label": "Brighton Hove",
-        "probability": 51,
+        "probability": 50,
         "ticker": "KXEPLGAME-26SEP05BRILEE-BRI"
       },
       "away": {
@@ -68,7 +68,7 @@
       },
       "away": {
         "label": "Sunderland",
-        "probability": 16,
+        "probability": 17,
         "ticker": "KXEPLGAME-26SEP05BRESUN-SUN"
       },
       "draw": {
@@ -130,7 +130,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 29,
+        "probability": 28,
         "ticker": "KXEPLGAME-26SEP05FULCRY-TIE"
       }
     },
@@ -163,7 +163,7 @@
       },
       "away": {
         "label": "Chelsea",
-        "probability": 19,
+        "probability": 20,
         "ticker": "KXEPLGAME-26SEP06ARSCFC-CFC"
       },
       "draw": {
