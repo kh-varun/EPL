@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-03T00:40:36.571Z",
+  "fetchedAt": "2026-09-03T05:05:04.986Z",
   "odds": {
     "560562": {
       "eventTicker": "KXEPLGAME-26SEP05NFOTOT",
@@ -125,7 +125,7 @@
       },
       "away": {
         "label": "Crystal Palace",
-        "probability": 30,
+        "probability": 31,
         "ticker": "KXEPLGAME-26SEP05FULCRY-CRY"
       },
       "draw": {
