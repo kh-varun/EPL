@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-03T17:51:11.907Z",
+  "fetchedAt": "2026-09-03T20:28:29.997Z",
   "odds": {
     "560562": {
       "eventTicker": "KXEPLGAME-26SEP05NFOTOT",
@@ -68,7 +68,7 @@
       },
       "away": {
         "label": "Sunderland",
-        "probability": 17,
+        "probability": 16,
         "ticker": "KXEPLGAME-26SEP05BRESUN-SUN"
       },
       "draw": {
@@ -82,12 +82,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep04ipslfc",
       "home": {
         "label": "Ipswich Town",
-        "probability": 17,
+        "probability": 15,
         "ticker": "KXEPLGAME-26SEP04IPSLFC-IPS"
       },
       "away": {
         "label": "Liverpool",
-        "probability": 65,
+        "probability": 66,
         "ticker": "KXEPLGAME-26SEP04IPSLFC-LFC"
       },
       "draw": {
@@ -120,17 +120,17 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep05fulcry",
       "home": {
         "label": "Fulham",
-        "probability": 42,
+        "probability": 43,
         "ticker": "KXEPLGAME-26SEP05FULCRY-FUL"
       },
       "away": {
         "label": "Crystal Palace",
-        "probability": 31,
+        "probability": 30,
         "ticker": "KXEPLGAME-26SEP05FULCRY-CRY"
       },
       "draw": {
         "label": "Draw",
-        "probability": 28,
+        "probability": 29,
         "ticker": "KXEPLGAME-26SEP05FULCRY-TIE"
       }
     },
@@ -149,7 +149,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 27,
+        "probability": 26,
         "ticker": "KXEPLGAME-26SEP05HULAVL-TIE"
       }
     },
@@ -163,7 +163,7 @@
       },
       "away": {
         "label": "Chelsea",
-        "probability": 20,
+        "probability": 19,
         "ticker": "KXEPLGAME-26SEP06ARSCFC-CFC"
       },
       "draw": {
@@ -182,7 +182,7 @@
       },
       "away": {
         "label": "Bournemouth",
-        "probability": 29,
+        "probability": 28,
         "ticker": "KXEPLGAME-26SEP05NEWBOU-BOU"
       },
       "draw": {
