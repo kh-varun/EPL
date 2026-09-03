@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-03T09:48:43.144Z",
+  "fetchedAt": "2026-09-03T14:06:54.252Z",
   "odds": {
     "560562": {
       "eventTicker": "KXEPLGAME-26SEP05NFOTOT",
@@ -44,17 +44,17 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep05brilee",
       "home": {
         "label": "Brighton Hove",
-        "probability": 52,
+        "probability": 51,
         "ticker": "KXEPLGAME-26SEP05BRILEE-BRI"
       },
       "away": {
         "label": "Leeds United",
-        "probability": 23,
+        "probability": 25,
         "ticker": "KXEPLGAME-26SEP05BRILEE-LEE"
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 27,
         "ticker": "KXEPLGAME-26SEP05BRILEE-TIE"
       }
     },
@@ -68,12 +68,12 @@
       },
       "away": {
         "label": "Sunderland",
-        "probability": 17,
+        "probability": 16,
         "ticker": "KXEPLGAME-26SEP05BRESUN-SUN"
       },
       "draw": {
         "label": "Draw",
-        "probability": 23,
+        "probability": 24,
         "ticker": "KXEPLGAME-26SEP05BRESUN-TIE"
       }
     },
@@ -92,7 +92,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 20,
+        "probability": 19,
         "ticker": "KXEPLGAME-26SEP04IPSLFC-TIE"
       }
     },
@@ -101,7 +101,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep06evemun",
       "home": {
         "label": "Everton",
-        "probability": 30,
+        "probability": 29,
         "ticker": "KXEPLGAME-26SEP06EVEMUN-EVE"
       },
       "away": {
@@ -163,7 +163,7 @@
       },
       "away": {
         "label": "Chelsea",
-        "probability": 20,
+        "probability": 19,
         "ticker": "KXEPLGAME-26SEP06ARSCFC-CFC"
       },
       "draw": {
@@ -177,12 +177,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep05newbou",
       "home": {
         "label": "Newcastle",
-        "probability": 46,
+        "probability": 47,
         "ticker": "KXEPLGAME-26SEP05NEWBOU-NEW"
       },
       "away": {
         "label": "Bournemouth",
-        "probability": 30,
+        "probability": 29,
         "ticker": "KXEPLGAME-26SEP05NEWBOU-BOU"
       },
       "draw": {
