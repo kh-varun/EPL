@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-04T00:51:20.754Z",
+  "fetchedAt": "2026-09-04T05:10:43.362Z",
   "odds": {
     "560562": {
       "eventTicker": "KXEPLGAME-26SEP05NFOTOT",
@@ -73,7 +73,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 24,
+        "probability": 23,
         "ticker": "KXEPLGAME-26SEP05BRESUN-TIE"
       }
     },
@@ -82,7 +82,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep04ipslfc",
       "home": {
         "label": "Ipswich Town",
-        "probability": 16,
+        "probability": 15,
         "ticker": "KXEPLGAME-26SEP04IPSLFC-IPS"
       },
       "away": {
@@ -101,7 +101,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep06evemun",
       "home": {
         "label": "Everton",
-        "probability": 29,
+        "probability": 28,
         "ticker": "KXEPLGAME-26SEP06EVEMUN-EVE"
       },
       "away": {
@@ -130,7 +130,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 29,
+        "probability": 28,
         "ticker": "KXEPLGAME-26SEP05FULCRY-TIE"
       }
     },
@@ -158,12 +158,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep06arscfc",
       "home": {
         "label": "Arsenal",
-        "probability": 57,
+        "probability": 58,
         "ticker": "KXEPLGAME-26SEP06ARSCFC-ARS"
       },
       "away": {
         "label": "Chelsea",
-        "probability": 19,
+        "probability": 20,
         "ticker": "KXEPLGAME-26SEP06ARSCFC-CFC"
       },
       "draw": {
@@ -177,7 +177,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep05newbou",
       "home": {
         "label": "Newcastle",
-        "probability": 47,
+        "probability": 45,
         "ticker": "KXEPLGAME-26SEP05NEWBOU-NEW"
       },
       "away": {
