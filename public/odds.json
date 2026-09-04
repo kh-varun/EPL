@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-04T17:21:26.383Z",
+  "fetchedAt": "2026-09-04T19:46:20.702Z",
   "odds": {
     "560562": {
       "eventTicker": "KXEPLGAME-26SEP05NFOTOT",
@@ -25,7 +25,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep05mcicov",
       "home": {
         "label": "Man City",
-        "probability": 84,
+        "probability": 85,
         "ticker": "KXEPLGAME-26SEP05MCICOV-MCI"
       },
       "away": {
@@ -49,7 +49,7 @@
       },
       "away": {
         "label": "Leeds United",
-        "probability": 24,
+        "probability": 25,
         "ticker": "KXEPLGAME-26SEP05BRILEE-LEE"
       },
       "draw": {
@@ -73,7 +73,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 24,
         "ticker": "KXEPLGAME-26SEP05BRESUN-TIE"
       }
     },
@@ -82,17 +82,17 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep04ipslfc",
       "home": {
         "label": "Ipswich Town",
-        "probability": 16,
+        "probability": 2,
         "ticker": "KXEPLGAME-26SEP04IPSLFC-IPS"
       },
       "away": {
         "label": "Liverpool",
-        "probability": 66,
+        "probability": 93,
         "ticker": "KXEPLGAME-26SEP04IPSLFC-LFC"
       },
       "draw": {
         "label": "Draw",
-        "probability": 20,
+        "probability": 6,
         "ticker": "KXEPLGAME-26SEP04IPSLFC-TIE"
       }
     },
@@ -111,7 +111,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 27,
         "ticker": "KXEPLGAME-26SEP06EVEMUN-TIE"
       }
     },
@@ -144,7 +144,7 @@
       },
       "away": {
         "label": "Aston Villa",
-        "probability": 52,
+        "probability": 51,
         "ticker": "KXEPLGAME-26SEP05HULAVL-AVL"
       },
       "draw": {
@@ -168,7 +168,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 23,
+        "probability": 24,
         "ticker": "KXEPLGAME-26SEP06ARSCFC-TIE"
       }
     },
