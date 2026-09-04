@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-03T22:47:38.508Z",
+  "fetchedAt": "2026-09-04T00:51:20.754Z",
   "odds": {
     "560562": {
       "eventTicker": "KXEPLGAME-26SEP05NFOTOT",
@@ -163,7 +163,7 @@
       },
       "away": {
         "label": "Chelsea",
-        "probability": 20,
+        "probability": 19,
         "ticker": "KXEPLGAME-26SEP06ARSCFC-CFC"
       },
       "draw": {
