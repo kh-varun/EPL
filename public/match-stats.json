@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-31T23:26:53.619Z",
+  "fetchedAt": "2026-09-04T21:51:30.139Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -835,6 +835,55 @@
           "teamId": 322,
           "player": "L. Millar",
           "minute": 82,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560566": {
+      "utcDate": "2026-09-04T19:00:00Z",
+      "homeTeamId": 349,
+      "awayTeamId": 64,
+      "stats": {
+        "64": {
+          "shots": 10,
+          "shotsOnTarget": 7,
+          "possession": 55,
+          "passes": 523,
+          "passAccuracy": null,
+          "fouls": 13,
+          "corners": 3,
+          "offsides": 4,
+          "yellowCards": 3,
+          "redCards": 0
+        },
+        "349": {
+          "shots": 14,
+          "shotsOnTarget": 5,
+          "possession": 45,
+          "passes": 427,
+          "passAccuracy": null,
+          "fouls": 6,
+          "corners": 4,
+          "offsides": 5,
+          "yellowCards": 1,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 64,
+          "player": "Alexander Isak",
+          "minute": 6,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 64,
+          "player": "Alexander Isak",
+          "minute": 9,
           "extraMinute": null,
           "ownGoal": false,
           "penalty": false
