@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-05T17:32:54.627Z",
+  "fetchedAt": "2026-09-05T19:21:05.393Z",
   "standings": [
     {
       "position": 1,
@@ -384,6 +384,31 @@
   ],
   "lastResults": [
     {
+      "id": 560569,
+      "utcDate": "2026-09-05T16:30:00Z",
+      "status": "FINISHED",
+      "matchday": 3,
+      "homeTeam": {
+        "id": 322,
+        "name": "Hull City AFC",
+        "shortName": "Hull City",
+        "tla": "HUL",
+        "crest": "https://crests.football-data.org/322.png"
+      },
+      "awayTeam": {
+        "id": 58,
+        "name": "Aston Villa FC",
+        "shortName": "Aston Villa",
+        "tla": "AVL",
+        "crest": "https://crests.football-data.org/58.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "winner": "DRAW"
+      }
+    },
+    {
       "id": 560562,
       "utcDate": "2026-09-05T14:00:00Z",
       "status": "FINISHED",
@@ -482,60 +507,9 @@
         "away": 1,
         "winner": "DRAW"
       }
-    },
-    {
-      "id": 560568,
-      "utcDate": "2026-09-05T14:00:00Z",
-      "status": "FINISHED",
-      "matchday": 3,
-      "homeTeam": {
-        "id": 63,
-        "name": "Fulham FC",
-        "shortName": "Fulham",
-        "tla": "FUL",
-        "crest": "https://crests.football-data.org/63.png"
-      },
-      "awayTeam": {
-        "id": 354,
-        "name": "Crystal Palace FC",
-        "shortName": "Crystal Palace",
-        "tla": "CRY",
-        "crest": "https://crests.football-data.org/354.png"
-      },
-      "score": {
-        "home": 2,
-        "away": 3,
-        "winner": "AWAY_TEAM"
-      }
     }
   ],
   "nextFixtures": [
-    {
-      "id": 560569,
-      "utcDate": "2026-09-05T16:30:00Z",
-      "status": "PAUSED",
-      "matchday": 3,
-      "homeTeam": {
-        "id": 322,
-        "name": "Hull City AFC",
-        "shortName": "Hull City",
-        "tla": "HUL",
-        "crest": "https://crests.football-data.org/322.png"
-      },
-      "awayTeam": {
-        "id": 58,
-        "name": "Aston Villa FC",
-        "shortName": "Aston Villa",
-        "tla": "AVL",
-        "crest": "https://crests.football-data.org/58.png"
-      },
-      "score": {
-        "home": 0,
-        "away": 0,
-        "winner": "DRAW"
-      },
-      "broadcast": "NBC"
-    },
     {
       "id": 560567,
       "utcDate": "2026-09-06T13:00:00Z",
@@ -762,6 +736,32 @@
         "shortName": "Arsenal",
         "tla": "ARS",
         "crest": "https://crests.football-data.org/57.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
+      "id": 560578,
+      "utcDate": "2026-09-13T13:00:00Z",
+      "status": "TIMED",
+      "matchday": 4,
+      "homeTeam": {
+        "id": 1076,
+        "name": "Coventry City FC",
+        "shortName": "Coventry City",
+        "tla": "COV",
+        "crest": "https://crests.football-data.org/1076.png"
+      },
+      "awayTeam": {
+        "id": 397,
+        "name": "Brighton & Hove Albion FC",
+        "shortName": "Brighton Hove",
+        "tla": "BHA",
+        "crest": "https://crests.football-data.org/397.png"
       },
       "score": {
         "home": null,
