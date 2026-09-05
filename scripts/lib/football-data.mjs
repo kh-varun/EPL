@@ -99,7 +99,26 @@ const STALE_FIXTURE_MS = 4 * 60 * 60 * 1000;
 export async function fetchNextFixtures(limit = 10) {
   const data = await footballDataRequest("/competitions/PL/matches?status=SCHEDULED,IN_PLAY,PAUSED");
   const now = Date.now();
-  const matches = (data.matches ?? [])
+  const raw = data.matches ?? [];
+
+  // Diagnostic: confirmed live a multi-week gap in this endpoint's response
+  // (matches from the next ~7 weeks missing entirely, while further-out ones
+  // came back fine) - dump the raw response's date range and status
+  // breakdown so a repeat is debuggable from the Actions log instead of a
+  // bare "fixtures are wrong" report.
+  if (raw.length > 0) {
+    const dates = raw.map((m) => m.utcDate).sort();
+    const statusCounts = {};
+    for (const m of raw) statusCounts[m.status] = (statusCounts[m.status] ?? 0) + 1;
+    console.log(
+      `  fetchNextFixtures: raw response has ${raw.length} match(es), ` +
+        `dates ${dates[0]} to ${dates[dates.length - 1]}, statuses ${JSON.stringify(statusCounts)}`,
+    );
+  } else {
+    console.log("  fetchNextFixtures: raw response had 0 matches for status=SCHEDULED,IN_PLAY,PAUSED");
+  }
+
+  const matches = raw
     .filter((m) => now - new Date(m.utcDate).getTime() <= STALE_FIXTURE_MS)
     .sort((a, b) => new Date(a.utcDate) - new Date(b.utcDate));
   return matches.slice(0, limit).map(mapMatch);
