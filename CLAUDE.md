@@ -552,10 +552,58 @@ Two invariants to preserve when touching this:
   last-deployed SHA, so its correctness depends on in-flight deploys never
   being cancelled - which is exactly what the first invariant guarantees.
 
+## Tests
+
+Two separate suites, run separately on purpose:
+
+- **Unit tests** (`npm run test:unit` → `scripts/**/*.test.mjs`,
+  `src/**/*.test.js`) - deterministic, code-only, no network or filesystem
+  dependency on live data. Covers the team-name-matching helpers
+  (`teamsLikelyMatch`/`normalizeTeamName`/`searchableTeamName` in both
+  `scripts/lib/api-football.mjs` and `scripts/fetch-odds.mjs`), the
+  `fetchNextFixtures` staleness boundary (`isFixtureFresh`), the
+  `football-data.mjs` response mappers, and `src/lib/format.js`'s date/time
+  formatting. Runs in the `test` job of `.github/workflows/pr-review.yml`
+  and gates every PR merge alongside `eslint`.
+- **Data-sanity tests** (`npm run test:data` → `tests/data-sanity.test.mjs`)
+  - checks the actual, currently-committed `public/*.json` files against
+  real-world invariants (a complete 20-team standings table, `nextFixtures`
+  in chronological order with no team facing itself and no unexplained
+  multi-week gap before the first one, `lastResults` genuinely finished and
+  in reverse-chronological order, no implausibly-old entry in
+  `live-scores.json`). This is the automated version of the manual "read
+  data.json, notice something looks wrong" checks this project has
+  repeatedly needed by hand - the ~7-week gap in `nextFixtures` and the four
+  already-finished matches stuck there as still upcoming (see "Live scores"
+  above) were both found exactly this way. **Deliberately not part of the
+  PR gate** - it depends on the live state of `main`'s data files, which
+  changes on its own via the five scheduled fetch workflows and has nothing
+  to do with any given PR's diff. Instead it runs on its own schedule via
+  `.github/workflows/data-qa.yml` (every 6 hours, plus `workflow_dispatch`),
+  so a bad data state surfaces as a red scheduled workflow run rather than
+  requiring someone to notice.
+
+Two real bugs were found immediately by writing the unit test suite, not
+by manual review:
+
+- `scripts/fetch-odds.mjs`'s own copy of `teamsLikelyMatch` still had the
+  plain-`includes()` substring check that was already fixed in
+  `scripts/lib/api-football.mjs` (the word-boundary fix documented in
+  "Known API quirks" below) - this module was simply missed when that fix
+  went in elsewhere. Fixed to match the shared implementation.
+- `data.json`'s standings can legitimately have **two teams sharing the
+  same `position` number** early in the season (confirmed live: two pairs
+  of teams tied on points and goal difference both came back from
+  football-data.org as joint 14th and joint 19th, with no team at 15th or
+  20th at all) - not a bug on our end, so the data-sanity check only
+  verifies positions stay in `[1, 20]` and non-decreasing, not that they
+  form a clean gapless 1-20 sequence.
+
 ## Git workflow for this repo
 
-Every PR here gets merged (squash) as soon as its `eslint` check passes —
-this is a personal project, no human review gate. After a PR merges, the
+Every PR here gets merged (squash) as soon as its `eslint` and `test`
+checks pass — this is a personal project, no human review gate. After a PR
+merges, the
 feature branch (`claude/premier-league-dashboard-8ko6qw`) is **behind**
 main again. Before starting new work: `git fetch origin main && git
 checkout -B <branch> origin/main`, then cherry-pick or redo the new

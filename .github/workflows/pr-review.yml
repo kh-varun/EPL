@@ -1,4 +1,4 @@
-name: PR lint review
+name: PR checks
 
 on:
   pull_request:
@@ -27,3 +27,22 @@ jobs:
           reporter: github-pr-review
           fail_level: error
           eslint_flags: "."
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      # Only the deterministic, code-only unit tests - not tests/data-sanity,
+      # which checks the live public/*.json data files against real-world
+      # invariants (see .github/workflows/data-qa.yml). Gating a PR merge on
+      # the current state of live production data would fail PRs for reasons
+      # that have nothing to do with the PR's own diff.
+      - run: npm run test:unit

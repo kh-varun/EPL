@@ -87,6 +87,13 @@ export async function fetchLastResults(limit = 5) {
 // fixture linger on the Fixtures tab indefinitely.
 const STALE_FIXTURE_MS = 4 * 60 * 60 * 1000;
 
+// Exported separately so its boundary (a match "now" hours old is stale, one
+// still in the future never is, regardless of how far out) is directly
+// testable without mocking the network call it's normally filtered from.
+export function isFixtureFresh(match, now = Date.now()) {
+  return now - new Date(match.utcDate).getTime() <= STALE_FIXTURE_MS;
+}
+
 // Deliberately includes IN_PLAY/PAUSED alongside SCHEDULED - confirmed live
 // that omitting them is a real bug, not just an unlikely edge case: any full
 // refresh that lands while a match is live (this project's own manual
@@ -99,8 +106,27 @@ const STALE_FIXTURE_MS = 4 * 60 * 60 * 1000;
 export async function fetchNextFixtures(limit = 10) {
   const data = await footballDataRequest("/competitions/PL/matches?status=SCHEDULED,IN_PLAY,PAUSED");
   const now = Date.now();
-  const matches = (data.matches ?? [])
-    .filter((m) => now - new Date(m.utcDate).getTime() <= STALE_FIXTURE_MS)
+  const raw = data.matches ?? [];
+
+  // Diagnostic: confirmed live a multi-week gap in this endpoint's response
+  // (matches from the next ~7 weeks missing entirely, while further-out ones
+  // came back fine) - dump the raw response's date range and status
+  // breakdown so a repeat is debuggable from the Actions log instead of a
+  // bare "fixtures are wrong" report.
+  if (raw.length > 0) {
+    const dates = raw.map((m) => m.utcDate).sort();
+    const statusCounts = {};
+    for (const m of raw) statusCounts[m.status] = (statusCounts[m.status] ?? 0) + 1;
+    console.log(
+      `  fetchNextFixtures: raw response has ${raw.length} match(es), ` +
+        `dates ${dates[0]} to ${dates[dates.length - 1]}, statuses ${JSON.stringify(statusCounts)}`,
+    );
+  } else {
+    console.log("  fetchNextFixtures: raw response had 0 matches for status=SCHEDULED,IN_PLAY,PAUSED");
+  }
+
+  const matches = raw
+    .filter((m) => isFixtureFresh(m, now))
     .sort((a, b) => new Date(a.utcDate) - new Date(b.utcDate));
   return matches.slice(0, limit).map(mapMatch);
 }

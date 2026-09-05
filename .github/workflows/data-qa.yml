@@ -1,0 +1,31 @@
+name: Data QA
+
+on:
+  # Independent of any code change - the five fetch workflows commit fresh
+  # public/*.json data on their own schedules throughout the day, and the
+  # data itself can go bad (a third-party API returning an incomplete or
+  # stale response) without a single line of this repo's code changing. This
+  # runs the tests/data-sanity suite against whatever is currently on main
+  # to catch that class of problem automatically instead of relying on
+  # someone noticing the dashboard looks wrong.
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  data-sanity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run test:data
