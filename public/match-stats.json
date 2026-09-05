@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-04T21:51:30.139Z",
+  "fetchedAt": "2026-09-05T15:35:29.055Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -884,6 +884,71 @@
           "teamId": 64,
           "player": "Alexander Isak",
           "minute": 9,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560571": {
+      "utcDate": "2026-09-05T11:30:00Z",
+      "homeTeamId": 67,
+      "awayTeamId": 1044,
+      "stats": {
+        "67": {
+          "shots": 8,
+          "shotsOnTarget": 2,
+          "possession": 57,
+          "passes": 453,
+          "passAccuracy": null,
+          "fouls": 19,
+          "corners": 4,
+          "offsides": 1,
+          "yellowCards": 2,
+          "redCards": 0
+        },
+        "1044": {
+          "shots": 17,
+          "shotsOnTarget": 5,
+          "possession": 43,
+          "passes": 328,
+          "passAccuracy": null,
+          "fouls": 17,
+          "corners": 3,
+          "offsides": 1,
+          "yellowCards": 3,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 1044,
+          "player": "Marcus Tavernier",
+          "minute": 9,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 1044,
+          "player": "Malick Thiaw",
+          "minute": 35,
+          "extraMinute": null,
+          "ownGoal": true,
+          "penalty": false
+        },
+        {
+          "teamId": 67,
+          "player": "Harvey Barnes",
+          "minute": 37,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 67,
+          "player": "Jacob Ramsey",
+          "minute": 88,
           "extraMinute": null,
           "ownGoal": false,
           "penalty": false
