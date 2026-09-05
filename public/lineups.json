@@ -1,4 +1,292 @@
 {
-  "fetchedAt": "2026-09-01T19:40:41.771Z",
-  "lineups": {}
+  "fetchedAt": "2026-09-05T12:03:04.095Z",
+  "lineups": {
+    "560571": {
+      "utcDate": "2026-09-05T11:30:00Z",
+      "homeTeamId": 67,
+      "awayTeamId": 1044,
+      "byTeam": {
+        "67": {
+          "teamName": "Newcastle",
+          "formation": "4-2-3-1",
+          "startXI": [
+            {
+              "id": 269349,
+              "name": "L. Horníček",
+              "number": 21,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 7318,
+              "name": "A. Dedić",
+              "number": 37,
+              "position": "D",
+              "grid": "2:4"
+            },
+            {
+              "id": 163189,
+              "name": "M. Thiaw",
+              "number": 12,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 38734,
+              "name": "S. Botman",
+              "number": 4,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 284492,
+              "name": "L. Hall",
+              "number": 3,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 161933,
+              "name": "Nico González",
+              "number": 6,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 328105,
+              "name": "L. Miley",
+              "number": 67,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 153430,
+              "name": "A. Elanga",
+              "number": 19,
+              "position": "M",
+              "grid": "4:3"
+            },
+            {
+              "id": 1463,
+              "name": "J. Willock",
+              "number": 28,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 18778,
+              "name": "H. Barnes",
+              "number": 11,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 20649,
+              "name": "Y. Wissa",
+              "number": 9,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 340077,
+              "name": "M. Fernandez-Pardo",
+              "number": 20,
+              "position": "F"
+            },
+            {
+              "id": 19163,
+              "name": "J. Murphy",
+              "number": 23,
+              "position": "M"
+            },
+            {
+              "id": 18911,
+              "name": "N. Pope",
+              "number": 1,
+              "position": "G"
+            },
+            {
+              "id": 158694,
+              "name": "T. Livramento",
+              "number": 2,
+              "position": "D"
+            },
+            {
+              "id": 2806,
+              "name": "F. Schär",
+              "number": 5,
+              "position": "D"
+            },
+            {
+              "id": 453792,
+              "name": "A. Bamba",
+              "number": 8,
+              "position": "M"
+            },
+            {
+              "id": 469321,
+              "name": "Sean Steur",
+              "number": 14,
+              "position": "M"
+            },
+            {
+              "id": 387643,
+              "name": "B. Touré",
+              "number": 17,
+              "position": "F"
+            },
+            {
+              "id": 19192,
+              "name": "J. Ramsey",
+              "number": 41,
+              "position": "M"
+            }
+          ],
+          "coach": "Matthias Jaissle"
+        },
+        "1044": {
+          "teamName": "Bournemouth",
+          "formation": "4-2-3-1",
+          "startXI": [
+            {
+              "id": 118307,
+              "name": "Đ. Petrović",
+              "number": 1,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 18869,
+              "name": "A. Smith",
+              "number": 15,
+              "position": "D",
+              "grid": "2:4"
+            },
+            {
+              "id": 20093,
+              "name": "J. Hill",
+              "number": 5,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 331832,
+              "name": "António Silva",
+              "number": 14,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 162267,
+              "name": "A. Truffert",
+              "number": 3,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 1150,
+              "name": "T. Adams",
+              "number": 12,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 304853,
+              "name": "A. Scott",
+              "number": 8,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 407806,
+              "name": "Rayan",
+              "number": 37,
+              "position": "M",
+              "grid": "4:3"
+            },
+            {
+              "id": 792,
+              "name": "J. Kluivert",
+              "number": 19,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 19245,
+              "name": "M. Tavernier",
+              "number": 16,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 152856,
+              "name": "Evanilson",
+              "number": 9,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 182772,
+              "name": "Juanlu Sánchez",
+              "number": 24,
+              "position": "M"
+            },
+            {
+              "id": 343576,
+              "name": "B. Doak",
+              "number": 11,
+              "position": "F"
+            },
+            {
+              "id": 1125,
+              "name": "R. Christie",
+              "number": 10,
+              "position": "M"
+            },
+            {
+              "id": 18870,
+              "name": "D. Brooks",
+              "number": 7,
+              "position": "M"
+            },
+            {
+              "id": 22136,
+              "name": "B. Diakité",
+              "number": 18,
+              "position": "D"
+            },
+            {
+              "id": 363333,
+              "name": "J. Soler",
+              "number": 6,
+              "position": "D"
+            },
+            {
+              "id": 30670,
+              "name": "M. Di Gregorio",
+              "number": 20,
+              "position": "G"
+            },
+            {
+              "id": 296458,
+              "name": "D. Jebbison",
+              "number": 29,
+              "position": "F"
+            },
+            {
+              "id": 18872,
+              "name": "L. Cook",
+              "number": 4,
+              "position": "M"
+            }
+          ],
+          "coach": "M. Rose"
+        }
+      }
+    }
+  }
 }
