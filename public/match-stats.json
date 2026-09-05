@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-05T15:35:29.055Z",
+  "fetchedAt": "2026-09-05T17:33:03.957Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -841,6 +841,177 @@
         }
       ]
     },
+    "560562": {
+      "utcDate": "2026-09-05T14:00:00Z",
+      "homeTeamId": 351,
+      "awayTeamId": 73,
+      "stats": {
+        "73": {
+          "shots": 12,
+          "shotsOnTarget": 0,
+          "possession": 59,
+          "passes": 443,
+          "passAccuracy": null,
+          "fouls": 13,
+          "corners": 10,
+          "offsides": 1,
+          "yellowCards": 2,
+          "redCards": 0
+        },
+        "351": {
+          "shots": 12,
+          "shotsOnTarget": 2,
+          "possession": 41,
+          "passes": 311,
+          "passAccuracy": null,
+          "fouls": 22,
+          "corners": 2,
+          "offsides": 2,
+          "yellowCards": 2,
+          "redCards": 0
+        }
+      },
+      "scorers": []
+    },
+    "560563": {
+      "utcDate": "2026-09-05T14:00:00Z",
+      "homeTeamId": 65,
+      "awayTeamId": 1076,
+      "stats": {
+        "65": {
+          "shots": 15,
+          "shotsOnTarget": 4,
+          "possession": 78,
+          "passes": 803,
+          "passAccuracy": null,
+          "fouls": 7,
+          "corners": 4,
+          "offsides": 5,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        "1076": {
+          "shots": 12,
+          "shotsOnTarget": 3,
+          "possession": 22,
+          "passes": 217,
+          "passAccuracy": null,
+          "fouls": 17,
+          "corners": 5,
+          "offsides": 2,
+          "yellowCards": 2,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 65,
+          "player": "Erling Haaland",
+          "minute": 26,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560564": {
+      "utcDate": "2026-09-05T14:00:00Z",
+      "homeTeamId": 397,
+      "awayTeamId": 341,
+      "stats": {
+        "341": {
+          "shots": 10,
+          "shotsOnTarget": 5,
+          "possession": 33,
+          "passes": 239,
+          "passAccuracy": null,
+          "fouls": 16,
+          "corners": 6,
+          "offsides": 2,
+          "yellowCards": 3,
+          "redCards": 0
+        },
+        "397": {
+          "shots": 20,
+          "shotsOnTarget": 5,
+          "possession": 67,
+          "passes": 490,
+          "passAccuracy": null,
+          "fouls": 13,
+          "corners": 7,
+          "offsides": 4,
+          "yellowCards": 3,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 341,
+          "player": "Jayden Bogle",
+          "minute": 15,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 397,
+          "player": "Luka Vuskovic",
+          "minute": 71,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560565": {
+      "utcDate": "2026-09-05T14:00:00Z",
+      "homeTeamId": 402,
+      "awayTeamId": 71,
+      "stats": {
+        "71": {
+          "shots": 14,
+          "shotsOnTarget": 5,
+          "possession": 51,
+          "passes": 379,
+          "passAccuracy": 0.8,
+          "fouls": 9,
+          "corners": 3,
+          "offsides": 3,
+          "yellowCards": 2,
+          "redCards": 0
+        },
+        "402": {
+          "shots": 12,
+          "shotsOnTarget": 2,
+          "possession": 49,
+          "passes": 364,
+          "passAccuracy": 0.8,
+          "fouls": 19,
+          "corners": 4,
+          "offsides": 0,
+          "yellowCards": 3,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 402,
+          "player": "Vitaly Janelt",
+          "minute": 57,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 71,
+          "player": "Enzo Le Fée",
+          "minute": 82,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": true
+        }
+      ]
+    },
     "560566": {
       "utcDate": "2026-09-04T19:00:00Z",
       "homeTeamId": 349,
@@ -884,6 +1055,79 @@
           "teamId": 64,
           "player": "Alexander Isak",
           "minute": 9,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560568": {
+      "utcDate": "2026-09-05T14:00:00Z",
+      "homeTeamId": 63,
+      "awayTeamId": 354,
+      "stats": {
+        "63": {
+          "shots": 25,
+          "shotsOnTarget": 6,
+          "possession": 64.7,
+          "passes": 672,
+          "passAccuracy": 0.9,
+          "fouls": 6,
+          "corners": 7,
+          "offsides": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        "354": {
+          "shots": 10,
+          "shotsOnTarget": 5,
+          "possession": 35.3,
+          "passes": 369,
+          "passAccuracy": 0.8,
+          "fouls": 7,
+          "corners": 1,
+          "offsides": 6,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 63,
+          "player": "Josh King",
+          "minute": 11,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 354,
+          "player": "Tyrick Mitchell",
+          "minute": 35,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 63,
+          "player": "César Palacios",
+          "minute": 42,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 354,
+          "player": "Tyrick Mitchell",
+          "minute": 54,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 354,
+          "player": "Ben Chilwell",
+          "minute": 77,
           "extraMinute": null,
           "ownGoal": false,
           "penalty": false
