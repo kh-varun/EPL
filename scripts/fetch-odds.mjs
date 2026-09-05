@@ -63,7 +63,7 @@ async function fetchMarketsForEvent(eventTicker) {
   return body.markets ?? [];
 }
 
-function normalizeTeamName(name) {
+export function normalizeTeamName(name) {
   return name
     .toLowerCase()
     .replace(/\bfc\b|\bafc\b/g, "")
@@ -80,17 +80,28 @@ const NAME_ALIASES = {
   tottenham: ["spurs"],
 };
 
-function teamsLikelyMatch(ourTeam, theirName) {
+// Word-boundary match, not raw substring - this module had its own copy of
+// the plain includes() check that scripts/lib/api-football.mjs already fixed
+// (confirmed live there: it wrongly matched "Man City"/"Man United" against
+// unrelated clubs like "Techiman City"/"Cwmamman United FC" whose names
+// happen to contain those letters across a word boundary). Caught by this
+// project's own test suite still exercising the old behavior here - this
+// module was missed when the fix went into the shared module.
+export function teamsLikelyMatch(ourTeam, theirName) {
   const ours = [normalizeTeamName(ourTeam.name), normalizeTeamName(ourTeam.shortName)];
   const withAliases = ours.flatMap((name) => [name, ...(NAME_ALIASES[name] ?? [])]);
-  const theirs = normalizeTeamName(theirName);
-  return withAliases.some(
-    (name) => name === theirs || theirs.includes(name) || name.includes(theirs),
-  );
+  const theirWords = normalizeTeamName(theirName).split(" ").filter(Boolean);
+  const theirSet = new Set(theirWords);
+  return withAliases.some((name) => {
+    const ourWords = name.split(" ").filter(Boolean);
+    if (ourWords.length === 0 || theirWords.length === 0) return false;
+    const ourSet = new Set(ourWords);
+    return ourWords.every((w) => theirSet.has(w)) || theirWords.every((w) => ourSet.has(w));
+  });
 }
 
 // Kalshi event titles look like "Wolverhampton vs Chelsea", home team first.
-function splitEventTitle(title) {
+export function splitEventTitle(title) {
   const parts = title.split(/\s+vs\.?\s+/i);
   return parts.length === 2 ? { home: parts[0].trim(), away: parts[1].trim() } : null;
 }
@@ -111,7 +122,7 @@ function matchEventToFixture(event, fixtures) {
 // plain cents integers used elsewhere in their docs/examples - confirmed
 // against a real market response. Prefer the last traded price; if nothing
 // has traded yet, fall back to the mid of the current bid/ask spread.
-function impliedProbability(market) {
+export function impliedProbability(market) {
   const last = Number(market.last_price_dollars);
   if (last > 0) return Math.round(last * 100);
 
@@ -122,7 +133,7 @@ function impliedProbability(market) {
   return null;
 }
 
-function classifyMarket(market, fixture) {
+export function classifyMarket(market, fixture) {
   const label = (market.yes_sub_title || market.subtitle || market.title || "").toLowerCase();
   if (/\btie\b|\bdraw\b/.test(label)) return "draw";
   if (teamsLikelyMatch(fixture.homeTeam, label)) return "home";
@@ -228,7 +239,12 @@ async function main() {
   console.log(`Wrote ${OUT_PATH}`);
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+// Guarded so tests can import this module's pure helpers (normalizeTeamName,
+// teamsLikelyMatch, etc.) without triggering a live fetch + file write as a
+// side effect of the import.
+if (import.meta.url === `file://${process.argv[1]}`) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}
