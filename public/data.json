@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-04T21:51:22.963Z",
+  "fetchedAt": "2026-09-05T07:55:49.801Z",
   "standings": [
     {
       "position": 1,
@@ -511,68 +511,16 @@
   ],
   "nextFixtures": [
     {
-      "id": 560612,
-      "utcDate": "2026-10-25T14:00:00Z",
+      "id": 560571,
+      "utcDate": "2026-09-05T11:30:00Z",
       "status": "TIMED",
-      "matchday": 8,
+      "matchday": 3,
       "homeTeam": {
-        "id": 64,
-        "name": "Liverpool FC",
-        "shortName": "Liverpool",
-        "tla": "LIV",
-        "crest": "https://crests.football-data.org/64.png"
-      },
-      "awayTeam": {
-        "id": 397,
-        "name": "Brighton & Hove Albion FC",
-        "shortName": "Brighton Hove",
-        "tla": "BHA",
-        "crest": "https://crests.football-data.org/397.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560613,
-      "utcDate": "2026-10-25T14:00:00Z",
-      "status": "TIMED",
-      "matchday": 8,
-      "homeTeam": {
-        "id": 354,
-        "name": "Crystal Palace FC",
-        "shortName": "Crystal Palace",
-        "tla": "CRY",
-        "crest": "https://crests.football-data.org/354.png"
-      },
-      "awayTeam": {
         "id": 67,
         "name": "Newcastle United FC",
         "shortName": "Newcastle",
         "tla": "NEW",
         "crest": "https://crests.football-data.org/67.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560615,
-      "utcDate": "2026-10-25T14:00:00Z",
-      "status": "TIMED",
-      "matchday": 8,
-      "homeTeam": {
-        "id": 66,
-        "name": "Manchester United FC",
-        "shortName": "Man United",
-        "tla": "MUN",
-        "crest": "https://crests.football-data.org/66.png"
       },
       "awayTeam": {
         "id": 1044,
@@ -586,91 +534,39 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
-      "id": 560619,
-      "utcDate": "2026-10-25T14:00:00Z",
+      "id": 560562,
+      "utcDate": "2026-09-05T14:00:00Z",
       "status": "TIMED",
-      "matchday": 8,
+      "matchday": 3,
       "homeTeam": {
-        "id": 322,
-        "name": "Hull City AFC",
-        "shortName": "Hull City",
-        "tla": "HUL",
-        "crest": "https://crests.football-data.org/322.png"
+        "id": 351,
+        "name": "Nottingham Forest FC",
+        "shortName": "Nottingham",
+        "tla": "NOT",
+        "crest": "https://crests.football-data.org/351.png"
       },
       "awayTeam": {
-        "id": 402,
-        "name": "Brentford FC",
-        "shortName": "Brentford",
-        "tla": "BRE",
-        "crest": "https://crests.football-data.org/402.png"
+        "id": 73,
+        "name": "Tottenham Hotspur FC",
+        "shortName": "Tottenham",
+        "tla": "TOT",
+        "crest": "https://crests.football-data.org/73.png"
       },
       "score": {
         "home": null,
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "NBCSN"
     },
     {
-      "id": 560621,
-      "utcDate": "2026-10-25T16:30:00Z",
+      "id": 560563,
+      "utcDate": "2026-09-05T14:00:00Z",
       "status": "TIMED",
-      "matchday": 8,
-      "homeTeam": {
-        "id": 71,
-        "name": "Sunderland AFC",
-        "shortName": "Sunderland",
-        "tla": "SUN",
-        "crest": "https://crests.football-data.org/71.png"
-      },
-      "awayTeam": {
-        "id": 341,
-        "name": "Leeds United FC",
-        "shortName": "Leeds United",
-        "tla": "LEE",
-        "crest": "https://crests.football-data.org/341.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560626,
-      "utcDate": "2026-10-31T12:30:00Z",
-      "status": "TIMED",
-      "matchday": 9,
-      "homeTeam": {
-        "id": 61,
-        "name": "Chelsea FC",
-        "shortName": "Chelsea",
-        "tla": "CHE",
-        "crest": "https://crests.football-data.org/61.png"
-      },
-      "awayTeam": {
-        "id": 66,
-        "name": "Manchester United FC",
-        "shortName": "Man United",
-        "tla": "MUN",
-        "crest": "https://crests.football-data.org/66.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560623,
-      "utcDate": "2026-10-31T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 9,
+      "matchday": 3,
       "homeTeam": {
         "id": 65,
         "name": "Manchester City FC",
@@ -679,30 +575,30 @@
         "crest": "https://crests.football-data.org/65.png"
       },
       "awayTeam": {
-        "id": 397,
-        "name": "Brighton & Hove Albion FC",
-        "shortName": "Brighton Hove",
-        "tla": "BHA",
-        "crest": "https://crests.football-data.org/397.png"
+        "id": 1076,
+        "name": "Coventry City FC",
+        "shortName": "Coventry City",
+        "tla": "COV",
+        "crest": "https://crests.football-data.org/1076.png"
       },
       "score": {
         "home": null,
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
-      "id": 560624,
-      "utcDate": "2026-10-31T15:00:00Z",
+      "id": 560564,
+      "utcDate": "2026-09-05T14:00:00Z",
       "status": "TIMED",
-      "matchday": 9,
+      "matchday": 3,
       "homeTeam": {
-        "id": 1044,
-        "name": "AFC Bournemouth",
-        "shortName": "Bournemouth",
-        "tla": "BOU",
-        "crest": "https://crests.football-data.org/bournemouth.png"
+        "id": 397,
+        "name": "Brighton & Hove Albion FC",
+        "shortName": "Brighton Hove",
+        "tla": "BHA",
+        "crest": "https://crests.football-data.org/397.png"
       },
       "awayTeam": {
         "id": 341,
@@ -716,19 +612,19 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
-      "id": 560625,
-      "utcDate": "2026-10-31T15:00:00Z",
+      "id": 560565,
+      "utcDate": "2026-09-05T14:00:00Z",
       "status": "TIMED",
-      "matchday": 9,
+      "matchday": 3,
       "homeTeam": {
-        "id": 1076,
-        "name": "Coventry City FC",
-        "shortName": "Coventry City",
-        "tla": "COV",
-        "crest": "https://crests.football-data.org/1076.png"
+        "id": 402,
+        "name": "Brentford FC",
+        "shortName": "Brentford",
+        "tla": "BRE",
+        "crest": "https://crests.football-data.org/402.png"
       },
       "awayTeam": {
         "id": 71,
@@ -742,19 +638,123 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
-      "id": 560629,
-      "utcDate": "2026-10-31T15:00:00Z",
+      "id": 560568,
+      "utcDate": "2026-09-05T14:00:00Z",
       "status": "TIMED",
-      "matchday": 9,
+      "matchday": 3,
+      "homeTeam": {
+        "id": 63,
+        "name": "Fulham FC",
+        "shortName": "Fulham",
+        "tla": "FUL",
+        "crest": "https://crests.football-data.org/63.png"
+      },
+      "awayTeam": {
+        "id": 354,
+        "name": "Crystal Palace FC",
+        "shortName": "Crystal Palace",
+        "tla": "CRY",
+        "crest": "https://crests.football-data.org/354.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": "Peacock"
+    },
+    {
+      "id": 560569,
+      "utcDate": "2026-09-05T16:30:00Z",
+      "status": "TIMED",
+      "matchday": 3,
       "homeTeam": {
         "id": 322,
         "name": "Hull City AFC",
         "shortName": "Hull City",
         "tla": "HUL",
         "crest": "https://crests.football-data.org/322.png"
+      },
+      "awayTeam": {
+        "id": 58,
+        "name": "Aston Villa FC",
+        "shortName": "Aston Villa",
+        "tla": "AVL",
+        "crest": "https://crests.football-data.org/58.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": "NBC"
+    },
+    {
+      "id": 560567,
+      "utcDate": "2026-09-06T13:00:00Z",
+      "status": "TIMED",
+      "matchday": 3,
+      "homeTeam": {
+        "id": 62,
+        "name": "Everton FC",
+        "shortName": "Everton",
+        "tla": "EVE",
+        "crest": "https://crests.football-data.org/62.png"
+      },
+      "awayTeam": {
+        "id": 66,
+        "name": "Manchester United FC",
+        "shortName": "Man United",
+        "tla": "MUN",
+        "crest": "https://crests.football-data.org/66.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": "USA Network"
+    },
+    {
+      "id": 560570,
+      "utcDate": "2026-09-06T15:30:00Z",
+      "status": "TIMED",
+      "matchday": 3,
+      "homeTeam": {
+        "id": 57,
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "tla": "ARS",
+        "crest": "https://crests.football-data.org/57.png"
+      },
+      "awayTeam": {
+        "id": 61,
+        "name": "Chelsea FC",
+        "shortName": "Chelsea",
+        "tla": "CHE",
+        "crest": "https://crests.football-data.org/61.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": "USA Network"
+    },
+    {
+      "id": 560572,
+      "utcDate": "2026-09-12T14:00:00Z",
+      "status": "TIMED",
+      "matchday": 4,
+      "homeTeam": {
+        "id": 354,
+        "name": "Crystal Palace FC",
+        "shortName": "Crystal Palace",
+        "tla": "CRY",
+        "crest": "https://crests.football-data.org/354.png"
       },
       "awayTeam": {
         "id": 349,
@@ -773,130 +773,134 @@
   ],
   "headlines": [
     {
-      "title": "Aasgaard set for Anderlecht switch as Rangers reject Raskin bid",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c624z0q5y5jo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 02 Sep 2026 16:21:25 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fba1/live/b91f9660-a6e6-11f1-aed2-8d6da8d75094.png",
+      "title": "Who am I? Guess WSL star No 2",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cn8nmnv8vrvo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Sat, 05 Sep 2026 07:23:30 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/70d9/live/eb25ea50-9afd-11f1-b792-a710e56a11dc.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "Premier League transfer talking points: three things we learned from the data",
-      "link": "https://www.theguardian.com/football/2026/sep/02/premier-league-transfer-talking-points-three-things-we-learned-from-the-data",
-      "pubDate": "Wed, 02 Sep 2026 15:29:31 GMT",
-      "image": "https://i.guim.co.uk/img/media/62498b4598c98549bf22602c97c26d3ea1941dc9/0_0_5000_4000/master/5000.jpg?width=460&quality=85&auto=format&fit=max&s=fa9f896b11a73d15eeae81144ce0c8b4",
-      "source": "The Guardian",
-      "teams": []
-    },
-    {
-      "title": "Football Daily | War chests, deal sheets and online meltdowns: anatomy of a deadline day",
-      "link": "https://www.theguardian.com/football/2026/sep/02/football-daily-newsletter-anatomy-of-a-deadline-day",
-      "pubDate": "Wed, 02 Sep 2026 14:57:37 GMT",
-      "image": "https://i.guim.co.uk/img/media/1b59a0e853e66950936a97dd92c12649c414d5d2/557_86_1296_1037/master/1296.jpg?width=460&quality=85&auto=format&fit=max&s=332d7522c107d77c10989c0272c0d89b",
-      "source": "The Guardian",
-      "teams": []
-    },
-    {
-      "title": "72+: The EFL Podcast",
-      "link": "https://www.bbc.co.uk/sounds/play/p0p7kbw4?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 02 Sep 2026 14:55:00 GMT",
-      "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0p3n9ks.jpg",
+      "title": "Has there been a changing of guard for London sides in the WSL?",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c7837gnn4ejo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Sat, 05 Sep 2026 07:22:42 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6f04/live/672fe410-a883-11f1-824a-0fc4c5d895ae.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "Late-night transfer fallout sparks Chelsea-Monaco row",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c1wx0g1npn9o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 02 Sep 2026 14:48:09 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8f60/live/b73688e0-a6d7-11f1-a291-b542ee92de7c.png",
+      "title": "Flex your football brain with our daily quizzes",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cz9zpq8lpvqo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Sat, 05 Sep 2026 06:01:41 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ada7/live/27df4c70-9658-11f1-b2ab-0dd01740f9f6.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Man Utd made midfield recruitment summer priority - what happens now?",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c4gq2v5m5gpo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Sat, 05 Sep 2026 05:56:59 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a2d7/live/efab2c30-a862-11f1-aed2-8d6da8d75094.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Putellas debut as London City beat Man Utd in opener",
+      "link": "https://www.bbc.co.uk/sport/football/videos/cn74v6krpvno?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Sat, 05 Sep 2026 05:28:16 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5ebd/live/39c0a930-a89f-11f1-a291-b542ee92de7c.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Isak finally arrives as Gakpo proves value to Liverpool",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c209xvxe558o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Fri, 04 Sep 2026 22:37:16 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9f5b/live/e9917310-a8b0-11f1-b109-879e35c24276.jpg",
       "source": "BBC Sport",
       "teams": [
-        61
+        64
       ]
     },
     {
-      "title": "Celtic sign keeper Johnstone & striker Mheuka on loan",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c07lzmp03kpo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 02 Sep 2026 14:25:14 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2b1a/live/e99f20b0-a6d9-11f1-a291-b542ee92de7c.png",
+      "title": "Richarlison omission not my decision - De Zerbi",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c79038z3q4yo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Fri, 04 Sep 2026 22:33:13 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8b4f/live/74ac0e50-a7b8-11f1-b5cf-8556ae508a51.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "Who are the free agents after transfer deadline day?",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c5yd4065nlwo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 02 Sep 2026 13:53:47 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ec0d/live/40f13a90-a6d2-11f1-a291-b542ee92de7c.png",
+      "title": "José Mourinho sick as a Parrott as Real Madrid sunk by Real Betis and Irish supersub",
+      "link": "https://www.theguardian.com/football/2026/sep/04/jose-mourinho-sick-as-a-parrott-as-real-madrid-sunk-by-real-betis-and-irish-supersub",
+      "pubDate": "Fri, 04 Sep 2026 22:11:10 GMT",
+      "image": "https://i.guim.co.uk/img/media/87f7dab4b613926c57378dfa6e3ef8c9cd82156e/459_0_3290_2632/master/3290.jpg?width=460&quality=85&auto=format&fit=max&s=4cd368d308b25d38bbcd633c95a055fa",
+      "source": "The Guardian",
+      "teams": []
+    },
+    {
+      "title": "Parrott fires Real Betis to win over Real Madrid",
+      "link": "https://www.bbc.co.uk/sport/football/videos/c9v9ewe7kygo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Fri, 04 Sep 2026 22:07:56 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6cd0/live/ae87c250-a8ac-11f1-b109-879e35c24276.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "How Everton's deadline day debacle leaves owners facing fan mutiny",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c9861n79kepo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 02 Sep 2026 12:33:25 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6163/live/609a7b90-a6be-11f1-ae1e-219da1d6451a.jpg",
+      "title": "How London City proved they can live up to the hype",
+      "link": "https://www.bbc.co.uk/sport/football/articles/czxz1vnwgz6o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Fri, 04 Sep 2026 22:02:34 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e965/live/0e00f240-a8eb-11f1-b109-879e35c24276.jpg",
       "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "First win as Liverpool boss 'feels good' - Iraola",
+      "link": "https://www.bbc.co.uk/sport/football/videos/c93enddzn5eo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Fri, 04 Sep 2026 21:48:52 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/cfea/live/892b30f0-a8a7-11f1-b109-879e35c24276.jpg",
+      "source": "BBC Sport",
+      "teams": [
+        64
+      ]
+    },
+    {
+      "title": "'I thought we were excellent' - O'Neil on Liverpool defeat",
+      "link": "https://www.bbc.co.uk/sport/football/videos/c5y4rpj0lx4o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Fri, 04 Sep 2026 21:47:02 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7627/live/f4fa4310-a8a8-11f1-b109-879e35c24276.jpg",
+      "source": "BBC Sport",
+      "teams": [
+        64
+      ]
+    },
+    {
+      "title": "Isak's early double gives Liverpool victory over Ipswich",
+      "link": "https://www.bbc.co.uk/sport/football/videos/cgmr1z492k9o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Fri, 04 Sep 2026 21:31:56 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ee60/live/ad00fb40-a8ac-11f1-aed2-8d6da8d75094.jpg",
+      "source": "BBC Sport",
+      "teams": [
+        64
+      ]
+    },
+    {
+      "title": "Watch: Shinnie on target as Stenhousemuir win at Livingston",
+      "link": "https://www.bbc.co.uk/sport/videos/c3v49glkp51o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Fri, 04 Sep 2026 21:30:31 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2d1e/live/a9897a00-a8a7-11f1-aed2-8d6da8d75094.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Moyes reveals he has never spoken to Everton owner but is defiant after transfer blows",
+      "link": "https://www.theguardian.com/football/2026/sep/04/david-moyes-reveals-never-spoken-everton-owner-dan-friedkin-defiant-after-transfer-blows",
+      "pubDate": "Fri, 04 Sep 2026 21:30:17 GMT",
+      "image": "https://i.guim.co.uk/img/media/f2b3a8ba0c7c1c7a56fa9661b83835367440343b/331_0_3802_3042/master/3802.jpg?width=460&quality=85&auto=format&fit=max&s=97bd8b399e03c04d513ba1ceedb75225",
+      "source": "The Guardian",
       "teams": [
         62
       ]
-    },
-    {
-      "title": "'I'll bet on this' - Vrancken backs Braga to stay at Hearts",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwyzdp4p3j8o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 02 Sep 2026 12:30:32 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5972/live/f437a960-a6c6-11f1-ae1e-219da1d6451a.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Trabzonspor U-turn to accept manager's resignation",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cqxv037gw8qo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 02 Sep 2026 12:24:32 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c7b2/live/54975240-a6c4-11f1-ae1e-219da1d6451a.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Every done deal on transfer deadline day",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cvgyxyxplkvo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 02 Sep 2026 12:17:43 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/aec0/live/fd14b290-e25e-11ef-a819-277e390a7a08.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Women’s Super League 2 predictions: can Newcastle reach promotion and will Watford stay up?",
-      "link": "https://www.theguardian.com/football/2026/sep/02/womens-super-league-2-predictions-can-newcastle-united-promotion-watford-relegation",
-      "pubDate": "Wed, 02 Sep 2026 12:00:24 GMT",
-      "image": "https://i.guim.co.uk/img/media/675954a3fcf79deb05f4fa681ea48162cb99c9c6/0_0_5000_4000/master/5000.jpg?width=460&quality=85&auto=format&fit=max&s=31908aed9a4bc0c0c1e0b815e3f4a903",
-      "source": "The Guardian",
-      "teams": [
-        67
-      ]
-    },
-    {
-      "title": "The 20 most expensive transfers of the summer",
-      "link": "https://www.bbc.co.uk/sport/football/articles/clyjmd19887o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 02 Sep 2026 11:59:58 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1e3f/live/fba80b80-a6bd-11f1-ae1e-219da1d6451a.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Ebbsfleet suspension lifted by National League",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwyzg50gj94o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 02 Sep 2026 11:35:10 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/da00/live/74cf04b0-a6bd-11f1-ae1e-219da1d6451a.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Man Utd and their calculated left-back gamble",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cj9x212829vo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 02 Sep 2026 10:46:56 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0a48/live/3471fa50-a652-11f1-a291-b542ee92de7c.jpg",
-      "source": "BBC Sport",
-      "teams": []
     }
   ],
   "teams": {
@@ -1042,13 +1046,6 @@
           "position": "Offence",
           "dateOfBirth": "1998-06-04",
           "nationality": "Sweden"
-        },
-        {
-          "id": 61450,
-          "name": "Martinelli",
-          "position": "Offence",
-          "dateOfBirth": "2001-06-18",
-          "nationality": "Brazil"
         },
         {
           "id": 99813,
@@ -1224,20 +1221,6 @@
           "nationality": "Switzerland"
         },
         {
-          "id": 289528,
-          "name": "George Hemmings",
-          "position": "Midfield",
-          "dateOfBirth": "2007-03-04",
-          "nationality": "England"
-        },
-        {
-          "id": 157,
-          "name": "Leon Bailey",
-          "position": "Offence",
-          "dateOfBirth": "1997-08-09",
-          "nationality": "Jamaica"
-        },
-        {
           "id": 7985,
           "name": "Tammy Abraham",
           "position": "Offence",
@@ -1278,6 +1261,13 @@
           "position": "Offence",
           "dateOfBirth": "2009-01-12",
           "nationality": "Luxembourg"
+        },
+        {
+          "id": 289528,
+          "name": "George Hemmings",
+          "position": "Offence",
+          "dateOfBirth": "2007-03-04",
+          "nationality": "England"
         }
       ]
     },
@@ -2152,13 +2142,6 @@
           "nationality": "France"
         },
         {
-          "id": 206908,
-          "name": "Claudio Echeverri",
-          "position": "Midfield",
-          "dateOfBirth": "2006-01-02",
-          "nationality": "Argentina"
-        },
-        {
           "id": 221819,
           "name": "Ayyoub Bouaddi",
           "position": "Midfield",
@@ -2199,13 +2182,6 @@
           "position": "Offence",
           "dateOfBirth": "2004-04-19",
           "nationality": "Brazil"
-        },
-        {
-          "id": 275171,
-          "name": "Jeremy Monga",
-          "position": "Offence",
-          "dateOfBirth": "2009-07-10",
-          "nationality": "England"
         },
         {
           "id": 286950,
@@ -2783,13 +2759,6 @@
           "nationality": "Netherlands"
         },
         {
-          "id": 166249,
-          "name": "Simon Adingra",
-          "position": "Offence",
-          "dateOfBirth": "2002-01-01",
-          "nationality": "Ivory Coast"
-        },
-        {
           "id": 172275,
           "name": "Romaine Mundle",
           "position": "Offence",
@@ -3098,13 +3067,6 @@
           "name": "Ryan John Giles",
           "position": "Defence",
           "dateOfBirth": "2000-01-26",
-          "nationality": "England"
-        },
-        {
-          "id": 150364,
-          "name": "Matty Jacob",
-          "position": "Defence",
-          "dateOfBirth": "2001-06-03",
           "nationality": "England"
         },
         {
@@ -3961,13 +3923,6 @@
           "nationality": "Netherlands"
         },
         {
-          "id": 152149,
-          "name": "Justin Devenny",
-          "position": "Midfield",
-          "dateOfBirth": "2003-10-11",
-          "nationality": "Northern Ireland"
-        },
-        {
           "id": 191396,
           "name": "Adam Wharton",
           "position": "Midfield",
@@ -4035,13 +3990,6 @@
           "name": "Jesurun Rak-Sakyi",
           "position": "Offence",
           "dateOfBirth": "2002-10-05",
-          "nationality": "England"
-        },
-        {
-          "id": 190550,
-          "name": "Romain Esse",
-          "position": "Offence",
-          "dateOfBirth": "1999-02-06",
           "nationality": "England"
         },
         {
@@ -4167,6 +4115,13 @@
           "position": "Midfield",
           "dateOfBirth": "1991-06-15",
           "nationality": "Germany"
+        },
+        {
+          "id": 29319,
+          "name": "Femi Azeez",
+          "position": "Midfield",
+          "dateOfBirth": "2001-06-05",
+          "nationality": "England"
         },
         {
           "id": 145613,
@@ -4685,7 +4640,7 @@
       ]
     },
     "1076": {
-      "coach": "Frank Lampard",
+      "coach": null,
       "squad": [
         {
           "id": 4418,
