@@ -1,41 +1,22 @@
 {
-  "fetchedAt": "2026-09-06T13:08:04.296Z",
+  "fetchedAt": "2026-09-06T16:16:18.230Z",
   "odds": {
-    "560567": {
-      "eventTicker": "KXEPLGAME-26SEP06EVEMUN",
-      "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep06evemun",
-      "home": {
-        "label": "Everton",
-        "probability": 25,
-        "ticker": "KXEPLGAME-26SEP06EVEMUN-EVE"
-      },
-      "away": {
-        "label": "Man United",
-        "probability": 52,
-        "ticker": "KXEPLGAME-26SEP06EVEMUN-MUN"
-      },
-      "draw": {
-        "label": "Draw",
-        "probability": 25,
-        "ticker": "KXEPLGAME-26SEP06EVEMUN-TIE"
-      }
-    },
     "560570": {
       "eventTicker": "KXEPLGAME-26SEP06ARSCFC",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep06arscfc",
       "home": {
         "label": "Arsenal",
-        "probability": 57,
+        "probability": 52,
         "ticker": "KXEPLGAME-26SEP06ARSCFC-ARS"
       },
       "away": {
         "label": "Chelsea",
-        "probability": 20,
+        "probability": 23,
         "ticker": "KXEPLGAME-26SEP06ARSCFC-CFC"
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 31,
         "ticker": "KXEPLGAME-26SEP06ARSCFC-TIE"
       }
     },
@@ -44,12 +25,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep12cryips",
       "home": {
         "label": "Crystal Palace",
-        "probability": 50,
+        "probability": 52,
         "ticker": "KXEPLGAME-26SEP12CRYIPS-CRY"
       },
       "away": {
         "label": "Ipswich Town",
-        "probability": 24,
+        "probability": 23,
         "ticker": "KXEPLGAME-26SEP12CRYIPS-IPS"
       },
       "draw": {
@@ -68,7 +49,7 @@
       },
       "away": {
         "label": "Fulham",
-        "probability": 14,
+        "probability": 13,
         "ticker": "KXEPLGAME-26SEP12LFCFUL-FUL"
       },
       "draw": {
@@ -87,12 +68,12 @@
       },
       "away": {
         "label": "Nottingham",
-        "probability": 26,
+        "probability": 28,
         "ticker": "KXEPLGAME-26SEP12AVLNFO-NFO"
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 27,
         "ticker": "KXEPLGAME-26SEP12AVLNFO-TIE"
       }
     },
@@ -101,17 +82,17 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep12toteve",
       "home": {
         "label": "Tottenham",
-        "probability": 49,
+        "probability": 48,
         "ticker": "KXEPLGAME-26SEP12TOTEVE-TOT"
       },
       "away": {
         "label": "Everton",
-        "probability": 26,
+        "probability": 25,
         "ticker": "KXEPLGAME-26SEP12TOTEVE-EVE"
       },
       "draw": {
         "label": "Draw",
-        "probability": 27,
+        "probability": 26,
         "ticker": "KXEPLGAME-26SEP12TOTEVE-TIE"
       }
     },
@@ -120,17 +101,17 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep12boubre",
       "home": {
         "label": "Bournemouth",
-        "probability": 38,
+        "probability": 39,
         "ticker": "KXEPLGAME-26SEP12BOUBRE-BOU"
       },
       "away": {
         "label": "Brentford",
-        "probability": 36,
+        "probability": 35,
         "ticker": "KXEPLGAME-26SEP12BOUBRE-BRE"
       },
       "draw": {
         "label": "Draw",
-        "probability": 27,
+        "probability": 25,
         "ticker": "KXEPLGAME-26SEP12BOUBRE-TIE"
       }
     },
@@ -144,7 +125,7 @@
       },
       "away": {
         "label": "Arsenal",
-        "probability": 65,
+        "probability": 66,
         "ticker": "KXEPLGAME-26SEP12SUNARS-ARS"
       },
       "draw": {
@@ -158,7 +139,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep13covbri",
       "home": {
         "label": "Coventry City",
-        "probability": 23,
+        "probability": 22,
         "ticker": "KXEPLGAME-26SEP13COVBRI-COV"
       },
       "away": {
@@ -187,7 +168,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 15,
+        "probability": 14,
         "ticker": "KXEPLGAME-26SEP12CFCHUL-TIE"
       }
     }
