@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-06T18:31:06.342Z",
+  "fetchedAt": "2026-09-06T20:50:08.780Z",
   "odds": {
     "560572": {
       "eventTicker": "KXEPLGAME-26SEP12CRYIPS",
@@ -11,7 +11,7 @@
       },
       "away": {
         "label": "Ipswich Town",
-        "probability": 24,
+        "probability": 23,
         "ticker": "KXEPLGAME-26SEP12CRYIPS-IPS"
       },
       "draw": {
@@ -30,7 +30,7 @@
       },
       "away": {
         "label": "Fulham",
-        "probability": 14,
+        "probability": 13,
         "ticker": "KXEPLGAME-26SEP12LFCFUL-FUL"
       },
       "draw": {
@@ -44,7 +44,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep12avlnfo",
       "home": {
         "label": "Aston Villa",
-        "probability": 46,
+        "probability": 45,
         "ticker": "KXEPLGAME-26SEP12AVLNFO-AVL"
       },
       "away": {
@@ -63,12 +63,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep12toteve",
       "home": {
         "label": "Tottenham",
-        "probability": 47,
+        "probability": 48,
         "ticker": "KXEPLGAME-26SEP12TOTEVE-TOT"
       },
       "away": {
         "label": "Everton",
-        "probability": 26,
+        "probability": 27,
         "ticker": "KXEPLGAME-26SEP12TOTEVE-EVE"
       },
       "draw": {
@@ -87,7 +87,7 @@
       },
       "away": {
         "label": "Brentford",
-        "probability": 35,
+        "probability": 34,
         "ticker": "KXEPLGAME-26SEP12BOUBRE-BRE"
       },
       "draw": {
@@ -120,7 +120,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep13covbri",
       "home": {
         "label": "Coventry City",
-        "probability": 22,
+        "probability": 20,
         "ticker": "KXEPLGAME-26SEP13COVBRI-COV"
       },
       "away": {
@@ -163,7 +163,7 @@
       },
       "away": {
         "label": "Man City",
-        "probability": 45,
+        "probability": 46,
         "ticker": "KXEPLGAME-26SEP13MUNMCI-MCI"
       },
       "draw": {
