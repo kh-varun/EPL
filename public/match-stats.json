@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-05T19:21:12.432Z",
+  "fetchedAt": "2026-09-06T17:45:46.348Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -1061,6 +1061,71 @@
         }
       ]
     },
+    "560567": {
+      "utcDate": "2026-09-06T13:00:00Z",
+      "homeTeamId": 62,
+      "awayTeamId": 66,
+      "stats": {
+        "62": {
+          "shots": 18,
+          "shotsOnTarget": 6,
+          "possession": 45,
+          "passes": 418,
+          "passAccuracy": null,
+          "fouls": 7,
+          "corners": 4,
+          "offsides": 3,
+          "yellowCards": 3,
+          "redCards": 0
+        },
+        "66": {
+          "shots": 14,
+          "shotsOnTarget": 3,
+          "possession": 55,
+          "passes": 524,
+          "passAccuracy": null,
+          "fouls": 11,
+          "corners": 3,
+          "offsides": 1,
+          "yellowCards": 3,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 66,
+          "player": "Bryan Mbeumo",
+          "minute": 46,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 62,
+          "player": "Tyrique George",
+          "minute": 83,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 66,
+          "player": "Benjamin Šeško",
+          "minute": 88,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 62,
+          "player": "Ainsley Maitland-Niles",
+          "minute": 90,
+          "extraMinute": 6,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
     "560568": {
       "utcDate": "2026-09-05T14:00:00Z",
       "homeTeamId": 63,
@@ -1165,6 +1230,63 @@
         }
       },
       "scorers": []
+    },
+    "560570": {
+      "utcDate": "2026-09-06T15:30:00Z",
+      "homeTeamId": 57,
+      "awayTeamId": 61,
+      "stats": {
+        "57": {
+          "shots": 16,
+          "shotsOnTarget": 9,
+          "possession": 55,
+          "passes": 457,
+          "passAccuracy": null,
+          "fouls": 13,
+          "corners": 5,
+          "offsides": 3,
+          "yellowCards": 2,
+          "redCards": 0
+        },
+        "61": {
+          "shots": 13,
+          "shotsOnTarget": 5,
+          "possession": 45,
+          "passes": 379,
+          "passAccuracy": null,
+          "fouls": 16,
+          "corners": 3,
+          "offsides": 0,
+          "yellowCards": 4,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 61,
+          "player": "Morgan Rogers",
+          "minute": 2,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 57,
+          "player": "Kai Havertz",
+          "minute": 25,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 57,
+          "player": "Martin Odegaard",
+          "minute": 50,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
     },
     "560571": {
       "utcDate": "2026-09-05T11:30:00Z",
