@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-08T00:35:23.727Z",
+  "fetchedAt": "2026-09-08T05:15:19.049Z",
   "odds": {
     "560572": {
       "eventTicker": "KXEPLGAME-26SEP12CRYIPS",
@@ -11,7 +11,7 @@
       },
       "away": {
         "label": "Ipswich Town",
-        "probability": 23,
+        "probability": 24,
         "ticker": "KXEPLGAME-26SEP12CRYIPS-IPS"
       },
       "draw": {
@@ -49,7 +49,7 @@
       },
       "away": {
         "label": "Nottingham",
-        "probability": 28,
+        "probability": 29,
         "ticker": "KXEPLGAME-26SEP12AVLNFO-NFO"
       },
       "draw": {
@@ -120,7 +120,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep13covbri",
       "home": {
         "label": "Coventry City",
-        "probability": 24,
+        "probability": 22,
         "ticker": "KXEPLGAME-26SEP13COVBRI-COV"
       },
       "away": {
@@ -144,7 +144,7 @@
       },
       "away": {
         "label": "Newcastle",
-        "probability": 33,
+        "probability": 34,
         "ticker": "KXEPLGAME-26SEP14LEENEW-NEW"
       },
       "draw": {
@@ -168,7 +168,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 24,
+        "probability": 25,
         "ticker": "KXEPLGAME-26SEP13MUNMCI-TIE"
       }
     },
