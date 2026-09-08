@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-08T05:15:19.049Z",
+  "fetchedAt": "2026-09-08T09:46:50.351Z",
   "odds": {
     "560572": {
       "eventTicker": "KXEPLGAME-26SEP12CRYIPS",
@@ -25,7 +25,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep12lfcful",
       "home": {
         "label": "Liverpool",
-        "probability": 69,
+        "probability": 68,
         "ticker": "KXEPLGAME-26SEP12LFCFUL-LFC"
       },
       "away": {
@@ -44,12 +44,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep12avlnfo",
       "home": {
         "label": "Aston Villa",
-        "probability": 44,
+        "probability": 43,
         "ticker": "KXEPLGAME-26SEP12AVLNFO-AVL"
       },
       "away": {
         "label": "Nottingham",
-        "probability": 29,
+        "probability": 28,
         "ticker": "KXEPLGAME-26SEP12AVLNFO-NFO"
       },
       "draw": {
@@ -87,12 +87,12 @@
       },
       "away": {
         "label": "Brentford",
-        "probability": 36,
+        "probability": 34,
         "ticker": "KXEPLGAME-26SEP12BOUBRE-BRE"
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 27,
         "ticker": "KXEPLGAME-26SEP12BOUBRE-TIE"
       }
     },
@@ -149,7 +149,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 28,
+        "probability": 27,
         "ticker": "KXEPLGAME-26SEP14LEENEW-TIE"
       }
     },
