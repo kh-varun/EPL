@@ -14,6 +14,7 @@ APIs via scheduled GitHub Actions workflows that commit static JSON into
 | `fetch-history.mjs` | `public/history.json` | `history.yml` | Monthly | `FOOTBALL_DATA_TOKEN`, `API_FOOTBALL_KEY` (optional) |
 | `fetch-odds.mjs` | `public/odds.json` | `odds.yml` | Every 15 min | none (Kalshi is public) |
 | `fetch-live-scores.mjs` | `public/live-scores.json`, `public/match-stats.json` | `live-scores.yml` | Every 5 min | `FOOTBALL_DATA_TOKEN`; `API_FOOTBALL_KEY` (optional, for match stats) |
+| `fetch-champions-league.mjs` | `public/champions-league.json` | `champions-league.yml` | Every 30 min | `FOOTBALL_DATA_TOKEN` |
 
 All scripts degrade gracefully: a missing key or a failed call never
 crashes the run or corrupts existing JSON — it just leaves that piece of
@@ -466,11 +467,67 @@ cached per calendar date within a single run, since several of the ~10
 upcoming fixtures usually share a matchday and would otherwise repeat the
 same ESPN call.
 
-## All five fetch workflows retry their push
+## Champions League tab
 
-`update.yml`, `lineups.yml`, `odds.yml`, `history.yml`, and
-`live-scores.yml` each fetch, commit, and `git push` straight to `main`
-independently. Since several of these fire every 10-15 minutes and
+A second competition alongside the Premier League, deliberately scoped
+down for this first pass: `fetch-champions-league.mjs` fetches only
+standings, next fixtures, and last results (`scripts/lib/football-data.mjs`'s
+`fetchStandings`/`fetchLastResults`/`fetchNextFixtures`, all three now
+taking an optional `competitionCode` argument that defaults to `"PL"` so
+every existing Premier League call site keeps working unchanged) - no
+squads, lineups, match stats, odds, or live-score tracking. UEFA
+competitions are covered by the same football-data.org free tier as the
+Premier League, so no new token is needed; `champions-league.yml` runs
+every 30 minutes (league-phase matchdays are roughly two weeks apart, far
+slower-moving than anything else here) and, like every scheduled-write
+workflow, is in `deploy.yml`'s `workflow_run` trigger list.
+
+The "UCL" tab (`src/components/ChampionsLeague.jsx`) is a single combined
+view - table, next fixtures, and recent results all in one scroll - reusing
+`StandingsTable` and `MatchRow` rather than three separate tabs. Two
+adjustments were needed to reuse them safely for a second competition:
+
+- `StandingsTable` takes a `showZones` prop (default `true`, unchanged for
+  the Premier League) - the Champions League/Europa/relegation zone
+  coloring and legend are Premier-League-specific and actively misleading
+  on the Champions League's own table (its teams are, by definition,
+  already in the Champions League), so the Champions League tab passes
+  `showZones={false}` to suppress both. Confirmed live in a local
+  screenshot before landing - this would otherwise have shipped as a
+  visibly wrong legend, not something a code review would catch.
+- `StandingsTable` and `MatchRow`'s `TeamColumn` both call `onSelectTeam?.()`
+  instead of assuming it's always provided, since a team click has nowhere
+  useful to go without one. Even so, the Champions League tab **does** wire
+  `onSelectTeam` through to the same `TeamDetail` as the Premier League
+  tabs - most Champions League clubs aren't Premier League clubs and so
+  have no squad data of ours, but `TeamDetail` already renders that
+  gracefully ("Squad data not available" instead of a crash or a blank
+  formation), and it's the right behavior for the many Champions League
+  clubs that *are* also Premier League ones (Arsenal, Man City, ...):
+  clicking them here shows the same real squad as clicking them from the
+  Table/Fixtures/Results tabs would. Verified locally with a mock Real
+  Madrid entry - clicking it opens `TeamDetail` cleanly with no console
+  error, just the existing "not available" messaging.
+
+`fetchStandings`'s "TOTAL" group lookup now falls back to the first group
+in the response (logging when it does) if there's no `"TOTAL"` entry - the
+Champions League's post-2024 single-table league-phase standings shape
+hadn't been confirmed against a live response at the time this shipped, so
+this is defensive against it not being grouped the same way the Premier
+League's is. If a real run's log ever shows this fallback firing, that's
+the signal to go look at what shape actually came back.
+
+`TabBar` computed its `grid-cols-4` as a fixed Tailwind class; adding a
+fifth tab needed it to size columns dynamically instead
+(`gridTemplateColumns: repeat(${tabs.length}, minmax(0, 1fr))` via inline
+style) - keep this in mind if a tab is ever added or removed again, since
+a hardcoded `grid-cols-N` silently breaks instead of erroring.
+
+## All six fetch workflows retry their push
+
+`update.yml`, `lineups.yml`, `odds.yml`, `history.yml`, `live-scores.yml`,
+and `champions-league.yml` each fetch, commit, and `git push` straight to
+`main` independently. Since several of these fire every 10-15 minutes and
 `update.yml`'s full squad-fetch loop alone takes several minutes, two of
 them landing at once is a real, confirmed-live race - not theoretical:
 `update.yml` fetched successfully, committed locally, then got its push
@@ -510,7 +567,7 @@ its own 10-minute window in one commit.
 ## Scheduled-workflow commits never trigger a redeploy on their own
 
 `deploy.yml` builds the site and publishes `dist/` to GitHub Pages. A push
-made with the default `GITHUB_TOKEN` - which is how every one of the five
+made with the default `GITHUB_TOKEN` - which is how every one of the six
 scheduled fetch workflows above commits its data - does **not** fire
 another workflow's `on: push` trigger (a deliberate GitHub restriction to
 prevent infinite workflow-triggering loops). Confirmed live: every prior
@@ -523,7 +580,7 @@ in this project's life (e.g. an out-of-date Arsenal squad) even though
 `update.yml` itself was running and succeeding on schedule.
 
 Fixed by adding a `workflow_run` trigger to `deploy.yml` that fires on
-completion of each of the five fetch workflows (matched by their `name:`
+completion of each of the six fetch workflows (matched by their `name:`
 field, not filename) - `workflow_run` listens for the upstream run's
 completion rather than re-triggering off its push, so it isn't subject to
 the same `GITHUB_TOKEN` restriction. Keep every new scheduled-write
@@ -577,7 +634,7 @@ Two separate suites, run separately on purpose:
   already-finished matches stuck there as still upcoming (see "Live scores"
   above) were both found exactly this way. **Deliberately not part of the
   PR gate** - it depends on the live state of `main`'s data files, which
-  changes on its own via the five scheduled fetch workflows and has nothing
+  changes on its own via the six scheduled fetch workflows and has nothing
   to do with any given PR's diff. Instead it runs on its own schedule via
   `.github/workflows/data-qa.yml` (every 6 hours, plus `workflow_dispatch`),
   so a bad data state surfaces as a red scheduled workflow run rather than

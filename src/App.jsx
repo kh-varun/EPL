@@ -5,15 +5,23 @@ import TabBar from "./components/TabBar.jsx";
 import StandingsTable from "./components/StandingsTable.jsx";
 import MatchRow from "./components/MatchRow.jsx";
 import Headlines from "./components/Headlines.jsx";
+import ChampionsLeague from "./components/ChampionsLeague.jsx";
 import TeamDetail from "./components/TeamDetail.jsx";
 import MatchOddsDialog from "./components/MatchOddsDialog.jsx";
 import MatchStatsDialog from "./components/MatchStatsDialog.jsx";
-import { TrophyIcon, CalendarIcon, WhistleIcon, NewspaperIcon } from "./components/icons.jsx";
+import {
+  TrophyIcon,
+  CalendarIcon,
+  WhistleIcon,
+  NewspaperIcon,
+  StarIcon,
+} from "./components/icons.jsx";
 
 const TABS = [
   { id: "standings", label: "Table", icon: TrophyIcon },
   { id: "fixtures", label: "Fixtures", icon: CalendarIcon },
   { id: "results", label: "Results", icon: WhistleIcon },
+  { id: "champions-league", label: "UCL", icon: StarIcon },
   { id: "headlines", label: "News", icon: NewspaperIcon },
 ];
 
@@ -33,6 +41,7 @@ export default function App() {
   const [odds, setOdds] = useState(null);
   const [liveScores, setLiveScores] = useState(null);
   const [matchStats, setMatchStats] = useState(null);
+  const [championsLeague, setChampionsLeague] = useState(null);
   const [error, setError] = useState(null);
   const [activeTab, setActiveTab] = useState("standings");
   const [selectedTeam, setSelectedTeam] = useState(null);
@@ -76,6 +85,11 @@ export default function App() {
       loadJson("lineups.json").then((json) => json && setLineups(json));
       loadJson("odds.json").then((json) => json && setOdds(json));
       loadJson("match-stats.json").then((json) => json && setMatchStats(json));
+      // Champions League league-phase matchdays are roughly two weeks
+      // apart, far slower-moving than anything else here - it rides along
+      // on this same 5-minute/visibility-change refresh rather than
+      // needing its own polling layer.
+      loadJson("champions-league.json").then((json) => json && setChampionsLeague(json));
     };
     refreshOptional();
 
@@ -221,6 +235,10 @@ export default function App() {
               </p>
             )}
           </Section>
+        )}
+
+        {activeTab === "champions-league" && (
+          <ChampionsLeague data={championsLeague} onSelectTeam={setSelectedTeam} />
         )}
 
         {activeTab === "headlines" && (

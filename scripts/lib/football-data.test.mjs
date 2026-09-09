@@ -1,5 +1,12 @@
-import { describe, it, expect } from "vitest";
-import { mapTeam, mapMatch, isFixtureFresh } from "./football-data.mjs";
+import { describe, it, expect, vi, afterEach } from "vitest";
+import {
+  mapTeam,
+  mapMatch,
+  isFixtureFresh,
+  fetchStandings,
+  fetchLastResults,
+  fetchNextFixtures,
+} from "./football-data.mjs";
 
 describe("mapTeam", () => {
   it("picks out only the fields the dashboard needs", () => {
@@ -67,5 +74,90 @@ describe("isFixtureFresh", () => {
     // endpoint kept reporting matches from the previous day as still
     // SCHEDULED/TIMED well after they'd actually finished.
     expect(isFixtureFresh({ utcDate: "2026-09-03T00:00:00Z" }, now)).toBe(false);
+  });
+});
+
+function mockFetchOnce(body) {
+  vi.stubGlobal(
+    "fetch",
+    vi.fn().mockResolvedValue({ ok: true, json: async () => body }),
+  );
+}
+
+afterEach(() => {
+  vi.unstubAllGlobals();
+});
+
+// Champions League support added a competitionCode param to all three
+// fetch functions, defaulting to "PL" so every pre-existing call site
+// (fetch.mjs, fetch-live-scores.mjs) keeps working unchanged.
+describe("competitionCode parameter", () => {
+  it("defaults to PL when no competition is given", async () => {
+    mockFetchOnce({ standings: [{ type: "TOTAL", table: [] }] });
+    await fetchStandings();
+    expect(fetch).toHaveBeenCalledWith(
+      expect.stringContaining("/competitions/PL/standings"),
+      expect.anything(),
+    );
+  });
+
+  it("fetchStandings queries the given competition", async () => {
+    mockFetchOnce({ standings: [{ type: "TOTAL", table: [] }] });
+    await fetchStandings("CL");
+    expect(fetch).toHaveBeenCalledWith(
+      expect.stringContaining("/competitions/CL/standings"),
+      expect.anything(),
+    );
+  });
+
+  it("fetchLastResults queries the given competition", async () => {
+    mockFetchOnce({ matches: [] });
+    await fetchLastResults(5, "CL");
+    expect(fetch).toHaveBeenCalledWith(
+      expect.stringContaining("/competitions/CL/matches?status=FINISHED"),
+      expect.anything(),
+    );
+  });
+
+  it("fetchNextFixtures queries the given competition", async () => {
+    mockFetchOnce({ matches: [] });
+    await fetchNextFixtures(10, "CL");
+    expect(fetch).toHaveBeenCalledWith(
+      expect.stringContaining("/competitions/CL/matches?status=SCHEDULED,IN_PLAY,PAUSED"),
+      expect.anything(),
+    );
+  });
+});
+
+describe("fetchStandings TOTAL-group fallback", () => {
+  it("falls back to the first group when there's no TOTAL group", async () => {
+    // The Champions League's single-table league-phase standings shape is
+    // unconfirmed against a live response - this covers the fallback path
+    // in case it isn't grouped under "TOTAL" the way the Premier League's is.
+    mockFetchOnce({
+      standings: [
+        {
+          type: "SOME_OTHER_GROUP",
+          table: [
+            {
+              position: 1,
+              team: { id: 1, name: "Real Madrid CF", shortName: "Real Madrid", tla: "RMA", crest: "r.png" },
+              playedGames: 1,
+              won: 1,
+              draw: 0,
+              lost: 0,
+              points: 3,
+              goalsFor: 2,
+              goalsAgainst: 0,
+              goalDifference: 2,
+              form: "W",
+            },
+          ],
+        },
+      ],
+    });
+    const standings = await fetchStandings("CL");
+    expect(standings).toHaveLength(1);
+    expect(standings[0].team.shortName).toBe("Real Madrid");
   });
 });

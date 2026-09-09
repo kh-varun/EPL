@@ -1,6 +1,9 @@
 export default function TabBar({ tabs, activeTab, onChange }) {
   return (
-    <div className="grid grid-cols-4 gap-1 rounded-xl bg-white/10 p-1 backdrop-blur-sm">
+    <div
+      className="grid gap-1 rounded-xl bg-white/10 p-1 backdrop-blur-sm"
+      style={{ gridTemplateColumns: `repeat(${tabs.length}, minmax(0, 1fr))` }}
+    >
       {tabs.map((tab) => {
         const isActive = activeTab === tab.id;
         const Icon = tab.icon;

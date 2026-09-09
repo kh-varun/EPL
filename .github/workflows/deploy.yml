@@ -22,6 +22,7 @@ on:
       - "Update Kalshi odds"
       - "Update last-season history"
       - "Update live scores"
+      - "Update Champions League data"
     types: [completed]
   workflow_dispatch: {}
 

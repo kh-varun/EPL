@@ -6,7 +6,7 @@ function TeamColumn({ team, position, onSelectTeam }) {
       type="button"
       onClick={(e) => {
         e.stopPropagation();
-        onSelectTeam(team);
+        onSelectTeam?.(team);
       }}
       className="flex flex-1 min-w-0 flex-col items-center gap-1.5 text-center"
     >
