@@ -56,6 +56,18 @@ export default function App() {
     return map;
   }, [data?.standings]);
 
+  // Champions League positions are kept separate from the Premier League's
+  // - the two are different tables, and mixing them into one map would show
+  // a CL team's PL-irrelevant league-phase rank (or worse, collide on a
+  // shared team id) in the wrong context.
+  const clPositionByTeamId = useMemo(() => {
+    const map = {};
+    for (const row of championsLeague?.standings ?? []) {
+      map[row.team.id] = row.position;
+    }
+    return map;
+  }, [championsLeague?.standings]);
+
   useEffect(() => {
     // Resolves null on any failure - the optional files may simply not
     // exist yet, and a failed refresh must keep showing whatever data is
@@ -187,54 +199,94 @@ export default function App() {
         )}
 
         {activeTab === "fixtures" && (
-          <Section title="Next Fixtures">
-            {data?.nextFixtures?.length ? (
-              <ul className="space-y-2">
-                {data.nextFixtures.map((match) => {
-                  const liveMatch = withLiveScore(match, liveScores?.matches);
-                  return (
+          <div className="space-y-4">
+            <Section title="Premier League – Next Fixtures">
+              {data?.nextFixtures?.length ? (
+                <ul className="space-y-2">
+                  {data.nextFixtures.map((match) => {
+                    const liveMatch = withLiveScore(match, liveScores?.matches);
+                    return (
+                      <MatchRow
+                        key={match.id}
+                        match={liveMatch}
+                        showScore={Boolean(liveMatch.liveStatus)}
+                        positions={positionByTeamId}
+                        onSelectTeam={setSelectedTeam}
+                        onSelectMatch={liveMatch.liveStatus ? undefined : setSelectedMatch}
+                        odds={odds?.odds?.[match.id]}
+                      />
+                    );
+                  })}
+                </ul>
+              ) : (
+                <p className="text-sm text-white/50">No upcoming fixtures.</p>
+              )}
+            </Section>
+
+            <Section title="Champions League – Next Fixtures">
+              {championsLeague?.nextFixtures?.length ? (
+                <ul className="space-y-2">
+                  {championsLeague.nextFixtures.map((match) => (
                     <MatchRow
                       key={match.id}
-                      match={liveMatch}
-                      showScore={Boolean(liveMatch.liveStatus)}
-                      positions={positionByTeamId}
+                      match={match}
+                      showScore={false}
+                      positions={clPositionByTeamId}
                       onSelectTeam={setSelectedTeam}
-                      onSelectMatch={liveMatch.liveStatus ? undefined : setSelectedMatch}
-                      odds={odds?.odds?.[match.id]}
                     />
-                  );
-                })}
-              </ul>
-            ) : (
-              <p className="text-sm text-white/50">No upcoming fixtures.</p>
-            )}
-          </Section>
+                  ))}
+                </ul>
+              ) : (
+                <p className="text-sm text-white/50">No upcoming fixtures.</p>
+              )}
+            </Section>
+          </div>
         )}
 
         {activeTab === "results" && (
-          <Section title="Last Results">
-            {data?.lastResults?.length ? (
-              <ul className="space-y-2">
-                {data.lastResults.map((match) => {
-                  const liveMatch = withLiveScore(match, liveScores?.matches);
-                  return (
+          <div className="space-y-4">
+            <Section title="Premier League – Last Results">
+              {data?.lastResults?.length ? (
+                <ul className="space-y-2">
+                  {data.lastResults.map((match) => {
+                    const liveMatch = withLiveScore(match, liveScores?.matches);
+                    return (
+                      <MatchRow
+                        key={match.id}
+                        match={liveMatch}
+                        showScore={true}
+                        positions={positionByTeamId}
+                        onSelectTeam={setSelectedTeam}
+                        onSelectMatch={liveMatch.liveStatus ? undefined : setSelectedStatsMatch}
+                      />
+                    );
+                  })}
+                </ul>
+              ) : (
+                <p className="text-sm text-white/50">
+                  No results yet — the season hasn&apos;t kicked off.
+                </p>
+              )}
+            </Section>
+
+            <Section title="Champions League – Last Results">
+              {championsLeague?.lastResults?.length ? (
+                <ul className="space-y-2">
+                  {championsLeague.lastResults.map((match) => (
                     <MatchRow
                       key={match.id}
-                      match={liveMatch}
+                      match={match}
                       showScore={true}
-                      positions={positionByTeamId}
+                      positions={clPositionByTeamId}
                       onSelectTeam={setSelectedTeam}
-                      onSelectMatch={liveMatch.liveStatus ? undefined : setSelectedStatsMatch}
                     />
-                  );
-                })}
-              </ul>
-            ) : (
-              <p className="text-sm text-white/50">
-                No results yet — the season hasn&apos;t kicked off.
-              </p>
-            )}
-          </Section>
+                  ))}
+                </ul>
+              ) : (
+                <p className="text-sm text-white/50">No results yet.</p>
+              )}
+            </Section>
+          </div>
         )}
 
         {activeTab === "champions-league" && (
