@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-06T17:45:38.602Z",
+  "fetchedAt": "2026-09-09T17:09:40.148Z",
   "standings": [
     {
       "position": 1,
@@ -534,7 +534,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560573,
@@ -560,7 +560,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560574,
@@ -586,7 +586,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560576,
@@ -612,7 +612,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560581,
@@ -638,7 +638,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560575,
@@ -664,7 +664,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "NBC"
     },
     {
       "id": 560577,
@@ -690,7 +690,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560578,
@@ -716,7 +716,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560580,
@@ -742,7 +742,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560579,
@@ -768,138 +768,134 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     }
   ],
   "headlines": [
     {
-      "title": "Who am I? Guess WSL star No 2",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cn8nmnv8vrvo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Sat, 05 Sep 2026 07:23:30 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/70d9/live/eb25ea50-9afd-11f1-b792-a710e56a11dc.jpg",
+      "title": "'This Is Anfield' sign fetches £115k at auction",
+      "link": "https://www.bbc.co.uk/news/articles/c87ve5vw953o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 09 Sep 2026 16:00:46 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/23a3/live/cd90db70-a616-11f1-9a0e-e95c171695e2.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "Has there been a changing of guard for London sides in the WSL?",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c7837gnn4ejo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Sat, 05 Sep 2026 07:22:42 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6f04/live/672fe410-a883-11f1-824a-0fc4c5d895ae.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Flex your football brain with our daily quizzes",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cz9zpq8lpvqo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Sat, 05 Sep 2026 06:01:41 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ada7/live/27df4c70-9658-11f1-b2ab-0dd01740f9f6.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Man Utd made midfield recruitment summer priority - what happens now?",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c4gq2v5m5gpo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Sat, 05 Sep 2026 05:56:59 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a2d7/live/efab2c30-a862-11f1-aed2-8d6da8d75094.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Putellas debut as London City beat Man Utd in opener",
-      "link": "https://www.bbc.co.uk/sport/football/videos/cn74v6krpvno?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Sat, 05 Sep 2026 05:28:16 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5ebd/live/39c0a930-a89f-11f1-a291-b542ee92de7c.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Isak finally arrives as Gakpo proves value to Liverpool",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c209xvxe558o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Fri, 04 Sep 2026 22:37:16 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9f5b/live/e9917310-a8b0-11f1-b109-879e35c24276.jpg",
+      "title": "'Spoke brilliantly' but Liverpool fans torn on Mac Allister contract comments",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c3v4379d4ylo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 09 Sep 2026 15:07:17 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f7a3/live/d963ff50-ac4b-11f1-96a2-2f464854ded4.jpg",
       "source": "BBC Sport",
       "teams": [
         64
       ]
     },
     {
-      "title": "Richarlison omission not my decision - De Zerbi",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c79038z3q4yo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Fri, 04 Sep 2026 22:33:13 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8b4f/live/74ac0e50-a7b8-11f1-b5cf-8556ae508a51.jpg",
+      "title": "Rosario ‘grabbed my bottom’ during Manchester City’s win at Porto, claims Haaland",
+      "link": "https://www.theguardian.com/football/2026/sep/09/erling-haaland-pablo-rosario-manchester-city-porto-champions-league",
+      "pubDate": "Wed, 09 Sep 2026 14:42:55 GMT",
+      "image": "https://i.guim.co.uk/img/media/5c53542e502cdb7f0eea3a9c06fbefe334ce6f9e/178_0_2917_2333/master/2917.jpg?width=460&quality=85&auto=format&fit=max&s=66d55f2c6276aa30628e870519240e86",
+      "source": "The Guardian",
+      "teams": [
+        65
+      ]
+    },
+    {
+      "title": "The Rwandan eyeing Champions League history against Man Utd",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c4g7zxezj9lo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 09 Sep 2026 14:41:38 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1972/live/5d3068c0-ac54-11f1-9e64-05835b0b18f8.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "José Mourinho sick as a Parrott as Real Madrid sunk by Real Betis and Irish supersub",
-      "link": "https://www.theguardian.com/football/2026/sep/04/jose-mourinho-sick-as-a-parrott-as-real-madrid-sunk-by-real-betis-and-irish-supersub",
-      "pubDate": "Fri, 04 Sep 2026 22:11:10 GMT",
-      "image": "https://i.guim.co.uk/img/media/87f7dab4b613926c57378dfa6e3ef8c9cd82156e/459_0_3290_2632/master/3290.jpg?width=460&quality=85&auto=format&fit=max&s=4cd368d308b25d38bbcd633c95a055fa",
+      "title": "Irvine stays as Pocognoli refreshes Scotland staff",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cyvzn5d97y3o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 09 Sep 2026 14:39:26 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ffc7/live/3434ccc0-ac51-11f1-96a2-2f464854ded4.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Football Daily | Troy Parrott enjoys a big week after taking the scenic route to success",
+      "link": "https://www.theguardian.com/football/2026/sep/09/troy-parrott-real-betis-big-week-football-daily-newsletter",
+      "pubDate": "Wed, 09 Sep 2026 14:11:20 GMT",
+      "image": "https://i.guim.co.uk/img/media/7056533e74bc809d3a446fa70c3908c177465a31/547_328_1635_1308/master/1635.jpg?width=460&quality=85&auto=format&fit=max&s=d2371bc54a61d09f6ac8c3fd623b9be7",
       "source": "The Guardian",
       "teams": []
     },
     {
-      "title": "Parrott fires Real Betis to win over Real Madrid",
-      "link": "https://www.bbc.co.uk/sport/football/videos/c9v9ewe7kygo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Fri, 04 Sep 2026 22:07:56 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6cd0/live/ae87c250-a8ac-11f1-b109-879e35c24276.jpg",
+      "title": "‘The heartbeat of game day’: how NWSL fans in Boston built culture from the ground up",
+      "link": "https://www.theguardian.com/football/2026/sep/09/boston-legacy-nwsl-fans",
+      "pubDate": "Wed, 09 Sep 2026 13:45:00 GMT",
+      "image": "https://i.guim.co.uk/img/media/5a061293f3943e670f3f91d63ff72160fc4036ce/82_0_5720_4579/master/5720.jpg?width=460&quality=85&auto=format&fit=max&s=cda829c9377196a2d843743d319ab6c6",
+      "source": "The Guardian",
+      "teams": []
+    },
+    {
+      "title": "Men’s Ballon d’Or 2026 power rankings: will there be an English winner for the first time in 25 years?",
+      "link": "https://www.theguardian.com/football/2026/sep/09/mens-ballon-d-or-2026-winner-harry-kane-rodri-kylian-mbappe",
+      "pubDate": "Wed, 09 Sep 2026 13:04:35 GMT",
+      "image": "https://i.guim.co.uk/img/media/c6d70e5deb7935122b52388ca978e3acdbb3d744/0_0_5000_4000/master/5000.jpg?width=460&quality=85&auto=format&fit=max&s=89558e01c0949de1f59ef27b92027826",
+      "source": "The Guardian",
+      "teams": []
+    },
+    {
+      "title": "Haaland at the double as Champions League returns | Football Weekly – video",
+      "link": "https://www.theguardian.com/football/video/2026/sep/09/haaland-at-the-double-as-champions-league-returns-football-weekly-video-podcast",
+      "pubDate": "Wed, 09 Sep 2026 12:09:07 GMT",
+      "image": "https://i.guim.co.uk/img/media/cefc59600eada383144e673846ac60dead7779e2/375_0_3750_3000/master/3750.jpg?width=460&quality=85&auto=format&fit=max&s=7e43fc118cdca57a887c16ea39d9d231",
+      "source": "The Guardian",
+      "teams": []
+    },
+    {
+      "title": "Who are the record Champions League goalscorers?",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cgk0yyepkxjo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 09 Sep 2026 12:02:30 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fd8c/live/b1576a20-ac3b-11f1-a540-61c3f7fc4e6c.png",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "How London City proved they can live up to the hype",
-      "link": "https://www.bbc.co.uk/sport/football/articles/czxz1vnwgz6o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Fri, 04 Sep 2026 22:02:34 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e965/live/0e00f240-a8eb-11f1-b109-879e35c24276.jpg",
+      "title": "Messi agrees to buy second Spanish club",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c99dmky78d3o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 09 Sep 2026 11:56:09 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/708b/live/1a0c0af0-ac3f-11f1-96a2-2f464854ded4.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "First win as Liverpool boss 'feels good' - Iraola",
-      "link": "https://www.bbc.co.uk/sport/football/videos/c93enddzn5eo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Fri, 04 Sep 2026 21:48:52 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/cfea/live/892b30f0-a8a7-11f1-b109-879e35c24276.jpg",
-      "source": "BBC Sport",
-      "teams": [
-        64
-      ]
-    },
-    {
-      "title": "'I thought we were excellent' - O'Neil on Liverpool defeat",
-      "link": "https://www.bbc.co.uk/sport/football/videos/c5y4rpj0lx4o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Fri, 04 Sep 2026 21:47:02 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7627/live/f4fa4310-a8a8-11f1-b109-879e35c24276.jpg",
-      "source": "BBC Sport",
-      "teams": [
-        64
-      ]
-    },
-    {
-      "title": "Isak's early double gives Liverpool victory over Ipswich",
-      "link": "https://www.bbc.co.uk/sport/football/videos/cgmr1z492k9o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Fri, 04 Sep 2026 21:31:56 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ee60/live/ad00fb40-a8ac-11f1-aed2-8d6da8d75094.jpg",
-      "source": "BBC Sport",
-      "teams": [
-        64
-      ]
-    },
-    {
-      "title": "Watch: Shinnie on target as Stenhousemuir win at Livingston",
-      "link": "https://www.bbc.co.uk/sport/videos/c3v49glkp51o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Fri, 04 Sep 2026 21:30:31 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2d1e/live/a9897a00-a8a7-11f1-aed2-8d6da8d75094.jpg",
+      "title": "After 717 days and nine 'career over' diagnoses, player makes 'surreal' return",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c93e9vn9vgvo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 09 Sep 2026 11:42:10 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5d97/live/0e59cf80-ac3f-11f1-96a2-2f464854ded4.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "Moyes reveals he has never spoken to Everton owner but is defiant after transfer blows",
-      "link": "https://www.theguardian.com/football/2026/sep/04/david-moyes-reveals-never-spoken-everton-owner-dan-friedkin-defiant-after-transfer-blows",
-      "pubDate": "Fri, 04 Sep 2026 21:30:17 GMT",
-      "image": "https://i.guim.co.uk/img/media/f2b3a8ba0c7c1c7a56fa9661b83835367440343b/331_0_3802_3042/master/3802.jpg?width=460&quality=85&auto=format&fit=max&s=97bd8b399e03c04d513ba1ceedb75225",
+      "title": "‘A dream come true’: behind the scenes with Wolves Women as they enter new era",
+      "link": "https://www.theguardian.com/football/2026/sep/09/wolves-women-professional-footballers-wsl2-super-league-two",
+      "pubDate": "Wed, 09 Sep 2026 11:00:06 GMT",
+      "image": "https://i.guim.co.uk/img/media/db06a6dcb2452f3bd3390f913daa8be1fe3f8578/1020_733_4660_3729/master/4660.jpg?width=460&quality=85&auto=format&fit=max&s=0f0b8955c288497fb882bf33261435e2",
+      "source": "The Guardian",
+      "teams": []
+    },
+    {
+      "title": "Is 15-year-old Gabriel set to become Man Utd's youngest ever player?",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c7706zz7mylo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 09 Sep 2026 10:58:38 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a126/live/77b7f9c0-ac21-11f1-aed2-8d6da8d75094.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Revitalised Ødegaard’s forward thinking gives Arsenal new lines of attack",
+      "link": "https://www.theguardian.com/football/2026/sep/09/martin-odegaard-forward-thinking-arsenal-new-lines-of-attack",
+      "pubDate": "Wed, 09 Sep 2026 08:59:06 GMT",
+      "image": "https://i.guim.co.uk/img/media/1784391ee0722c846f96518f608d93384ad8960d/279_0_4474_3579/master/4474.jpg?width=460&quality=85&auto=format&fit=max&s=86b7d4a56505539cb4b851d122f2b3e6",
       "source": "The Guardian",
       "teams": [
-        62
+        57
       ]
     }
   ],
@@ -3004,7 +3000,7 @@
       ]
     },
     "322": {
-      "coach": "S. Jakirović",
+      "coach": "G. McCann",
       "squad": [
         {
           "id": 3308,
@@ -3794,7 +3790,7 @@
       ]
     },
     "354": {
-      "coach": "O. Glasner",
+      "coach": "P. Sage",
       "squad": [
         {
           "id": 5457,
