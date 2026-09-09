@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-09T21:11:53.480Z",
+  "fetchedAt": "2026-09-09T23:15:36.702Z",
   "odds": {
     "560572": {
       "eventTicker": "KXEPLGAME-26SEP12CRYIPS",
@@ -87,7 +87,7 @@
       },
       "away": {
         "label": "Brentford",
-        "probability": 34,
+        "probability": 35,
         "ticker": "KXEPLGAME-26SEP12BOUBRE-BRE"
       },
       "draw": {
@@ -125,7 +125,7 @@
       },
       "away": {
         "label": "Brighton Hove",
-        "probability": 51,
+        "probability": 52,
         "ticker": "KXEPLGAME-26SEP13COVBRI-BRI"
       },
       "draw": {
@@ -139,7 +139,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep14leenew",
       "home": {
         "label": "Leeds United",
-        "probability": 39,
+        "probability": 40,
         "ticker": "KXEPLGAME-26SEP14LEENEW-LEE"
       },
       "away": {
@@ -149,7 +149,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 27,
         "ticker": "KXEPLGAME-26SEP14LEENEW-TIE"
       }
     },
@@ -177,12 +177,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep12cfchul",
       "home": {
         "label": "Chelsea",
-        "probability": 79,
+        "probability": 80,
         "ticker": "KXEPLGAME-26SEP12CFCHUL-CFC"
       },
       "away": {
         "label": "Hull City",
-        "probability": 7,
+        "probability": 8,
         "ticker": "KXEPLGAME-26SEP12CFCHUL-HUL"
       },
       "draw": {
