@@ -482,10 +482,12 @@ every 30 minutes (league-phase matchdays are roughly two weeks apart, far
 slower-moving than anything else here) and, like every scheduled-write
 workflow, is in `deploy.yml`'s `workflow_run` trigger list.
 
-The "UCL" tab (`src/components/ChampionsLeague.jsx`) is a single combined
-view - table, next fixtures, and recent results all in one scroll - reusing
-`StandingsTable` and `MatchRow` rather than three separate tabs. Two
-adjustments were needed to reuse them safely for a second competition:
+The "UCL" tab (`src/components/ChampionsLeague.jsx`) originally combined
+table, next fixtures, and recent results in one scroll, but the fixtures/
+results were pulled back out once the Premier League tabs needed to show
+both competitions together (see "Fixtures/Results: two competitions, one
+tab" below) - `ChampionsLeague.jsx` now renders only its `StandingsTable`,
+to avoid showing the same Champions League fixtures/results twice.
 
 - `StandingsTable` takes a `showZones` prop (default `true`, unchanged for
   the Premier League) - the Champions League/Europa/relegation zone
@@ -508,6 +510,31 @@ adjustments were needed to reuse them safely for a second competition:
   Table/Fixtures/Results tabs would. Verified locally with a mock Real
   Madrid entry - clicking it opens `TeamDetail` cleanly with no console
   error, just the existing "not available" messaging.
+
+### Fixtures/Results: two competitions, one tab
+
+Rather than a third UCL-only sub-tab for fixtures and a fourth for results,
+the existing **Fixtures** and **Results** tabs in `App.jsx` each render two
+`<Section>`s stacked in one scroll - "Premier League – Next Fixtures" /
+"Champions League – Next Fixtures" (and the equivalent pair for Results) -
+both built from the same `MatchRow` component. This keeps the tab count at
+5 and avoids ever showing a Champions League fixture in two different
+places on the dashboard.
+
+- The Champions League sections pass a separate `clPositionByTeamId` map
+  (derived from `championsLeague?.standings`, mirroring how
+  `positionByTeamId` is derived from `data?.standings`) rather than reusing
+  the Premier League's `positionByTeamId` - the two are different tables,
+  and mixing them would show a team's PL-irrelevant Champions League rank
+  (or worse, collide if a team id were ever shared) in the wrong context.
+- Champions League rows don't get a live-score overlay, odds preview, or
+  `onSelectMatch` handler - `live-scores.json`/`odds.json`/
+  `match-stats.json` are all Premier-League-only by design (see "Champions
+  League tab" above: no live-score tracking or odds for this competition
+  yet), so there's nothing to wire up for them. `withLiveScore` is only
+  ever called on Premier League matches for this reason.
+- Team clicks in either competition's section go to the same
+  `setSelectedTeam`/`TeamDetail` flow as everywhere else on the dashboard.
 
 `fetchStandings`'s "TOTAL" group lookup now falls back to the first group
 in the response (logging when it does) if there's no `"TOTAL"` entry - the
