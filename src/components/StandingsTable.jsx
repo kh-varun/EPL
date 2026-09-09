@@ -7,7 +7,12 @@ function zoneColor(position) {
   return "bg-transparent";
 }
 
-export default function StandingsTable({ standings, onSelectTeam }) {
+// showZones defaults on for the Premier League table (Champions League/
+// Europa/relegation zones), but a reused competition's own qualification
+// structure is different (the Champions League table's teams are, by
+// definition, already in the Champions League) - the Champions League tab
+// passes showZones={false} so it doesn't paint a misleading legend.
+export default function StandingsTable({ standings, onSelectTeam, showZones = true }) {
   if (!standings?.length) {
     return <p className="text-sm text-white/50">Standings not available yet.</p>;
   }
@@ -38,7 +43,7 @@ export default function StandingsTable({ standings, onSelectTeam }) {
               return (
                 <tr key={row.team.id} className={"border-t border-white/10 " + rowBg}>
                   <td className={"sticky left-0 " + rowBg}>
-                    <div className={"h-full w-1.5 " + zoneColor(row.position)} />
+                    <div className={"h-full w-1.5 " + (showZones ? zoneColor(row.position) : "")} />
                   </td>
                   <td className={"py-2 pr-2 text-white/50 tabular-nums sticky left-1.5 " + rowBg}>
                     {row.position}
@@ -46,7 +51,7 @@ export default function StandingsTable({ standings, onSelectTeam }) {
                   <td className={"py-2 pr-3 sticky left-[26px] " + rowBg}>
                     <button
                       type="button"
-                      onClick={() => onSelectTeam(row.team)}
+                      onClick={() => onSelectTeam?.(row.team)}
                       className="flex items-center gap-2 text-left"
                     >
                       <img
@@ -96,17 +101,19 @@ export default function StandingsTable({ standings, onSelectTeam }) {
         </table>
       </div>
 
-      <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-white/50">
-        <span className="inline-flex items-center gap-1">
-          <span className="h-2 w-2 rounded-sm bg-emerald-500" /> Champions League
-        </span>
-        <span className="inline-flex items-center gap-1">
-          <span className="h-2 w-2 rounded-sm bg-sky-400" /> Europa/Conference
-        </span>
-        <span className="inline-flex items-center gap-1">
-          <span className="h-2 w-2 rounded-sm bg-rose-500" /> Relegation
-        </span>
-      </div>
+      {showZones && (
+        <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-white/50">
+          <span className="inline-flex items-center gap-1">
+            <span className="h-2 w-2 rounded-sm bg-emerald-500" /> Champions League
+          </span>
+          <span className="inline-flex items-center gap-1">
+            <span className="h-2 w-2 rounded-sm bg-sky-400" /> Europa/Conference
+          </span>
+          <span className="inline-flex items-center gap-1">
+            <span className="h-2 w-2 rounded-sm bg-rose-500" /> Relegation
+          </span>
+        </div>
+      )}
     </div>
   );
 }

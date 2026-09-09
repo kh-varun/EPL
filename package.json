@@ -12,6 +12,7 @@
     "fetch-history": "node scripts/fetch-history.mjs",
     "fetch-odds": "node scripts/fetch-odds.mjs",
     "fetch-live-scores": "node scripts/fetch-live-scores.mjs",
+    "fetch-champions-league": "node scripts/fetch-champions-league.mjs",
     "lint": "eslint .",
     "test": "vitest run",
     "test:unit": "vitest run scripts src",

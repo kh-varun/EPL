@@ -49,9 +49,25 @@ export function mapMatch(match) {
   };
 }
 
-export async function fetchStandings() {
-  const data = await footballDataRequest("/competitions/PL/standings");
-  const total = data.standings.find((s) => s.type === "TOTAL");
+// competitionCode defaults to "PL" (Premier League) so every existing call
+// site keeps working unchanged - only the new Champions League pipeline
+// passes "CL" explicitly. Both are free-tier competitions on the same
+// football-data.org token, so no new credential is needed.
+export async function fetchStandings(competitionCode = "PL") {
+  const data = await footballDataRequest(`/competitions/${competitionCode}/standings`);
+  // Guessed shape for the Champions League's post-2024 single-table league
+  // phase is unconfirmed - falls back to the first group and logs when it
+  // does, per this project's ship-logging-first convention, rather than
+  // silently returning an empty table if the response isn't shaped like
+  // the Premier League's single "TOTAL" group.
+  let total = data.standings?.find((s) => s.type === "TOTAL");
+  if (!total && data.standings?.length > 0) {
+    console.log(
+      `  fetchStandings(${competitionCode}): no "TOTAL" group - falling back to the first of ` +
+        `${data.standings.length} group(s), types: ${data.standings.map((s) => s.type).join(", ")}`,
+    );
+    total = data.standings[0];
+  }
   return (total?.table ?? []).map((row) => ({
     position: row.position,
     team: mapTeam(row.team),
@@ -67,8 +83,8 @@ export async function fetchStandings() {
   }));
 }
 
-export async function fetchLastResults(limit = 5) {
-  const data = await footballDataRequest("/competitions/PL/matches?status=FINISHED");
+export async function fetchLastResults(limit = 5, competitionCode = "PL") {
+  const data = await footballDataRequest(`/competitions/${competitionCode}/matches?status=FINISHED`);
   const matches = [...(data.matches ?? [])].sort(
     (a, b) => new Date(b.utcDate) - new Date(a.utcDate),
   );
@@ -103,8 +119,10 @@ export function isFixtureFresh(match, now = Date.now()) {
 // only overlays live-scores.json onto a match it can already find in one of
 // those two lists, so the currently-live match vanishes from the dashboard
 // entirely until full time instead of just losing its "next fixture" framing.
-export async function fetchNextFixtures(limit = 10) {
-  const data = await footballDataRequest("/competitions/PL/matches?status=SCHEDULED,IN_PLAY,PAUSED");
+export async function fetchNextFixtures(limit = 10, competitionCode = "PL") {
+  const data = await footballDataRequest(
+    `/competitions/${competitionCode}/matches?status=SCHEDULED,IN_PLAY,PAUSED`,
+  );
   const now = Date.now();
   const raw = data.matches ?? [];
 
@@ -118,11 +136,13 @@ export async function fetchNextFixtures(limit = 10) {
     const statusCounts = {};
     for (const m of raw) statusCounts[m.status] = (statusCounts[m.status] ?? 0) + 1;
     console.log(
-      `  fetchNextFixtures: raw response has ${raw.length} match(es), ` +
+      `  fetchNextFixtures(${competitionCode}): raw response has ${raw.length} match(es), ` +
         `dates ${dates[0]} to ${dates[dates.length - 1]}, statuses ${JSON.stringify(statusCounts)}`,
     );
   } else {
-    console.log("  fetchNextFixtures: raw response had 0 matches for status=SCHEDULED,IN_PLAY,PAUSED");
+    console.log(
+      `  fetchNextFixtures(${competitionCode}): raw response had 0 matches for status=SCHEDULED,IN_PLAY,PAUSED`,
+    );
   }
 
   const matches = raw

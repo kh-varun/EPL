@@ -1,0 +1,63 @@
+name: Update Champions League data
+
+on:
+  # League-phase matchdays are roughly two weeks apart - far slower-moving
+  # than the Premier League data, so a lighter cadence than odds.yml/
+  # lineups.yml is enough to keep standings/fixtures/results current.
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: champions-league
+  cancel-in-progress: false
+
+jobs:
+  update-champions-league:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Fetch Champions League data
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+        run: npm run fetch-champions-league
+
+      - name: Commit champions-league.json if changed
+        run: |
+          # public/champions-league.json is brand new on the very first run
+          # of this workflow - `git add` it unconditionally before diffing,
+          # or a plain `git diff --quiet` never detects a new untracked
+          # file and this step would silently skip staging it forever.
+          git add public/champions-league.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: update Champions League data"
+          # main moves often (update.yml/lineups.yml/odds.yml/live-scores.yml
+          # can push too), so a plain push here can lose the race and get
+          # rejected as non-fast-forward - rebase onto whatever's new and
+          # retry instead of discarding this run's fetched data.
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt) - fetching and rebasing..."
+            git fetch origin main
+            git rebase origin/main
+          done
+          echo "Failed to push after retries"
+          exit 1

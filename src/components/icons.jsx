@@ -62,6 +62,14 @@ export function ShirtIcon(props) {
   );
 }
 
+export function StarIcon(props) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M12 3l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2L6.6 19.3l1.3-6-4.6-4.1 6.1-.6L12 3Z" />
+    </svg>
+  );
+}
+
 export function PitchIcon(props) {
   return (
     <svg {...base} {...props}>
