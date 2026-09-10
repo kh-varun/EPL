@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-09T23:15:36.702Z",
+  "fetchedAt": "2026-09-10T01:17:17.587Z",
   "odds": {
     "560572": {
       "eventTicker": "KXEPLGAME-26SEP12CRYIPS",
@@ -11,7 +11,7 @@
       },
       "away": {
         "label": "Ipswich Town",
-        "probability": 24,
+        "probability": 25,
         "ticker": "KXEPLGAME-26SEP12CRYIPS-IPS"
       },
       "draw": {
@@ -25,12 +25,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep12lfcful",
       "home": {
         "label": "Liverpool",
-        "probability": 68,
+        "probability": 69,
         "ticker": "KXEPLGAME-26SEP12LFCFUL-LFC"
       },
       "away": {
         "label": "Fulham",
-        "probability": 13,
+        "probability": 14,
         "ticker": "KXEPLGAME-26SEP12LFCFUL-FUL"
       },
       "draw": {
@@ -63,7 +63,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep12toteve",
       "home": {
         "label": "Tottenham",
-        "probability": 48,
+        "probability": 46,
         "ticker": "KXEPLGAME-26SEP12TOTEVE-TOT"
       },
       "away": {
@@ -149,7 +149,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 27,
+        "probability": 28,
         "ticker": "KXEPLGAME-26SEP14LEENEW-TIE"
       }
     },
