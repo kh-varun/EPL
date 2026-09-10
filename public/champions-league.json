@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-10T15:32:44.211Z",
+  "fetchedAt": "2026-09-10T18:46:39.777Z",
   "standings": [
     {
       "position": 1,
@@ -238,18 +238,75 @@
         "tla": "ROM",
         "crest": "https://crests.football-data.org/100.png"
       },
-      "playedGames": 0,
+      "playedGames": 1,
       "won": 0,
-      "draw": 0,
+      "draw": 1,
       "lost": 0,
-      "points": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
+      "points": 1,
+      "goalsFor": 1,
+      "goalsAgainst": 1,
       "goalDifference": 0,
       "form": null
     },
     {
       "position": 13,
+      "team": {
+        "id": 1887,
+        "name": "FK Shakhtar Donetsk",
+        "shortName": "Shaktar",
+        "tla": "SHD",
+        "crest": "https://crests.football-data.org/1887.png"
+      },
+      "playedGames": 1,
+      "won": 0,
+      "draw": 1,
+      "lost": 0,
+      "points": 1,
+      "goalsFor": 1,
+      "goalsAgainst": 1,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 15,
+      "team": {
+        "id": 613,
+        "name": "Fenerbahçe SK",
+        "shortName": "Fenerbahçe",
+        "tla": "FEN",
+        "crest": "https://crests.football-data.org/613.png"
+      },
+      "playedGames": 1,
+      "won": 0,
+      "draw": 1,
+      "lost": 0,
+      "points": 1,
+      "goalsFor": 1,
+      "goalsAgainst": 1,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 15,
+      "team": {
+        "id": 674,
+        "name": "PSV",
+        "shortName": "PSV",
+        "tla": "PSV",
+        "crest": "https://crests.football-data.org/674.png"
+      },
+      "playedGames": 1,
+      "won": 0,
+      "draw": 1,
+      "lost": 0,
+      "points": 1,
+      "goalsFor": 1,
+      "goalsAgainst": 1,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 17,
       "team": {
         "id": 5,
         "name": "FC Bayern München",
@@ -268,7 +325,7 @@
       "form": null
     },
     {
-      "position": 13,
+      "position": 17,
       "team": {
         "id": 7397,
         "name": "Como 1907",
@@ -287,26 +344,7 @@
       "form": null
     },
     {
-      "position": 13,
-      "team": {
-        "id": 613,
-        "name": "Fenerbahçe SK",
-        "shortName": "Fenerbahçe",
-        "tla": "FEN",
-        "crest": "https://crests.football-data.org/613.png"
-      },
-      "playedGames": 0,
-      "won": 0,
-      "draw": 0,
-      "lost": 0,
-      "points": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0,
-      "form": null
-    },
-    {
-      "position": 13,
+      "position": 17,
       "team": {
         "id": 5721,
         "name": "FK Bodø/Glimt",
@@ -325,7 +363,7 @@
       "form": null
     },
     {
-      "position": 13,
+      "position": 17,
       "team": {
         "id": 66,
         "name": "Manchester United FC",
@@ -344,26 +382,7 @@
       "form": null
     },
     {
-      "position": 13,
-      "team": {
-        "id": 674,
-        "name": "PSV",
-        "shortName": "PSV",
-        "tla": "PSV",
-        "crest": "https://crests.football-data.org/674.png"
-      },
-      "playedGames": 0,
-      "won": 0,
-      "draw": 0,
-      "lost": 0,
-      "points": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0,
-      "form": null
-    },
-    {
-      "position": 13,
+      "position": 17,
       "team": {
         "id": 721,
         "name": "RB Leipzig",
@@ -382,7 +401,7 @@
       "form": null
     },
     {
-      "position": 13,
+      "position": 17,
       "team": {
         "id": 546,
         "name": "Racing Club de Lens",
@@ -401,7 +420,7 @@
       "form": null
     },
     {
-      "position": 13,
+      "position": 17,
       "team": {
         "id": 10233,
         "name": "Sabah FK",
@@ -420,26 +439,7 @@
       "form": null
     },
     {
-      "position": 13,
-      "team": {
-        "id": 1887,
-        "name": "FK Shakhtar Donetsk",
-        "shortName": "Shaktar",
-        "tla": "SHD",
-        "crest": "https://crests.football-data.org/1887.png"
-      },
-      "playedGames": 0,
-      "won": 0,
-      "draw": 0,
-      "lost": 0,
-      "points": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0,
-      "form": null
-    },
-    {
-      "position": 13,
+      "position": 17,
       "team": {
         "id": 930,
         "name": "SK Slavia Praha",
@@ -688,6 +688,56 @@
   ],
   "lastResults": [
     {
+      "id": 575335,
+      "utcDate": "2026-09-10T16:45:00Z",
+      "status": "FINISHED",
+      "matchday": 1,
+      "homeTeam": {
+        "id": 613,
+        "name": "Fenerbahçe SK",
+        "shortName": "Fenerbahçe",
+        "tla": "FEN",
+        "crest": "https://crests.football-data.org/613.png"
+      },
+      "awayTeam": {
+        "id": 100,
+        "name": "AS Roma",
+        "shortName": "Roma",
+        "tla": "ROM",
+        "crest": "https://crests.football-data.org/100.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 1,
+        "winner": "DRAW"
+      }
+    },
+    {
+      "id": 575336,
+      "utcDate": "2026-09-10T16:45:00Z",
+      "status": "FINISHED",
+      "matchday": 1,
+      "homeTeam": {
+        "id": 674,
+        "name": "PSV",
+        "shortName": "PSV",
+        "tla": "PSV",
+        "crest": "https://crests.football-data.org/674.png"
+      },
+      "awayTeam": {
+        "id": 1887,
+        "name": "FK Shakhtar Donetsk",
+        "shortName": "Shaktar",
+        "tla": "SHD",
+        "crest": "https://crests.football-data.org/1887.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 1,
+        "winner": "DRAW"
+      }
+    },
+    {
       "id": 575331,
       "utcDate": "2026-09-09T19:00:00Z",
       "status": "FINISHED",
@@ -761,109 +811,9 @@
         "away": 1,
         "winner": "AWAY_TEAM"
       }
-    },
-    {
-      "id": 575334,
-      "utcDate": "2026-09-09T19:00:00Z",
-      "status": "FINISHED",
-      "matchday": 1,
-      "homeTeam": {
-        "id": 498,
-        "name": "Sporting Clube de Portugal",
-        "shortName": "Sporting CP",
-        "tla": "SPO",
-        "crest": "https://crests.football-data.org/498.png"
-      },
-      "awayTeam": {
-        "id": 610,
-        "name": "Galatasaray SK",
-        "shortName": "Galatasaray",
-        "tla": "GAL",
-        "crest": "https://crests.football-data.org/610.png"
-      },
-      "score": {
-        "home": 3,
-        "away": 1,
-        "winner": "HOME_TEAM"
-      }
-    },
-    {
-      "id": 575329,
-      "utcDate": "2026-09-09T16:45:00Z",
-      "status": "FINISHED",
-      "matchday": 1,
-      "homeTeam": {
-        "id": 81,
-        "name": "FC Barcelona",
-        "shortName": "Barça",
-        "tla": "FCB",
-        "crest": "https://crests.football-data.org/81.png"
-      },
-      "awayTeam": {
-        "id": 675,
-        "name": "Feyenoord Rotterdam",
-        "shortName": "Feyenoord",
-        "tla": "FEY",
-        "crest": "https://crests.football-data.org/675.png"
-      },
-      "score": {
-        "home": 5,
-        "away": 1,
-        "winner": "HOME_TEAM"
-      }
     }
   ],
   "nextFixtures": [
-    {
-      "id": 575335,
-      "utcDate": "2026-09-10T16:45:00Z",
-      "status": "TIMED",
-      "matchday": 1,
-      "homeTeam": {
-        "id": 613,
-        "name": "Fenerbahçe SK",
-        "shortName": "Fenerbahçe",
-        "tla": "FEN",
-        "crest": "https://crests.football-data.org/613.png"
-      },
-      "awayTeam": {
-        "id": 100,
-        "name": "AS Roma",
-        "shortName": "Roma",
-        "tla": "ROM",
-        "crest": "https://crests.football-data.org/100.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      }
-    },
-    {
-      "id": 575336,
-      "utcDate": "2026-09-10T16:45:00Z",
-      "status": "TIMED",
-      "matchday": 1,
-      "homeTeam": {
-        "id": 674,
-        "name": "PSV",
-        "shortName": "PSV",
-        "tla": "PSV",
-        "crest": "https://crests.football-data.org/674.png"
-      },
-      "awayTeam": {
-        "id": 1887,
-        "name": "FK Shakhtar Donetsk",
-        "shortName": "Shaktar",
-        "tla": "SHD",
-        "crest": "https://crests.football-data.org/1887.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      }
-    },
     {
       "id": 575337,
       "utcDate": "2026-09-10T19:00:00Z",
@@ -1057,6 +1007,56 @@
         "shortName": "Barça",
         "tla": "FCB",
         "crest": "https://crests.football-data.org/81.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      }
+    },
+    {
+      "id": 575345,
+      "utcDate": "2026-10-13T19:00:00Z",
+      "status": "TIMED",
+      "matchday": 2,
+      "homeTeam": {
+        "id": 78,
+        "name": "Club Atlético de Madrid",
+        "shortName": "Atleti",
+        "tla": "ATL",
+        "crest": "https://crests.football-data.org/78.png"
+      },
+      "awayTeam": {
+        "id": 66,
+        "name": "Manchester United FC",
+        "shortName": "Man United",
+        "tla": "MUN",
+        "crest": "https://crests.football-data.org/66.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      }
+    },
+    {
+      "id": 575346,
+      "utcDate": "2026-10-13T19:00:00Z",
+      "status": "TIMED",
+      "matchday": 2,
+      "homeTeam": {
+        "id": 57,
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "tla": "ARS",
+        "crest": "https://crests.football-data.org/57.png"
+      },
+      "awayTeam": {
+        "id": 521,
+        "name": "Lille OSC",
+        "shortName": "Lille",
+        "tla": "LIL",
+        "crest": "https://crests.football-data.org/521.png"
       },
       "score": {
         "home": null,
