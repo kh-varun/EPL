@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-10T21:05:15.403Z",
+  "fetchedAt": "2026-09-10T23:09:50.958Z",
   "odds": {
     "560572": {
       "eventTicker": "KXEPLGAME-26SEP12CRYIPS",
@@ -11,12 +11,12 @@
       },
       "away": {
         "label": "Ipswich Town",
-        "probability": 23,
+        "probability": 24,
         "ticker": "KXEPLGAME-26SEP12CRYIPS-IPS"
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 26,
         "ticker": "KXEPLGAME-26SEP12CRYIPS-TIE"
       }
     },
@@ -30,7 +30,7 @@
       },
       "away": {
         "label": "Fulham",
-        "probability": 13,
+        "probability": 14,
         "ticker": "KXEPLGAME-26SEP12LFCFUL-FUL"
       },
       "draw": {
@@ -63,7 +63,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep12toteve",
       "home": {
         "label": "Tottenham",
-        "probability": 47,
+        "probability": 48,
         "ticker": "KXEPLGAME-26SEP12TOTEVE-TOT"
       },
       "away": {
@@ -73,7 +73,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 27,
         "ticker": "KXEPLGAME-26SEP12TOTEVE-TIE"
       }
     },
@@ -87,7 +87,7 @@
       },
       "away": {
         "label": "Brentford",
-        "probability": 35,
+        "probability": 36,
         "ticker": "KXEPLGAME-26SEP12BOUBRE-BRE"
       },
       "draw": {
@@ -106,12 +106,12 @@
       },
       "away": {
         "label": "Arsenal",
-        "probability": 67,
+        "probability": 68,
         "ticker": "KXEPLGAME-26SEP12SUNARS-ARS"
       },
       "draw": {
         "label": "Draw",
-        "probability": 22,
+        "probability": 21,
         "ticker": "KXEPLGAME-26SEP12SUNARS-TIE"
       }
     },
@@ -182,7 +182,7 @@
       },
       "away": {
         "label": "Hull City",
-        "probability": 8,
+        "probability": 7,
         "ticker": "KXEPLGAME-26SEP12CFCHUL-HUL"
       },
       "draw": {
