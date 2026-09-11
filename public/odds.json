@@ -1,17 +1,17 @@
 {
-  "fetchedAt": "2026-09-11T10:58:08.627Z",
+  "fetchedAt": "2026-09-11T14:55:53.730Z",
   "odds": {
     "560572": {
       "eventTicker": "KXEPLGAME-26SEP12CRYIPS",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep12cryips",
       "home": {
         "label": "Crystal Palace",
-        "probability": 53,
+        "probability": 52,
         "ticker": "KXEPLGAME-26SEP12CRYIPS-CRY"
       },
       "away": {
         "label": "Ipswich Town",
-        "probability": 24,
+        "probability": 23,
         "ticker": "KXEPLGAME-26SEP12CRYIPS-IPS"
       },
       "draw": {
@@ -44,7 +44,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep12avlnfo",
       "home": {
         "label": "Aston Villa",
-        "probability": 43,
+        "probability": 42,
         "ticker": "KXEPLGAME-26SEP12AVLNFO-AVL"
       },
       "away": {
@@ -73,7 +73,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 27,
+        "probability": 26,
         "ticker": "KXEPLGAME-26SEP12TOTEVE-TIE"
       }
     },
@@ -87,7 +87,7 @@
       },
       "away": {
         "label": "Brentford",
-        "probability": 35,
+        "probability": 36,
         "ticker": "KXEPLGAME-26SEP12BOUBRE-BRE"
       },
       "draw": {
@@ -106,7 +106,7 @@
       },
       "away": {
         "label": "Arsenal",
-        "probability": 67,
+        "probability": 66,
         "ticker": "KXEPLGAME-26SEP12SUNARS-ARS"
       },
       "draw": {
@@ -125,7 +125,7 @@
       },
       "away": {
         "label": "Brighton Hove",
-        "probability": 52,
+        "probability": 51,
         "ticker": "KXEPLGAME-26SEP13COVBRI-BRI"
       },
       "draw": {
@@ -163,7 +163,7 @@
       },
       "away": {
         "label": "Man City",
-        "probability": 46,
+        "probability": 47,
         "ticker": "KXEPLGAME-26SEP13MUNMCI-MCI"
       },
       "draw": {
@@ -177,7 +177,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep12cfchul",
       "home": {
         "label": "Chelsea",
-        "probability": 80,
+        "probability": 79,
         "ticker": "KXEPLGAME-26SEP12CFCHUL-CFC"
       },
       "away": {
