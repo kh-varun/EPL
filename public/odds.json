@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-11T05:58:21.933Z",
+  "fetchedAt": "2026-09-11T10:58:08.627Z",
   "odds": {
     "560572": {
       "eventTicker": "KXEPLGAME-26SEP12CRYIPS",
@@ -63,7 +63,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep12toteve",
       "home": {
         "label": "Tottenham",
-        "probability": 47,
+        "probability": 48,
         "ticker": "KXEPLGAME-26SEP12TOTEVE-TOT"
       },
       "away": {
@@ -101,7 +101,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep12sunars",
       "home": {
         "label": "Sunderland",
-        "probability": 13,
+        "probability": 12,
         "ticker": "KXEPLGAME-26SEP12SUNARS-SUN"
       },
       "away": {
@@ -187,7 +187,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 15,
+        "probability": 14,
         "ticker": "KXEPLGAME-26SEP12CFCHUL-TIE"
       }
     }
