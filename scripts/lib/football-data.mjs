@@ -83,6 +83,11 @@ export async function fetchStandings(competitionCode = "PL") {
   }));
 }
 
+// Pass as fetchLastResults's or fetchNextFixtures's limit to keep every
+// match instead of truncating - both the Results and Fixtures tabs show a
+// competition's full match list rather than just a handful of entries.
+export const ALL_MATCHES = Infinity;
+
 export async function fetchLastResults(limit = 5, competitionCode = "PL") {
   const data = await footballDataRequest(`/competitions/${competitionCode}/matches?status=FINISHED`);
   const matches = [...(data.matches ?? [])].sort(
