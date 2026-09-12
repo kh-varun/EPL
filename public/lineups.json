@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-12T14:04:54.185Z",
+  "fetchedAt": "2026-09-12T17:05:50.285Z",
   "lineups": {
     "560572": {
       "utcDate": "2026-09-12T14:00:00Z",
@@ -859,6 +859,293 @@
             }
           ],
           "coach": "O. Glasner"
+        }
+      }
+    },
+    "560575": {
+      "utcDate": "2026-09-12T16:30:00Z",
+      "homeTeamId": 73,
+      "awayTeamId": 62,
+      "byTeam": {
+        "62": {
+          "teamName": "Everton",
+          "formation": "4-2-3-1",
+          "startXI": [
+            {
+              "id": 2932,
+              "name": "J. Pickford",
+              "number": 1,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 1456,
+              "name": "A. Maitland-Niles",
+              "number": 2,
+              "position": "D",
+              "grid": "2:4"
+            },
+            {
+              "id": 2936,
+              "name": "J. Tarkowski",
+              "number": 6,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 17661,
+              "name": "J. Branthwaite",
+              "number": 4,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 2165,
+              "name": "V. Mykolenko",
+              "number": 16,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 405360,
+              "name": "H. Armstrong",
+              "number": 45,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 895,
+              "name": "J. Garner",
+              "number": 37,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 129711,
+              "name": "B. Johnson",
+              "number": 22,
+              "position": "M",
+              "grid": "4:3"
+            },
+            {
+              "id": 148099,
+              "name": "K. Dewsbury-Hall",
+              "number": 8,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 334037,
+              "name": "Tyrique George",
+              "number": 19,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 343684,
+              "name": "T. Barry",
+              "number": 11,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 82855,
+              "name": "T. King",
+              "number": 31,
+              "position": "G"
+            },
+            {
+              "id": 2934,
+              "name": "M. Keane",
+              "number": 5,
+              "position": "D"
+            },
+            {
+              "id": 270139,
+              "name": "J. O&apos;Brien",
+              "number": 15,
+              "position": "D"
+            },
+            {
+              "id": 19187,
+              "name": "J. Grealish",
+              "number": 10,
+              "position": "M"
+            },
+            {
+              "id": 304317,
+              "name": "T. Dibling",
+              "number": 20,
+              "position": "F"
+            },
+            {
+              "id": 195993,
+              "name": "C. Alcaraz",
+              "number": 24,
+              "position": "M"
+            },
+            {
+              "id": 179685,
+              "name": "H. Hackney",
+              "number": 30,
+              "position": "M"
+            },
+            {
+              "id": 18860,
+              "name": "M. Travers",
+              "number": 12,
+              "position": "G"
+            },
+            {
+              "id": 413034,
+              "name": "B. Graham",
+              "number": 58,
+              "position": "F"
+            }
+          ],
+          "coach": "D. Moyes"
+        },
+        "73": {
+          "teamName": "Tottenham",
+          "formation": "4-2-3-1",
+          "startXI": [
+            {
+              "id": 265826,
+              "name": "A. Kinský",
+              "number": 31,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 328089,
+              "name": "A. Gray",
+              "number": 14,
+              "position": "D",
+              "grid": "2:4"
+            },
+            {
+              "id": 38695,
+              "name": "J. van Hecke",
+              "number": 6,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 152849,
+              "name": "M. van de Ven",
+              "number": 37,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 289,
+              "name": "A. Robertson",
+              "number": 3,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 863,
+              "name": "R. Bentancur",
+              "number": 30,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 31146,
+              "name": "S. Tonali",
+              "number": 16,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 266657,
+              "name": "Sávio",
+              "number": 17,
+              "position": "M",
+              "grid": "4:3"
+            },
+            {
+              "id": 336585,
+              "name": "Mateus Fernandes",
+              "number": 18,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 81573,
+              "name": "Omar Marmoush",
+              "number": 22,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 18883,
+              "name": "D. Solanke",
+              "number": 19,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 18784,
+              "name": "J. Maddison",
+              "number": 10,
+              "position": "M"
+            },
+            {
+              "id": 347316,
+              "name": "L. Bergvall",
+              "number": 15,
+              "position": "M"
+            },
+            {
+              "id": 270510,
+              "name": "M. Tel",
+              "number": 11,
+              "position": "F"
+            },
+            {
+              "id": 15911,
+              "name": "M. Kudus",
+              "number": 20,
+              "position": "M"
+            },
+            {
+              "id": 18886,
+              "name": "M. Dúbravka",
+              "number": 39,
+              "position": "G"
+            },
+            {
+              "id": 19145,
+              "name": "T. Adarabioyo",
+              "number": 4,
+              "position": "D"
+            },
+            {
+              "id": 6610,
+              "name": "M. Senesi",
+              "number": 5,
+              "position": "D"
+            },
+            {
+              "id": 164,
+              "name": "B. Davies",
+              "number": 33,
+              "position": "D"
+            },
+            {
+              "id": 67972,
+              "name": "C. Gallagher",
+              "number": 8,
+              "position": "M"
+            }
+          ],
+          "coach": "R. De Zerbi"
         }
       }
     },
