@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-06T17:45:46.348Z",
+  "fetchedAt": "2026-09-12T18:38:36.203Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -1347,6 +1347,233 @@
           "teamId": 67,
           "player": "Jacob Ramsey",
           "minute": 88,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560572": {
+      "utcDate": "2026-09-12T14:00:00Z",
+      "homeTeamId": 354,
+      "awayTeamId": 349,
+      "stats": {
+        "349": {
+          "shots": 12,
+          "shotsOnTarget": 6,
+          "possession": 54,
+          "passes": 445,
+          "passAccuracy": null,
+          "fouls": 16,
+          "corners": 3,
+          "offsides": 1,
+          "yellowCards": 3,
+          "redCards": 0
+        },
+        "354": {
+          "shots": 11,
+          "shotsOnTarget": 4,
+          "possession": 46,
+          "passes": 388,
+          "passAccuracy": null,
+          "fouls": 6,
+          "corners": 6,
+          "offsides": 0,
+          "yellowCards": 1,
+          "redCards": 1
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 354,
+          "player": "Anan Khalaili",
+          "minute": 14,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 349,
+          "player": "Emersonn",
+          "minute": 23,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 349,
+          "player": "Leif Davis",
+          "minute": 45,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 354,
+          "player": "Jörgen Strand Larsen",
+          "minute": 75,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 349,
+          "player": "Zian Flemming",
+          "minute": 90,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560573": {
+      "utcDate": "2026-09-12T14:00:00Z",
+      "homeTeamId": 64,
+      "awayTeamId": 63,
+      "stats": {
+        "63": {
+          "shots": 10,
+          "shotsOnTarget": 4,
+          "possession": 44,
+          "passes": 395,
+          "passAccuracy": null,
+          "fouls": 8,
+          "corners": 8,
+          "offsides": 1,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        "64": {
+          "shots": 14,
+          "shotsOnTarget": 3,
+          "possession": 56,
+          "passes": 495,
+          "passAccuracy": null,
+          "fouls": 11,
+          "corners": 5,
+          "offsides": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      },
+      "scorers": []
+    },
+    "560574": {
+      "utcDate": "2026-09-12T14:00:00Z",
+      "homeTeamId": 58,
+      "awayTeamId": 351,
+      "stats": {
+        "58": {
+          "shots": 7,
+          "shotsOnTarget": 5,
+          "possession": 53,
+          "passes": 414,
+          "passAccuracy": null,
+          "fouls": 11,
+          "corners": 6,
+          "offsides": 0,
+          "yellowCards": 2,
+          "redCards": 0
+        },
+        "351": {
+          "shots": 22,
+          "shotsOnTarget": 7,
+          "possession": 47,
+          "passes": 359,
+          "passAccuracy": null,
+          "fouls": 16,
+          "corners": 1,
+          "offsides": 4,
+          "yellowCards": 5,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 351,
+          "player": "Liam Delap",
+          "minute": 46,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 58,
+          "player": " Alysson Edward Franco da Rocha",
+          "minute": 74,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 351,
+          "player": "Igor Jesus",
+          "minute": 88,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560576": {
+      "utcDate": "2026-09-12T14:00:00Z",
+      "homeTeamId": 1044,
+      "awayTeamId": 402,
+      "stats": {
+        "402": {
+          "shots": 8,
+          "shotsOnTarget": 2,
+          "possession": 43.4,
+          "passes": 370,
+          "passAccuracy": 0.7,
+          "fouls": 13,
+          "corners": 1,
+          "offsides": 1,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        "1044": {
+          "shots": 20,
+          "shotsOnTarget": 10,
+          "possession": 56.6,
+          "passes": 480,
+          "passAccuracy": 0.8,
+          "fouls": 10,
+          "corners": 2,
+          "offsides": 3,
+          "yellowCards": 5,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 402,
+          "player": "Kevin Schade",
+          "minute": 34,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 1044,
+          "player": "Justin Kluivert",
+          "minute": 38,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 1044,
+          "player": "Marcus Tavernier",
+          "minute": 52,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 402,
+          "player": "Kevin Schade",
+          "minute": 56,
           "extraMinute": null,
           "ownGoal": false,
           "penalty": false
