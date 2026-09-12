@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-12T17:05:50.285Z",
+  "fetchedAt": "2026-09-12T19:16:52.663Z",
   "lineups": {
     "560572": {
       "utcDate": "2026-09-12T14:00:00Z",
@@ -1146,6 +1146,293 @@
             }
           ],
           "coach": "R. De Zerbi"
+        }
+      }
+    },
+    "560577": {
+      "utcDate": "2026-09-12T19:00:00Z",
+      "homeTeamId": 71,
+      "awayTeamId": 57,
+      "byTeam": {
+        "57": {
+          "teamName": "Arsenal",
+          "formation": "4-2-3-1",
+          "startXI": [
+            {
+              "id": 19465,
+              "name": "David Raya",
+              "number": 1,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 19959,
+              "name": "B. White",
+              "number": 4,
+              "position": "D",
+              "grid": "2:4"
+            },
+            {
+              "id": 19354,
+              "name": "E. Konsa",
+              "number": 15,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 22224,
+              "name": "Gabriel Magalhães",
+              "number": 6,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 157052,
+              "name": "R. Calafiori",
+              "number": 33,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 2937,
+              "name": "D. Rice",
+              "number": 41,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 313245,
+              "name": "M. Lewis-Skelly",
+              "number": 49,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 1460,
+              "name": "B. Saka",
+              "number": 7,
+              "position": "M",
+              "grid": "4:3"
+            },
+            {
+              "id": 37127,
+              "name": "M. Ødegaard",
+              "number": 8,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 161800,
+              "name": "C. Tzolis",
+              "number": 17,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 978,
+              "name": "K. Havertz",
+              "number": 29,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 10135,
+              "name": "Bruno Guimarães",
+              "number": 39,
+              "position": "M"
+            },
+            {
+              "id": 19586,
+              "name": "E. Eze",
+              "number": 10,
+              "position": "M"
+            },
+            {
+              "id": 18979,
+              "name": "V. Gyökeres",
+              "number": 14,
+              "position": "F"
+            },
+            {
+              "id": 127817,
+              "name": "P. Hincapié",
+              "number": 5,
+              "position": "D"
+            },
+            {
+              "id": 136723,
+              "name": "N. Madueke",
+              "number": 20,
+              "position": "F"
+            },
+            {
+              "id": 47311,
+              "name": "Mikel Merino",
+              "number": 23,
+              "position": "M"
+            },
+            {
+              "id": 38746,
+              "name": "J. Timber",
+              "number": 12,
+              "position": "D"
+            },
+            {
+              "id": 47315,
+              "name": "Martín Zubimendi",
+              "number": 36,
+              "position": "M"
+            },
+            {
+              "id": 2273,
+              "name": "Kepa",
+              "number": 13,
+              "position": "G"
+            }
+          ],
+          "coach": "Mikel Arteta"
+        },
+        "71": {
+          "teamName": "Sunderland",
+          "formation": "4-2-3-1",
+          "startXI": [
+            {
+              "id": 194536,
+              "name": "R. Roefs",
+              "number": 22,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 1146,
+              "name": "N. Mukiele",
+              "number": 20,
+              "position": "D",
+              "grid": "2:4"
+            },
+            {
+              "id": 25287,
+              "name": "K. Danso",
+              "number": 4,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 55904,
+              "name": "D. Ballard",
+              "number": 5,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 22225,
+              "name": "Reinildo",
+              "number": 17,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 1464,
+              "name": "G. Xhaka",
+              "number": 34,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 365331,
+              "name": "N. Sadiki",
+              "number": 27,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 264,
+              "name": "T. Meunier",
+              "number": 12,
+              "position": "M",
+              "grid": "4:3"
+            },
+            {
+              "id": 20638,
+              "name": "E. Le Fée",
+              "number": 28,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 311543,
+              "name": "N. Angulo",
+              "number": 10,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 38750,
+              "name": "B. Brobbey",
+              "number": 9,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 339201,
+              "name": "C. Rigg",
+              "number": 11,
+              "position": "M"
+            },
+            {
+              "id": 336659,
+              "name": "C. Talbi",
+              "number": 7,
+              "position": "F"
+            },
+            {
+              "id": 6168,
+              "name": "O. Alderete",
+              "number": 15,
+              "position": "D"
+            },
+            {
+              "id": 278454,
+              "name": "M. Ellborg",
+              "number": 31,
+              "position": "G"
+            },
+            {
+              "id": 361348,
+              "name": "M. Fofana",
+              "number": 39,
+              "position": "F"
+            },
+            {
+              "id": 119121,
+              "name": "T. Hume",
+              "number": 32,
+              "position": "D"
+            },
+            {
+              "id": 84087,
+              "name": "W. Isidor",
+              "number": 18,
+              "position": "F"
+            },
+            {
+              "id": 452697,
+              "name": "D. Methalie",
+              "number": 6,
+              "position": "D"
+            },
+            {
+              "id": 19911,
+              "name": "L. O&apos;Nien",
+              "number": 13,
+              "position": "M"
+            }
+          ],
+          "coach": "R. Le Bris"
         }
       }
     },
