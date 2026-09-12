@@ -25,6 +25,15 @@ const TABS = [
   { id: "headlines", label: "News", icon: NewspaperIcon },
 ];
 
+// The Results tab shows one competition's full match history at a time
+// behind a small sub-tab toggle, rather than stacking both (as Fixtures
+// does) - a full season of results is long enough that showing both at
+// once would mean a lot of scrolling before reaching the second competition.
+const RESULTS_COMPETITIONS = [
+  { id: "PL", label: "Premier League" },
+  { id: "CL", label: "Champions League" },
+];
+
 // Overlays a match with its live score/status when one's in progress -
 // live-scores.json only ever holds entries for matches currently IN_PLAY
 // or PAUSED, so any hit here is real live data, not stale leftovers.
@@ -44,6 +53,7 @@ export default function App() {
   const [championsLeague, setChampionsLeague] = useState(null);
   const [error, setError] = useState(null);
   const [activeTab, setActiveTab] = useState("standings");
+  const [resultsCompetition, setResultsCompetition] = useState("PL");
   const [selectedTeam, setSelectedTeam] = useState(null);
   const [selectedMatch, setSelectedMatch] = useState(null);
   const [selectedStatsMatch, setSelectedStatsMatch] = useState(null);
@@ -245,47 +255,68 @@ export default function App() {
 
         {activeTab === "results" && (
           <div className="space-y-4">
-            <Section title="Premier League – Last Results">
-              {data?.lastResults?.length ? (
-                <ul className="space-y-2">
-                  {data.lastResults.map((match) => {
-                    const liveMatch = withLiveScore(match, liveScores?.matches);
-                    return (
+            <div className="grid grid-cols-2 gap-1 rounded-xl bg-epl-surface2 p-1">
+              {RESULTS_COMPETITIONS.map((comp) => {
+                const isActive = resultsCompetition === comp.id;
+                return (
+                  <button
+                    key={comp.id}
+                    type="button"
+                    onClick={() => setResultsCompetition(comp.id)}
+                    className={
+                      "rounded-lg py-2 text-xs font-bold uppercase tracking-wide transition-all " +
+                      (isActive ? "bg-epl-cyan text-epl-purple shadow-md" : "text-white/60 hover:text-white")
+                    }
+                  >
+                    {comp.label}
+                  </button>
+                );
+              })}
+            </div>
+
+            {resultsCompetition === "PL" ? (
+              <Section title="Premier League – Results">
+                {data?.lastResults?.length ? (
+                  <ul className="space-y-2">
+                    {data.lastResults.map((match) => {
+                      const liveMatch = withLiveScore(match, liveScores?.matches);
+                      return (
+                        <MatchRow
+                          key={match.id}
+                          match={liveMatch}
+                          showScore={true}
+                          positions={positionByTeamId}
+                          onSelectTeam={setSelectedTeam}
+                          onSelectMatch={liveMatch.liveStatus ? undefined : setSelectedStatsMatch}
+                        />
+                      );
+                    })}
+                  </ul>
+                ) : (
+                  <p className="text-sm text-white/50">
+                    No results yet — the season hasn&apos;t kicked off.
+                  </p>
+                )}
+              </Section>
+            ) : (
+              <Section title="Champions League – Results">
+                {championsLeague?.lastResults?.length ? (
+                  <ul className="space-y-2">
+                    {championsLeague.lastResults.map((match) => (
                       <MatchRow
                         key={match.id}
-                        match={liveMatch}
+                        match={match}
                         showScore={true}
-                        positions={positionByTeamId}
+                        positions={clPositionByTeamId}
                         onSelectTeam={setSelectedTeam}
-                        onSelectMatch={liveMatch.liveStatus ? undefined : setSelectedStatsMatch}
                       />
-                    );
-                  })}
-                </ul>
-              ) : (
-                <p className="text-sm text-white/50">
-                  No results yet — the season hasn&apos;t kicked off.
-                </p>
-              )}
-            </Section>
-
-            <Section title="Champions League – Last Results">
-              {championsLeague?.lastResults?.length ? (
-                <ul className="space-y-2">
-                  {championsLeague.lastResults.map((match) => (
-                    <MatchRow
-                      key={match.id}
-                      match={match}
-                      showScore={true}
-                      positions={clPositionByTeamId}
-                      onSelectTeam={setSelectedTeam}
-                    />
-                  ))}
-                </ul>
-              ) : (
-                <p className="text-sm text-white/50">No results yet.</p>
-              )}
-            </Section>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-sm text-white/50">No results yet.</p>
+                )}
+              </Section>
+            )}
           </div>
         )}
 

@@ -514,15 +514,30 @@ to avoid showing the same Champions League fixtures/results twice.
 ### Fixtures/Results: two competitions, one tab
 
 Rather than a third UCL-only sub-tab for fixtures and a fourth for results,
-the existing **Fixtures** and **Results** tabs in `App.jsx` each render two
-`<Section>`s stacked in one scroll - "Premier League – Next Fixtures" /
-"Champions League – Next Fixtures" (and the equivalent pair for Results) -
-both built from the same `MatchRow` component. This keeps the tab count at
-5 and avoids ever showing a Champions League fixture in two different
-places on the dashboard.
+the existing **Fixtures** and **Results** tabs in `App.jsx` both show
+Premier League and Champions League matches - but the two tabs handle it
+differently, because a fixture list and a full-season results list have
+different shapes:
 
-- The Champions League sections pass a separate `clPositionByTeamId` map
-  (derived from `championsLeague?.standings`, mirroring how
+- **Fixtures** renders two `<Section>`s stacked in one scroll - "Premier
+  League – Next Fixtures" / "Champions League – Next Fixtures" - since
+  each competition only ever has a handful of upcoming fixtures
+  (`fetchNextFixtures`'s `limit` of 10) and showing both at once costs
+  little scrolling.
+- **Results** instead shows one competition at a time behind a small
+  segmented sub-tab toggle ("Premier League" / "Champions League",
+  `resultsCompetition` state in `App.jsx`) rather than stacking both -
+  `lastResults` now holds every finished match for the season (see
+  `ALL_RESULTS` below), so stacking both competitions' full histories in
+  one scroll would mean a lot of scrolling before ever reaching the
+  second competition's results.
+
+Both are built from the same `MatchRow` component, and both keep the tab
+count at 5 - the sub-tab toggle lives inside the Results tab's content, not
+as a new top-level tab.
+
+- The Champions League fixtures/results pass a separate `clPositionByTeamId`
+  map (derived from `championsLeague?.standings`, mirroring how
   `positionByTeamId` is derived from `data?.standings`) rather than reusing
   the Premier League's `positionByTeamId` - the two are different tables,
   and mixing them would show a team's PL-irrelevant Champions League rank
@@ -533,8 +548,24 @@ places on the dashboard.
   League tab" above: no live-score tracking or odds for this competition
   yet), so there's nothing to wire up for them. `withLiveScore` is only
   ever called on Premier League matches for this reason.
-- Team clicks in either competition's section go to the same
+- Team clicks in either competition's section/sub-tab go to the same
   `setSelectedTeam`/`TeamDetail` flow as everywhere else on the dashboard.
+
+**`lastResults` holds the full season, not just the last 5.** Originally
+`fetchLastResults(limit, competitionCode)` truncated to `limit` (5 at every
+call site) even though its underlying request
+(`/competitions/{code}/matches?status=FINISHED`) already returns every
+finished match for the season - the truncation was purely a client-side
+`.slice(0, limit)`. The Results tab now needs the full history, so all
+three call sites (`fetch.mjs`, `fetch-live-scores.mjs`'s `refreshCoreData`,
+`fetch-champions-league.mjs`) pass the exported `ALL_RESULTS` (`Infinity`)
+constant instead of `5` - `slice(0, Infinity)` is just the identity, so no
+change was needed inside `fetchLastResults` itself. `findMatchForBackfill`
+in `fetch-live-scores.mjs` (used by the `backfill_match_id` retry knob) now
+finds almost any past match directly in `data.lastResults` as a result -
+its match-stats.json/`data.standings` fallback path is kept as a
+belt-and-suspenders case (e.g. a `data.json` that predates this change and
+hasn't been refreshed yet) rather than removed.
 
 `fetchStandings`'s "TOTAL" group lookup now falls back to the first group
 in the response (logging when it does) if there's no `"TOTAL"` entry - the

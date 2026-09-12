@@ -14,7 +14,12 @@
 import { writeFile, mkdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
-import { fetchStandings, fetchLastResults, fetchNextFixtures } from "./lib/football-data.mjs";
+import {
+  fetchStandings,
+  fetchLastResults,
+  fetchNextFixtures,
+  ALL_RESULTS,
+} from "./lib/football-data.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_PATH = path.join(__dirname, "..", "public", "champions-league.json");
@@ -34,7 +39,7 @@ async function main() {
   try {
     [standings, lastResults, nextFixtures] = await Promise.all([
       fetchStandings(COMPETITION),
-      fetchLastResults(5, COMPETITION),
+      fetchLastResults(ALL_RESULTS, COMPETITION),
       fetchNextFixtures(10, COMPETITION),
     ]);
   } catch (err) {

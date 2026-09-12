@@ -27,6 +27,7 @@ import {
   fetchStandings,
   fetchLastResults,
   fetchNextFixtures,
+  ALL_RESULTS,
 } from "./lib/football-data.mjs";
 import {
   apiFootballRequest,
@@ -105,7 +106,7 @@ const STALE_LIVE_ENTRY_MS = 4 * 60 * 60 * 1000;
 async function refreshCoreData() {
   const [standings, lastResults, nextFixtures] = await Promise.all([
     fetchStandings(),
-    fetchLastResults(5),
+    fetchLastResults(ALL_RESULTS),
     fetchNextFixtures(10),
   ]);
 
@@ -426,13 +427,16 @@ async function writeLive(matches) {
   );
 }
 
-// data.json's lastResults only keeps the 5 most recent matches, so a match
-// from an earlier round (like a retry/backfill target) can easily have
-// scrolled out of it by the time someone asks to re-fetch it. Fall back to
-// its own already-cached match-stats.json entry - which already recorded
-// homeTeamId/awayTeamId/utcDate - and look up full team objects (name,
-// shortName, needed for teamsLikelyMatch) from data.standings, which always
-// lists every team regardless of recent results.
+// data.json's lastResults now holds every finished match this season (see
+// ALL_RESULTS), so a backfill target is normally found there directly. The
+// match-stats.json fallback below predates that change and is kept as a
+// belt-and-suspenders path - e.g. a match from a season not covered by the
+// current lastResults fetch, or if this data.json predates the change and
+// hasn't been refreshed since. Falls back to its own already-cached
+// match-stats.json entry - which already recorded homeTeamId/awayTeamId/
+// utcDate - and looks up full team objects (name, shortName, needed for
+// teamsLikelyMatch) from data.standings, which always lists every team
+// regardless of recent results.
 async function findMatchForBackfill(matchId, data) {
   const fromLastResults = (data.lastResults ?? []).find((m) => String(m.id) === matchId);
   if (fromLastResults) return fromLastResults;
