@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-12T18:38:36.203Z",
+  "fetchedAt": "2026-09-12T22:40:14.479Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -1577,6 +1577,63 @@
           "extraMinute": null,
           "ownGoal": false,
           "penalty": false
+        }
+      ]
+    },
+    "560577": {
+      "utcDate": "2026-09-12T19:00:00Z",
+      "homeTeamId": 71,
+      "awayTeamId": 57,
+      "stats": {
+        "57": {
+          "shots": 11,
+          "shotsOnTarget": 5,
+          "possession": 58,
+          "passes": 388,
+          "passAccuracy": null,
+          "fouls": 11,
+          "corners": 2,
+          "offsides": 2,
+          "yellowCards": 2,
+          "redCards": 0
+        },
+        "71": {
+          "shots": 12,
+          "shotsOnTarget": 3,
+          "possession": 42,
+          "passes": 282,
+          "passAccuracy": null,
+          "fouls": 18,
+          "corners": 4,
+          "offsides": 2,
+          "yellowCards": 4,
+          "redCards": 1
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 71,
+          "player": "Enzo Le Fée",
+          "minute": 56,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 57,
+          "player": "Bruno Guimarães",
+          "minute": 58,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 57,
+          "player": "Bukayo Saka",
+          "minute": 90,
+          "extraMinute": 7,
+          "ownGoal": false,
+          "penalty": true
         }
       ]
     }
