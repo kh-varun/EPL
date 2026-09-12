@@ -27,7 +27,7 @@ import {
   fetchStandings,
   fetchLastResults,
   fetchNextFixtures,
-  ALL_RESULTS,
+  ALL_MATCHES,
 } from "./lib/football-data.mjs";
 import {
   apiFootballRequest,
@@ -106,8 +106,8 @@ const STALE_LIVE_ENTRY_MS = 4 * 60 * 60 * 1000;
 async function refreshCoreData() {
   const [standings, lastResults, nextFixtures] = await Promise.all([
     fetchStandings(),
-    fetchLastResults(ALL_RESULTS),
-    fetchNextFixtures(10),
+    fetchLastResults(ALL_MATCHES),
+    fetchNextFixtures(ALL_MATCHES),
   ]);
 
   const data = JSON.parse(await readFile(DATA_PATH, "utf-8"));
@@ -428,7 +428,7 @@ async function writeLive(matches) {
 }
 
 // data.json's lastResults now holds every finished match this season (see
-// ALL_RESULTS), so a backfill target is normally found there directly. The
+// ALL_MATCHES), so a backfill target is normally found there directly. The
 // match-stats.json fallback below predates that change and is kept as a
 // belt-and-suspenders path - e.g. a match from a season not covered by the
 // current lastResults fetch, or if this data.json predates the change and

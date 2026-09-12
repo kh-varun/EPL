@@ -6,7 +6,7 @@ import {
   fetchStandings,
   fetchLastResults,
   fetchNextFixtures,
-  ALL_RESULTS,
+  ALL_MATCHES,
 } from "./football-data.mjs";
 
 describe("mapTeam", () => {
@@ -147,7 +147,7 @@ describe("fetchLastResults limit", () => {
     expect(results).toHaveLength(2);
   });
 
-  it("ALL_RESULTS returns every finished match with no truncation", async () => {
+  it("ALL_MATCHES returns every finished match with no truncation", async () => {
     mockFetchOnce({
       matches: [1, 2, 3].map((n) => ({
         id: n,
@@ -159,7 +159,25 @@ describe("fetchLastResults limit", () => {
         score: { fullTime: { home: 1, away: 0 }, winner: "HOME_TEAM" },
       })),
     });
-    const results = await fetchLastResults(ALL_RESULTS);
+    const results = await fetchLastResults(ALL_MATCHES);
+    expect(results).toHaveLength(3);
+  });
+});
+
+describe("fetchNextFixtures limit", () => {
+  it("ALL_MATCHES returns every fresh fixture with no truncation", async () => {
+    mockFetchOnce({
+      matches: [1, 2, 3].map((n) => ({
+        id: n,
+        utcDate: `2026-12-0${n}T14:00:00Z`,
+        status: "SCHEDULED",
+        matchday: n,
+        homeTeam: { id: 1, name: "A", shortName: "A", tla: "AAA", crest: "a.png" },
+        awayTeam: { id: 2, name: "B", shortName: "B", tla: "BBB", crest: "b.png" },
+        score: { fullTime: { home: null, away: null }, winner: null },
+      })),
+    });
+    const results = await fetchNextFixtures(ALL_MATCHES);
     expect(results).toHaveLength(3);
   });
 });

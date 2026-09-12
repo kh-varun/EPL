@@ -12,7 +12,7 @@ import {
   fetchStandings,
   fetchLastResults,
   fetchNextFixtures,
-  ALL_RESULTS,
+  ALL_MATCHES,
 } from "./lib/football-data.mjs";
 import {
   apiFootballRequestThrottled,
@@ -290,8 +290,8 @@ async function main() {
 
   const [standings, lastResults, nextFixtures, headlines] = await Promise.all([
     fetchStandings(),
-    fetchLastResults(ALL_RESULTS),
-    fetchNextFixtures(10),
+    fetchLastResults(ALL_MATCHES),
+    fetchNextFixtures(ALL_MATCHES),
     fetchHeadlines(),
   ]);
 

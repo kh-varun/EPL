@@ -514,27 +514,23 @@ to avoid showing the same Champions League fixtures/results twice.
 ### Fixtures/Results: two competitions, one tab
 
 Rather than a third UCL-only sub-tab for fixtures and a fourth for results,
-the existing **Fixtures** and **Results** tabs in `App.jsx` both show
-Premier League and Champions League matches - but the two tabs handle it
-differently, because a fixture list and a full-season results list have
-different shapes:
+the existing **Fixtures** and **Results** tabs in `App.jsx` both show one
+competition's full match list at a time behind a small segmented sub-tab
+toggle ("Premier League" / "Champions League") - `fixturesCompetition` and
+`resultsCompetition` state in `App.jsx`, each independent so switching one
+tab's competition doesn't affect the other. Both tabs' data now holds every
+match for the season rather than a handful of recent/upcoming entries (see
+`ALL_MATCHES` below), so stacking both competitions' full lists in one
+scroll would mean a lot of scrolling before ever reaching the second
+competition's matches - a toggle keeps only one list on screen at a time.
 
-- **Fixtures** renders two `<Section>`s stacked in one scroll - "Premier
-  League – Next Fixtures" / "Champions League – Next Fixtures" - since
-  each competition only ever has a handful of upcoming fixtures
-  (`fetchNextFixtures`'s `limit` of 10) and showing both at once costs
-  little scrolling.
-- **Results** instead shows one competition at a time behind a small
-  segmented sub-tab toggle ("Premier League" / "Champions League",
-  `resultsCompetition` state in `App.jsx`) rather than stacking both -
-  `lastResults` now holds every finished match for the season (see
-  `ALL_RESULTS` below), so stacking both competitions' full histories in
-  one scroll would mean a lot of scrolling before ever reaching the
-  second competition's results.
-
-Both are built from the same `MatchRow` component, and both keep the tab
-count at 5 - the sub-tab toggle lives inside the Results tab's content, not
-as a new top-level tab.
+The toggle itself is `<CompetitionToggle options value onChange>`
+(`src/components/CompetitionToggle.jsx`), shared by both tabs rather than
+each carrying its own copy of the segmented-control markup - `options` is
+the same `MATCH_COMPETITIONS` array (`[{id: "PL", ...}, {id: "CL", ...}]`)
+for both. Both tabs are still built from the same `MatchRow` component, and
+both keep the top-level tab count at 5 - the sub-tab toggle lives inside
+each tab's own content, not as a new top-level tab.
 
 - The Champions League fixtures/results pass a separate `clPositionByTeamId`
   map (derived from `championsLeague?.standings`, mirroring how
@@ -548,24 +544,32 @@ as a new top-level tab.
   League tab" above: no live-score tracking or odds for this competition
   yet), so there's nothing to wire up for them. `withLiveScore` is only
   ever called on Premier League matches for this reason.
-- Team clicks in either competition's section/sub-tab go to the same
+- Team clicks in either competition's sub-tab go to the same
   `setSelectedTeam`/`TeamDetail` flow as everywhere else on the dashboard.
 
-**`lastResults` holds the full season, not just the last 5.** Originally
-`fetchLastResults(limit, competitionCode)` truncated to `limit` (5 at every
-call site) even though its underlying request
-(`/competitions/{code}/matches?status=FINISHED`) already returns every
-finished match for the season - the truncation was purely a client-side
-`.slice(0, limit)`. The Results tab now needs the full history, so all
-three call sites (`fetch.mjs`, `fetch-live-scores.mjs`'s `refreshCoreData`,
-`fetch-champions-league.mjs`) pass the exported `ALL_RESULTS` (`Infinity`)
-constant instead of `5` - `slice(0, Infinity)` is just the identity, so no
-change was needed inside `fetchLastResults` itself. `findMatchForBackfill`
+**`lastResults`/`nextFixtures` hold the full season, not a handful of
+entries.** Both `fetchLastResults(limit, competitionCode)` and
+`fetchNextFixtures(limit, competitionCode)` used to truncate to `limit` (5
+and 10 respectively, at every call site) even though their underlying
+requests (`/competitions/{code}/matches?status=FINISHED` and
+`?status=SCHEDULED,IN_PLAY,PAUSED`) already return every matching match for
+the season - the truncation was purely a client-side `.slice(0, limit)`.
+The Fixtures/Results tabs now need the full lists, so all three call sites
+of each (`fetch.mjs`, `fetch-live-scores.mjs`'s `refreshCoreData`,
+`fetch-champions-league.mjs`) pass the exported `ALL_MATCHES` (`Infinity`)
+constant instead of `5`/`10` - `slice(0, Infinity)` is just the identity,
+so no change was needed inside either function itself. `findMatchForBackfill`
 in `fetch-live-scores.mjs` (used by the `backfill_match_id` retry knob) now
 finds almost any past match directly in `data.lastResults` as a result -
 its match-stats.json/`data.standings` fallback path is kept as a
 belt-and-suspenders case (e.g. a `data.json` that predates this change and
-hasn't been refreshed yet) rather than removed.
+hasn't been refreshed yet) rather than removed. Widening `nextFixtures` to
+the full remaining season also widens `attachBroadcasts`'s reach in
+`fetch.mjs`/`fetch-live-scores.mjs` - it now does one ESPN scoreboard
+lookup per distinct future matchday instead of just the next ~10 fixtures'
+worth, since it's called on the full `nextFixtures` list. ESPN's site API
+has no documented quota (unlike API-Football's daily cap), so this was
+accepted as a reasonable cost rather than special-cased.
 
 `fetchStandings`'s "TOTAL" group lookup now falls back to the first group
 in the response (logging when it does) if there's no `"TOTAL"` entry - the

@@ -18,7 +18,7 @@ import {
   fetchStandings,
   fetchLastResults,
   fetchNextFixtures,
-  ALL_RESULTS,
+  ALL_MATCHES,
 } from "./lib/football-data.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -39,8 +39,8 @@ async function main() {
   try {
     [standings, lastResults, nextFixtures] = await Promise.all([
       fetchStandings(COMPETITION),
-      fetchLastResults(ALL_RESULTS, COMPETITION),
-      fetchNextFixtures(10, COMPETITION),
+      fetchLastResults(ALL_MATCHES, COMPETITION),
+      fetchNextFixtures(ALL_MATCHES, COMPETITION),
     ]);
   } catch (err) {
     console.error(`Could not fetch Champions League data: ${err.message}`);

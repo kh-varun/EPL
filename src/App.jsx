@@ -6,6 +6,7 @@ import StandingsTable from "./components/StandingsTable.jsx";
 import MatchRow from "./components/MatchRow.jsx";
 import Headlines from "./components/Headlines.jsx";
 import ChampionsLeague from "./components/ChampionsLeague.jsx";
+import CompetitionToggle from "./components/CompetitionToggle.jsx";
 import TeamDetail from "./components/TeamDetail.jsx";
 import MatchOddsDialog from "./components/MatchOddsDialog.jsx";
 import MatchStatsDialog from "./components/MatchStatsDialog.jsx";
@@ -25,11 +26,13 @@ const TABS = [
   { id: "headlines", label: "News", icon: NewspaperIcon },
 ];
 
-// The Results tab shows one competition's full match history at a time
-// behind a small sub-tab toggle, rather than stacking both (as Fixtures
-// does) - a full season of results is long enough that showing both at
-// once would mean a lot of scrolling before reaching the second competition.
-const RESULTS_COMPETITIONS = [
+// Both the Fixtures and Results tabs show one competition's full match list
+// at a time behind a small sub-tab toggle, rather than stacking both -
+// nextFixtures/lastResults now hold every match for the season (see
+// ALL_MATCHES in scripts/lib/football-data.mjs), so stacking both
+// competitions' full lists in one scroll would mean a lot of scrolling
+// before ever reaching the second competition's matches.
+const MATCH_COMPETITIONS = [
   { id: "PL", label: "Premier League" },
   { id: "CL", label: "Champions League" },
 ];
@@ -53,6 +56,7 @@ export default function App() {
   const [championsLeague, setChampionsLeague] = useState(null);
   const [error, setError] = useState(null);
   const [activeTab, setActiveTab] = useState("standings");
+  const [fixturesCompetition, setFixturesCompetition] = useState("PL");
   const [resultsCompetition, setResultsCompetition] = useState("PL");
   const [selectedTeam, setSelectedTeam] = useState(null);
   const [selectedMatch, setSelectedMatch] = useState(null);
@@ -210,69 +214,64 @@ export default function App() {
 
         {activeTab === "fixtures" && (
           <div className="space-y-4">
-            <Section title="Premier League – Next Fixtures">
-              {data?.nextFixtures?.length ? (
-                <ul className="space-y-2">
-                  {data.nextFixtures.map((match) => {
-                    const liveMatch = withLiveScore(match, liveScores?.matches);
-                    return (
+            <CompetitionToggle
+              options={MATCH_COMPETITIONS}
+              value={fixturesCompetition}
+              onChange={setFixturesCompetition}
+            />
+
+            {fixturesCompetition === "PL" ? (
+              <Section title="Premier League – Fixtures">
+                {data?.nextFixtures?.length ? (
+                  <ul className="space-y-2">
+                    {data.nextFixtures.map((match) => {
+                      const liveMatch = withLiveScore(match, liveScores?.matches);
+                      return (
+                        <MatchRow
+                          key={match.id}
+                          match={liveMatch}
+                          showScore={Boolean(liveMatch.liveStatus)}
+                          positions={positionByTeamId}
+                          onSelectTeam={setSelectedTeam}
+                          onSelectMatch={liveMatch.liveStatus ? undefined : setSelectedMatch}
+                          odds={odds?.odds?.[match.id]}
+                        />
+                      );
+                    })}
+                  </ul>
+                ) : (
+                  <p className="text-sm text-white/50">No upcoming fixtures.</p>
+                )}
+              </Section>
+            ) : (
+              <Section title="Champions League – Fixtures">
+                {championsLeague?.nextFixtures?.length ? (
+                  <ul className="space-y-2">
+                    {championsLeague.nextFixtures.map((match) => (
                       <MatchRow
                         key={match.id}
-                        match={liveMatch}
-                        showScore={Boolean(liveMatch.liveStatus)}
-                        positions={positionByTeamId}
+                        match={match}
+                        showScore={false}
+                        positions={clPositionByTeamId}
                         onSelectTeam={setSelectedTeam}
-                        onSelectMatch={liveMatch.liveStatus ? undefined : setSelectedMatch}
-                        odds={odds?.odds?.[match.id]}
                       />
-                    );
-                  })}
-                </ul>
-              ) : (
-                <p className="text-sm text-white/50">No upcoming fixtures.</p>
-              )}
-            </Section>
-
-            <Section title="Champions League – Next Fixtures">
-              {championsLeague?.nextFixtures?.length ? (
-                <ul className="space-y-2">
-                  {championsLeague.nextFixtures.map((match) => (
-                    <MatchRow
-                      key={match.id}
-                      match={match}
-                      showScore={false}
-                      positions={clPositionByTeamId}
-                      onSelectTeam={setSelectedTeam}
-                    />
-                  ))}
-                </ul>
-              ) : (
-                <p className="text-sm text-white/50">No upcoming fixtures.</p>
-              )}
-            </Section>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-sm text-white/50">No upcoming fixtures.</p>
+                )}
+              </Section>
+            )}
           </div>
         )}
 
         {activeTab === "results" && (
           <div className="space-y-4">
-            <div className="grid grid-cols-2 gap-1 rounded-xl bg-epl-surface2 p-1">
-              {RESULTS_COMPETITIONS.map((comp) => {
-                const isActive = resultsCompetition === comp.id;
-                return (
-                  <button
-                    key={comp.id}
-                    type="button"
-                    onClick={() => setResultsCompetition(comp.id)}
-                    className={
-                      "rounded-lg py-2 text-xs font-bold uppercase tracking-wide transition-all " +
-                      (isActive ? "bg-epl-cyan text-epl-purple shadow-md" : "text-white/60 hover:text-white")
-                    }
-                  >
-                    {comp.label}
-                  </button>
-                );
-              })}
-            </div>
+            <CompetitionToggle
+              options={MATCH_COMPETITIONS}
+              value={resultsCompetition}
+              onChange={setResultsCompetition}
+            />
 
             {resultsCompetition === "PL" ? (
               <Section title="Premier League – Results">

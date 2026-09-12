@@ -83,10 +83,10 @@ export async function fetchStandings(competitionCode = "PL") {
   }));
 }
 
-// Pass as fetchLastResults's limit to keep every finished match this season
-// instead of truncating - the Results tab shows the full history per
-// competition rather than just a handful of recent scores.
-export const ALL_RESULTS = Infinity;
+// Pass as fetchLastResults's or fetchNextFixtures's limit to keep every
+// match instead of truncating - both the Results and Fixtures tabs show a
+// competition's full match list rather than just a handful of entries.
+export const ALL_MATCHES = Infinity;
 
 export async function fetchLastResults(limit = 5, competitionCode = "PL") {
   const data = await footballDataRequest(`/competitions/${competitionCode}/matches?status=FINISHED`);
