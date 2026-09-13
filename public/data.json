@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-13T17:05:24.093Z",
+  "fetchedAt": "2026-09-13T19:21:15.666Z",
   "standings": [
     {
       "position": 1,
@@ -383,6 +383,31 @@
     }
   ],
   "lastResults": [
+    {
+      "id": 560580,
+      "utcDate": "2026-09-13T15:30:00Z",
+      "status": "FINISHED",
+      "matchday": 4,
+      "homeTeam": {
+        "id": 66,
+        "name": "Manchester United FC",
+        "shortName": "Man United",
+        "tla": "MUN",
+        "crest": "https://crests.football-data.org/66.png"
+      },
+      "awayTeam": {
+        "id": 65,
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "tla": "MCI",
+        "crest": "https://crests.football-data.org/65.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 1,
+        "winner": "AWAY_TEAM"
+      }
+    },
     {
       "id": 560578,
       "utcDate": "2026-09-13T13:00:00Z",
@@ -1335,32 +1360,6 @@
     }
   ],
   "nextFixtures": [
-    {
-      "id": 560580,
-      "utcDate": "2026-09-13T15:30:00Z",
-      "status": "IN_PLAY",
-      "matchday": 4,
-      "homeTeam": {
-        "id": 66,
-        "name": "Manchester United FC",
-        "shortName": "Man United",
-        "tla": "MUN",
-        "crest": "https://crests.football-data.org/66.png"
-      },
-      "awayTeam": {
-        "id": 65,
-        "name": "Manchester City FC",
-        "shortName": "Man City",
-        "tla": "MCI",
-        "crest": "https://crests.football-data.org/65.png"
-      },
-      "score": {
-        "home": 0,
-        "away": 1,
-        "winner": "AWAY_TEAM"
-      },
-      "broadcast": "NBCSN"
-    },
     {
       "id": 560579,
       "utcDate": "2026-09-14T19:00:00Z",

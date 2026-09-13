@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-13T17:05:31.451Z",
+  "fetchedAt": "2026-09-13T19:21:22.971Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -1705,6 +1705,47 @@
           "player": "Yasin Ayari",
           "minute": 90,
           "extraMinute": 4,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560580": {
+      "utcDate": "2026-09-13T15:30:00Z",
+      "homeTeamId": 66,
+      "awayTeamId": 65,
+      "stats": {
+        "65": {
+          "shots": 6,
+          "shotsOnTarget": 2,
+          "possession": 45,
+          "passes": 395,
+          "passAccuracy": null,
+          "fouls": 10,
+          "corners": 7,
+          "offsides": 1,
+          "yellowCards": 2,
+          "redCards": 1
+        },
+        "66": {
+          "shots": 16,
+          "shotsOnTarget": 3,
+          "possession": 55,
+          "passes": 471,
+          "passAccuracy": null,
+          "fouls": 17,
+          "corners": 6,
+          "offsides": 4,
+          "yellowCards": 1,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 65,
+          "player": "Erling Haaland",
+          "minute": 60,
+          "extraMinute": null,
           "ownGoal": false,
           "penalty": false
         }
