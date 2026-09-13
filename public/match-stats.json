@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-12T22:40:14.479Z",
+  "fetchedAt": "2026-09-13T17:05:31.451Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -1634,6 +1634,79 @@
           "extraMinute": 7,
           "ownGoal": false,
           "penalty": true
+        }
+      ]
+    },
+    "560578": {
+      "utcDate": "2026-09-13T13:00:00Z",
+      "homeTeamId": 1076,
+      "awayTeamId": 397,
+      "stats": {
+        "397": {
+          "shots": 22,
+          "shotsOnTarget": 7,
+          "possession": 69,
+          "passes": 570,
+          "passAccuracy": null,
+          "fouls": 15,
+          "corners": 3,
+          "offsides": 2,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        "1076": {
+          "shots": 14,
+          "shotsOnTarget": 6,
+          "possession": 31,
+          "passes": 246,
+          "passAccuracy": null,
+          "fouls": 9,
+          "corners": 5,
+          "offsides": 2,
+          "yellowCards": 0,
+          "redCards": 1
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 397,
+          "player": "Charalampos Kostoulas",
+          "minute": 35,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 397,
+          "player": "Malick Yalcouyé",
+          "minute": 51,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 397,
+          "player": "Pascal Groß",
+          "minute": 70,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": true
+        },
+        {
+          "teamId": 397,
+          "player": "Lewis Dunk",
+          "minute": 83,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 397,
+          "player": "Yasin Ayari",
+          "minute": 90,
+          "extraMinute": 4,
+          "ownGoal": false,
+          "penalty": false
         }
       ]
     }
