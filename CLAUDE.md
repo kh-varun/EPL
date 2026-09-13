@@ -547,6 +547,27 @@ each tab's own content, not as a new top-level tab.
 - Team clicks in either competition's sub-tab go to the same
   `setSelectedTeam`/`TeamDetail` flow as everywhere else on the dashboard.
 
+**Team filter.** Both tabs also render a `<TeamFilter teams value onChange>`
+(`src/components/TeamFilter.jsx`, a plain native `<select>` - cheap, and
+gives mobile browsers their native picker for free) right below the
+competition toggle, narrowing the visible list down to one team's matches
+(home or away) via `fixturesTeamId`/`resultsTeamId` state and a shared
+`filterByTeam(matches, teamId)` helper in `App.jsx` - `null` means "All
+Teams" and passes the list through unfiltered. `teams` is `plTeams`/
+`clTeams` (each competition's own standings mapped down to just the team
+objects, memoized alongside `positionByTeamId`/`clPositionByTeamId`) -
+picking the array that matches whichever competition's sub-tab is active.
+Both the competition toggle's `onChange` handlers reset their tab's team
+filter back to `null` at the same time they switch competition, since a
+team id selected under one competition is essentially never valid under
+the other (different team pool) and would otherwise silently filter the
+new competition's list down to nothing with no explanation. The empty-state
+message also distinguishes a genuinely empty list ("No upcoming fixtures.")
+from a team filter that matched nothing ("No upcoming fixtures for this
+team.") - the latter should really only show transiently, since `teams`
+is always sourced from the same standings the matches themselves are
+scoped to.
+
 **`lastResults`/`nextFixtures` hold the full season, not a handful of
 entries.** Both `fetchLastResults(limit, competitionCode)` and
 `fetchNextFixtures(limit, competitionCode)` used to truncate to `limit` (5

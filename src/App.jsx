@@ -7,6 +7,7 @@ import MatchRow from "./components/MatchRow.jsx";
 import Headlines from "./components/Headlines.jsx";
 import ChampionsLeague from "./components/ChampionsLeague.jsx";
 import CompetitionToggle from "./components/CompetitionToggle.jsx";
+import TeamFilter from "./components/TeamFilter.jsx";
 import TeamDetail from "./components/TeamDetail.jsx";
 import MatchOddsDialog from "./components/MatchOddsDialog.jsx";
 import MatchStatsDialog from "./components/MatchStatsDialog.jsx";
@@ -46,6 +47,13 @@ function withLiveScore(match, liveMatches) {
   return { ...match, score: live.score, liveStatus: live.status };
 }
 
+// Narrows a match list down to one team's matches (home or away) - null
+// teamId means "All Teams", so the list passes through unfiltered.
+function filterByTeam(matches, teamId) {
+  if (!teamId) return matches;
+  return matches?.filter((m) => m.homeTeam.id === teamId || m.awayTeam.id === teamId);
+}
+
 export default function App() {
   const [data, setData] = useState(null);
   const [lineups, setLineups] = useState(null);
@@ -57,7 +65,9 @@ export default function App() {
   const [error, setError] = useState(null);
   const [activeTab, setActiveTab] = useState("standings");
   const [fixturesCompetition, setFixturesCompetition] = useState("PL");
+  const [fixturesTeamId, setFixturesTeamId] = useState(null);
   const [resultsCompetition, setResultsCompetition] = useState("PL");
+  const [resultsTeamId, setResultsTeamId] = useState(null);
   const [selectedTeam, setSelectedTeam] = useState(null);
   const [selectedMatch, setSelectedMatch] = useState(null);
   const [selectedStatsMatch, setSelectedStatsMatch] = useState(null);
@@ -81,6 +91,15 @@ export default function App() {
     }
     return map;
   }, [championsLeague?.standings]);
+
+  // Team lists for the Fixtures/Results tabs' team filter dropdown - each
+  // competition's own standings already lists every one of its teams,
+  // regardless of recent results, so there's no need for a separate fetch.
+  const plTeams = useMemo(() => (data?.standings ?? []).map((row) => row.team), [data?.standings]);
+  const clTeams = useMemo(
+    () => (championsLeague?.standings ?? []).map((row) => row.team),
+    [championsLeague?.standings],
+  );
 
   useEffect(() => {
     // Resolves null on any failure - the optional files may simply not
@@ -186,6 +205,15 @@ export default function App() {
     );
   }
 
+  const fixturesList = filterByTeam(
+    fixturesCompetition === "PL" ? data?.nextFixtures : championsLeague?.nextFixtures,
+    fixturesTeamId,
+  );
+  const resultsList = filterByTeam(
+    resultsCompetition === "PL" ? data?.lastResults : championsLeague?.lastResults,
+    resultsTeamId,
+  );
+
   return (
     <div className="min-h-screen bg-epl-bg pb-10">
       <header className="bg-epl-gradient text-white px-4 pt-4 pb-3 shadow-lg">
@@ -217,14 +245,22 @@ export default function App() {
             <CompetitionToggle
               options={MATCH_COMPETITIONS}
               value={fixturesCompetition}
-              onChange={setFixturesCompetition}
+              onChange={(id) => {
+                setFixturesCompetition(id);
+                setFixturesTeamId(null);
+              }}
+            />
+            <TeamFilter
+              teams={fixturesCompetition === "PL" ? plTeams : clTeams}
+              value={fixturesTeamId}
+              onChange={setFixturesTeamId}
             />
 
             {fixturesCompetition === "PL" ? (
               <Section title="Premier League – Fixtures">
-                {data?.nextFixtures?.length ? (
+                {fixturesList?.length ? (
                   <ul className="space-y-2">
-                    {data.nextFixtures.map((match) => {
+                    {fixturesList.map((match) => {
                       const liveMatch = withLiveScore(match, liveScores?.matches);
                       return (
                         <MatchRow
@@ -240,14 +276,16 @@ export default function App() {
                     })}
                   </ul>
                 ) : (
-                  <p className="text-sm text-white/50">No upcoming fixtures.</p>
+                  <p className="text-sm text-white/50">
+                    {fixturesTeamId ? "No upcoming fixtures for this team." : "No upcoming fixtures."}
+                  </p>
                 )}
               </Section>
             ) : (
               <Section title="Champions League – Fixtures">
-                {championsLeague?.nextFixtures?.length ? (
+                {fixturesList?.length ? (
                   <ul className="space-y-2">
-                    {championsLeague.nextFixtures.map((match) => (
+                    {fixturesList.map((match) => (
                       <MatchRow
                         key={match.id}
                         match={match}
@@ -258,7 +296,9 @@ export default function App() {
                     ))}
                   </ul>
                 ) : (
-                  <p className="text-sm text-white/50">No upcoming fixtures.</p>
+                  <p className="text-sm text-white/50">
+                    {fixturesTeamId ? "No upcoming fixtures for this team." : "No upcoming fixtures."}
+                  </p>
                 )}
               </Section>
             )}
@@ -270,14 +310,22 @@ export default function App() {
             <CompetitionToggle
               options={MATCH_COMPETITIONS}
               value={resultsCompetition}
-              onChange={setResultsCompetition}
+              onChange={(id) => {
+                setResultsCompetition(id);
+                setResultsTeamId(null);
+              }}
+            />
+            <TeamFilter
+              teams={resultsCompetition === "PL" ? plTeams : clTeams}
+              value={resultsTeamId}
+              onChange={setResultsTeamId}
             />
 
             {resultsCompetition === "PL" ? (
               <Section title="Premier League – Results">
-                {data?.lastResults?.length ? (
+                {resultsList?.length ? (
                   <ul className="space-y-2">
-                    {data.lastResults.map((match) => {
+                    {resultsList.map((match) => {
                       const liveMatch = withLiveScore(match, liveScores?.matches);
                       return (
                         <MatchRow
@@ -293,15 +341,17 @@ export default function App() {
                   </ul>
                 ) : (
                   <p className="text-sm text-white/50">
-                    No results yet — the season hasn&apos;t kicked off.
+                    {resultsTeamId
+                      ? "No results for this team."
+                      : "No results yet — the season hasn't kicked off."}
                   </p>
                 )}
               </Section>
             ) : (
               <Section title="Champions League – Results">
-                {championsLeague?.lastResults?.length ? (
+                {resultsList?.length ? (
                   <ul className="space-y-2">
-                    {championsLeague.lastResults.map((match) => (
+                    {resultsList.map((match) => (
                       <MatchRow
                         key={match.id}
                         match={match}
@@ -312,7 +362,9 @@ export default function App() {
                     ))}
                   </ul>
                 ) : (
-                  <p className="text-sm text-white/50">No results yet.</p>
+                  <p className="text-sm text-white/50">
+                    {resultsTeamId ? "No results for this team." : "No results yet."}
+                  </p>
                 )}
               </Section>
             )}
