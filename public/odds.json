@@ -1,12 +1,12 @@
 {
-  "fetchedAt": "2026-09-12T22:53:31.956Z",
+  "fetchedAt": "2026-09-13T00:36:14.984Z",
   "odds": {
     "560578": {
       "eventTicker": "KXEPLGAME-26SEP13COVBRI",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep13covbri",
       "home": {
         "label": "Coventry City",
-        "probability": 24,
+        "probability": 25,
         "ticker": "KXEPLGAME-26SEP13COVBRI-COV"
       },
       "away": {
@@ -30,7 +30,7 @@
       },
       "away": {
         "label": "Newcastle",
-        "probability": 32,
+        "probability": 33,
         "ticker": "KXEPLGAME-26SEP14LEENEW-NEW"
       },
       "draw": {
@@ -63,12 +63,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep20boulfc",
       "home": {
         "label": "Bournemouth",
-        "probability": 27,
+        "probability": 30,
         "ticker": "KXEPLGAME-26SEP20BOULFC-BOU"
       },
       "away": {
         "label": "Liverpool",
-        "probability": 45,
+        "probability": 46,
         "ticker": "KXEPLGAME-26SEP20BOULFC-LFC"
       },
       "draw": {
@@ -130,7 +130,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 27,
+        "probability": 26,
         "ticker": "KXEPLGAME-26SEP19TOTAVL-TIE"
       }
     },
@@ -149,7 +149,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 21,
+        "probability": 20,
         "ticker": "KXEPLGAME-26SEP19NEWHUL-TIE"
       }
     },
@@ -163,12 +163,12 @@
       },
       "away": {
         "label": "Coventry City",
-        "probability": 20,
+        "probability": 21,
         "ticker": "KXEPLGAME-26SEP19NFOCOV-COV"
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 23,
         "ticker": "KXEPLGAME-26SEP19NFOCOV-TIE"
       }
     },
@@ -182,7 +182,7 @@
       },
       "away": {
         "label": "Chelsea",
-        "probability": 43,
+        "probability": 42,
         "ticker": "KXEPLGAME-26SEP18BRECFC-CFC"
       },
       "draw": {
