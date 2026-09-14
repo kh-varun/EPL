@@ -81,6 +81,14 @@ export function RefreshIcon(props) {
   );
 }
 
+export function CheckIcon(props) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M5 13l4 4L19 7" />
+    </svg>
+  );
+}
+
 export function PitchIcon(props) {
   return (
     <svg {...base} {...props}>

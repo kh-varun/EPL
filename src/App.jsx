@@ -82,6 +82,7 @@ export default function App() {
   const [selectedMatch, setSelectedMatch] = useState(null);
   const [selectedStatsMatch, setSelectedStatsMatch] = useState(null);
   const [isRefreshing, setIsRefreshing] = useState(false);
+  const [justRefreshed, setJustRefreshed] = useState(false);
 
   const positionByTeamId = useMemo(() => {
     const map = {};
@@ -153,14 +154,43 @@ export default function App() {
   // poll or 5-minute catch-all. Runs the same three calls as
   // onVisibilityChange below, just triggered by a click instead of the tab
   // becoming visible again.
+  //
+  // Two things had to be added on top of just calling those three fetches,
+  // confirmed live as the actual reason a working button still read as
+  // "not working": the underlying JSON is almost always unchanged between
+  // polls (nothing to show), and these are small static files on a CDN, so
+  // a real click's fetches can resolve in well under 100ms - faster than a
+  // person can perceive the icon spin at all. A MIN_SPIN_MS floor makes the
+  // spin actually visible regardless of how fast the network is, and
+  // justRefreshed swaps the icon to a checkmark for a bit afterward as
+  // positive confirmation the click did something, even when nothing in
+  // the data itself visibly changed.
+  const justRefreshedTimeoutRef = useRef(null);
+  const MIN_SPIN_MS = 400;
+
   const handleManualRefresh = useCallback(async () => {
+    if (justRefreshedTimeoutRef.current) clearTimeout(justRefreshedTimeoutRef.current);
+    setJustRefreshed(false);
     setIsRefreshing(true);
     try {
-      await Promise.all([fetchLiveScores(), refreshData(), refreshOptional()]);
+      await Promise.all([
+        fetchLiveScores(),
+        refreshData(),
+        refreshOptional(),
+        new Promise((resolve) => setTimeout(resolve, MIN_SPIN_MS)),
+      ]);
     } finally {
       setIsRefreshing(false);
+      setJustRefreshed(true);
+      justRefreshedTimeoutRef.current = setTimeout(() => setJustRefreshed(false), 1500);
     }
   }, [fetchLiveScores, refreshData, refreshOptional]);
+
+  useEffect(() => {
+    return () => {
+      if (justRefreshedTimeoutRef.current) clearTimeout(justRefreshedTimeoutRef.current);
+    };
+  }, []);
 
   useEffect(() => {
     // Only data.json failing on the very first load is surfaced as an
@@ -257,6 +287,7 @@ export default function App() {
                 fetchedAt={data.fetchedAt}
                 onRefresh={handleManualRefresh}
                 isRefreshing={isRefreshing}
+                justRefreshed={justRefreshed}
               />
             )}
           </div>
