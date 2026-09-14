@@ -1,7 +1,7 @@
 import { formatRelativeUpdated, formatUpdatedTimestamp } from "../lib/format.js";
-import { RefreshIcon } from "./icons.jsx";
+import { CheckIcon, RefreshIcon } from "./icons.jsx";
 
-export default function LastUpdated({ fetchedAt, onRefresh, isRefreshing }) {
+export default function LastUpdated({ fetchedAt, onRefresh, isRefreshing, justRefreshed }) {
   if (!fetchedAt) return null;
 
   return (
@@ -17,10 +17,20 @@ export default function LastUpdated({ fetchedAt, onRefresh, isRefreshing }) {
             type="button"
             onClick={onRefresh}
             disabled={isRefreshing}
-            aria-label="Refresh dashboard data"
-            className="rounded-full p-1 text-white/70 hover:text-white hover:bg-white/10 disabled:opacity-50"
+            aria-label={justRefreshed ? "Dashboard refreshed" : "Refresh dashboard data"}
+            // p-2.5 -m-2.5 grows the actual tappable area well past the
+            // visible icon (which stays h-3.5 w-3.5) without disturbing the
+            // surrounding flex layout - a 22x22 hit target was too small to
+            // reliably tap on a phone, confirmed as the real complaint
+            // behind "the button isn't working" once the fetch itself was
+            // verified firing correctly on every click.
+            className="rounded-full p-2.5 -m-2.5 text-white/70 hover:text-white hover:bg-white/10 active:bg-white/20 disabled:opacity-50"
           >
-            <RefreshIcon className={"h-3.5 w-3.5 " + (isRefreshing ? "animate-spin" : "")} />
+            {justRefreshed ? (
+              <CheckIcon className="h-3.5 w-3.5 text-emerald-400" />
+            ) : (
+              <RefreshIcon className={"h-3.5 w-3.5 " + (isRefreshing ? "animate-spin" : "")} />
+            )}
           </button>
         )}
       </span>

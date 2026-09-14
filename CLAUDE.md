@@ -305,6 +305,28 @@ one `useEffect` call) is reachable from both the effect's interval and
 the button's click handler while still not triggering a re-render on
 every write the way state would.
 
+**The button initially shipped "working" but unusable in practice** -
+confirmed live: every fetch it triggered actually fired correctly (verified
+against the real production build with network logging), but two things
+made a functioning button read as broken. First, its tap target was only
+22x22px (the raw icon plus 4px of padding) - well under the ~44px commonly
+recommended minimum for a reliable mobile tap, so taps on a phone would
+often just miss it. Fixed with `p-2.5 -m-2.5` - padding plus a matching
+negative margin grows the actual clickable/tappable box to 34x34px without
+moving anything else in the header's layout (the negative margin cancels
+the padding's effect on surrounding flex spacing). Second, these are small
+static JSON files served from a CDN, so a real click's fetches can resolve
+in well under 100ms - faster than a person can perceive the icon spin at
+all, and the underlying data is also usually unchanged between polls, so
+there was often no visible change to confirm the click even worked.
+`handleManualRefresh` now races the real fetches against a `MIN_SPIN_MS`
+(400ms) floor so the spin is always visible regardless of network speed,
+then swaps the icon to a `CheckIcon` (green, `justRefreshed` state) for
+1.5s afterward as an unambiguous "yes, that worked" signal independent of
+whether the data itself changed. `justRefreshedTimeoutRef` clears any
+pending revert-to-idle timeout on a fresh click (so rapid clicking doesn't
+flash back to idle mid-checkmark) and is cleaned up on unmount.
+
 When a match that was previously live drops off the `IN_PLAY`/`PAUSED`
 query (or its kickoff window elapses entirely - `data.js`'s own cached
 `nextFixtures`/`lastResults` reflect that the transition happened), it's
