@@ -269,19 +269,41 @@ this also makes the entry disappear from `existing` on the next run,
 which correctly triggers the "no longer live" refresh and self-heals the
 file instead of leaving a stale score/status stuck indefinitely.
 
-`App.jsx` keeps an open tab fresh in three layers (its `useEffect` has the
+`App.jsx` keeps an open tab fresh in four layers (its `useEffect` has the
 full rationale): `live-scores.json` polled every 60s; an immediate refetch
 of `data.json`/`match-stats.json`/`odds.json`/`lineups.json` whenever the
 set of live match ids changes - which is exact, not hopeful, because the
 workflow run that clears a finished match from `live-scores.json`
 refreshes `data.json`/`match-stats.json` in the same commit, so those
 files are always deployed alongside the transition the client just
-observed; and a 5-minute catch-all refresh of the same files plus a
-refresh on `visibilitychange` (a phone that switched apps mid-match).
-Only `history.json` is fetched once per page load - it changes monthly.
-Without the transition refetch, full time made a match snap back to an
-upcoming "VS" fixture (live overlay gone, page-load-time `data.json`
-still listing it as SCHEDULED) until a manual reload.
+observed; a 5-minute catch-all refresh of the same files plus a refresh on
+`visibilitychange` (a phone that switched apps mid-match); and a manual
+refresh button (see "Manual refresh button" below) for a user who doesn't
+want to wait on any of the above. Only `history.json` is fetched once per
+page load - it changes monthly. Without the transition refetch, full time
+made a match snap back to an upcoming "VS" fixture (live overlay gone,
+page-load-time `data.json` still listing it as SCHEDULED) until a manual
+reload.
+
+**Manual refresh button.** `LastUpdated` (next to the header's "Updated
+Xh ago" line) renders a small `RefreshIcon` button - `onRefresh`/
+`isRefreshing` props, only shown when a handler is passed in. Clicking it
+calls `App.jsx`'s `handleManualRefresh`, which spins the icon
+(`animate-spin`) and unconditionally re-runs the same three fetches
+(`fetchLiveScores`, `refreshData`, `refreshOptional`) that
+`onVisibilityChange` already runs when a backgrounded tab becomes visible
+again - useful for confirming a change landed right after triggering a
+`workflow_dispatch` run by hand, instead of waiting on the 60s/5-minute
+polls. This needed `refreshData`/`refreshOptional`/`fetchLiveScores` (and
+the `loadJson` helper they're built on) pulled out of the mount-only
+`useEffect` and into `useCallback`s at the component level, so a click
+handler outside that effect can call them too - `loadJson` moved to
+module scope (it only closes over the build-time `BASE_URL`, not
+component state) and `fetchLiveScores`'s `prevLiveIds` moved from a
+plain closure variable to a `useRef`, since a ref (unlike a `let` inside
+one `useEffect` call) is reachable from both the effect's interval and
+the button's click handler while still not triggering a re-render on
+every write the way state would.
 
 When a match that was previously live drops off the `IN_PLAY`/`PAUSED`
 query (or its kickoff window elapses entirely - `data.js`'s own cached
