@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import LastUpdated from "./components/LastUpdated.jsx";
 import Section from "./components/Section.jsx";
 import TabBar from "./components/TabBar.jsx";
@@ -54,6 +54,16 @@ function filterByTeam(matches, teamId) {
   return matches?.filter((m) => m.homeTeam.id === teamId || m.awayTeam.id === teamId);
 }
 
+// Resolves null on any failure - the optional files may simply not exist
+// yet, and a failed refresh must keep showing whatever data is already on
+// screen rather than blanking it. Module-level since it only needs the
+// build-time BASE_URL, not anything from component state - both the
+// mount-time effect below and the manual refresh button share this one copy.
+const loadJson = (name) =>
+  fetch(`${import.meta.env.BASE_URL}${name}`, { cache: "no-store" })
+    .then((res) => (res.ok ? res.json() : null))
+    .catch(() => null);
+
 export default function App() {
   const [data, setData] = useState(null);
   const [lineups, setLineups] = useState(null);
@@ -71,6 +81,7 @@ export default function App() {
   const [selectedTeam, setSelectedTeam] = useState(null);
   const [selectedMatch, setSelectedMatch] = useState(null);
   const [selectedStatsMatch, setSelectedStatsMatch] = useState(null);
+  const [isRefreshing, setIsRefreshing] = useState(false);
 
   const positionByTeamId = useMemo(() => {
     const map = {};
@@ -101,15 +112,57 @@ export default function App() {
     [championsLeague?.standings],
   );
 
-  useEffect(() => {
-    // Resolves null on any failure - the optional files may simply not
-    // exist yet, and a failed refresh must keep showing whatever data is
-    // already on screen rather than blanking it.
-    const loadJson = (name) =>
-      fetch(`${import.meta.env.BASE_URL}${name}`, { cache: "no-store" })
-        .then((res) => (res.ok ? res.json() : null))
-        .catch(() => null);
+  const refreshData = useCallback(
+    () => loadJson("data.json").then((json) => json && setData(json)),
+    [],
+  );
 
+  const refreshOptional = useCallback(() => {
+    loadJson("lineups.json").then((json) => json && setLineups(json));
+    loadJson("odds.json").then((json) => json && setOdds(json));
+    loadJson("match-stats.json").then((json) => json && setMatchStats(json));
+    // Champions League league-phase matchdays are roughly two weeks apart,
+    // far slower-moving than anything else here - it rides along on this
+    // same 5-minute/visibility-change/manual refresh rather than needing
+    // its own polling layer.
+    loadJson("champions-league.json").then((json) => json && setChampionsLeague(json));
+  }, []);
+
+  // prevLiveIds needs to survive across renders (to compare "did the live
+  // match set change since last poll") but shouldn't itself trigger a
+  // re-render - a ref instead of state, shared between the interval below
+  // and the manual refresh button so a manual click doesn't cause the next
+  // scheduled poll to see a stale comparison value and refetch redundantly.
+  const prevLiveIdsRef = useRef(null);
+
+  const fetchLiveScores = useCallback(() => {
+    return loadJson("live-scores.json").then((json) => {
+      if (!json) return; // transient fetch failure - keep what we have
+      setLiveScores(json);
+      const ids = Object.keys(json.matches ?? {}).sort().join(",");
+      if (prevLiveIdsRef.current !== null && ids !== prevLiveIdsRef.current) {
+        refreshData();
+        refreshOptional();
+      }
+      prevLiveIdsRef.current = ids;
+    });
+  }, [refreshData, refreshOptional]);
+
+  // Manual "refresh" button (see LastUpdated) - unconditionally refetches
+  // everything right now instead of waiting for the next 60s live-score
+  // poll or 5-minute catch-all. Runs the same three calls as
+  // onVisibilityChange below, just triggered by a click instead of the tab
+  // becoming visible again.
+  const handleManualRefresh = useCallback(async () => {
+    setIsRefreshing(true);
+    try {
+      await Promise.all([fetchLiveScores(), refreshData(), refreshOptional()]);
+    } finally {
+      setIsRefreshing(false);
+    }
+  }, [fetchLiveScores, refreshData, refreshOptional]);
+
+  useEffect(() => {
     // Only data.json failing on the very first load is surfaced as an
     // error banner - without it there's no dashboard at all. Later
     // refreshes of it go through refreshData below and fail silently.
@@ -125,20 +178,9 @@ export default function App() {
     // page load is plenty.
     loadJson("history.json").then(setHistory);
 
-    const refreshData = () => loadJson("data.json").then((json) => json && setData(json));
-    const refreshOptional = () => {
-      loadJson("lineups.json").then((json) => json && setLineups(json));
-      loadJson("odds.json").then((json) => json && setOdds(json));
-      loadJson("match-stats.json").then((json) => json && setMatchStats(json));
-      // Champions League league-phase matchdays are roughly two weeks
-      // apart, far slower-moving than anything else here - it rides along
-      // on this same 5-minute/visibility-change refresh rather than
-      // needing its own polling layer.
-      loadJson("champions-league.json").then((json) => json && setChampionsLeague(json));
-    };
     refreshOptional();
 
-    // How the dashboard stays fresh without a reload, in three layers:
+    // How the dashboard stays fresh without a reload, in four layers:
     //
     // 1. live-scores.json is polled every 60s - it's the only file that
     //    changes mid-match (every ~5 min while something is live).
@@ -157,19 +199,9 @@ export default function App() {
     //    with nothing live, plus an immediate refresh whenever the tab
     //    becomes visible again (a phone that switched apps, a laptop that
     //    slept through full time).
-    let prevLiveIds = null;
-    const fetchLiveScores = () =>
-      loadJson("live-scores.json").then((json) => {
-        if (!json) return; // transient fetch failure - keep what we have
-        setLiveScores(json);
-        const ids = Object.keys(json.matches ?? {}).sort().join(",");
-        if (prevLiveIds !== null && ids !== prevLiveIds) {
-          refreshData();
-          refreshOptional();
-        }
-        prevLiveIds = ids;
-      });
-
+    // 4. A manual refresh button (handleManualRefresh) for a user who
+    //    doesn't want to wait on any of the above - e.g. right after
+    //    triggering a workflow_dispatch run by hand.
     fetchLiveScores();
     const liveInterval = setInterval(fetchLiveScores, 60 * 1000);
     const slowInterval = setInterval(() => {
@@ -191,7 +223,7 @@ export default function App() {
       clearInterval(slowInterval);
       document.removeEventListener("visibilitychange", onVisibilityChange);
     };
-  }, []);
+  }, [fetchLiveScores, refreshData, refreshOptional]);
 
   if (selectedTeam) {
     return (
@@ -220,7 +252,13 @@ export default function App() {
         <div className="max-w-2xl mx-auto space-y-3">
           <div>
             <h1 className="text-xl font-extrabold tracking-tight">Premier League 2026-27</h1>
-            {data && <LastUpdated fetchedAt={data.fetchedAt} />}
+            {data && (
+              <LastUpdated
+                fetchedAt={data.fetchedAt}
+                onRefresh={handleManualRefresh}
+                isRefreshing={isRefreshing}
+              />
+            )}
           </div>
 
           <TabBar tabs={TABS} activeTab={activeTab} onChange={setActiveTab} />
