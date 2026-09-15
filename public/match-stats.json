@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-13T19:21:22.971Z",
+  "fetchedAt": "2026-09-15T00:00:20.253Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -1705,6 +1705,79 @@
           "player": "Yasin Ayari",
           "minute": 90,
           "extraMinute": 4,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560579": {
+      "utcDate": "2026-09-14T19:00:00Z",
+      "homeTeamId": 341,
+      "awayTeamId": 67,
+      "stats": {
+        "67": {
+          "shots": 7,
+          "shotsOnTarget": 5,
+          "possession": 49,
+          "passes": 418,
+          "passAccuracy": null,
+          "fouls": 13,
+          "corners": 5,
+          "offsides": 3,
+          "yellowCards": 2,
+          "redCards": 0
+        },
+        "341": {
+          "shots": 15,
+          "shotsOnTarget": 6,
+          "possession": 51,
+          "passes": 429,
+          "passAccuracy": null,
+          "fouls": 8,
+          "corners": 5,
+          "offsides": 2,
+          "yellowCards": 1,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 341,
+          "player": "Lewis Miley",
+          "minute": 32,
+          "extraMinute": null,
+          "ownGoal": true,
+          "penalty": false
+        },
+        {
+          "teamId": 341,
+          "player": "Jayden Bogle",
+          "minute": 34,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 341,
+          "player": "Dominic Calvert-Lewin",
+          "minute": 45,
+          "extraMinute": 1,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 341,
+          "player": "Noah Okafor",
+          "minute": 59,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 67,
+          "player": "Bazoumana Touré",
+          "minute": 90,
+          "extraMinute": null,
           "ownGoal": false,
           "penalty": false
         }
