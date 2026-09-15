@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-15T01:41:54.494Z",
+  "fetchedAt": "2026-09-15T06:44:46.879Z",
   "odds": {
     "560582": {
       "eventTicker": "KXEPLGAME-26SEP20BOULFC",
@@ -87,7 +87,7 @@
       },
       "away": {
         "label": "Arsenal",
-        "probability": 57,
+        "probability": 59,
         "ticker": "KXEPLGAME-26SEP19BRIARS-ARS"
       },
       "draw": {
@@ -101,12 +101,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep19totavl",
       "home": {
         "label": "Tottenham",
-        "probability": 48,
+        "probability": 49,
         "ticker": "KXEPLGAME-26SEP19TOTAVL-TOT"
       },
       "away": {
         "label": "Aston Villa",
-        "probability": 26,
+        "probability": 27,
         "ticker": "KXEPLGAME-26SEP19TOTAVL-AVL"
       },
       "draw": {
@@ -182,12 +182,12 @@
       },
       "away": {
         "label": "Chelsea",
-        "probability": 43,
+        "probability": 44,
         "ticker": "KXEPLGAME-26SEP18BRECFC-CFC"
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 26,
         "ticker": "KXEPLGAME-26SEP18BRECFC-TIE"
       }
     }
