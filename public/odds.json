@@ -1,12 +1,12 @@
 {
-  "fetchedAt": "2026-09-16T01:07:22.756Z",
+  "fetchedAt": "2026-09-16T06:00:57.302Z",
   "odds": {
     "560582": {
       "eventTicker": "KXEPLGAME-26SEP20BOULFC",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep20boulfc",
       "home": {
         "label": "Bournemouth",
-        "probability": 31,
+        "probability": 30,
         "ticker": "KXEPLGAME-26SEP20BOULFC-BOU"
       },
       "away": {
@@ -25,12 +25,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep20fulmun",
       "home": {
         "label": "Fulham",
-        "probability": 27,
+        "probability": 28,
         "ticker": "KXEPLGAME-26SEP20FULMUN-FUL"
       },
       "away": {
         "label": "Man United",
-        "probability": 48,
+        "probability": 49,
         "ticker": "KXEPLGAME-26SEP20FULMUN-MUN"
       },
       "draw": {
@@ -44,7 +44,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep19eveips",
       "home": {
         "label": "Everton",
-        "probability": 55,
+        "probability": 54,
         "ticker": "KXEPLGAME-26SEP19EVEIPS-EVE"
       },
       "away": {
@@ -87,7 +87,7 @@
       },
       "away": {
         "label": "Arsenal",
-        "probability": 58,
+        "probability": 59,
         "ticker": "KXEPLGAME-26SEP19BRIARS-ARS"
       },
       "draw": {
@@ -120,7 +120,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep19newhul",
       "home": {
         "label": "Newcastle",
-        "probability": 61,
+        "probability": 60,
         "ticker": "KXEPLGAME-26SEP19NEWHUL-NEW"
       },
       "away": {
@@ -177,7 +177,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep18brecfc",
       "home": {
         "label": "Brentford",
-        "probability": 34,
+        "probability": 33,
         "ticker": "KXEPLGAME-26SEP18BRECFC-BRE"
       },
       "away": {
@@ -187,7 +187,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 26,
         "ticker": "KXEPLGAME-26SEP18BRECFC-TIE"
       }
     }
