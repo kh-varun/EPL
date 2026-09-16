@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-15T00:00:12.108Z",
+  "fetchedAt": "2026-09-16T17:38:19.054Z",
   "standings": [
     {
       "position": 1,
@@ -1461,7 +1461,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560586,
@@ -1513,7 +1513,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560589,
@@ -1539,7 +1539,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "NBC"
     },
     {
       "id": 560582,
@@ -1591,7 +1591,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560590,
@@ -1617,7 +1617,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560583,
@@ -1643,7 +1643,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "NBC"
     },
     {
       "id": 560593,
@@ -10228,128 +10228,130 @@
   ],
   "headlines": [
     {
-      "title": "'McInnes delivers togetherness & intensity in Old Firm gobsmacker'",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cj06e0mg40qo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Sun, 13 Sep 2026 16:08:09 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a4ef/live/15bc74f0-af76-11f1-aafc-c90fa48bb0ed.jpg",
+      "title": "USA fall to Brazil on penalties for disappointing exit from U-20 Women’s World Cup",
+      "link": "https://www.theguardian.com/football/2026/sep/16/usa-brazil-u20-womens-world-cup",
+      "pubDate": "Wed, 16 Sep 2026 17:14:43 GMT",
+      "image": "https://i.guim.co.uk/img/media/702b0858ca118e59e36522b3db59536875c0059a/127_0_2745_2197/master/2745.jpg?width=460&quality=85&auto=format&fit=max&s=b9b24ec9a8d4e312741e8f45a447d4c2",
+      "source": "The Guardian",
+      "teams": []
+    },
+    {
+      "title": "Mbappe, Vini and Konate cover up Real's message of support for Ceuta",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cxm2qyr5r009o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 16 Sep 2026 16:40:48 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c683/live/b9e9a900-b1ae-11f1-8b77-cd7827f05bee.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "Manchester United v Manchester City: Premier League – live",
-      "link": "https://www.theguardian.com/football/live/2026/sep/13/manchester-united-v-manchester-city-premier-league-live",
-      "pubDate": "Sun, 13 Sep 2026 15:58:51 GMT",
-      "image": "https://i.guim.co.uk/img/media/0c7f647ba5ce093e2d88c47b50eb9f483b29f95a/0_449_1559_1247/master/1559.jpg?width=460&quality=85&auto=format&fit=max&s=3869b00d7c4d166d52cecdadd78dbb34",
+      "title": "Gray sacked by Hibs after six league games",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c52e01ln0jj8o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 16 Sep 2026 16:34:00 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4b4f/live/cac13e20-b1f2-11f1-bd8b-ed45be4f6895.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "What are the Premier League rules for academy players?",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cr5yev4y101eo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 16 Sep 2026 16:26:12 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d73a/live/24819ce0-b1bf-11f1-bdcf-d393eb724fa3.png",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "‘They are very similar’: Arsenal’s Dowman reminds Merino of Lamine Yamal",
+      "link": "https://www.theguardian.com/football/2026/sep/16/they-are-very-similar-arsenals-dowman-reminds-merino-of-lamine-yamal",
+      "pubDate": "Wed, 16 Sep 2026 16:00:23 GMT",
+      "image": "https://i.guim.co.uk/img/media/f8442f8fa11a4a45395ca1cf85f5654d73646ce4/34_0_3644_2916/master/3644.jpg?width=460&quality=85&auto=format&fit=max&s=79edd2aa09091056d32b455c87ef201e",
       "source": "The Guardian",
       "teams": [
-        65,
-        66
+        57
       ]
     },
     {
-      "title": "Sam Surridge in stoppage time denies Messi and Miami a win: MLS roundup",
-      "link": "https://www.theguardian.com/football/2026/sep/13/mls-lionel-messi-nashville-sc-sporting-kc-antoine-griezmann",
-      "pubDate": "Sun, 13 Sep 2026 15:44:15 GMT",
-      "image": "https://i.guim.co.uk/img/media/728524b34c92515f52b1713012edbd67ddaa5210/312_0_3120_2496/master/3120.jpg?width=460&quality=85&auto=format&fit=max&s=085ce7519a7f771b214234e6dc6a319e",
-      "source": "The Guardian",
-      "teams": []
-    },
-    {
-      "title": "Valencia sack Corberan and chief executive",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cly43w61lnzo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Sun, 13 Sep 2026 15:21:18 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a720/live/9d5293c0-af82-11f1-913a-7151f234deb3.jpg",
+      "title": "What next for Gabriel and Man Utd?",
+      "link": "https://www.bbc.co.uk/sport/football/articles/crgjqw0l01njo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 16 Sep 2026 15:48:08 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7039/live/f7b9c130-b1bc-11f1-b1d1-571ed4d7ff2c.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "Lewis Dunk’s showstopper helps five-star Brighton to rout 10-man Coventry",
-      "link": "https://www.theguardian.com/football/2026/sep/13/coventry-brighton-premier-league-match-report",
-      "pubDate": "Sun, 13 Sep 2026 15:10:47 GMT",
-      "image": "https://i.guim.co.uk/img/media/4e5fd93b7973824f49a1659b28117876ffc6f794/288_0_1721_1377/master/1721.jpg?width=460&quality=85&auto=format&fit=max&s=75a7b2175bdd90cf198d7f457d611ea9",
-      "source": "The Guardian",
-      "teams": []
-    },
-    {
-      "title": "Cristiano Ronaldo calls for lifetime bans in Saudi Pro League after Diogo Jota chants",
-      "link": "https://www.theguardian.com/football/2026/sep/13/cristiano-ronaldo-diogo-jota-ruben-neves-chants-saudi-pro-league",
-      "pubDate": "Sun, 13 Sep 2026 14:52:54 GMT",
-      "image": "https://i.guim.co.uk/img/media/616ed9bbd3b8fb680debb78f98f3e8c118e32f49/228_322_2230_1784/master/2230.jpg?width=460&quality=85&auto=format&fit=max&s=3c23bff222594c15e971f8578f04a043",
-      "source": "The Guardian",
-      "teams": []
-    },
-    {
-      "title": "Struggling Preston North End sack Heckingbottom",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c0qxpqvpgdeo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Sun, 13 Sep 2026 14:10:29 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7e81/live/558f49b0-af7e-11f1-913a-7151f234deb3.jpg",
+      "title": "'Let's go, let's go' - inside catastrophic derby VAR mistake",
+      "link": "https://www.bbc.co.uk/sport/football/articles/ck4gjr5vly99o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 16 Sep 2026 15:03:53 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2a57/live/ac0f75f0-b1d9-11f1-8c0b-c1113bf3b7c0.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "Ronaldo demands lifetime bans over Jota chants",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cgjqd3n9ppeo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Sun, 13 Sep 2026 13:46:21 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bdcd/live/69a03550-af69-11f1-a183-757a3b74b8bd.jpg",
+      "title": "72+: The EFL Podcast",
+      "link": "https://www.bbc.co.uk/sounds/play/p0p9wygl?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 16 Sep 2026 14:44:00 GMT",
+      "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0p3n9ks.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "Chelsea thrash Manchester United in WSL as Lauren James revels in free role",
-      "link": "https://www.theguardian.com/football/2026/sep/13/manchester-united-chelsea-wsl-match-report-womens-super-league",
-      "pubDate": "Sun, 13 Sep 2026 13:41:27 GMT",
-      "image": "https://i.guim.co.uk/img/media/f736bcca8f858da4500d27781e488a5bd134c2ba/299_230_2293_1833/master/2293.jpg?width=460&quality=85&auto=format&fit=max&s=cacc16a09a8da0dda7cb58368470d604",
+      "title": "Football Daily | Madrid endure an awkward night after T-shirt trouble and Elche scare",
+      "link": "https://www.theguardian.com/football/2026/sep/16/real-madrid-elche-t-shirts-football-daily-newsletter",
+      "pubDate": "Wed, 16 Sep 2026 14:39:54 GMT",
+      "image": "https://i.guim.co.uk/img/media/a985a3dd9328f403d6fec6669b89aef5557118e2/160_0_5833_4666/master/5833.jpg?width=460&quality=85&auto=format&fit=max&s=1bc29accccb6fa10eaad124878b3e79e",
       "source": "The Guardian",
+      "teams": []
+    },
+    {
+      "title": "What's gone wrong for Chelsea talent Kendry Paez?",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cd79y025gleo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 16 Sep 2026 14:05:00 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f1ed/live/d9ecc7d0-b1b0-11f1-8b77-cd7827f05bee.jpg",
+      "source": "BBC Sport",
       "teams": [
-        61,
-        66
+        61
       ]
     },
     {
-      "title": "Rangers lay down Old Firm marker to send Celtic packing from Scottish League Cup",
-      "link": "https://www.theguardian.com/football/2026/sep/13/rangers-celtic-scottish-league-cup-match-report",
-      "pubDate": "Sun, 13 Sep 2026 13:38:16 GMT",
-      "image": "https://i.guim.co.uk/img/media/37d789a738c7c063da3d8e97da9e36074dd8c3b0/160_0_2108_1686/master/2108.jpg?width=460&quality=85&auto=format&fit=max&s=6d26d11fdad35f083a30455007715c10",
+      "title": "Maresca says Manchester City still waiting for apology after disputed 2023 derby goal",
+      "link": "https://www.theguardian.com/football/2026/sep/16/enzo-maresca-manchester-city-apology-2023-derby-goal",
+      "pubDate": "Wed, 16 Sep 2026 11:40:24 GMT",
+      "image": "https://i.guim.co.uk/img/media/145ce63eb1f540b2e17b983ff43f1d6759190f4e/255_0_3698_2958/master/3698.jpg?width=460&quality=85&auto=format&fit=max&s=8940bf6784b81d244acf8b00d6814526",
       "source": "The Guardian",
-      "teams": []
+      "teams": [
+        65
+      ]
     },
     {
-      "title": "Rangers v Aberdeen & Edinburgh derby in League Cup semis",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c8e3yere7l4o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Sun, 13 Sep 2026 13:26:08 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/730d/live/10b24c20-af79-11f1-aafc-c90fa48bb0ed.jpg",
+      "title": "When is the EFL Cup fourth round draw?",
+      "link": "https://www.bbc.co.uk/sport/football/articles/clyegmmvr4vo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 16 Sep 2026 11:16:52 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/52db/live/6caf75b0-9260-11f1-a7ab-8b30adf0800a.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "Who am I? Guess WSL star No 4",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c804e74y1jeo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Sun, 13 Sep 2026 07:24:15 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/59d9/live/d4203540-9afd-11f1-aed2-8d6da8d75094.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Souttar's Rangers exit in doubt - gossip",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c3wj90lgn3zo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Sun, 13 Sep 2026 07:20:51 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/78cd/live/5068a160-af43-11f1-b1d1-571ed4d7ff2c.png",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Spygate saga continues to haunt Southampton as case drags on",
-      "link": "https://www.theguardian.com/football/2026/sep/13/spygate-saga-continues-to-haunt-southampton-as-case-drags-on",
-      "pubDate": "Sun, 13 Sep 2026 07:00:01 GMT",
-      "image": "https://i.guim.co.uk/img/media/10d26751beedf30373c85db2e7205c0a3e02ca89/301_0_3014_2411/master/3014.jpg?width=460&quality=85&auto=format&fit=max&s=8feb45d48213ac665fe294d84babe622",
+      "title": "Lewis Koumas on playing ‘the Liverpool way’, showing hunger and hopes for the future",
+      "link": "https://www.theguardian.com/football/2026/sep/16/lewis-koumas-on-playing-the-liverpool-way-showing-hunger-and-hopes-for-the-future",
+      "pubDate": "Wed, 16 Sep 2026 11:14:51 GMT",
+      "image": "https://i.guim.co.uk/img/media/5677770900b0d6ba64862ffd97a6cf91e9cfa4cd/310_0_2738_2191/master/2738.jpg?width=460&quality=85&auto=format&fit=max&s=03683f8915cff74e92bbfdf894fb791d",
       "source": "The Guardian",
+      "teams": [
+        64
+      ]
+    },
+    {
+      "title": "'We are still waiting for apology' - Maresca on City's VAR frustration",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmx2zyjylee1o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 16 Sep 2026 11:07:00 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/dd40/live/fdbe1030-b1b3-11f1-bdcf-d393eb724fa3.jpg",
+      "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "'I thought I was going to die' - Burnley boss on sepsis scare",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cnvlrpn9dpgo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Sun, 13 Sep 2026 06:14:58 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d2b8/live/6d2792b0-af3a-11f1-bc4c-5f7bf3ecdb69.png",
+      "title": "Harwood-Bellis has chance to make his mark at Villa",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6wyzg91zm4wo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 16 Sep 2026 11:00:56 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7848/live/476d4070-b123-11f1-b1d1-571ed4d7ff2c.jpg",
       "source": "BBC Sport",
       "teams": []
     }
@@ -11464,7 +11466,7 @@
       ]
     },
     "65": {
-      "coach": "E. Maresca",
+      "coach": "Guardiola",
       "squad": [
         {
           "id": 6,
@@ -11644,7 +11646,7 @@
       ]
     },
     "66": {
-      "coach": "M. Carrick",
+      "coach": "Michael Carrick",
       "squad": [
         {
           "id": 7913,
@@ -11861,6 +11863,13 @@
     "67": {
       "coach": "E. Howe",
       "squad": [
+        {
+          "id": 301059,
+          "name": "Mason Miley",
+          "position": null,
+          "dateOfBirth": "2008-09-29",
+          "nationality": "England"
+        },
         {
           "id": 3310,
           "name": "Nick Pope",
@@ -12254,7 +12263,7 @@
       ]
     },
     "73": {
-      "coach": "R. De Zerbi",
+      "coach": "T. Frank",
       "squad": [
         {
           "id": 7914,
