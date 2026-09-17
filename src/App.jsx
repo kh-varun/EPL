@@ -27,12 +27,12 @@ const TABS = [
   { id: "headlines", label: "News", icon: NewspaperIcon },
 ];
 
-// Both the Fixtures and Results tabs show one competition's full match list
+// The Standings, Fixtures, and Results tabs all show one competition's data
 // at a time behind a small sub-tab toggle, rather than stacking both -
-// nextFixtures/lastResults now hold every match for the season (see
+// nextFixtures/lastResults hold every match for the season (see
 // ALL_MATCHES in scripts/lib/football-data.mjs), so stacking both
 // competitions' full lists in one scroll would mean a lot of scrolling
-// before ever reaching the second competition's matches.
+// before ever reaching the second competition's data.
 const MATCH_COMPETITIONS = [
   { id: "PL", label: "Premier League" },
   { id: "CL", label: "Champions League" },
@@ -74,6 +74,7 @@ export default function App() {
   const [championsLeague, setChampionsLeague] = useState(null);
   const [error, setError] = useState(null);
   const [activeTab, setActiveTab] = useState("standings");
+  const [standingsCompetition, setStandingsCompetition] = useState("PL");
   const [fixturesCompetition, setFixturesCompetition] = useState("PL");
   const [fixturesTeamId, setFixturesTeamId] = useState(null);
   const [resultsCompetition, setResultsCompetition] = useState("PL");
@@ -304,9 +305,27 @@ export default function App() {
         )}
 
         {activeTab === "standings" && (
-          <Section title="Standings">
-            <StandingsTable standings={data?.standings} onSelectTeam={setSelectedTeam} />
-          </Section>
+          <div className="space-y-4">
+            <CompetitionToggle
+              options={MATCH_COMPETITIONS}
+              value={standingsCompetition}
+              onChange={setStandingsCompetition}
+            />
+
+            {standingsCompetition === "PL" ? (
+              <Section title="Premier League – Standings">
+                <StandingsTable standings={data?.standings} onSelectTeam={setSelectedTeam} />
+              </Section>
+            ) : (
+              <Section title="Champions League – Standings">
+                <StandingsTable
+                  standings={championsLeague?.standings}
+                  onSelectTeam={setSelectedTeam}
+                  showZones={false}
+                />
+              </Section>
+            )}
+          </div>
         )}
 
         {activeTab === "fixtures" && (
