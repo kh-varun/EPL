@@ -14,7 +14,7 @@ on:
   # with a PR merge, never with a `chore: update ...` bot commit.
   # `workflow_run` doesn't have that restriction, since it listens for
   # the upstream workflow's completion rather than re-triggering off its
-  # push - use it to redeploy after each of those five finishes.
+  # push - use it to redeploy after each of those finishes.
   workflow_run:
     workflows:
       - "Update PL data"
@@ -23,6 +23,7 @@ on:
       - "Update last-season history"
       - "Update live scores"
       - "Update Champions League data"
+      - "Update Championship data"
     types: [completed]
   workflow_dispatch: {}
 
