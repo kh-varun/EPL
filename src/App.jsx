@@ -28,14 +28,18 @@ const TABS = [
 ];
 
 // The Standings, Fixtures, and Results tabs all show one competition's data
-// at a time behind a small sub-tab toggle, rather than stacking both -
+// at a time behind a small sub-tab toggle, rather than stacking all three -
 // nextFixtures/lastResults hold every match for the season (see
-// ALL_MATCHES in scripts/lib/football-data.mjs), so stacking both
-// competitions' full lists in one scroll would mean a lot of scrolling
-// before ever reaching the second competition's data.
+// ALL_MATCHES in scripts/lib/football-data.mjs), so stacking every
+// competition's full list in one scroll would mean a lot of scrolling
+// before ever reaching the others' data. "EFL" here means the Championship
+// specifically (competition code "ELC") - confirmed live via football-data.
+// org's /v4/competitions that it's the only English Football League
+// competition on this project's free plan, no League One/Two access.
 const MATCH_COMPETITIONS = [
   { id: "PL", label: "Premier League" },
   { id: "CL", label: "Champions League" },
+  { id: "ELC", label: "Championship" },
 ];
 
 // Overlays a match with its live score/status when one's in progress -
@@ -64,6 +68,25 @@ const loadJson = (name) =>
     .then((res) => (res.ok ? res.json() : null))
     .catch(() => null);
 
+// Position map for one competition's standings - kept separate per
+// competition rather than merged into one map, since the tables are
+// unrelated (mixing them would show a team's rank in the wrong
+// competition's context, or worse, collide if a team id were ever shared).
+function positionMap(standings) {
+  const map = {};
+  for (const row of standings ?? []) {
+    map[row.team.id] = row.position;
+  }
+  return map;
+}
+
+// Team list for a competition's Fixtures/Results team filter dropdown -
+// its own standings already lists every one of its teams, regardless of
+// recent results, so there's no need for a separate fetch.
+function teamList(standings) {
+  return (standings ?? []).map((row) => row.team);
+}
+
 export default function App() {
   const [data, setData] = useState(null);
   const [lineups, setLineups] = useState(null);
@@ -72,6 +95,7 @@ export default function App() {
   const [liveScores, setLiveScores] = useState(null);
   const [matchStats, setMatchStats] = useState(null);
   const [championsLeague, setChampionsLeague] = useState(null);
+  const [championship, setChampionship] = useState(null);
   const [error, setError] = useState(null);
   const [activeTab, setActiveTab] = useState("standings");
   const [standingsCompetition, setStandingsCompetition] = useState("PL");
@@ -85,33 +109,45 @@ export default function App() {
   const [isRefreshing, setIsRefreshing] = useState(false);
   const [justRefreshed, setJustRefreshed] = useState(false);
 
-  const positionByTeamId = useMemo(() => {
-    const map = {};
-    for (const row of data?.standings ?? []) {
-      map[row.team.id] = row.position;
-    }
-    return map;
-  }, [data?.standings]);
-
-  // Champions League positions are kept separate from the Premier League's
-  // - the two are different tables, and mixing them into one map would show
-  // a CL team's PL-irrelevant league-phase rank (or worse, collide on a
-  // shared team id) in the wrong context.
-  const clPositionByTeamId = useMemo(() => {
-    const map = {};
-    for (const row of championsLeague?.standings ?? []) {
-      map[row.team.id] = row.position;
-    }
-    return map;
-  }, [championsLeague?.standings]);
-
-  // Team lists for the Fixtures/Results tabs' team filter dropdown - each
-  // competition's own standings already lists every one of its teams,
-  // regardless of recent results, so there's no need for a separate fetch.
-  const plTeams = useMemo(() => (data?.standings ?? []).map((row) => row.team), [data?.standings]);
-  const clTeams = useMemo(
-    () => (championsLeague?.standings ?? []).map((row) => row.team),
-    [championsLeague?.standings],
+  // One lookup per competition id, used by the Standings/Fixtures/Results
+  // tabs instead of a hardcoded PL/CL ternary each - adding the
+  // Championship here (and any future competition) only means adding one
+  // more entry, not touching every tab's render logic. `live: true` marks
+  // the one competition with a live-score overlay, odds preview, and
+  // match-stats click handler (live-scores.json/odds.json/match-stats.json
+  // are all Premier-League-only by design - no live-score tracking or
+  // odds for Champions League or Championship yet).
+  const competitions = useMemo(
+    () => ({
+      PL: {
+        label: "Premier League",
+        standings: data?.standings,
+        nextFixtures: data?.nextFixtures,
+        lastResults: data?.lastResults,
+        positions: positionMap(data?.standings),
+        teams: teamList(data?.standings),
+        live: true,
+      },
+      CL: {
+        label: "Champions League",
+        standings: championsLeague?.standings,
+        nextFixtures: championsLeague?.nextFixtures,
+        lastResults: championsLeague?.lastResults,
+        positions: positionMap(championsLeague?.standings),
+        teams: teamList(championsLeague?.standings),
+        live: false,
+      },
+      ELC: {
+        label: "Championship",
+        standings: championship?.standings,
+        nextFixtures: championship?.nextFixtures,
+        lastResults: championship?.lastResults,
+        positions: positionMap(championship?.standings),
+        teams: teamList(championship?.standings),
+        live: false,
+      },
+    }),
+    [data, championsLeague, championship],
   );
 
   const refreshData = useCallback(
@@ -123,11 +159,12 @@ export default function App() {
     loadJson("lineups.json").then((json) => json && setLineups(json));
     loadJson("odds.json").then((json) => json && setOdds(json));
     loadJson("match-stats.json").then((json) => json && setMatchStats(json));
-    // Champions League league-phase matchdays are roughly two weeks apart,
-    // far slower-moving than anything else here - it rides along on this
-    // same 5-minute/visibility-change/manual refresh rather than needing
-    // its own polling layer.
+    // Champions League/Championship data is far slower-moving than
+    // anything else here (no live-score tracking for either) - both ride
+    // along on this same 5-minute/visibility-change/manual refresh rather
+    // than needing their own polling layer.
     loadJson("champions-league.json").then((json) => json && setChampionsLeague(json));
+    loadJson("championship.json").then((json) => json && setChampionship(json));
   }, []);
 
   // prevLiveIds needs to survive across renders (to compare "did the live
@@ -268,14 +305,11 @@ export default function App() {
     );
   }
 
-  const fixturesList = filterByTeam(
-    fixturesCompetition === "PL" ? data?.nextFixtures : championsLeague?.nextFixtures,
-    fixturesTeamId,
-  );
-  const resultsList = filterByTeam(
-    resultsCompetition === "PL" ? data?.lastResults : championsLeague?.lastResults,
-    resultsTeamId,
-  );
+  const activeStandingsCompetition = competitions[standingsCompetition];
+  const activeFixturesCompetition = competitions[fixturesCompetition];
+  const activeResultsCompetition = competitions[resultsCompetition];
+  const fixturesList = filterByTeam(activeFixturesCompetition.nextFixtures, fixturesTeamId);
+  const resultsList = filterByTeam(activeResultsCompetition.lastResults, resultsTeamId);
 
   return (
     <div className="min-h-screen bg-epl-bg pb-10">
@@ -312,19 +346,13 @@ export default function App() {
               onChange={setStandingsCompetition}
             />
 
-            {standingsCompetition === "PL" ? (
-              <Section title="Premier League – Standings">
-                <StandingsTable standings={data?.standings} onSelectTeam={setSelectedTeam} />
-              </Section>
-            ) : (
-              <Section title="Champions League – Standings">
-                <StandingsTable
-                  standings={championsLeague?.standings}
-                  onSelectTeam={setSelectedTeam}
-                  showZones={false}
-                />
-              </Section>
-            )}
+            <Section title={`${activeStandingsCompetition.label} – Standings`}>
+              <StandingsTable
+                standings={activeStandingsCompetition.standings}
+                onSelectTeam={setSelectedTeam}
+                showZones={standingsCompetition === "PL"}
+              />
+            </Section>
           </div>
         )}
 
@@ -339,57 +367,46 @@ export default function App() {
               }}
             />
             <TeamFilter
-              teams={fixturesCompetition === "PL" ? plTeams : clTeams}
+              teams={activeFixturesCompetition.teams}
               value={fixturesTeamId}
               onChange={setFixturesTeamId}
             />
 
-            {fixturesCompetition === "PL" ? (
-              <Section title="Premier League – Fixtures">
-                {fixturesList?.length ? (
-                  <ul className="space-y-2">
-                    {fixturesList.map((match) => {
-                      const liveMatch = withLiveScore(match, liveScores?.matches);
+            <Section title={`${activeFixturesCompetition.label} – Fixtures`}>
+              {fixturesList?.length ? (
+                <ul className="space-y-2">
+                  {fixturesList.map((match) => {
+                    if (!activeFixturesCompetition.live) {
                       return (
                         <MatchRow
                           key={match.id}
-                          match={liveMatch}
-                          showScore={Boolean(liveMatch.liveStatus)}
-                          positions={positionByTeamId}
+                          match={match}
+                          showScore={false}
+                          positions={activeFixturesCompetition.positions}
                           onSelectTeam={setSelectedTeam}
-                          onSelectMatch={liveMatch.liveStatus ? undefined : setSelectedMatch}
-                          odds={odds?.odds?.[match.id]}
                         />
                       );
-                    })}
-                  </ul>
-                ) : (
-                  <p className="text-sm text-white/50">
-                    {fixturesTeamId ? "No upcoming fixtures for this team." : "No upcoming fixtures."}
-                  </p>
-                )}
-              </Section>
-            ) : (
-              <Section title="Champions League – Fixtures">
-                {fixturesList?.length ? (
-                  <ul className="space-y-2">
-                    {fixturesList.map((match) => (
+                    }
+                    const liveMatch = withLiveScore(match, liveScores?.matches);
+                    return (
                       <MatchRow
                         key={match.id}
-                        match={match}
-                        showScore={false}
-                        positions={clPositionByTeamId}
+                        match={liveMatch}
+                        showScore={Boolean(liveMatch.liveStatus)}
+                        positions={activeFixturesCompetition.positions}
                         onSelectTeam={setSelectedTeam}
+                        onSelectMatch={liveMatch.liveStatus ? undefined : setSelectedMatch}
+                        odds={odds?.odds?.[match.id]}
                       />
-                    ))}
-                  </ul>
-                ) : (
-                  <p className="text-sm text-white/50">
-                    {fixturesTeamId ? "No upcoming fixtures for this team." : "No upcoming fixtures."}
-                  </p>
-                )}
-              </Section>
-            )}
+                    );
+                  })}
+                </ul>
+              ) : (
+                <p className="text-sm text-white/50">
+                  {fixturesTeamId ? "No upcoming fixtures for this team." : "No upcoming fixtures."}
+                </p>
+              )}
+            </Section>
           </div>
         )}
 
@@ -404,58 +421,49 @@ export default function App() {
               }}
             />
             <TeamFilter
-              teams={resultsCompetition === "PL" ? plTeams : clTeams}
+              teams={activeResultsCompetition.teams}
               value={resultsTeamId}
               onChange={setResultsTeamId}
             />
 
-            {resultsCompetition === "PL" ? (
-              <Section title="Premier League – Results">
-                {resultsList?.length ? (
-                  <ul className="space-y-2">
-                    {resultsList.map((match) => {
-                      const liveMatch = withLiveScore(match, liveScores?.matches);
+            <Section title={`${activeResultsCompetition.label} – Results`}>
+              {resultsList?.length ? (
+                <ul className="space-y-2">
+                  {resultsList.map((match) => {
+                    if (!activeResultsCompetition.live) {
                       return (
                         <MatchRow
                           key={match.id}
-                          match={liveMatch}
+                          match={match}
                           showScore={true}
-                          positions={positionByTeamId}
+                          positions={activeResultsCompetition.positions}
                           onSelectTeam={setSelectedTeam}
-                          onSelectMatch={liveMatch.liveStatus ? undefined : setSelectedStatsMatch}
                         />
                       );
-                    })}
-                  </ul>
-                ) : (
-                  <p className="text-sm text-white/50">
-                    {resultsTeamId
-                      ? "No results for this team."
-                      : "No results yet — the season hasn't kicked off."}
-                  </p>
-                )}
-              </Section>
-            ) : (
-              <Section title="Champions League – Results">
-                {resultsList?.length ? (
-                  <ul className="space-y-2">
-                    {resultsList.map((match) => (
+                    }
+                    const liveMatch = withLiveScore(match, liveScores?.matches);
+                    return (
                       <MatchRow
                         key={match.id}
-                        match={match}
+                        match={liveMatch}
                         showScore={true}
-                        positions={clPositionByTeamId}
+                        positions={activeResultsCompetition.positions}
                         onSelectTeam={setSelectedTeam}
+                        onSelectMatch={liveMatch.liveStatus ? undefined : setSelectedStatsMatch}
                       />
-                    ))}
-                  </ul>
-                ) : (
-                  <p className="text-sm text-white/50">
-                    {resultsTeamId ? "No results for this team." : "No results yet."}
-                  </p>
-                )}
-              </Section>
-            )}
+                    );
+                  })}
+                </ul>
+              ) : (
+                <p className="text-sm text-white/50">
+                  {resultsTeamId
+                    ? "No results for this team."
+                    : resultsCompetition === "PL"
+                      ? "No results yet — the season hasn't kicked off."
+                      : "No results yet."}
+                </p>
+              )}
+            </Section>
           </div>
         )}
 

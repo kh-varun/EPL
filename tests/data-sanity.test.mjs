@@ -25,9 +25,9 @@ async function readJson(name) {
 }
 
 // Unlike the other public/*.json files (all committed since day one),
-// champions-league.json won't exist at all until champions-league.yml's
-// first scheduled run lands - callers treat a missing file the same as
-// "not fetched yet", not a failure.
+// champions-league.json/championship.json won't exist at all until their
+// own scheduled workflow's first run lands - callers treat a missing file
+// the same as "not fetched yet", not a failure.
 async function readJsonIfExists(name) {
   try {
     return await readJson(name);
@@ -156,6 +156,39 @@ describe("public/champions-league.json", () => {
 
   it("lists lastResults in reverse-chronological order, all genuinely finished", async () => {
     const data = await readJsonIfExists("champions-league.json");
+    if (!data) return;
+    for (const match of data.lastResults) {
+      expect(match.status).toBe("FINISHED");
+    }
+    const dates = data.lastResults.map((m) => new Date(m.utcDate).getTime());
+    const sorted = [...dates].sort((a, b) => b - a);
+    expect(dates).toEqual(sorted);
+  });
+});
+
+describe("public/championship.json", () => {
+  it("parses and has the expected top-level shape, once the first fetch has landed", async () => {
+    const data = await readJsonIfExists("championship.json");
+    if (!data) return; // championship.yml's first scheduled run hasn't landed yet
+    expect(typeof data.fetchedAt).toBe("string");
+    expect(Array.isArray(data.standings)).toBe(true);
+    expect(Array.isArray(data.nextFixtures)).toBe(true);
+    expect(Array.isArray(data.lastResults)).toBe(true);
+  });
+
+  it("lists nextFixtures in chronological order with no team facing itself", async () => {
+    const data = await readJsonIfExists("championship.json");
+    if (!data) return;
+    for (const fixture of data.nextFixtures) {
+      expect(fixture.homeTeam.id).not.toBe(fixture.awayTeam.id);
+    }
+    const dates = data.nextFixtures.map((f) => new Date(f.utcDate).getTime());
+    const sorted = [...dates].sort((a, b) => a - b);
+    expect(dates).toEqual(sorted);
+  });
+
+  it("lists lastResults in reverse-chronological order, all genuinely finished", async () => {
+    const data = await readJsonIfExists("championship.json");
     if (!data) return;
     for (const match of data.lastResults) {
       expect(match.status).toBe("FINISHED");

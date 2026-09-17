@@ -1,9 +1,15 @@
-// Small segmented control for switching which competition's matches a tab
-// shows - shared by the Fixtures and Results tabs in App.jsx so the two
-// don't carry separate copies of the same two-pill toggle markup.
+// Small segmented control for switching which competition's data a tab
+// shows - shared by the Standings/Fixtures/Results tabs in App.jsx so none
+// of them carries its own copy of the same toggle markup. `grid-cols-N` is
+// computed inline rather than as a fixed Tailwind class (same fix TabBar
+// already needed) - a hardcoded class silently breaks instead of erroring
+// when a third competition option was added.
 export default function CompetitionToggle({ options, value, onChange }) {
   return (
-    <div className="grid grid-cols-2 gap-1 rounded-xl bg-epl-surface2 p-1">
+    <div
+      className="grid gap-1 rounded-xl bg-epl-surface2 p-1"
+      style={{ gridTemplateColumns: `repeat(${options.length}, minmax(0, 1fr))` }}
+    >
       {options.map((option) => {
         const isActive = value === option.id;
         return (
