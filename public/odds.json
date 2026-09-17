@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-17T00:31:27.689Z",
+  "fetchedAt": "2026-09-17T05:25:19.875Z",
   "odds": {
     "560582": {
       "eventTicker": "KXEPLGAME-26SEP20BOULFC",
@@ -25,7 +25,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep20fulmun",
       "home": {
         "label": "Fulham",
-        "probability": 28,
+        "probability": 27,
         "ticker": "KXEPLGAME-26SEP20FULMUN-FUL"
       },
       "away": {
@@ -101,7 +101,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep19totavl",
       "home": {
         "label": "Tottenham",
-        "probability": 47,
+        "probability": 48,
         "ticker": "KXEPLGAME-26SEP19TOTAVL-TOT"
       },
       "away": {
@@ -125,7 +125,7 @@
       },
       "away": {
         "label": "Hull City",
-        "probability": 20,
+        "probability": 18,
         "ticker": "KXEPLGAME-26SEP19NEWHUL-HUL"
       },
       "draw": {
@@ -177,7 +177,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep18brecfc",
       "home": {
         "label": "Brentford",
-        "probability": 34,
+        "probability": 35,
         "ticker": "KXEPLGAME-26SEP18BRECFC-BRE"
       },
       "away": {
