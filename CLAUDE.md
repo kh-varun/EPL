@@ -555,26 +555,36 @@ to avoid showing the same Champions League fixtures/results twice.
   Madrid entry - clicking it opens `TeamDetail` cleanly with no console
   error, just the existing "not available" messaging.
 
-### Fixtures/Results: two competitions, one tab
+### Standings/Fixtures/Results: two competitions, one tab each
 
-Rather than a third UCL-only sub-tab for fixtures and a fourth for results,
-the existing **Fixtures** and **Results** tabs in `App.jsx` both show one
-competition's full match list at a time behind a small segmented sub-tab
-toggle ("Premier League" / "Champions League") - `fixturesCompetition` and
-`resultsCompetition` state in `App.jsx`, each independent so switching one
-tab's competition doesn't affect the other. Both tabs' data now holds every
+Rather than a second UCL-only sub-tab for standings, a third for fixtures,
+and a fourth for results, the existing **Table**, **Fixtures**, and
+**Results** tabs in `App.jsx` each show one competition's data at a time
+behind a small segmented sub-tab toggle ("Premier League" / "Champions
+League") - `standingsCompetition`/`fixturesCompetition`/`resultsCompetition`
+state in `App.jsx`, each independent so switching one tab's competition
+doesn't affect the others. The Fixtures/Results tabs' data holds every
 match for the season rather than a handful of recent/upcoming entries (see
 `ALL_MATCHES` below), so stacking both competitions' full lists in one
 scroll would mean a lot of scrolling before ever reaching the second
 competition's matches - a toggle keeps only one list on screen at a time.
 
 The toggle itself is `<CompetitionToggle options value onChange>`
-(`src/components/CompetitionToggle.jsx`), shared by both tabs rather than
-each carrying its own copy of the segmented-control markup - `options` is
-the same `MATCH_COMPETITIONS` array (`[{id: "PL", ...}, {id: "CL", ...}]`)
-for both. Both tabs are still built from the same `MatchRow` component, and
-both keep the top-level tab count at 5 - the sub-tab toggle lives inside
-each tab's own content, not as a new top-level tab.
+(`src/components/CompetitionToggle.jsx`), shared by all three tabs rather
+than each carrying its own copy of the segmented-control markup -
+`options` is the same `MATCH_COMPETITIONS` array (`[{id: "PL", ...}, {id:
+"CL", ...}]`) for all three. The Fixtures/Results tabs are still built
+from the same `MatchRow` component, the Table tab from the same
+`StandingsTable` used everywhere else, and all three keep the top-level
+tab count at 5 - the sub-tab toggle lives inside each tab's own content,
+not as a new top-level tab. The Table tab's Champions League option passes
+`showZones={false}` to `StandingsTable`, same as the standalone "UCL" tab
+below - the Premier League's Champions League/Europa/relegation zone
+coloring is meaningless on the Champions League's own table. This does
+make the standalone "UCL" tab's content fully reachable from the Table tab
+too now (pick "Champions League" there) - the UCL tab is kept anyway as a
+one-tap shortcut straight to that table, since removing it wasn't asked
+for and the tab count already has room at 5.
 
 - The Champions League fixtures/results pass a separate `clPositionByTeamId`
   map (derived from `championsLeague?.standings`, mirroring how
