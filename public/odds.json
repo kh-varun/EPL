@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-17T22:09:08.278Z",
+  "fetchedAt": "2026-09-18T00:17:31.942Z",
   "odds": {
     "560582": {
       "eventTicker": "KXEPLGAME-26SEP20BOULFC",
@@ -16,7 +16,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 24,
         "ticker": "KXEPLGAME-26SEP20BOULFC-TIE"
       }
     },
@@ -144,7 +144,7 @@
       },
       "away": {
         "label": "Coventry City",
-        "probability": 16,
+        "probability": 17,
         "ticker": "KXEPLGAME-26SEP19NFOCOV-COV"
       },
       "draw": {
