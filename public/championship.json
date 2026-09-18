@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-18T18:35:10.549Z",
+  "fetchedAt": "2026-09-18T21:21:29.172Z",
   "standings": [
     {
       "position": 1,
@@ -459,6 +459,31 @@
     }
   ],
   "lastResults": [
+    {
+      "id": 561845,
+      "utcDate": "2026-09-18T19:00:00Z",
+      "status": "FINISHED",
+      "matchday": 8,
+      "homeTeam": {
+        "id": 387,
+        "name": "Bristol City FC",
+        "shortName": "Bristol City",
+        "tla": "BRI",
+        "crest": "https://crests.football-data.org/387.png"
+      },
+      "awayTeam": {
+        "id": 346,
+        "name": "Watford FC",
+        "shortName": "Watford",
+        "tla": "WAT",
+        "crest": "https://crests.football-data.org/346.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 0,
+        "winner": "HOME_TEAM"
+      }
+    },
     {
       "id": 561825,
       "utcDate": "2026-09-15T18:45:00Z",
@@ -2536,31 +2561,6 @@
     }
   ],
   "nextFixtures": [
-    {
-      "id": 561845,
-      "utcDate": "2026-09-18T19:00:00Z",
-      "status": "TIMED",
-      "matchday": 8,
-      "homeTeam": {
-        "id": 387,
-        "name": "Bristol City FC",
-        "shortName": "Bristol City",
-        "tla": "BRI",
-        "crest": "https://crests.football-data.org/387.png"
-      },
-      "awayTeam": {
-        "id": 346,
-        "name": "Watford FC",
-        "shortName": "Watford",
-        "tla": "WAT",
-        "crest": "https://crests.football-data.org/346.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      }
-    },
     {
       "id": 561847,
       "utcDate": "2026-09-19T11:30:00Z",
