@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-16T17:38:19.054Z",
+  "fetchedAt": "2026-09-18T22:32:07.759Z",
   "standings": [
     {
       "position": 1,
@@ -42,6 +42,25 @@
     {
       "position": 3,
       "team": {
+        "id": 402,
+        "name": "Brentford FC",
+        "shortName": "Brentford",
+        "tla": "BRE",
+        "crest": "https://crests.football-data.org/402.png"
+      },
+      "playedGames": 5,
+      "won": 2,
+      "draw": 3,
+      "lost": 0,
+      "points": 9,
+      "goalsFor": 10,
+      "goalsAgainst": 4,
+      "goalDifference": 6,
+      "form": null
+    },
+    {
+      "position": 4,
+      "team": {
         "id": 341,
         "name": "Leeds United FC",
         "shortName": "Leeds United",
@@ -59,7 +78,7 @@
       "form": null
     },
     {
-      "position": 4,
+      "position": 5,
       "team": {
         "id": 322,
         "name": "Hull City AFC",
@@ -78,7 +97,7 @@
       "form": null
     },
     {
-      "position": 5,
+      "position": 6,
       "team": {
         "id": 397,
         "name": "Brighton & Hove Albion FC",
@@ -97,7 +116,7 @@
       "form": null
     },
     {
-      "position": 6,
+      "position": 7,
       "team": {
         "id": 61,
         "name": "Chelsea FC",
@@ -105,33 +124,14 @@
         "tla": "CHE",
         "crest": "https://crests.football-data.org/61.png"
       },
-      "playedGames": 4,
+      "playedGames": 5,
       "won": 2,
       "draw": 1,
-      "lost": 1,
+      "lost": 2,
       "points": 7,
       "goalsFor": 10,
-      "goalsAgainst": 9,
-      "goalDifference": 1,
-      "form": null
-    },
-    {
-      "position": 7,
-      "team": {
-        "id": 402,
-        "name": "Brentford FC",
-        "shortName": "Brentford",
-        "tla": "BRE",
-        "crest": "https://crests.football-data.org/402.png"
-      },
-      "playedGames": 4,
-      "won": 1,
-      "draw": 3,
-      "lost": 0,
-      "points": 6,
-      "goalsFor": 7,
-      "goalsAgainst": 4,
-      "goalDifference": 3,
+      "goalsAgainst": 12,
+      "goalDifference": -2,
       "form": null
     },
     {
@@ -383,6 +383,31 @@
     }
   ],
   "lastResults": [
+    {
+      "id": 560591,
+      "utcDate": "2026-09-18T19:00:00Z",
+      "status": "FINISHED",
+      "matchday": 5,
+      "homeTeam": {
+        "id": 402,
+        "name": "Brentford FC",
+        "shortName": "Brentford",
+        "tla": "BRE",
+        "crest": "https://crests.football-data.org/402.png"
+      },
+      "awayTeam": {
+        "id": 61,
+        "name": "Chelsea FC",
+        "shortName": "Chelsea",
+        "tla": "CHE",
+        "crest": "https://crests.football-data.org/61.png"
+      },
+      "score": {
+        "home": 3,
+        "away": 0,
+        "winner": "HOME_TEAM"
+      }
+    },
     {
       "id": 560579,
       "utcDate": "2026-09-14T19:00:00Z",
@@ -1386,32 +1411,6 @@
   ],
   "nextFixtures": [
     {
-      "id": 560591,
-      "utcDate": "2026-09-18T19:00:00Z",
-      "status": "TIMED",
-      "matchday": 5,
-      "homeTeam": {
-        "id": 402,
-        "name": "Brentford FC",
-        "shortName": "Brentford",
-        "tla": "BRE",
-        "crest": "https://crests.football-data.org/402.png"
-      },
-      "awayTeam": {
-        "id": 61,
-        "name": "Chelsea FC",
-        "shortName": "Chelsea",
-        "tla": "CHE",
-        "crest": "https://crests.football-data.org/61.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
       "id": 560587,
       "utcDate": "2026-09-19T11:30:00Z",
       "status": "TIMED",
@@ -1435,7 +1434,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560584,
@@ -1487,7 +1486,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560588,
@@ -1565,7 +1564,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560585,

@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-15T00:00:20.253Z",
+  "fetchedAt": "2026-09-18T22:32:14.847Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -1819,6 +1819,63 @@
           "player": "Erling Haaland",
           "minute": 60,
           "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560591": {
+      "utcDate": "2026-09-18T19:00:00Z",
+      "homeTeamId": 402,
+      "awayTeamId": 61,
+      "stats": {
+        "61": {
+          "shots": 12,
+          "shotsOnTarget": 2,
+          "possession": 60,
+          "passes": 497,
+          "passAccuracy": null,
+          "fouls": 7,
+          "corners": 12,
+          "offsides": 2,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        "402": {
+          "shots": 13,
+          "shotsOnTarget": 6,
+          "possession": 40,
+          "passes": 344,
+          "passAccuracy": null,
+          "fouls": 10,
+          "corners": 4,
+          "offsides": 2,
+          "yellowCards": 2,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 402,
+          "player": "Jaidon Anthony",
+          "minute": 61,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 402,
+          "player": "Igor Thiago",
+          "minute": 83,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 402,
+          "player": "Fabio Carvalho",
+          "minute": 90,
+          "extraMinute": 4,
           "ownGoal": false,
           "penalty": false
         }
