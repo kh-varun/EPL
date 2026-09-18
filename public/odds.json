@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-18T17:28:35.631Z",
+  "fetchedAt": "2026-09-18T19:53:53.747Z",
   "odds": {
     "560582": {
       "eventTicker": "KXEPLGAME-26SEP20BOULFC",
@@ -16,7 +16,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 24,
         "ticker": "KXEPLGAME-26SEP20BOULFC-TIE"
       }
     },
@@ -30,7 +30,7 @@
       },
       "away": {
         "label": "Man United",
-        "probability": 48,
+        "probability": 47,
         "ticker": "KXEPLGAME-26SEP20FULMUN-MUN"
       },
       "draw": {
@@ -49,12 +49,12 @@
       },
       "away": {
         "label": "Ipswich Town",
-        "probability": 20,
+        "probability": 21,
         "ticker": "KXEPLGAME-26SEP19EVEIPS-IPS"
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 25,
         "ticker": "KXEPLGAME-26SEP19EVEIPS-TIE"
       }
     },
@@ -144,12 +144,12 @@
       },
       "away": {
         "label": "Coventry City",
-        "probability": 15,
+        "probability": 16,
         "ticker": "KXEPLGAME-26SEP19NFOCOV-COV"
       },
       "draw": {
         "label": "Draw",
-        "probability": 24,
+        "probability": 23,
         "ticker": "KXEPLGAME-26SEP19NFOCOV-TIE"
       }
     },
@@ -163,7 +163,7 @@
       },
       "away": {
         "label": "Sunderland",
-        "probability": 9,
+        "probability": 8,
         "ticker": "KXEPLGAME-26SEP20MCISUN-SUN"
       },
       "draw": {
@@ -177,17 +177,17 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep18brecfc",
       "home": {
         "label": "Brentford",
-        "probability": 36,
+        "probability": 29,
         "ticker": "KXEPLGAME-26SEP18BRECFC-BRE"
       },
       "away": {
         "label": "Chelsea",
-        "probability": 39,
+        "probability": 36,
         "ticker": "KXEPLGAME-26SEP18BRECFC-CFC"
       },
       "draw": {
         "label": "Draw",
-        "probability": 27,
+        "probability": 36,
         "ticker": "KXEPLGAME-26SEP18BRECFC-TIE"
       }
     }
