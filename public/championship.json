@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-18T21:21:29.172Z",
+  "fetchedAt": "2026-09-18T23:24:57.197Z",
   "standings": [
     {
       "position": 1,
@@ -3288,7 +3288,7 @@
     },
     {
       "id": 561875,
-      "utcDate": "2026-10-13T18:45:00Z",
+      "utcDate": "2026-10-13T19:00:00Z",
       "status": "TIMED",
       "matchday": 10,
       "homeTeam": {
