@@ -1,17 +1,17 @@
 {
-  "fetchedAt": "2026-09-18T09:33:38.917Z",
+  "fetchedAt": "2026-09-18T13:51:07.828Z",
   "odds": {
     "560582": {
       "eventTicker": "KXEPLGAME-26SEP20BOULFC",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep20boulfc",
       "home": {
         "label": "Bournemouth",
-        "probability": 31,
+        "probability": 30,
         "ticker": "KXEPLGAME-26SEP20BOULFC-BOU"
       },
       "away": {
         "label": "Liverpool",
-        "probability": 45,
+        "probability": 46,
         "ticker": "KXEPLGAME-26SEP20BOULFC-LFC"
       },
       "draw": {
@@ -54,7 +54,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 25,
         "ticker": "KXEPLGAME-26SEP19EVEIPS-TIE"
       }
     },
@@ -68,7 +68,7 @@
       },
       "away": {
         "label": "Crystal Palace",
-        "probability": 21,
+        "probability": 19,
         "ticker": "KXEPLGAME-26SEP20LEECRY-CRY"
       },
       "draw": {
@@ -82,7 +82,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep19briars",
       "home": {
         "label": "Brighton Hove",
-        "probability": 20,
+        "probability": 19,
         "ticker": "KXEPLGAME-26SEP19BRIARS-BRI"
       },
       "away": {
@@ -120,7 +120,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep19newhul",
       "home": {
         "label": "Newcastle",
-        "probability": 60,
+        "probability": 59,
         "ticker": "KXEPLGAME-26SEP19NEWHUL-NEW"
       },
       "away": {
@@ -158,7 +158,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep20mcisun",
       "home": {
         "label": "Man City",
-        "probability": 77,
+        "probability": 76,
         "ticker": "KXEPLGAME-26SEP20MCISUN-MCI"
       },
       "away": {
@@ -177,12 +177,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep18brecfc",
       "home": {
         "label": "Brentford",
-        "probability": 35,
+        "probability": 37,
         "ticker": "KXEPLGAME-26SEP18BRECFC-BRE"
       },
       "away": {
         "label": "Chelsea",
-        "probability": 41,
+        "probability": 38,
         "ticker": "KXEPLGAME-26SEP18BRECFC-CFC"
       },
       "draw": {
