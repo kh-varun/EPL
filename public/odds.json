@@ -1,22 +1,22 @@
 {
-  "fetchedAt": "2026-09-18T22:15:35.447Z",
+  "fetchedAt": "2026-09-19T00:28:34.227Z",
   "odds": {
     "560582": {
       "eventTicker": "KXEPLGAME-26SEP20BOULFC",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep20boulfc",
       "home": {
         "label": "Bournemouth",
-        "probability": 31,
+        "probability": 30,
         "ticker": "KXEPLGAME-26SEP20BOULFC-BOU"
       },
       "away": {
         "label": "Liverpool",
-        "probability": 46,
+        "probability": 45,
         "ticker": "KXEPLGAME-26SEP20BOULFC-LFC"
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 26,
         "ticker": "KXEPLGAME-26SEP20BOULFC-TIE"
       }
     },
@@ -25,7 +25,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep20fulmun",
       "home": {
         "label": "Fulham",
-        "probability": 28,
+        "probability": 27,
         "ticker": "KXEPLGAME-26SEP20FULMUN-FUL"
       },
       "away": {
@@ -68,7 +68,7 @@
       },
       "away": {
         "label": "Crystal Palace",
-        "probability": 20,
+        "probability": 19,
         "ticker": "KXEPLGAME-26SEP20LEECRY-CRY"
       },
       "draw": {
@@ -106,7 +106,7 @@
       },
       "away": {
         "label": "Aston Villa",
-        "probability": 26,
+        "probability": 27,
         "ticker": "KXEPLGAME-26SEP19TOTAVL-AVL"
       },
       "draw": {
@@ -120,7 +120,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep19newhul",
       "home": {
         "label": "Newcastle",
-        "probability": 60,
+        "probability": 61,
         "ticker": "KXEPLGAME-26SEP19NEWHUL-NEW"
       },
       "away": {
@@ -144,7 +144,7 @@
       },
       "away": {
         "label": "Coventry City",
-        "probability": 17,
+        "probability": 16,
         "ticker": "KXEPLGAME-26SEP19NFOCOV-COV"
       },
       "draw": {
@@ -158,7 +158,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep20mcisun",
       "home": {
         "label": "Man City",
-        "probability": 76,
+        "probability": 77,
         "ticker": "KXEPLGAME-26SEP20MCISUN-MCI"
       },
       "away": {
