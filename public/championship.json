@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-19T11:15:49.007Z",
+  "fetchedAt": "2026-09-19T14:34:04.952Z",
   "standings": [
     {
       "position": 1,
@@ -10,13 +10,13 @@
         "tla": "WHU",
         "crest": "https://crests.football-data.org/563.png"
       },
-      "playedGames": 7,
+      "playedGames": 8,
       "won": 4,
-      "draw": 2,
+      "draw": 3,
       "lost": 1,
-      "points": 14,
-      "goalsFor": 20,
-      "goalsAgainst": 9,
+      "points": 15,
+      "goalsFor": 22,
+      "goalsAgainst": 11,
       "goalDifference": 11,
       "form": null
     },
@@ -80,6 +80,25 @@
     {
       "position": 5,
       "team": {
+        "id": 70,
+        "name": "Stoke City FC",
+        "shortName": "Stoke",
+        "tla": "STK",
+        "crest": "https://crests.football-data.org/70.png"
+      },
+      "playedGames": 8,
+      "won": 4,
+      "draw": 1,
+      "lost": 3,
+      "points": 13,
+      "goalsFor": 13,
+      "goalsAgainst": 12,
+      "goalDifference": 1,
+      "form": null
+    },
+    {
+      "position": 6,
+      "team": {
         "id": 387,
         "name": "Bristol City FC",
         "shortName": "Bristol City",
@@ -97,7 +116,7 @@
       "form": null
     },
     {
-      "position": 6,
+      "position": 7,
       "team": {
         "id": 69,
         "name": "Queens Park Rangers FC",
@@ -116,7 +135,7 @@
       "form": null
     },
     {
-      "position": 7,
+      "position": 8,
       "team": {
         "id": 348,
         "name": "Charlton Athletic FC",
@@ -124,18 +143,18 @@
         "tla": "CHA",
         "crest": "https://crests.football-data.org/348.png"
       },
-      "playedGames": 7,
+      "playedGames": 8,
       "won": 3,
       "draw": 3,
-      "lost": 1,
+      "lost": 2,
       "points": 12,
-      "goalsFor": 6,
-      "goalsAgainst": 7,
-      "goalDifference": -1,
+      "goalsFor": 7,
+      "goalsAgainst": 10,
+      "goalDifference": -3,
       "form": null
     },
     {
-      "position": 8,
+      "position": 9,
       "team": {
         "id": 76,
         "name": "Wolverhampton Wanderers FC",
@@ -154,7 +173,7 @@
       "form": null
     },
     {
-      "position": 9,
+      "position": 10,
       "team": {
         "id": 340,
         "name": "Southampton FC",
@@ -173,7 +192,7 @@
       "form": null
     },
     {
-      "position": 10,
+      "position": 11,
       "team": {
         "id": 332,
         "name": "Birmingham City FC",
@@ -192,26 +211,26 @@
       "form": null
     },
     {
-      "position": 11,
+      "position": 12,
       "team": {
-        "id": 70,
-        "name": "Stoke City FC",
-        "shortName": "Stoke",
-        "tla": "STK",
-        "crest": "https://crests.football-data.org/70.png"
+        "id": 384,
+        "name": "Millwall FC",
+        "shortName": "Millwall",
+        "tla": "MIL",
+        "crest": "https://crests.football-data.org/384.png"
       },
       "playedGames": 7,
       "won": 3,
       "draw": 1,
       "lost": 3,
       "points": 10,
-      "goalsFor": 11,
-      "goalsAgainst": 11,
+      "goalsFor": 13,
+      "goalsAgainst": 13,
       "goalDifference": 0,
       "form": null
     },
     {
-      "position": 12,
+      "position": 13,
       "team": {
         "id": 68,
         "name": "Norwich City FC",
@@ -230,25 +249,6 @@
       "form": null
     },
     {
-      "position": 13,
-      "team": {
-        "id": 384,
-        "name": "Millwall FC",
-        "shortName": "Millwall",
-        "tla": "MIL",
-        "crest": "https://crests.football-data.org/384.png"
-      },
-      "playedGames": 6,
-      "won": 3,
-      "draw": 0,
-      "lost": 3,
-      "points": 9,
-      "goalsFor": 11,
-      "goalsAgainst": 11,
-      "goalDifference": 0,
-      "form": null
-    },
-    {
       "position": 14,
       "team": {
         "id": 356,
@@ -257,14 +257,14 @@
         "tla": "SHE",
         "crest": "https://crests.football-data.org/356.png"
       },
-      "playedGames": 7,
+      "playedGames": 8,
       "won": 2,
       "draw": 3,
-      "lost": 2,
+      "lost": 3,
       "points": 9,
-      "goalsFor": 8,
-      "goalsAgainst": 9,
-      "goalDifference": -1,
+      "goalsFor": 9,
+      "goalsAgainst": 11,
+      "goalDifference": -2,
       "form": null
     },
     {
@@ -346,6 +346,25 @@
     {
       "position": 19,
       "team": {
+        "id": 715,
+        "name": "Cardiff City FC",
+        "shortName": "Cardiff",
+        "tla": "CAR",
+        "crest": "https://crests.football-data.org/715.png"
+      },
+      "playedGames": 8,
+      "won": 1,
+      "draw": 4,
+      "lost": 3,
+      "points": 7,
+      "goalsFor": 10,
+      "goalsAgainst": 12,
+      "goalDifference": -2,
+      "form": null
+    },
+    {
+      "position": 20,
+      "team": {
         "id": 404,
         "name": "Wrexham AFC",
         "shortName": "Wrexham",
@@ -363,7 +382,7 @@
       "form": null
     },
     {
-      "position": 20,
+      "position": 21,
       "team": {
         "id": 60,
         "name": "Bolton Wanderers FC",
@@ -379,25 +398,6 @@
       "goalsFor": 7,
       "goalsAgainst": 12,
       "goalDifference": -5,
-      "form": null
-    },
-    {
-      "position": 21,
-      "team": {
-        "id": 715,
-        "name": "Cardiff City FC",
-        "shortName": "Cardiff",
-        "tla": "CAR",
-        "crest": "https://crests.football-data.org/715.png"
-      },
-      "playedGames": 7,
-      "won": 0,
-      "draw": 4,
-      "lost": 3,
-      "points": 4,
-      "goalsFor": 7,
-      "goalsAgainst": 11,
-      "goalDifference": -4,
       "form": null
     },
     {
@@ -459,6 +459,81 @@
     }
   ],
   "lastResults": [
+    {
+      "id": 561847,
+      "utcDate": "2026-09-19T11:30:00Z",
+      "status": "FINISHED",
+      "matchday": 8,
+      "homeTeam": {
+        "id": 70,
+        "name": "Stoke City FC",
+        "shortName": "Stoke",
+        "tla": "STK",
+        "crest": "https://crests.football-data.org/70.png"
+      },
+      "awayTeam": {
+        "id": 356,
+        "name": "Sheffield United FC",
+        "shortName": "Sheffield Utd",
+        "tla": "SHE",
+        "crest": "https://crests.football-data.org/356.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 1,
+        "winner": "HOME_TEAM"
+      }
+    },
+    {
+      "id": 561849,
+      "utcDate": "2026-09-19T11:30:00Z",
+      "status": "FINISHED",
+      "matchday": 8,
+      "homeTeam": {
+        "id": 384,
+        "name": "Millwall FC",
+        "shortName": "Millwall",
+        "tla": "MIL",
+        "crest": "https://crests.football-data.org/384.png"
+      },
+      "awayTeam": {
+        "id": 563,
+        "name": "West Ham United FC",
+        "shortName": "West Ham",
+        "tla": "WHU",
+        "crest": "https://crests.football-data.org/563.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 2,
+        "winner": "DRAW"
+      }
+    },
+    {
+      "id": 561852,
+      "utcDate": "2026-09-19T11:30:00Z",
+      "status": "FINISHED",
+      "matchday": 8,
+      "homeTeam": {
+        "id": 715,
+        "name": "Cardiff City FC",
+        "shortName": "Cardiff",
+        "tla": "CAR",
+        "crest": "https://crests.football-data.org/715.png"
+      },
+      "awayTeam": {
+        "id": 348,
+        "name": "Charlton Athletic FC",
+        "shortName": "Charlton",
+        "tla": "CHA",
+        "crest": "https://crests.football-data.org/348.png"
+      },
+      "score": {
+        "home": 3,
+        "away": 1,
+        "winner": "HOME_TEAM"
+      }
+    },
     {
       "id": 561845,
       "utcDate": "2026-09-18T19:00:00Z",
@@ -2562,84 +2637,9 @@
   ],
   "nextFixtures": [
     {
-      "id": 561847,
-      "utcDate": "2026-09-19T11:30:00Z",
-      "status": "TIMED",
-      "matchday": 8,
-      "homeTeam": {
-        "id": 70,
-        "name": "Stoke City FC",
-        "shortName": "Stoke",
-        "tla": "STK",
-        "crest": "https://crests.football-data.org/70.png"
-      },
-      "awayTeam": {
-        "id": 356,
-        "name": "Sheffield United FC",
-        "shortName": "Sheffield Utd",
-        "tla": "SHE",
-        "crest": "https://crests.football-data.org/356.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      }
-    },
-    {
-      "id": 561849,
-      "utcDate": "2026-09-19T11:30:00Z",
-      "status": "TIMED",
-      "matchday": 8,
-      "homeTeam": {
-        "id": 384,
-        "name": "Millwall FC",
-        "shortName": "Millwall",
-        "tla": "MIL",
-        "crest": "https://crests.football-data.org/384.png"
-      },
-      "awayTeam": {
-        "id": 563,
-        "name": "West Ham United FC",
-        "shortName": "West Ham",
-        "tla": "WHU",
-        "crest": "https://crests.football-data.org/563.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      }
-    },
-    {
-      "id": 561852,
-      "utcDate": "2026-09-19T11:30:00Z",
-      "status": "TIMED",
-      "matchday": 8,
-      "homeTeam": {
-        "id": 715,
-        "name": "Cardiff City FC",
-        "shortName": "Cardiff",
-        "tla": "CAR",
-        "crest": "https://crests.football-data.org/715.png"
-      },
-      "awayTeam": {
-        "id": 348,
-        "name": "Charlton Athletic FC",
-        "shortName": "Charlton",
-        "tla": "CHA",
-        "crest": "https://crests.football-data.org/348.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      }
-    },
-    {
       "id": 561846,
       "utcDate": "2026-09-19T14:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "matchday": 8,
       "homeTeam": {
         "id": 404,
@@ -2656,15 +2656,15 @@
         "crest": "https://crests.football-data.org/340.png"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "winner": null
+        "home": 0,
+        "away": 0,
+        "winner": "DRAW"
       }
     },
     {
       "id": 561848,
       "utcDate": "2026-09-19T14:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "matchday": 8,
       "homeTeam": {
         "id": 328,
@@ -2681,15 +2681,15 @@
         "crest": "https://crests.football-data.org/342.png"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "winner": null
+        "home": 0,
+        "away": 0,
+        "winner": "DRAW"
       }
     },
     {
       "id": 561853,
       "utcDate": "2026-09-19T14:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "matchday": 8,
       "homeTeam": {
         "id": 69,
@@ -2706,15 +2706,15 @@
         "crest": "https://crests.football-data.org/1081.png"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "winner": null
+        "home": 0,
+        "away": 2,
+        "winner": "AWAY_TEAM"
       }
     },
     {
       "id": 561854,
       "utcDate": "2026-09-19T14:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "matchday": 8,
       "homeTeam": {
         "id": 325,
@@ -2731,15 +2731,15 @@
         "crest": "https://crests.football-data.org/59.png"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "winner": null
+        "home": 1,
+        "away": 1,
+        "winner": "DRAW"
       }
     },
     {
       "id": 561855,
       "utcDate": "2026-09-19T14:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "matchday": 8,
       "homeTeam": {
         "id": 332,
@@ -2756,15 +2756,15 @@
         "crest": "https://crests.football-data.org/343.png"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "winner": null
+        "home": 0,
+        "away": 0,
+        "winner": "DRAW"
       }
     },
     {
       "id": 561856,
       "utcDate": "2026-09-19T14:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "matchday": 8,
       "homeTeam": {
         "id": 1126,
@@ -2781,9 +2781,9 @@
         "crest": "https://crests.football-data.org/72.png"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "winner": null
+        "home": 0,
+        "away": 0,
+        "winner": "DRAW"
       }
     },
     {
