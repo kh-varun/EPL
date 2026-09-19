@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-19T16:29:38.676Z",
+  "fetchedAt": "2026-09-19T18:47:35.346Z",
   "odds": {
     "560582": {
       "eventTicker": "KXEPLGAME-26SEP20BOULFC",
@@ -30,7 +30,7 @@
       },
       "away": {
         "label": "Man United",
-        "probability": 48,
+        "probability": 49,
         "ticker": "KXEPLGAME-26SEP20FULMUN-MUN"
       },
       "draw": {
@@ -56,25 +56,6 @@
         "label": "Draw",
         "probability": 25,
         "ticker": "KXEPLGAME-26SEP20LEECRY-TIE"
-      }
-    },
-    "560589": {
-      "eventTicker": "KXEPLGAME-26SEP19NFOCOV",
-      "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep19nfocov",
-      "home": {
-        "label": "Nottingham",
-        "probability": 60,
-        "ticker": "KXEPLGAME-26SEP19NFOCOV-NFO"
-      },
-      "away": {
-        "label": "Coventry City",
-        "probability": 16,
-        "ticker": "KXEPLGAME-26SEP19NFOCOV-COV"
-      },
-      "draw": {
-        "label": "Draw",
-        "probability": 25,
-        "ticker": "KXEPLGAME-26SEP19NFOCOV-TIE"
       }
     },
     "560590": {
