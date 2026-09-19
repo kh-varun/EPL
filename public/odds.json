@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-19T09:10:38.232Z",
+  "fetchedAt": "2026-09-19T13:10:07.751Z",
   "odds": {
     "560582": {
       "eventTicker": "KXEPLGAME-26SEP20BOULFC",
@@ -44,12 +44,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep19eveips",
       "home": {
         "label": "Everton",
-        "probability": 54,
+        "probability": 55,
         "ticker": "KXEPLGAME-26SEP19EVEIPS-EVE"
       },
       "away": {
         "label": "Ipswich Town",
-        "probability": 22,
+        "probability": 21,
         "ticker": "KXEPLGAME-26SEP19EVEIPS-IPS"
       },
       "draw": {
@@ -63,7 +63,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep20leecry",
       "home": {
         "label": "Leeds United",
-        "probability": 56,
+        "probability": 57,
         "ticker": "KXEPLGAME-26SEP20LEECRY-LEE"
       },
       "away": {
@@ -101,17 +101,17 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep19totavl",
       "home": {
         "label": "Tottenham",
-        "probability": 50,
+        "probability": 2,
         "ticker": "KXEPLGAME-26SEP19TOTAVL-TOT"
       },
       "away": {
         "label": "Aston Villa",
-        "probability": 25,
+        "probability": 93,
         "ticker": "KXEPLGAME-26SEP19TOTAVL-AVL"
       },
       "draw": {
         "label": "Draw",
-        "probability": 27,
+        "probability": 6,
         "ticker": "KXEPLGAME-26SEP19TOTAVL-TIE"
       }
     },
@@ -120,7 +120,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep19newhul",
       "home": {
         "label": "Newcastle",
-        "probability": 60,
+        "probability": 61,
         "ticker": "KXEPLGAME-26SEP19NEWHUL-NEW"
       },
       "away": {
@@ -144,7 +144,7 @@
       },
       "away": {
         "label": "Coventry City",
-        "probability": 17,
+        "probability": 16,
         "ticker": "KXEPLGAME-26SEP19NFOCOV-COV"
       },
       "draw": {
