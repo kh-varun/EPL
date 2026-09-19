@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-18T22:32:14.847Z",
+  "fetchedAt": "2026-09-19T16:12:05.119Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -1819,6 +1819,79 @@
           "player": "Erling Haaland",
           "minute": 60,
           "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560587": {
+      "utcDate": "2026-09-19T11:30:00Z",
+      "homeTeamId": 73,
+      "awayTeamId": 58,
+      "stats": {
+        "58": {
+          "shots": 15,
+          "shotsOnTarget": 6,
+          "possession": 36,
+          "passes": 334,
+          "passAccuracy": null,
+          "fouls": 13,
+          "corners": 1,
+          "offsides": 2,
+          "yellowCards": 2,
+          "redCards": 0
+        },
+        "73": {
+          "shots": 20,
+          "shotsOnTarget": 7,
+          "possession": 64,
+          "passes": 574,
+          "passAccuracy": null,
+          "fouls": 9,
+          "corners": 11,
+          "offsides": 5,
+          "yellowCards": 1,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 58,
+          "player": "Johan Manzambi",
+          "minute": 45,
+          "extraMinute": 4,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 58,
+          "player": "Nicolas Jackson",
+          "minute": 67,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 58,
+          "player": "Emiliano Buendía",
+          "minute": 79,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 73,
+          "player": "Conor Gallagher",
+          "minute": 86,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 73,
+          "player": "Jan Paul van Hecke",
+          "minute": 90,
+          "extraMinute": 8,
           "ownGoal": false,
           "penalty": false
         }
