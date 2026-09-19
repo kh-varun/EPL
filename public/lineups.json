@@ -1,6 +1,293 @@
 {
-  "fetchedAt": "2026-09-18T19:57:09.157Z",
+  "fetchedAt": "2026-09-19T16:26:26.211Z",
   "lineups": {
+    "560589": {
+      "utcDate": "2026-09-19T16:30:00Z",
+      "homeTeamId": 351,
+      "awayTeamId": 1076,
+      "byTeam": {
+        "351": {
+          "teamName": "Nottingham Forest",
+          "formation": "3-4-2-1",
+          "startXI": [
+            {
+              "id": 2919,
+              "name": "M. Sels",
+              "number": 26,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 362711,
+              "name": "Jair",
+              "number": 23,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 354753,
+              "name": "O. Diomande",
+              "number": 2,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 363695,
+              "name": "Murillo",
+              "number": 5,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 13736,
+              "name": "D. Muñoz",
+              "number": 27,
+              "position": "M",
+              "grid": "3:4"
+            },
+            {
+              "id": 1095,
+              "name": "X. Schlager",
+              "number": 21,
+              "position": "M",
+              "grid": "3:3"
+            },
+            {
+              "id": 158697,
+              "name": "J. McAtee",
+              "number": 24,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 138780,
+              "name": "N. Williams",
+              "number": 3,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 48648,
+              "name": "D. Ndoye",
+              "number": 14,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 18746,
+              "name": "M. Gibbs-White",
+              "number": 10,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 161948,
+              "name": "L. Delap",
+              "number": 19,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 9366,
+              "name": "Igor Jesus",
+              "number": 11,
+              "position": "F"
+            },
+            {
+              "id": 18931,
+              "name": "C. Wood",
+              "number": 9,
+              "position": "F"
+            },
+            {
+              "id": 19305,
+              "name": "R. Yates",
+              "number": 22,
+              "position": "M"
+            },
+            {
+              "id": 6056,
+              "name": "N. Domínguez",
+              "number": 8,
+              "position": "M"
+            },
+            {
+              "id": 2298,
+              "name": "C. Hudson-Odoi",
+              "number": 7,
+              "position": "F"
+            },
+            {
+              "id": 22149,
+              "name": "I. Sangaré",
+              "number": 6,
+              "position": "M"
+            },
+            {
+              "id": 2771,
+              "name": "O. Aina",
+              "number": 34,
+              "position": "D"
+            },
+            {
+              "id": 163069,
+              "name": "L. Netz",
+              "number": 25,
+              "position": "D"
+            },
+            {
+              "id": 70366,
+              "name": "John",
+              "number": 12,
+              "position": "G"
+            }
+          ],
+          "coach": "O. Glasner"
+        },
+        "1076": {
+          "teamName": "Coventry",
+          "formation": "3-4-2-1",
+          "startXI": [
+            {
+              "id": 278088,
+              "name": "C. Rushworth",
+              "number": 19,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 19789,
+              "name": "E. Pinnock",
+              "number": 2,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 264437,
+              "name": "B. Thomas",
+              "number": 4,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 382358,
+              "name": "S. Mfuni",
+              "number": 12,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 15799,
+              "name": "F. Onyeka",
+              "number": 16,
+              "position": "M",
+              "grid": "3:4"
+            },
+            {
+              "id": 475575,
+              "name": "Caleb Marfo Yirenkyi",
+              "number": 8,
+              "position": "M",
+              "grid": "3:3"
+            },
+            {
+              "id": 19328,
+              "name": "M. Grimes",
+              "number": 6,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 19260,
+              "name": "J. Dasilva",
+              "number": 3,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 20372,
+              "name": "J. Rudoni",
+              "number": 5,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 18404,
+              "name": "E. Mason-Clark",
+              "number": 10,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 82090,
+              "name": "B. Thomas-Asante",
+              "number": 23,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 421875,
+              "name": "S. Cherif",
+              "number": 49,
+              "position": "F"
+            },
+            {
+              "id": 84128,
+              "name": "Y. Gboho",
+              "number": 34,
+              "position": "F"
+            },
+            {
+              "id": 138786,
+              "name": "E. Simms",
+              "number": 9,
+              "position": "F"
+            },
+            {
+              "id": 36929,
+              "name": "G. Hamer",
+              "number": 38,
+              "position": "M"
+            },
+            {
+              "id": 16046,
+              "name": "V. Torp",
+              "number": 29,
+              "position": "M"
+            },
+            {
+              "id": 161621,
+              "name": "L. Tchaouna",
+              "number": 17,
+              "position": "F"
+            },
+            {
+              "id": 33462,
+              "name": "T. Sakamoto",
+              "number": 7,
+              "position": "M"
+            },
+            {
+              "id": 145538,
+              "name": "J. Latibeaudiere",
+              "number": 22,
+              "position": "D"
+            },
+            {
+              "id": 19341,
+              "name": "D. Bentley",
+              "number": 25,
+              "position": "G"
+            }
+          ],
+          "coach": "F. Lampard"
+        }
+      }
+    },
     "560591": {
       "utcDate": "2026-09-18T19:00:00Z",
       "homeTeamId": 402,
