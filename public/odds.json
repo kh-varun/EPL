@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-19T18:47:35.346Z",
+  "fetchedAt": "2026-09-19T21:16:59.316Z",
   "odds": {
     "560582": {
       "eventTicker": "KXEPLGAME-26SEP20BOULFC",
@@ -30,12 +30,12 @@
       },
       "away": {
         "label": "Man United",
-        "probability": 49,
+        "probability": 48,
         "ticker": "KXEPLGAME-26SEP20FULMUN-MUN"
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 25,
         "ticker": "KXEPLGAME-26SEP20FULMUN-TIE"
       }
     },
@@ -68,12 +68,12 @@
       },
       "away": {
         "label": "Sunderland",
-        "probability": 9,
+        "probability": 10,
         "ticker": "KXEPLGAME-26SEP20MCISUN-SUN"
       },
       "draw": {
         "label": "Draw",
-        "probability": 17,
+        "probability": 16,
         "ticker": "KXEPLGAME-26SEP20MCISUN-TIE"
       }
     }
