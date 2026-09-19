@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-19T14:34:04.952Z",
+  "fetchedAt": "2026-09-19T17:35:22.040Z",
   "standings": [
     {
       "position": 1,
@@ -459,6 +459,156 @@
     }
   ],
   "lastResults": [
+    {
+      "id": 561846,
+      "utcDate": "2026-09-19T14:00:00Z",
+      "status": "FINISHED",
+      "matchday": 8,
+      "homeTeam": {
+        "id": 404,
+        "name": "Wrexham AFC",
+        "shortName": "Wrexham",
+        "tla": "WRE",
+        "crest": "https://crests.football-data.org/404.png"
+      },
+      "awayTeam": {
+        "id": 340,
+        "name": "Southampton FC",
+        "shortName": "Southampton",
+        "tla": "SOU",
+        "crest": "https://crests.football-data.org/340.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 1,
+        "winner": "HOME_TEAM"
+      }
+    },
+    {
+      "id": 561848,
+      "utcDate": "2026-09-19T14:00:00Z",
+      "status": "FINISHED",
+      "matchday": 8,
+      "homeTeam": {
+        "id": 328,
+        "name": "Burnley FC",
+        "shortName": "Burnley",
+        "tla": "BUR",
+        "crest": "https://crests.football-data.org/328.png"
+      },
+      "awayTeam": {
+        "id": 342,
+        "name": "Derby County FC",
+        "shortName": "Derby County",
+        "tla": "DER",
+        "crest": "https://crests.football-data.org/342.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 1,
+        "winner": "DRAW"
+      }
+    },
+    {
+      "id": 561853,
+      "utcDate": "2026-09-19T14:00:00Z",
+      "status": "FINISHED",
+      "matchday": 8,
+      "homeTeam": {
+        "id": 69,
+        "name": "Queens Park Rangers FC",
+        "shortName": "QPR",
+        "tla": "QPR",
+        "crest": "https://crests.football-data.org/69.png"
+      },
+      "awayTeam": {
+        "id": 1081,
+        "name": "Preston North End FC",
+        "shortName": "Preston NE",
+        "tla": "PNE",
+        "crest": "https://crests.football-data.org/1081.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 2,
+        "winner": "DRAW"
+      }
+    },
+    {
+      "id": 561854,
+      "utcDate": "2026-09-19T14:00:00Z",
+      "status": "FINISHED",
+      "matchday": 8,
+      "homeTeam": {
+        "id": 325,
+        "name": "Portsmouth FC",
+        "shortName": "Portsmouth",
+        "tla": "POR",
+        "crest": "https://crests.football-data.org/325.png"
+      },
+      "awayTeam": {
+        "id": 59,
+        "name": "Blackburn Rovers FC",
+        "shortName": "Blackburn",
+        "tla": "BLA",
+        "crest": "https://crests.football-data.org/59.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 2,
+        "winner": "DRAW"
+      }
+    },
+    {
+      "id": 561855,
+      "utcDate": "2026-09-19T14:00:00Z",
+      "status": "FINISHED",
+      "matchday": 8,
+      "homeTeam": {
+        "id": 332,
+        "name": "Birmingham City FC",
+        "shortName": "Birmingham",
+        "tla": "BIR",
+        "crest": "https://crests.football-data.org/332.png"
+      },
+      "awayTeam": {
+        "id": 343,
+        "name": "Middlesbrough FC",
+        "shortName": "Middlesbrough",
+        "tla": "MID",
+        "crest": "https://crests.football-data.org/343.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 2,
+        "winner": "DRAW"
+      }
+    },
+    {
+      "id": 561856,
+      "utcDate": "2026-09-19T14:00:00Z",
+      "status": "FINISHED",
+      "matchday": 8,
+      "homeTeam": {
+        "id": 1126,
+        "name": "Lincoln City FC",
+        "shortName": "Lincoln City",
+        "tla": "LIN",
+        "crest": "https://crests.football-data.org/1126.png"
+      },
+      "awayTeam": {
+        "id": 72,
+        "name": "Swansea City AFC",
+        "shortName": "Swansea",
+        "tla": "SWA",
+        "crest": "https://crests.football-data.org/72.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 2,
+        "winner": "AWAY_TEAM"
+      }
+    },
     {
       "id": 561847,
       "utcDate": "2026-09-19T11:30:00Z",
@@ -2636,156 +2786,6 @@
     }
   ],
   "nextFixtures": [
-    {
-      "id": 561846,
-      "utcDate": "2026-09-19T14:00:00Z",
-      "status": "IN_PLAY",
-      "matchday": 8,
-      "homeTeam": {
-        "id": 404,
-        "name": "Wrexham AFC",
-        "shortName": "Wrexham",
-        "tla": "WRE",
-        "crest": "https://crests.football-data.org/404.png"
-      },
-      "awayTeam": {
-        "id": 340,
-        "name": "Southampton FC",
-        "shortName": "Southampton",
-        "tla": "SOU",
-        "crest": "https://crests.football-data.org/340.png"
-      },
-      "score": {
-        "home": 0,
-        "away": 0,
-        "winner": "DRAW"
-      }
-    },
-    {
-      "id": 561848,
-      "utcDate": "2026-09-19T14:00:00Z",
-      "status": "IN_PLAY",
-      "matchday": 8,
-      "homeTeam": {
-        "id": 328,
-        "name": "Burnley FC",
-        "shortName": "Burnley",
-        "tla": "BUR",
-        "crest": "https://crests.football-data.org/328.png"
-      },
-      "awayTeam": {
-        "id": 342,
-        "name": "Derby County FC",
-        "shortName": "Derby County",
-        "tla": "DER",
-        "crest": "https://crests.football-data.org/342.png"
-      },
-      "score": {
-        "home": 0,
-        "away": 0,
-        "winner": "DRAW"
-      }
-    },
-    {
-      "id": 561853,
-      "utcDate": "2026-09-19T14:00:00Z",
-      "status": "IN_PLAY",
-      "matchday": 8,
-      "homeTeam": {
-        "id": 69,
-        "name": "Queens Park Rangers FC",
-        "shortName": "QPR",
-        "tla": "QPR",
-        "crest": "https://crests.football-data.org/69.png"
-      },
-      "awayTeam": {
-        "id": 1081,
-        "name": "Preston North End FC",
-        "shortName": "Preston NE",
-        "tla": "PNE",
-        "crest": "https://crests.football-data.org/1081.png"
-      },
-      "score": {
-        "home": 0,
-        "away": 2,
-        "winner": "AWAY_TEAM"
-      }
-    },
-    {
-      "id": 561854,
-      "utcDate": "2026-09-19T14:00:00Z",
-      "status": "IN_PLAY",
-      "matchday": 8,
-      "homeTeam": {
-        "id": 325,
-        "name": "Portsmouth FC",
-        "shortName": "Portsmouth",
-        "tla": "POR",
-        "crest": "https://crests.football-data.org/325.png"
-      },
-      "awayTeam": {
-        "id": 59,
-        "name": "Blackburn Rovers FC",
-        "shortName": "Blackburn",
-        "tla": "BLA",
-        "crest": "https://crests.football-data.org/59.png"
-      },
-      "score": {
-        "home": 1,
-        "away": 1,
-        "winner": "DRAW"
-      }
-    },
-    {
-      "id": 561855,
-      "utcDate": "2026-09-19T14:00:00Z",
-      "status": "IN_PLAY",
-      "matchday": 8,
-      "homeTeam": {
-        "id": 332,
-        "name": "Birmingham City FC",
-        "shortName": "Birmingham",
-        "tla": "BIR",
-        "crest": "https://crests.football-data.org/332.png"
-      },
-      "awayTeam": {
-        "id": 343,
-        "name": "Middlesbrough FC",
-        "shortName": "Middlesbrough",
-        "tla": "MID",
-        "crest": "https://crests.football-data.org/343.png"
-      },
-      "score": {
-        "home": 0,
-        "away": 0,
-        "winner": "DRAW"
-      }
-    },
-    {
-      "id": 561856,
-      "utcDate": "2026-09-19T14:00:00Z",
-      "status": "IN_PLAY",
-      "matchday": 8,
-      "homeTeam": {
-        "id": 1126,
-        "name": "Lincoln City FC",
-        "shortName": "Lincoln City",
-        "tla": "LIN",
-        "crest": "https://crests.football-data.org/1126.png"
-      },
-      "awayTeam": {
-        "id": 72,
-        "name": "Swansea City AFC",
-        "shortName": "Swansea",
-        "tla": "SWA",
-        "crest": "https://crests.football-data.org/72.png"
-      },
-      "score": {
-        "home": 0,
-        "away": 0,
-        "winner": "DRAW"
-      }
-    },
     {
       "id": 561851,
       "utcDate": "2026-09-20T11:00:00Z",
