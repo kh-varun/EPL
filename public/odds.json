@@ -1,24 +1,4 @@
 {
-  "fetchedAt": "2026-09-20T15:24:20.297Z",
-  "odds": {
-    "560583": {
-      "eventTicker": "KXEPLGAME-26SEP20FULMUN",
-      "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep20fulmun",
-      "home": {
-        "label": "Fulham",
-        "probability": 27,
-        "ticker": "KXEPLGAME-26SEP20FULMUN-FUL"
-      },
-      "away": {
-        "label": "Man United",
-        "probability": 49,
-        "ticker": "KXEPLGAME-26SEP20FULMUN-MUN"
-      },
-      "draw": {
-        "label": "Draw",
-        "probability": 25,
-        "ticker": "KXEPLGAME-26SEP20FULMUN-TIE"
-      }
-    }
-  }
+  "fetchedAt": "2026-09-20T18:15:03.809Z",
+  "odds": {}
 }
