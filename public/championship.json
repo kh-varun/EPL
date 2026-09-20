@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-20T12:44:37.179Z",
+  "fetchedAt": "2026-09-20T16:37:51.163Z",
   "standings": [
     {
       "position": 1,
@@ -42,6 +42,25 @@
     {
       "position": 3,
       "team": {
+        "id": 76,
+        "name": "Wolverhampton Wanderers FC",
+        "shortName": "Wolverhampton",
+        "tla": "WOL",
+        "crest": "https://crests.football-data.org/76.png"
+      },
+      "playedGames": 7,
+      "won": 4,
+      "draw": 2,
+      "lost": 1,
+      "points": 14,
+      "goalsFor": 15,
+      "goalsAgainst": 10,
+      "goalDifference": 5,
+      "form": null
+    },
+    {
+      "position": 4,
+      "team": {
         "id": 343,
         "name": "Middlesbrough FC",
         "shortName": "Middlesbrough",
@@ -59,7 +78,7 @@
       "form": null
     },
     {
-      "position": 4,
+      "position": 5,
       "team": {
         "id": 74,
         "name": "West Bromwich Albion FC",
@@ -67,18 +86,18 @@
         "tla": "WBA",
         "crest": "https://crests.football-data.org/74.png"
       },
-      "playedGames": 7,
+      "playedGames": 8,
       "won": 4,
       "draw": 2,
-      "lost": 1,
+      "lost": 2,
       "points": 14,
       "goalsFor": 10,
-      "goalsAgainst": 7,
-      "goalDifference": 3,
+      "goalsAgainst": 8,
+      "goalDifference": 2,
       "form": null
     },
     {
-      "position": 5,
+      "position": 6,
       "team": {
         "id": 69,
         "name": "Queens Park Rangers FC",
@@ -97,7 +116,7 @@
       "form": null
     },
     {
-      "position": 6,
+      "position": 7,
       "team": {
         "id": 70,
         "name": "Stoke City FC",
@@ -116,7 +135,7 @@
       "form": null
     },
     {
-      "position": 7,
+      "position": 8,
       "team": {
         "id": 387,
         "name": "Bristol City FC",
@@ -135,7 +154,7 @@
       "form": null
     },
     {
-      "position": 8,
+      "position": 9,
       "team": {
         "id": 348,
         "name": "Charlton Athletic FC",
@@ -151,25 +170,6 @@
       "goalsFor": 7,
       "goalsAgainst": 10,
       "goalDifference": -3,
-      "form": null
-    },
-    {
-      "position": 9,
-      "team": {
-        "id": 76,
-        "name": "Wolverhampton Wanderers FC",
-        "shortName": "Wolverhampton",
-        "tla": "WOL",
-        "crest": "https://crests.football-data.org/76.png"
-      },
-      "playedGames": 6,
-      "won": 3,
-      "draw": 2,
-      "lost": 1,
-      "points": 11,
-      "goalsFor": 14,
-      "goalsAgainst": 10,
-      "goalDifference": 4,
       "form": null
     },
     {
@@ -251,20 +251,20 @@
     {
       "position": 14,
       "team": {
-        "id": 68,
-        "name": "Norwich City FC",
-        "shortName": "Norwich",
-        "tla": "NOR",
-        "crest": "https://crests.football-data.org/68.png"
+        "id": 60,
+        "name": "Bolton Wanderers FC",
+        "shortName": "Bolton",
+        "tla": "BOL",
+        "crest": "https://crests.football-data.org/60.png"
       },
-      "playedGames": 7,
+      "playedGames": 8,
       "won": 3,
-      "draw": 0,
+      "draw": 1,
       "lost": 4,
-      "points": 9,
-      "goalsFor": 13,
-      "goalsAgainst": 13,
-      "goalDifference": 0,
+      "points": 10,
+      "goalsFor": 11,
+      "goalsAgainst": 15,
+      "goalDifference": -4,
       "form": null
     },
     {
@@ -289,6 +289,25 @@
     {
       "position": 16,
       "team": {
+        "id": 68,
+        "name": "Norwich City FC",
+        "shortName": "Norwich",
+        "tla": "NOR",
+        "crest": "https://crests.football-data.org/68.png"
+      },
+      "playedGames": 8,
+      "won": 3,
+      "draw": 0,
+      "lost": 5,
+      "points": 9,
+      "goalsFor": 16,
+      "goalsAgainst": 17,
+      "goalDifference": -1,
+      "form": null
+    },
+    {
+      "position": 17,
+      "team": {
         "id": 356,
         "name": "Sheffield United FC",
         "shortName": "Sheffield Utd",
@@ -306,7 +325,7 @@
       "form": null
     },
     {
-      "position": 17,
+      "position": 18,
       "team": {
         "id": 325,
         "name": "Portsmouth FC",
@@ -325,7 +344,7 @@
       "form": null
     },
     {
-      "position": 18,
+      "position": 19,
       "team": {
         "id": 1126,
         "name": "Lincoln City FC",
@@ -344,7 +363,7 @@
       "form": null
     },
     {
-      "position": 19,
+      "position": 20,
       "team": {
         "id": 346,
         "name": "Watford FC",
@@ -363,7 +382,7 @@
       "form": null
     },
     {
-      "position": 20,
+      "position": 21,
       "team": {
         "id": 715,
         "name": "Cardiff City FC",
@@ -379,25 +398,6 @@
       "goalsFor": 10,
       "goalsAgainst": 12,
       "goalDifference": -2,
-      "form": null
-    },
-    {
-      "position": 21,
-      "team": {
-        "id": 60,
-        "name": "Bolton Wanderers FC",
-        "shortName": "Bolton",
-        "tla": "BOL",
-        "crest": "https://crests.football-data.org/60.png"
-      },
-      "playedGames": 7,
-      "won": 2,
-      "draw": 1,
-      "lost": 4,
-      "points": 7,
-      "goalsFor": 7,
-      "goalsAgainst": 12,
-      "goalDifference": -5,
       "form": null
     },
     {
@@ -459,6 +459,56 @@
     }
   ],
   "lastResults": [
+    {
+      "id": 561850,
+      "utcDate": "2026-09-20T12:30:00Z",
+      "status": "FINISHED",
+      "matchday": 8,
+      "homeTeam": {
+        "id": 68,
+        "name": "Norwich City FC",
+        "shortName": "Norwich",
+        "tla": "NOR",
+        "crest": "https://crests.football-data.org/68.png"
+      },
+      "awayTeam": {
+        "id": 60,
+        "name": "Bolton Wanderers FC",
+        "shortName": "Bolton",
+        "tla": "BOL",
+        "crest": "https://crests.football-data.org/60.png"
+      },
+      "score": {
+        "home": 3,
+        "away": 4,
+        "winner": "AWAY_TEAM"
+      }
+    },
+    {
+      "id": 561851,
+      "utcDate": "2026-09-20T11:00:00Z",
+      "status": "FINISHED",
+      "matchday": 8,
+      "homeTeam": {
+        "id": 76,
+        "name": "Wolverhampton Wanderers FC",
+        "shortName": "Wolverhampton",
+        "tla": "WOL",
+        "crest": "https://crests.football-data.org/76.png"
+      },
+      "awayTeam": {
+        "id": 74,
+        "name": "West Bromwich Albion FC",
+        "shortName": "West Brom",
+        "tla": "WBA",
+        "crest": "https://crests.football-data.org/74.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 0,
+        "winner": "HOME_TEAM"
+      }
+    },
     {
       "id": 561846,
       "utcDate": "2026-09-19T14:00:00Z",
@@ -2786,56 +2836,6 @@
     }
   ],
   "nextFixtures": [
-    {
-      "id": 561851,
-      "utcDate": "2026-09-20T11:00:00Z",
-      "status": "IN_PLAY",
-      "matchday": 8,
-      "homeTeam": {
-        "id": 76,
-        "name": "Wolverhampton Wanderers FC",
-        "shortName": "Wolverhampton",
-        "tla": "WOL",
-        "crest": "https://crests.football-data.org/76.png"
-      },
-      "awayTeam": {
-        "id": 74,
-        "name": "West Bromwich Albion FC",
-        "shortName": "West Brom",
-        "tla": "WBA",
-        "crest": "https://crests.football-data.org/74.png"
-      },
-      "score": {
-        "home": 1,
-        "away": 0,
-        "winner": "HOME_TEAM"
-      }
-    },
-    {
-      "id": 561850,
-      "utcDate": "2026-09-20T12:30:00Z",
-      "status": "IN_PLAY",
-      "matchday": 8,
-      "homeTeam": {
-        "id": 68,
-        "name": "Norwich City FC",
-        "shortName": "Norwich",
-        "tla": "NOR",
-        "crest": "https://crests.football-data.org/68.png"
-      },
-      "awayTeam": {
-        "id": 60,
-        "name": "Bolton Wanderers FC",
-        "shortName": "Bolton",
-        "tla": "BOL",
-        "crest": "https://crests.football-data.org/60.png"
-      },
-      "score": {
-        "home": 1,
-        "away": 1,
-        "winner": "DRAW"
-      }
-    },
     {
       "id": 561862,
       "utcDate": "2026-10-09T19:00:00Z",
