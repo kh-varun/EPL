@@ -1,31 +1,12 @@
 {
-  "fetchedAt": "2026-09-20T11:49:14.909Z",
+  "fetchedAt": "2026-09-20T15:24:20.297Z",
   "odds": {
-    "560582": {
-      "eventTicker": "KXEPLGAME-26SEP20BOULFC",
-      "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep20boulfc",
-      "home": {
-        "label": "Bournemouth",
-        "probability": 31,
-        "ticker": "KXEPLGAME-26SEP20BOULFC-BOU"
-      },
-      "away": {
-        "label": "Liverpool",
-        "probability": 45,
-        "ticker": "KXEPLGAME-26SEP20BOULFC-LFC"
-      },
-      "draw": {
-        "label": "Draw",
-        "probability": 26,
-        "ticker": "KXEPLGAME-26SEP20BOULFC-TIE"
-      }
-    },
     "560583": {
       "eventTicker": "KXEPLGAME-26SEP20FULMUN",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep20fulmun",
       "home": {
         "label": "Fulham",
-        "probability": 28,
+        "probability": 27,
         "ticker": "KXEPLGAME-26SEP20FULMUN-FUL"
       },
       "away": {
@@ -37,44 +18,6 @@
         "label": "Draw",
         "probability": 25,
         "ticker": "KXEPLGAME-26SEP20FULMUN-TIE"
-      }
-    },
-    "560585": {
-      "eventTicker": "KXEPLGAME-26SEP20LEECRY",
-      "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep20leecry",
-      "home": {
-        "label": "Leeds United",
-        "probability": 58,
-        "ticker": "KXEPLGAME-26SEP20LEECRY-LEE"
-      },
-      "away": {
-        "label": "Crystal Palace",
-        "probability": 19,
-        "ticker": "KXEPLGAME-26SEP20LEECRY-CRY"
-      },
-      "draw": {
-        "label": "Draw",
-        "probability": 24,
-        "ticker": "KXEPLGAME-26SEP20LEECRY-TIE"
-      }
-    },
-    "560590": {
-      "eventTicker": "KXEPLGAME-26SEP20MCISUN",
-      "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep20mcisun",
-      "home": {
-        "label": "Man City",
-        "probability": 74,
-        "ticker": "KXEPLGAME-26SEP20MCISUN-MCI"
-      },
-      "away": {
-        "label": "Sunderland",
-        "probability": 10,
-        "ticker": "KXEPLGAME-26SEP20MCISUN-SUN"
-      },
-      "draw": {
-        "label": "Draw",
-        "probability": 17,
-        "ticker": "KXEPLGAME-26SEP20MCISUN-TIE"
       }
     }
   }
