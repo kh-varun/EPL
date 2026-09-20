@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-20T06:39:02.063Z",
+  "fetchedAt": "2026-09-20T11:49:14.909Z",
   "odds": {
     "560582": {
       "eventTicker": "KXEPLGAME-26SEP20BOULFC",
@@ -49,7 +49,7 @@
       },
       "away": {
         "label": "Crystal Palace",
-        "probability": 20,
+        "probability": 19,
         "ticker": "KXEPLGAME-26SEP20LEECRY-CRY"
       },
       "draw": {
@@ -63,7 +63,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep20mcisun",
       "home": {
         "label": "Man City",
-        "probability": 75,
+        "probability": 74,
         "ticker": "KXEPLGAME-26SEP20MCISUN-MCI"
       },
       "away": {
