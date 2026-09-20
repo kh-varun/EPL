@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-20T01:22:38.301Z",
+  "fetchedAt": "2026-09-20T06:39:02.063Z",
   "odds": {
     "560582": {
       "eventTicker": "KXEPLGAME-26SEP20BOULFC",
@@ -44,7 +44,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26sep20leecry",
       "home": {
         "label": "Leeds United",
-        "probability": 57,
+        "probability": 58,
         "ticker": "KXEPLGAME-26SEP20LEECRY-LEE"
       },
       "away": {
@@ -73,7 +73,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 16,
+        "probability": 17,
         "ticker": "KXEPLGAME-26SEP20MCISUN-TIE"
       }
     }
