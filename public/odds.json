@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-19T23:18:58.554Z",
+  "fetchedAt": "2026-09-20T01:22:38.301Z",
   "odds": {
     "560582": {
       "eventTicker": "KXEPLGAME-26SEP20BOULFC",
@@ -54,7 +54,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 24,
         "ticker": "KXEPLGAME-26SEP20LEECRY-TIE"
       }
     },
