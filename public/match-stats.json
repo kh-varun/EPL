@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-20T16:57:54.475Z",
+  "fetchedAt": "2026-09-20T19:13:25.787Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -1859,6 +1859,55 @@
           "teamId": 64,
           "player": "Alexander Isak",
           "minute": 57,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560583": {
+      "utcDate": "2026-09-20T15:30:00Z",
+      "homeTeamId": 63,
+      "awayTeamId": 66,
+      "stats": {
+        "63": {
+          "shots": 12,
+          "shotsOnTarget": 6,
+          "possession": 43,
+          "passes": 451,
+          "passAccuracy": null,
+          "fouls": 9,
+          "corners": 3,
+          "offsides": 1,
+          "yellowCards": 3,
+          "redCards": 0
+        },
+        "66": {
+          "shots": 29,
+          "shotsOnTarget": 6,
+          "possession": 57,
+          "passes": 590,
+          "passAccuracy": null,
+          "fouls": 5,
+          "corners": 13,
+          "offsides": 2,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 63,
+          "player": "Lisandro Martínez",
+          "minute": 63,
+          "extraMinute": null,
+          "ownGoal": true,
+          "penalty": false
+        },
+        {
+          "teamId": 66,
+          "player": "Matheus Cunha",
+          "minute": 89,
           "extraMinute": null,
           "ownGoal": false,
           "penalty": false
