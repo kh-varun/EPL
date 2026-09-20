@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-20T07:50:25.003Z",
+  "fetchedAt": "2026-09-20T12:44:37.179Z",
   "standings": [
     {
       "position": 1,
@@ -2789,7 +2789,7 @@
     {
       "id": 561851,
       "utcDate": "2026-09-20T11:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "matchday": 8,
       "homeTeam": {
         "id": 76,
@@ -2806,15 +2806,15 @@
         "crest": "https://crests.football-data.org/74.png"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "winner": null
+        "home": 1,
+        "away": 0,
+        "winner": "HOME_TEAM"
       }
     },
     {
       "id": 561850,
       "utcDate": "2026-09-20T12:30:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "matchday": 8,
       "homeTeam": {
         "id": 68,
@@ -2831,9 +2831,9 @@
         "crest": "https://crests.football-data.org/60.png"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "winner": null
+        "home": 1,
+        "away": 1,
+        "winner": "DRAW"
       }
     },
     {
