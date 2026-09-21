@@ -1,4 +1,4 @@
-import { formatMatchDateTime } from "../lib/format.js";
+import { formatMatchDate, formatMatchDateTime } from "../lib/format.js";
 
 function TeamColumn({ team, position, onSelectTeam }) {
   return (
@@ -74,7 +74,9 @@ export default function MatchRow({ match, showScore, positions, onSelectTeam, on
             {LIVE_STATUS_LABELS[match.liveStatus] ?? match.liveStatus}
           </span>
         ) : (
-          !hasScore && <span>{formatMatchDateTime(match.utcDate)}</span>
+          <span>
+            {hasScore ? formatMatchDate(match.utcDate) : formatMatchDateTime(match.utcDate)}
+          </span>
         )}
       </div>
 

@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
 import {
+  formatMatchDate,
   formatMatchDateTime,
   formatRelativeUpdated,
   formatUpdatedTimestamp,
@@ -10,6 +11,12 @@ describe("formatMatchDateTime", () => {
   it("renders a Pacific-time date and time with a PT suffix", () => {
     // 2026-08-30T13:00:00Z is 06:00 PT (PDT, UTC-7) in late August.
     expect(formatMatchDateTime("2026-08-30T13:00:00Z")).toBe("Sun, Aug 30 · 6:00 AM PT");
+  });
+});
+
+describe("formatMatchDate", () => {
+  it("renders a Pacific-time date with no time or PT suffix", () => {
+    expect(formatMatchDate("2026-08-30T13:00:00Z")).toBe("Sun, Aug 30");
   });
 });
 
