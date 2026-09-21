@@ -27,19 +27,15 @@ const TABS = [
   { id: "headlines", label: "News", icon: NewspaperIcon },
 ];
 
-// The Standings, Fixtures, and Results tabs all show one competition's data
-// at a time behind a small sub-tab toggle, rather than stacking all three -
+// The Standings, Fixtures, and Results tabs both show one competition's
+// data at a time behind a small sub-tab toggle, rather than stacking both -
 // nextFixtures/lastResults hold every match for the season (see
-// ALL_MATCHES in scripts/lib/football-data.mjs), so stacking every
-// competition's full list in one scroll would mean a lot of scrolling
-// before ever reaching the others' data. "EFL" here means the Championship
-// specifically (competition code "ELC") - confirmed live via football-data.
-// org's /v4/competitions that it's the only English Football League
-// competition on this project's free plan, no League One/Two access.
+// ALL_MATCHES in scripts/lib/football-data.mjs), so stacking both
+// competitions' full lists in one scroll would mean a lot of scrolling
+// before ever reaching the second competition's matches.
 const MATCH_COMPETITIONS = [
   { id: "PL", label: "Premier League" },
   { id: "CL", label: "Champions League" },
-  { id: "ELC", label: "Championship" },
 ];
 
 // Overlays a match with its live score/status when one's in progress -
@@ -95,7 +91,6 @@ export default function App() {
   const [liveScores, setLiveScores] = useState(null);
   const [matchStats, setMatchStats] = useState(null);
   const [championsLeague, setChampionsLeague] = useState(null);
-  const [championship, setChampionship] = useState(null);
   const [error, setError] = useState(null);
   const [activeTab, setActiveTab] = useState("standings");
   const [standingsCompetition, setStandingsCompetition] = useState("PL");
@@ -110,13 +105,12 @@ export default function App() {
   const [justRefreshed, setJustRefreshed] = useState(false);
 
   // One lookup per competition id, used by the Standings/Fixtures/Results
-  // tabs instead of a hardcoded PL/CL ternary each - adding the
-  // Championship here (and any future competition) only means adding one
-  // more entry, not touching every tab's render logic. `live: true` marks
-  // the one competition with a live-score overlay, odds preview, and
-  // match-stats click handler (live-scores.json/odds.json/match-stats.json
-  // are all Premier-League-only by design - no live-score tracking or
-  // odds for Champions League or Championship yet).
+  // tabs instead of a hardcoded PL/CL ternary each - adding another
+  // competition here only means adding one more entry, not touching every
+  // tab's render logic. `live: true` marks the one competition with a
+  // live-score overlay, odds preview, and match-stats click handler
+  // (live-scores.json/odds.json/match-stats.json are all Premier-League-only
+  // by design - no live-score tracking or odds for Champions League yet).
   const competitions = useMemo(
     () => ({
       PL: {
@@ -137,17 +131,8 @@ export default function App() {
         teams: teamList(championsLeague?.standings),
         live: false,
       },
-      ELC: {
-        label: "Championship",
-        standings: championship?.standings,
-        nextFixtures: championship?.nextFixtures,
-        lastResults: championship?.lastResults,
-        positions: positionMap(championship?.standings),
-        teams: teamList(championship?.standings),
-        live: false,
-      },
     }),
-    [data, championsLeague, championship],
+    [data, championsLeague],
   );
 
   const refreshData = useCallback(
@@ -159,12 +144,11 @@ export default function App() {
     loadJson("lineups.json").then((json) => json && setLineups(json));
     loadJson("odds.json").then((json) => json && setOdds(json));
     loadJson("match-stats.json").then((json) => json && setMatchStats(json));
-    // Champions League/Championship data is far slower-moving than
-    // anything else here (no live-score tracking for either) - both ride
-    // along on this same 5-minute/visibility-change/manual refresh rather
-    // than needing their own polling layer.
+    // Champions League data is far slower-moving than anything else here
+    // (no live-score tracking for it) - it rides along on this same
+    // 5-minute/visibility-change/manual refresh rather than needing its own
+    // polling layer.
     loadJson("champions-league.json").then((json) => json && setChampionsLeague(json));
-    loadJson("championship.json").then((json) => json && setChampionship(json));
   }, []);
 
   // prevLiveIds needs to survive across renders (to compare "did the live
