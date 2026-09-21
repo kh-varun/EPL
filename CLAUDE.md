@@ -15,7 +15,6 @@ APIs via scheduled GitHub Actions workflows that commit static JSON into
 | `fetch-odds.mjs` | `public/odds.json` | `odds.yml` | Every 15 min | none (Kalshi is public) |
 | `fetch-live-scores.mjs` | `public/live-scores.json`, `public/match-stats.json` | `live-scores.yml` | Every 5 min | `FOOTBALL_DATA_TOKEN`; `API_FOOTBALL_KEY` (optional, for match stats) |
 | `fetch-champions-league.mjs` | `public/champions-league.json` | `champions-league.yml` | Every 30 min | `FOOTBALL_DATA_TOKEN` |
-| `fetch-championship.mjs` | `public/championship.json` | `championship.yml` | Every 30 min | `FOOTBALL_DATA_TOKEN` |
 
 All scripts degrade gracefully: a missing key or a failed call never
 crashes the run or corrupts existing JSON — it just leaves that piece of
@@ -512,41 +511,25 @@ cached per calendar date within a single run, since several of the ~10
 upcoming fixtures usually share a matchday and would otherwise repeat the
 same ESPN call.
 
-## Additional competitions: Champions League and Championship
+## Champions League tab
 
-Two more competitions alongside the Premier League, both deliberately
-scoped down for this first pass: `fetch-champions-league.mjs`/
-`fetch-championship.mjs` fetch only standings, next fixtures, and last
-results (`scripts/lib/football-data.mjs`'s `fetchStandings`/
-`fetchLastResults`/`fetchNextFixtures`, all three taking an optional
-`competitionCode` argument that defaults to `"PL"` so every existing
-Premier League call site keeps working unchanged) - no squads, lineups,
-match stats, odds, or live-score tracking for either. Both are covered by
-the same football-data.org free tier as the Premier League, so no new
-token is needed; `champions-league.yml`/`championship.yml` each run every
-30 minutes and, like every scheduled-write workflow, are in `deploy.yml`'s
-`workflow_run` trigger list.
-
-**"EFL" means the Championship specifically (competition code `"ELC"`),
-not the full EFL pyramid** - confirmed live via football-data.org's
-`/v4/competitions`, which lists `ELC` alongside `PL`/`CL` but no League
-One/League Two equivalent on this project's free plan. `fetch-championship.mjs`
-mirrors `fetch-champions-league.mjs` line for line (same shape, same
-`ALL_MATCHES` full-season fixtures/results from day one - unlike Champions
-League, which initially shipped with a 5/10-match cap before that was
-fixed live). Unlike Champions League, the Championship has **no standalone
-top-level tab** - it's only reachable via the Standings/Fixtures/Results
-toggle (see below). A sixth top-level tab would have made the tab bar
-noticeably more cramped on mobile (6 narrow icon+label columns in one row)
-for a competition that, unlike Champions League, doesn't carry any
-Premier League overlap worth a one-tap shortcut to - so this was a
-deliberate difference from the Champions League tab's precedent, not an
-oversight.
+A second competition alongside the Premier League, deliberately scoped
+down for this first pass: `fetch-champions-league.mjs` fetches only
+standings, next fixtures, and last results (`scripts/lib/football-data.mjs`'s
+`fetchStandings`/`fetchLastResults`/`fetchNextFixtures`, all three now
+taking an optional `competitionCode` argument that defaults to `"PL"` so
+every existing Premier League call site keeps working unchanged) - no
+squads, lineups, match stats, odds, or live-score tracking. UEFA
+competitions are covered by the same football-data.org free tier as the
+Premier League, so no new token is needed; `champions-league.yml` runs
+every 30 minutes (league-phase matchdays are roughly two weeks apart, far
+slower-moving than anything else here) and, like every scheduled-write
+workflow, is in `deploy.yml`'s `workflow_run` trigger list.
 
 The "UCL" tab (`src/components/ChampionsLeague.jsx`) originally combined
 table, next fixtures, and recent results in one scroll, but the fixtures/
 results were pulled back out once the Premier League tabs needed to show
-all competitions together (see "Standings/Fixtures/Results: three
+both competitions together (see "Standings/Fixtures/Results: two
 competitions, one tab each" below) - `ChampionsLeague.jsx` now renders only
 its `StandingsTable`,
 to avoid showing the same Champions League fixtures/results twice.
@@ -573,53 +556,48 @@ to avoid showing the same Champions League fixtures/results twice.
   Madrid entry - clicking it opens `TeamDetail` cleanly with no console
   error, just the existing "not available" messaging.
 
-### Standings/Fixtures/Results: three competitions, one tab each
+### Standings/Fixtures/Results: two competitions, one tab each
 
-Rather than a separate sub-tab per competition for standings, fixtures,
-and results, the existing **Table**, **Fixtures**, and **Results** tabs in
-`App.jsx` each show one competition's data at a time behind a small
-segmented sub-tab toggle ("Premier League" / "Champions League" /
-"Championship") - `standingsCompetition`/`fixturesCompetition`/
-`resultsCompetition` state in `App.jsx`, each independent so switching one
-tab's competition doesn't affect the others. The Fixtures/Results tabs'
-data holds every match for the season rather than a handful of recent/
-upcoming entries (see `ALL_MATCHES` below), so stacking every
-competition's full list in one scroll would mean a lot of scrolling before
-ever reaching the others' data - a toggle keeps only one list on screen at
-a time.
+Rather than a second UCL-only sub-tab for standings, a third for fixtures,
+and a fourth for results, the existing **Table**, **Fixtures**, and
+**Results** tabs in `App.jsx` each show one competition's data at a time
+behind a small segmented sub-tab toggle ("Premier League" / "Champions
+League") - `standingsCompetition`/`fixturesCompetition`/`resultsCompetition`
+state in `App.jsx`, each independent so switching one tab's competition
+doesn't affect the others. The Fixtures/Results tabs' data holds every
+match for the season rather than a handful of recent/upcoming entries (see
+`ALL_MATCHES` below), so stacking both competitions' full lists in one
+scroll would mean a lot of scrolling before ever reaching the second
+competition's matches - a toggle keeps only one list on screen at a time.
 
 The toggle itself is `<CompetitionToggle options value onChange>`
 (`src/components/CompetitionToggle.jsx`), shared by all three tabs rather
 than each carrying its own copy of the segmented-control markup -
 `options` is the same `MATCH_COMPETITIONS` array (`[{id: "PL", ...}, {id:
-"CL", ...}, {id: "ELC", ...}]`) for all three. Its `grid-cols-N` is
-computed inline from `options.length` rather than a fixed Tailwind class -
-same fix `TabBar` already needed for its own tab count, done proactively
-here instead of shipping broken and being discovered live. The Fixtures/
-Results tabs are still built from the same `MatchRow` component, the
-Table tab from the same `StandingsTable` used everywhere else, and all
-three keep the top-level tab count at 5 - the sub-tab toggle lives inside
-each tab's own content, not as a new top-level tab. The Table tab's
-Champions League/Championship options pass `showZones={false}` to
-`StandingsTable`, same as the standalone "UCL" tab - the Premier League's
-Champions League/Europa/relegation zone coloring is meaningless on either
-competition's own table. This does make the standalone "UCL" tab's content
-fully reachable from the Table tab too (pick "Champions League" there) -
-the UCL tab is kept anyway as a one-tap shortcut, since removing it wasn't
-asked for and the tab count already has room at 5. The Championship gets
-no equivalent standalone tab (see "Additional competitions" above).
+"CL", ...}]`) for all three. Its `grid-cols-N` is computed inline from
+`options.length` rather than a fixed Tailwind class - same fix `TabBar`
+already needed for its own tab count, kept even at two options since a
+hardcoded class would only break silently again the next time a
+competition is added or removed. The Fixtures/Results tabs are still built
+from the same `MatchRow` component, the Table tab from the same
+`StandingsTable` used everywhere else, and all three keep the top-level
+tab count at 5 - the sub-tab toggle lives inside each tab's own content,
+not as a new top-level tab. The Table tab's Champions League option passes
+`showZones={false}` to `StandingsTable`, same as the standalone "UCL" tab
+below - the Premier League's Champions League/Europa/relegation zone
+coloring is meaningless on the Champions League's own table. This does
+make the standalone "UCL" tab's content fully reachable from the Table tab
+too now (pick "Champions League" there) - the UCL tab is kept anyway as a
+one-tap shortcut straight to that table, since removing it wasn't asked
+for and the tab count already has room at 5.
 
 All three tabs read from one `competitions` lookup (`useMemo`'d in
-`App.jsx`, keyed by `"PL"`/`"CL"`/`"ELC"`) instead of a hardcoded PL/CL/ELC
-ternary chain in each tab - each entry bundles a competition's `label`,
-`standings`, `nextFixtures`, `lastResults`, a `positions` map
-(`positionMap(standings)`), a `teams` list (`teamList(standings)`), and a
-`live` flag. Adding a competition here only ever means one more entry, not
-new branches in three different tabs' render logic - this replaced what
-had been separate `positionByTeamId`/`clPositionByTeamId`/`plTeams`/
-`clTeams` variables and PL-vs-CL ternaries once Championship (a third
-competition) made "just add an `: else` branch" the wrong shape of change
-to keep making.
+`App.jsx`, keyed by `"PL"`/`"CL"`) instead of a hardcoded PL/CL ternary in
+each tab - each entry bundles a competition's `label`, `standings`,
+`nextFixtures`, `lastResults`, a `positions` map (`positionMap(standings)`),
+a `teams` list (`teamList(standings)`), and a `live` flag. Adding a
+competition here only ever means one more entry, not new branches in three
+different tabs' render logic.
 
 - Each competition's `positions` map is kept separate from the others -
   the tables are unrelated, and mixing them would show a team's rank in
@@ -628,27 +606,25 @@ to keep making.
 - `live: true` (Premier League only) is the one competition with a
   live-score overlay, odds preview, and match-stats click handler -
   `live-scores.json`/`odds.json`/`match-stats.json` are all
-  Premier-League-only by design (see "Additional competitions" above: no
-  live-score tracking or odds for Champions League or the Championship
-  yet), so the Fixtures/Results tabs branch on `activeCompetition.live`
-  rather than repeating a PL-specific `withLiveScore`/odds/`onSelectMatch`
-  block for every non-live competition.
-- Team clicks in any competition's sub-tab go to the same
+  Premier-League-only by design (see "Champions League tab" above: no
+  live-score tracking or odds for this competition yet), so the
+  Fixtures/Results tabs branch on `activeCompetition.live` rather than
+  repeating a PL-specific `withLiveScore`/odds/`onSelectMatch` block for
+  the other competition.
+- Team clicks in either competition's sub-tab go to the same
   `setSelectedTeam`/`TeamDetail` flow as everywhere else on the dashboard.
 
-**Team filter.** All three data tabs also render a `<TeamFilter teams
-value onChange>` (`src/components/TeamFilter.jsx`, a plain native
-`<select>` - cheap, and gives mobile browsers their native picker for
-free) right below the competition toggle (Fixtures/Results only - the
-Table tab has no team filter, since a standings table already lists every
-team), narrowing the visible list down to one team's matches (home or
-away) via `fixturesTeamId`/`resultsTeamId` state and a shared
+**Team filter.** Both tabs also render a `<TeamFilter teams value onChange>`
+(`src/components/TeamFilter.jsx`, a plain native `<select>` - cheap, and
+gives mobile browsers their native picker for free) right below the
+competition toggle, narrowing the visible list down to one team's matches
+(home or away) via `fixturesTeamId`/`resultsTeamId` state and a shared
 `filterByTeam(matches, teamId)` helper in `App.jsx` - `null` means "All
 Teams" and passes the list through unfiltered. `teams` comes from the
 active entry in the `competitions` lookup above. Both the competition
 toggle's `onChange` handlers reset their tab's team filter back to `null`
 at the same time they switch competition, since a team id selected under
-one competition is essentially never valid under another (different team
+one competition is essentially never valid under the other (different team
 pool) and would otherwise silently filter the new competition's list down
 to nothing with no explanation. The empty-state message also distinguishes
 a genuinely empty list ("No upcoming fixtures.") from a team filter that
@@ -663,12 +639,11 @@ and 10 respectively, at every call site) even though their underlying
 requests (`/competitions/{code}/matches?status=FINISHED` and
 `?status=SCHEDULED,IN_PLAY,PAUSED`) already return every matching match for
 the season - the truncation was purely a client-side `.slice(0, limit)`.
-The Fixtures/Results tabs now need the full lists, so every call site of
-each (`fetch.mjs`, `fetch-live-scores.mjs`'s `refreshCoreData`,
-`fetch-champions-league.mjs`, `fetch-championship.mjs`) passes the
-exported `ALL_MATCHES` (`Infinity`) constant instead of `5`/`10` -
-`slice(0, Infinity)` is just the identity, so no change was needed inside
-either function itself. `findMatchForBackfill` in `fetch-live-scores.mjs`
+The Fixtures/Results tabs now need the full lists, so all three call sites
+of each (`fetch.mjs`, `fetch-live-scores.mjs`'s `refreshCoreData`,
+`fetch-champions-league.mjs`) pass the exported `ALL_MATCHES` (`Infinity`)
+constant instead of `5`/`10` - `slice(0, Infinity)` is just the identity,
+so no change was needed inside either function itself. `findMatchForBackfill` in `fetch-live-scores.mjs`
 (used by the `backfill_match_id` retry knob) now finds almost any past
 match directly in `data.lastResults` as a result - its match-stats.json/
 `data.standings` fallback path is kept as a belt-and-suspenders case (e.g.
@@ -695,11 +670,11 @@ fifth tab needed it to size columns dynamically instead
 style) - keep this in mind if a tab is ever added or removed again, since
 a hardcoded `grid-cols-N` silently breaks instead of erroring.
 
-## All seven fetch workflows retry their push
+## All six fetch workflows retry their push
 
 `update.yml`, `lineups.yml`, `odds.yml`, `history.yml`, `live-scores.yml`,
-`champions-league.yml`, and `championship.yml` each fetch, commit, and
-`git push` straight to `main` independently. Since several of these fire every 10-15 minutes and
+and `champions-league.yml` each fetch, commit, and `git push` straight to
+`main` independently. Since several of these fire every 10-15 minutes and
 `update.yml`'s full squad-fetch loop alone takes several minutes, two of
 them landing at once is a real, confirmed-live race - not theoretical:
 `update.yml` fetched successfully, committed locally, then got its push
@@ -739,7 +714,7 @@ its own 10-minute window in one commit.
 ## Scheduled-workflow commits never trigger a redeploy on their own
 
 `deploy.yml` builds the site and publishes `dist/` to GitHub Pages. A push
-made with the default `GITHUB_TOKEN` - which is how every one of the seven
+made with the default `GITHUB_TOKEN` - which is how every one of the six
 scheduled fetch workflows above commits its data - does **not** fire
 another workflow's `on: push` trigger (a deliberate GitHub restriction to
 prevent infinite workflow-triggering loops). Confirmed live: every prior
@@ -752,7 +727,7 @@ in this project's life (e.g. an out-of-date Arsenal squad) even though
 `update.yml` itself was running and succeeding on schedule.
 
 Fixed by adding a `workflow_run` trigger to `deploy.yml` that fires on
-completion of each of the seven fetch workflows (matched by their `name:`
+completion of each of the six fetch workflows (matched by their `name:`
 field, not filename) - `workflow_run` listens for the upstream run's
 completion rather than re-triggering off its push, so it isn't subject to
 the same `GITHUB_TOKEN` restriction. Keep every new scheduled-write
@@ -806,7 +781,7 @@ Two separate suites, run separately on purpose:
   already-finished matches stuck there as still upcoming (see "Live scores"
   above) were both found exactly this way. **Deliberately not part of the
   PR gate** - it depends on the live state of `main`'s data files, which
-  changes on its own via the seven scheduled fetch workflows and has nothing
+  changes on its own via the six scheduled fetch workflows and has nothing
   to do with any given PR's diff. Instead it runs on its own schedule via
   `.github/workflows/data-qa.yml` (every 6 hours, plus `workflow_dispatch`),
   so a bad data state surfaces as a red scheduled workflow run rather than
@@ -855,3 +830,10 @@ branching, not just before pushing.
   Fixtures opens `MatchOddsDialog`, Results opens `MatchStatsDialog` - a
   live match in either tab has `onSelectMatch` set to `undefined` instead
   (odds don't apply mid-match, and stats aren't final yet).
+- `MatchRow`'s header row shows the match date on the right for both an
+  upcoming fixture and a finished result - `formatMatchDateTime` (date +
+  kickoff time) for the former, `formatMatchDate` (date only, no time -
+  the score already answers "when" better than a kickoff time would) for
+  the latter. Previously that slot was blank for a finished match
+  (`!hasScore &&` suppressed it entirely), which meant the Results tab was
+  the one place on the dashboard that didn't say when a match happened.

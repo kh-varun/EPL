@@ -18,6 +18,12 @@ export function formatMatchDateTime(utcDate) {
   return `${dateFormatter.format(d)} · ${timeFormatter.format(d)} PT`;
 }
 
+// Date only, no kickoff time - used for a finished match, where the score
+// already answers "when did this happen" better than a time-of-day would.
+export function formatMatchDate(utcDate) {
+  return dateFormatter.format(new Date(utcDate));
+}
+
 export function formatRelativeUpdated(isoDate) {
   const then = new Date(isoDate);
   const diffMs = Date.now() - then.getTime();

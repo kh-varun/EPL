@@ -23,7 +23,6 @@ on:
       - "Update last-season history"
       - "Update live scores"
       - "Update Champions League data"
-      - "Update Championship data"
     types: [completed]
   workflow_dispatch: {}
 
