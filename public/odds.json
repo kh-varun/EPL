@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-26T21:22:23.045Z",
+  "fetchedAt": "2026-09-26T23:43:59.767Z",
   "odds": {
     "560592": {
       "eventTicker": "KXEPLGAME-26OCT10SUNBRI",
@@ -25,7 +25,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct10arslee",
       "home": {
         "label": "Arsenal",
-        "probability": 71,
+        "probability": 70,
         "ticker": "KXEPLGAME-26OCT10ARSLEE-ARS"
       },
       "away": {
@@ -35,7 +35,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 19,
+        "probability": 16,
         "ticker": "KXEPLGAME-26OCT10ARSLEE-TIE"
       }
     },
@@ -82,7 +82,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct10muntot",
       "home": {
         "label": "Man United",
-        "probability": 58,
+        "probability": 57,
         "ticker": "KXEPLGAME-26OCT10MUNTOT-MUN"
       },
       "away": {
