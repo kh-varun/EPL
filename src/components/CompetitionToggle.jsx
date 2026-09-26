@@ -7,7 +7,7 @@
 export default function CompetitionToggle({ options, value, onChange }) {
   return (
     <div
-      className="grid gap-1 rounded-xl bg-epl-surface2 p-1"
+      className="grid gap-1 rounded-xl bg-black/25 p-1 ring-1 ring-inset ring-white/10"
       style={{ gridTemplateColumns: `repeat(${options.length}, minmax(0, 1fr))` }}
     >
       {options.map((option) => {
@@ -18,8 +18,10 @@ export default function CompetitionToggle({ options, value, onChange }) {
             type="button"
             onClick={() => onChange(option.id)}
             className={
-              "rounded-lg py-2 text-xs font-bold uppercase tracking-wide transition-all " +
-              (isActive ? "bg-epl-cyan text-epl-purple shadow-md" : "text-white/60 hover:text-white")
+              "rounded-lg py-2 text-xs font-bold uppercase tracking-wide transition-all duration-200 " +
+              (isActive
+                ? "bg-gradient-to-r from-epl-cyan to-sky-300 text-epl-purple shadow-glow-cyan"
+                : "text-white/55 hover:text-white hover:bg-white/5")
             }
           >
             {option.label}

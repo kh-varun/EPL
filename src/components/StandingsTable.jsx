@@ -39,59 +39,75 @@ export default function StandingsTable({ standings, onSelectTeam, showZones = tr
           <tbody>
             {standings.map((row) => {
               const isHighlighted = row.team.tla === HIGHLIGHT_TLA;
-              const rowBg = isHighlighted ? "bg-epl-cyan/10" : "bg-epl-surface";
+              // Sticky cells need an opaque background to occlude the row's
+              // scrolling cells sliding beneath them; group-hover lightens
+              // the whole row together (the highlighted row keeps its cyan
+              // tint instead).
+              const rowBg = isHighlighted
+                ? "bg-epl-cyan/10"
+                : "bg-epl-surface group-hover:bg-epl-surface2";
               return (
-                <tr key={row.team.id} className={"border-t border-white/10 " + rowBg}>
+                <tr
+                  key={row.team.id}
+                  className="group border-t border-white/5 transition-colors"
+                >
                   <td className={"sticky left-0 " + rowBg}>
-                    <div className={"h-full w-1.5 " + (showZones ? zoneColor(row.position) : "")} />
+                    <div
+                      className={
+                        "mx-auto h-5 w-1 rounded-full " +
+                        (showZones ? zoneColor(row.position) : "")
+                      }
+                    />
                   </td>
-                  <td className={"py-2 pr-2 text-white/50 tabular-nums sticky left-1.5 " + rowBg}>
+                  <td className={"py-2.5 pr-2 text-white/45 tabular-nums sticky left-1.5 " + rowBg}>
                     {row.position}
                   </td>
-                  <td className={"py-2 pr-3 sticky left-[26px] " + rowBg}>
+                  <td className={"py-2.5 pr-3 sticky left-[26px] " + rowBg}>
                     <button
                       type="button"
                       onClick={() => onSelectTeam?.(row.team)}
                       className="flex items-center gap-2 text-left"
                     >
-                      <img
-                        src={row.team.crest}
-                        alt=""
-                        className="h-6 w-6 shrink-0"
-                        loading="lazy"
-                      />
+                      <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-white/5 ring-1 ring-white/10">
+                        <img
+                          src={row.team.crest}
+                          alt=""
+                          className="h-5 w-5"
+                          loading="lazy"
+                        />
+                      </span>
                       <span
                         className={
-                          "underline decoration-white/20 whitespace-nowrap text-white " +
-                          (isHighlighted ? "font-bold text-epl-cyan" : "")
+                          "whitespace-nowrap text-white transition-colors group-hover:text-epl-cyan " +
+                          (isHighlighted ? "font-bold text-epl-cyan" : "font-medium")
                         }
                       >
                         {row.team.shortName}
                       </span>
                     </button>
                   </td>
-                  <td className="py-2 px-1.5 text-center tabular-nums text-white/80">
+                  <td className="py-2.5 px-1.5 text-center tabular-nums text-white/80">
                     {row.playedGames}
                   </td>
-                  <td className="py-2 px-1.5 text-center tabular-nums text-white/80">
+                  <td className="py-2.5 px-1.5 text-center tabular-nums text-emerald-300/90">
                     {row.won}
                   </td>
-                  <td className="py-2 px-1.5 text-center tabular-nums text-white/80">
+                  <td className="py-2.5 px-1.5 text-center tabular-nums text-white/60">
                     {row.draw}
                   </td>
-                  <td className="py-2 px-1.5 text-center tabular-nums text-white/80">
+                  <td className="py-2.5 px-1.5 text-center tabular-nums text-rose-300/80">
                     {row.lost}
                   </td>
-                  <td className="py-2 px-1.5 text-center tabular-nums text-white/80">
+                  <td className="py-2.5 px-1.5 text-center tabular-nums text-white/80">
                     {row.goalsFor}
                   </td>
-                  <td className="py-2 px-1.5 text-center tabular-nums text-white/80">
+                  <td className="py-2.5 px-1.5 text-center tabular-nums text-white/80">
                     {row.goalsAgainst}
                   </td>
-                  <td className="py-2 px-1.5 text-center tabular-nums text-white/80">
+                  <td className="py-2.5 px-1.5 text-center tabular-nums text-white/70">
                     {row.goalDifference > 0 ? `+${row.goalDifference}` : row.goalDifference}
                   </td>
-                  <td className="py-2 pl-1.5 text-center font-extrabold tabular-nums text-white">
+                  <td className="py-2.5 pl-1.5 text-center font-black tabular-nums text-white">
                     {row.points}
                   </td>
                 </tr>
@@ -102,15 +118,15 @@ export default function StandingsTable({ standings, onSelectTeam, showZones = tr
       </div>
 
       {showZones && (
-        <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-white/50">
-          <span className="inline-flex items-center gap-1">
-            <span className="h-2 w-2 rounded-sm bg-emerald-500" /> Champions League
+        <div className="mt-3.5 flex flex-wrap gap-x-4 gap-y-1.5 text-[11px] text-white/50">
+          <span className="inline-flex items-center gap-1.5">
+            <span className="h-2 w-2 rounded-full bg-emerald-500" /> Champions League
           </span>
-          <span className="inline-flex items-center gap-1">
-            <span className="h-2 w-2 rounded-sm bg-sky-400" /> Europa/Conference
+          <span className="inline-flex items-center gap-1.5">
+            <span className="h-2 w-2 rounded-full bg-sky-400" /> Europa/Conference
           </span>
-          <span className="inline-flex items-center gap-1">
-            <span className="h-2 w-2 rounded-sm bg-rose-500" /> Relegation
+          <span className="inline-flex items-center gap-1.5">
+            <span className="h-2 w-2 rounded-full bg-rose-500" /> Relegation
           </span>
         </div>
       )}

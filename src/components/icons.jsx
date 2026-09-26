@@ -7,6 +7,16 @@ const base = {
   viewBox: "0 0 24 24",
 };
 
+export function BallIcon(props) {
+  return (
+    <svg {...base} {...props}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 7.5l4.3 3.1-1.6 5H9.3l-1.6-5L12 7.5Z" />
+      <path d="M12 3v4.5M4.7 9.4l3.7 2.6M19.3 9.4l-3.7 2.6M7.7 20l1.6-4.4M16.3 20l-1.6-4.4" />
+    </svg>
+  );
+}
+
 export function TrophyIcon(props) {
   return (
     <svg {...base} {...props}>

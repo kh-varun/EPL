@@ -36,8 +36,8 @@ export default function Headlines({ headlines, standings }) {
             className={
               "shrink-0 rounded-full px-3 py-1.5 text-xs font-bold whitespace-nowrap transition-colors " +
               (filterTeamId === null
-                ? "bg-epl-magenta text-white"
-                : "bg-white/10 text-white/70")
+                ? "bg-epl-magenta text-white shadow-glow-magenta"
+                : "bg-white/10 text-white/70 hover:bg-white/15 hover:text-white")
             }
           >
             All
@@ -50,8 +50,8 @@ export default function Headlines({ headlines, standings }) {
               className={
                 "shrink-0 flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-bold whitespace-nowrap transition-colors " +
                 (filterTeamId === team.id
-                  ? "bg-epl-magenta text-white"
-                  : "bg-white/10 text-white/70")
+                  ? "bg-epl-magenta text-white shadow-glow-magenta"
+                  : "bg-white/10 text-white/70 hover:bg-white/15 hover:text-white")
               }
             >
               <img src={team.crest} alt="" className="h-4 w-4" loading="lazy" />
@@ -71,7 +71,7 @@ export default function Headlines({ headlines, standings }) {
                 href={item.link}
                 target="_blank"
                 rel="noreferrer"
-                className="flex gap-3 rounded-xl bg-epl-surface2 ring-1 ring-white/10 p-2.5 hover:ring-epl-magenta/40 transition-shadow"
+                className="group flex gap-3 rounded-2xl bg-epl-card ring-1 ring-white/10 p-2.5 transition-all duration-200 hover:-translate-y-0.5 hover:ring-epl-magenta/50 hover:shadow-card"
               >
                 {item.image ? (
                   <img
@@ -95,7 +95,7 @@ export default function Headlines({ headlines, standings }) {
                   >
                     {item.source}
                   </span>
-                  <span className="text-sm font-semibold leading-snug line-clamp-3 text-white">
+                  <span className="text-sm font-semibold leading-snug line-clamp-3 text-white transition-colors group-hover:text-white/90">
                     {item.title}
                   </span>
                   {item.pubDate && (

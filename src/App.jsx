@@ -15,6 +15,7 @@ import {
   CalendarIcon,
   WhistleIcon,
   NewspaperIcon,
+  BallIcon,
 } from "./components/icons.jsx";
 
 const TABS = [
@@ -294,17 +295,35 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-epl-bg pb-10">
-      <header className="bg-epl-gradient text-white px-4 pt-4 pb-3 shadow-lg">
-        <div className="max-w-2xl mx-auto space-y-3">
+      <header className="relative overflow-hidden bg-epl-gradient text-white px-4 pt-5 pb-4 shadow-xl ring-1 ring-white/5">
+        {/* Decorative light bloom + fine bottom accent line, purely
+            atmospheric - gives the header a lit, layered feel instead of a
+            single flat gradient wash. */}
+        <div className="pointer-events-none absolute -top-24 -right-16 h-56 w-56 rounded-full bg-epl-magenta/25 blur-3xl" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-epl-cyan/40 to-transparent" />
+
+        <div className="relative max-w-2xl mx-auto space-y-3.5">
           <div>
-            <h1 className="text-xl font-extrabold tracking-tight">Premier League 2026-27</h1>
+            <div className="flex items-center gap-2.5">
+              <span className="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-white/95 shadow-glow-magenta">
+                <BallIcon className="h-4 w-4 text-epl-purple" strokeWidth={2.2} />
+              </span>
+              <h1 className="text-2xl font-black tracking-tight leading-none">
+                Premier League
+              </h1>
+              <span className="ml-0.5 rounded-md bg-white/10 px-1.5 py-0.5 text-[11px] font-extrabold tracking-wide text-epl-cyan ring-1 ring-inset ring-epl-cyan/30">
+                26/27
+              </span>
+            </div>
             {data && (
-              <LastUpdated
-                fetchedAt={data.fetchedAt}
-                onRefresh={handleManualRefresh}
-                isRefreshing={isRefreshing}
-                justRefreshed={justRefreshed}
-              />
+              <div className="mt-2">
+                <LastUpdated
+                  fetchedAt={data.fetchedAt}
+                  onRefresh={handleManualRefresh}
+                  isRefreshing={isRefreshing}
+                  justRefreshed={justRefreshed}
+                />
+              </div>
             )}
           </div>
 
@@ -319,6 +338,9 @@ export default function App() {
           </div>
         )}
 
+        {/* Keyed on activeTab so the content block remounts and replays its
+            fade-up entrance each time the user switches tabs. */}
+        <div key={activeTab} className="animate-fade-up space-y-4">
         {activeTab === "standings" && (
           <div className="space-y-4">
             <CompetitionToggle
@@ -453,6 +475,7 @@ export default function App() {
             <Headlines headlines={data?.headlines} standings={data?.standings} />
           </Section>
         )}
+        </div>
       </main>
 
       {selectedMatch && (
