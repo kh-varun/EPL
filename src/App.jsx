@@ -5,7 +5,6 @@ import TabBar from "./components/TabBar.jsx";
 import StandingsTable from "./components/StandingsTable.jsx";
 import MatchRow from "./components/MatchRow.jsx";
 import Headlines from "./components/Headlines.jsx";
-import ChampionsLeague from "./components/ChampionsLeague.jsx";
 import CompetitionToggle from "./components/CompetitionToggle.jsx";
 import TeamFilter from "./components/TeamFilter.jsx";
 import TeamDetail from "./components/TeamDetail.jsx";
@@ -16,14 +15,12 @@ import {
   CalendarIcon,
   WhistleIcon,
   NewspaperIcon,
-  StarIcon,
 } from "./components/icons.jsx";
 
 const TABS = [
   { id: "standings", label: "Table", icon: TrophyIcon },
   { id: "fixtures", label: "Fixtures", icon: CalendarIcon },
   { id: "results", label: "Results", icon: WhistleIcon },
-  { id: "champions-league", label: "UCL", icon: StarIcon },
   { id: "headlines", label: "News", icon: NewspaperIcon },
 ];
 
@@ -449,10 +446,6 @@ export default function App() {
               )}
             </Section>
           </div>
-        )}
-
-        {activeTab === "champions-league" && (
-          <ChampionsLeague data={championsLeague} onSelectTeam={setSelectedTeam} />
         )}
 
         {activeTab === "headlines" && (

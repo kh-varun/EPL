@@ -526,35 +526,37 @@ every 30 minutes (league-phase matchdays are roughly two weeks apart, far
 slower-moving than anything else here) and, like every scheduled-write
 workflow, is in `deploy.yml`'s `workflow_run` trigger list.
 
-The "UCL" tab (`src/components/ChampionsLeague.jsx`) originally combined
-table, next fixtures, and recent results in one scroll, but the fixtures/
-results were pulled back out once the Premier League tabs needed to show
-both competitions together (see "Standings/Fixtures/Results: two
-competitions, one tab each" below) - `ChampionsLeague.jsx` now renders only
-its `StandingsTable`,
-to avoid showing the same Champions League fixtures/results twice.
+There is no longer a dedicated "UCL" top-level tab. It once rendered a
+standalone `src/components/ChampionsLeague.jsx` (originally table + fixtures
++ results in one scroll, later trimmed to just its `StandingsTable`), but
+became fully redundant once the Table/Fixtures/Results tabs each grew a
+Premier League / Champions League sub-tab toggle (see
+"Standings/Fixtures/Results: two competitions, one tab each" below): the
+Champions League standings, fixtures, and results are all reachable there
+by picking "Champions League" on the relevant tab. The tab, its
+`ChampionsLeague.jsx` component, and the now-unused `StarIcon` were all
+removed; `championsLeague` state (fed by `champions-league.json`) stays in
+`App.jsx` because the `competitions` lookup still serves the CL sub-tabs.
 
 - `StandingsTable` takes a `showZones` prop (default `true`, unchanged for
   the Premier League) - the Champions League/Europa/relegation zone
   coloring and legend are Premier-League-specific and actively misleading
   on the Champions League's own table (its teams are, by definition,
-  already in the Champions League), so the Champions League tab passes
-  `showZones={false}` to suppress both. Confirmed live in a local
-  screenshot before landing - this would otherwise have shipped as a
+  already in the Champions League), so the Table tab's Champions League
+  sub-tab passes `showZones={false}` to suppress both. Confirmed live in a
+  local screenshot before landing - this would otherwise have shipped as a
   visibly wrong legend, not something a code review would catch.
 - `StandingsTable` and `MatchRow`'s `TeamColumn` both call `onSelectTeam?.()`
   instead of assuming it's always provided, since a team click has nowhere
-  useful to go without one. Even so, the Champions League tab **does** wire
+  useful to go without one. The Champions League sub-tabs **do** wire
   `onSelectTeam` through to the same `TeamDetail` as the Premier League
-  tabs - most Champions League clubs aren't Premier League clubs and so
+  ones - most Champions League clubs aren't Premier League clubs and so
   have no squad data of ours, but `TeamDetail` already renders that
   gracefully ("Squad data not available" instead of a crash or a blank
   formation), and it's the right behavior for the many Champions League
   clubs that *are* also Premier League ones (Arsenal, Man City, ...):
-  clicking them here shows the same real squad as clicking them from the
-  Table/Fixtures/Results tabs would. Verified locally with a mock Real
-  Madrid entry - clicking it opens `TeamDetail` cleanly with no console
-  error, just the existing "not available" messaging.
+  clicking them shows the same real squad as clicking them from the
+  Premier League lists would.
 
 ### Standings/Fixtures/Results: two competitions, one tab each
 
@@ -580,16 +582,14 @@ already needed for its own tab count, kept even at two options since a
 hardcoded class would only break silently again the next time a
 competition is added or removed. The Fixtures/Results tabs are still built
 from the same `MatchRow` component, the Table tab from the same
-`StandingsTable` used everywhere else, and all three keep the top-level
-tab count at 5 - the sub-tab toggle lives inside each tab's own content,
-not as a new top-level tab. The Table tab's Champions League option passes
-`showZones={false}` to `StandingsTable`, same as the standalone "UCL" tab
-below - the Premier League's Champions League/Europa/relegation zone
-coloring is meaningless on the Champions League's own table. This does
-make the standalone "UCL" tab's content fully reachable from the Table tab
-too now (pick "Champions League" there) - the UCL tab is kept anyway as a
-one-tap shortcut straight to that table, since removing it wasn't asked
-for and the tab count already has room at 5.
+`StandingsTable` used everywhere else. The top-level tab count is now 4
+(Table, Fixtures, Results, News) - the sub-tab toggle lives inside each
+tab's own content, not as a new top-level tab. The Table tab's Champions
+League option passes `showZones={false}` to `StandingsTable` - the Premier
+League's Champions League/Europa/relegation zone coloring is meaningless on
+the Champions League's own table. Because these sub-tabs make the Champions
+League table, fixtures, and results all reachable, the former standalone
+"UCL" tab was fully redundant and has been removed.
 
 All three tabs read from one `competitions` lookup (`useMemo`'d in
 `App.jsx`, keyed by `"PL"`/`"CL"`) instead of a hardcoded PL/CL ternary in
