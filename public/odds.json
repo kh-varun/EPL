@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-27T20:50:59.236Z",
+  "fetchedAt": "2026-09-27T23:37:30.739Z",
   "odds": {
     "560592": {
       "eventTicker": "KXEPLGAME-26OCT10SUNBRI",
@@ -11,7 +11,7 @@
       },
       "away": {
         "label": "Brighton Hove",
-        "probability": 41,
+        "probability": 43,
         "ticker": "KXEPLGAME-26OCT10SUNBRI-BRI"
       },
       "draw": {
@@ -25,7 +25,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct10arslee",
       "home": {
         "label": "Arsenal",
-        "probability": 72,
+        "probability": 71,
         "ticker": "KXEPLGAME-26OCT10ARSLEE-ARS"
       },
       "away": {
@@ -49,7 +49,7 @@
       },
       "away": {
         "label": "Everton",
-        "probability": 46,
+        "probability": 48,
         "ticker": "KXEPLGAME-26OCT11HULEVE-EVE"
       },
       "draw": {
@@ -106,7 +106,7 @@
       },
       "away": {
         "label": "Man City",
-        "probability": 39,
+        "probability": 40,
         "ticker": "KXEPLGAME-26OCT11LFCMCI-MCI"
       },
       "draw": {
@@ -139,12 +139,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct10muntot",
       "home": {
         "label": "Man United",
-        "probability": 56,
+        "probability": 57,
         "ticker": "KXEPLGAME-26OCT10MUNTOT-MUN"
       },
       "away": {
         "label": "Tottenham",
-        "probability": 23,
+        "probability": 22,
         "ticker": "KXEPLGAME-26OCT10MUNTOT-TOT"
       },
       "draw": {
