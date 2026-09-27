@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-27T17:53:43.956Z",
+  "fetchedAt": "2026-09-27T20:50:59.236Z",
   "odds": {
     "560592": {
       "eventTicker": "KXEPLGAME-26OCT10SUNBRI",
@@ -35,7 +35,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 18,
+        "probability": 19,
         "ticker": "KXEPLGAME-26OCT10ARSLEE-TIE"
       }
     },
@@ -49,7 +49,7 @@
       },
       "away": {
         "label": "Everton",
-        "probability": 47,
+        "probability": 46,
         "ticker": "KXEPLGAME-26OCT11HULEVE-EVE"
       },
       "draw": {
@@ -82,7 +82,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct11crynfo",
       "home": {
         "label": "Crystal Palace",
-        "probability": 35,
+        "probability": 38,
         "ticker": "KXEPLGAME-26OCT11CRYNFO-CRY"
       },
       "away": {
@@ -125,7 +125,7 @@
       },
       "away": {
         "label": "Fulham",
-        "probability": 39,
+        "probability": 36,
         "ticker": "KXEPLGAME-26OCT10IPSFUL-FUL"
       },
       "draw": {
@@ -144,7 +144,7 @@
       },
       "away": {
         "label": "Tottenham",
-        "probability": 20,
+        "probability": 23,
         "ticker": "KXEPLGAME-26OCT10MUNTOT-TOT"
       },
       "draw": {
@@ -163,7 +163,7 @@
       },
       "away": {
         "label": "Brentford",
-        "probability": 36,
+        "probability": 38,
         "ticker": "KXEPLGAME-26OCT10AVLBRE-BRE"
       },
       "draw": {
