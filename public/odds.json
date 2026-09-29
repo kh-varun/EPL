@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-29T08:50:48.494Z",
+  "fetchedAt": "2026-09-29T15:20:39.592Z",
   "odds": {
     "560592": {
       "eventTicker": "KXEPLGAME-26OCT10SUNBRI",
@@ -11,7 +11,7 @@
       },
       "away": {
         "label": "Brighton Hove",
-        "probability": 41,
+        "probability": 42,
         "ticker": "KXEPLGAME-26OCT10SUNBRI-BRI"
       },
       "draw": {
@@ -82,7 +82,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct11crynfo",
       "home": {
         "label": "Crystal Palace",
-        "probability": 38,
+        "probability": 37,
         "ticker": "KXEPLGAME-26OCT11CRYNFO-CRY"
       },
       "away": {
@@ -101,7 +101,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct12covnew",
       "home": {
         "label": "Coventry City",
-        "probability": 29,
+        "probability": 28,
         "ticker": "KXEPLGAME-26OCT12COVNEW-COV"
       },
       "away": {
@@ -125,12 +125,12 @@
       },
       "away": {
         "label": "Man City",
-        "probability": 39,
+        "probability": 42,
         "ticker": "KXEPLGAME-26OCT11LFCMCI-MCI"
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 25,
         "ticker": "KXEPLGAME-26OCT11LFCMCI-TIE"
       }
     },
@@ -182,7 +182,7 @@
       },
       "away": {
         "label": "Brentford",
-        "probability": 35,
+        "probability": 37,
         "ticker": "KXEPLGAME-26OCT10AVLBRE-BRE"
       },
       "draw": {
