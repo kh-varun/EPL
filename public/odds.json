@@ -1,17 +1,17 @@
 {
-  "fetchedAt": "2026-09-29T15:20:39.592Z",
+  "fetchedAt": "2026-09-29T20:06:31.646Z",
   "odds": {
     "560592": {
       "eventTicker": "KXEPLGAME-26OCT10SUNBRI",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct10sunbri",
       "home": {
         "label": "Sunderland",
-        "probability": 30,
+        "probability": 33,
         "ticker": "KXEPLGAME-26OCT10SUNBRI-SUN"
       },
       "away": {
         "label": "Brighton Hove",
-        "probability": 42,
+        "probability": 41,
         "ticker": "KXEPLGAME-26OCT10SUNBRI-BRI"
       },
       "draw": {
@@ -30,12 +30,12 @@
       },
       "away": {
         "label": "Leeds United",
-        "probability": 13,
+        "probability": 12,
         "ticker": "KXEPLGAME-26OCT10ARSLEE-LEE"
       },
       "draw": {
         "label": "Draw",
-        "probability": 19,
+        "probability": 18,
         "ticker": "KXEPLGAME-26OCT10ARSLEE-TIE"
       }
     },
@@ -63,7 +63,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct10cfcbou",
       "home": {
         "label": "Chelsea",
-        "probability": 58,
+        "probability": 56,
         "ticker": "KXEPLGAME-26OCT10CFCBOU-CFC"
       },
       "away": {
@@ -125,12 +125,12 @@
       },
       "away": {
         "label": "Man City",
-        "probability": 42,
+        "probability": 40,
         "ticker": "KXEPLGAME-26OCT11LFCMCI-MCI"
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 26,
         "ticker": "KXEPLGAME-26OCT11LFCMCI-TIE"
       }
     },
@@ -158,7 +158,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct10muntot",
       "home": {
         "label": "Man United",
-        "probability": 57,
+        "probability": 58,
         "ticker": "KXEPLGAME-26OCT10MUNTOT-MUN"
       },
       "away": {
@@ -182,7 +182,7 @@
       },
       "away": {
         "label": "Brentford",
-        "probability": 37,
+        "probability": 38,
         "ticker": "KXEPLGAME-26OCT10AVLBRE-BRE"
       },
       "draw": {
