@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-29T23:43:03.803Z",
+  "fetchedAt": "2026-09-30T02:26:05.785Z",
   "odds": {
     "560592": {
       "eventTicker": "KXEPLGAME-26OCT10SUNBRI",
@@ -30,7 +30,7 @@
       },
       "away": {
         "label": "Leeds United",
-        "probability": 11,
+        "probability": 12,
         "ticker": "KXEPLGAME-26OCT10ARSLEE-LEE"
       },
       "draw": {
@@ -158,12 +158,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct10muntot",
       "home": {
         "label": "Man United",
-        "probability": 57,
+        "probability": 55,
         "ticker": "KXEPLGAME-26OCT10MUNTOT-MUN"
       },
       "away": {
         "label": "Tottenham",
-        "probability": 21,
+        "probability": 22,
         "ticker": "KXEPLGAME-26OCT10MUNTOT-TOT"
       },
       "draw": {
