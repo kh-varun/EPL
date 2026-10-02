@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-02T08:21:21.752Z",
+  "fetchedAt": "2026-10-02T14:52:53.004Z",
   "odds": {
     "560592": {
       "eventTicker": "KXEPLGAME-26OCT10SUNBRI",
@@ -49,7 +49,7 @@
       },
       "away": {
         "label": "Everton",
-        "probability": 47,
+        "probability": 48,
         "ticker": "KXEPLGAME-26OCT11HULEVE-EVE"
       },
       "draw": {
@@ -63,7 +63,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct10cfcbou",
       "home": {
         "label": "Chelsea",
-        "probability": 57,
+        "probability": 58,
         "ticker": "KXEPLGAME-26OCT10CFCBOU-CFC"
       },
       "away": {
@@ -125,7 +125,7 @@
       },
       "away": {
         "label": "Man City",
-        "probability": 38,
+        "probability": 39,
         "ticker": "KXEPLGAME-26OCT11LFCMCI-MCI"
       },
       "draw": {
