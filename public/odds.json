@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-03T02:12:28.166Z",
+  "fetchedAt": "2026-10-03T08:07:47.918Z",
   "odds": {
     "560592": {
       "eventTicker": "KXEPLGAME-26OCT10SUNBRI",
@@ -63,12 +63,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct10cfcbou",
       "home": {
         "label": "Chelsea",
-        "probability": 56,
+        "probability": 57,
         "ticker": "KXEPLGAME-26OCT10CFCBOU-CFC"
       },
       "away": {
         "label": "Bournemouth",
-        "probability": 20,
+        "probability": 21,
         "ticker": "KXEPLGAME-26OCT10CFCBOU-BOU"
       },
       "draw": {
@@ -87,7 +87,7 @@
       },
       "away": {
         "label": "Nottingham",
-        "probability": 36,
+        "probability": 35,
         "ticker": "KXEPLGAME-26OCT11CRYNFO-NFO"
       },
       "draw": {
@@ -163,7 +163,7 @@
       },
       "away": {
         "label": "Tottenham",
-        "probability": 21,
+        "probability": 22,
         "ticker": "KXEPLGAME-26OCT10MUNTOT-TOT"
       },
       "draw": {
@@ -187,7 +187,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 27,
+        "probability": 26,
         "ticker": "KXEPLGAME-26OCT10AVLBRE-TIE"
       }
     },
@@ -215,7 +215,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct17evecfc",
       "home": {
         "label": "Everton",
-        "probability": 34,
+        "probability": 33,
         "ticker": "KXEPLGAME-26OCT17EVECFC-EVE"
       },
       "away": {
@@ -244,7 +244,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 24,
         "ticker": "KXEPLGAME-26OCT17NEWAVL-TIE"
       }
     },
@@ -258,7 +258,7 @@
       },
       "away": {
         "label": "Ipswich Town",
-        "probability": 7,
+        "probability": 8,
         "ticker": "KXEPLGAME-26OCT17MCIIPS-IPS"
       },
       "draw": {
@@ -282,7 +282,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 25,
         "ticker": "KXEPLGAME-26OCT17BRELFC-TIE"
       }
     }
