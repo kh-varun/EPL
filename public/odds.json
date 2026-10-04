@@ -1,12 +1,12 @@
 {
-  "fetchedAt": "2026-10-04T08:48:11.116Z",
+  "fetchedAt": "2026-10-04T14:36:47.996Z",
   "odds": {
     "560592": {
       "eventTicker": "KXEPLGAME-26OCT10SUNBRI",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct10sunbri",
       "home": {
         "label": "Sunderland",
-        "probability": 34,
+        "probability": 33,
         "ticker": "KXEPLGAME-26OCT10SUNBRI-SUN"
       },
       "away": {
@@ -68,7 +68,7 @@
       },
       "away": {
         "label": "Bournemouth",
-        "probability": 21,
+        "probability": 20,
         "ticker": "KXEPLGAME-26OCT10CFCBOU-BOU"
       },
       "draw": {
@@ -163,7 +163,7 @@
       },
       "away": {
         "label": "Tottenham",
-        "probability": 22,
+        "probability": 20,
         "ticker": "KXEPLGAME-26OCT10MUNTOT-TOT"
       },
       "draw": {
@@ -220,7 +220,7 @@
       },
       "away": {
         "label": "Chelsea",
-        "probability": 40,
+        "probability": 41,
         "ticker": "KXEPLGAME-26OCT17EVECFC-CFC"
       },
       "draw": {
@@ -310,7 +310,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct18bricry",
       "home": {
         "label": "Brighton Hove",
-        "probability": 60,
+        "probability": 61,
         "ticker": "KXEPLGAME-26OCT18BRICRY-BRI"
       },
       "away": {
@@ -320,7 +320,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 22,
+        "probability": 21,
         "ticker": "KXEPLGAME-26OCT18BRICRY-TIE"
       }
     },
@@ -348,7 +348,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct17brelfc",
       "home": {
         "label": "Brentford",
-        "probability": 34,
+        "probability": 35,
         "ticker": "KXEPLGAME-26OCT17BRELFC-BRE"
       },
       "away": {
@@ -358,7 +358,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 26,
         "ticker": "KXEPLGAME-26OCT17BRELFC-TIE"
       }
     }
