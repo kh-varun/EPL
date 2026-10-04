@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-04T18:22:30.414Z",
+  "fetchedAt": "2026-10-04T21:45:21.448Z",
   "odds": {
     "560592": {
       "eventTicker": "KXEPLGAME-26OCT10SUNBRI",
@@ -11,12 +11,12 @@
       },
       "away": {
         "label": "Brighton Hove",
-        "probability": 42,
+        "probability": 41,
         "ticker": "KXEPLGAME-26OCT10SUNBRI-BRI"
       },
       "draw": {
         "label": "Draw",
-        "probability": 27,
+        "probability": 28,
         "ticker": "KXEPLGAME-26OCT10SUNBRI-TIE"
       }
     },
@@ -63,12 +63,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct10cfcbou",
       "home": {
         "label": "Chelsea",
-        "probability": 57,
+        "probability": 58,
         "ticker": "KXEPLGAME-26OCT10CFCBOU-CFC"
       },
       "away": {
         "label": "Bournemouth",
-        "probability": 20,
+        "probability": 21,
         "ticker": "KXEPLGAME-26OCT10CFCBOU-BOU"
       },
       "draw": {
@@ -106,7 +106,7 @@
       },
       "away": {
         "label": "Newcastle",
-        "probability": 45,
+        "probability": 44,
         "ticker": "KXEPLGAME-26OCT12COVNEW-NEW"
       },
       "draw": {
@@ -130,7 +130,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 24,
         "ticker": "KXEPLGAME-26OCT11LFCMCI-TIE"
       }
     },
@@ -149,7 +149,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 27,
+        "probability": 28,
         "ticker": "KXEPLGAME-26OCT10IPSFUL-TIE"
       }
     },
@@ -158,7 +158,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct10muntot",
       "home": {
         "label": "Man United",
-        "probability": 58,
+        "probability": 57,
         "ticker": "KXEPLGAME-26OCT10MUNTOT-MUN"
       },
       "away": {
@@ -239,12 +239,12 @@
       },
       "away": {
         "label": "Sunderland",
-        "probability": 26,
+        "probability": 25,
         "ticker": "KXEPLGAME-26OCT18BOUSUN-SUN"
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 25,
         "ticker": "KXEPLGAME-26OCT18BOUSUN-TIE"
       }
     },
@@ -258,12 +258,12 @@
       },
       "away": {
         "label": "Man United",
-        "probability": 41,
+        "probability": 39,
         "ticker": "KXEPLGAME-26OCT18LEEMUN-MUN"
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 25,
         "ticker": "KXEPLGAME-26OCT18LEEMUN-TIE"
       }
     },
@@ -301,7 +301,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 24,
         "ticker": "KXEPLGAME-26OCT18NFOARS-TIE"
       }
     },
@@ -315,7 +315,7 @@
       },
       "away": {
         "label": "Crystal Palace",
-        "probability": 18,
+        "probability": 17,
         "ticker": "KXEPLGAME-26OCT18BRICRY-CRY"
       },
       "draw": {
