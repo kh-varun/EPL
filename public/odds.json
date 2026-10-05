@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-04T21:45:21.448Z",
+  "fetchedAt": "2026-10-05T00:25:17.078Z",
   "odds": {
     "560592": {
       "eventTicker": "KXEPLGAME-26OCT10SUNBRI",
@@ -30,7 +30,7 @@
       },
       "away": {
         "label": "Leeds United",
-        "probability": 12,
+        "probability": 11,
         "ticker": "KXEPLGAME-26OCT10ARSLEE-LEE"
       },
       "draw": {
@@ -106,7 +106,7 @@
       },
       "away": {
         "label": "Newcastle",
-        "probability": 44,
+        "probability": 45,
         "ticker": "KXEPLGAME-26OCT12COVNEW-NEW"
       },
       "draw": {
@@ -130,7 +130,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 24,
+        "probability": 26,
         "ticker": "KXEPLGAME-26OCT11LFCMCI-TIE"
       }
     },
@@ -158,7 +158,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct10muntot",
       "home": {
         "label": "Man United",
-        "probability": 57,
+        "probability": 58,
         "ticker": "KXEPLGAME-26OCT10MUNTOT-MUN"
       },
       "away": {
@@ -168,7 +168,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 23,
+        "probability": 22,
         "ticker": "KXEPLGAME-26OCT10MUNTOT-TIE"
       }
     },
@@ -291,17 +291,17 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct18nfoars",
       "home": {
         "label": "Nottingham",
-        "probability": 15,
+        "probability": 13,
         "ticker": "KXEPLGAME-26OCT18NFOARS-NFO"
       },
       "away": {
         "label": "Arsenal",
-        "probability": 59,
+        "probability": 60,
         "ticker": "KXEPLGAME-26OCT18NFOARS-ARS"
       },
       "draw": {
         "label": "Draw",
-        "probability": 24,
+        "probability": 20,
         "ticker": "KXEPLGAME-26OCT18NFOARS-TIE"
       }
     },
@@ -320,7 +320,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 21,
+        "probability": 22,
         "ticker": "KXEPLGAME-26OCT18BRICRY-TIE"
       }
     },
