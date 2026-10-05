@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-05T00:25:17.078Z",
+  "fetchedAt": "2026-10-05T06:01:44.314Z",
   "odds": {
     "560592": {
       "eventTicker": "KXEPLGAME-26OCT10SUNBRI",
@@ -25,12 +25,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct10arslee",
       "home": {
         "label": "Arsenal",
-        "probability": 72,
+        "probability": 71,
         "ticker": "KXEPLGAME-26OCT10ARSLEE-ARS"
       },
       "away": {
         "label": "Leeds United",
-        "probability": 11,
+        "probability": 12,
         "ticker": "KXEPLGAME-26OCT10ARSLEE-LEE"
       },
       "draw": {
@@ -120,7 +120,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct11lfcmci",
       "home": {
         "label": "Liverpool",
-        "probability": 37,
+        "probability": 38,
         "ticker": "KXEPLGAME-26OCT11LFCMCI-LFC"
       },
       "away": {
@@ -163,12 +163,12 @@
       },
       "away": {
         "label": "Tottenham",
-        "probability": 20,
+        "probability": 22,
         "ticker": "KXEPLGAME-26OCT10MUNTOT-TOT"
       },
       "draw": {
         "label": "Draw",
-        "probability": 22,
+        "probability": 21,
         "ticker": "KXEPLGAME-26OCT10MUNTOT-TIE"
       }
     },
@@ -196,12 +196,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct17fulhul",
       "home": {
         "label": "Fulham",
-        "probability": 57,
+        "probability": 59,
         "ticker": "KXEPLGAME-26OCT17FULHUL-FUL"
       },
       "away": {
         "label": "Hull City",
-        "probability": 16,
+        "probability": 20,
         "ticker": "KXEPLGAME-26OCT17FULHUL-HUL"
       },
       "draw": {
@@ -220,7 +220,7 @@
       },
       "away": {
         "label": "Chelsea",
-        "probability": 40,
+        "probability": 41,
         "ticker": "KXEPLGAME-26OCT17EVECFC-CFC"
       },
       "draw": {
@@ -234,7 +234,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct18bousun",
       "home": {
         "label": "Bournemouth",
-        "probability": 48,
+        "probability": 47,
         "ticker": "KXEPLGAME-26OCT18BOUSUN-BOU"
       },
       "away": {
@@ -258,13 +258,32 @@
       },
       "away": {
         "label": "Man United",
-        "probability": 39,
+        "probability": 42,
         "ticker": "KXEPLGAME-26OCT18LEEMUN-MUN"
       },
       "draw": {
         "label": "Draw",
         "probability": 25,
         "ticker": "KXEPLGAME-26OCT18LEEMUN-TIE"
+      }
+    },
+    "560606": {
+      "eventTicker": "KXEPLGAME-26OCT19TOTCOV",
+      "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct19totcov",
+      "home": {
+        "label": "Tottenham",
+        "probability": 64,
+        "ticker": "KXEPLGAME-26OCT19TOTCOV-TOT"
+      },
+      "away": {
+        "label": "Coventry City",
+        "probability": 14,
+        "ticker": "KXEPLGAME-26OCT19TOTCOV-COV"
+      },
+      "draw": {
+        "label": "Draw",
+        "probability": 19,
+        "ticker": "KXEPLGAME-26OCT19TOTCOV-TIE"
       }
     },
     "560607": {
@@ -296,7 +315,7 @@
       },
       "away": {
         "label": "Arsenal",
-        "probability": 60,
+        "probability": 54,
         "ticker": "KXEPLGAME-26OCT18NFOARS-ARS"
       },
       "draw": {
@@ -310,12 +329,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct18bricry",
       "home": {
         "label": "Brighton Hove",
-        "probability": 61,
+        "probability": 59,
         "ticker": "KXEPLGAME-26OCT18BRICRY-BRI"
       },
       "away": {
         "label": "Crystal Palace",
-        "probability": 17,
+        "probability": 19,
         "ticker": "KXEPLGAME-26OCT18BRICRY-CRY"
       },
       "draw": {
@@ -334,7 +353,7 @@
       },
       "away": {
         "label": "Ipswich Town",
-        "probability": 8,
+        "probability": 9,
         "ticker": "KXEPLGAME-26OCT17MCIIPS-IPS"
       },
       "draw": {
