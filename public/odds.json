@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-08T02:56:37.803Z",
+  "fetchedAt": "2026-10-08T10:07:13.062Z",
   "odds": {
     "560592": {
       "eventTicker": "KXEPLGAME-26OCT10SUNBRI",
@@ -11,7 +11,7 @@
       },
       "away": {
         "label": "Brighton Hove",
-        "probability": 41,
+        "probability": 42,
         "ticker": "KXEPLGAME-26OCT10SUNBRI-BRI"
       },
       "draw": {
@@ -49,7 +49,7 @@
       },
       "away": {
         "label": "Everton",
-        "probability": 46,
+        "probability": 47,
         "ticker": "KXEPLGAME-26OCT11HULEVE-EVE"
       },
       "draw": {
@@ -125,7 +125,7 @@
       },
       "away": {
         "label": "Man City",
-        "probability": 39,
+        "probability": 38,
         "ticker": "KXEPLGAME-26OCT11LFCMCI-MCI"
       },
       "draw": {
@@ -139,7 +139,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct10ipsful",
       "home": {
         "label": "Ipswich Town",
-        "probability": 34,
+        "probability": 35,
         "ticker": "KXEPLGAME-26OCT10IPSFUL-IPS"
       },
       "away": {
@@ -177,7 +177,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct10avlbre",
       "home": {
         "label": "Aston Villa",
-        "probability": 37,
+        "probability": 36,
         "ticker": "KXEPLGAME-26OCT10AVLBRE-AVL"
       },
       "away": {
@@ -215,7 +215,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct17evecfc",
       "home": {
         "label": "Everton",
-        "probability": 34,
+        "probability": 36,
         "ticker": "KXEPLGAME-26OCT17EVECFC-EVE"
       },
       "away": {
@@ -244,7 +244,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 25,
         "ticker": "KXEPLGAME-26OCT18BOUSUN-TIE"
       }
     },
@@ -253,7 +253,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct18leemun",
       "home": {
         "label": "Leeds United",
-        "probability": 34,
+        "probability": 33,
         "ticker": "KXEPLGAME-26OCT18LEEMUN-LEE"
       },
       "away": {
@@ -353,7 +353,7 @@
       },
       "away": {
         "label": "Ipswich Town",
-        "probability": 7,
+        "probability": 8,
         "ticker": "KXEPLGAME-26OCT17MCIIPS-IPS"
       },
       "draw": {
