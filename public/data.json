@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-10T17:54:39.713Z",
+  "fetchedAt": "2026-10-10T20:44:38.146Z",
   "standings": [
     {
       "position": 1,
@@ -224,8 +224,8 @@
       "draw": 3,
       "lost": 2,
       "points": 6,
-      "goalsFor": 8,
-      "goalsAgainst": 8,
+      "goalsFor": 9,
+      "goalsAgainst": 9,
       "goalDifference": 0,
       "form": null
     },
@@ -338,8 +338,8 @@
       "draw": 3,
       "lost": 3,
       "points": 3,
-      "goalsFor": 2,
-      "goalsAgainst": 8,
+      "goalsFor": 3,
+      "goalsAgainst": 9,
       "goalDifference": -6,
       "form": null
     },
@@ -383,6 +383,31 @@
     }
   ],
   "lastResults": [
+    {
+      "id": 560600,
+      "utcDate": "2026-10-10T16:30:00Z",
+      "status": "FINISHED",
+      "matchday": 6,
+      "homeTeam": {
+        "id": 66,
+        "name": "Manchester United FC",
+        "shortName": "Man United",
+        "tla": "MUN",
+        "crest": "https://crests.football-data.org/66.png"
+      },
+      "awayTeam": {
+        "id": 73,
+        "name": "Tottenham Hotspur FC",
+        "shortName": "Tottenham",
+        "tla": "TOT",
+        "crest": "https://crests.football-data.org/73.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 1,
+        "winner": "DRAW"
+      }
+    },
     {
       "id": 560592,
       "utcDate": "2026-10-10T14:00:00Z",
@@ -1760,32 +1785,6 @@
     }
   ],
   "nextFixtures": [
-    {
-      "id": 560600,
-      "utcDate": "2026-10-10T16:30:00Z",
-      "status": "IN_PLAY",
-      "matchday": 6,
-      "homeTeam": {
-        "id": 66,
-        "name": "Manchester United FC",
-        "shortName": "Man United",
-        "tla": "MUN",
-        "crest": "https://crests.football-data.org/66.png"
-      },
-      "awayTeam": {
-        "id": 73,
-        "name": "Tottenham Hotspur FC",
-        "shortName": "Tottenham",
-        "tla": "TOT",
-        "crest": "https://crests.football-data.org/73.png"
-      },
-      "score": {
-        "home": 0,
-        "away": 0,
-        "winner": "DRAW"
-      },
-      "broadcast": "NBC"
-    },
     {
       "id": 560594,
       "utcDate": "2026-10-11T13:00:00Z",

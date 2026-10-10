@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-10T17:54:51.992Z",
+  "fetchedAt": "2026-10-10T20:44:45.603Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -2453,6 +2453,55 @@
           "player": "Dara O'Shea",
           "minute": 90,
           "extraMinute": 1,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560600": {
+      "utcDate": "2026-10-10T16:30:00Z",
+      "homeTeamId": 66,
+      "awayTeamId": 73,
+      "stats": {
+        "66": {
+          "shots": 12,
+          "shotsOnTarget": 4,
+          "possession": 45,
+          "passes": 464,
+          "passAccuracy": null,
+          "fouls": 13,
+          "corners": 4,
+          "offsides": 2,
+          "yellowCards": 4,
+          "redCards": 0
+        },
+        "73": {
+          "shots": 12,
+          "shotsOnTarget": 3,
+          "possession": 55,
+          "passes": 460,
+          "passAccuracy": null,
+          "fouls": 16,
+          "corners": 4,
+          "offsides": 2,
+          "yellowCards": 3,
+          "redCards": 1
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 66,
+          "player": "Bryan Mbeumo",
+          "minute": 73,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 73,
+          "player": "Dominic Solanke",
+          "minute": 90,
+          "extraMinute": 2,
           "ownGoal": false,
           "penalty": false
         }
