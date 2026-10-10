@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-20T19:13:25.787Z",
+  "fetchedAt": "2026-10-10T17:54:51.992Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -2209,6 +2209,315 @@
           "player": "Fabio Carvalho",
           "minute": 90,
           "extraMinute": 4,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560592": {
+      "utcDate": "2026-10-10T14:00:00Z",
+      "homeTeamId": 71,
+      "awayTeamId": 397,
+      "stats": {
+        "71": {
+          "shots": 12,
+          "shotsOnTarget": 3,
+          "possession": 62,
+          "passes": 495,
+          "passAccuracy": null,
+          "fouls": 8,
+          "corners": 7,
+          "offsides": 5,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        "397": {
+          "shots": 13,
+          "shotsOnTarget": 4,
+          "possession": 38,
+          "passes": 305,
+          "passAccuracy": null,
+          "fouls": 12,
+          "corners": 5,
+          "offsides": 0,
+          "yellowCards": 1,
+          "redCards": 1
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 397,
+          "player": "Maxim De Cuyper",
+          "minute": 53,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 397,
+          "player": "Jaouen Hadjam",
+          "minute": 90,
+          "extraMinute": 3,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560593": {
+      "utcDate": "2026-10-10T11:30:00Z",
+      "homeTeamId": 57,
+      "awayTeamId": 341,
+      "stats": {
+        "57": {
+          "shots": 13,
+          "shotsOnTarget": 6,
+          "possession": 58.2,
+          "passes": 513,
+          "passAccuracy": 0.9,
+          "fouls": 12,
+          "corners": 3,
+          "offsides": 7,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        "341": {
+          "shots": 11,
+          "shotsOnTarget": 5,
+          "possession": 41.8,
+          "passes": 354,
+          "passAccuracy": 0.8,
+          "fouls": 20,
+          "corners": 4,
+          "offsides": 4,
+          "yellowCards": 4,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 341,
+          "player": "James Justin",
+          "minute": 55,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 57,
+          "player": "Riccardo Calafiori",
+          "minute": 62,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 57,
+          "player": "Bruno Guimarães",
+          "minute": 70,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560595": {
+      "utcDate": "2026-10-10T14:00:00Z",
+      "homeTeamId": 61,
+      "awayTeamId": 1044,
+      "stats": {
+        "61": {
+          "shots": 10,
+          "shotsOnTarget": 6,
+          "possession": 40,
+          "passes": 477,
+          "passAccuracy": null,
+          "fouls": 7,
+          "corners": 1,
+          "offsides": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        "1044": {
+          "shots": 9,
+          "shotsOnTarget": 4,
+          "possession": 60,
+          "passes": 464,
+          "passAccuracy": null,
+          "fouls": 15,
+          "corners": 7,
+          "offsides": 0,
+          "yellowCards": 4,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 61,
+          "player": "Jordan Henderson",
+          "minute": 2,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 61,
+          "player": "Morgan Rogers",
+          "minute": 3,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 61,
+          "player": "João Pedro",
+          "minute": 46,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 1044,
+          "player": "Francisco Evanilson",
+          "minute": 51,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 61,
+          "player": "João Pedro",
+          "minute": 67,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 61,
+          "player": "Jordan Henderson",
+          "minute": 70,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560599": {
+      "utcDate": "2026-10-10T14:00:00Z",
+      "homeTeamId": 349,
+      "awayTeamId": 63,
+      "stats": {
+        "63": {
+          "shots": 13,
+          "shotsOnTarget": 5,
+          "possession": 52,
+          "passes": 504,
+          "passAccuracy": null,
+          "fouls": 10,
+          "corners": 5,
+          "offsides": 1,
+          "yellowCards": 4,
+          "redCards": 0
+        },
+        "349": {
+          "shots": 11,
+          "shotsOnTarget": 5,
+          "possession": 48,
+          "passes": 456,
+          "passAccuracy": null,
+          "fouls": 8,
+          "corners": 2,
+          "offsides": 0,
+          "yellowCards": 2,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 63,
+          "player": "Ryan Sessegnon",
+          "minute": 55,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 349,
+          "player": "Abdoul Ouattara",
+          "minute": 88,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 349,
+          "player": "Dara O'Shea",
+          "minute": 90,
+          "extraMinute": 1,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560601": {
+      "utcDate": "2026-10-10T14:00:00Z",
+      "homeTeamId": 58,
+      "awayTeamId": 402,
+      "stats": {
+        "58": {
+          "shots": 20,
+          "shotsOnTarget": 7,
+          "possession": 52.1,
+          "passes": 407,
+          "passAccuracy": 0.8,
+          "fouls": 7,
+          "corners": 2,
+          "offsides": 1,
+          "yellowCards": 2,
+          "redCards": 0
+        },
+        "402": {
+          "shots": 14,
+          "shotsOnTarget": 4,
+          "possession": 47.9,
+          "passes": 358,
+          "passAccuracy": 0.8,
+          "fouls": 24,
+          "corners": 2,
+          "offsides": 1,
+          "yellowCards": 5,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 402,
+          "player": "Yehor Yarmoliuk",
+          "minute": 10,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 58,
+          "player": "Nicolas Jackson",
+          "minute": 12,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 58,
+          "player": "John McGinn",
+          "minute": 77,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 402,
+          "player": "Kristoffer Ajer",
+          "minute": 79,
+          "extraMinute": null,
           "ownGoal": false,
           "penalty": false
         }
