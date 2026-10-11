@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-10T20:44:45.603Z",
+  "fetchedAt": "2026-10-11T19:30:30.947Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -2320,6 +2320,71 @@
         }
       ]
     },
+    "560594": {
+      "utcDate": "2026-10-11T13:00:00Z",
+      "homeTeamId": 322,
+      "awayTeamId": 62,
+      "stats": {
+        "62": {
+          "shots": 15,
+          "shotsOnTarget": 7,
+          "possession": 65,
+          "passes": 595,
+          "passAccuracy": null,
+          "fouls": 4,
+          "corners": 6,
+          "offsides": 4,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        "322": {
+          "shots": 9,
+          "shotsOnTarget": 5,
+          "possession": 35,
+          "passes": 306,
+          "passAccuracy": null,
+          "fouls": 15,
+          "corners": 7,
+          "offsides": 1,
+          "yellowCards": 2,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 322,
+          "player": "Joe Gelhardt",
+          "minute": 48,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 62,
+          "player": "Kiernan Dewsbury-Hall",
+          "minute": 55,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 62,
+          "player": "Thierno Barry",
+          "minute": 68,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 322,
+          "player": "Mohamed Belloumi",
+          "minute": 74,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
     "560595": {
       "utcDate": "2026-10-10T14:00:00Z",
       "homeTeamId": 61,
@@ -2395,6 +2460,128 @@
           "teamId": 61,
           "player": "Jordan Henderson",
           "minute": 70,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560596": {
+      "utcDate": "2026-10-11T13:00:00Z",
+      "homeTeamId": 354,
+      "awayTeamId": 351,
+      "stats": {
+        "351": {
+          "shots": 24,
+          "shotsOnTarget": 6,
+          "possession": 57,
+          "passes": 498,
+          "passAccuracy": null,
+          "fouls": 10,
+          "corners": 8,
+          "offsides": 1,
+          "yellowCards": 2,
+          "redCards": 0
+        },
+        "354": {
+          "shots": 13,
+          "shotsOnTarget": 7,
+          "possession": 43,
+          "passes": 386,
+          "passAccuracy": null,
+          "fouls": 11,
+          "corners": 5,
+          "offsides": 2,
+          "yellowCards": 2,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 351,
+          "player": "Dan Ndoye",
+          "minute": 3,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 354,
+          "player": "Daichi Kamada",
+          "minute": 41,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 354,
+          "player": "Jefferson Lerma",
+          "minute": 45,
+          "extraMinute": 4,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 354,
+          "player": "Yeremy Pino",
+          "minute": 59,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560598": {
+      "utcDate": "2026-10-11T15:30:00Z",
+      "homeTeamId": 64,
+      "awayTeamId": 65,
+      "stats": {
+        "64": {
+          "shots": 13,
+          "shotsOnTarget": 6,
+          "possession": 35,
+          "passes": 296,
+          "passAccuracy": null,
+          "fouls": 19,
+          "corners": 5,
+          "offsides": 2,
+          "yellowCards": 2,
+          "redCards": 1
+        },
+        "65": {
+          "shots": 15,
+          "shotsOnTarget": 4,
+          "possession": 65,
+          "passes": 551,
+          "passAccuracy": null,
+          "fouls": 14,
+          "corners": 6,
+          "offsides": 2,
+          "yellowCards": 2,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 65,
+          "player": "Erling Haaland",
+          "minute": 65,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 65,
+          "player": "Jeremy Doku",
+          "minute": 68,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 65,
+          "player": "Rayan Cherki",
+          "minute": 78,
           "extraMinute": null,
           "ownGoal": false,
           "penalty": false
