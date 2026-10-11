@@ -1,6 +1,293 @@
 {
-  "fetchedAt": "2026-10-10T17:49:48.500Z",
+  "fetchedAt": "2026-10-11T16:22:17.840Z",
   "lineups": {
+    "560598": {
+      "utcDate": "2026-10-11T15:30:00Z",
+      "homeTeamId": 64,
+      "awayTeamId": 65,
+      "byTeam": {
+        "64": {
+          "teamName": "Liverpool",
+          "formation": "4-2-3-1",
+          "startXI": [
+            {
+              "id": 280,
+              "name": "Alisson Becker",
+              "number": 1,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 101814,
+              "name": "R. Araújo",
+              "number": 33,
+              "position": "D",
+              "grid": "2:4"
+            },
+            {
+              "id": 367636,
+              "name": "J. Jacquet",
+              "number": 5,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 290,
+              "name": "V. van Dijk",
+              "number": 4,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 206254,
+              "name": "M. Kerkez",
+              "number": 6,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 542,
+              "name": "R. Gravenberch",
+              "number": 38,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 6716,
+              "name": "A. Mac Allister",
+              "number": 10,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 338751,
+              "name": "Víctor Muñoz",
+              "number": 23,
+              "position": "M",
+              "grid": "4:3"
+            },
+            {
+              "id": 203224,
+              "name": "F. Wirtz",
+              "number": 7,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 161904,
+              "name": "B. Barcola",
+              "number": 29,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 328107,
+              "name": "L. Koumas",
+              "number": 67,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 452685,
+              "name": "R. Ngumoha",
+              "number": 73,
+              "position": "F"
+            },
+            {
+              "id": 30410,
+              "name": "F. Chiesa",
+              "number": 14,
+              "position": "F"
+            },
+            {
+              "id": 397997,
+              "name": "T. Nyoni",
+              "number": 42,
+              "position": "M"
+            },
+            {
+              "id": 8500,
+              "name": "W. Endo",
+              "number": 3,
+              "position": "M"
+            },
+            {
+              "id": 152654,
+              "name": "J. Frimpong",
+              "number": 30,
+              "position": "D"
+            },
+            {
+              "id": 1600,
+              "name": "K. Tsimikas",
+              "number": 21,
+              "position": "D"
+            },
+            {
+              "id": 284,
+              "name": "J. Gomez",
+              "number": 2,
+              "position": "D"
+            },
+            {
+              "id": 24760,
+              "name": "G. Mamardashvili",
+              "number": 25,
+              "position": "G"
+            },
+            {
+              "id": 287109,
+              "name": "J. McConnell",
+              "number": 53,
+              "position": "M"
+            }
+          ],
+          "coach": "Andoni Iraola"
+        },
+        "65": {
+          "teamName": "Manchester City",
+          "formation": "4-2-3-1",
+          "startXI": [
+            {
+              "id": 1622,
+              "name": "G. Donnarumma",
+              "number": 1,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 41621,
+              "name": "Matheus Nunes",
+              "number": 27,
+              "position": "D",
+              "grid": "2:4"
+            },
+            {
+              "id": 567,
+              "name": "Rúben Dias",
+              "number": 3,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 67971,
+              "name": "M. Guéhi",
+              "number": 6,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 307123,
+              "name": "N. O&apos;Reilly",
+              "number": 33,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 138908,
+              "name": "E. Anderson",
+              "number": 5,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 5996,
+              "name": "E. Fernández",
+              "number": 17,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 18592,
+              "name": "I. Ndiaye",
+              "number": 7,
+              "position": "M",
+              "grid": "4:3"
+            },
+            {
+              "id": 156477,
+              "name": "R. Cherki",
+              "number": 10,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 19281,
+              "name": "A. Semenyo",
+              "number": 42,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 1100,
+              "name": "E. Haaland",
+              "number": 9,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 425714,
+              "name": "Allan",
+              "number": 37,
+              "position": "F"
+            },
+            {
+              "id": 438688,
+              "name": "A. Bouaddi",
+              "number": 32,
+              "position": "M"
+            },
+            {
+              "id": 1422,
+              "name": "J. Doku",
+              "number": 11,
+              "position": "F"
+            },
+            {
+              "id": 2291,
+              "name": "M. Kovačić",
+              "number": 8,
+              "position": "M"
+            },
+            {
+              "id": 284230,
+              "name": "R. Lewis",
+              "number": 82,
+              "position": "D"
+            },
+            {
+              "id": 360114,
+              "name": "A. Khusanov",
+              "number": 45,
+              "position": "D"
+            },
+            {
+              "id": 129033,
+              "name": "J. Gvardiol",
+              "number": 24,
+              "position": "D"
+            },
+            {
+              "id": 414359,
+              "name": "Vitor Nunes",
+              "number": 22,
+              "position": "D"
+            },
+            {
+              "id": 47296,
+              "name": "G. Rulli",
+              "number": 28,
+              "position": "G"
+            }
+          ],
+          "coach": "E. Maresca"
+        }
+      }
+    },
     "560600": {
       "utcDate": "2026-10-10T16:30:00Z",
       "homeTeamId": 66,
