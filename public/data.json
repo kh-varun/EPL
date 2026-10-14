@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-13T01:13:31.996Z",
+  "fetchedAt": "2026-10-14T17:57:10.388Z",
   "standings": [
     {
       "position": 1,
@@ -383,106 +383,6 @@
     }
   ],
   "lastResults": [
-    {
-      "id": 560597,
-      "utcDate": "2026-10-12T19:00:00Z",
-      "status": "FINISHED",
-      "matchday": 6,
-      "homeTeam": {
-        "id": 1076,
-        "name": "Coventry City FC",
-        "shortName": "Coventry City",
-        "tla": "COV",
-        "crest": "https://crests.football-data.org/1076.png"
-      },
-      "awayTeam": {
-        "id": 67,
-        "name": "Newcastle United FC",
-        "shortName": "Newcastle",
-        "tla": "NEW",
-        "crest": "https://crests.football-data.org/67.png"
-      },
-      "score": {
-        "home": 4,
-        "away": 1,
-        "winner": "HOME_TEAM"
-      }
-    },
-    {
-      "id": 560598,
-      "utcDate": "2026-10-11T15:30:00Z",
-      "status": "FINISHED",
-      "matchday": 6,
-      "homeTeam": {
-        "id": 64,
-        "name": "Liverpool FC",
-        "shortName": "Liverpool",
-        "tla": "LIV",
-        "crest": "https://crests.football-data.org/64.png"
-      },
-      "awayTeam": {
-        "id": 65,
-        "name": "Manchester City FC",
-        "shortName": "Man City",
-        "tla": "MCI",
-        "crest": "https://crests.football-data.org/65.png"
-      },
-      "score": {
-        "home": 0,
-        "away": 3,
-        "winner": "AWAY_TEAM"
-      }
-    },
-    {
-      "id": 560594,
-      "utcDate": "2026-10-11T13:00:00Z",
-      "status": "FINISHED",
-      "matchday": 6,
-      "homeTeam": {
-        "id": 322,
-        "name": "Hull City AFC",
-        "shortName": "Hull City",
-        "tla": "HUL",
-        "crest": "https://crests.football-data.org/322.png"
-      },
-      "awayTeam": {
-        "id": 62,
-        "name": "Everton FC",
-        "shortName": "Everton",
-        "tla": "EVE",
-        "crest": "https://crests.football-data.org/62.png"
-      },
-      "score": {
-        "home": 2,
-        "away": 2,
-        "winner": "DRAW"
-      }
-    },
-    {
-      "id": 560596,
-      "utcDate": "2026-10-11T13:00:00Z",
-      "status": "FINISHED",
-      "matchday": 6,
-      "homeTeam": {
-        "id": 354,
-        "name": "Crystal Palace FC",
-        "shortName": "Crystal Palace",
-        "tla": "CRY",
-        "crest": "https://crests.football-data.org/354.png"
-      },
-      "awayTeam": {
-        "id": 351,
-        "name": "Nottingham Forest FC",
-        "shortName": "Nottingham",
-        "tla": "NOT",
-        "crest": "https://crests.football-data.org/351.png"
-      },
-      "score": {
-        "home": 3,
-        "away": 1,
-        "winner": "HOME_TEAM"
-      }
-    },
     {
       "id": 560600,
       "utcDate": "2026-10-10T16:30:00Z",
@@ -2039,7 +1939,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560605,
@@ -2065,7 +1965,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560609,
@@ -2091,7 +1991,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560608,
@@ -2117,7 +2017,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560606,
@@ -2143,7 +2043,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560620,
@@ -10208,132 +10108,145 @@
   ],
   "headlines": [
     {
-      "title": "Winger Matondo joins Hibernian for rest of season",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cmy4xpgeydn3o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 07 Oct 2026 19:11:26 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c23f/live/67dc3da0-c282-11f1-98ea-35e6bf307fc9.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Southampton manager Tonda Eckert given six-week suspended ban for Spygate scandal",
-      "link": "https://www.theguardian.com/football/2026/oct/07/southampton-manager-tonda-eckert-six-week-suspended-ban-spygate-fa",
-      "pubDate": "Wed, 07 Oct 2026 18:53:31 GMT",
-      "image": "https://i.guim.co.uk/img/media/0f0c510558f69480e55e1695e603a5e507469433/304_0_2900_2320/master/2900.jpg?width=460&quality=85&auto=format&fit=max&s=be4a6233fded9993312df4bffcfe8916",
+      "title": "Lask v Liverpool: Champions League – live",
+      "link": "https://www.theguardian.com/football/live/2026/oct/14/lask-v-liverpool-champions-league-live-score-updates",
+      "pubDate": "Wed, 14 Oct 2026 17:37:53 GMT",
+      "image": "https://i.guim.co.uk/img/media/bd433c3643515f30e230f1bf532355c1dea12fdc/326_0_3213_2571/master/3213.jpg?width=460&quality=85&auto=format&fit=max&s=4ba3be6723a23f9396de7d8087bc9466",
       "source": "The Guardian",
-      "teams": []
-    },
-    {
-      "title": "Rice close to agreeing new Arsenal deal",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c9gkvx74je7do?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 07 Oct 2026 18:30:21 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5f9d/live/b1c9adf0-c276-11f1-b278-615cdfb74f16.jpg",
-      "source": "BBC Sport",
       "teams": [
-        57
+        64
       ]
     },
     {
-      "title": "England ready to level up and embrace ‘calculated risks’, claims Tuchel",
-      "link": "https://www.theguardian.com/football/2026/oct/07/england-level-up-thomas-tuchel-tactics-jarell-quansah",
-      "pubDate": "Wed, 07 Oct 2026 18:00:03 GMT",
-      "image": "https://i.guim.co.uk/img/media/182cb6f8440a7143a51746c97ec5d5cb048f48ae/50_0_3750_3000/master/3750.jpg?width=460&quality=85&auto=format&fit=max&s=129f51645eec4fd59431b04194aea097",
+      "title": "Manchester City v Paris Saint-Germain: Champions League – live",
+      "link": "https://www.theguardian.com/football/live/2026/oct/14/manchester-city-v-paris-saint-germain-champions-league-live-score-updates",
+      "pubDate": "Wed, 14 Oct 2026 17:30:08 GMT",
+      "image": "https://i.guim.co.uk/img/media/78ed97ed695f8e163c10258f8749b0ed42bc5285/21_260_4424_3539/master/4424.jpg?width=460&quality=85&auto=format&fit=max&s=56acc314359b0aeb38c5a2d5cf71094a",
       "source": "The Guardian",
+      "teams": [
+        65
+      ]
+    },
+    {
+      "title": "East Fife sack Campbell as Lennon steps in at Dumbarton",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cwzd6y4vr2y4o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 14 Oct 2026 17:16:23 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6110/live/1106acb0-c7ee-11f1-9bb8-8794f734d112.jpg",
+      "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "All aboard the Tuchel train? England camp has clear winners and losers",
-      "link": "https://www.theguardian.com/football/2026/oct/07/england-winners-and-losers-thomas-tuchel-tactics-squad-selection",
-      "pubDate": "Wed, 07 Oct 2026 18:00:01 GMT",
-      "image": "https://i.guim.co.uk/img/media/504c36b501be851f7e11b9596eaaa00cf2b4a7da/855_0_4647_3718/master/4647.jpg?width=460&quality=85&auto=format&fit=max&s=fc44fc3d8774399d143d9182bbf4f6de",
+      "title": "Millwall's Neil criticised over racial abuse stoppage comments",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6rmykw391ljo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 14 Oct 2026 17:09:18 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/024c/live/a95276a0-c7c3-11f1-993a-152cbb068da1.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Fan cleared of assaults after fall from Ipswich stand",
+      "link": "https://www.bbc.co.uk/news/articles/c65ynlyz385xo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 14 Oct 2026 17:07:53 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0d9c/live/fe16e0c0-c7bb-11f1-ae81-f79bab61f11a.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Manchester City staff invited on government trade trip to India",
+      "link": "https://www.theguardian.com/football/2026/oct/14/bev-craig-manchester-city-trade-trip-india-to-promote-uk-tourism",
+      "pubDate": "Wed, 14 Oct 2026 17:00:08 GMT",
+      "image": "https://i.guim.co.uk/img/media/0a074ac93b973a6a3f08c2e3c221f6f37c6f9e0a/1133_528_5970_4776/master/5970.jpg?width=460&quality=85&auto=format&fit=max&s=a4c119b39c080d279cfd738440b78d2b",
       "source": "The Guardian",
-      "teams": []
+      "teams": [
+        65
+      ]
     },
     {
-      "title": "Barry-Murphy and Bellamy 'so similar' - Lawlor",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c5y43n38z0ndo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 07 Oct 2026 17:42:30 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d901/live/97290530-c231-11f1-be2f-0fbd447d6e43.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Is it too early to look at Premier League table?",
-      "link": "https://www.bbc.co.uk/sport/football/articles/ck1l3gjpzz0qo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 07 Oct 2026 17:28:33 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e46f/live/efe84c40-c17c-11f1-a64c-550be9e3c66b.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Lionel Messi’s Argentina career turned football into a sacred mystery | Marcela Mora y Araujo",
-      "link": "https://www.theguardian.com/football/2026/oct/07/lionel-messi-argentina-retirement-final-match",
-      "pubDate": "Wed, 07 Oct 2026 17:02:22 GMT",
-      "image": "https://i.guim.co.uk/img/media/47797910b6359e7015d4113ab13851835615565c/511_118_2826_2262/master/2826.jpg?width=460&quality=85&auto=format&fit=max&s=9a4f187eb01f91550f7e58c39515ef22",
+      "title": "MLS’s political speech policy is untenable – just ask Austin FC fans",
+      "link": "https://www.theguardian.com/football/2026/oct/14/austin-fc-ice-banner-mls-political-speech-policy",
+      "pubDate": "Wed, 14 Oct 2026 16:58:53 GMT",
+      "image": "https://i.guim.co.uk/img/media/1ae81a648e43f9cd0ce396ec0a323bf73d1b22e5/1046_0_6221_4977/master/6221.jpg?width=460&quality=85&auto=format&fit=max&s=7bfe5d54d6eec4f275a7dd8eaaa9b210",
       "source": "The Guardian",
-      "teams": []
-    },
-    {
-      "title": "Eckert free to stay as Southampton boss as Spygate ban suspended",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cqj9knmvm2ryo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 07 Oct 2026 16:11:15 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a18c/live/a4a6b730-c244-11f1-b2a8-994b2a5598cb.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Do England already have their Kane replacement - or is he yet to emerge?",
-      "link": "https://www.bbc.co.uk/sport/articles/cked39dp0476o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 07 Oct 2026 16:00:58 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7530/live/5912e380-c248-11f1-9670-0b564215b759.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "BBC Women's Football Weekly",
-      "link": "https://www.bbc.co.uk/sounds/play/p0pfh6lh?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 07 Oct 2026 15:53:00 GMT",
-      "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0pfh6nt.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Ex-Spurs player Vega set to run for Fifa president",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c607397pjv37o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 07 Oct 2026 15:16:40 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4be4/live/ca7e0f20-c24f-11f1-ab30-1f92d324dff9.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Two icons, a glorious farewell and a potentially bitter ending",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cw5ynm4e0d68o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 07 Oct 2026 15:04:38 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9db8/live/302f0ab0-c244-11f1-bc2e-018d645d8d21.png",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Football Daily",
-      "link": "https://www.bbc.co.uk/sounds/play/p0pf94jc?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 07 Oct 2026 15:00:00 GMT",
-      "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0pf94l3.jpg",
-      "source": "BBC Sport",
       "teams": []
     },
     {
       "title": "72+: The EFL Podcast",
-      "link": "https://www.bbc.co.uk/sounds/play/p0pfhd6c?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 07 Oct 2026 14:53:00 GMT",
+      "link": "https://www.bbc.co.uk/sounds/play/p0pgnjlf?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 14 Oct 2026 16:01:00 GMT",
       "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0p3n9ks.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Fifa to offer extra £2.6bn for football development",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c64g1ex2d7gvo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 14 Oct 2026 15:59:59 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/df77/live/a0001370-c7df-11f1-b712-6f93dfe07e87.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Jason Wilcox: ‘best eyes’ at Manchester United or promoted too far and too fast?",
+      "link": "https://www.theguardian.com/football/2026/oct/14/jason-wilcox-manchester-united-director-of-football-recruitment-ratcliffe",
+      "pubDate": "Wed, 14 Oct 2026 15:42:11 GMT",
+      "image": "https://i.guim.co.uk/img/media/1ec604cb6ba66bc69731fd21f6157b1b86d12ffb/249_0_2501_2001/master/2501.jpg?width=460&quality=85&auto=format&fit=max&s=26405c6bdfb4a59cc77586652f3bf348",
+      "source": "The Guardian",
+      "teams": [
+        66
+      ]
+    },
+    {
+      "title": "Wilcox the target again in another damaging Man Utd fallout",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cvp8g57ne53xo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 14 Oct 2026 15:30:03 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6ac2/live/f663aa70-c7de-11f1-9a39-31b474234113.png",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Dionisi set to remain in charge of Watford",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmd7qv7l2530o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 14 Oct 2026 14:46:30 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8235/live/aa0e4d90-c7b8-11f1-b41f-d7a6cb474575.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Semenyo 'froze' after alleged racist abuse, court told",
+      "link": "https://www.bbc.co.uk/news/articles/cvlyd3z1g8d8o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 14 Oct 2026 14:16:04 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7cd7/live/e16f7470-c7d7-11f1-9671-5b70c6e774ea.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Football Daily | Martínez lets rip as United’s dirty laundry gets a very public airing",
+      "link": "https://www.theguardian.com/football/2026/oct/14/lisandro-martinez-manchester-united-football-daily-newsletter",
+      "pubDate": "Wed, 14 Oct 2026 13:58:53 GMT",
+      "image": "https://i.guim.co.uk/img/media/ba94c5532e72df83476bcd2df86778e699cc237b/0_93_1799_1438/master/1799.jpg?width=460&quality=85&auto=format&fit=max&s=9e52d75664c7b0b534ce7d1f84b40ee0",
+      "source": "The Guardian",
+      "teams": []
+    },
+    {
+      "title": "Big scorelines, one-sided games - are Women's World Cup play-offs working?",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cq0k0x1l8gndo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 14 Oct 2026 13:25:56 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/82c7/live/eb28dd30-c7c3-11f1-993a-152cbb068da1.jpg",
       "source": "BBC Sport",
       "teams": []
     }
   ],
   "teams": {
     "57": {
-      "coach": "A. Wenger",
+      "coach": "Mikel Arteta",
       "squad": [
+        {
+          "id": 302255,
+          "name": "Maalik Hashi",
+          "position": null,
+          "dateOfBirth": "2008-09-03",
+          "nationality": "England"
+        },
         {
           "id": 3189,
           "name": "Kepa Arrizabalaga",
@@ -10522,6 +10435,13 @@
           "nationality": "Japan"
         },
         {
+          "id": 204460,
+          "name": "James Wright",
+          "position": "Goalkeeper",
+          "dateOfBirth": "2004-12-02",
+          "nationality": "England"
+        },
+        {
           "id": 3492,
           "name": "Victor Nilsson-Lindelöf",
           "position": "Defence",
@@ -10702,13 +10622,6 @@
       "coach": "Xabi Alonso",
       "squad": [
         {
-          "id": 301113,
-          "name": "Mahdi Nicoll-Jazuli",
-          "position": null,
-          "dateOfBirth": "2010-01-06",
-          "nationality": "England"
-        },
-        {
           "id": 3141,
           "name": "Emiliano Martínez",
           "position": "Goalkeeper",
@@ -10849,11 +10762,11 @@
           "nationality": "Belgium"
         },
         {
-          "id": 205684,
-          "name": "Ray Paez",
+          "id": 301113,
+          "name": "Mahdi Nicoll-Jazuli",
           "position": "Midfield",
-          "dateOfBirth": "2007-05-04",
-          "nationality": "Ecuador"
+          "dateOfBirth": "2010-01-06",
+          "nationality": "England"
         },
         {
           "id": 2074,
@@ -11050,6 +10963,13 @@
           "nationality": "England"
         },
         {
+          "id": 244747,
+          "name": "Briaden Graham",
+          "position": "Offence",
+          "dateOfBirth": "2007-11-07",
+          "nationality": "Northern Ireland"
+        },
+        {
           "id": 250436,
           "name": "Tyrique George",
           "position": "Offence",
@@ -11139,11 +11059,11 @@
           "nationality": "Nigeria"
         },
         {
-          "id": 217596,
-          "name": "Luc De Fougerolles",
-          "position": "Defence",
-          "dateOfBirth": "2005-10-12",
-          "nationality": "Canada"
+          "id": 3392,
+          "name": "Alex Iwobi",
+          "position": "Midfield",
+          "dateOfBirth": "1996-05-03",
+          "nationality": "Nigeria"
         },
         {
           "id": 3965,
@@ -11209,13 +11129,6 @@
           "nationality": "Spain"
         },
         {
-          "id": 3392,
-          "name": "Alex Iwobi",
-          "position": "Offence",
-          "dateOfBirth": "1996-05-03",
-          "nationality": "Nigeria"
-        },
-        {
           "id": 138036,
           "name": "Rodrigo Muniz",
           "position": "Offence",
@@ -11255,6 +11168,13 @@
     "64": {
       "coach": "A. Slot",
       "squad": [
+        {
+          "id": 302268,
+          "name": "Joshua Sonni-Lambie",
+          "position": null,
+          "dateOfBirth": "2007-11-16",
+          "nationality": "England"
+        },
         {
           "id": 1795,
           "name": "Alisson Becker",
@@ -11389,6 +11309,13 @@
           "nationality": "Netherlands"
         },
         {
+          "id": 214502,
+          "name": "James McConnell",
+          "position": "Midfield",
+          "dateOfBirth": "2004-09-13",
+          "nationality": "England"
+        },
+        {
           "id": 230517,
           "name": "Trey Nyoni",
           "position": "Midfield",
@@ -11429,6 +11356,13 @@
           "position": "Offence",
           "dateOfBirth": "2002-09-02",
           "nationality": "France"
+        },
+        {
+          "id": 244989,
+          "name": "Lewis Koumas",
+          "position": "Offence",
+          "dateOfBirth": "2005-09-19",
+          "nationality": "Wales"
         },
         {
           "id": 273423,
@@ -11504,13 +11438,6 @@
           "position": "Defence",
           "dateOfBirth": "2002-01-23",
           "nationality": "Croatia"
-        },
-        {
-          "id": 172791,
-          "name": "Josh Wilson-Esbrand",
-          "position": "Defence",
-          "dateOfBirth": "2002-12-26",
-          "nationality": "England"
         },
         {
           "id": 187202,
@@ -11629,6 +11556,13 @@
     "66": {
       "coach": "Michael Carrick",
       "squad": [
+        {
+          "id": 302252,
+          "name": "Daniel Armer",
+          "position": null,
+          "dateOfBirth": "2007-10-22",
+          "nationality": "England"
+        },
         {
           "id": 7913,
           "name": "Karl Darlow",
@@ -11770,13 +11704,6 @@
           "nationality": "England"
         },
         {
-          "id": 271941,
-          "name": "Jack Fletcher",
-          "position": "Midfield",
-          "dateOfBirth": "2007-03-19",
-          "nationality": "England"
-        },
-        {
           "id": 290139,
           "name": "Tyler Fletcher",
           "position": "Midfield",
@@ -11844,27 +11771,6 @@
     "67": {
       "coach": "E. Howe",
       "squad": [
-        {
-          "id": 301125,
-          "name": "Kyran Thompson",
-          "position": null,
-          "dateOfBirth": "2009-09-06",
-          "nationality": "England"
-        },
-        {
-          "id": 301124,
-          "name": "Michael Mills",
-          "position": null,
-          "dateOfBirth": "2009-02-18",
-          "nationality": "England"
-        },
-        {
-          "id": 301059,
-          "name": "Mason Miley",
-          "position": null,
-          "dateOfBirth": "2008-09-29",
-          "nationality": "England"
-        },
         {
           "id": 3310,
           "name": "Nick Pope",
@@ -11940,13 +11846,6 @@
           "name": "Lewis Hall",
           "position": "Defence",
           "dateOfBirth": "2025-06-30",
-          "nationality": "England"
-        },
-        {
-          "id": 277574,
-          "name": "Leo Shahar",
-          "position": "Defence",
-          "dateOfBirth": "2007-03-18",
           "nationality": "England"
         },
         {
@@ -12165,13 +12064,6 @@
           "nationality": "France"
         },
         {
-          "id": 165311,
-          "name": "Abdoullah Ba",
-          "position": "Midfield",
-          "dateOfBirth": "2003-07-31",
-          "nationality": "France"
-        },
-        {
           "id": 171876,
           "name": "Habib Diarra",
           "position": "Midfield",
@@ -12214,6 +12106,13 @@
           "nationality": "Netherlands"
         },
         {
+          "id": 165311,
+          "name": "Abdoullah Ba",
+          "position": "Offence",
+          "dateOfBirth": "2003-07-31",
+          "nationality": "France"
+        },
+        {
           "id": 172275,
           "name": "Romaine Mundle",
           "position": "Offence",
@@ -12240,13 +12139,6 @@
           "position": "Offence",
           "dateOfBirth": "2005-05-09",
           "nationality": "Morocco"
-        },
-        {
-          "id": 288921,
-          "name": "Juan Angulo",
-          "position": "Offence",
-          "dateOfBirth": "2008-01-12",
-          "nationality": "Ecuador"
         },
         {
           "id": 290809,
@@ -12560,25 +12452,11 @@
           "nationality": "England"
         },
         {
-          "id": 6357,
-          "name": "Matty Crooks",
-          "position": "Midfield",
-          "dateOfBirth": "1994-01-20",
-          "nationality": "England"
-        },
-        {
           "id": 11306,
           "name": "Kieran Dowell",
           "position": "Midfield",
           "dateOfBirth": "1997-10-10",
           "nationality": "England"
-        },
-        {
-          "id": 30298,
-          "name": "Abdülkadir Ömür",
-          "position": "Midfield",
-          "dateOfBirth": "1999-06-25",
-          "nationality": "Turkey"
         },
         {
           "id": 49092,
@@ -12651,6 +12529,13 @@
           "nationality": "Wales"
         },
         {
+          "id": 30298,
+          "name": "Abdülkadir Ömür",
+          "position": "Offence",
+          "dateOfBirth": "1999-06-25",
+          "nationality": "Turkey"
+        },
+        {
           "id": 80761,
           "name": "Joe Gelhardt",
           "position": "Offence",
@@ -12663,13 +12548,6 @@
           "position": "Offence",
           "dateOfBirth": "2004-01-19",
           "nationality": "France"
-        },
-        {
-          "id": 170777,
-          "name": "David Akintola",
-          "position": "Offence",
-          "dateOfBirth": "1996-01-13",
-          "nationality": "Nigeria"
         },
         {
           "id": 192811,
@@ -13011,13 +12889,6 @@
           "nationality": "Paraguay"
         },
         {
-          "id": 176777,
-          "name": "Kasey McAteer",
-          "position": "Midfield",
-          "dateOfBirth": "2001-11-22",
-          "nationality": "Ireland"
-        },
-        {
           "id": 4158,
           "name": "Jack Clarke",
           "position": "Offence",
@@ -13058,6 +12929,13 @@
           "position": "Offence",
           "dateOfBirth": "2004-07-16",
           "nationality": "Brazil"
+        },
+        {
+          "id": 176777,
+          "name": "Kasey McAteer",
+          "position": "Offence",
+          "dateOfBirth": "2001-11-22",
+          "nationality": "Ireland"
         },
         {
           "id": 187162,
@@ -13322,6 +13200,13 @@
           "nationality": "Morocco"
         },
         {
+          "id": 213425,
+          "name": "Anan Khalaili",
+          "position": "Defence",
+          "dateOfBirth": "2004-09-03",
+          "nationality": "Israel"
+        },
+        {
           "id": 260271,
           "name": "Jaydee Canvot",
           "position": "Defence",
@@ -13378,13 +13263,6 @@
           "nationality": "England"
         },
         {
-          "id": 213425,
-          "name": "Anan Khalaili",
-          "position": "Midfield",
-          "dateOfBirth": "2004-09-03",
-          "nationality": "Israel"
-        },
-        {
           "id": 641,
           "name": "Jean-Philippe Mateta",
           "position": "Offence",
@@ -13427,25 +13305,11 @@
           "nationality": "Spain"
         },
         {
-          "id": 176241,
-          "name": "Matheus Franca",
-          "position": "Offence",
-          "dateOfBirth": "2004-04-01",
-          "nationality": "Brazil"
-        },
-        {
           "id": 179319,
           "name": "Darío Osorio",
           "position": "Offence",
           "dateOfBirth": "2004-01-24",
           "nationality": "Chile"
-        },
-        {
-          "id": 179712,
-          "name": "Jesurun Rak-Sakyi",
-          "position": "Offence",
-          "dateOfBirth": "2002-10-05",
-          "nationality": "England"
         },
         {
           "id": 213269,
@@ -13466,13 +13330,6 @@
     "397": {
       "coach": "F. Hürzeler",
       "squad": [
-        {
-          "id": 301031,
-          "name": "Younes Ibrahim",
-          "position": null,
-          "dateOfBirth": "2008-02-16",
-          "nationality": "Australia"
-        },
         {
           "id": 4040,
           "name": "Jason Steele",
@@ -13579,13 +13436,6 @@
           "nationality": "Germany"
         },
         {
-          "id": 29319,
-          "name": "Femi Azeez",
-          "position": "Midfield",
-          "dateOfBirth": "2001-06-05",
-          "nationality": "England"
-        },
-        {
           "id": 145613,
           "name": "Yasin Ayari",
           "position": "Midfield",
@@ -13619,6 +13469,13 @@
           "position": "Midfield",
           "dateOfBirth": "2005-04-25",
           "nationality": "Spain"
+        },
+        {
+          "id": 29319,
+          "name": "Femi Azeez",
+          "position": "Offence",
+          "dateOfBirth": "2001-06-05",
+          "nationality": "England"
         },
         {
           "id": 81189,
@@ -13738,6 +13595,13 @@
           "nationality": "Scotland"
         },
         {
+          "id": 101910,
+          "name": "Keane Lewis-Potter",
+          "position": "Defence",
+          "dateOfBirth": "2001-02-22",
+          "nationality": "England"
+        },
+        {
           "id": 115642,
           "name": "Nathan Collins",
           "position": "Defence",
@@ -13806,13 +13670,6 @@
           "position": "Midfield",
           "dateOfBirth": "2000-07-03",
           "nationality": "Denmark"
-        },
-        {
-          "id": 101910,
-          "name": "Keane Lewis-Potter",
-          "position": "Midfield",
-          "dateOfBirth": "2001-02-22",
-          "nationality": "England"
         },
         {
           "id": 150964,
@@ -13894,7 +13751,7 @@
       ]
     },
     "1044": {
-      "coach": "J. Tindall",
+      "coach": "M. Rose",
       "squad": [
         {
           "id": 8079,
@@ -13995,13 +13852,6 @@
           "nationality": "England"
         },
         {
-          "id": 6396,
-          "name": "Marcus Tavernier",
-          "position": "Midfield",
-          "dateOfBirth": "1999-03-22",
-          "nationality": "England"
-        },
-        {
           "id": 7561,
           "name": "Justin Kluivert",
           "position": "Midfield",
@@ -14037,18 +13887,18 @@
           "nationality": "Hungary"
         },
         {
-          "id": 273152,
-          "name": "Ben Winterburn",
-          "position": "Midfield",
-          "dateOfBirth": "2004-09-04",
-          "nationality": "England"
-        },
-        {
           "id": 4321,
           "name": "David Brooks",
           "position": "Offence",
           "dateOfBirth": "1997-07-08",
           "nationality": "Wales"
+        },
+        {
+          "id": 6396,
+          "name": "Marcus Tavernier",
+          "position": "Offence",
+          "dateOfBirth": "1999-03-22",
+          "nationality": "England"
         },
         {
           "id": 131260,
@@ -14102,7 +13952,7 @@
       ]
     },
     "1076": {
-      "coach": null,
+      "coach": "Frank Lampard",
       "squad": [
         {
           "id": 4418,
@@ -14271,6 +14121,13 @@
           "position": "Offence",
           "dateOfBirth": "1998-03-27",
           "nationality": "USA"
+        },
+        {
+          "id": 80175,
+          "name": "Yann Gboho",
+          "position": "Offence",
+          "dateOfBirth": "2001-01-14",
+          "nationality": "France"
         },
         {
           "id": 113632,
