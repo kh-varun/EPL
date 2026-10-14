@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-14T19:48:35.715Z",
+  "fetchedAt": "2026-10-14T22:46:44.961Z",
   "standings": [
     {
       "position": 1,
@@ -15,9 +15,9 @@
       "draw": 0,
       "lost": 0,
       "points": 6,
-      "goalsFor": 9,
-      "goalsAgainst": 1,
-      "goalDifference": 8,
+      "goalsFor": 10,
+      "goalsAgainst": 3,
+      "goalDifference": 7,
       "form": null
     },
     {
@@ -42,6 +42,44 @@
     {
       "position": 3,
       "team": {
+        "id": 58,
+        "name": "Aston Villa FC",
+        "shortName": "Aston Villa",
+        "tla": "AVL",
+        "crest": "https://crests.football-data.org/58.png"
+      },
+      "playedGames": 2,
+      "won": 2,
+      "draw": 0,
+      "lost": 0,
+      "points": 6,
+      "goalsFor": 9,
+      "goalsAgainst": 2,
+      "goalDifference": 7,
+      "form": null
+    },
+    {
+      "position": 4,
+      "team": {
+        "id": 10,
+        "name": "VfB Stuttgart",
+        "shortName": "Stuttgart",
+        "tla": "VFB",
+        "crest": "https://crests.football-data.org/10.png"
+      },
+      "playedGames": 2,
+      "won": 2,
+      "draw": 0,
+      "lost": 0,
+      "points": 6,
+      "goalsFor": 6,
+      "goalsAgainst": 1,
+      "goalDifference": 5,
+      "form": null
+    },
+    {
+      "position": 5,
+      "team": {
         "id": 64,
         "name": "Liverpool FC",
         "shortName": "Liverpool",
@@ -59,26 +97,7 @@
       "form": null
     },
     {
-      "position": 4,
-      "team": {
-        "id": 58,
-        "name": "Aston Villa FC",
-        "shortName": "Aston Villa",
-        "tla": "AVL",
-        "crest": "https://crests.football-data.org/58.png"
-      },
-      "playedGames": 2,
-      "won": 2,
-      "draw": 0,
-      "lost": 0,
-      "points": 6,
-      "goalsFor": 6,
-      "goalsAgainst": 2,
-      "goalDifference": 4,
-      "form": null
-    },
-    {
-      "position": 5,
+      "position": 6,
       "team": {
         "id": 498,
         "name": "Sporting Clube de Portugal",
@@ -97,7 +116,7 @@
       "form": null
     },
     {
-      "position": 6,
+      "position": 7,
       "team": {
         "id": 57,
         "name": "Arsenal FC",
@@ -116,26 +135,45 @@
       "form": null
     },
     {
-      "position": 7,
+      "position": 8,
       "team": {
-        "id": 10,
-        "name": "VfB Stuttgart",
-        "shortName": "Stuttgart",
-        "tla": "VFB",
-        "crest": "https://crests.football-data.org/10.png"
+        "id": 86,
+        "name": "Real Madrid CF",
+        "shortName": "Real Madrid",
+        "tla": "RMA",
+        "crest": "https://crests.football-data.org/86.png"
       },
       "playedGames": 2,
       "won": 2,
       "draw": 0,
       "lost": 0,
       "points": 6,
-      "goalsFor": 4,
-      "goalsAgainst": 1,
-      "goalDifference": 3,
+      "goalsFor": 6,
+      "goalsAgainst": 4,
+      "goalDifference": 2,
       "form": null
     },
     {
-      "position": 8,
+      "position": 9,
+      "team": {
+        "id": 90,
+        "name": "Real Betis Balompié",
+        "shortName": "Real Betis",
+        "tla": "BET",
+        "crest": "https://crests.football-data.org/90.png"
+      },
+      "playedGames": 2,
+      "won": 2,
+      "draw": 0,
+      "lost": 0,
+      "points": 6,
+      "goalsFor": 6,
+      "goalsAgainst": 4,
+      "goalDifference": 2,
+      "form": null
+    },
+    {
+      "position": 10,
       "team": {
         "id": 5,
         "name": "FC Bayern München",
@@ -154,83 +192,26 @@
       "form": null
     },
     {
-      "position": 9,
-      "team": {
-        "id": 90,
-        "name": "Real Betis Balompié",
-        "shortName": "Real Betis",
-        "tla": "BET",
-        "crest": "https://crests.football-data.org/90.png"
-      },
-      "playedGames": 2,
-      "won": 1,
-      "draw": 1,
-      "lost": 0,
-      "points": 4,
-      "goalsFor": 3,
-      "goalsAgainst": 2,
-      "goalDifference": 1,
-      "form": null
-    },
-    {
-      "position": 10,
-      "team": {
-        "id": 86,
-        "name": "Real Madrid CF",
-        "shortName": "Real Madrid",
-        "tla": "RMA",
-        "crest": "https://crests.football-data.org/86.png"
-      },
-      "playedGames": 2,
-      "won": 1,
-      "draw": 1,
-      "lost": 0,
-      "points": 4,
-      "goalsFor": 3,
-      "goalsAgainst": 2,
-      "goalDifference": 1,
-      "form": null
-    },
-    {
       "position": 11,
       "team": {
-        "id": 4,
-        "name": "Borussia Dortmund",
-        "shortName": "Dortmund",
-        "tla": "BVB",
-        "crest": "https://crests.football-data.org/4.png"
+        "id": 1887,
+        "name": "FK Shakhtar Donetsk",
+        "shortName": "Shaktar",
+        "tla": "SHD",
+        "crest": "https://crests.football-data.org/1887.png"
       },
       "playedGames": 2,
       "won": 1,
       "draw": 1,
       "lost": 0,
       "points": 4,
-      "goalsFor": 3,
+      "goalsFor": 4,
       "goalsAgainst": 2,
-      "goalDifference": 1,
+      "goalDifference": 2,
       "form": null
     },
     {
       "position": 12,
-      "team": {
-        "id": 1899,
-        "name": "PAE AEK",
-        "shortName": "PAE AEK",
-        "tla": "AEK",
-        "crest": "https://crests.football-data.org/1899.png"
-      },
-      "playedGames": 2,
-      "won": 1,
-      "draw": 1,
-      "lost": 0,
-      "points": 4,
-      "goalsFor": 2,
-      "goalsAgainst": 1,
-      "goalDifference": 1,
-      "form": null
-    },
-    {
-      "position": 13,
       "team": {
         "id": 7397,
         "name": "Como 1907",
@@ -249,7 +230,7 @@
       "form": null
     },
     {
-      "position": 14,
+      "position": 13,
       "team": {
         "id": 66,
         "name": "Manchester United FC",
@@ -268,7 +249,7 @@
       "form": null
     },
     {
-      "position": 15,
+      "position": 14,
       "team": {
         "id": 94,
         "name": "Villarreal CF",
@@ -287,7 +268,7 @@
       "form": null
     },
     {
-      "position": 16,
+      "position": 15,
       "team": {
         "id": 78,
         "name": "Club Atlético de Madrid",
@@ -306,7 +287,7 @@
       "form": null
     },
     {
-      "position": 17,
+      "position": 16,
       "team": {
         "id": 851,
         "name": "Club Brugge KV",
@@ -325,7 +306,45 @@
       "form": null
     },
     {
+      "position": 17,
+      "team": {
+        "id": 65,
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "tla": "MCI",
+        "crest": "https://crests.football-data.org/65.png"
+      },
+      "playedGames": 2,
+      "won": 1,
+      "draw": 0,
+      "lost": 1,
+      "points": 3,
+      "goalsFor": 4,
+      "goalsAgainst": 4,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
       "position": 18,
+      "team": {
+        "id": 4,
+        "name": "Borussia Dortmund",
+        "shortName": "Dortmund",
+        "tla": "BVB",
+        "crest": "https://crests.football-data.org/4.png"
+      },
+      "playedGames": 2,
+      "won": 1,
+      "draw": 0,
+      "lost": 1,
+      "points": 3,
+      "goalsFor": 3,
+      "goalsAgainst": 3,
+      "goalDifference": 0,
+      "form": null
+    },
+    {
+      "position": 19,
       "team": {
         "id": 546,
         "name": "Racing Club de Lens",
@@ -344,13 +363,13 @@
       "form": null
     },
     {
-      "position": 19,
+      "position": 20,
       "team": {
-        "id": 65,
-        "name": "Manchester City FC",
-        "shortName": "Man City",
-        "tla": "MCI",
-        "crest": "https://crests.football-data.org/65.png"
+        "id": 1899,
+        "name": "PAE AEK",
+        "shortName": "PAE AEK",
+        "tla": "AEK",
+        "crest": "https://crests.football-data.org/1899.png"
       },
       "playedGames": 2,
       "won": 1,
@@ -363,7 +382,7 @@
       "form": null
     },
     {
-      "position": 20,
+      "position": 21,
       "team": {
         "id": 721,
         "name": "RB Leipzig",
@@ -382,7 +401,7 @@
       "form": null
     },
     {
-      "position": 21,
+      "position": 22,
       "team": {
         "id": 10233,
         "name": "Sabah FK",
@@ -401,7 +420,7 @@
       "form": null
     },
     {
-      "position": 22,
+      "position": 23,
       "team": {
         "id": 675,
         "name": "Feyenoord Rotterdam",
@@ -420,7 +439,26 @@
       "form": null
     },
     {
-      "position": 23,
+      "position": 24,
+      "team": {
+        "id": 5721,
+        "name": "FK Bodø/Glimt",
+        "shortName": "Bodø/Glimt",
+        "tla": "FK",
+        "crest": "https://crests.football-data.org/5721.png"
+      },
+      "playedGames": 2,
+      "won": 1,
+      "draw": 0,
+      "lost": 1,
+      "points": 3,
+      "goalsFor": 1,
+      "goalsAgainst": 5,
+      "goalDifference": -4,
+      "form": null
+    },
+    {
+      "position": 25,
       "team": {
         "id": 100,
         "name": "AS Roma",
@@ -430,35 +468,16 @@
       },
       "playedGames": 2,
       "won": 0,
-      "draw": 2,
-      "lost": 0,
-      "points": 2,
-      "goalsFor": 2,
-      "goalsAgainst": 2,
-      "goalDifference": 0,
+      "draw": 1,
+      "lost": 1,
+      "points": 1,
+      "goalsFor": 4,
+      "goalsAgainst": 5,
+      "goalDifference": -1,
       "form": null
     },
     {
-      "position": 23,
-      "team": {
-        "id": 1887,
-        "name": "FK Shakhtar Donetsk",
-        "shortName": "Shaktar",
-        "tla": "SHD",
-        "crest": "https://crests.football-data.org/1887.png"
-      },
-      "playedGames": 2,
-      "won": 0,
-      "draw": 2,
-      "lost": 0,
-      "points": 2,
-      "goalsFor": 2,
-      "goalsAgainst": 2,
-      "goalDifference": 0,
-      "form": null
-    },
-    {
-      "position": 25,
+      "position": 26,
       "team": {
         "id": 674,
         "name": "PSV",
@@ -477,7 +496,7 @@
       "form": null
     },
     {
-      "position": 26,
+      "position": 27,
       "team": {
         "id": 5720,
         "name": "Viking FK",
@@ -496,25 +515,6 @@
       "form": null
     },
     {
-      "position": 27,
-      "team": {
-        "id": 503,
-        "name": "FC Porto",
-        "shortName": "Porto",
-        "tla": "FCP",
-        "crest": "https://crests.football-data.org/503.png"
-      },
-      "playedGames": 2,
-      "won": 0,
-      "draw": 1,
-      "lost": 1,
-      "points": 1,
-      "goalsFor": 0,
-      "goalsAgainst": 2,
-      "goalDifference": -2,
-      "form": null
-    },
-    {
       "position": 28,
       "team": {
         "id": 613,
@@ -529,31 +529,12 @@
       "lost": 1,
       "points": 1,
       "goalsFor": 1,
-      "goalsAgainst": 4,
-      "goalDifference": -3,
+      "goalsAgainst": 7,
+      "goalDifference": -6,
       "form": null
     },
     {
       "position": 29,
-      "team": {
-        "id": 5721,
-        "name": "FK Bodø/Glimt",
-        "shortName": "Bodø/Glimt",
-        "tla": "FK",
-        "crest": "https://crests.football-data.org/5721.png"
-      },
-      "playedGames": 2,
-      "won": 0,
-      "draw": 1,
-      "lost": 1,
-      "points": 1,
-      "goalsFor": 0,
-      "goalsAgainst": 5,
-      "goalDifference": -5,
-      "form": null
-    },
-    {
-      "position": 30,
       "team": {
         "id": 108,
         "name": "FC Internazionale Milano",
@@ -569,6 +550,25 @@
       "goalsFor": 4,
       "goalsAgainst": 6,
       "goalDifference": -2,
+      "form": null
+    },
+    {
+      "position": 30,
+      "team": {
+        "id": 503,
+        "name": "FC Porto",
+        "shortName": "Porto",
+        "tla": "FCP",
+        "crest": "https://crests.football-data.org/503.png"
+      },
+      "playedGames": 2,
+      "won": 0,
+      "draw": 0,
+      "lost": 2,
+      "points": 0,
+      "goalsFor": 2,
+      "goalsAgainst": 5,
+      "goalDifference": -3,
       "form": null
     },
     {
@@ -681,12 +681,187 @@
       "lost": 2,
       "points": 0,
       "goalsFor": 1,
-      "goalsAgainst": 7,
-      "goalDifference": -6,
+      "goalsAgainst": 9,
+      "goalDifference": -8,
       "form": null
     }
   ],
   "lastResults": [
+    {
+      "id": 575352,
+      "utcDate": "2026-10-14T19:00:00Z",
+      "status": "FINISHED",
+      "matchday": 2,
+      "homeTeam": {
+        "id": 100,
+        "name": "AS Roma",
+        "shortName": "Roma",
+        "tla": "ROM",
+        "crest": "https://crests.football-data.org/100.png"
+      },
+      "awayTeam": {
+        "id": 86,
+        "name": "Real Madrid CF",
+        "shortName": "Real Madrid",
+        "tla": "RMA",
+        "crest": "https://crests.football-data.org/86.png"
+      },
+      "score": {
+        "home": 3,
+        "away": 4,
+        "winner": "AWAY_TEAM"
+      }
+    },
+    {
+      "id": 575353,
+      "utcDate": "2026-10-14T19:00:00Z",
+      "status": "FINISHED",
+      "matchday": 2,
+      "homeTeam": {
+        "id": 65,
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "tla": "MCI",
+        "crest": "https://crests.football-data.org/65.png"
+      },
+      "awayTeam": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "tla": "PSG",
+        "crest": "https://crests.football-data.org/524.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 4,
+        "winner": "AWAY_TEAM"
+      }
+    },
+    {
+      "id": 575354,
+      "utcDate": "2026-10-14T19:00:00Z",
+      "status": "FINISHED",
+      "matchday": 2,
+      "homeTeam": {
+        "id": 5721,
+        "name": "FK Bodø/Glimt",
+        "shortName": "Bodø/Glimt",
+        "tla": "FK",
+        "crest": "https://crests.football-data.org/5721.png"
+      },
+      "awayTeam": {
+        "id": 4,
+        "name": "Borussia Dortmund",
+        "shortName": "Dortmund",
+        "tla": "BVB",
+        "crest": "https://crests.football-data.org/4.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 0,
+        "winner": "HOME_TEAM"
+      }
+    },
+    {
+      "id": 575355,
+      "utcDate": "2026-10-14T19:00:00Z",
+      "status": "FINISHED",
+      "matchday": 2,
+      "homeTeam": {
+        "id": 58,
+        "name": "Aston Villa FC",
+        "shortName": "Aston Villa",
+        "tla": "AVL",
+        "crest": "https://crests.football-data.org/58.png"
+      },
+      "awayTeam": {
+        "id": 613,
+        "name": "Fenerbahçe SK",
+        "shortName": "Fenerbahçe",
+        "tla": "FEN",
+        "crest": "https://crests.football-data.org/613.png"
+      },
+      "score": {
+        "home": 6,
+        "away": 0,
+        "winner": "HOME_TEAM"
+      }
+    },
+    {
+      "id": 575356,
+      "utcDate": "2026-10-14T19:00:00Z",
+      "status": "FINISHED",
+      "matchday": 2,
+      "homeTeam": {
+        "id": 90,
+        "name": "Real Betis Balompié",
+        "shortName": "Real Betis",
+        "tla": "BET",
+        "crest": "https://crests.football-data.org/90.png"
+      },
+      "awayTeam": {
+        "id": 503,
+        "name": "FC Porto",
+        "shortName": "Porto",
+        "tla": "FCP",
+        "crest": "https://crests.football-data.org/503.png"
+      },
+      "score": {
+        "home": 3,
+        "away": 2,
+        "winner": "HOME_TEAM"
+      }
+    },
+    {
+      "id": 575357,
+      "utcDate": "2026-10-14T19:00:00Z",
+      "status": "FINISHED",
+      "matchday": 2,
+      "homeTeam": {
+        "id": 1887,
+        "name": "FK Shakhtar Donetsk",
+        "shortName": "Shaktar",
+        "tla": "SHD",
+        "crest": "https://crests.football-data.org/1887.png"
+      },
+      "awayTeam": {
+        "id": 1899,
+        "name": "PAE AEK",
+        "shortName": "PAE AEK",
+        "tla": "AEK",
+        "crest": "https://crests.football-data.org/1899.png"
+      },
+      "score": {
+        "home": 3,
+        "away": 1,
+        "winner": "HOME_TEAM"
+      }
+    },
+    {
+      "id": 575358,
+      "utcDate": "2026-10-14T19:00:00Z",
+      "status": "FINISHED",
+      "matchday": 2,
+      "homeTeam": {
+        "id": 7509,
+        "name": "ŠK Slovan Bratislava",
+        "shortName": "Sl. Bratislava",
+        "tla": "SBA",
+        "crest": "https://crests.football-data.org/7509.png"
+      },
+      "awayTeam": {
+        "id": 10,
+        "name": "VfB Stuttgart",
+        "shortName": "Stuttgart",
+        "tla": "VFB",
+        "crest": "https://crests.football-data.org/10.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 3,
+        "winner": "AWAY_TEAM"
+      }
+    },
     {
       "id": 575350,
       "utcDate": "2026-10-14T16:45:00Z",
@@ -1414,181 +1589,6 @@
     }
   ],
   "nextFixtures": [
-    {
-      "id": 575352,
-      "utcDate": "2026-10-14T19:00:00Z",
-      "status": "IN_PLAY",
-      "matchday": 2,
-      "homeTeam": {
-        "id": 100,
-        "name": "AS Roma",
-        "shortName": "Roma",
-        "tla": "ROM",
-        "crest": "https://crests.football-data.org/100.png"
-      },
-      "awayTeam": {
-        "id": 86,
-        "name": "Real Madrid CF",
-        "shortName": "Real Madrid",
-        "tla": "RMA",
-        "crest": "https://crests.football-data.org/86.png"
-      },
-      "score": {
-        "home": 1,
-        "away": 1,
-        "winner": "DRAW"
-      }
-    },
-    {
-      "id": 575353,
-      "utcDate": "2026-10-14T19:00:00Z",
-      "status": "IN_PLAY",
-      "matchday": 2,
-      "homeTeam": {
-        "id": 65,
-        "name": "Manchester City FC",
-        "shortName": "Man City",
-        "tla": "MCI",
-        "crest": "https://crests.football-data.org/65.png"
-      },
-      "awayTeam": {
-        "id": 524,
-        "name": "Paris Saint-Germain FC",
-        "shortName": "PSG",
-        "tla": "PSG",
-        "crest": "https://crests.football-data.org/524.png"
-      },
-      "score": {
-        "home": 0,
-        "away": 3,
-        "winner": "AWAY_TEAM"
-      }
-    },
-    {
-      "id": 575354,
-      "utcDate": "2026-10-14T19:00:00Z",
-      "status": "IN_PLAY",
-      "matchday": 2,
-      "homeTeam": {
-        "id": 5721,
-        "name": "FK Bodø/Glimt",
-        "shortName": "Bodø/Glimt",
-        "tla": "FK",
-        "crest": "https://crests.football-data.org/5721.png"
-      },
-      "awayTeam": {
-        "id": 4,
-        "name": "Borussia Dortmund",
-        "shortName": "Dortmund",
-        "tla": "BVB",
-        "crest": "https://crests.football-data.org/4.png"
-      },
-      "score": {
-        "home": 0,
-        "away": 0,
-        "winner": "DRAW"
-      }
-    },
-    {
-      "id": 575355,
-      "utcDate": "2026-10-14T19:00:00Z",
-      "status": "IN_PLAY",
-      "matchday": 2,
-      "homeTeam": {
-        "id": 58,
-        "name": "Aston Villa FC",
-        "shortName": "Aston Villa",
-        "tla": "AVL",
-        "crest": "https://crests.football-data.org/58.png"
-      },
-      "awayTeam": {
-        "id": 613,
-        "name": "Fenerbahçe SK",
-        "shortName": "Fenerbahçe",
-        "tla": "FEN",
-        "crest": "https://crests.football-data.org/613.png"
-      },
-      "score": {
-        "home": 3,
-        "away": 0,
-        "winner": "HOME_TEAM"
-      }
-    },
-    {
-      "id": 575356,
-      "utcDate": "2026-10-14T19:00:00Z",
-      "status": "IN_PLAY",
-      "matchday": 2,
-      "homeTeam": {
-        "id": 90,
-        "name": "Real Betis Balompié",
-        "shortName": "Real Betis",
-        "tla": "BET",
-        "crest": "https://crests.football-data.org/90.png"
-      },
-      "awayTeam": {
-        "id": 503,
-        "name": "FC Porto",
-        "shortName": "Porto",
-        "tla": "FCP",
-        "crest": "https://crests.football-data.org/503.png"
-      },
-      "score": {
-        "home": 0,
-        "away": 1,
-        "winner": "AWAY_TEAM"
-      }
-    },
-    {
-      "id": 575357,
-      "utcDate": "2026-10-14T19:00:00Z",
-      "status": "IN_PLAY",
-      "matchday": 2,
-      "homeTeam": {
-        "id": 1887,
-        "name": "FK Shakhtar Donetsk",
-        "shortName": "Shaktar",
-        "tla": "SHD",
-        "crest": "https://crests.football-data.org/1887.png"
-      },
-      "awayTeam": {
-        "id": 1899,
-        "name": "PAE AEK",
-        "shortName": "PAE AEK",
-        "tla": "AEK",
-        "crest": "https://crests.football-data.org/1899.png"
-      },
-      "score": {
-        "home": 1,
-        "away": 1,
-        "winner": "DRAW"
-      }
-    },
-    {
-      "id": 575358,
-      "utcDate": "2026-10-14T19:00:00Z",
-      "status": "IN_PLAY",
-      "matchday": 2,
-      "homeTeam": {
-        "id": 7509,
-        "name": "ŠK Slovan Bratislava",
-        "shortName": "Sl. Bratislava",
-        "tla": "SBA",
-        "crest": "https://crests.football-data.org/7509.png"
-      },
-      "awayTeam": {
-        "id": 10,
-        "name": "VfB Stuttgart",
-        "shortName": "Stuttgart",
-        "tla": "VFB",
-        "crest": "https://crests.football-data.org/10.png"
-      },
-      "score": {
-        "home": 0,
-        "away": 1,
-        "winner": "AWAY_TEAM"
-      }
-    },
     {
       "id": 575359,
       "utcDate": "2026-10-20T16:45:00Z",
