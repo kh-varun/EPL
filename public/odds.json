@@ -1,12 +1,12 @@
 {
-  "fetchedAt": "2026-10-15T01:51:06.052Z",
+  "fetchedAt": "2026-10-15T06:55:58.206Z",
   "odds": {
     "560602": {
       "eventTicker": "KXEPLGAME-26OCT17FULHUL",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct17fulhul",
       "home": {
         "label": "Fulham",
-        "probability": 56,
+        "probability": 55,
         "ticker": "KXEPLGAME-26OCT17FULHUL-FUL"
       },
       "away": {
@@ -16,7 +16,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 23,
         "ticker": "KXEPLGAME-26OCT17FULHUL-TIE"
       }
     },
@@ -163,7 +163,7 @@
       },
       "away": {
         "label": "Ipswich Town",
-        "probability": 8,
+        "probability": 7,
         "ticker": "KXEPLGAME-26OCT17MCIIPS-IPS"
       },
       "draw": {
@@ -196,7 +196,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct25lfcbri",
       "home": {
         "label": "Liverpool",
-        "probability": 49,
+        "probability": 48,
         "ticker": "KXEPLGAME-26OCT25LFCBRI-LFC"
       },
       "away": {
@@ -258,7 +258,7 @@
       },
       "away": {
         "label": "Bournemouth",
-        "probability": 23,
+        "probability": 24,
         "ticker": "KXEPLGAME-26OCT25MUNBOU-BOU"
       },
       "draw": {
@@ -272,12 +272,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct24arseve",
       "home": {
         "label": "Arsenal",
-        "probability": 71,
+        "probability": 70,
         "ticker": "KXEPLGAME-26OCT24ARSEVE-ARS"
       },
       "away": {
         "label": "Everton",
-        "probability": 8,
+        "probability": 11,
         "ticker": "KXEPLGAME-26OCT24ARSEVE-EVE"
       },
       "draw": {
@@ -296,7 +296,7 @@
       },
       "away": {
         "label": "Tottenham",
-        "probability": 26,
+        "probability": 24,
         "ticker": "KXEPLGAME-26OCT24CFCTOT-TOT"
       },
       "draw": {
@@ -353,7 +353,7 @@
       },
       "away": {
         "label": "Nottingham",
-        "probability": 43,
+        "probability": 44,
         "ticker": "KXEPLGAME-26OCT23IPSNFO-NFO"
       },
       "draw": {
