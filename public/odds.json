@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-16T15:26:30.914Z",
+  "fetchedAt": "2026-10-16T18:54:48.056Z",
   "odds": {
     "560602": {
       "eventTicker": "KXEPLGAME-26OCT17FULHUL",
@@ -25,12 +25,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct17evecfc",
       "home": {
         "label": "Everton",
-        "probability": 30,
+        "probability": 31,
         "ticker": "KXEPLGAME-26OCT17EVECFC-EVE"
       },
       "away": {
         "label": "Chelsea",
-        "probability": 45,
+        "probability": 44,
         "ticker": "KXEPLGAME-26OCT17EVECFC-CFC"
       },
       "draw": {
@@ -44,12 +44,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct18bousun",
       "home": {
         "label": "Bournemouth",
-        "probability": 45,
+        "probability": 46,
         "ticker": "KXEPLGAME-26OCT18BOUSUN-BOU"
       },
       "away": {
         "label": "Sunderland",
-        "probability": 26,
+        "probability": 28,
         "ticker": "KXEPLGAME-26OCT18BOUSUN-SUN"
       },
       "draw": {
@@ -101,7 +101,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct17newavl",
       "home": {
         "label": "Newcastle",
-        "probability": 42,
+        "probability": 43,
         "ticker": "KXEPLGAME-26OCT17NEWAVL-NEW"
       },
       "away": {
@@ -111,7 +111,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 27,
         "ticker": "KXEPLGAME-26OCT17NEWAVL-TIE"
       }
     },
@@ -139,7 +139,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct18bricry",
       "home": {
         "label": "Brighton Hove",
-        "probability": 64,
+        "probability": 65,
         "ticker": "KXEPLGAME-26OCT18BRICRY-BRI"
       },
       "away": {
@@ -163,7 +163,7 @@
       },
       "away": {
         "label": "Ipswich Town",
-        "probability": 8,
+        "probability": 7,
         "ticker": "KXEPLGAME-26OCT17MCIIPS-IPS"
       },
       "draw": {
@@ -182,7 +182,7 @@
       },
       "away": {
         "label": "Liverpool",
-        "probability": 34,
+        "probability": 35,
         "ticker": "KXEPLGAME-26OCT17BRELFC-LFC"
       },
       "draw": {
@@ -320,7 +320,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 45,
+        "probability": 28,
         "ticker": "KXEPLGAME-26OCT24COVFUL-TIE"
       }
     },
