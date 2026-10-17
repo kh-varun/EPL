@@ -1,4 +1,292 @@
 {
-  "fetchedAt": "2026-10-13T21:23:14.980Z",
-  "lineups": {}
+  "fetchedAt": "2026-10-17T12:56:05.990Z",
+  "lineups": {
+    "560603": {
+      "utcDate": "2026-10-17T11:30:00Z",
+      "homeTeamId": 62,
+      "awayTeamId": 61,
+      "byTeam": {
+        "61": {
+          "teamName": "Chelsea",
+          "formation": "4-2-3-1",
+          "startXI": [
+            {
+              "id": 19599,
+              "name": "E. Martínez",
+              "number": 1,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 366735,
+              "name": "Joshua Kofi Acheampong",
+              "number": 34,
+              "position": "D",
+              "grid": "2:4"
+            },
+            {
+              "id": 20995,
+              "name": "M. Lacroix",
+              "number": 5,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 152953,
+              "name": "L. Colwill",
+              "number": 6,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 341642,
+              "name": "J. Hato",
+              "number": 21,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 116117,
+              "name": "M. Caicedo",
+              "number": 25,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 292,
+              "name": "J. Henderson",
+              "number": 14,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 1864,
+              "name": "Pedro Neto",
+              "number": 7,
+              "position": "M",
+              "grid": "4:3"
+            },
+            {
+              "id": 152982,
+              "name": "C. Palmer",
+              "number": 10,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 19170,
+              "name": "M. Rogers",
+              "number": 17,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 10329,
+              "name": "João Pedro",
+              "number": 9,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 340151,
+              "name": "M. Penders",
+              "number": 39,
+              "position": "G"
+            },
+            {
+              "id": 1469,
+              "name": "D. Welbeck",
+              "number": 18,
+              "position": "F"
+            },
+            {
+              "id": 319572,
+              "name": "V. Barco",
+              "number": 4,
+              "position": "M"
+            },
+            {
+              "id": 282125,
+              "name": "R. Lavia",
+              "number": 45,
+              "position": "M"
+            },
+            {
+              "id": 506618,
+              "name": "M. Nicoll-Jazuli",
+              "number": 32,
+              "position": "M"
+            },
+            {
+              "id": 419582,
+              "name": "Geovany Tcherno Quenda",
+              "number": 23,
+              "position": "M"
+            },
+            {
+              "id": 425733,
+              "name": "Estêvão",
+              "number": 41,
+              "position": "F"
+            },
+            {
+              "id": 383018,
+              "name": "M. Palestra",
+              "number": 2,
+              "position": "D"
+            },
+            {
+              "id": 22094,
+              "name": "W. Fofana",
+              "number": 3,
+              "position": "D"
+            }
+          ],
+          "coach": "Xabi Alonso"
+        },
+        "62": {
+          "teamName": "Everton",
+          "formation": "4-2-3-1",
+          "startXI": [
+            {
+              "id": 2932,
+              "name": "J. Pickford",
+              "number": 1,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 1456,
+              "name": "A. Maitland-Niles",
+              "number": 2,
+              "position": "D",
+              "grid": "2:4"
+            },
+            {
+              "id": 2936,
+              "name": "J. Tarkowski",
+              "number": 6,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 17661,
+              "name": "J. Branthwaite",
+              "number": 4,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 2165,
+              "name": "V. Mykolenko",
+              "number": 16,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 405360,
+              "name": "H. Armstrong",
+              "number": 45,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 895,
+              "name": "J. Garner",
+              "number": 37,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 202854,
+              "name": "M. Röhl",
+              "number": 34,
+              "position": "M",
+              "grid": "4:3"
+            },
+            {
+              "id": 148099,
+              "name": "K. Dewsbury-Hall",
+              "number": 8,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 19187,
+              "name": "J. Grealish",
+              "number": 10,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 343684,
+              "name": "T. Barry",
+              "number": 11,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 18860,
+              "name": "M. Travers",
+              "number": 12,
+              "position": "G"
+            },
+            {
+              "id": 270139,
+              "name": "J. O&apos;Brien",
+              "number": 15,
+              "position": "D"
+            },
+            {
+              "id": 304317,
+              "name": "T. Dibling",
+              "number": 20,
+              "position": "F"
+            },
+            {
+              "id": 195993,
+              "name": "C. Alcaraz",
+              "number": 24,
+              "position": "M"
+            },
+            {
+              "id": 30407,
+              "name": "C. Nørgaard",
+              "number": 23,
+              "position": "M"
+            },
+            {
+              "id": 179685,
+              "name": "H. Hackney",
+              "number": 30,
+              "position": "M"
+            },
+            {
+              "id": 413034,
+              "name": "B. Graham",
+              "number": 58,
+              "position": "F"
+            },
+            {
+              "id": 334037,
+              "name": "Tyrique George",
+              "number": 19,
+              "position": "F"
+            },
+            {
+              "id": 129711,
+              "name": "B. Johnson",
+              "number": 22,
+              "position": "F"
+            }
+          ],
+          "coach": "D. Moyes"
+        }
+      }
+    }
+  }
 }
