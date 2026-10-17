@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-17T18:08:31.585Z",
+  "fetchedAt": "2026-10-17T20:35:34.008Z",
   "odds": {
     "560604": {
       "eventTicker": "KXEPLGAME-26OCT18BOUSUN",
@@ -16,7 +16,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 27,
+        "probability": 28,
         "ticker": "KXEPLGAME-26OCT18BOUSUN-TIE"
       }
     },
@@ -44,7 +44,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct19totcov",
       "home": {
         "label": "Tottenham",
-        "probability": 66,
+        "probability": 65,
         "ticker": "KXEPLGAME-26OCT19TOTCOV-TOT"
       },
       "away": {
@@ -56,25 +56,6 @@
         "label": "Draw",
         "probability": 21,
         "ticker": "KXEPLGAME-26OCT19TOTCOV-TIE"
-      }
-    },
-    "560607": {
-      "eventTicker": "KXEPLGAME-26OCT17NEWAVL",
-      "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct17newavl",
-      "home": {
-        "label": "Newcastle",
-        "probability": 4,
-        "ticker": "KXEPLGAME-26OCT17NEWAVL-NEW"
-      },
-      "away": {
-        "label": "Aston Villa",
-        "probability": 74,
-        "ticker": "KXEPLGAME-26OCT17NEWAVL-AVL"
-      },
-      "draw": {
-        "label": "Draw",
-        "probability": 25,
-        "ticker": "KXEPLGAME-26OCT17NEWAVL-TIE"
       }
     },
     "560608": {
@@ -101,7 +82,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct18bricry",
       "home": {
         "label": "Brighton Hove",
-        "probability": 64,
+        "probability": 65,
         "ticker": "KXEPLGAME-26OCT18BRICRY-BRI"
       },
       "away": {
@@ -177,12 +158,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct25munbou",
       "home": {
         "label": "Man United",
-        "probability": 54,
+        "probability": 52,
         "ticker": "KXEPLGAME-26OCT25MUNBOU-MUN"
       },
       "away": {
         "label": "Bournemouth",
-        "probability": 25,
+        "probability": 23,
         "ticker": "KXEPLGAME-26OCT25MUNBOU-BOU"
       },
       "draw": {
@@ -196,7 +177,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct24arseve",
       "home": {
         "label": "Arsenal",
-        "probability": 70,
+        "probability": 71,
         "ticker": "KXEPLGAME-26OCT24ARSEVE-ARS"
       },
       "away": {
@@ -310,7 +291,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct31mcibri",
       "home": {
         "label": "Man City",
-        "probability": 19,
+        "probability": 64,
         "ticker": "KXEPLGAME-26OCT31MCIBRI-MCI"
       },
       "away": {
@@ -320,7 +301,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 21,
+        "probability": 19,
         "ticker": "KXEPLGAME-26OCT31MCIBRI-TIE"
       }
     },
@@ -339,7 +320,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 27,
+        "probability": 25,
         "ticker": "KXEPLGAME-26OCT31BOULEE-TIE"
       }
     },
@@ -358,7 +339,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 29,
+        "probability": 27,
         "ticker": "KXEPLGAME-26OCT31COVSUN-TIE"
       }
     },
@@ -372,12 +353,12 @@
       },
       "away": {
         "label": "Man United",
-        "probability": 31,
+        "probability": 30,
         "ticker": "KXEPLGAME-26OCT31CFCMUN-MUN"
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 24,
         "ticker": "KXEPLGAME-26OCT31CFCMUN-TIE"
       }
     },
@@ -386,12 +367,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct31totcry",
       "home": {
         "label": "Tottenham",
-        "probability": 56,
+        "probability": 54,
         "ticker": "KXEPLGAME-26OCT31TOTCRY-TOT"
       },
       "away": {
         "label": "Crystal Palace",
-        "probability": 22,
+        "probability": 21,
         "ticker": "KXEPLGAME-26OCT31TOTCRY-CRY"
       },
       "draw": {
@@ -405,7 +386,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct31avlful",
       "home": {
         "label": "Aston Villa",
-        "probability": 49,
+        "probability": 48,
         "ticker": "KXEPLGAME-26OCT31AVLFUL-AVL"
       },
       "away": {
@@ -415,7 +396,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 28,
+        "probability": 26,
         "ticker": "KXEPLGAME-26OCT31AVLFUL-TIE"
       }
     },
@@ -424,7 +405,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct31hulips",
       "home": {
         "label": "Hull City",
-        "probability": 38,
+        "probability": 36,
         "ticker": "KXEPLGAME-26OCT31HULIPS-HUL"
       },
       "away": {
@@ -453,7 +434,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 24,
         "ticker": "KXEPLGAME-26OCT31BRENFO-TIE"
       }
     }
