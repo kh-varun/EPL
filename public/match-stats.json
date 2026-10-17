@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-17T16:20:16.891Z",
+  "fetchedAt": "2026-10-17T20:52:36.166Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -2875,6 +2875,47 @@
           "teamId": 61,
           "player": "Pedro Neto",
           "minute": 90,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560607": {
+      "utcDate": "2026-10-17T16:30:00Z",
+      "homeTeamId": 67,
+      "awayTeamId": 58,
+      "stats": {
+        "58": {
+          "shots": 15,
+          "shotsOnTarget": 3,
+          "possession": 51,
+          "passes": 431,
+          "passAccuracy": null,
+          "fouls": 11,
+          "corners": 5,
+          "offsides": 0,
+          "yellowCards": 2,
+          "redCards": 0
+        },
+        "67": {
+          "shots": 16,
+          "shotsOnTarget": 1,
+          "possession": 49,
+          "passes": 402,
+          "passAccuracy": null,
+          "fouls": 14,
+          "corners": 4,
+          "offsides": 5,
+          "yellowCards": 6,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 58,
+          "player": "Johan Manzambi",
+          "minute": 36,
           "extraMinute": null,
           "ownGoal": false,
           "penalty": false
