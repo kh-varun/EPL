@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-17T12:56:05.990Z",
+  "fetchedAt": "2026-10-17T16:02:47.380Z",
   "lineups": {
     "560603": {
       "utcDate": "2026-10-17T11:30:00Z",
@@ -285,6 +285,293 @@
             }
           ],
           "coach": "D. Moyes"
+        }
+      }
+    },
+    "560607": {
+      "utcDate": "2026-10-17T16:30:00Z",
+      "homeTeamId": 67,
+      "awayTeamId": 58,
+      "byTeam": {
+        "58": {
+          "teamName": "Aston Villa",
+          "formation": "4-2-3-1",
+          "startXI": [
+            {
+              "id": 199578,
+              "name": "Z. Suzuki",
+              "number": 1,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 19298,
+              "name": "M. Cash",
+              "number": 2,
+              "position": "D",
+              "grid": "2:4"
+            },
+            {
+              "id": 889,
+              "name": "V. Lindelöf",
+              "number": 3,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 19179,
+              "name": "T. Mings",
+              "number": 5,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 18846,
+              "name": "A. Wan-Bissaka",
+              "number": 29,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 1904,
+              "name": "B. Kamara",
+              "number": 8,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 195103,
+              "name": "João Gomes",
+              "number": 35,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 464004,
+              "name": "Alysson Edward",
+              "number": 47,
+              "position": "M",
+              "grid": "4:3"
+            },
+            {
+              "id": 19071,
+              "name": "E. Buendía",
+              "number": 10,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 406244,
+              "name": "J. Manzambi",
+              "number": 44,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 283058,
+              "name": "N. Jackson",
+              "number": 11,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 144729,
+              "name": "T. Harwood-Bellis",
+              "number": 4,
+              "position": "D"
+            },
+            {
+              "id": 46815,
+              "name": "Pau Torres",
+              "number": 14,
+              "position": "D"
+            },
+            {
+              "id": 19191,
+              "name": "J.  McGinn",
+              "number": 7,
+              "position": "M"
+            },
+            {
+              "id": 2287,
+              "name": "R. Barkley",
+              "number": 6,
+              "position": "M"
+            },
+            {
+              "id": 284457,
+              "name": "L. Bogarde",
+              "number": 26,
+              "position": "M"
+            },
+            {
+              "id": 511,
+              "name": "L. Goretzka",
+              "number": 27,
+              "position": "M"
+            },
+            {
+              "id": 446249,
+              "name": "I. Mbaye",
+              "number": 19,
+              "position": "F"
+            },
+            {
+              "id": 36878,
+              "name": "M. Bizot",
+              "number": 40,
+              "position": "G"
+            },
+            {
+              "id": 514519,
+              "name": "Brian Madjo",
+              "number": 39,
+              "position": "F"
+            }
+          ],
+          "coach": "Unai Emery"
+        },
+        "67": {
+          "teamName": "Newcastle",
+          "formation": "4-2-3-1",
+          "startXI": [
+            {
+              "id": 269349,
+              "name": "L. Horníček",
+              "number": 21,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 328105,
+              "name": "L. Miley",
+              "number": 67,
+              "position": "D",
+              "grid": "2:4"
+            },
+            {
+              "id": 163189,
+              "name": "M. Thiaw",
+              "number": 12,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 38734,
+              "name": "S. Botman",
+              "number": 4,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 284492,
+              "name": "L. Hall",
+              "number": 3,
+              "position": "D",
+              "grid": "2:1"
+            },
+            {
+              "id": 161933,
+              "name": "Nico González",
+              "number": 6,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 723,
+              "name": "Joelinton",
+              "number": 7,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 1463,
+              "name": "J. Willock",
+              "number": 28,
+              "position": "M",
+              "grid": "4:3"
+            },
+            {
+              "id": 20649,
+              "name": "Y. Wissa",
+              "number": 9,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 18778,
+              "name": "H. Barnes",
+              "number": 11,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 340077,
+              "name": "M. Fernandez-Pardo",
+              "number": 20,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 469321,
+              "name": "Sean Steur",
+              "number": 14,
+              "position": "M"
+            },
+            {
+              "id": 387643,
+              "name": "B. Touré",
+              "number": 17,
+              "position": "F"
+            },
+            {
+              "id": 315237,
+              "name": "W. Osula",
+              "number": 10,
+              "position": "F"
+            },
+            {
+              "id": 19163,
+              "name": "J. Murphy",
+              "number": 23,
+              "position": "M"
+            },
+            {
+              "id": 18911,
+              "name": "N. Pope",
+              "number": 1,
+              "position": "G"
+            },
+            {
+              "id": 2806,
+              "name": "F. Schär",
+              "number": 5,
+              "position": "D"
+            },
+            {
+              "id": 18961,
+              "name": "D. Burn",
+              "number": 33,
+              "position": "D"
+            },
+            {
+              "id": 7318,
+              "name": "A. Dedić",
+              "number": 37,
+              "position": "D"
+            },
+            {
+              "id": 453792,
+              "name": "A. Bamba",
+              "number": 8,
+              "position": "M"
+            }
+          ],
+          "coach": "M. Jaissle"
         }
       }
     }
