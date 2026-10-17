@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-13T01:13:39.505Z",
+  "fetchedAt": "2026-10-17T16:20:16.891Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -2826,6 +2826,55 @@
           "teamId": 402,
           "player": "Kristoffer Ajer",
           "minute": 79,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560603": {
+      "utcDate": "2026-10-17T11:30:00Z",
+      "homeTeamId": 62,
+      "awayTeamId": 61,
+      "stats": {
+        "61": {
+          "shots": 18,
+          "shotsOnTarget": 7,
+          "possession": 53,
+          "passes": 455,
+          "passAccuracy": null,
+          "fouls": 15,
+          "corners": 7,
+          "offsides": 1,
+          "yellowCards": 4,
+          "redCards": 0
+        },
+        "62": {
+          "shots": 6,
+          "shotsOnTarget": 5,
+          "possession": 47,
+          "passes": 402,
+          "passAccuracy": null,
+          "fouls": 8,
+          "corners": 5,
+          "offsides": 4,
+          "yellowCards": 3,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 61,
+          "player": "Pedro Neto",
+          "minute": 46,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 61,
+          "player": "Pedro Neto",
+          "minute": 90,
           "extraMinute": null,
           "ownGoal": false,
           "penalty": false
