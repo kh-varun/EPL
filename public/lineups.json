@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-18T13:23:38.225Z",
+  "fetchedAt": "2026-10-18T16:38:40.285Z",
   "lineups": {
     "560604": {
       "utcDate": "2026-10-18T13:00:00Z",
@@ -575,290 +575,290 @@
         }
       }
     },
-    "560607": {
-      "utcDate": "2026-10-17T16:30:00Z",
-      "homeTeamId": 67,
-      "awayTeamId": 58,
+    "560608": {
+      "utcDate": "2026-10-18T15:30:00Z",
+      "homeTeamId": 351,
+      "awayTeamId": 57,
       "byTeam": {
-        "58": {
-          "teamName": "Aston Villa",
+        "57": {
+          "teamName": "Arsenal",
           "formation": "4-2-3-1",
           "startXI": [
             {
-              "id": 199578,
-              "name": "Z. Suzuki",
+              "id": 19465,
+              "name": "David Raya",
               "number": 1,
               "position": "G",
               "grid": "1:1"
             },
             {
-              "id": 19298,
-              "name": "M. Cash",
-              "number": 2,
+              "id": 19959,
+              "name": "B. White",
+              "number": 4,
               "position": "D",
               "grid": "2:4"
             },
             {
-              "id": 889,
-              "name": "V. Lindelöf",
-              "number": 3,
+              "id": 19354,
+              "name": "E. Konsa",
+              "number": 15,
               "position": "D",
               "grid": "2:3"
             },
             {
-              "id": 19179,
-              "name": "T. Mings",
-              "number": 5,
+              "id": 22224,
+              "name": "Gabriel Magalhães",
+              "number": 6,
               "position": "D",
               "grid": "2:2"
             },
             {
-              "id": 18846,
-              "name": "A. Wan-Bissaka",
-              "number": 29,
+              "id": 157052,
+              "name": "R. Calafiori",
+              "number": 33,
               "position": "D",
               "grid": "2:1"
             },
             {
-              "id": 1904,
-              "name": "B. Kamara",
+              "id": 2937,
+              "name": "D. Rice",
+              "number": 41,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 10135,
+              "name": "Bruno Guimarães",
+              "number": 39,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 1460,
+              "name": "B. Saka",
+              "number": 7,
+              "position": "M",
+              "grid": "4:3"
+            },
+            {
+              "id": 37127,
+              "name": "M. Ødegaard",
               "number": 8,
               "position": "M",
-              "grid": "3:2"
-            },
-            {
-              "id": 195103,
-              "name": "João Gomes",
-              "number": 35,
-              "position": "M",
-              "grid": "3:1"
-            },
-            {
-              "id": 464004,
-              "name": "Alysson Edward",
-              "number": 47,
-              "position": "M",
-              "grid": "4:3"
-            },
-            {
-              "id": 19071,
-              "name": "E. Buendía",
-              "number": 10,
-              "position": "M",
               "grid": "4:2"
             },
             {
-              "id": 406244,
-              "name": "J. Manzambi",
-              "number": 44,
+              "id": 19586,
+              "name": "E. Eze",
+              "number": 10,
               "position": "M",
               "grid": "4:1"
             },
             {
-              "id": 283058,
-              "name": "N. Jackson",
-              "number": 11,
+              "id": 978,
+              "name": "K. Havertz",
+              "number": 29,
               "position": "F",
               "grid": "5:1"
             }
           ],
           "substitutes": [
             {
-              "id": 144729,
-              "name": "T. Harwood-Bellis",
-              "number": 4,
-              "position": "D"
-            },
-            {
-              "id": 46815,
-              "name": "Pau Torres",
-              "number": 14,
-              "position": "D"
-            },
-            {
-              "id": 19191,
-              "name": "J.  McGinn",
-              "number": 7,
-              "position": "M"
-            },
-            {
-              "id": 2287,
-              "name": "R. Barkley",
-              "number": 6,
-              "position": "M"
-            },
-            {
-              "id": 284457,
-              "name": "L. Bogarde",
-              "number": 26,
-              "position": "M"
-            },
-            {
-              "id": 511,
-              "name": "L. Goretzka",
-              "number": 27,
-              "position": "M"
-            },
-            {
-              "id": 446249,
-              "name": "I. Mbaye",
-              "number": 19,
-              "position": "F"
-            },
-            {
-              "id": 36878,
-              "name": "M. Bizot",
-              "number": 40,
-              "position": "G"
-            },
-            {
-              "id": 514519,
-              "name": "Brian Madjo",
-              "number": 39,
-              "position": "F"
-            }
-          ],
-          "coach": "Unai Emery"
-        },
-        "67": {
-          "teamName": "Newcastle",
-          "formation": "4-2-3-1",
-          "startXI": [
-            {
-              "id": 269349,
-              "name": "L. Horníček",
-              "number": 21,
-              "position": "G",
-              "grid": "1:1"
-            },
-            {
-              "id": 328105,
-              "name": "L. Miley",
-              "number": 67,
-              "position": "D",
-              "grid": "2:4"
-            },
-            {
-              "id": 163189,
-              "name": "M. Thiaw",
-              "number": 12,
-              "position": "D",
-              "grid": "2:3"
-            },
-            {
-              "id": 38734,
-              "name": "S. Botman",
-              "number": 4,
-              "position": "D",
-              "grid": "2:2"
-            },
-            {
-              "id": 284492,
-              "name": "L. Hall",
+              "id": 333682,
+              "name": "Cristhian Mosquera",
               "number": 3,
-              "position": "D",
-              "grid": "2:1"
+              "position": "D"
             },
             {
-              "id": 161933,
-              "name": "Nico González",
-              "number": 6,
-              "position": "M",
-              "grid": "3:2"
+              "id": 38746,
+              "name": "J. Timber",
+              "number": 12,
+              "position": "D"
             },
             {
-              "id": 723,
-              "name": "Joelinton",
-              "number": 7,
-              "position": "M",
-              "grid": "3:1"
+              "id": 313245,
+              "name": "M. Lewis-Skelly",
+              "number": 49,
+              "position": "D"
             },
             {
-              "id": 1463,
-              "name": "J. Willock",
-              "number": 28,
-              "position": "M",
-              "grid": "4:3"
-            },
-            {
-              "id": 20649,
-              "name": "Y. Wissa",
-              "number": 9,
-              "position": "M",
-              "grid": "4:2"
-            },
-            {
-              "id": 18778,
-              "name": "H. Barnes",
-              "number": 11,
-              "position": "M",
-              "grid": "4:1"
-            },
-            {
-              "id": 340077,
-              "name": "M. Fernandez-Pardo",
-              "number": 20,
-              "position": "F",
-              "grid": "5:1"
-            }
-          ],
-          "substitutes": [
-            {
-              "id": 469321,
-              "name": "Sean Steur",
-              "number": 14,
-              "position": "M"
-            },
-            {
-              "id": 387643,
-              "name": "B. Touré",
-              "number": 17,
-              "position": "F"
-            },
-            {
-              "id": 315237,
-              "name": "W. Osula",
-              "number": 10,
-              "position": "F"
-            },
-            {
-              "id": 19163,
-              "name": "J. Murphy",
+              "id": 47311,
+              "name": "Mikel Merino",
               "number": 23,
               "position": "M"
             },
             {
-              "id": 18911,
-              "name": "N. Pope",
-              "number": 1,
+              "id": 442044,
+              "name": "M. Dowman",
+              "number": 56,
+              "position": "F"
+            },
+            {
+              "id": 47315,
+              "name": "Martín Zubimendi",
+              "number": 36,
+              "position": "M"
+            },
+            {
+              "id": 18979,
+              "name": "V. Gyökeres",
+              "number": 14,
+              "position": "F"
+            },
+            {
+              "id": 20619,
+              "name": "I. Meslier",
+              "number": 30,
               "position": "G"
             },
             {
-              "id": 2806,
-              "name": "F. Schär",
+              "id": 136723,
+              "name": "N. Madueke",
+              "number": 20,
+              "position": "F"
+            }
+          ],
+          "coach": "Mikel Arteta"
+        },
+        "351": {
+          "teamName": "Nottingham Forest",
+          "formation": "3-4-2-1",
+          "startXI": [
+            {
+              "id": 2919,
+              "name": "M. Sels",
+              "number": 26,
+              "position": "G",
+              "grid": "1:1"
+            },
+            {
+              "id": 362711,
+              "name": "Jair",
+              "number": 23,
+              "position": "D",
+              "grid": "2:3"
+            },
+            {
+              "id": 354753,
+              "name": "O. Diomande",
+              "number": 2,
+              "position": "D",
+              "grid": "2:2"
+            },
+            {
+              "id": 363695,
+              "name": "Murillo",
               "number": 5,
-              "position": "D"
+              "position": "D",
+              "grid": "2:1"
             },
             {
-              "id": 18961,
-              "name": "D. Burn",
-              "number": 33,
-              "position": "D"
+              "id": 13736,
+              "name": "D. Muñoz",
+              "number": 27,
+              "position": "M",
+              "grid": "3:4"
             },
             {
-              "id": 7318,
-              "name": "A. Dedić",
-              "number": 37,
-              "position": "D"
+              "id": 158697,
+              "name": "J. McAtee",
+              "number": 24,
+              "position": "M",
+              "grid": "3:3"
             },
             {
-              "id": 453792,
-              "name": "A. Bamba",
+              "id": 1095,
+              "name": "X. Schlager",
+              "number": 21,
+              "position": "M",
+              "grid": "3:2"
+            },
+            {
+              "id": 138780,
+              "name": "N. Williams",
+              "number": 3,
+              "position": "M",
+              "grid": "3:1"
+            },
+            {
+              "id": 6056,
+              "name": "N. Domínguez",
               "number": 8,
+              "position": "M",
+              "grid": "4:2"
+            },
+            {
+              "id": 48648,
+              "name": "D. Ndoye",
+              "number": 14,
+              "position": "M",
+              "grid": "4:1"
+            },
+            {
+              "id": 161948,
+              "name": "L. Delap",
+              "number": 19,
+              "position": "F",
+              "grid": "5:1"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": 2298,
+              "name": "C. Hudson-Odoi",
+              "number": 7,
+              "position": "F"
+            },
+            {
+              "id": 19305,
+              "name": "R. Yates",
+              "number": 22,
+              "position": "M"
+            },
+            {
+              "id": 147831,
+              "name": "A. Kalimuendo",
+              "number": 15,
+              "position": "F"
+            },
+            {
+              "id": 18931,
+              "name": "C. Wood",
+              "number": 9,
+              "position": "F"
+            },
+            {
+              "id": 70366,
+              "name": "John",
+              "number": 12,
+              "position": "G"
+            },
+            {
+              "id": 163069,
+              "name": "L. Netz",
+              "number": 25,
+              "position": "D"
+            },
+            {
+              "id": 2817,
+              "name": "N. Milenković",
+              "number": 31,
+              "position": "D"
+            },
+            {
+              "id": 2771,
+              "name": "O. Aina",
+              "number": 34,
+              "position": "D"
+            },
+            {
+              "id": 22149,
+              "name": "I. Sangaré",
+              "number": 6,
               "position": "M"
             }
           ],
-          "coach": "M. Jaissle"
+          "coach": "O. Glasner"
         }
       }
     },
