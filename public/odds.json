@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-18T21:19:06.419Z",
+  "fetchedAt": "2026-10-18T23:27:46.174Z",
   "odds": {
     "560606": {
       "eventTicker": "KXEPLGAME-26OCT19TOTCOV",
@@ -25,7 +25,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct25lfcbri",
       "home": {
         "label": "Liverpool",
-        "probability": 46,
+        "probability": 47,
         "ticker": "KXEPLGAME-26OCT25LFCBRI-LFC"
       },
       "away": {
@@ -54,7 +54,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 28,
+        "probability": 27,
         "ticker": "KXEPLGAME-26OCT25CRYNEW-TIE"
       }
     },
@@ -82,12 +82,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct25munbou",
       "home": {
         "label": "Man United",
-        "probability": 53,
+        "probability": 52,
         "ticker": "KXEPLGAME-26OCT25MUNBOU-MUN"
       },
       "away": {
         "label": "Bournemouth",
-        "probability": 24,
+        "probability": 25,
         "ticker": "KXEPLGAME-26OCT25MUNBOU-BOU"
       },
       "draw": {
@@ -125,7 +125,7 @@
       },
       "away": {
         "label": "Tottenham",
-        "probability": 21,
+        "probability": 22,
         "ticker": "KXEPLGAME-26OCT24CFCTOT-TOT"
       },
       "draw": {
@@ -144,7 +144,7 @@
       },
       "away": {
         "label": "Fulham",
-        "probability": 41,
+        "probability": 42,
         "ticker": "KXEPLGAME-26OCT24COVFUL-FUL"
       },
       "draw": {
@@ -168,7 +168,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 24,
         "ticker": "KXEPLGAME-26OCT25HULBRE-TIE"
       }
     },
@@ -201,7 +201,7 @@
       },
       "away": {
         "label": "Leeds United",
-        "probability": 37,
+        "probability": 39,
         "ticker": "KXEPLGAME-26OCT25SUNLEE-LEE"
       },
       "draw": {
@@ -220,7 +220,7 @@
       },
       "away": {
         "label": "Brighton Hove",
-        "probability": 22,
+        "probability": 23,
         "ticker": "KXEPLGAME-26OCT31MCIBRI-BRI"
       },
       "draw": {
@@ -239,7 +239,7 @@
       },
       "away": {
         "label": "Leeds United",
-        "probability": 34,
+        "probability": 31,
         "ticker": "KXEPLGAME-26OCT31BOULEE-LEE"
       },
       "draw": {
