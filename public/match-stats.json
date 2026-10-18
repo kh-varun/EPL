@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-17T20:52:36.166Z",
+  "fetchedAt": "2026-10-18T16:29:19.554Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -2881,6 +2881,104 @@
         }
       ]
     },
+    "560604": {
+      "utcDate": "2026-10-18T13:00:00Z",
+      "homeTeamId": 1044,
+      "awayTeamId": 71,
+      "stats": {
+        "71": {
+          "shots": 3,
+          "shotsOnTarget": 0,
+          "possession": 35,
+          "passes": 303,
+          "passAccuracy": null,
+          "fouls": 7,
+          "corners": 3,
+          "offsides": 2,
+          "yellowCards": 2,
+          "redCards": 1
+        },
+        "1044": {
+          "shots": 29,
+          "shotsOnTarget": 6,
+          "possession": 65,
+          "passes": 568,
+          "passAccuracy": null,
+          "fouls": 16,
+          "corners": 5,
+          "offsides": 1,
+          "yellowCards": 3,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 1044,
+          "player": "Marcus Tavernier",
+          "minute": 6,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 1044,
+          "player": "Francisco Evanilson",
+          "minute": 48,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560605": {
+      "utcDate": "2026-10-18T13:00:00Z",
+      "homeTeamId": 341,
+      "awayTeamId": 66,
+      "stats": {
+        "66": {
+          "shots": 13,
+          "shotsOnTarget": 3,
+          "possession": 39,
+          "passes": 345,
+          "passAccuracy": null,
+          "fouls": 5,
+          "corners": 3,
+          "offsides": 3,
+          "yellowCards": 2,
+          "redCards": 0
+        },
+        "341": {
+          "shots": 12,
+          "shotsOnTarget": 5,
+          "possession": 61,
+          "passes": 530,
+          "passAccuracy": null,
+          "fouls": 16,
+          "corners": 2,
+          "offsides": 2,
+          "yellowCards": 2,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 66,
+          "player": "Bryan Mbeumo",
+          "minute": 35,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 341,
+          "player": "Dominic Calvert-Lewin",
+          "minute": 51,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
     "560607": {
       "utcDate": "2026-10-17T16:30:00Z",
       "homeTeamId": 67,
@@ -2916,6 +3014,79 @@
           "teamId": 58,
           "player": "Johan Manzambi",
           "minute": 36,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560609": {
+      "utcDate": "2026-10-18T13:00:00Z",
+      "homeTeamId": 397,
+      "awayTeamId": 354,
+      "stats": {
+        "354": {
+          "shots": 5,
+          "shotsOnTarget": 1,
+          "possession": 43,
+          "passes": 384,
+          "passAccuracy": null,
+          "fouls": 11,
+          "corners": 5,
+          "offsides": 2,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        "397": {
+          "shots": 17,
+          "shotsOnTarget": 9,
+          "possession": 57,
+          "passes": 516,
+          "passAccuracy": null,
+          "fouls": 13,
+          "corners": 8,
+          "offsides": 2,
+          "yellowCards": 2,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 397,
+          "player": "Jaydee Canvot",
+          "minute": 4,
+          "extraMinute": null,
+          "ownGoal": true,
+          "penalty": false
+        },
+        {
+          "teamId": 397,
+          "player": "Diego Gomez",
+          "minute": 7,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 397,
+          "player": "Yasin Ayari",
+          "minute": 10,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 397,
+          "player": "Charalampos Kostoulas",
+          "minute": 49,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 397,
+          "player": "Jack Hinshelwood",
+          "minute": 84,
           "extraMinute": null,
           "ownGoal": false,
           "penalty": false

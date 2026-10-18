@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-17T20:52:27.962Z",
+  "fetchedAt": "2026-10-18T16:29:10.919Z",
   "standings": [
     {
       "position": 1,
@@ -23,39 +23,39 @@
     {
       "position": 2,
       "team": {
-        "id": 57,
-        "name": "Arsenal FC",
-        "shortName": "Arsenal",
-        "tla": "ARS",
-        "crest": "https://crests.football-data.org/57.png"
-      },
-      "playedGames": 6,
-      "won": 5,
-      "draw": 0,
-      "lost": 1,
-      "points": 15,
-      "goalsFor": 10,
-      "goalsAgainst": 5,
-      "goalDifference": 5,
-      "form": null
-    },
-    {
-      "position": 3,
-      "team": {
         "id": 397,
         "name": "Brighton & Hove Albion FC",
         "shortName": "Brighton Hove",
         "tla": "BHA",
         "crest": "https://crests.football-data.org/397.png"
       },
-      "playedGames": 6,
-      "won": 4,
+      "playedGames": 7,
+      "won": 5,
       "draw": 1,
       "lost": 1,
-      "points": 13,
-      "goalsFor": 18,
+      "points": 16,
+      "goalsFor": 23,
       "goalsAgainst": 5,
-      "goalDifference": 13,
+      "goalDifference": 18,
+      "form": null
+    },
+    {
+      "position": 3,
+      "team": {
+        "id": 57,
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "tla": "ARS",
+        "crest": "https://crests.football-data.org/57.png"
+      },
+      "playedGames": 7,
+      "won": 5,
+      "draw": 1,
+      "lost": 1,
+      "points": 16,
+      "goalsFor": 10,
+      "goalsAgainst": 5,
+      "goalDifference": 5,
       "form": null
     },
     {
@@ -118,6 +118,25 @@
     {
       "position": 7,
       "team": {
+        "id": 341,
+        "name": "Leeds United FC",
+        "shortName": "Leeds United",
+        "tla": "LEE",
+        "crest": "https://crests.football-data.org/341.png"
+      },
+      "playedGames": 7,
+      "won": 2,
+      "draw": 4,
+      "lost": 1,
+      "points": 10,
+      "goalsFor": 9,
+      "goalsAgainst": 6,
+      "goalDifference": 3,
+      "form": null
+    },
+    {
+      "position": 8,
+      "team": {
         "id": 62,
         "name": "Everton FC",
         "shortName": "Everton",
@@ -132,25 +151,6 @@
       "goalsFor": 8,
       "goalsAgainst": 7,
       "goalDifference": 1,
-      "form": null
-    },
-    {
-      "position": 8,
-      "team": {
-        "id": 341,
-        "name": "Leeds United FC",
-        "shortName": "Leeds United",
-        "tla": "LEE",
-        "crest": "https://crests.football-data.org/341.png"
-      },
-      "playedGames": 6,
-      "won": 2,
-      "draw": 3,
-      "lost": 1,
-      "points": 9,
-      "goalsFor": 8,
-      "goalsAgainst": 5,
-      "goalDifference": 3,
       "form": null
     },
     {
@@ -232,43 +232,81 @@
     {
       "position": 13,
       "team": {
-        "id": 354,
-        "name": "Crystal Palace FC",
-        "shortName": "Crystal Palace",
-        "tla": "CRY",
-        "crest": "https://crests.football-data.org/354.png"
-      },
-      "playedGames": 6,
-      "won": 2,
-      "draw": 1,
-      "lost": 3,
-      "points": 7,
-      "goalsFor": 9,
-      "goalsAgainst": 12,
-      "goalDifference": -3,
-      "form": null
-    },
-    {
-      "position": 14,
-      "team": {
         "id": 66,
         "name": "Manchester United FC",
         "shortName": "Man United",
         "tla": "MUN",
         "crest": "https://crests.football-data.org/66.png"
       },
-      "playedGames": 6,
+      "playedGames": 7,
       "won": 1,
-      "draw": 3,
+      "draw": 4,
       "lost": 2,
-      "points": 6,
-      "goalsFor": 9,
-      "goalsAgainst": 9,
+      "points": 7,
+      "goalsFor": 10,
+      "goalsAgainst": 10,
       "goalDifference": 0,
       "form": null
     },
     {
+      "position": 14,
+      "team": {
+        "id": 354,
+        "name": "Crystal Palace FC",
+        "shortName": "Crystal Palace",
+        "tla": "CRY",
+        "crest": "https://crests.football-data.org/354.png"
+      },
+      "playedGames": 7,
+      "won": 2,
+      "draw": 1,
+      "lost": 4,
+      "points": 7,
+      "goalsFor": 9,
+      "goalsAgainst": 17,
+      "goalDifference": -8,
+      "form": null
+    },
+    {
       "position": 15,
+      "team": {
+        "id": 351,
+        "name": "Nottingham Forest FC",
+        "shortName": "Nottingham",
+        "tla": "NOT",
+        "crest": "https://crests.football-data.org/351.png"
+      },
+      "playedGames": 7,
+      "won": 1,
+      "draw": 3,
+      "lost": 3,
+      "points": 6,
+      "goalsFor": 5,
+      "goalsAgainst": 8,
+      "goalDifference": -3,
+      "form": null
+    },
+    {
+      "position": 16,
+      "team": {
+        "id": 1044,
+        "name": "AFC Bournemouth",
+        "shortName": "Bournemouth",
+        "tla": "BOU",
+        "crest": "https://crests.football-data.org/bournemouth.png"
+      },
+      "playedGames": 7,
+      "won": 1,
+      "draw": 3,
+      "lost": 3,
+      "points": 6,
+      "goalsFor": 9,
+      "goalsAgainst": 13,
+      "goalDifference": -4,
+      "form": null
+    },
+    {
+      "position": 17,
       "team": {
         "id": 1076,
         "name": "Coventry City FC",
@@ -287,7 +325,7 @@
       "form": null
     },
     {
-      "position": 16,
+      "position": 18,
       "team": {
         "id": 63,
         "name": "Fulham FC",
@@ -306,26 +344,7 @@
       "form": null
     },
     {
-      "position": 17,
-      "team": {
-        "id": 351,
-        "name": "Nottingham Forest FC",
-        "shortName": "Nottingham",
-        "tla": "NOT",
-        "crest": "https://crests.football-data.org/351.png"
-      },
-      "playedGames": 6,
-      "won": 1,
-      "draw": 2,
-      "lost": 3,
-      "points": 5,
-      "goalsFor": 5,
-      "goalsAgainst": 8,
-      "goalDifference": -3,
-      "form": null
-    },
-    {
-      "position": 18,
+      "position": 19,
       "team": {
         "id": 71,
         "name": "Sunderland AFC",
@@ -333,33 +352,14 @@
         "tla": "SUN",
         "crest": "https://crests.football-data.org/71.png"
       },
-      "playedGames": 6,
+      "playedGames": 7,
       "won": 1,
       "draw": 1,
-      "lost": 4,
+      "lost": 5,
       "points": 4,
       "goalsFor": 6,
-      "goalsAgainst": 12,
-      "goalDifference": -6,
-      "form": null
-    },
-    {
-      "position": 19,
-      "team": {
-        "id": 1044,
-        "name": "AFC Bournemouth",
-        "shortName": "Bournemouth",
-        "tla": "BOU",
-        "crest": "https://crests.football-data.org/bournemouth.png"
-      },
-      "playedGames": 6,
-      "won": 0,
-      "draw": 3,
-      "lost": 3,
-      "points": 3,
-      "goalsFor": 7,
-      "goalsAgainst": 13,
-      "goalDifference": -6,
+      "goalsAgainst": 14,
+      "goalDifference": -8,
       "form": null
     },
     {
@@ -383,6 +383,81 @@
     }
   ],
   "lastResults": [
+    {
+      "id": 560604,
+      "utcDate": "2026-10-18T13:00:00Z",
+      "status": "FINISHED",
+      "matchday": 7,
+      "homeTeam": {
+        "id": 1044,
+        "name": "AFC Bournemouth",
+        "shortName": "Bournemouth",
+        "tla": "BOU",
+        "crest": "https://crests.football-data.org/bournemouth.png"
+      },
+      "awayTeam": {
+        "id": 71,
+        "name": "Sunderland AFC",
+        "shortName": "Sunderland",
+        "tla": "SUN",
+        "crest": "https://crests.football-data.org/71.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 0,
+        "winner": "HOME_TEAM"
+      }
+    },
+    {
+      "id": 560605,
+      "utcDate": "2026-10-18T13:00:00Z",
+      "status": "FINISHED",
+      "matchday": 7,
+      "homeTeam": {
+        "id": 341,
+        "name": "Leeds United FC",
+        "shortName": "Leeds United",
+        "tla": "LEE",
+        "crest": "https://crests.football-data.org/341.png"
+      },
+      "awayTeam": {
+        "id": 66,
+        "name": "Manchester United FC",
+        "shortName": "Man United",
+        "tla": "MUN",
+        "crest": "https://crests.football-data.org/66.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 1,
+        "winner": "DRAW"
+      }
+    },
+    {
+      "id": 560609,
+      "utcDate": "2026-10-18T13:00:00Z",
+      "status": "FINISHED",
+      "matchday": 7,
+      "homeTeam": {
+        "id": 397,
+        "name": "Brighton & Hove Albion FC",
+        "shortName": "Brighton Hove",
+        "tla": "BHA",
+        "crest": "https://crests.football-data.org/397.png"
+      },
+      "awayTeam": {
+        "id": 354,
+        "name": "Crystal Palace FC",
+        "shortName": "Crystal Palace",
+        "tla": "CRY",
+        "crest": "https://crests.football-data.org/354.png"
+      },
+      "score": {
+        "home": 5,
+        "away": 0,
+        "winner": "HOME_TEAM"
+      }
+    },
     {
       "id": 560607,
       "utcDate": "2026-10-17T16:30:00Z",
@@ -2011,87 +2086,9 @@
   ],
   "nextFixtures": [
     {
-      "id": 560604,
-      "utcDate": "2026-10-18T13:00:00Z",
-      "status": "TIMED",
-      "matchday": 7,
-      "homeTeam": {
-        "id": 1044,
-        "name": "AFC Bournemouth",
-        "shortName": "Bournemouth",
-        "tla": "BOU",
-        "crest": "https://crests.football-data.org/bournemouth.png"
-      },
-      "awayTeam": {
-        "id": 71,
-        "name": "Sunderland AFC",
-        "shortName": "Sunderland",
-        "tla": "SUN",
-        "crest": "https://crests.football-data.org/71.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": "Peacock"
-    },
-    {
-      "id": 560605,
-      "utcDate": "2026-10-18T13:00:00Z",
-      "status": "TIMED",
-      "matchday": 7,
-      "homeTeam": {
-        "id": 341,
-        "name": "Leeds United FC",
-        "shortName": "Leeds United",
-        "tla": "LEE",
-        "crest": "https://crests.football-data.org/341.png"
-      },
-      "awayTeam": {
-        "id": 66,
-        "name": "Manchester United FC",
-        "shortName": "Man United",
-        "tla": "MUN",
-        "crest": "https://crests.football-data.org/66.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": "USA Network"
-    },
-    {
-      "id": 560609,
-      "utcDate": "2026-10-18T13:00:00Z",
-      "status": "TIMED",
-      "matchday": 7,
-      "homeTeam": {
-        "id": 397,
-        "name": "Brighton & Hove Albion FC",
-        "shortName": "Brighton Hove",
-        "tla": "BHA",
-        "crest": "https://crests.football-data.org/397.png"
-      },
-      "awayTeam": {
-        "id": 354,
-        "name": "Crystal Palace FC",
-        "shortName": "Crystal Palace",
-        "tla": "CRY",
-        "crest": "https://crests.football-data.org/354.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": "Peacock"
-    },
-    {
       "id": 560608,
       "utcDate": "2026-10-18T15:30:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "matchday": 7,
       "homeTeam": {
         "id": 351,
@@ -2108,9 +2105,9 @@
         "crest": "https://crests.football-data.org/57.png"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "winner": null
+        "home": 0,
+        "away": 0,
+        "winner": "DRAW"
       },
       "broadcast": "Peacock"
     },
