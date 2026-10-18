@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-18T16:29:10.919Z",
+  "fetchedAt": "2026-10-18T18:46:02.935Z",
   "standings": [
     {
       "position": 1,
@@ -23,6 +23,25 @@
     {
       "position": 2,
       "team": {
+        "id": 57,
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "tla": "ARS",
+        "crest": "https://crests.football-data.org/57.png"
+      },
+      "playedGames": 7,
+      "won": 6,
+      "draw": 0,
+      "lost": 1,
+      "points": 18,
+      "goalsFor": 11,
+      "goalsAgainst": 5,
+      "goalDifference": 6,
+      "form": null
+    },
+    {
+      "position": 3,
+      "team": {
         "id": 397,
         "name": "Brighton & Hove Albion FC",
         "shortName": "Brighton Hove",
@@ -37,25 +56,6 @@
       "goalsFor": 23,
       "goalsAgainst": 5,
       "goalDifference": 18,
-      "form": null
-    },
-    {
-      "position": 3,
-      "team": {
-        "id": 57,
-        "name": "Arsenal FC",
-        "shortName": "Arsenal",
-        "tla": "ARS",
-        "crest": "https://crests.football-data.org/57.png"
-      },
-      "playedGames": 7,
-      "won": 5,
-      "draw": 1,
-      "lost": 1,
-      "points": 16,
-      "goalsFor": 10,
-      "goalsAgainst": 5,
-      "goalDifference": 5,
       "form": null
     },
     {
@@ -270,25 +270,6 @@
     {
       "position": 15,
       "team": {
-        "id": 351,
-        "name": "Nottingham Forest FC",
-        "shortName": "Nottingham",
-        "tla": "NOT",
-        "crest": "https://crests.football-data.org/351.png"
-      },
-      "playedGames": 7,
-      "won": 1,
-      "draw": 3,
-      "lost": 3,
-      "points": 6,
-      "goalsFor": 5,
-      "goalsAgainst": 8,
-      "goalDifference": -3,
-      "form": null
-    },
-    {
-      "position": 16,
-      "team": {
         "id": 1044,
         "name": "AFC Bournemouth",
         "shortName": "Bournemouth",
@@ -306,7 +287,7 @@
       "form": null
     },
     {
-      "position": 17,
+      "position": 16,
       "team": {
         "id": 1076,
         "name": "Coventry City FC",
@@ -325,7 +306,7 @@
       "form": null
     },
     {
-      "position": 18,
+      "position": 17,
       "team": {
         "id": 63,
         "name": "Fulham FC",
@@ -341,6 +322,25 @@
       "goalsFor": 7,
       "goalsAgainst": 10,
       "goalDifference": -3,
+      "form": null
+    },
+    {
+      "position": 18,
+      "team": {
+        "id": 351,
+        "name": "Nottingham Forest FC",
+        "shortName": "Nottingham",
+        "tla": "NOT",
+        "crest": "https://crests.football-data.org/351.png"
+      },
+      "playedGames": 7,
+      "won": 1,
+      "draw": 2,
+      "lost": 4,
+      "points": 5,
+      "goalsFor": 5,
+      "goalsAgainst": 9,
+      "goalDifference": -4,
       "form": null
     },
     {
@@ -383,6 +383,31 @@
     }
   ],
   "lastResults": [
+    {
+      "id": 560608,
+      "utcDate": "2026-10-18T15:30:00Z",
+      "status": "FINISHED",
+      "matchday": 7,
+      "homeTeam": {
+        "id": 351,
+        "name": "Nottingham Forest FC",
+        "shortName": "Nottingham",
+        "tla": "NOT",
+        "crest": "https://crests.football-data.org/351.png"
+      },
+      "awayTeam": {
+        "id": 57,
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "tla": "ARS",
+        "crest": "https://crests.football-data.org/57.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 1,
+        "winner": "AWAY_TEAM"
+      }
+    },
     {
       "id": 560604,
       "utcDate": "2026-10-18T13:00:00Z",
@@ -2085,32 +2110,6 @@
     }
   ],
   "nextFixtures": [
-    {
-      "id": 560608,
-      "utcDate": "2026-10-18T15:30:00Z",
-      "status": "IN_PLAY",
-      "matchday": 7,
-      "homeTeam": {
-        "id": 351,
-        "name": "Nottingham Forest FC",
-        "shortName": "Nottingham",
-        "tla": "NOT",
-        "crest": "https://crests.football-data.org/351.png"
-      },
-      "awayTeam": {
-        "id": 57,
-        "name": "Arsenal FC",
-        "shortName": "Arsenal",
-        "tla": "ARS",
-        "crest": "https://crests.football-data.org/57.png"
-      },
-      "score": {
-        "home": 0,
-        "away": 0,
-        "winner": "DRAW"
-      },
-      "broadcast": "Peacock"
-    },
     {
       "id": 560606,
       "utcDate": "2026-10-19T19:00:00Z",
