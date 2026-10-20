@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-18T18:46:03.601Z",
+  "fetchedAt": "2026-10-20T00:32:50.528Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -2973,6 +2973,71 @@
           "teamId": 341,
           "player": "Dominic Calvert-Lewin",
           "minute": 51,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560606": {
+      "utcDate": "2026-10-19T19:00:00Z",
+      "homeTeamId": 73,
+      "awayTeamId": 1076,
+      "stats": {
+        "73": {
+          "shots": 16,
+          "shotsOnTarget": 5,
+          "possession": 65.4,
+          "passes": 559,
+          "passAccuracy": 0.9,
+          "fouls": 15,
+          "corners": 4,
+          "offsides": 6,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        "1076": {
+          "shots": 12,
+          "shotsOnTarget": 1,
+          "possession": 34.6,
+          "passes": 287,
+          "passAccuracy": 0.8,
+          "fouls": 14,
+          "corners": 4,
+          "offsides": 1,
+          "yellowCards": 3,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 73,
+          "player": "James Maddison",
+          "minute": 14,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 1076,
+          "player": "Jack Rudoni",
+          "minute": 49,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 73,
+          "player": "Omar Marmoush",
+          "minute": 58,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 73,
+          "player": "Ben Davies",
+          "minute": 90,
           "extraMinute": null,
           "ownGoal": false,
           "penalty": false

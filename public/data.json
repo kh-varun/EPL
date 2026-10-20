@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-18T18:46:02.935Z",
+  "fetchedAt": "2026-10-20T00:32:49.982Z",
   "standings": [
     {
       "position": 1,
@@ -289,24 +289,43 @@
     {
       "position": 16,
       "team": {
+        "id": 73,
+        "name": "Tottenham Hotspur FC",
+        "shortName": "Tottenham",
+        "tla": "TOT",
+        "crest": "https://crests.football-data.org/73.png"
+      },
+      "playedGames": 7,
+      "won": 1,
+      "draw": 3,
+      "lost": 3,
+      "points": 6,
+      "goalsFor": 6,
+      "goalsAgainst": 10,
+      "goalDifference": -4,
+      "form": null
+    },
+    {
+      "position": 17,
+      "team": {
         "id": 1076,
         "name": "Coventry City FC",
         "shortName": "Coventry City",
         "tla": "COV",
         "crest": "https://crests.football-data.org/1076.png"
       },
-      "playedGames": 6,
+      "playedGames": 7,
       "won": 2,
       "draw": 0,
-      "lost": 4,
+      "lost": 5,
       "points": 6,
-      "goalsFor": 5,
-      "goalsAgainst": 11,
-      "goalDifference": -6,
+      "goalsFor": 6,
+      "goalsAgainst": 14,
+      "goalDifference": -8,
       "form": null
     },
     {
-      "position": 17,
+      "position": 18,
       "team": {
         "id": 63,
         "name": "Fulham FC",
@@ -325,7 +344,7 @@
       "form": null
     },
     {
-      "position": 18,
+      "position": 19,
       "team": {
         "id": 351,
         "name": "Nottingham Forest FC",
@@ -344,7 +363,7 @@
       "form": null
     },
     {
-      "position": 19,
+      "position": 20,
       "team": {
         "id": 71,
         "name": "Sunderland AFC",
@@ -361,28 +380,34 @@
       "goalsAgainst": 14,
       "goalDifference": -8,
       "form": null
-    },
+    }
+  ],
+  "lastResults": [
     {
-      "position": 20,
-      "team": {
+      "id": 560606,
+      "utcDate": "2026-10-19T19:00:00Z",
+      "status": "FINISHED",
+      "matchday": 7,
+      "homeTeam": {
         "id": 73,
         "name": "Tottenham Hotspur FC",
         "shortName": "Tottenham",
         "tla": "TOT",
         "crest": "https://crests.football-data.org/73.png"
       },
-      "playedGames": 6,
-      "won": 0,
-      "draw": 3,
-      "lost": 3,
-      "points": 3,
-      "goalsFor": 3,
-      "goalsAgainst": 9,
-      "goalDifference": -6,
-      "form": null
-    }
-  ],
-  "lastResults": [
+      "awayTeam": {
+        "id": 1076,
+        "name": "Coventry City FC",
+        "shortName": "Coventry City",
+        "tla": "COV",
+        "crest": "https://crests.football-data.org/1076.png"
+      },
+      "score": {
+        "home": 3,
+        "away": 1,
+        "winner": "HOME_TEAM"
+      }
+    },
     {
       "id": 560608,
       "utcDate": "2026-10-18T15:30:00Z",
@@ -2110,32 +2135,6 @@
     }
   ],
   "nextFixtures": [
-    {
-      "id": 560606,
-      "utcDate": "2026-10-19T19:00:00Z",
-      "status": "TIMED",
-      "matchday": 7,
-      "homeTeam": {
-        "id": 73,
-        "name": "Tottenham Hotspur FC",
-        "shortName": "Tottenham",
-        "tla": "TOT",
-        "crest": "https://crests.football-data.org/73.png"
-      },
-      "awayTeam": {
-        "id": 1076,
-        "name": "Coventry City FC",
-        "shortName": "Coventry City",
-        "tla": "COV",
-        "crest": "https://crests.football-data.org/1076.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": "USA Network"
-    },
     {
       "id": 560620,
       "utcDate": "2026-10-23T19:00:00Z",
