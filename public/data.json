@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-20T00:32:49.982Z",
+  "fetchedAt": "2026-10-21T17:59:32.240Z",
   "standings": [
     {
       "position": 1,
@@ -2159,7 +2159,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560614,
@@ -2185,7 +2185,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560616,
@@ -2211,7 +2211,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560618,
@@ -2237,7 +2237,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560617,
@@ -2263,7 +2263,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Tele"
     },
     {
       "id": 560612,
@@ -2289,7 +2289,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560613,
@@ -2315,7 +2315,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560615,
@@ -2341,7 +2341,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560619,
@@ -2367,7 +2367,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560621,
@@ -2393,7 +2393,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560626,
@@ -3436,23 +3436,23 @@
       "broadcast": null
     },
     {
-      "id": 560662,
-      "utcDate": "2026-12-02T20:00:00Z",
+      "id": 560668,
+      "utcDate": "2026-12-01T20:00:00Z",
       "status": "TIMED",
       "matchday": 13,
       "homeTeam": {
-        "id": 73,
-        "name": "Tottenham Hotspur FC",
-        "shortName": "Tottenham",
-        "tla": "TOT",
-        "crest": "https://crests.football-data.org/73.png"
+        "id": 1076,
+        "name": "Coventry City FC",
+        "shortName": "Coventry City",
+        "tla": "COV",
+        "crest": "https://crests.football-data.org/1076.png"
       },
       "awayTeam": {
-        "id": 63,
-        "name": "Fulham FC",
-        "shortName": "Fulham",
-        "tla": "FUL",
-        "crest": "https://crests.football-data.org/63.png"
+        "id": 349,
+        "name": "Ipswich Town FC",
+        "shortName": "Ipswich Town",
+        "tla": "IPS",
+        "crest": "https://crests.football-data.org/349.png"
       },
       "score": {
         "home": null,
@@ -3463,7 +3463,7 @@
     },
     {
       "id": 560663,
-      "utcDate": "2026-12-02T20:00:00Z",
+      "utcDate": "2026-12-02T19:30:00Z",
       "status": "TIMED",
       "matchday": 13,
       "homeTeam": {
@@ -3489,7 +3489,7 @@
     },
     {
       "id": 560664,
-      "utcDate": "2026-12-02T20:00:00Z",
+      "utcDate": "2026-12-02T19:30:00Z",
       "status": "TIMED",
       "matchday": 13,
       "homeTeam": {
@@ -3515,7 +3515,7 @@
     },
     {
       "id": 560665,
-      "utcDate": "2026-12-02T20:00:00Z",
+      "utcDate": "2026-12-02T19:30:00Z",
       "status": "TIMED",
       "matchday": 13,
       "homeTeam": {
@@ -3540,8 +3540,34 @@
       "broadcast": null
     },
     {
+      "id": 560669,
+      "utcDate": "2026-12-02T19:30:00Z",
+      "status": "TIMED",
+      "matchday": 13,
+      "homeTeam": {
+        "id": 65,
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "tla": "MCI",
+        "crest": "https://crests.football-data.org/65.png"
+      },
+      "awayTeam": {
+        "id": 341,
+        "name": "Leeds United FC",
+        "shortName": "Leeds United",
+        "tla": "LEE",
+        "crest": "https://crests.football-data.org/341.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
       "id": 560666,
-      "utcDate": "2026-12-02T20:00:00Z",
+      "utcDate": "2026-12-02T20:15:00Z",
       "status": "TIMED",
       "matchday": 13,
       "homeTeam": {
@@ -3567,7 +3593,7 @@
     },
     {
       "id": 560667,
-      "utcDate": "2026-12-02T20:00:00Z",
+      "utcDate": "2026-12-02T20:15:00Z",
       "status": "TIMED",
       "matchday": 13,
       "homeTeam": {
@@ -3592,60 +3618,8 @@
       "broadcast": null
     },
     {
-      "id": 560668,
-      "utcDate": "2026-12-02T20:00:00Z",
-      "status": "TIMED",
-      "matchday": 13,
-      "homeTeam": {
-        "id": 1076,
-        "name": "Coventry City FC",
-        "shortName": "Coventry City",
-        "tla": "COV",
-        "crest": "https://crests.football-data.org/1076.png"
-      },
-      "awayTeam": {
-        "id": 349,
-        "name": "Ipswich Town FC",
-        "shortName": "Ipswich Town",
-        "tla": "IPS",
-        "crest": "https://crests.football-data.org/349.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560669,
-      "utcDate": "2026-12-02T20:00:00Z",
-      "status": "TIMED",
-      "matchday": 13,
-      "homeTeam": {
-        "id": 65,
-        "name": "Manchester City FC",
-        "shortName": "Man City",
-        "tla": "MCI",
-        "crest": "https://crests.football-data.org/65.png"
-      },
-      "awayTeam": {
-        "id": 341,
-        "name": "Leeds United FC",
-        "shortName": "Leeds United",
-        "tla": "LEE",
-        "crest": "https://crests.football-data.org/341.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
       "id": 560670,
-      "utcDate": "2026-12-02T20:00:00Z",
+      "utcDate": "2026-12-02T20:15:00Z",
       "status": "TIMED",
       "matchday": 13,
       "homeTeam": {
@@ -3671,7 +3645,7 @@
     },
     {
       "id": 560671,
-      "utcDate": "2026-12-02T20:00:00Z",
+      "utcDate": "2026-12-02T20:15:00Z",
       "status": "TIMED",
       "matchday": 13,
       "homeTeam": {
@@ -3696,10 +3670,10 @@
       "broadcast": null
     },
     {
-      "id": 560672,
-      "utcDate": "2026-12-05T15:00:00Z",
+      "id": 560662,
+      "utcDate": "2026-12-03T20:00:00Z",
       "status": "TIMED",
-      "matchday": 14,
+      "matchday": 13,
       "homeTeam": {
         "id": 73,
         "name": "Tottenham Hotspur FC",
@@ -3708,11 +3682,37 @@
         "crest": "https://crests.football-data.org/73.png"
       },
       "awayTeam": {
-        "id": 57,
-        "name": "Arsenal FC",
-        "shortName": "Arsenal",
-        "tla": "ARS",
-        "crest": "https://crests.football-data.org/57.png"
+        "id": 63,
+        "name": "Fulham FC",
+        "shortName": "Fulham",
+        "tla": "FUL",
+        "crest": "https://crests.football-data.org/63.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
+      "id": 560676,
+      "utcDate": "2026-12-05T12:30:00Z",
+      "status": "TIMED",
+      "matchday": 14,
+      "homeTeam": {
+        "id": 61,
+        "name": "Chelsea FC",
+        "shortName": "Chelsea",
+        "tla": "CHE",
+        "crest": "https://crests.football-data.org/61.png"
+      },
+      "awayTeam": {
+        "id": 64,
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "tla": "LIV",
+        "crest": "https://crests.football-data.org/64.png"
       },
       "score": {
         "home": null,
@@ -3765,84 +3765,6 @@
         "shortName": "Ipswich Town",
         "tla": "IPS",
         "crest": "https://crests.football-data.org/349.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560675,
-      "utcDate": "2026-12-05T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 14,
-      "homeTeam": {
-        "id": 67,
-        "name": "Newcastle United FC",
-        "shortName": "Newcastle",
-        "tla": "NEW",
-        "crest": "https://crests.football-data.org/67.png"
-      },
-      "awayTeam": {
-        "id": 71,
-        "name": "Sunderland AFC",
-        "shortName": "Sunderland",
-        "tla": "SUN",
-        "crest": "https://crests.football-data.org/71.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560676,
-      "utcDate": "2026-12-05T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 14,
-      "homeTeam": {
-        "id": 61,
-        "name": "Chelsea FC",
-        "shortName": "Chelsea",
-        "tla": "CHE",
-        "crest": "https://crests.football-data.org/61.png"
-      },
-      "awayTeam": {
-        "id": 64,
-        "name": "Liverpool FC",
-        "shortName": "Liverpool",
-        "tla": "LIV",
-        "crest": "https://crests.football-data.org/64.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560677,
-      "utcDate": "2026-12-05T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 14,
-      "homeTeam": {
-        "id": 402,
-        "name": "Brentford FC",
-        "shortName": "Brentford",
-        "tla": "BRE",
-        "crest": "https://crests.football-data.org/402.png"
-      },
-      "awayTeam": {
-        "id": 65,
-        "name": "Manchester City FC",
-        "shortName": "Man City",
-        "tla": "MCI",
-        "crest": "https://crests.football-data.org/65.png"
       },
       "score": {
         "home": null,
@@ -3905,7 +3827,7 @@
     },
     {
       "id": 560680,
-      "utcDate": "2026-12-05T15:00:00Z",
+      "utcDate": "2026-12-05T17:30:00Z",
       "status": "TIMED",
       "matchday": 14,
       "homeTeam": {
@@ -3930,8 +3852,60 @@
       "broadcast": null
     },
     {
+      "id": 560677,
+      "utcDate": "2026-12-05T20:00:00Z",
+      "status": "TIMED",
+      "matchday": 14,
+      "homeTeam": {
+        "id": 402,
+        "name": "Brentford FC",
+        "shortName": "Brentford",
+        "tla": "BRE",
+        "crest": "https://crests.football-data.org/402.png"
+      },
+      "awayTeam": {
+        "id": 65,
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "tla": "MCI",
+        "crest": "https://crests.football-data.org/65.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
+      "id": 560675,
+      "utcDate": "2026-12-06T14:00:00Z",
+      "status": "TIMED",
+      "matchday": 14,
+      "homeTeam": {
+        "id": 67,
+        "name": "Newcastle United FC",
+        "shortName": "Newcastle",
+        "tla": "NEW",
+        "crest": "https://crests.football-data.org/67.png"
+      },
+      "awayTeam": {
+        "id": 71,
+        "name": "Sunderland AFC",
+        "shortName": "Sunderland",
+        "tla": "SUN",
+        "crest": "https://crests.football-data.org/71.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
       "id": 560681,
-      "utcDate": "2026-12-05T15:00:00Z",
+      "utcDate": "2026-12-06T14:00:00Z",
       "status": "TIMED",
       "matchday": 14,
       "homeTeam": {
@@ -3956,101 +3930,23 @@
       "broadcast": null
     },
     {
-      "id": 560682,
-      "utcDate": "2026-12-12T15:00:00Z",
+      "id": 560672,
+      "utcDate": "2026-12-06T16:30:00Z",
       "status": "TIMED",
-      "matchday": 15,
+      "matchday": 14,
       "homeTeam": {
-        "id": 71,
-        "name": "Sunderland AFC",
-        "shortName": "Sunderland",
-        "tla": "SUN",
-        "crest": "https://crests.football-data.org/71.png"
-      },
-      "awayTeam": {
-        "id": 351,
-        "name": "Nottingham Forest FC",
-        "shortName": "Nottingham",
-        "tla": "NOT",
-        "crest": "https://crests.football-data.org/351.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560683,
-      "utcDate": "2026-12-12T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 15,
-      "homeTeam": {
-        "id": 354,
-        "name": "Crystal Palace FC",
-        "shortName": "Crystal Palace",
-        "tla": "CRY",
-        "crest": "https://crests.football-data.org/354.png"
-      },
-      "awayTeam": {
-        "id": 66,
-        "name": "Manchester United FC",
-        "shortName": "Man United",
-        "tla": "MUN",
-        "crest": "https://crests.football-data.org/66.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560684,
-      "utcDate": "2026-12-12T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 15,
-      "homeTeam": {
-        "id": 322,
-        "name": "Hull City AFC",
-        "shortName": "Hull City",
-        "tla": "HUL",
-        "crest": "https://crests.football-data.org/322.png"
-      },
-      "awayTeam": {
         "id": 73,
         "name": "Tottenham Hotspur FC",
         "shortName": "Tottenham",
         "tla": "TOT",
         "crest": "https://crests.football-data.org/73.png"
       },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560685,
-      "utcDate": "2026-12-12T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 15,
-      "homeTeam": {
-        "id": 397,
-        "name": "Brighton & Hove Albion FC",
-        "shortName": "Brighton Hove",
-        "tla": "BHA",
-        "crest": "https://crests.football-data.org/397.png"
-      },
       "awayTeam": {
-        "id": 62,
-        "name": "Everton FC",
-        "shortName": "Everton",
-        "tla": "EVE",
-        "crest": "https://crests.football-data.org/62.png"
+        "id": 57,
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "tla": "ARS",
+        "crest": "https://crests.football-data.org/57.png"
       },
       "score": {
         "home": null,
@@ -4077,84 +3973,6 @@
         "shortName": "Newcastle",
         "tla": "NEW",
         "crest": "https://crests.football-data.org/67.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560687,
-      "utcDate": "2026-12-12T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 15,
-      "homeTeam": {
-        "id": 1076,
-        "name": "Coventry City FC",
-        "shortName": "Coventry City",
-        "tla": "COV",
-        "crest": "https://crests.football-data.org/1076.png"
-      },
-      "awayTeam": {
-        "id": 58,
-        "name": "Aston Villa FC",
-        "shortName": "Aston Villa",
-        "tla": "AVL",
-        "crest": "https://crests.football-data.org/58.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560688,
-      "utcDate": "2026-12-12T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 15,
-      "homeTeam": {
-        "id": 57,
-        "name": "Arsenal FC",
-        "shortName": "Arsenal",
-        "tla": "ARS",
-        "crest": "https://crests.football-data.org/57.png"
-      },
-      "awayTeam": {
-        "id": 1044,
-        "name": "AFC Bournemouth",
-        "shortName": "Bournemouth",
-        "tla": "BOU",
-        "crest": "https://crests.football-data.org/bournemouth.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560689,
-      "utcDate": "2026-12-12T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 15,
-      "homeTeam": {
-        "id": 65,
-        "name": "Manchester City FC",
-        "shortName": "Man City",
-        "tla": "MCI",
-        "crest": "https://crests.football-data.org/65.png"
-      },
-      "awayTeam": {
-        "id": 61,
-        "name": "Chelsea FC",
-        "shortName": "Chelsea",
-        "tla": "CHE",
-        "crest": "https://crests.football-data.org/61.png"
       },
       "score": {
         "home": null,
@@ -4216,6 +4034,214 @@
       "broadcast": null
     },
     {
+      "id": 560689,
+      "utcDate": "2026-12-12T17:30:00Z",
+      "status": "TIMED",
+      "matchday": 15,
+      "homeTeam": {
+        "id": 65,
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "tla": "MCI",
+        "crest": "https://crests.football-data.org/65.png"
+      },
+      "awayTeam": {
+        "id": 61,
+        "name": "Chelsea FC",
+        "shortName": "Chelsea",
+        "tla": "CHE",
+        "crest": "https://crests.football-data.org/61.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
+      "id": 560682,
+      "utcDate": "2026-12-13T14:00:00Z",
+      "status": "TIMED",
+      "matchday": 15,
+      "homeTeam": {
+        "id": 71,
+        "name": "Sunderland AFC",
+        "shortName": "Sunderland",
+        "tla": "SUN",
+        "crest": "https://crests.football-data.org/71.png"
+      },
+      "awayTeam": {
+        "id": 351,
+        "name": "Nottingham Forest FC",
+        "shortName": "Nottingham",
+        "tla": "NOT",
+        "crest": "https://crests.football-data.org/351.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
+      "id": 560685,
+      "utcDate": "2026-12-13T14:00:00Z",
+      "status": "TIMED",
+      "matchday": 15,
+      "homeTeam": {
+        "id": 397,
+        "name": "Brighton & Hove Albion FC",
+        "shortName": "Brighton Hove",
+        "tla": "BHA",
+        "crest": "https://crests.football-data.org/397.png"
+      },
+      "awayTeam": {
+        "id": 62,
+        "name": "Everton FC",
+        "shortName": "Everton",
+        "tla": "EVE",
+        "crest": "https://crests.football-data.org/62.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
+      "id": 560688,
+      "utcDate": "2026-12-13T14:00:00Z",
+      "status": "TIMED",
+      "matchday": 15,
+      "homeTeam": {
+        "id": 57,
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "tla": "ARS",
+        "crest": "https://crests.football-data.org/57.png"
+      },
+      "awayTeam": {
+        "id": 1044,
+        "name": "AFC Bournemouth",
+        "shortName": "Bournemouth",
+        "tla": "BOU",
+        "crest": "https://crests.football-data.org/bournemouth.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
+      "id": 560687,
+      "utcDate": "2026-12-13T16:30:00Z",
+      "status": "TIMED",
+      "matchday": 15,
+      "homeTeam": {
+        "id": 1076,
+        "name": "Coventry City FC",
+        "shortName": "Coventry City",
+        "tla": "COV",
+        "crest": "https://crests.football-data.org/1076.png"
+      },
+      "awayTeam": {
+        "id": 58,
+        "name": "Aston Villa FC",
+        "shortName": "Aston Villa",
+        "tla": "AVL",
+        "crest": "https://crests.football-data.org/58.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
+      "id": 560683,
+      "utcDate": "2026-12-13T19:00:00Z",
+      "status": "TIMED",
+      "matchday": 15,
+      "homeTeam": {
+        "id": 354,
+        "name": "Crystal Palace FC",
+        "shortName": "Crystal Palace",
+        "tla": "CRY",
+        "crest": "https://crests.football-data.org/354.png"
+      },
+      "awayTeam": {
+        "id": 66,
+        "name": "Manchester United FC",
+        "shortName": "Man United",
+        "tla": "MUN",
+        "crest": "https://crests.football-data.org/66.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
+      "id": 560684,
+      "utcDate": "2026-12-14T20:00:00Z",
+      "status": "TIMED",
+      "matchday": 15,
+      "homeTeam": {
+        "id": 322,
+        "name": "Hull City AFC",
+        "shortName": "Hull City",
+        "tla": "HUL",
+        "crest": "https://crests.football-data.org/322.png"
+      },
+      "awayTeam": {
+        "id": 73,
+        "name": "Tottenham Hotspur FC",
+        "shortName": "Tottenham",
+        "tla": "TOT",
+        "crest": "https://crests.football-data.org/73.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
+      "id": 560695,
+      "utcDate": "2026-12-19T12:30:00Z",
+      "status": "TIMED",
+      "matchday": 16,
+      "homeTeam": {
+        "id": 402,
+        "name": "Brentford FC",
+        "shortName": "Brentford",
+        "tla": "BRE",
+        "crest": "https://crests.football-data.org/402.png"
+      },
+      "awayTeam": {
+        "id": 67,
+        "name": "Newcastle United FC",
+        "shortName": "Newcastle",
+        "tla": "NEW",
+        "crest": "https://crests.football-data.org/67.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
       "id": 560692,
       "utcDate": "2026-12-19T15:00:00Z",
       "status": "TIMED",
@@ -4233,32 +4259,6 @@
         "shortName": "Fulham",
         "tla": "FUL",
         "crest": "https://crests.football-data.org/63.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560693,
-      "utcDate": "2026-12-19T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 16,
-      "homeTeam": {
-        "id": 397,
-        "name": "Brighton & Hove Albion FC",
-        "shortName": "Brighton Hove",
-        "tla": "BHA",
-        "crest": "https://crests.football-data.org/397.png"
-      },
-      "awayTeam": {
-        "id": 349,
-        "name": "Ipswich Town FC",
-        "shortName": "Ipswich Town",
-        "tla": "IPS",
-        "crest": "https://crests.football-data.org/349.png"
       },
       "score": {
         "home": null,
@@ -4294,32 +4294,6 @@
       "broadcast": null
     },
     {
-      "id": 560695,
-      "utcDate": "2026-12-19T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 16,
-      "homeTeam": {
-        "id": 402,
-        "name": "Brentford FC",
-        "shortName": "Brentford",
-        "tla": "BRE",
-        "crest": "https://crests.football-data.org/402.png"
-      },
-      "awayTeam": {
-        "id": 67,
-        "name": "Newcastle United FC",
-        "shortName": "Newcastle",
-        "tla": "NEW",
-        "crest": "https://crests.football-data.org/67.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
       "id": 560696,
       "utcDate": "2026-12-19T15:00:00Z",
       "status": "TIMED",
@@ -4337,32 +4311,6 @@
         "shortName": "Hull City",
         "tla": "HUL",
         "crest": "https://crests.football-data.org/322.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560697,
-      "utcDate": "2026-12-19T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 16,
-      "homeTeam": {
-        "id": 71,
-        "name": "Sunderland AFC",
-        "shortName": "Sunderland",
-        "tla": "SUN",
-        "crest": "https://crests.football-data.org/71.png"
-      },
-      "awayTeam": {
-        "id": 354,
-        "name": "Crystal Palace FC",
-        "shortName": "Crystal Palace",
-        "tla": "CRY",
-        "crest": "https://crests.football-data.org/354.png"
       },
       "score": {
         "home": null,
@@ -4398,34 +4346,8 @@
       "broadcast": null
     },
     {
-      "id": 560699,
-      "utcDate": "2026-12-19T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 16,
-      "homeTeam": {
-        "id": 57,
-        "name": "Arsenal FC",
-        "shortName": "Arsenal",
-        "tla": "ARS",
-        "crest": "https://crests.football-data.org/57.png"
-      },
-      "awayTeam": {
-        "id": 66,
-        "name": "Manchester United FC",
-        "shortName": "Man United",
-        "tla": "MUN",
-        "crest": "https://crests.football-data.org/66.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
       "id": 560700,
-      "utcDate": "2026-12-19T15:00:00Z",
+      "utcDate": "2026-12-19T17:30:00Z",
       "status": "TIMED",
       "matchday": 16,
       "homeTeam": {
@@ -4450,8 +4372,86 @@
       "broadcast": null
     },
     {
+      "id": 560693,
+      "utcDate": "2026-12-20T14:00:00Z",
+      "status": "TIMED",
+      "matchday": 16,
+      "homeTeam": {
+        "id": 397,
+        "name": "Brighton & Hove Albion FC",
+        "shortName": "Brighton Hove",
+        "tla": "BHA",
+        "crest": "https://crests.football-data.org/397.png"
+      },
+      "awayTeam": {
+        "id": 349,
+        "name": "Ipswich Town FC",
+        "shortName": "Ipswich Town",
+        "tla": "IPS",
+        "crest": "https://crests.football-data.org/349.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
+      "id": 560697,
+      "utcDate": "2026-12-20T14:00:00Z",
+      "status": "TIMED",
+      "matchday": 16,
+      "homeTeam": {
+        "id": 71,
+        "name": "Sunderland AFC",
+        "shortName": "Sunderland",
+        "tla": "SUN",
+        "crest": "https://crests.football-data.org/71.png"
+      },
+      "awayTeam": {
+        "id": 354,
+        "name": "Crystal Palace FC",
+        "shortName": "Crystal Palace",
+        "tla": "CRY",
+        "crest": "https://crests.football-data.org/354.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
+      "id": 560699,
+      "utcDate": "2026-12-20T16:30:00Z",
+      "status": "TIMED",
+      "matchday": 16,
+      "homeTeam": {
+        "id": 57,
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "tla": "ARS",
+        "crest": "https://crests.football-data.org/57.png"
+      },
+      "awayTeam": {
+        "id": 66,
+        "name": "Manchester United FC",
+        "shortName": "Man United",
+        "tla": "MUN",
+        "crest": "https://crests.football-data.org/66.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
       "id": 560701,
-      "utcDate": "2026-12-19T15:00:00Z",
+      "utcDate": "2026-12-21T20:00:00Z",
       "status": "TIMED",
       "matchday": 16,
       "homeTeam": {
@@ -10198,130 +10198,134 @@
   ],
   "headlines": [
     {
-      "title": "Lask v Liverpool: Champions League – live",
-      "link": "https://www.theguardian.com/football/live/2026/oct/14/lask-v-liverpool-champions-league-live-score-updates",
-      "pubDate": "Wed, 14 Oct 2026 17:37:53 GMT",
-      "image": "https://i.guim.co.uk/img/media/bd433c3643515f30e230f1bf532355c1dea12fdc/326_0_3213_2571/master/3213.jpg?width=460&quality=85&auto=format&fit=max&s=4ba3be6723a23f9396de7d8087bc9466",
+      "title": "Aston Villa v Viking, Real Madrid v RB Leipzig and more: Champions League – live",
+      "link": "https://www.theguardian.com/football/live/2026/oct/21/real-madrid-v-rb-leipzig-aston-villa-v-viking-and-more-champions-league-live",
+      "pubDate": "Wed, 21 Oct 2026 17:44:15 GMT",
+      "image": "https://i.guim.co.uk/img/media/5b9298006e29929d53a8250c584ccffb01010669/961_167_4659_3728/master/4659.jpg?width=460&quality=85&auto=format&fit=max&s=f1a3778d655b43df1bf406115d104a89",
       "source": "The Guardian",
       "teams": [
-        64
+        58
       ]
     },
     {
-      "title": "Manchester City v Paris Saint-Germain: Champions League – live",
-      "link": "https://www.theguardian.com/football/live/2026/oct/14/manchester-city-v-paris-saint-germain-champions-league-live-score-updates",
-      "pubDate": "Wed, 14 Oct 2026 17:30:08 GMT",
-      "image": "https://i.guim.co.uk/img/media/78ed97ed695f8e163c10258f8749b0ed42bc5285/21_260_4424_3539/master/4424.jpg?width=460&quality=85&auto=format&fit=max&s=56acc314359b0aeb38c5a2d5cf71094a",
-      "source": "The Guardian",
-      "teams": [
-        65
-      ]
-    },
-    {
-      "title": "East Fife sack Campbell as Lennon steps in at Dumbarton",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwzd6y4vr2y4o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 14 Oct 2026 17:16:23 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6110/live/1106acb0-c7ee-11f1-9bb8-8794f734d112.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Millwall's Neil criticised over racial abuse stoppage comments",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6rmykw391ljo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 14 Oct 2026 17:09:18 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/024c/live/a95276a0-c7c3-11f1-993a-152cbb068da1.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Fan cleared of assaults after fall from Ipswich stand",
-      "link": "https://www.bbc.co.uk/news/articles/c65ynlyz385xo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 14 Oct 2026 17:07:53 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0d9c/live/fe16e0c0-c7bb-11f1-ae81-f79bab61f11a.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Manchester City staff invited on government trade trip to India",
-      "link": "https://www.theguardian.com/football/2026/oct/14/bev-craig-manchester-city-trade-trip-india-to-promote-uk-tourism",
-      "pubDate": "Wed, 14 Oct 2026 17:00:08 GMT",
-      "image": "https://i.guim.co.uk/img/media/0a074ac93b973a6a3f08c2e3c221f6f37c6f9e0a/1133_528_5970_4776/master/5970.jpg?width=460&quality=85&auto=format&fit=max&s=a4c119b39c080d279cfd738440b78d2b",
-      "source": "The Guardian",
-      "teams": [
-        65
-      ]
-    },
-    {
-      "title": "MLS’s political speech policy is untenable – just ask Austin FC fans",
-      "link": "https://www.theguardian.com/football/2026/oct/14/austin-fc-ice-banner-mls-political-speech-policy",
-      "pubDate": "Wed, 14 Oct 2026 16:58:53 GMT",
-      "image": "https://i.guim.co.uk/img/media/1ae81a648e43f9cd0ce396ec0a323bf73d1b22e5/1046_0_6221_4977/master/6221.jpg?width=460&quality=85&auto=format&fit=max&s=7bfe5d54d6eec4f275a7dd8eaaa9b210",
-      "source": "The Guardian",
-      "teams": []
-    },
-    {
-      "title": "72+: The EFL Podcast",
-      "link": "https://www.bbc.co.uk/sounds/play/p0pgnjlf?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 14 Oct 2026 16:01:00 GMT",
-      "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0p3n9ks.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Fifa to offer extra £2.6bn for football development",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c64g1ex2d7gvo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 14 Oct 2026 15:59:59 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/df77/live/a0001370-c7df-11f1-b712-6f93dfe07e87.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Jason Wilcox: ‘best eyes’ at Manchester United or promoted too far and too fast?",
-      "link": "https://www.theguardian.com/football/2026/oct/14/jason-wilcox-manchester-united-director-of-football-recruitment-ratcliffe",
-      "pubDate": "Wed, 14 Oct 2026 15:42:11 GMT",
-      "image": "https://i.guim.co.uk/img/media/1ec604cb6ba66bc69731fd21f6157b1b86d12ffb/249_0_2501_2001/master/2501.jpg?width=460&quality=85&auto=format&fit=max&s=26405c6bdfb4a59cc77586652f3bf348",
+      "title": "Como v Manchester United: Champions League – live",
+      "link": "https://www.theguardian.com/football/live/2026/oct/21/como-v-manchester-united-champions-league-live",
+      "pubDate": "Wed, 21 Oct 2026 17:43:50 GMT",
+      "image": "https://i.guim.co.uk/img/media/c65da51d34c493821af0e059bb6faf0e56fdd281/333_0_3979_3183/master/3979.jpg?width=460&quality=85&auto=format&fit=max&s=5e3c304e8529688f3e16e97275a6aae8",
       "source": "The Guardian",
       "teams": [
         66
       ]
     },
     {
-      "title": "Wilcox the target again in another damaging Man Utd fallout",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cvp8g57ne53xo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 14 Oct 2026 15:30:03 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6ac2/live/f663aa70-c7de-11f1-9a39-31b474234113.png",
+      "title": "Bayern Munich v Arsenal: Champions League – live",
+      "link": "https://www.theguardian.com/football/live/2026/oct/21/bayern-munich-v-arsenal-champions-league-live",
+      "pubDate": "Wed, 21 Oct 2026 17:30:52 GMT",
+      "image": "https://i.guim.co.uk/img/media/de0aa06c987cbc88fba8a72ce6470044e90f2988/412_0_5750_4599/master/5750.jpg?width=460&quality=85&auto=format&fit=max&s=ff2945ebedcb923814144ceb202febf4",
+      "source": "The Guardian",
+      "teams": [
+        57
+      ]
+    },
+    {
+      "title": "72+: The EFL Podcast",
+      "link": "https://www.bbc.co.uk/sounds/play/p0phvgy3?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 21 Oct 2026 16:07:00 GMT",
+      "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0p3n9ks.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "Dionisi set to remain in charge of Watford",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cmd7qv7l2530o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 14 Oct 2026 14:46:30 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8235/live/aa0e4d90-c7b8-11f1-b41f-d7a6cb474575.jpg",
+      "title": "Georgia and Dundee legend Nemsadze dies aged 54",
+      "link": "https://www.bbc.co.uk/sport/football/articles/crpdg2x7v1l2o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 21 Oct 2026 16:00:32 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5bad/live/f2dbe960-cd67-11f1-a64c-550be9e3c66b.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "Semenyo 'froze' after alleged racist abuse, court told",
-      "link": "https://www.bbc.co.uk/news/articles/cvlyd3z1g8d8o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 14 Oct 2026 14:16:04 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7cd7/live/e16f7470-c7d7-11f1-9671-5b70c6e774ea.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Football Daily | Martínez lets rip as United’s dirty laundry gets a very public airing",
-      "link": "https://www.theguardian.com/football/2026/oct/14/lisandro-martinez-manchester-united-football-daily-newsletter",
-      "pubDate": "Wed, 14 Oct 2026 13:58:53 GMT",
-      "image": "https://i.guim.co.uk/img/media/ba94c5532e72df83476bcd2df86778e699cc237b/0_93_1799_1438/master/1799.jpg?width=460&quality=85&auto=format&fit=max&s=9e52d75664c7b0b534ce7d1f84b40ee0",
+      "title": "Football Daily | Champions League drama galore – so why do we feel hollow?",
+      "link": "https://www.theguardian.com/football/2026/oct/21/champions-league-goals-football-daily-newsletter",
+      "pubDate": "Wed, 21 Oct 2026 14:32:40 GMT",
+      "image": "https://i.guim.co.uk/img/media/f6f3be5dbc73f38bcf13b107d5cdf99fda3c3f93/0_0_5000_4000/master/5000.jpg?width=460&quality=85&auto=format&fit=max&s=574eefbd9b540c88366ae7f0e5ace6d9",
       "source": "The Guardian",
       "teams": []
     },
     {
-      "title": "Big scorelines, one-sided games - are Women's World Cup play-offs working?",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cq0k0x1l8gndo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 14 Oct 2026 13:25:56 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/82c7/live/eb28dd30-c7c3-11f1-993a-152cbb068da1.jpg",
+      "title": "‘A complete threat’: Rio Ngumoha’s electric display excites Van Dijk and Liverpool",
+      "link": "https://www.theguardian.com/football/2026/oct/21/rio-ngumoha-progress-liverpool-villarreal-champions-league",
+      "pubDate": "Wed, 21 Oct 2026 13:59:31 GMT",
+      "image": "https://i.guim.co.uk/img/media/d1d0c2030381fd168a05b6bfe34876ff502eb5f6/450_0_4715_3772/master/4715.jpg?width=460&quality=85&auto=format&fit=max&s=8aae90d57589a517614aaef9b60efd12",
+      "source": "The Guardian",
+      "teams": [
+        64
+      ]
+    },
+    {
+      "title": "Why do Man City fans boo pre-match anthems?",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cvx28yk1j6z0o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 21 Oct 2026 13:57:59 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f3a0/live/3c706da0-cd43-11f1-8177-0f8bd59b54c4.jpg",
+      "source": "BBC Sport",
+      "teams": [
+        65
+      ]
+    },
+    {
+      "title": "Ipswich on 'inevitable' path to WSL - Boswell",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cqdjvr3mn0yno?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 21 Oct 2026 13:18:35 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/de83/live/c86f2240-cd45-11f1-8177-0f8bd59b54c4.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Barca condemn PSG tifo inciting 'violence and hatred'",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cm4g1jwp9827o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 21 Oct 2026 13:12:20 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7fe3/live/c5571dc0-cd4e-11f1-8177-0f8bd59b54c4.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "PSG beat Barça, Rio’s grand for Liverpool and Ronaldo’s CV | Football Weekly – video",
+      "link": "https://www.theguardian.com/football/video/2026/oct/21/psg-beat-barca-rios-grand-for-liverpool-and-ronaldos-cv-football-weekly-video",
+      "pubDate": "Wed, 21 Oct 2026 13:02:43 GMT",
+      "image": "https://i.guim.co.uk/img/media/1874a8dec20628eae378c70826d90e0ee2135d90/696_0_4040_3232/master/4040.jpg?width=460&quality=85&auto=format&fit=max&s=4c32d7a65a4bcfabb3392d50bdb1c308",
+      "source": "The Guardian",
+      "teams": [
+        64
+      ]
+    },
+    {
+      "title": "The keeper doing 'Premier League' things for EFL's last unbeaten side",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c98rz0d0l40vo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 21 Oct 2026 12:46:12 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1bcc/live/ab2708f0-cd3c-11f1-8177-0f8bd59b54c4.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Cristiano Ronaldo asked for punishment ‘without mitigation’, then fought to cut it",
+      "link": "https://www.theguardian.com/football/2026/oct/21/cristiano-ronaldo-punishment-portugal-walkout-without-mitigation-fought-to-cut-it",
+      "pubDate": "Wed, 21 Oct 2026 12:40:41 GMT",
+      "image": "https://i.guim.co.uk/img/media/15e6439f977f0f2959cdf2556b0d65fdf3885bbc/420_112_1808_1446/master/1808.jpg?width=460&quality=85&auto=format&fit=max&s=b8e20f2acde0fc44c3a013b9a2a3a8c4",
+      "source": "The Guardian",
+      "teams": []
+    },
+    {
+      "title": "What are the EFL rules on homegrown players?",
+      "link": "https://www.bbc.co.uk/sport/football/articles/ck7vp83l215yo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 21 Oct 2026 12:16:11 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7231/live/4f153ff0-cd4b-11f1-8177-0f8bd59b54c4.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "PSG's Kvaratskhelia to have surgery on ruptured ACL",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cxnv0ed5pz23o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 21 Oct 2026 11:45:03 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6778/live/6bc68ff0-cd32-11f1-9be1-0ba032f367ac.jpg",
       "source": "BBC Sport",
       "teams": []
     }
@@ -10910,7 +10914,7 @@
       ]
     },
     "62": {
-      "coach": "D. Moyes",
+      "coach": "David Moyes",
       "squad": [
         {
           "id": 3309,
@@ -11069,7 +11073,7 @@
       ]
     },
     "63": {
-      "coach": "Alvaro Arbeloa",
+      "coach": "Arbeloa",
       "squad": [
         {
           "id": 3174,
@@ -11256,7 +11260,7 @@
       ]
     },
     "64": {
-      "coach": "A. Slot",
+      "coach": "Andoni Iraola",
       "squad": [
         {
           "id": 302268,
@@ -11471,7 +11475,7 @@
       ]
     },
     "65": {
-      "coach": "Guardiola",
+      "coach": "Enzo Maresca",
       "squad": [
         {
           "id": 6,
@@ -11859,7 +11863,7 @@
       ]
     },
     "67": {
-      "coach": "E. Howe",
+      "coach": "Matthias Jaissle",
       "squad": [
         {
           "id": 3310,
@@ -12039,7 +12043,7 @@
       ]
     },
     "71": {
-      "coach": "R. Le Bris",
+      "coach": "Regis Le Bris",
       "squad": [
         {
           "id": 4292,
@@ -12240,7 +12244,7 @@
       ]
     },
     "73": {
-      "coach": "T. Frank",
+      "coach": "Roberto De Zerbi",
       "squad": [
         {
           "id": 7914,
@@ -12441,7 +12445,7 @@
       ]
     },
     "322": {
-      "coach": "S. Jakirović",
+      "coach": "Sergej Jakirović",
       "squad": [
         {
           "id": 3308,
@@ -12670,7 +12674,7 @@
       ]
     },
     "341": {
-      "coach": "S. Gardner",
+      "coach": "Daniel Farke",
       "squad": [
         {
           "id": 5315,
@@ -12843,7 +12847,7 @@
       ]
     },
     "349": {
-      "coach": "J. Sheehan",
+      "coach": "Gary O'Neil",
       "squad": [
         {
           "id": 3954,
@@ -13044,7 +13048,7 @@
       ]
     },
     "351": {
-      "coach": "S. Dyche",
+      "coach": "Oliver Glasner",
       "squad": [
         {
           "id": 1299,
@@ -13108,13 +13112,6 @@
           "position": "Defence",
           "dateOfBirth": "2005-03-07",
           "nationality": "Brazil"
-        },
-        {
-          "id": 184747,
-          "name": "Ousmane Diomande",
-          "position": "Defence",
-          "dateOfBirth": "2004-11-16",
-          "nationality": "Cote d'Ivoire"
         },
         {
           "id": 191730,
@@ -13217,7 +13214,7 @@
       ]
     },
     "354": {
-      "coach": "P. Sage",
+      "coach": "Pierre Sage",
       "squad": [
         {
           "id": 5457,
@@ -13418,7 +13415,7 @@
       ]
     },
     "397": {
-      "coach": "F. Hürzeler",
+      "coach": "Fabian Hürzeler",
       "squad": [
         {
           "id": 4040,
@@ -13841,7 +13838,7 @@
       ]
     },
     "1044": {
-      "coach": "M. Rose",
+      "coach": "Marco Rose",
       "squad": [
         {
           "id": 8079,
