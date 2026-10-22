@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-22T00:34:21.865Z",
+  "fetchedAt": "2026-10-22T05:22:52.578Z",
   "odds": {
     "560612": {
       "eventTicker": "KXEPLGAME-26OCT25LFCBRI",
@@ -101,7 +101,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct24cfctot",
       "home": {
         "label": "Chelsea",
-        "probability": 57,
+        "probability": 58,
         "ticker": "KXEPLGAME-26OCT24CFCTOT-CFC"
       },
       "away": {
@@ -168,7 +168,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 29,
+        "probability": 28,
         "ticker": "KXEPLGAME-26OCT23IPSNFO-TIE"
       }
     },
@@ -182,7 +182,7 @@
       },
       "away": {
         "label": "Leeds United",
-        "probability": 39,
+        "probability": 40,
         "ticker": "KXEPLGAME-26OCT25SUNLEE-LEE"
       },
       "draw": {
@@ -348,7 +348,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct31brenfo",
       "home": {
         "label": "Brentford",
-        "probability": 48,
+        "probability": 49,
         "ticker": "KXEPLGAME-26OCT31BRENFO-BRE"
       },
       "away": {
@@ -372,7 +372,7 @@
       },
       "away": {
         "label": "Arsenal",
-        "probability": 42,
+        "probability": 44,
         "ticker": "KXEPLGAME-26NOV01LFCARS-ARS"
       },
       "draw": {
