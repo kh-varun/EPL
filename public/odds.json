@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-21T21:59:16.834Z",
+  "fetchedAt": "2026-10-22T00:34:21.865Z",
   "odds": {
     "560612": {
       "eventTicker": "KXEPLGAME-26OCT25LFCBRI",
@@ -49,12 +49,12 @@
       },
       "away": {
         "label": "Man City",
-        "probability": 59,
+        "probability": 60,
         "ticker": "KXEPLGAME-26OCT24AVLMCI-MCI"
       },
       "draw": {
         "label": "Draw",
-        "probability": 22,
+        "probability": 23,
         "ticker": "KXEPLGAME-26OCT24AVLMCI-TIE"
       }
     },
@@ -92,7 +92,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 21,
+        "probability": 22,
         "ticker": "KXEPLGAME-26OCT24ARSEVE-TIE"
       }
     },
@@ -101,12 +101,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct24cfctot",
       "home": {
         "label": "Chelsea",
-        "probability": 58,
+        "probability": 57,
         "ticker": "KXEPLGAME-26OCT24CFCTOT-CFC"
       },
       "away": {
         "label": "Tottenham",
-        "probability": 20,
+        "probability": 21,
         "ticker": "KXEPLGAME-26OCT24CFCTOT-TOT"
       },
       "draw": {
@@ -139,7 +139,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct25hulbre",
       "home": {
         "label": "Hull City",
-        "probability": 20,
+        "probability": 21,
         "ticker": "KXEPLGAME-26OCT25HULBRE-HUL"
       },
       "away": {
@@ -149,7 +149,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 23,
+        "probability": 24,
         "ticker": "KXEPLGAME-26OCT25HULBRE-TIE"
       }
     },
@@ -187,7 +187,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 30,
+        "probability": 31,
         "ticker": "KXEPLGAME-26OCT25SUNLEE-TIE"
       }
     },
@@ -206,7 +206,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 27,
         "ticker": "KXEPLGAME-26NOV02NEWEVE-TIE"
       }
     },
@@ -263,7 +263,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 28,
+        "probability": 29,
         "ticker": "KXEPLGAME-26OCT31COVSUN-TIE"
       }
     },
@@ -272,12 +272,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct31cfcmun",
       "home": {
         "label": "Chelsea",
-        "probability": 53,
+        "probability": 52,
         "ticker": "KXEPLGAME-26OCT31CFCMUN-CFC"
       },
       "away": {
         "label": "Man United",
-        "probability": 27,
+        "probability": 26,
         "ticker": "KXEPLGAME-26OCT31CFCMUN-MUN"
       },
       "draw": {
@@ -296,12 +296,12 @@
       },
       "away": {
         "label": "Crystal Palace",
-        "probability": 17,
+        "probability": 19,
         "ticker": "KXEPLGAME-26OCT31TOTCRY-CRY"
       },
       "draw": {
         "label": "Draw",
-        "probability": 23,
+        "probability": 22,
         "ticker": "KXEPLGAME-26OCT31TOTCRY-TIE"
       }
     },
@@ -377,7 +377,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 27,
+        "probability": 26,
         "ticker": "KXEPLGAME-26NOV01LFCARS-TIE"
       }
     }
