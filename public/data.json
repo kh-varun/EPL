@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-24T18:55:05.167Z",
+  "fetchedAt": "2026-10-24T21:16:08.169Z",
   "standings": [
     {
       "position": 1,
@@ -383,6 +383,31 @@
     }
   ],
   "lastResults": [
+    {
+      "id": 560618,
+      "utcDate": "2026-10-24T14:00:00Z",
+      "status": "FINISHED",
+      "matchday": 8,
+      "homeTeam": {
+        "id": 1076,
+        "name": "Coventry City FC",
+        "shortName": "Coventry City",
+        "tla": "COV",
+        "crest": "https://crests.football-data.org/1076.png"
+      },
+      "awayTeam": {
+        "id": 63,
+        "name": "Fulham FC",
+        "shortName": "Fulham",
+        "tla": "FUL",
+        "crest": "https://crests.football-data.org/63.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 1,
+        "winner": "AWAY_TEAM"
+      }
+    },
     {
       "id": 560620,
       "utcDate": "2026-10-23T19:00:00Z",
@@ -2160,32 +2185,6 @@
     }
   ],
   "nextFixtures": [
-    {
-      "id": 560617,
-      "utcDate": "2026-10-24T16:30:00Z",
-      "status": "TIMED",
-      "matchday": 8,
-      "homeTeam": {
-        "id": 61,
-        "name": "Chelsea FC",
-        "shortName": "Chelsea",
-        "tla": "CHE",
-        "crest": "https://crests.football-data.org/61.png"
-      },
-      "awayTeam": {
-        "id": 73,
-        "name": "Tottenham Hotspur FC",
-        "shortName": "Tottenham",
-        "tla": "TOT",
-        "crest": "https://crests.football-data.org/73.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": "NBCSN"
-    },
     {
       "id": 560612,
       "utcDate": "2026-10-25T14:00:00Z",
