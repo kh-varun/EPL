@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-24T05:51:43.757Z",
+  "fetchedAt": "2026-10-24T10:15:32.658Z",
   "odds": {
     "560612": {
       "eventTicker": "KXEPLGAME-26OCT25LFCBRI",
@@ -11,7 +11,7 @@
       },
       "away": {
         "label": "Brighton Hove",
-        "probability": 31,
+        "probability": 30,
         "ticker": "KXEPLGAME-26OCT25LFCBRI-BRI"
       },
       "draw": {
@@ -25,7 +25,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct25crynew",
       "home": {
         "label": "Crystal Palace",
-        "probability": 33,
+        "probability": 34,
         "ticker": "KXEPLGAME-26OCT25CRYNEW-CRY"
       },
       "away": {
@@ -49,7 +49,7 @@
       },
       "away": {
         "label": "Man City",
-        "probability": 61,
+        "probability": 60,
         "ticker": "KXEPLGAME-26OCT24AVLMCI-MCI"
       },
       "draw": {
@@ -87,12 +87,12 @@
       },
       "away": {
         "label": "Everton",
-        "probability": 12,
+        "probability": 11,
         "ticker": "KXEPLGAME-26OCT24ARSEVE-EVE"
       },
       "draw": {
         "label": "Draw",
-        "probability": 22,
+        "probability": 21,
         "ticker": "KXEPLGAME-26OCT24ARSEVE-TIE"
       }
     },
@@ -101,12 +101,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct24cfctot",
       "home": {
         "label": "Chelsea",
-        "probability": 53,
+        "probability": 51,
         "ticker": "KXEPLGAME-26OCT24CFCTOT-CFC"
       },
       "away": {
         "label": "Tottenham",
-        "probability": 24,
+        "probability": 25,
         "ticker": "KXEPLGAME-26OCT24CFCTOT-TOT"
       },
       "draw": {
@@ -120,7 +120,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct24covful",
       "home": {
         "label": "Coventry City",
-        "probability": 31,
+        "probability": 30,
         "ticker": "KXEPLGAME-26OCT24COVFUL-COV"
       },
       "away": {
@@ -215,12 +215,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct31boulee",
       "home": {
         "label": "Bournemouth",
-        "probability": 46,
+        "probability": 43,
         "ticker": "KXEPLGAME-26OCT31BOULEE-BOU"
       },
       "away": {
         "label": "Leeds United",
-        "probability": 28,
+        "probability": 29,
         "ticker": "KXEPLGAME-26OCT31BOULEE-LEE"
       },
       "draw": {
@@ -410,12 +410,12 @@
       },
       "away": {
         "label": "Coventry City",
-        "probability": 43,
+        "probability": 24,
         "ticker": "KXEPLGAME-26NOV06EVECOV-COV"
       },
       "draw": {
         "label": "Draw",
-        "probability": 43,
+        "probability": 37,
         "ticker": "KXEPLGAME-26NOV06EVECOV-TIE"
       }
     },
