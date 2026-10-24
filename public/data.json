@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-21T17:59:32.240Z",
+  "fetchedAt": "2026-10-24T00:04:21.529Z",
   "standings": [
     {
       "position": 1,
@@ -156,6 +156,25 @@
     {
       "position": 9,
       "team": {
+        "id": 349,
+        "name": "Ipswich Town FC",
+        "shortName": "Ipswich Town",
+        "tla": "IPS",
+        "crest": "https://crests.football-data.org/349.png"
+      },
+      "playedGames": 8,
+      "won": 3,
+      "draw": 1,
+      "lost": 4,
+      "points": 10,
+      "goalsFor": 12,
+      "goalsAgainst": 16,
+      "goalDifference": -4,
+      "form": null
+    },
+    {
+      "position": 10,
+      "team": {
         "id": 322,
         "name": "Hull City AFC",
         "shortName": "Hull City",
@@ -170,25 +189,6 @@
       "goalsFor": 8,
       "goalsAgainst": 7,
       "goalDifference": 1,
-      "form": null
-    },
-    {
-      "position": 10,
-      "team": {
-        "id": 349,
-        "name": "Ipswich Town FC",
-        "shortName": "Ipswich Town",
-        "tla": "IPS",
-        "crest": "https://crests.football-data.org/349.png"
-      },
-      "playedGames": 7,
-      "won": 3,
-      "draw": 0,
-      "lost": 4,
-      "points": 9,
-      "goalsFor": 11,
-      "goalsAgainst": 15,
-      "goalDifference": -4,
       "form": null
     },
     {
@@ -289,6 +289,25 @@
     {
       "position": 16,
       "team": {
+        "id": 351,
+        "name": "Nottingham Forest FC",
+        "shortName": "Nottingham",
+        "tla": "NOT",
+        "crest": "https://crests.football-data.org/351.png"
+      },
+      "playedGames": 8,
+      "won": 1,
+      "draw": 3,
+      "lost": 4,
+      "points": 6,
+      "goalsFor": 6,
+      "goalsAgainst": 10,
+      "goalDifference": -4,
+      "form": null
+    },
+    {
+      "position": 16,
+      "team": {
         "id": 73,
         "name": "Tottenham Hotspur FC",
         "shortName": "Tottenham",
@@ -306,7 +325,7 @@
       "form": null
     },
     {
-      "position": 17,
+      "position": 18,
       "team": {
         "id": 1076,
         "name": "Coventry City FC",
@@ -325,7 +344,7 @@
       "form": null
     },
     {
-      "position": 18,
+      "position": 19,
       "team": {
         "id": 63,
         "name": "Fulham FC",
@@ -341,25 +360,6 @@
       "goalsFor": 7,
       "goalsAgainst": 10,
       "goalDifference": -3,
-      "form": null
-    },
-    {
-      "position": 19,
-      "team": {
-        "id": 351,
-        "name": "Nottingham Forest FC",
-        "shortName": "Nottingham",
-        "tla": "NOT",
-        "crest": "https://crests.football-data.org/351.png"
-      },
-      "playedGames": 7,
-      "won": 1,
-      "draw": 2,
-      "lost": 4,
-      "points": 5,
-      "goalsFor": 5,
-      "goalsAgainst": 9,
-      "goalDifference": -4,
       "form": null
     },
     {
@@ -383,6 +383,31 @@
     }
   ],
   "lastResults": [
+    {
+      "id": 560620,
+      "utcDate": "2026-10-23T19:00:00Z",
+      "status": "FINISHED",
+      "matchday": 8,
+      "homeTeam": {
+        "id": 349,
+        "name": "Ipswich Town FC",
+        "shortName": "Ipswich Town",
+        "tla": "IPS",
+        "crest": "https://crests.football-data.org/349.png"
+      },
+      "awayTeam": {
+        "id": 351,
+        "name": "Nottingham Forest FC",
+        "shortName": "Nottingham",
+        "tla": "NOT",
+        "crest": "https://crests.football-data.org/351.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 1,
+        "winner": "DRAW"
+      }
+    },
     {
       "id": 560606,
       "utcDate": "2026-10-19T19:00:00Z",
@@ -2136,32 +2161,6 @@
   ],
   "nextFixtures": [
     {
-      "id": 560620,
-      "utcDate": "2026-10-23T19:00:00Z",
-      "status": "TIMED",
-      "matchday": 8,
-      "homeTeam": {
-        "id": 349,
-        "name": "Ipswich Town FC",
-        "shortName": "Ipswich Town",
-        "tla": "IPS",
-        "crest": "https://crests.football-data.org/349.png"
-      },
-      "awayTeam": {
-        "id": 351,
-        "name": "Nottingham Forest FC",
-        "shortName": "Nottingham",
-        "tla": "NOT",
-        "crest": "https://crests.football-data.org/351.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": "USA Network"
-    },
-    {
       "id": 560614,
       "utcDate": "2026-10-24T11:30:00Z",
       "status": "TIMED",
@@ -2237,7 +2236,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": "Peacock"
+      "broadcast": "NBCSN"
     },
     {
       "id": 560617,
@@ -2263,7 +2262,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": "Tele"
+      "broadcast": "NBCSN"
     },
     {
       "id": 560612,

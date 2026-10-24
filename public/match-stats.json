@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-20T00:32:50.528Z",
+  "fetchedAt": "2026-10-24T00:04:21.969Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -3193,6 +3193,55 @@
           "teamId": 397,
           "player": "Jack Hinshelwood",
           "minute": 84,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560620": {
+      "utcDate": "2026-10-23T19:00:00Z",
+      "homeTeamId": 349,
+      "awayTeamId": 351,
+      "stats": {
+        "349": {
+          "shots": 7,
+          "shotsOnTarget": 3,
+          "possession": 49.4,
+          "passes": 474,
+          "passAccuracy": 0.8,
+          "fouls": 9,
+          "corners": 0,
+          "offsides": 2,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        "351": {
+          "shots": 17,
+          "shotsOnTarget": 5,
+          "possession": 50.6,
+          "passes": 468,
+          "passAccuracy": 0.8,
+          "fouls": 11,
+          "corners": 5,
+          "offsides": 1,
+          "yellowCards": 1,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 351,
+          "player": "Neco Williams",
+          "minute": 13,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 349,
+          "player": "Julio Enciso",
+          "minute": 41,
           "extraMinute": null,
           "ownGoal": false,
           "penalty": false
