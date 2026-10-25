@@ -1,25 +1,6 @@
 {
-  "fetchedAt": "2026-10-25T17:14:00.267Z",
+  "fetchedAt": "2026-10-25T19:41:06.607Z",
   "odds": {
-    "560621": {
-      "eventTicker": "KXEPLGAME-26OCT25SUNLEE",
-      "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct25sunlee",
-      "home": {
-        "label": "Sunderland",
-        "probability": 31,
-        "ticker": "KXEPLGAME-26OCT25SUNLEE-SUN"
-      },
-      "away": {
-        "label": "Leeds United",
-        "probability": 29,
-        "ticker": "KXEPLGAME-26OCT25SUNLEE-LEE"
-      },
-      "draw": {
-        "label": "Draw",
-        "probability": 41,
-        "ticker": "KXEPLGAME-26OCT25SUNLEE-TIE"
-      }
-    },
     "560622": {
       "eventTicker": "KXEPLGAME-26NOV02NEWEVE",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov02neweve",
@@ -35,7 +16,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 27,
+        "probability": 26,
         "ticker": "KXEPLGAME-26NOV02NEWEVE-TIE"
       }
     },
@@ -63,17 +44,17 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct31boulee",
       "home": {
         "label": "Bournemouth",
-        "probability": 44,
+        "probability": 45,
         "ticker": "KXEPLGAME-26OCT31BOULEE-BOU"
       },
       "away": {
         "label": "Leeds United",
-        "probability": 28,
+        "probability": 27,
         "ticker": "KXEPLGAME-26OCT31BOULEE-LEE"
       },
       "draw": {
         "label": "Draw",
-        "probability": 29,
+        "probability": 28,
         "ticker": "KXEPLGAME-26OCT31BOULEE-TIE"
       }
     },
@@ -130,7 +111,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 22,
+        "probability": 21,
         "ticker": "KXEPLGAME-26OCT31TOTCRY-TIE"
       }
     },
@@ -144,12 +125,12 @@
       },
       "away": {
         "label": "Fulham",
-        "probability": 24,
+        "probability": 25,
         "ticker": "KXEPLGAME-26OCT31AVLFUL-FUL"
       },
       "draw": {
         "label": "Draw",
-        "probability": 27,
+        "probability": 25,
         "ticker": "KXEPLGAME-26OCT31AVLFUL-TIE"
       }
     },
@@ -196,7 +177,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov01lfcars",
       "home": {
         "label": "Liverpool",
-        "probability": 32,
+        "probability": 31,
         "ticker": "KXEPLGAME-26NOV01LFCARS-LFC"
       },
       "away": {
@@ -234,7 +215,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov07fulnew",
       "home": {
         "label": "Fulham",
-        "probability": 42,
+        "probability": 43,
         "ticker": "KXEPLGAME-26NOV07FULNEW-FUL"
       },
       "away": {
@@ -277,7 +258,7 @@
       },
       "away": {
         "label": "Liverpool",
-        "probability": 68,
+        "probability": 60,
         "ticker": "KXEPLGAME-26NOV08CRYLFC-LFC"
       },
       "draw": {
@@ -291,7 +272,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov08suncfc",
       "home": {
         "label": "Sunderland",
-        "probability": 23,
+        "probability": 26,
         "ticker": "KXEPLGAME-26NOV08SUNCFC-SUN"
       },
       "away": {
@@ -315,12 +296,12 @@
       },
       "away": {
         "label": "Bournemouth",
-        "probability": 43,
+        "probability": 50,
         "ticker": "KXEPLGAME-26NOV08IPSBOU-BOU"
       },
       "draw": {
         "label": "Draw",
-        "probability": 28,
+        "probability": 27,
         "ticker": "KXEPLGAME-26NOV08IPSBOU-TIE"
       }
     },
@@ -334,12 +315,12 @@
       },
       "away": {
         "label": "Brentford",
-        "probability": 26,
+        "probability": 27,
         "ticker": "KXEPLGAME-26NOV08BRIBRE-BRE"
       },
       "draw": {
         "label": "Draw",
-        "probability": 24,
+        "probability": 25,
         "ticker": "KXEPLGAME-26NOV08BRIBRE-TIE"
       }
     },
@@ -396,7 +377,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 20,
+        "probability": 19,
         "ticker": "KXEPLGAME-26NOV07NFOMCI-TIE"
       }
     }
