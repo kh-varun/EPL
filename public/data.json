@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-25T17:59:49.062Z",
+  "fetchedAt": "2026-10-25T20:25:24.743Z",
   "standings": [
     {
       "position": 1,
@@ -383,6 +383,31 @@
     }
   ],
   "lastResults": [
+    {
+      "id": 560621,
+      "utcDate": "2026-10-25T16:30:00Z",
+      "status": "FINISHED",
+      "matchday": 8,
+      "homeTeam": {
+        "id": 71,
+        "name": "Sunderland AFC",
+        "shortName": "Sunderland",
+        "tla": "SUN",
+        "crest": "https://crests.football-data.org/71.png"
+      },
+      "awayTeam": {
+        "id": 341,
+        "name": "Leeds United FC",
+        "shortName": "Leeds United",
+        "tla": "LEE",
+        "crest": "https://crests.football-data.org/341.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "winner": "DRAW"
+      }
+    },
     {
       "id": 560612,
       "utcDate": "2026-10-25T14:00:00Z",
@@ -2360,32 +2385,6 @@
     }
   ],
   "nextFixtures": [
-    {
-      "id": 560621,
-      "utcDate": "2026-10-25T16:30:00Z",
-      "status": "IN_PLAY",
-      "matchday": 8,
-      "homeTeam": {
-        "id": 71,
-        "name": "Sunderland AFC",
-        "shortName": "Sunderland",
-        "tla": "SUN",
-        "crest": "https://crests.football-data.org/71.png"
-      },
-      "awayTeam": {
-        "id": 341,
-        "name": "Leeds United FC",
-        "shortName": "Leeds United",
-        "tla": "LEE",
-        "crest": "https://crests.football-data.org/341.png"
-      },
-      "score": {
-        "home": 0,
-        "away": 0,
-        "winner": "DRAW"
-      },
-      "broadcast": "USA Network"
-    },
     {
       "id": 560626,
       "utcDate": "2026-10-31T12:30:00Z",
