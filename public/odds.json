@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-27T06:15:32.536Z",
+  "fetchedAt": "2026-10-27T12:32:05.004Z",
   "odds": {
     "560622": {
       "eventTicker": "KXEPLGAME-26NOV02NEWEVE",
@@ -25,7 +25,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct31mcibri",
       "home": {
         "label": "Man City",
-        "probability": 58,
+        "probability": 59,
         "ticker": "KXEPLGAME-26OCT31MCIBRI-MCI"
       },
       "away": {
@@ -63,7 +63,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct31covsun",
       "home": {
         "label": "Coventry City",
-        "probability": 31,
+        "probability": 32,
         "ticker": "KXEPLGAME-26OCT31COVSUN-COV"
       },
       "away": {
@@ -92,7 +92,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 24,
+        "probability": 25,
         "ticker": "KXEPLGAME-26OCT31CFCMUN-TIE"
       }
     },
@@ -120,7 +120,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct31avlful",
       "home": {
         "label": "Aston Villa",
-        "probability": 49,
+        "probability": 48,
         "ticker": "KXEPLGAME-26OCT31AVLFUL-AVL"
       },
       "away": {
@@ -182,7 +182,7 @@
       },
       "away": {
         "label": "Arsenal",
-        "probability": 44,
+        "probability": 43,
         "ticker": "KXEPLGAME-26NOV01LFCARS-ARS"
       },
       "draw": {
@@ -201,7 +201,7 @@
       },
       "away": {
         "label": "Tottenham",
-        "probability": 36,
+        "probability": 34,
         "ticker": "KXEPLGAME-26NOV07LEETOT-TOT"
       },
       "draw": {
@@ -225,7 +225,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 27,
         "ticker": "KXEPLGAME-26NOV07FULNEW-TIE"
       }
     },
@@ -353,7 +353,7 @@
       },
       "away": {
         "label": "Hull City",
-        "probability": 6,
+        "probability": 5,
         "ticker": "KXEPLGAME-26NOV07ARSHUL-HUL"
       },
       "draw": {
