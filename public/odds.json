@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-28T01:34:18.823Z",
+  "fetchedAt": "2026-10-28T07:25:45.102Z",
   "odds": {
     "560622": {
       "eventTicker": "KXEPLGAME-26NOV02NEWEVE",
@@ -11,12 +11,12 @@
       },
       "away": {
         "label": "Everton",
-        "probability": 32,
+        "probability": 33,
         "ticker": "KXEPLGAME-26NOV02NEWEVE-EVE"
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 27,
         "ticker": "KXEPLGAME-26NOV02NEWEVE-TIE"
       }
     },
@@ -30,12 +30,12 @@
       },
       "away": {
         "label": "Brighton Hove",
-        "probability": 21,
+        "probability": 20,
         "ticker": "KXEPLGAME-26OCT31MCIBRI-BRI"
       },
       "draw": {
         "label": "Draw",
-        "probability": 22,
+        "probability": 21,
         "ticker": "KXEPLGAME-26OCT31MCIBRI-TIE"
       }
     },
@@ -54,7 +54,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 27,
+        "probability": 29,
         "ticker": "KXEPLGAME-26OCT31BOULEE-TIE"
       }
     },
@@ -82,12 +82,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct31cfcmun",
       "home": {
         "label": "Chelsea",
-        "probability": 55,
+        "probability": 54,
         "ticker": "KXEPLGAME-26OCT31CFCMUN-CFC"
       },
       "away": {
         "label": "Man United",
-        "probability": 23,
+        "probability": 22,
         "ticker": "KXEPLGAME-26OCT31CFCMUN-MUN"
       },
       "draw": {
@@ -125,7 +125,7 @@
       },
       "away": {
         "label": "Fulham",
-        "probability": 26,
+        "probability": 27,
         "ticker": "KXEPLGAME-26OCT31AVLFUL-FUL"
       },
       "draw": {
@@ -177,7 +177,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov01lfcars",
       "home": {
         "label": "Liverpool",
-        "probability": 31,
+        "probability": 32,
         "ticker": "KXEPLGAME-26NOV01LFCARS-LFC"
       },
       "away": {
@@ -353,7 +353,7 @@
       },
       "away": {
         "label": "Hull City",
-        "probability": 5,
+        "probability": 6,
         "ticker": "KXEPLGAME-26NOV07ARSHUL-HUL"
       },
       "draw": {
@@ -377,7 +377,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 22,
+        "probability": 23,
         "ticker": "KXEPLGAME-26NOV07NFOMCI-TIE"
       }
     }
