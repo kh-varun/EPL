@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-28T07:25:45.102Z",
+  "fetchedAt": "2026-10-28T14:16:40.644Z",
   "odds": {
     "560622": {
       "eventTicker": "KXEPLGAME-26NOV02NEWEVE",
@@ -87,7 +87,7 @@
       },
       "away": {
         "label": "Man United",
-        "probability": 22,
+        "probability": 23,
         "ticker": "KXEPLGAME-26OCT31CFCMUN-MUN"
       },
       "draw": {
@@ -120,7 +120,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct31avlful",
       "home": {
         "label": "Aston Villa",
-        "probability": 48,
+        "probability": 49,
         "ticker": "KXEPLGAME-26OCT31AVLFUL-AVL"
       },
       "away": {
@@ -234,7 +234,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov06evecov",
       "home": {
         "label": "Everton",
-        "probability": 57,
+        "probability": 58,
         "ticker": "KXEPLGAME-26NOV06EVECOV-EVE"
       },
       "away": {
