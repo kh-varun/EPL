@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-29T21:17:17.016Z",
+  "fetchedAt": "2026-10-30T01:13:25.015Z",
   "odds": {
     "560622": {
       "eventTicker": "KXEPLGAME-26NOV02NEWEVE",
@@ -25,7 +25,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct31mcibri",
       "home": {
         "label": "Man City",
-        "probability": 60,
+        "probability": 59,
         "ticker": "KXEPLGAME-26OCT31MCIBRI-MCI"
       },
       "away": {
@@ -44,7 +44,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct31boulee",
       "home": {
         "label": "Bournemouth",
-        "probability": 44,
+        "probability": 45,
         "ticker": "KXEPLGAME-26OCT31BOULEE-BOU"
       },
       "away": {
@@ -63,12 +63,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct31covsun",
       "home": {
         "label": "Coventry City",
-        "probability": 31,
+        "probability": 30,
         "ticker": "KXEPLGAME-26OCT31COVSUN-COV"
       },
       "away": {
         "label": "Sunderland",
-        "probability": 42,
+        "probability": 41,
         "ticker": "KXEPLGAME-26OCT31COVSUN-SUN"
       },
       "draw": {
@@ -82,12 +82,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct31cfcmun",
       "home": {
         "label": "Chelsea",
-        "probability": 52,
+        "probability": 53,
         "ticker": "KXEPLGAME-26OCT31CFCMUN-CFC"
       },
       "away": {
         "label": "Man United",
-        "probability": 24,
+        "probability": 23,
         "ticker": "KXEPLGAME-26OCT31CFCMUN-MUN"
       },
       "draw": {
@@ -125,7 +125,7 @@
       },
       "away": {
         "label": "Fulham",
-        "probability": 24,
+        "probability": 25,
         "ticker": "KXEPLGAME-26OCT31AVLFUL-FUL"
       },
       "draw": {
@@ -163,12 +163,12 @@
       },
       "away": {
         "label": "Nottingham",
-        "probability": 27,
+        "probability": 28,
         "ticker": "KXEPLGAME-26OCT31BRENFO-NFO"
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 27,
         "ticker": "KXEPLGAME-26OCT31BRENFO-TIE"
       }
     },
@@ -244,7 +244,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 24,
         "ticker": "KXEPLGAME-26NOV06EVECOV-TIE"
       }
     },
@@ -301,7 +301,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 26,
         "ticker": "KXEPLGAME-26NOV08IPSBOU-TIE"
       }
     },
