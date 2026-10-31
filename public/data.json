@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-31T18:46:55.786Z",
+  "fetchedAt": "2026-10-31T21:53:33.352Z",
   "standings": [
     {
       "position": 1,
@@ -148,13 +148,32 @@
       "draw": 3,
       "lost": 3,
       "points": 12,
-      "goalsFor": 9,
+      "goalsFor": 10,
       "goalsAgainst": 10,
-      "goalDifference": -1,
+      "goalDifference": 0,
       "form": null
     },
     {
       "position": 9,
+      "team": {
+        "id": 58,
+        "name": "Aston Villa FC",
+        "shortName": "Aston Villa",
+        "tla": "AVL",
+        "crest": "https://crests.football-data.org/58.png"
+      },
+      "playedGames": 9,
+      "won": 3,
+      "draw": 3,
+      "lost": 3,
+      "points": 12,
+      "goalsFor": 10,
+      "goalsAgainst": 13,
+      "goalDifference": -3,
+      "form": null
+    },
+    {
+      "position": 10,
       "team": {
         "id": 322,
         "name": "Hull City AFC",
@@ -173,7 +192,7 @@
       "form": null
     },
     {
-      "position": 10,
+      "position": 11,
       "team": {
         "id": 341,
         "name": "Leeds United FC",
@@ -192,7 +211,7 @@
       "form": null
     },
     {
-      "position": 11,
+      "position": 12,
       "team": {
         "id": 67,
         "name": "Newcastle United FC",
@@ -208,25 +227,6 @@
       "goalsFor": 12,
       "goalsAgainst": 14,
       "goalDifference": -2,
-      "form": null
-    },
-    {
-      "position": 12,
-      "team": {
-        "id": 58,
-        "name": "Aston Villa FC",
-        "shortName": "Aston Villa",
-        "tla": "AVL",
-        "crest": "https://crests.football-data.org/58.png"
-      },
-      "playedGames": 8,
-      "won": 3,
-      "draw": 2,
-      "lost": 3,
-      "points": 11,
-      "goalsFor": 9,
-      "goalsAgainst": 12,
-      "goalDifference": -3,
       "form": null
     },
     {
@@ -270,6 +270,25 @@
     {
       "position": 15,
       "team": {
+        "id": 63,
+        "name": "Fulham FC",
+        "shortName": "Fulham",
+        "tla": "FUL",
+        "crest": "https://crests.football-data.org/63.png"
+      },
+      "playedGames": 9,
+      "won": 2,
+      "draw": 3,
+      "lost": 4,
+      "points": 9,
+      "goalsFor": 9,
+      "goalsAgainst": 11,
+      "goalDifference": -2,
+      "form": null
+    },
+    {
+      "position": 16,
+      "team": {
         "id": 1076,
         "name": "Coventry City FC",
         "shortName": "Coventry City",
@@ -284,25 +303,6 @@
       "goalsFor": 9,
       "goalsAgainst": 16,
       "goalDifference": -7,
-      "form": null
-    },
-    {
-      "position": 16,
-      "team": {
-        "id": 63,
-        "name": "Fulham FC",
-        "shortName": "Fulham",
-        "tla": "FUL",
-        "crest": "https://crests.football-data.org/63.png"
-      },
-      "playedGames": 8,
-      "won": 2,
-      "draw": 2,
-      "lost": 4,
-      "points": 8,
-      "goalsFor": 8,
-      "goalsAgainst": 10,
-      "goalDifference": -2,
       "form": null
     },
     {
@@ -339,8 +339,8 @@
       "lost": 6,
       "points": 7,
       "goalsFor": 9,
-      "goalsAgainst": 20,
-      "goalDifference": -11,
+      "goalsAgainst": 21,
+      "goalDifference": -12,
       "form": null
     },
     {
@@ -383,6 +383,31 @@
     }
   ],
   "lastResults": [
+    {
+      "id": 560627,
+      "utcDate": "2026-10-31T17:30:00Z",
+      "status": "FINISHED",
+      "matchday": 9,
+      "homeTeam": {
+        "id": 73,
+        "name": "Tottenham Hotspur FC",
+        "shortName": "Tottenham",
+        "tla": "TOT",
+        "crest": "https://crests.football-data.org/73.png"
+      },
+      "awayTeam": {
+        "id": 354,
+        "name": "Crystal Palace FC",
+        "shortName": "Crystal Palace",
+        "tla": "CRY",
+        "crest": "https://crests.football-data.org/354.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 0,
+        "winner": "HOME_TEAM"
+      }
+    },
     {
       "id": 560623,
       "utcDate": "2026-10-31T15:00:00Z",
@@ -2536,35 +2561,9 @@
   ],
   "nextFixtures": [
     {
-      "id": 560627,
-      "utcDate": "2026-10-31T17:30:00Z",
-      "status": "IN_PLAY",
-      "matchday": 9,
-      "homeTeam": {
-        "id": 73,
-        "name": "Tottenham Hotspur FC",
-        "shortName": "Tottenham",
-        "tla": "TOT",
-        "crest": "https://crests.football-data.org/73.png"
-      },
-      "awayTeam": {
-        "id": 354,
-        "name": "Crystal Palace FC",
-        "shortName": "Crystal Palace",
-        "tla": "CRY",
-        "crest": "https://crests.football-data.org/354.png"
-      },
-      "score": {
-        "home": 1,
-        "away": 0,
-        "winner": "HOME_TEAM"
-      },
-      "broadcast": "NBC"
-    },
-    {
       "id": 560628,
       "utcDate": "2026-10-31T20:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "matchday": 9,
       "homeTeam": {
         "id": 58,
@@ -2581,9 +2580,9 @@
         "crest": "https://crests.football-data.org/63.png"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "winner": null
+        "home": 1,
+        "away": 1,
+        "winner": "DRAW"
       },
       "broadcast": "NBCSN"
     },

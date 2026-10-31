@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-31T18:46:57.116Z",
+  "fetchedAt": "2026-10-31T21:53:33.768Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -3685,6 +3685,55 @@
           "extraMinute": null,
           "ownGoal": false,
           "penalty": true
+        }
+      ]
+    },
+    "560627": {
+      "utcDate": "2026-10-31T17:30:00Z",
+      "homeTeamId": 73,
+      "awayTeamId": 354,
+      "stats": {
+        "73": {
+          "shots": 34,
+          "shotsOnTarget": 9,
+          "possession": 79.4,
+          "passes": 816,
+          "passAccuracy": 0.9,
+          "fouls": 8,
+          "corners": 19,
+          "offsides": 2,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        "354": {
+          "shots": 2,
+          "shotsOnTarget": 1,
+          "possession": 20.6,
+          "passes": 220,
+          "passAccuracy": 0.7,
+          "fouls": 10,
+          "corners": 0,
+          "offsides": 1,
+          "yellowCards": 1,
+          "redCards": 1
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 73,
+          "player": "Archie Gray",
+          "minute": 25,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 73,
+          "player": "Jan Paul van Hecke",
+          "minute": 73,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
         }
       ]
     },
