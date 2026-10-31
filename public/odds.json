@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-30T23:05:25.593Z",
+  "fetchedAt": "2026-10-31T02:21:18.431Z",
   "odds": {
     "560622": {
       "eventTicker": "KXEPLGAME-26NOV02NEWEVE",
@@ -63,7 +63,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26oct31covsun",
       "home": {
         "label": "Coventry City",
-        "probability": 30,
+        "probability": 31,
         "ticker": "KXEPLGAME-26OCT31COVSUN-COV"
       },
       "away": {
@@ -125,12 +125,12 @@
       },
       "away": {
         "label": "Fulham",
-        "probability": 26,
+        "probability": 27,
         "ticker": "KXEPLGAME-26OCT31AVLFUL-FUL"
       },
       "draw": {
         "label": "Draw",
-        "probability": 27,
+        "probability": 26,
         "ticker": "KXEPLGAME-26OCT31AVLFUL-TIE"
       }
     },
