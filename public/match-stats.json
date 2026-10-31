@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-25T20:25:25.606Z",
+  "fetchedAt": "2026-10-31T18:46:57.116Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -3483,6 +3483,324 @@
         }
       },
       "scorers": []
+    },
+    "560623": {
+      "utcDate": "2026-10-31T15:00:00Z",
+      "homeTeamId": 65,
+      "awayTeamId": 397,
+      "stats": {
+        "65": {
+          "shots": 21,
+          "shotsOnTarget": 6,
+          "possession": 62.4,
+          "passes": 597,
+          "passAccuracy": 0.8,
+          "fouls": 9,
+          "corners": 8,
+          "offsides": 2,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        "397": {
+          "shots": 7,
+          "shotsOnTarget": 3,
+          "possession": 37.6,
+          "passes": 362,
+          "passAccuracy": 0.8,
+          "fouls": 13,
+          "corners": 2,
+          "offsides": 2,
+          "yellowCards": 3,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 397,
+          "player": "Yasin Ayari",
+          "minute": 11,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560624": {
+      "utcDate": "2026-10-31T15:00:00Z",
+      "homeTeamId": 1044,
+      "awayTeamId": 341,
+      "stats": {
+        "341": {
+          "shots": 10,
+          "shotsOnTarget": 1,
+          "possession": 56.1,
+          "passes": 508,
+          "passAccuracy": 0.8,
+          "fouls": 15,
+          "corners": 4,
+          "offsides": 1,
+          "yellowCards": 2,
+          "redCards": 0
+        },
+        "1044": {
+          "shots": 11,
+          "shotsOnTarget": 5,
+          "possession": 43.9,
+          "passes": 409,
+          "passAccuracy": 0.8,
+          "fouls": 12,
+          "corners": 4,
+          "offsides": 0,
+          "yellowCards": 2,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 1044,
+          "player": "Evanilson",
+          "minute": 31,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 1044,
+          "player": "Amine Adli",
+          "minute": 90,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560625": {
+      "utcDate": "2026-10-31T15:00:00Z",
+      "homeTeamId": 1076,
+      "awayTeamId": 71,
+      "stats": {
+        "71": {
+          "shots": 17,
+          "shotsOnTarget": 2,
+          "possession": 56.5,
+          "passes": 438,
+          "passAccuracy": 0.8,
+          "fouls": 9,
+          "corners": 4,
+          "offsides": 1,
+          "yellowCards": 0,
+          "redCards": 1
+        },
+        "1076": {
+          "shots": 12,
+          "shotsOnTarget": 4,
+          "possession": 43.5,
+          "passes": 339,
+          "passAccuracy": 0.8,
+          "fouls": 16,
+          "corners": 4,
+          "offsides": 2,
+          "yellowCards": 2,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 1076,
+          "player": "Tatsuhiro Sakamoto",
+          "minute": 17,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 1076,
+          "player": "Taiwo Awoniyi",
+          "minute": 37,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 1076,
+          "player": "Jack Rudoni",
+          "minute": 52,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 71,
+          "player": "Enzo Le Fée",
+          "minute": 67,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": true
+        }
+      ]
+    },
+    "560626": {
+      "utcDate": "2026-10-31T12:30:00Z",
+      "homeTeamId": 61,
+      "awayTeamId": 66,
+      "stats": {
+        "61": {
+          "shots": 18,
+          "shotsOnTarget": 9,
+          "possession": 58.7,
+          "passes": 542,
+          "passAccuracy": 0.9,
+          "fouls": 8,
+          "corners": 8,
+          "offsides": 3,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        "66": {
+          "shots": 12,
+          "shotsOnTarget": 5,
+          "possession": 41.3,
+          "passes": 379,
+          "passAccuracy": 0.8,
+          "fouls": 20,
+          "corners": 7,
+          "offsides": 2,
+          "yellowCards": 4,
+          "redCards": 1
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 61,
+          "player": "Morgan Rogers",
+          "minute": 50,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 61,
+          "player": "Cole Palmer",
+          "minute": 64,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": true
+        }
+      ]
+    },
+    "560629": {
+      "utcDate": "2026-10-31T15:00:00Z",
+      "homeTeamId": 322,
+      "awayTeamId": 349,
+      "stats": {
+        "322": {
+          "shots": 9,
+          "shotsOnTarget": 3,
+          "possession": 38.5,
+          "passes": 335,
+          "passAccuracy": 0.7,
+          "fouls": 13,
+          "corners": 6,
+          "offsides": 4,
+          "yellowCards": 3,
+          "redCards": 0
+        },
+        "349": {
+          "shots": 15,
+          "shotsOnTarget": 3,
+          "possession": 61.5,
+          "passes": 560,
+          "passAccuracy": 0.9,
+          "fouls": 12,
+          "corners": 3,
+          "offsides": 3,
+          "yellowCards": 3,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 349,
+          "player": "Florentino",
+          "minute": 22,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 322,
+          "player": "Tim Iroegbunam",
+          "minute": 58,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 322,
+          "player": "Oliver McBurnie",
+          "minute": 68,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 349,
+          "player": "Julio Enciso",
+          "minute": 74,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560630": {
+      "utcDate": "2026-10-31T15:00:00Z",
+      "homeTeamId": 402,
+      "awayTeamId": 351,
+      "stats": {
+        "351": {
+          "shots": 15,
+          "shotsOnTarget": 1,
+          "possession": 58.3,
+          "passes": 476,
+          "passAccuracy": 0.8,
+          "fouls": 17,
+          "corners": 4,
+          "offsides": 1,
+          "yellowCards": 3,
+          "redCards": 0
+        },
+        "402": {
+          "shots": 7,
+          "shotsOnTarget": 1,
+          "possession": 41.7,
+          "passes": 339,
+          "passAccuracy": 0.7,
+          "fouls": 6,
+          "corners": 3,
+          "offsides": 1,
+          "yellowCards": 1,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 402,
+          "player": "Nikola Milenkovic",
+          "minute": 30,
+          "extraMinute": null,
+          "ownGoal": true,
+          "penalty": false
+        },
+        {
+          "teamId": 402,
+          "player": "Igor Thiago",
+          "minute": 76,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
     }
   }
 }
