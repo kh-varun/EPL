@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-01T00:29:04.858Z",
+  "fetchedAt": "2026-11-01T22:17:52.145Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -3894,6 +3894,47 @@
           "teamId": 402,
           "player": "Igor Thiago",
           "minute": 76,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560631": {
+      "utcDate": "2026-11-01T16:30:00Z",
+      "homeTeamId": 64,
+      "awayTeamId": 57,
+      "stats": {
+        "57": {
+          "shots": 10,
+          "shotsOnTarget": 3,
+          "possession": 43.6,
+          "passes": 370,
+          "passAccuracy": 0.7,
+          "fouls": 10,
+          "corners": 4,
+          "offsides": 3,
+          "yellowCards": 4,
+          "redCards": 0
+        },
+        "64": {
+          "shots": 17,
+          "shotsOnTarget": 0,
+          "possession": 56.4,
+          "passes": 461,
+          "passAccuracy": 0.8,
+          "fouls": 18,
+          "corners": 7,
+          "offsides": 2,
+          "yellowCards": 4,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 57,
+          "player": "Kai Havertz",
+          "minute": 16,
           "extraMinute": null,
           "ownGoal": false,
           "penalty": false
