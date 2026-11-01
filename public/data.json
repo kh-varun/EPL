@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-31T21:53:33.352Z",
+  "fetchedAt": "2026-11-01T00:29:04.466Z",
   "standings": [
     {
       "position": 1,
@@ -383,6 +383,31 @@
     }
   ],
   "lastResults": [
+    {
+      "id": 560628,
+      "utcDate": "2026-10-31T20:00:00Z",
+      "status": "FINISHED",
+      "matchday": 9,
+      "homeTeam": {
+        "id": 58,
+        "name": "Aston Villa FC",
+        "shortName": "Aston Villa",
+        "tla": "AVL",
+        "crest": "https://crests.football-data.org/58.png"
+      },
+      "awayTeam": {
+        "id": 63,
+        "name": "Fulham FC",
+        "shortName": "Fulham",
+        "tla": "FUL",
+        "crest": "https://crests.football-data.org/63.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 1,
+        "winner": "DRAW"
+      }
+    },
     {
       "id": 560627,
       "utcDate": "2026-10-31T17:30:00Z",
@@ -2560,32 +2585,6 @@
     }
   ],
   "nextFixtures": [
-    {
-      "id": 560628,
-      "utcDate": "2026-10-31T20:00:00Z",
-      "status": "IN_PLAY",
-      "matchday": 9,
-      "homeTeam": {
-        "id": 58,
-        "name": "Aston Villa FC",
-        "shortName": "Aston Villa",
-        "tla": "AVL",
-        "crest": "https://crests.football-data.org/58.png"
-      },
-      "awayTeam": {
-        "id": 63,
-        "name": "Fulham FC",
-        "shortName": "Fulham",
-        "tla": "FUL",
-        "crest": "https://crests.football-data.org/63.png"
-      },
-      "score": {
-        "home": 1,
-        "away": 1,
-        "winner": "DRAW"
-      },
-      "broadcast": "NBCSN"
-    },
     {
       "id": 560631,
       "utcDate": "2026-11-01T16:30:00Z",

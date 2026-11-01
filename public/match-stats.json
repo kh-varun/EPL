@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-31T21:53:33.768Z",
+  "fetchedAt": "2026-11-01T00:29:04.858Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -3733,6 +3733,55 @@
           "minute": 73,
           "extraMinute": null,
           "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560628": {
+      "utcDate": "2026-10-31T20:00:00Z",
+      "homeTeamId": 58,
+      "awayTeamId": 63,
+      "stats": {
+        "58": {
+          "shots": 16,
+          "shotsOnTarget": 3,
+          "possession": 45,
+          "passes": 434,
+          "passAccuracy": 0.9,
+          "fouls": 7,
+          "corners": 7,
+          "offsides": 2,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        "63": {
+          "shots": 14,
+          "shotsOnTarget": 5,
+          "possession": 55,
+          "passes": 536,
+          "passAccuracy": 0.9,
+          "fouls": 12,
+          "corners": 7,
+          "offsides": 4,
+          "yellowCards": 3,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 58,
+          "player": "Nicolas Jackson",
+          "minute": 39,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 63,
+          "player": "Zion Suzuki",
+          "minute": 64,
+          "extraMinute": null,
+          "ownGoal": true,
           "penalty": false
         }
       ]
