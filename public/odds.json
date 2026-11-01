@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-01T07:50:15.548Z",
+  "fetchedAt": "2026-11-01T14:43:00.991Z",
   "odds": {
     "560622": {
       "eventTicker": "KXEPLGAME-26NOV02NEWEVE",
@@ -49,7 +49,7 @@
       },
       "away": {
         "label": "Tottenham",
-        "probability": 34,
+        "probability": 35,
         "ticker": "KXEPLGAME-26NOV07LEETOT-TOT"
       },
       "draw": {
@@ -68,7 +68,7 @@
       },
       "away": {
         "label": "Newcastle",
-        "probability": 29,
+        "probability": 28,
         "ticker": "KXEPLGAME-26NOV07FULNEW-NEW"
       },
       "draw": {
@@ -101,12 +101,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov08crylfc",
       "home": {
         "label": "Crystal Palace",
-        "probability": 20,
+        "probability": 17,
         "ticker": "KXEPLGAME-26NOV08CRYLFC-CRY"
       },
       "away": {
         "label": "Liverpool",
-        "probability": 59,
+        "probability": 61,
         "ticker": "KXEPLGAME-26NOV08CRYLFC-LFC"
       },
       "draw": {
@@ -144,7 +144,7 @@
       },
       "away": {
         "label": "Bournemouth",
-        "probability": 49,
+        "probability": 50,
         "ticker": "KXEPLGAME-26NOV08IPSBOU-BOU"
       },
       "draw": {
@@ -177,7 +177,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov08munavl",
       "home": {
         "label": "Man United",
-        "probability": 41,
+        "probability": 43,
         "ticker": "KXEPLGAME-26NOV08MUNAVL-MUN"
       },
       "away": {
@@ -187,7 +187,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 24,
         "ticker": "KXEPLGAME-26NOV08MUNAVL-TIE"
       }
     },
@@ -215,7 +215,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov07nfomci",
       "home": {
         "label": "Nottingham",
-        "probability": 20,
+        "probability": 19,
         "ticker": "KXEPLGAME-26NOV07NFOMCI-NFO"
       },
       "away": {
