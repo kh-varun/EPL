@@ -1,12 +1,12 @@
 {
-  "fetchedAt": "2026-10-31T22:28:23.532Z",
+  "fetchedAt": "2026-11-01T01:22:53.901Z",
   "odds": {
     "560622": {
       "eventTicker": "KXEPLGAME-26NOV02NEWEVE",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov02neweve",
       "home": {
         "label": "Newcastle",
-        "probability": 40,
+        "probability": 41,
         "ticker": "KXEPLGAME-26NOV02NEWEVE-NEW"
       },
       "away": {
@@ -25,7 +25,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov01lfcars",
       "home": {
         "label": "Liverpool",
-        "probability": 34,
+        "probability": 33,
         "ticker": "KXEPLGAME-26NOV01LFCARS-LFC"
       },
       "away": {
@@ -68,7 +68,7 @@
       },
       "away": {
         "label": "Newcastle",
-        "probability": 31,
+        "probability": 29,
         "ticker": "KXEPLGAME-26NOV07FULNEW-NEW"
       },
       "draw": {
@@ -177,7 +177,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov08munavl",
       "home": {
         "label": "Man United",
-        "probability": 40,
+        "probability": 43,
         "ticker": "KXEPLGAME-26NOV08MUNAVL-MUN"
       },
       "away": {
@@ -196,7 +196,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov07arshul",
       "home": {
         "label": "Arsenal",
-        "probability": 83,
+        "probability": 84,
         "ticker": "KXEPLGAME-26NOV07ARSHUL-ARS"
       },
       "away": {
