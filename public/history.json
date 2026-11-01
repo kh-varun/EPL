@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-01T11:57:04.836Z",
+  "fetchedAt": "2026-11-01T12:10:46.739Z",
   "season": 2025,
   "seasonLabel": "2025-26",
   "totalTeams": 20,
@@ -226,6 +226,6 @@
     }
   },
   "playersAvailable": false,
-  "playersUnavailableReason": "API-Football /teams?league=39&season=2025: {\"plan\":\"Free plans do not have access to this season, try from 2022 to 2024.\"}",
+  "playersUnavailableReason": "API-Football /status: {\"access\":\"Your account is suspended, check on https://dashboard.api-football.com.\"}",
   "players": {}
 }
