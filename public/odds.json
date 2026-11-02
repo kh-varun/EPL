@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-01T22:51:13.807Z",
+  "fetchedAt": "2026-11-02T02:04:17.471Z",
   "odds": {
     "560622": {
       "eventTicker": "KXEPLGAME-26NOV02NEWEVE",
@@ -68,7 +68,7 @@
       },
       "away": {
         "label": "Coventry City",
-        "probability": 19,
+        "probability": 20,
         "ticker": "KXEPLGAME-26NOV06EVECOV-COV"
       },
       "draw": {
@@ -125,7 +125,7 @@
       },
       "away": {
         "label": "Bournemouth",
-        "probability": 50,
+        "probability": 49,
         "ticker": "KXEPLGAME-26NOV08IPSBOU-BOU"
       },
       "draw": {
@@ -163,7 +163,7 @@
       },
       "away": {
         "label": "Aston Villa",
-        "probability": 33,
+        "probability": 31,
         "ticker": "KXEPLGAME-26NOV08MUNAVL-AVL"
       },
       "draw": {
@@ -177,7 +177,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov07arshul",
       "home": {
         "label": "Arsenal",
-        "probability": 84,
+        "probability": 85,
         "ticker": "KXEPLGAME-26NOV07ARSHUL-ARS"
       },
       "away": {
