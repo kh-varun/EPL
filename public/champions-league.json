@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-04T11:41:08.659Z",
+  "fetchedAt": "2026-11-04T18:58:22.913Z",
   "standings": [
     {
       "position": 1,
@@ -23,6 +23,44 @@
     {
       "position": 2,
       "team": {
+        "id": 64,
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "tla": "LIV",
+        "crest": "https://crests.football-data.org/64.png"
+      },
+      "playedGames": 4,
+      "won": 3,
+      "draw": 1,
+      "lost": 0,
+      "points": 10,
+      "goalsFor": 13,
+      "goalsAgainst": 8,
+      "goalDifference": 5,
+      "form": null
+    },
+    {
+      "position": 3,
+      "team": {
+        "id": 86,
+        "name": "Real Madrid CF",
+        "shortName": "Real Madrid",
+        "tla": "RMA",
+        "crest": "https://crests.football-data.org/86.png"
+      },
+      "playedGames": 4,
+      "won": 3,
+      "draw": 1,
+      "lost": 0,
+      "points": 10,
+      "goalsFor": 11,
+      "goalsAgainst": 6,
+      "goalDifference": 5,
+      "form": null
+    },
+    {
+      "position": 4,
+      "team": {
         "id": 81,
         "name": "FC Barcelona",
         "shortName": "Barça",
@@ -40,7 +78,7 @@
       "form": null
     },
     {
-      "position": 3,
+      "position": 5,
       "team": {
         "id": 58,
         "name": "Aston Villa FC",
@@ -56,44 +94,6 @@
       "goalsFor": 12,
       "goalsAgainst": 6,
       "goalDifference": 6,
-      "form": null
-    },
-    {
-      "position": 4,
-      "team": {
-        "id": 64,
-        "name": "Liverpool FC",
-        "shortName": "Liverpool",
-        "tla": "LIV",
-        "crest": "https://crests.football-data.org/64.png"
-      },
-      "playedGames": 3,
-      "won": 3,
-      "draw": 0,
-      "lost": 0,
-      "points": 9,
-      "goalsFor": 12,
-      "goalsAgainst": 7,
-      "goalDifference": 5,
-      "form": null
-    },
-    {
-      "position": 5,
-      "team": {
-        "id": 86,
-        "name": "Real Madrid CF",
-        "shortName": "Real Madrid",
-        "tla": "RMA",
-        "crest": "https://crests.football-data.org/86.png"
-      },
-      "playedGames": 3,
-      "won": 3,
-      "draw": 0,
-      "lost": 0,
-      "points": 9,
-      "goalsFor": 10,
-      "goalsAgainst": 5,
-      "goalDifference": 5,
       "form": null
     },
     {
@@ -441,6 +441,25 @@
     {
       "position": 24,
       "team": {
+        "id": 1899,
+        "name": "PAE AEK",
+        "shortName": "PAE AEK",
+        "tla": "AEK",
+        "crest": "https://crests.football-data.org/1899.png"
+      },
+      "playedGames": 4,
+      "won": 1,
+      "draw": 1,
+      "lost": 2,
+      "points": 4,
+      "goalsFor": 4,
+      "goalsAgainst": 9,
+      "goalDifference": -5,
+      "form": null
+    },
+    {
+      "position": 25,
+      "team": {
         "id": 113,
         "name": "SSC Napoli",
         "shortName": "Napoli",
@@ -458,7 +477,7 @@
       "form": null
     },
     {
-      "position": 25,
+      "position": 26,
       "team": {
         "id": 10233,
         "name": "Sabah FK",
@@ -477,7 +496,7 @@
       "form": null
     },
     {
-      "position": 26,
+      "position": 27,
       "team": {
         "id": 546,
         "name": "Racing Club de Lens",
@@ -496,26 +515,7 @@
       "form": null
     },
     {
-      "position": 27,
-      "team": {
-        "id": 1899,
-        "name": "PAE AEK",
-        "shortName": "PAE AEK",
-        "tla": "AEK",
-        "crest": "https://crests.football-data.org/1899.png"
-      },
-      "playedGames": 3,
-      "won": 1,
-      "draw": 0,
-      "lost": 2,
-      "points": 3,
-      "goalsFor": 3,
-      "goalsAgainst": 8,
-      "goalDifference": -5,
-      "form": null
-    },
-    {
-      "position": 27,
+      "position": 28,
       "team": {
         "id": 721,
         "name": "RB Leipzig",
@@ -555,6 +555,25 @@
     {
       "position": 30,
       "team": {
+        "id": 613,
+        "name": "Fenerbahçe SK",
+        "shortName": "Fenerbahçe",
+        "tla": "FEN",
+        "crest": "https://crests.football-data.org/613.png"
+      },
+      "playedGames": 4,
+      "won": 0,
+      "draw": 3,
+      "lost": 1,
+      "points": 3,
+      "goalsFor": 4,
+      "goalsAgainst": 10,
+      "goalDifference": -6,
+      "form": null
+    },
+    {
+      "position": 31,
+      "team": {
         "id": 675,
         "name": "Feyenoord Rotterdam",
         "shortName": "Feyenoord",
@@ -569,25 +588,6 @@
       "goalsFor": 4,
       "goalsAgainst": 11,
       "goalDifference": -7,
-      "form": null
-    },
-    {
-      "position": 31,
-      "team": {
-        "id": 613,
-        "name": "Fenerbahçe SK",
-        "shortName": "Fenerbahçe",
-        "tla": "FEN",
-        "crest": "https://crests.football-data.org/613.png"
-      },
-      "playedGames": 3,
-      "won": 0,
-      "draw": 2,
-      "lost": 1,
-      "points": 2,
-      "goalsFor": 3,
-      "goalsAgainst": 9,
-      "goalDifference": -6,
       "form": null
     },
     {
@@ -2265,34 +2265,9 @@
   ],
   "nextFixtures": [
     {
-      "id": 575386,
-      "utcDate": "2026-11-04T17:45:00Z",
-      "status": "TIMED",
-      "matchday": 4,
-      "homeTeam": {
-        "id": 1899,
-        "name": "PAE AEK",
-        "shortName": "PAE AEK",
-        "tla": "AEK",
-        "crest": "https://crests.football-data.org/1899.png"
-      },
-      "awayTeam": {
-        "id": 86,
-        "name": "Real Madrid CF",
-        "shortName": "Real Madrid",
-        "tla": "RMA",
-        "crest": "https://crests.football-data.org/86.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      }
-    },
-    {
       "id": 575387,
       "utcDate": "2026-11-04T17:45:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "matchday": 4,
       "homeTeam": {
         "id": 613,
@@ -2309,9 +2284,9 @@
         "crest": "https://crests.football-data.org/64.png"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "winner": null
+        "home": 1,
+        "away": 1,
+        "winner": "DRAW"
       }
     },
     {
