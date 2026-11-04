@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-03T00:56:09.846Z",
+  "fetchedAt": "2026-11-04T20:23:15.565Z",
   "standings": [
     {
       "position": 1,
@@ -2659,7 +2659,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560632,
@@ -2685,7 +2685,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560640,
@@ -2711,7 +2711,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560633,
@@ -2737,7 +2737,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560641,
@@ -2763,7 +2763,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "NBC"
     },
     {
       "id": 560635,
@@ -2789,7 +2789,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560636,
@@ -2815,7 +2815,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560637,
@@ -2841,7 +2841,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560638,
@@ -2867,7 +2867,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560639,
@@ -2893,7 +2893,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560643,
@@ -4248,32 +4248,6 @@
       "broadcast": null
     },
     {
-      "id": 560694,
-      "utcDate": "2026-12-19T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 16,
-      "homeTeam": {
-        "id": 351,
-        "name": "Nottingham Forest FC",
-        "shortName": "Nottingham",
-        "tla": "NOT",
-        "crest": "https://crests.football-data.org/351.png"
-      },
-      "awayTeam": {
-        "id": 62,
-        "name": "Everton FC",
-        "shortName": "Everton",
-        "tla": "EVE",
-        "crest": "https://crests.football-data.org/62.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
       "id": 560696,
       "utcDate": "2026-12-19T15:00:00Z",
       "status": "TIMED",
@@ -4369,6 +4343,32 @@
         "shortName": "Ipswich Town",
         "tla": "IPS",
         "crest": "https://crests.football-data.org/349.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
+      "id": 560694,
+      "utcDate": "2026-12-20T14:00:00Z",
+      "status": "TIMED",
+      "matchday": 16,
+      "homeTeam": {
+        "id": 351,
+        "name": "Nottingham Forest FC",
+        "shortName": "Nottingham",
+        "tla": "NOT",
+        "crest": "https://crests.football-data.org/351.png"
+      },
+      "awayTeam": {
+        "id": 62,
+        "name": "Everton FC",
+        "shortName": "Everton",
+        "tla": "EVE",
+        "crest": "https://crests.football-data.org/62.png"
       },
       "score": {
         "home": null,
@@ -10178,129 +10178,132 @@
   ],
   "headlines": [
     {
-      "title": "Wrexham fined for fielding ineligible players",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cr89z5pj5n2zo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 28 Oct 2026 18:22:42 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6edc/live/22cfb9f0-d2f7-11f1-93e1-3b657b665bcf.png",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Burnley appoint ex-Basel boss Celestini as head coach",
-      "link": "https://www.bbc.co.uk/sport/football/articles/ckzd67v45523o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 28 Oct 2026 18:16:58 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ea39/live/d7a8fff0-d2fa-11f1-8091-57f2713cabe8.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Howe, Nagelsmann, Pochettino: can anyone end Manchester United’s doom loop?",
-      "link": "https://www.theguardian.com/football/2026/oct/28/howe-nagelsmann-pochettino-can-anyone-end-manchester-uniteds-doom-loop",
-      "pubDate": "Wed, 28 Oct 2026 18:00:09 GMT",
-      "image": "https://i.guim.co.uk/img/media/d0b4ae267493bf5acf03427bf4be968de83675f4/112_119_2631_2105/master/2631.jpg?width=460&quality=85&auto=format&fit=max&s=ce882e84c614badb8089234b018d6470",
+      "title": "Champions League: Slavia Prague v Arsenal, RB Leipzig v Manchester City and more – live",
+      "link": "https://www.theguardian.com/football/live/2026/nov/04/champions-league-slavia-prague-v-arsenal-rb-leipzig-v-manchester-city-and-more-live",
+      "pubDate": "Wed, 04 Nov 2026 20:09:16 GMT",
+      "image": "https://i.guim.co.uk/img/media/3072561ba8b59131efc9b864501eeafa2ffa0bc0/542_0_5403_4325/master/5403.jpg?width=460&quality=85&auto=format&fit=max&s=a8320f49af2ca9f2c3bacb93d60c862a",
       "source": "The Guardian",
       "teams": [
-        66
+        57,
+        65
       ]
     },
     {
-      "title": "When is the EFL Cup quarter-final draw?",
-      "link": "https://www.bbc.co.uk/sport/football/articles/clyegmmvr4vo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 28 Oct 2026 17:09:05 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/52db/live/6caf75b0-9260-11f1-a7ab-8b30adf0800a.jpg",
-      "source": "BBC Sport",
+      "title": "Valverde’s late winner breaks AEK Athens hearts as Real Madrid twice come from behind",
+      "link": "https://www.theguardian.com/football/2026/nov/04/champions-league-roundup-aek-athens-real-madrid-borussia-dortmund-napoli",
+      "pubDate": "Wed, 04 Nov 2026 20:04:07 GMT",
+      "image": "https://i.guim.co.uk/img/media/f88718b358954011586c398fe1cb9116c84c4420/1000_186_3610_2887/master/3610.jpg?width=460&quality=85&auto=format&fit=max&s=307cb775a411de284ced2a68edf0b0de",
+      "source": "The Guardian",
       "teams": []
     },
     {
-      "title": "Davies crossing divide between pitch and boardroom",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cmx2w477qwjpo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 28 Oct 2026 16:35:19 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/40ce/live/c6513520-d2f4-11f1-8d86-83eebc838351.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Football Daily | Fleetwood go their own way to down Arsenal and live Carabao Cup dream",
-      "link": "https://www.theguardian.com/football/2026/oct/28/fleetwood-arsenal-carabao-cup-football-daily-newsletter",
-      "pubDate": "Wed, 28 Oct 2026 16:08:59 GMT",
-      "image": "https://i.guim.co.uk/img/media/6f8bb77895f984580c3f30e1bb3e1ca8eaf3e391/256_0_3459_2767/master/3459.jpg?width=460&quality=85&auto=format&fit=max&s=9a751dffd3c4dd3f0a255465ce134eb2",
+      "title": "Muriqi caps Fenerbahce comeback to make Liverpool pay for defensive lapses",
+      "link": "https://www.theguardian.com/football/2026/nov/04/muriqi-caps-fenerbahce-comeback-to-make-liverpool-pay-for-defensive-lapses",
+      "pubDate": "Wed, 04 Nov 2026 19:58:13 GMT",
+      "image": "https://i.guim.co.uk/img/media/95c71d2f275dc49936c25468ac2b6846f7ad0e6e/646_0_2246_1797/master/2246.jpg?width=460&quality=85&auto=format&fit=max&s=73879045e681527cc93f326aed846e28",
       "source": "The Guardian",
       "teams": [
-        57
+        64
       ]
     },
     {
-      "title": "Ousmane Dembele, Winchester City and the Ballon d'Or",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c50mejwmry3vo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 28 Oct 2026 16:01:47 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/eea1/live/d8017ad0-d2e7-11f1-8d86-83eebc838351.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Johnstone Burgh to play two cup ties simultaneously after schedule clash",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cky831qxdzydo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 28 Oct 2026 15:34:02 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bee4/live/be91e3f0-d2e2-11f1-8af5-e1db7ad65222.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Unlucky seven? Wrexham aim to buck bizarre trend",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cq3djl59gdz2o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 28 Oct 2026 13:56:28 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6f3e/live/0b1c2690-d2d4-11f1-b677-b762d2f83f6e.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "McClean leaves Derry City after contract dispute",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cqn738v634xxo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 28 Oct 2026 13:25:57 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/cfe9/live/31e75ff0-d2d5-11f1-b677-b762d2f83f6e.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "All Spanish cup matches suspended after Madrid train collision",
-      "link": "https://www.bbc.co.uk/sport/football/articles/crgj902p68gno?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 28 Oct 2026 13:25:48 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/196d/live/ff0ee8f0-d2ca-11f1-8e79-5381b0a9d682.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Max Dowman’s Fleetwood fracas leaves him, Arsenal and Arteta red-faced",
-      "link": "https://www.theguardian.com/football/2026/oct/28/max-dowman-fleetwood-red-card-arsenal-mikel-arteta-carabao-cup",
-      "pubDate": "Wed, 28 Oct 2026 13:16:53 GMT",
-      "image": "https://i.guim.co.uk/img/media/ba1aa4092faeca168aa594bc752930fbba81d1db/312_0_3551_2841/master/3551.jpg?width=460&quality=85&auto=format&fit=max&s=3b9e9cf56eeeaaf600eb279443f551eb",
+      "title": "Billions in revenue proves Fifa right on the World Cup – but only on things it cares about",
+      "link": "https://www.theguardian.com/football/2026/nov/04/fifa-world-cup-billions-revenue",
+      "pubDate": "Wed, 04 Nov 2026 19:02:48 GMT",
+      "image": "https://i.guim.co.uk/img/media/64ece25ea3c69d73275864317d01a846505f265c/591_0_4774_3820/master/4774.jpg?width=460&quality=85&auto=format&fit=max&s=81f3a1c647223bdef5dcd52c9da8575c",
       "source": "The Guardian",
+      "teams": []
+    },
+    {
+      "title": "Hearts lose Miller for two months as injuries mount",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cj0406qvzqd3o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 04 Nov 2026 19:00:49 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2d24/live/c007e640-d881-11f1-a364-a1fce50dd192.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "An island in mourning: Tenerife processes death of De Miguel",
+      "link": "https://www.bbc.co.uk/sport/football/articles/ckx2qz97gz3no?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 04 Nov 2026 18:51:21 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6896/live/80cda3d0-d880-11f1-a701-fddedf244c16.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "How landmark Everton compensation prevented Burnley record loss",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c893zeq4eln1o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 04 Nov 2026 17:48:19 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c056/live/b36294e0-d858-11f1-94f3-cf7d1e52bb8c.jpg",
+      "source": "BBC Sport",
       "teams": [
-        57
+        62
       ]
     },
     {
-      "title": "MacAnthony promises to sell if Peterborough not in top 10",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c539830n0wj3o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 28 Oct 2026 13:14:22 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c631/live/f00ea910-d2cc-11f1-8e79-5381b0a9d682.jpg",
+      "title": "Ex-Burnley striker Rodriguez announces retirement",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cjvgxyn49rq4o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 04 Nov 2026 17:28:52 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/aee2/live/8c1cffc0-d875-11f1-a364-a1fce50dd192.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "Fernandes tells Carrick he is committed to turning season around in clear-the-air talks",
-      "link": "https://www.theguardian.com/football/2026/oct/28/bruno-fernandes-michael-carrick-clear-the-air-talks-manchester-united",
-      "pubDate": "Wed, 28 Oct 2026 12:47:26 GMT",
-      "image": "https://i.guim.co.uk/img/media/b69869e414e0dfdbba5a1732c4b5c81a0036cd47/192_0_2417_1933/master/2417.jpg?width=460&quality=85&auto=format&fit=max&s=83714daf095d38f1dac8d97b418d4b9e",
+      "title": "Bournemouth’s decision not to panic after their tough start is paying off",
+      "link": "https://www.theguardian.com/football/2026/nov/04/bournemouth-marco-rose-premier-league-games-opta",
+      "pubDate": "Wed, 04 Nov 2026 17:01:47 GMT",
+      "image": "https://i.guim.co.uk/img/media/ebcc5e4c257d2eac988fc01e87724ec434592253/447_0_3740_2993/master/3740.jpg?width=460&quality=85&auto=format&fit=max&s=83ade1557fdb3abbe7af545fbd3a145d",
+      "source": "The Guardian",
+      "teams": [
+        1044
+      ]
+    },
+    {
+      "title": "Hearts record £2.4m loss in Bloom's first year",
+      "link": "https://www.bbc.co.uk/sport/football/articles/ckqxnve3jplxo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 04 Nov 2026 17:00:49 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7ddd/live/81fb7340-d871-11f1-85ab-b3cc3b5498c6.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "'Most difficult days of my life' for Owono after De Miguel death",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6zxjz40l280o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 04 Nov 2026 16:40:38 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f8bd/live/9677ecc0-d86e-11f1-85ab-b3cc3b5498c6.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Rangers' McInnes eager for Penrice deal",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cwly45r47917o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 04 Nov 2026 16:38:41 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f333/live/266cb230-d85a-11f1-94f3-cf7d1e52bb8c.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Upward path for Penrice has McInnes eager for Rangers deal",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cwly45r47917o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 04 Nov 2026 16:38:41 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f333/live/266cb230-d85a-11f1-94f3-cf7d1e52bb8c.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Goalkeeper Jesús Owono experiencing ‘hardest days of my life’ after De Miguel’s death",
+      "link": "https://www.theguardian.com/football/2026/nov/04/goalkeeper-jesus-owono-jesus-de-miguel-death-tenerife-deeply-affected-andorra",
+      "pubDate": "Wed, 04 Nov 2026 16:23:02 GMT",
+      "image": "https://i.guim.co.uk/img/media/5f17bf842665d6d271246b1402b0d764097498f2/754_0_4167_3333/master/4167.jpg?width=460&quality=85&auto=format&fit=max&s=b6ac43db876ceaa11f2f2144dcb070f1",
       "source": "The Guardian",
       "teams": []
     },
     {
-      "title": "West Ham’s Viviane Asseyi: ‘When I was four I said I wanted to be like Zidane’",
-      "link": "https://www.theguardian.com/football/2026/oct/28/west-ham-women-viviane-asseyi-zidane-wsl",
-      "pubDate": "Wed, 28 Oct 2026 12:26:55 GMT",
-      "image": "https://i.guim.co.uk/img/media/5ccf5c3a625768ceaa966efcb93224ea99ff5a88/990_392_2010_1608/master/2010.jpg?width=460&quality=85&auto=format&fit=max&s=e3ce2f05fab9a9df326eb122b9e697cb",
-      "source": "The Guardian",
+      "title": "72+: The EFL Podcast",
+      "link": "https://www.bbc.co.uk/sounds/play/p0pl9kk6?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 04 Nov 2026 16:15:00 GMT",
+      "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0p3n9ks.jpg",
+      "source": "BBC Sport",
       "teams": []
     }
   ],
