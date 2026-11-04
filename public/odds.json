@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-04T02:20:55.390Z",
+  "fetchedAt": "2026-11-04T09:37:49.083Z",
   "odds": {
     "560632": {
       "eventTicker": "KXEPLGAME-26NOV07LEETOT",
@@ -54,7 +54,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 24,
         "ticker": "KXEPLGAME-26NOV06EVECOV-TIE"
       }
     },
@@ -101,7 +101,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov08ipsbou",
       "home": {
         "label": "Ipswich Town",
-        "probability": 24,
+        "probability": 25,
         "ticker": "KXEPLGAME-26NOV08IPSBOU-IPS"
       },
       "away": {
@@ -130,7 +130,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 26,
         "ticker": "KXEPLGAME-26NOV08BRIBRE-TIE"
       }
     },
@@ -139,7 +139,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov08munavl",
       "home": {
         "label": "Man United",
-        "probability": 43,
+        "probability": 44,
         "ticker": "KXEPLGAME-26NOV08MUNAVL-MUN"
       },
       "away": {
@@ -168,7 +168,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 11,
+        "probability": 12,
         "ticker": "KXEPLGAME-26NOV07ARSHUL-TIE"
       }
     },
@@ -182,7 +182,7 @@
       },
       "away": {
         "label": "Man City",
-        "probability": 56,
+        "probability": 57,
         "ticker": "KXEPLGAME-26NOV07NFOMCI-MCI"
       },
       "draw": {
