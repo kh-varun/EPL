@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-04T09:37:49.083Z",
+  "fetchedAt": "2026-11-04T17:31:43.591Z",
   "odds": {
     "560632": {
       "eventTicker": "KXEPLGAME-26NOV07LEETOT",
@@ -35,7 +35,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 27,
+        "probability": 26,
         "ticker": "KXEPLGAME-26NOV07FULNEW-TIE"
       }
     },
@@ -82,7 +82,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov08suncfc",
       "home": {
         "label": "Sunderland",
-        "probability": 27,
+        "probability": 26,
         "ticker": "KXEPLGAME-26NOV08SUNCFC-SUN"
       },
       "away": {
@@ -120,7 +120,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov08bribre",
       "home": {
         "label": "Brighton Hove",
-        "probability": 50,
+        "probability": 49,
         "ticker": "KXEPLGAME-26NOV08BRIBRE-BRI"
       },
       "away": {
