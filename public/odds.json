@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-05T23:48:50.273Z",
+  "fetchedAt": "2026-11-06T05:00:11.960Z",
   "odds": {
     "560632": {
       "eventTicker": "KXEPLGAME-26NOV07LEETOT",
@@ -44,7 +44,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov06evecov",
       "home": {
         "label": "Everton",
-        "probability": 57,
+        "probability": 58,
         "ticker": "KXEPLGAME-26NOV06EVECOV-EVE"
       },
       "away": {
@@ -87,7 +87,7 @@
       },
       "away": {
         "label": "Chelsea",
-        "probability": 49,
+        "probability": 50,
         "ticker": "KXEPLGAME-26NOV08SUNCFC-CFC"
       },
       "draw": {
@@ -106,12 +106,12 @@
       },
       "away": {
         "label": "Bournemouth",
-        "probability": 50,
+        "probability": 51,
         "ticker": "KXEPLGAME-26NOV08IPSBOU-BOU"
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 27,
         "ticker": "KXEPLGAME-26NOV08IPSBOU-TIE"
       }
     },
@@ -120,7 +120,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov08bribre",
       "home": {
         "label": "Brighton Hove",
-        "probability": 50,
+        "probability": 51,
         "ticker": "KXEPLGAME-26NOV08BRIBRE-BRI"
       },
       "away": {
@@ -130,7 +130,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 25,
+        "probability": 26,
         "ticker": "KXEPLGAME-26NOV08BRIBRE-TIE"
       }
     },
