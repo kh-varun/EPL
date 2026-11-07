@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-07T18:27:11.902Z",
+  "fetchedAt": "2026-11-07T22:08:12.986Z",
   "standings": [
     {
       "position": 1,
@@ -34,8 +34,8 @@
       "draw": 0,
       "lost": 3,
       "points": 21,
-      "goalsFor": 20,
-      "goalsAgainst": 12,
+      "goalsFor": 21,
+      "goalsAgainst": 13,
       "goalDifference": 8,
       "form": null
     },
@@ -300,8 +300,8 @@
       "draw": 3,
       "lost": 5,
       "points": 9,
-      "goalsFor": 8,
-      "goalsAgainst": 12,
+      "goalsFor": 9,
+      "goalsAgainst": 13,
       "goalDifference": -4,
       "form": null
     },
@@ -383,6 +383,31 @@
     }
   ],
   "lastResults": [
+    {
+      "id": 560641,
+      "utcDate": "2026-11-07T17:30:00Z",
+      "status": "FINISHED",
+      "matchday": 10,
+      "homeTeam": {
+        "id": 351,
+        "name": "Nottingham Forest FC",
+        "shortName": "Nottingham",
+        "tla": "NOT",
+        "crest": "https://crests.football-data.org/351.png"
+      },
+      "awayTeam": {
+        "id": 65,
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "tla": "MCI",
+        "crest": "https://crests.football-data.org/65.png"
+      },
+      "score": {
+        "home": 3,
+        "away": 1,
+        "winner": "HOME_TEAM"
+      }
+    },
     {
       "id": 560640,
       "utcDate": "2026-11-07T15:00:00Z",
@@ -2735,32 +2760,6 @@
     }
   ],
   "nextFixtures": [
-    {
-      "id": 560641,
-      "utcDate": "2026-11-07T17:30:00Z",
-      "status": "IN_PLAY",
-      "matchday": 10,
-      "homeTeam": {
-        "id": 351,
-        "name": "Nottingham Forest FC",
-        "shortName": "Nottingham",
-        "tla": "NOT",
-        "crest": "https://crests.football-data.org/351.png"
-      },
-      "awayTeam": {
-        "id": 65,
-        "name": "Manchester City FC",
-        "shortName": "Man City",
-        "tla": "MCI",
-        "crest": "https://crests.football-data.org/65.png"
-      },
-      "score": {
-        "home": 2,
-        "away": 0,
-        "winner": "HOME_TEAM"
-      },
-      "broadcast": "NBC"
-    },
     {
       "id": 560635,
       "utcDate": "2026-11-08T14:00:00Z",

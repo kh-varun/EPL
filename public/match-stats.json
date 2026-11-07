@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-07T18:27:12.912Z",
+  "fetchedAt": "2026-11-07T22:08:13.466Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -4172,6 +4172,71 @@
           "teamId": 57,
           "player": "Martin Ødegaard",
           "minute": 72,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560641": {
+      "utcDate": "2026-11-07T17:30:00Z",
+      "homeTeamId": 351,
+      "awayTeamId": 65,
+      "stats": {
+        "65": {
+          "shots": 12,
+          "shotsOnTarget": 4,
+          "possession": 78,
+          "passes": 753,
+          "passAccuracy": 0.9,
+          "fouls": 7,
+          "corners": 7,
+          "offsides": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        "351": {
+          "shots": 11,
+          "shotsOnTarget": 5,
+          "possession": 22,
+          "passes": 206,
+          "passAccuracy": 0.7,
+          "fouls": 13,
+          "corners": 3,
+          "offsides": 2,
+          "yellowCards": 4,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 351,
+          "player": "Jair Cunha",
+          "minute": 6,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 351,
+          "player": "Liam Delap",
+          "minute": 18,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 65,
+          "player": "Rayan Cherki",
+          "minute": 52,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 351,
+          "player": "Liam Delap",
+          "minute": 73,
           "extraMinute": null,
           "ownGoal": false,
           "penalty": false
