@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-07T01:16:40.448Z",
+  "fetchedAt": "2026-11-07T18:27:12.912Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -3982,6 +3982,96 @@
         }
       ]
     },
+    "560632": {
+      "utcDate": "2026-11-07T12:30:00Z",
+      "homeTeamId": 341,
+      "awayTeamId": 73,
+      "stats": {
+        "73": {
+          "shots": 7,
+          "shotsOnTarget": 4,
+          "possession": 60.8,
+          "passes": 508,
+          "passAccuracy": 0.8,
+          "fouls": 15,
+          "corners": 4,
+          "offsides": 1,
+          "yellowCards": 3,
+          "redCards": 0
+        },
+        "341": {
+          "shots": 16,
+          "shotsOnTarget": 4,
+          "possession": 39.2,
+          "passes": 310,
+          "passAccuracy": 0.8,
+          "fouls": 11,
+          "corners": 6,
+          "offsides": 2,
+          "yellowCards": 2,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 341,
+          "player": "Noah Okafor",
+          "minute": 79,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560633": {
+      "utcDate": "2026-11-07T15:00:00Z",
+      "homeTeamId": 63,
+      "awayTeamId": 67,
+      "stats": {
+        "63": {
+          "shots": 11,
+          "shotsOnTarget": 5,
+          "possession": 57.9,
+          "passes": 522,
+          "passAccuracy": 0.8,
+          "fouls": 9,
+          "corners": 3,
+          "offsides": 3,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        "67": {
+          "shots": 9,
+          "shotsOnTarget": 5,
+          "possession": 42.1,
+          "passes": 376,
+          "passAccuracy": 0.8,
+          "fouls": 13,
+          "corners": 3,
+          "offsides": 1,
+          "yellowCards": 2,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 67,
+          "player": "Jacob Murphy",
+          "minute": 80,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 63,
+          "player": "Rodrigo Muniz",
+          "minute": 83,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
     "560634": {
       "utcDate": "2026-11-06T20:00:00Z",
       "homeTeamId": 62,
@@ -4041,6 +4131,47 @@
           "teamId": 62,
           "player": "Kiernan Dewsbury-Hall",
           "minute": 81,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560640": {
+      "utcDate": "2026-11-07T15:00:00Z",
+      "homeTeamId": 57,
+      "awayTeamId": 322,
+      "stats": {
+        "57": {
+          "shots": 21,
+          "shotsOnTarget": 10,
+          "possession": 66.9,
+          "passes": 569,
+          "passAccuracy": 0.9,
+          "fouls": 6,
+          "corners": 7,
+          "offsides": 4,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        "322": {
+          "shots": 7,
+          "shotsOnTarget": 2,
+          "possession": 33.1,
+          "passes": 272,
+          "passAccuracy": 0.7,
+          "fouls": 15,
+          "corners": 4,
+          "offsides": 1,
+          "yellowCards": 5,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 57,
+          "player": "Martin Ødegaard",
+          "minute": 72,
           "extraMinute": null,
           "ownGoal": false,
           "penalty": false
