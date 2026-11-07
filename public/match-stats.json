@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-03T00:56:10.476Z",
+  "fetchedAt": "2026-11-07T01:16:40.448Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -3976,6 +3976,71 @@
           "teamId": 57,
           "player": "Kai Havertz",
           "minute": 16,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560634": {
+      "utcDate": "2026-11-06T20:00:00Z",
+      "homeTeamId": 62,
+      "awayTeamId": 1076,
+      "stats": {
+        "62": {
+          "shots": 16,
+          "shotsOnTarget": 7,
+          "possession": 49.8,
+          "passes": 424,
+          "passAccuracy": 0.8,
+          "fouls": 9,
+          "corners": 2,
+          "offsides": 1,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        "1076": {
+          "shots": 15,
+          "shotsOnTarget": 4,
+          "possession": 50.2,
+          "passes": 438,
+          "passAccuracy": 0.8,
+          "fouls": 6,
+          "corners": 2,
+          "offsides": 0,
+          "yellowCards": 1,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 1076,
+          "player": "Yann Gboho",
+          "minute": 52,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 62,
+          "player": "Thierno Barry",
+          "minute": 56,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 62,
+          "player": "Thierno Barry",
+          "minute": 61,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 62,
+          "player": "Kiernan Dewsbury-Hall",
+          "minute": 81,
           "extraMinute": null,
           "ownGoal": false,
           "penalty": false
