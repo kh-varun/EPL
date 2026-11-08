@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-08T05:48:48.926Z",
+  "fetchedAt": "2026-11-08T12:43:57.899Z",
   "odds": {
     "560635": {
       "eventTicker": "KXEPLGAME-26NOV08CRYLFC",
@@ -25,12 +25,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov08suncfc",
       "home": {
         "label": "Sunderland",
-        "probability": 27,
+        "probability": 24,
         "ticker": "KXEPLGAME-26NOV08SUNCFC-SUN"
       },
       "away": {
         "label": "Chelsea",
-        "probability": 48,
+        "probability": 50,
         "ticker": "KXEPLGAME-26NOV08SUNCFC-CFC"
       },
       "draw": {
@@ -49,7 +49,7 @@
       },
       "away": {
         "label": "Bournemouth",
-        "probability": 52,
+        "probability": 49,
         "ticker": "KXEPLGAME-26NOV08IPSBOU-BOU"
       },
       "draw": {
@@ -63,12 +63,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov08bribre",
       "home": {
         "label": "Brighton Hove",
-        "probability": 52,
+        "probability": 53,
         "ticker": "KXEPLGAME-26NOV08BRIBRE-BRI"
       },
       "away": {
         "label": "Brentford",
-        "probability": 25,
+        "probability": 24,
         "ticker": "KXEPLGAME-26NOV08BRIBRE-BRE"
       },
       "draw": {
@@ -163,7 +163,7 @@
       },
       "away": {
         "label": "Man United",
-        "probability": 24,
+        "probability": 22,
         "ticker": "KXEPLGAME-26NOV22LFCMUN-MUN"
       },
       "draw": {
@@ -182,7 +182,7 @@
       },
       "away": {
         "label": "Brighton Hove",
-        "probability": 62,
+        "probability": 64,
         "ticker": "KXEPLGAME-26NOV22HULBRI-BRI"
       },
       "draw": {
@@ -215,12 +215,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov21totips",
       "home": {
         "label": "Tottenham",
-        "probability": 63,
+        "probability": 65,
         "ticker": "KXEPLGAME-26NOV21TOTIPS-TOT"
       },
       "away": {
         "label": "Ipswich Town",
-        "probability": 15,
+        "probability": 17,
         "ticker": "KXEPLGAME-26NOV21TOTIPS-IPS"
       },
       "draw": {
@@ -239,7 +239,7 @@
       },
       "away": {
         "label": "Crystal Palace",
-        "probability": 36,
+        "probability": 37,
         "ticker": "KXEPLGAME-26NOV21COVCRY-CRY"
       },
       "draw": {
@@ -258,7 +258,7 @@
       },
       "away": {
         "label": "Arsenal",
-        "probability": 61,
+        "probability": 62,
         "ticker": "KXEPLGAME-26NOV21NEWARS-ARS"
       },
       "draw": {
