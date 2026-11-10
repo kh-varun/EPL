@@ -1,12 +1,12 @@
 {
-  "fetchedAt": "2026-11-09T19:11:07.484Z",
+  "fetchedAt": "2026-11-10T02:07:53.492Z",
   "odds": {
     "560642": {
       "eventTicker": "KXEPLGAME-26NOV21CFCLEE",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov21cfclee",
       "home": {
         "label": "Chelsea",
-        "probability": 52,
+        "probability": 51,
         "ticker": "KXEPLGAME-26NOV21CFCLEE-CFC"
       },
       "away": {
@@ -35,7 +35,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 17,
+        "probability": 18,
         "ticker": "KXEPLGAME-26NOV21MCIFUL-TIE"
       }
     },
@@ -44,7 +44,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov21avlsun",
       "home": {
         "label": "Aston Villa",
-        "probability": 56,
+        "probability": 55,
         "ticker": "KXEPLGAME-26NOV21AVLSUN-AVL"
       },
       "away": {
@@ -63,7 +63,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov22lfcmun",
       "home": {
         "label": "Liverpool",
-        "probability": 57,
+        "probability": 56,
         "ticker": "KXEPLGAME-26NOV22LFCMUN-LFC"
       },
       "away": {
@@ -87,7 +87,7 @@
       },
       "away": {
         "label": "Brighton Hove",
-        "probability": 64,
+        "probability": 65,
         "ticker": "KXEPLGAME-26NOV22HULBRI-BRI"
       },
       "draw": {
@@ -101,7 +101,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov21bounfo",
       "home": {
         "label": "Bournemouth",
-        "probability": 49,
+        "probability": 48,
         "ticker": "KXEPLGAME-26NOV21BOUNFO-BOU"
       },
       "away": {
@@ -149,7 +149,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 27,
+        "probability": 26,
         "ticker": "KXEPLGAME-26NOV23BREEVE-TIE"
       }
     },
@@ -182,7 +182,7 @@
       },
       "away": {
         "label": "Arsenal",
-        "probability": 63,
+        "probability": 64,
         "ticker": "KXEPLGAME-26NOV21NEWARS-ARS"
       },
       "draw": {
