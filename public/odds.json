@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-10T09:47:42.840Z",
+  "fetchedAt": "2026-11-10T17:28:12.849Z",
   "odds": {
     "560642": {
       "eventTicker": "KXEPLGAME-26NOV21CFCLEE",
@@ -30,12 +30,12 @@
       },
       "away": {
         "label": "Fulham",
-        "probability": 15,
+        "probability": 13,
         "ticker": "KXEPLGAME-26NOV21MCIFUL-FUL"
       },
       "draw": {
         "label": "Draw",
-        "probability": 17,
+        "probability": 18,
         "ticker": "KXEPLGAME-26NOV21MCIFUL-TIE"
       }
     },
@@ -73,7 +73,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 24,
+        "probability": 23,
         "ticker": "KXEPLGAME-26NOV22LFCMUN-TIE"
       }
     },
@@ -120,7 +120,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov21totips",
       "home": {
         "label": "Tottenham",
-        "probability": 64,
+        "probability": 61,
         "ticker": "KXEPLGAME-26NOV21TOTIPS-TOT"
       },
       "away": {
@@ -149,7 +149,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 27,
         "ticker": "KXEPLGAME-26NOV23BREEVE-TIE"
       }
     },
@@ -182,7 +182,7 @@
       },
       "away": {
         "label": "Arsenal",
-        "probability": 64,
+        "probability": 62,
         "ticker": "KXEPLGAME-26NOV21NEWARS-ARS"
       },
       "draw": {
