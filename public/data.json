@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-08T18:54:33.948Z",
+  "fetchedAt": "2026-11-11T20:06:49.826Z",
   "standings": [
     {
       "position": 1,
@@ -383,6 +383,131 @@
     }
   ],
   "lastResults": [
+    {
+      "id": 560639,
+      "utcDate": "2026-11-08T16:30:00Z",
+      "status": "FINISHED",
+      "matchday": 10,
+      "homeTeam": {
+        "id": 66,
+        "name": "Manchester United FC",
+        "shortName": "Man United",
+        "tla": "MUN",
+        "crest": "https://crests.football-data.org/66.png"
+      },
+      "awayTeam": {
+        "id": 58,
+        "name": "Aston Villa FC",
+        "shortName": "Aston Villa",
+        "tla": "AVL",
+        "crest": "https://crests.football-data.org/58.png"
+      },
+      "score": {
+        "home": 4,
+        "away": 4,
+        "winner": "DRAW"
+      }
+    },
+    {
+      "id": 560635,
+      "utcDate": "2026-11-08T14:00:00Z",
+      "status": "FINISHED",
+      "matchday": 10,
+      "homeTeam": {
+        "id": 354,
+        "name": "Crystal Palace FC",
+        "shortName": "Crystal Palace",
+        "tla": "CRY",
+        "crest": "https://crests.football-data.org/354.png"
+      },
+      "awayTeam": {
+        "id": 64,
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "tla": "LIV",
+        "crest": "https://crests.football-data.org/64.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 3,
+        "winner": "AWAY_TEAM"
+      }
+    },
+    {
+      "id": 560636,
+      "utcDate": "2026-11-08T14:00:00Z",
+      "status": "FINISHED",
+      "matchday": 10,
+      "homeTeam": {
+        "id": 71,
+        "name": "Sunderland AFC",
+        "shortName": "Sunderland",
+        "tla": "SUN",
+        "crest": "https://crests.football-data.org/71.png"
+      },
+      "awayTeam": {
+        "id": 61,
+        "name": "Chelsea FC",
+        "shortName": "Chelsea",
+        "tla": "CHE",
+        "crest": "https://crests.football-data.org/61.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 0,
+        "winner": "HOME_TEAM"
+      }
+    },
+    {
+      "id": 560637,
+      "utcDate": "2026-11-08T14:00:00Z",
+      "status": "FINISHED",
+      "matchday": 10,
+      "homeTeam": {
+        "id": 349,
+        "name": "Ipswich Town FC",
+        "shortName": "Ipswich Town",
+        "tla": "IPS",
+        "crest": "https://crests.football-data.org/349.png"
+      },
+      "awayTeam": {
+        "id": 1044,
+        "name": "AFC Bournemouth",
+        "shortName": "Bournemouth",
+        "tla": "BOU",
+        "crest": "https://crests.football-data.org/bournemouth.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 2,
+        "winner": "AWAY_TEAM"
+      }
+    },
+    {
+      "id": 560638,
+      "utcDate": "2026-11-08T14:00:00Z",
+      "status": "FINISHED",
+      "matchday": 10,
+      "homeTeam": {
+        "id": 397,
+        "name": "Brighton & Hove Albion FC",
+        "shortName": "Brighton Hove",
+        "tla": "BHA",
+        "crest": "https://crests.football-data.org/397.png"
+      },
+      "awayTeam": {
+        "id": 402,
+        "name": "Brentford FC",
+        "shortName": "Brentford",
+        "tla": "BRE",
+        "crest": "https://crests.football-data.org/402.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 0,
+        "winner": "HOME_TEAM"
+      }
+    },
     {
       "id": 560641,
       "utcDate": "2026-11-07T17:30:00Z",
@@ -10043,133 +10168,126 @@
   ],
   "headlines": [
     {
-      "title": "Champions League: Slavia Prague v Arsenal, RB Leipzig v Manchester City and more – live",
-      "link": "https://www.theguardian.com/football/live/2026/nov/04/champions-league-slavia-prague-v-arsenal-rb-leipzig-v-manchester-city-and-more-live",
-      "pubDate": "Wed, 04 Nov 2026 20:09:16 GMT",
-      "image": "https://i.guim.co.uk/img/media/3072561ba8b59131efc9b864501eeafa2ffa0bc0/542_0_5403_4325/master/5403.jpg?width=460&quality=85&auto=format&fit=max&s=a8320f49af2ca9f2c3bacb93d60c862a",
+      "title": "‘I’ve had to prove people wrong’: Kane still striving before record England cap",
+      "link": "https://www.theguardian.com/football/2026/nov/11/harry-kane-england-most-capped-mens-player-peter-shilton-croatia-nations-league",
+      "pubDate": "Wed, 11 Nov 2026 19:00:02 GMT",
+      "image": "https://i.guim.co.uk/img/media/64bb85da4b9d14bc7fd57a56da17ed89ca3e683d/101_0_2382_1905/master/2382.jpg?width=460&quality=85&auto=format&fit=max&s=976cf4dbfe7f6fbb629360985dce3cb8",
+      "source": "The Guardian",
+      "teams": []
+    },
+    {
+      "title": "Complaint filed to IRS in relation to Fifa head Gianni Infantino’s housekeeper",
+      "link": "https://www.theguardian.com/football/2026/nov/11/complaint-us-irs-fifa-gianni-infantino-housekeeper",
+      "pubDate": "Wed, 11 Nov 2026 19:00:01 GMT",
+      "image": "https://i.guim.co.uk/img/media/c0e0e1436188a54323f8e247d48e0f1b12f5b884/179_0_2809_2248/master/2809.jpg?width=460&quality=85&auto=format&fit=max&s=d8dd3557285cd564cbfba91f607e8e2b",
+      "source": "The Guardian",
+      "teams": []
+    },
+    {
+      "title": "Thomas Tuchel keeps laser focus on ‘unfinished business’ with England",
+      "link": "https://www.theguardian.com/football/2026/nov/11/thomas-tuchel-unfinished-business-england-euro-2028-nations-league",
+      "pubDate": "Wed, 11 Nov 2026 19:00:00 GMT",
+      "image": "https://i.guim.co.uk/img/media/92e575bd2970663d84f1087f935f5b90255645d3/348_0_3395_2716/master/3395.jpg?width=460&quality=85&auto=format&fit=max&s=d77dba038a9da28ec26da63d21c7efc3",
+      "source": "The Guardian",
+      "teams": []
+    },
+    {
+      "title": "Football Daily",
+      "link": "https://www.bbc.co.uk/sounds/play/p0pmh9w1?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 11 Nov 2026 18:15:00 GMT",
+      "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0m6ztjd.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Shrewsbury 'hit all the boxes' for new owners - Friedel",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cm894wegv3lno?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 11 Nov 2026 17:44:42 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c733/live/d94ae1e0-ddf7-11f1-8445-15eb55286f71.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Legally restrict heading a football in training, says MP",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cm1ewpjyy3dzo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 11 Nov 2026 17:38:18 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2766/live/008813c0-ddf5-11f1-8445-15eb55286f71.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "O'Shea proud of how team-mates handled Israel games",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cwg7l9nd0p1zo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 11 Nov 2026 17:33:37 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4bd9/live/3d547cc0-ddf1-11f1-ba1a-f14c9b2af876.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Leader, role model, extraordinary - how Kane's 'fairytale' came true",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c60qkdj4lp34o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 11 Nov 2026 16:44:58 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/67bf/live/ee8455c0-dab2-11f1-8c3b-f3c0d6bd7c4f.png",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "No excuses as Pocognoli seeks first Hampden victory",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6702jxw17pjo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 11 Nov 2026 16:38:14 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/230f/live/e48de6f0-ddda-11f1-b865-d17d8611efca.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Referee observer banned for discriminatory comments",
+      "link": "https://www.bbc.co.uk/sport/football/articles/ckedq15wq0dlo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 11 Nov 2026 16:26:24 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/638e/live/ad865850-dde8-11f1-9204-cdcddf7d901c.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Top four teams in Fifa rankings set to be kept apart until semi-finals at 2027 Women’s World Cup",
+      "link": "https://www.theguardian.com/football/2026/nov/11/womens-world-cup-top-four-groups",
+      "pubDate": "Wed, 11 Nov 2026 16:03:44 GMT",
+      "image": "https://i.guim.co.uk/img/media/82f3118e9e2ca701f375c2cd024afd96a4719244/458_236_2668_2134/master/2668.jpg?width=460&quality=85&auto=format&fit=max&s=b62f0c4a2188eb79d61be7a91e08cc1e",
+      "source": "The Guardian",
+      "teams": []
+    },
+    {
+      "title": "Pochettino ready to accept Man Utd offer to replace Carrick",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cqvg25pj36mvo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 11 Nov 2026 16:03:02 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6766/live/d5551640-ddad-11f1-81e1-cf7317aa5114.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Bristol City give Skubala opportunity to improve form",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c54gnev0ydnno?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 11 Nov 2026 15:52:30 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e945/live/300e91b0-dde0-11f1-b465-b9821c2582d4.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "‘Hear the goals during the afterlife’: Barça fans get to inter ashes at club’s new memorial",
+      "link": "https://www.theguardian.com/football/2026/nov/11/barcelona-fc-camp-nou-stadium-memorial-fans-ashes",
+      "pubDate": "Wed, 11 Nov 2026 14:30:15 GMT",
+      "image": "https://i.guim.co.uk/img/media/e32c484e52a54a669a7cb5bf55028cfc5409318f/178_0_844_675/master/844.jpg?width=460&quality=85&auto=format&fit=max&s=6ac6378801b01e82765b208dc751cbd8",
+      "source": "The Guardian",
+      "teams": []
+    },
+    {
+      "title": "Manchester United reach framework deal with Pochettino before settling Carrick’s fate",
+      "link": "https://www.theguardian.com/football/2026/nov/11/manchester-united-close-mauricio-pochettino-deal-michael-carrick",
+      "pubDate": "Wed, 11 Nov 2026 13:52:39 GMT",
+      "image": "https://i.guim.co.uk/img/media/d247e8b5d2c659232b96a1426ba5ad60664e4ca3/396_0_4901_3921/master/4901.jpg?width=460&quality=85&auto=format&fit=max&s=5e7381cd2d5a162c41579d88504ff742",
       "source": "The Guardian",
       "teams": [
-        57,
-        65
+        66
       ]
-    },
-    {
-      "title": "Valverde’s late winner breaks AEK Athens hearts as Real Madrid twice come from behind",
-      "link": "https://www.theguardian.com/football/2026/nov/04/champions-league-roundup-aek-athens-real-madrid-borussia-dortmund-napoli",
-      "pubDate": "Wed, 04 Nov 2026 20:04:07 GMT",
-      "image": "https://i.guim.co.uk/img/media/f88718b358954011586c398fe1cb9116c84c4420/1000_186_3610_2887/master/3610.jpg?width=460&quality=85&auto=format&fit=max&s=307cb775a411de284ced2a68edf0b0de",
-      "source": "The Guardian",
-      "teams": []
-    },
-    {
-      "title": "Muriqi caps Fenerbahce comeback to make Liverpool pay for defensive lapses",
-      "link": "https://www.theguardian.com/football/2026/nov/04/muriqi-caps-fenerbahce-comeback-to-make-liverpool-pay-for-defensive-lapses",
-      "pubDate": "Wed, 04 Nov 2026 19:58:13 GMT",
-      "image": "https://i.guim.co.uk/img/media/95c71d2f275dc49936c25468ac2b6846f7ad0e6e/646_0_2246_1797/master/2246.jpg?width=460&quality=85&auto=format&fit=max&s=73879045e681527cc93f326aed846e28",
-      "source": "The Guardian",
-      "teams": [
-        64
-      ]
-    },
-    {
-      "title": "Billions in revenue proves Fifa right on the World Cup – but only on things it cares about",
-      "link": "https://www.theguardian.com/football/2026/nov/04/fifa-world-cup-billions-revenue",
-      "pubDate": "Wed, 04 Nov 2026 19:02:48 GMT",
-      "image": "https://i.guim.co.uk/img/media/64ece25ea3c69d73275864317d01a846505f265c/591_0_4774_3820/master/4774.jpg?width=460&quality=85&auto=format&fit=max&s=81f3a1c647223bdef5dcd52c9da8575c",
-      "source": "The Guardian",
-      "teams": []
-    },
-    {
-      "title": "Hearts lose Miller for two months as injuries mount",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cj0406qvzqd3o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 04 Nov 2026 19:00:49 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2d24/live/c007e640-d881-11f1-a364-a1fce50dd192.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "An island in mourning: Tenerife processes death of De Miguel",
-      "link": "https://www.bbc.co.uk/sport/football/articles/ckx2qz97gz3no?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 04 Nov 2026 18:51:21 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6896/live/80cda3d0-d880-11f1-a701-fddedf244c16.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "How landmark Everton compensation prevented Burnley record loss",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c893zeq4eln1o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 04 Nov 2026 17:48:19 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c056/live/b36294e0-d858-11f1-94f3-cf7d1e52bb8c.jpg",
-      "source": "BBC Sport",
-      "teams": [
-        62
-      ]
-    },
-    {
-      "title": "Ex-Burnley striker Rodriguez announces retirement",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cjvgxyn49rq4o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 04 Nov 2026 17:28:52 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/aee2/live/8c1cffc0-d875-11f1-a364-a1fce50dd192.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Bournemouth’s decision not to panic after their tough start is paying off",
-      "link": "https://www.theguardian.com/football/2026/nov/04/bournemouth-marco-rose-premier-league-games-opta",
-      "pubDate": "Wed, 04 Nov 2026 17:01:47 GMT",
-      "image": "https://i.guim.co.uk/img/media/ebcc5e4c257d2eac988fc01e87724ec434592253/447_0_3740_2993/master/3740.jpg?width=460&quality=85&auto=format&fit=max&s=83ade1557fdb3abbe7af545fbd3a145d",
-      "source": "The Guardian",
-      "teams": [
-        1044
-      ]
-    },
-    {
-      "title": "Hearts record £2.4m loss in Bloom's first year",
-      "link": "https://www.bbc.co.uk/sport/football/articles/ckqxnve3jplxo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 04 Nov 2026 17:00:49 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7ddd/live/81fb7340-d871-11f1-85ab-b3cc3b5498c6.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "'Most difficult days of my life' for Owono after De Miguel death",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6zxjz40l280o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 04 Nov 2026 16:40:38 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f8bd/live/9677ecc0-d86e-11f1-85ab-b3cc3b5498c6.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Rangers' McInnes eager for Penrice deal",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwly45r47917o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 04 Nov 2026 16:38:41 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f333/live/266cb230-d85a-11f1-94f3-cf7d1e52bb8c.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Upward path for Penrice has McInnes eager for Rangers deal",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwly45r47917o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 04 Nov 2026 16:38:41 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f333/live/266cb230-d85a-11f1-94f3-cf7d1e52bb8c.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Goalkeeper Jesús Owono experiencing ‘hardest days of my life’ after De Miguel’s death",
-      "link": "https://www.theguardian.com/football/2026/nov/04/goalkeeper-jesus-owono-jesus-de-miguel-death-tenerife-deeply-affected-andorra",
-      "pubDate": "Wed, 04 Nov 2026 16:23:02 GMT",
-      "image": "https://i.guim.co.uk/img/media/5f17bf842665d6d271246b1402b0d764097498f2/754_0_4167_3333/master/4167.jpg?width=460&quality=85&auto=format&fit=max&s=b6ac43db876ceaa11f2f2144dcb070f1",
-      "source": "The Guardian",
-      "teams": []
-    },
-    {
-      "title": "72+: The EFL Podcast",
-      "link": "https://www.bbc.co.uk/sounds/play/p0pl9kk6?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 04 Nov 2026 16:15:00 GMT",
-      "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0p3n9ks.jpg",
-      "source": "BBC Sport",
-      "teams": []
     }
   ],
   "teams": {
@@ -13189,6 +13307,13 @@
           "name": "Adam Wharton",
           "position": "Midfield",
           "dateOfBirth": "2004-06-02",
+          "nationality": "England"
+        },
+        {
+          "id": 303053,
+          "name": "Nathanael Kalembo",
+          "position": "Midfield",
+          "dateOfBirth": "2010-10-28",
           "nationality": "England"
         },
         {
