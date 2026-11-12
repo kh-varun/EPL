@@ -1,17 +1,17 @@
 {
-  "fetchedAt": "2026-11-12T13:03:57.852Z",
+  "fetchedAt": "2026-11-12T20:48:58.616Z",
   "odds": {
     "560642": {
       "eventTicker": "KXEPLGAME-26NOV21CFCLEE",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov21cfclee",
       "home": {
         "label": "Chelsea",
-        "probability": 50,
+        "probability": 52,
         "ticker": "KXEPLGAME-26NOV21CFCLEE-CFC"
       },
       "away": {
         "label": "Leeds United",
-        "probability": 23,
+        "probability": 24,
         "ticker": "KXEPLGAME-26NOV21CFCLEE-LEE"
       },
       "draw": {
@@ -44,7 +44,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov21avlsun",
       "home": {
         "label": "Aston Villa",
-        "probability": 56,
+        "probability": 54,
         "ticker": "KXEPLGAME-26NOV21AVLSUN-AVL"
       },
       "away": {
@@ -63,7 +63,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov22lfcmun",
       "home": {
         "label": "Liverpool",
-        "probability": 57,
+        "probability": 56,
         "ticker": "KXEPLGAME-26NOV22LFCMUN-LFC"
       },
       "away": {
@@ -101,7 +101,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov21bounfo",
       "home": {
         "label": "Bournemouth",
-        "probability": 48,
+        "probability": 49,
         "ticker": "KXEPLGAME-26NOV21BOUNFO-BOU"
       },
       "away": {
@@ -120,17 +120,17 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov21totips",
       "home": {
         "label": "Tottenham",
-        "probability": 64,
+        "probability": 61,
         "ticker": "KXEPLGAME-26NOV21TOTIPS-TOT"
       },
       "away": {
         "label": "Ipswich Town",
-        "probability": 17,
+        "probability": 15,
         "ticker": "KXEPLGAME-26NOV21TOTIPS-IPS"
       },
       "draw": {
         "label": "Draw",
-        "probability": 21,
+        "probability": 20,
         "ticker": "KXEPLGAME-26NOV21TOTIPS-TIE"
       }
     },
