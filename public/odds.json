@@ -1,17 +1,17 @@
 {
-  "fetchedAt": "2026-11-14T20:28:12.810Z",
+  "fetchedAt": "2026-11-15T00:07:10.584Z",
   "odds": {
     "560642": {
       "eventTicker": "KXEPLGAME-26NOV21CFCLEE",
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov21cfclee",
       "home": {
         "label": "Chelsea",
-        "probability": 50,
+        "probability": 52,
         "ticker": "KXEPLGAME-26NOV21CFCLEE-CFC"
       },
       "away": {
         "label": "Leeds United",
-        "probability": 23,
+        "probability": 24,
         "ticker": "KXEPLGAME-26NOV21CFCLEE-LEE"
       },
       "draw": {
@@ -30,7 +30,7 @@
       },
       "away": {
         "label": "Fulham",
-        "probability": 12,
+        "probability": 13,
         "ticker": "KXEPLGAME-26NOV21MCIFUL-FUL"
       },
       "draw": {
@@ -44,12 +44,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov21avlsun",
       "home": {
         "label": "Aston Villa",
-        "probability": 53,
+        "probability": 55,
         "ticker": "KXEPLGAME-26NOV21AVLSUN-AVL"
       },
       "away": {
         "label": "Sunderland",
-        "probability": 21,
+        "probability": 20,
         "ticker": "KXEPLGAME-26NOV21AVLSUN-SUN"
       },
       "draw": {
@@ -87,7 +87,7 @@
       },
       "away": {
         "label": "Brighton Hove",
-        "probability": 66,
+        "probability": 64,
         "ticker": "KXEPLGAME-26NOV22HULBRI-BRI"
       },
       "draw": {
@@ -101,7 +101,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov21bounfo",
       "home": {
         "label": "Bournemouth",
-        "probability": 47,
+        "probability": 48,
         "ticker": "KXEPLGAME-26NOV21BOUNFO-BOU"
       },
       "away": {
@@ -120,7 +120,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov21totips",
       "home": {
         "label": "Tottenham",
-        "probability": 62,
+        "probability": 63,
         "ticker": "KXEPLGAME-26NOV21TOTIPS-TOT"
       },
       "away": {
@@ -130,7 +130,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 21,
+        "probability": 22,
         "ticker": "KXEPLGAME-26NOV21TOTIPS-TIE"
       }
     },
@@ -225,7 +225,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 24,
+        "probability": 25,
         "ticker": "KXEPLGAME-26NOV28IPSAVL-TIE"
       }
     },
