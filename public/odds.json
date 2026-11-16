@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-15T23:44:31.459Z",
+  "fetchedAt": "2026-11-16T03:13:15.529Z",
   "odds": {
     "560642": {
       "eventTicker": "KXEPLGAME-26NOV21CFCLEE",
@@ -16,7 +16,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 25,
         "ticker": "KXEPLGAME-26NOV21CFCLEE-TIE"
       }
     },
@@ -106,7 +106,7 @@
       },
       "away": {
         "label": "Nottingham",
-        "probability": 25,
+        "probability": 26,
         "ticker": "KXEPLGAME-26NOV21BOUNFO-NFO"
       },
       "draw": {
@@ -130,7 +130,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 21,
+        "probability": 22,
         "ticker": "KXEPLGAME-26NOV21TOTIPS-TIE"
       }
     },
@@ -163,7 +163,7 @@
       },
       "away": {
         "label": "Crystal Palace",
-        "probability": 34,
+        "probability": 35,
         "ticker": "KXEPLGAME-26NOV21COVCRY-CRY"
       },
       "draw": {
@@ -177,7 +177,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov21newars",
       "home": {
         "label": "Newcastle",
-        "probability": 16,
+        "probability": 15,
         "ticker": "KXEPLGAME-26NOV21NEWARS-NEW"
       },
       "away": {
@@ -234,12 +234,12 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov29arsmci",
       "home": {
         "label": "Arsenal",
-        "probability": 50,
+        "probability": 48,
         "ticker": "KXEPLGAME-26NOV29ARSMCI-ARS"
       },
       "away": {
         "label": "Man City",
-        "probability": 29,
+        "probability": 26,
         "ticker": "KXEPLGAME-26NOV29ARSMCI-MCI"
       },
       "draw": {
@@ -272,7 +272,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov29evelfc",
       "home": {
         "label": "Everton",
-        "probability": 26,
+        "probability": 28,
         "ticker": "KXEPLGAME-26NOV29EVELFC-EVE"
       },
       "away": {
