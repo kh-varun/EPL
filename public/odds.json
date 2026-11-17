@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-17T12:45:15.837Z",
+  "fetchedAt": "2026-11-17T21:23:22.199Z",
   "odds": {
     "560642": {
       "eventTicker": "KXEPLGAME-26NOV21CFCLEE",
@@ -44,7 +44,7 @@
       "kalshiUrl": "https://kalshi.com/markets/kxeplgame/english-premier-league-game/kxeplgame-26nov21avlsun",
       "home": {
         "label": "Aston Villa",
-        "probability": 54,
+        "probability": 53,
         "ticker": "KXEPLGAME-26NOV21AVLSUN-AVL"
       },
       "away": {
@@ -54,7 +54,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 26,
+        "probability": 24,
         "ticker": "KXEPLGAME-26NOV21AVLSUN-TIE"
       }
     },
@@ -125,7 +125,7 @@
       },
       "away": {
         "label": "Ipswich Town",
-        "probability": 16,
+        "probability": 17,
         "ticker": "KXEPLGAME-26NOV21TOTIPS-IPS"
       },
       "draw": {
@@ -144,7 +144,7 @@
       },
       "away": {
         "label": "Everton",
-        "probability": 26,
+        "probability": 27,
         "ticker": "KXEPLGAME-26NOV23BREEVE-EVE"
       },
       "draw": {
@@ -201,7 +201,7 @@
       },
       "away": {
         "label": "Coventry City",
-        "probability": 15,
+        "probability": 16,
         "ticker": "KXEPLGAME-26NOV28LEECOV-COV"
       },
       "draw": {
@@ -396,7 +396,7 @@
       },
       "draw": {
         "label": "Draw",
-        "probability": 50,
+        "probability": 51,
         "ticker": "KXEPLGAME-26DEC01COVIPS-TIE"
       }
     }
