@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-11T20:06:49.826Z",
+  "fetchedAt": "2026-11-18T21:15:39.984Z",
   "standings": [
     {
       "position": 1,
@@ -2909,7 +2909,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560642,
@@ -2935,7 +2935,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560644,
@@ -2961,7 +2961,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560647,
@@ -2987,7 +2987,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560648,
@@ -3013,7 +3013,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560650,
@@ -3039,7 +3039,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560651,
@@ -3065,7 +3065,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560646,
@@ -3091,7 +3091,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560645,
@@ -3117,7 +3117,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560649,
@@ -3143,7 +3143,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560658,
@@ -10168,126 +10168,130 @@
   ],
   "headlines": [
     {
-      "title": "‘I’ve had to prove people wrong’: Kane still striving before record England cap",
-      "link": "https://www.theguardian.com/football/2026/nov/11/harry-kane-england-most-capped-mens-player-peter-shilton-croatia-nations-league",
-      "pubDate": "Wed, 11 Nov 2026 19:00:02 GMT",
-      "image": "https://i.guim.co.uk/img/media/64bb85da4b9d14bc7fd57a56da17ed89ca3e683d/101_0_2382_1905/master/2382.jpg?width=460&quality=85&auto=format&fit=max&s=976cf4dbfe7f6fbb629360985dce3cb8",
+      "title": "England defender Carter joins Bay FC after Gotham exit",
+      "link": "https://www.bbc.co.uk/sport/football/articles/ck5y169v1262o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 18 Nov 2026 21:07:26 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2514/live/7b839f70-e392-11f1-b4f3-9f0685d52a1f.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Strasbourg appoint Swansea boss Matos",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6174epxv1p4o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 18 Nov 2026 20:57:54 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d3f2/live/25bf9080-e356-11f1-acd4-25eaaa5def63.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Chelsea v Paris Saint-Germain: Women’s Champions League – live",
+      "link": "https://www.theguardian.com/football/live/2026/nov/18/chelsea-v-paris-saint-germain-psg-womens-champions-league-live-score-updates",
+      "pubDate": "Wed, 18 Nov 2026 20:55:07 GMT",
+      "image": "https://i.guim.co.uk/img/media/64df315f1b01a555bc5bf63971dee52c8778ae66/209_0_4174_3341/master/4174.jpg?width=460&quality=85&auto=format&fit=max&s=b5418ad7d7b074dc493beb8a410ed213",
       "source": "The Guardian",
-      "teams": []
+      "teams": [
+        61
+      ]
     },
     {
-      "title": "Complaint filed to IRS in relation to Fifa head Gianni Infantino’s housekeeper",
-      "link": "https://www.theguardian.com/football/2026/nov/11/complaint-us-irs-fifa-gianni-infantino-housekeeper",
-      "pubDate": "Wed, 11 Nov 2026 19:00:01 GMT",
-      "image": "https://i.guim.co.uk/img/media/c0e0e1436188a54323f8e247d48e0f1b12f5b884/179_0_2809_2248/master/2809.jpg?width=460&quality=85&auto=format&fit=max&s=d8dd3557285cd564cbfba91f607e8e2b",
-      "source": "The Guardian",
-      "teams": []
-    },
-    {
-      "title": "Thomas Tuchel keeps laser focus on ‘unfinished business’ with England",
-      "link": "https://www.theguardian.com/football/2026/nov/11/thomas-tuchel-unfinished-business-england-euro-2028-nations-league",
-      "pubDate": "Wed, 11 Nov 2026 19:00:00 GMT",
-      "image": "https://i.guim.co.uk/img/media/92e575bd2970663d84f1087f935f5b90255645d3/348_0_3395_2716/master/3395.jpg?width=460&quality=85&auto=format&fit=max&s=d77dba038a9da28ec26da63d21c7efc3",
-      "source": "The Guardian",
-      "teams": []
-    },
-    {
-      "title": "Football Daily",
-      "link": "https://www.bbc.co.uk/sounds/play/p0pmh9w1?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 11 Nov 2026 18:15:00 GMT",
-      "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0m6ztjd.jpg",
+      "title": "FA explored legal challenge to Infantino staying on",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cm3eg1w4ypz5o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 18 Nov 2026 20:55:01 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c8c1/live/e7141200-e37f-11f1-b879-03485a55c082.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "Shrewsbury 'hit all the boxes' for new owners - Friedel",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cm894wegv3lno?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 11 Nov 2026 17:44:42 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c733/live/d94ae1e0-ddf7-11f1-8445-15eb55286f71.jpg",
+      "title": "Hemp and Shaw star as Manchester City get vital win at Hacken",
+      "link": "https://www.bbc.co.uk/sport/football/videos/c32l50p1yk8vo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 18 Nov 2026 20:25:40 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9911/live/b9f39560-e385-11f1-a094-5fdc692f3e33.jpg",
       "source": "BBC Sport",
-      "teams": []
+      "teams": [
+        65
+      ]
     },
     {
-      "title": "Legally restrict heading a football in training, says MP",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cm1ewpjyy3dzo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 11 Nov 2026 17:38:18 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2766/live/008813c0-ddf5-11f1-8445-15eb55286f71.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "O'Shea proud of how team-mates handled Israel games",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwg7l9nd0p1zo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 11 Nov 2026 17:33:37 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4bd9/live/3d547cc0-ddf1-11f1-ba1a-f14c9b2af876.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Leader, role model, extraordinary - how Kane's 'fairytale' came true",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c60qkdj4lp34o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 11 Nov 2026 16:44:58 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/67bf/live/ee8455c0-dab2-11f1-8c3b-f3c0d6bd7c4f.png",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "No excuses as Pocognoli seeks first Hampden victory",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6702jxw17pjo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 11 Nov 2026 16:38:14 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/230f/live/e48de6f0-ddda-11f1-b865-d17d8611efca.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Referee observer banned for discriminatory comments",
-      "link": "https://www.bbc.co.uk/sport/football/articles/ckedq15wq0dlo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 11 Nov 2026 16:26:24 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/638e/live/ad865850-dde8-11f1-9204-cdcddf7d901c.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Top four teams in Fifa rankings set to be kept apart until semi-finals at 2027 Women’s World Cup",
-      "link": "https://www.theguardian.com/football/2026/nov/11/womens-world-cup-top-four-groups",
-      "pubDate": "Wed, 11 Nov 2026 16:03:44 GMT",
-      "image": "https://i.guim.co.uk/img/media/82f3118e9e2ca701f375c2cd024afd96a4719244/458_236_2668_2134/master/2668.jpg?width=460&quality=85&auto=format&fit=max&s=b62f0c4a2188eb79d61be7a91e08cc1e",
-      "source": "The Guardian",
-      "teams": []
-    },
-    {
-      "title": "Pochettino ready to accept Man Utd offer to replace Carrick",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cqvg25pj36mvo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 11 Nov 2026 16:03:02 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6766/live/d5551640-ddad-11f1-81e1-cf7317aa5114.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Bristol City give Skubala opportunity to improve form",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c54gnev0ydnno?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 11 Nov 2026 15:52:30 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e945/live/300e91b0-dde0-11f1-b465-b9821c2582d4.jpg",
-      "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "‘Hear the goals during the afterlife’: Barça fans get to inter ashes at club’s new memorial",
-      "link": "https://www.theguardian.com/football/2026/nov/11/barcelona-fc-camp-nou-stadium-memorial-fans-ashes",
-      "pubDate": "Wed, 11 Nov 2026 14:30:15 GMT",
-      "image": "https://i.guim.co.uk/img/media/e32c484e52a54a669a7cb5bf55028cfc5409318f/178_0_844_675/master/844.jpg?width=460&quality=85&auto=format&fit=max&s=6ac6378801b01e82765b208dc751cbd8",
-      "source": "The Guardian",
-      "teams": []
-    },
-    {
-      "title": "Manchester United reach framework deal with Pochettino before settling Carrick’s fate",
-      "link": "https://www.theguardian.com/football/2026/nov/11/manchester-united-close-mauricio-pochettino-deal-michael-carrick",
-      "pubDate": "Wed, 11 Nov 2026 13:52:39 GMT",
-      "image": "https://i.guim.co.uk/img/media/d247e8b5d2c659232b96a1426ba5ad60664e4ca3/396_0_4901_3921/master/4901.jpg?width=460&quality=85&auto=format&fit=max&s=5e7381cd2d5a162c41579d88504ff742",
+      "title": "‘An honour’: Pochettino up for challenge of leading Manchester United revival",
+      "link": "https://www.theguardian.com/football/2026/nov/18/mauricio-pochettino-arrives-manchester-united-head-coach-premier-league",
+      "pubDate": "Wed, 18 Nov 2026 19:58:26 GMT",
+      "image": "https://i.guim.co.uk/img/media/81d893bb0fe58708ee77594e5d12ed2e91325998/482_0_2695_2157/master/2695.jpg?width=460&quality=85&auto=format&fit=max&s=09c736f482e7eb0241ba23072698dd46",
       "source": "The Guardian",
       "teams": [
         66
       ]
+    },
+    {
+      "title": "Leicester split with sponsor after porn actress row",
+      "link": "https://www.bbc.co.uk/news/articles/cq4gnx28zp5lo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 18 Nov 2026 19:10:21 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7fc3/live/c94480c0-d9d4-11f1-9e5a-c30c5e3d8c85.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "From kit boy to manager at 28 - Dumbarton appoint Fellowes",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c61k9mz9vvkyo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 18 Nov 2026 19:09:00 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c880/live/28da6540-e37b-11f1-b879-03485a55c082.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Leicester part ways with BC Game after sponsor’s partnership with porn actor",
+      "link": "https://www.theguardian.com/football/2026/nov/18/leicester-city-bc-game-porn-star-eva-elfie-sponsorship",
+      "pubDate": "Wed, 18 Nov 2026 19:01:59 GMT",
+      "image": "https://i.guim.co.uk/img/media/7044644398bc3a27fb87871dca4a0fb85c58ff05/933_1200_2646_2118/master/2646.jpg?width=460&quality=85&auto=format&fit=max&s=471df66087878b175a80bd6456b1b838",
+      "source": "The Guardian",
+      "teams": []
+    },
+    {
+      "title": "Emma Hayes to assist in US Soccer hiring process for next USMNT coach",
+      "link": "https://www.theguardian.com/football/2026/nov/18/emma-hayes-usmnt-head-coach-hiring-process",
+      "pubDate": "Wed, 18 Nov 2026 18:44:26 GMT",
+      "image": "https://i.guim.co.uk/img/media/8ca83424102c163bcc76a3530cca7a176f8cfb56/18_0_2583_2067/master/2583.jpg?width=460&quality=85&auto=format&fit=max&s=d594c34947ba9a330477bd546ee02cc8",
+      "source": "The Guardian",
+      "teams": []
+    },
+    {
+      "title": "Ward close to new Republic of Ireland deal as Noonan returns",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6782xedd985o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 18 Nov 2026 18:06:04 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f568/live/9fbcb180-e36d-11f1-9f51-4bfc31543510.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Ward close to new deal as Noonan returns to squad",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6782xedd985o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 18 Nov 2026 18:06:04 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f568/live/9fbcb180-e36d-11f1-9f51-4bfc31543510.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Mauricio Pochettino’s USMNT time will be remembered fondly, but it wasn’t transformational",
+      "link": "https://www.theguardian.com/football/2026/nov/18/pochettino-usmnt-manchester-united",
+      "pubDate": "Wed, 18 Nov 2026 18:00:04 GMT",
+      "image": "https://i.guim.co.uk/img/media/2f985a22e8959925d729c3b1c44532a05b764c76/250_0_2500_2000/master/2500.jpg?width=460&quality=85&auto=format&fit=max&s=371947b265498d181a17b7b33bbf83a1",
+      "source": "The Guardian",
+      "teams": []
+    },
+    {
+      "title": "Rooney revelations important - Bradford boss Duff",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cvrlgke13e9go?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 18 Nov 2026 17:52:23 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3743/live/c2268860-e375-11f1-b879-03485a55c082.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "From Dunfermline to Dubai - McPake on new life in Middle East",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6j9m1ygw427o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 18 Nov 2026 17:06:29 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1327/live/2ca4bf40-e371-11f1-9f51-4bfc31543510.jpg",
+      "source": "BBC Sport",
+      "teams": []
     }
   ],
   "teams": {
