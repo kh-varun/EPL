@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-07T22:08:13.466Z",
+  "fetchedAt": "2026-11-21T19:34:19.149Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -4239,6 +4239,331 @@
           "minute": 73,
           "extraMinute": null,
           "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560642": {
+      "utcDate": "2026-11-21T15:00:00Z",
+      "homeTeamId": 61,
+      "awayTeamId": 341,
+      "stats": {
+        "61": {
+          "shots": 14,
+          "shotsOnTarget": 3,
+          "possession": 57.1,
+          "passes": 546,
+          "passAccuracy": 0.9,
+          "fouls": 6,
+          "corners": 3,
+          "offsides": 2,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        "341": {
+          "shots": 21,
+          "shotsOnTarget": 8,
+          "possession": 42.9,
+          "passes": 405,
+          "passAccuracy": 0.8,
+          "fouls": 16,
+          "corners": 2,
+          "offsides": 7,
+          "yellowCards": 3,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 61,
+          "player": "Emmanuel Emegha",
+          "minute": 25,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 341,
+          "player": "Noah Okafor",
+          "minute": 28,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 341,
+          "player": "Dominic Calvert-Lewin",
+          "minute": 53,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": true
+        },
+        {
+          "teamId": 341,
+          "player": "Noah Okafor",
+          "minute": 58,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 341,
+          "player": "Brenden Aaronson",
+          "minute": 90,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560643": {
+      "utcDate": "2026-11-21T12:30:00Z",
+      "homeTeamId": 65,
+      "awayTeamId": 63,
+      "stats": {
+        "63": {
+          "shots": 5,
+          "shotsOnTarget": 4,
+          "possession": 41.5,
+          "passes": 418,
+          "passAccuracy": 0.8,
+          "fouls": 11,
+          "corners": 6,
+          "offsides": 2,
+          "yellowCards": 3,
+          "redCards": 0
+        },
+        "65": {
+          "shots": 15,
+          "shotsOnTarget": 3,
+          "possession": 58.5,
+          "passes": 590,
+          "passAccuracy": 0.9,
+          "fouls": 8,
+          "corners": 8,
+          "offsides": 2,
+          "yellowCards": 1,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 63,
+          "player": "Rodrigo Muniz",
+          "minute": 16,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 65,
+          "player": "Elliot Anderson",
+          "minute": 57,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560644": {
+      "utcDate": "2026-11-21T15:00:00Z",
+      "homeTeamId": 58,
+      "awayTeamId": 71,
+      "stats": {
+        "58": {
+          "shots": 19,
+          "shotsOnTarget": 7,
+          "possession": 72.5,
+          "passes": 701,
+          "passAccuracy": 0.9,
+          "fouls": 15,
+          "corners": 7,
+          "offsides": 0,
+          "yellowCards": 2,
+          "redCards": 0
+        },
+        "71": {
+          "shots": 7,
+          "shotsOnTarget": 1,
+          "possession": 27.5,
+          "passes": 263,
+          "passAccuracy": 0.8,
+          "fouls": 20,
+          "corners": 2,
+          "offsides": 5,
+          "yellowCards": 2,
+          "redCards": 0
+        }
+      },
+      "scorers": []
+    },
+    "560647": {
+      "utcDate": "2026-11-21T15:00:00Z",
+      "homeTeamId": 1044,
+      "awayTeamId": 351,
+      "stats": {
+        "351": {
+          "shots": 18,
+          "shotsOnTarget": 1,
+          "possession": 48.9,
+          "passes": 431,
+          "passAccuracy": 0.7,
+          "fouls": 15,
+          "corners": 4,
+          "offsides": 0,
+          "yellowCards": 3,
+          "redCards": 0
+        },
+        "1044": {
+          "shots": 19,
+          "shotsOnTarget": 7,
+          "possession": 51.1,
+          "passes": 448,
+          "passAccuracy": 0.8,
+          "fouls": 13,
+          "corners": 6,
+          "offsides": 2,
+          "yellowCards": 1,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 1044,
+          "player": "Evanilson",
+          "minute": 19,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 1044,
+          "player": "Justin Kluivert",
+          "minute": 45,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560648": {
+      "utcDate": "2026-11-21T15:00:00Z",
+      "homeTeamId": 73,
+      "awayTeamId": 349,
+      "stats": {
+        "73": {
+          "shots": 18,
+          "shotsOnTarget": 9,
+          "possession": 62.7,
+          "passes": 587,
+          "passAccuracy": 0.9,
+          "fouls": 17,
+          "corners": 8,
+          "offsides": 1,
+          "yellowCards": 4,
+          "redCards": 0
+        },
+        "349": {
+          "shots": 11,
+          "shotsOnTarget": 3,
+          "possession": 37.3,
+          "passes": 344,
+          "passAccuracy": 0.8,
+          "fouls": 17,
+          "corners": 6,
+          "offsides": 2,
+          "yellowCards": 1,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 73,
+          "player": "Luca Williams-Barnett",
+          "minute": 15,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 73,
+          "player": "Dominic Solanke",
+          "minute": 51,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560650": {
+      "utcDate": "2026-11-21T15:00:00Z",
+      "homeTeamId": 1076,
+      "awayTeamId": 354,
+      "stats": {
+        "354": {
+          "shots": 14,
+          "shotsOnTarget": 5,
+          "possession": 58.3,
+          "passes": 450,
+          "passAccuracy": 0.8,
+          "fouls": 14,
+          "corners": 6,
+          "offsides": 1,
+          "yellowCards": 2,
+          "redCards": 0
+        },
+        "1076": {
+          "shots": 11,
+          "shotsOnTarget": 7,
+          "possession": 41.7,
+          "passes": 326,
+          "passAccuracy": 0.8,
+          "fouls": 12,
+          "corners": 4,
+          "offsides": 3,
+          "yellowCards": 1,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 1076,
+          "player": "Taiwo Awoniyi",
+          "minute": 5,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 354,
+          "player": "Yéremy Pino",
+          "minute": 13,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 1076,
+          "player": "Tatsuhiro Sakamoto",
+          "minute": 30,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 354,
+          "player": "Jørgen Strand Larsen",
+          "minute": 45,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 1076,
+          "player": "Dwight McNeil",
+          "minute": 85,
+          "extraMinute": null,
+          "ownGoal": true,
           "penalty": false
         }
       ]

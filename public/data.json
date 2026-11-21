@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-18T21:15:39.984Z",
+  "fetchedAt": "2026-11-21T19:34:17.246Z",
   "standings": [
     {
       "position": 1,
@@ -10,13 +10,13 @@
         "tla": "ARS",
         "crest": "https://crests.football-data.org/57.png"
       },
-      "playedGames": 10,
+      "playedGames": 11,
       "won": 9,
-      "draw": 0,
+      "draw": 1,
       "lost": 1,
-      "points": 27,
-      "goalsFor": 15,
-      "goalsAgainst": 5,
+      "points": 28,
+      "goalsFor": 17,
+      "goalsAgainst": 7,
       "goalDifference": 10,
       "form": null
     },
@@ -48,18 +48,37 @@
         "tla": "MCI",
         "crest": "https://crests.football-data.org/65.png"
       },
-      "playedGames": 10,
+      "playedGames": 11,
       "won": 7,
-      "draw": 0,
+      "draw": 1,
       "lost": 3,
-      "points": 21,
-      "goalsFor": 21,
-      "goalsAgainst": 13,
+      "points": 22,
+      "goalsFor": 22,
+      "goalsAgainst": 14,
       "goalDifference": 8,
       "form": null
     },
     {
       "position": 4,
+      "team": {
+        "id": 1044,
+        "name": "AFC Bournemouth",
+        "shortName": "Bournemouth",
+        "tla": "BOU",
+        "crest": "https://crests.football-data.org/bournemouth.png"
+      },
+      "playedGames": 11,
+      "won": 5,
+      "draw": 3,
+      "lost": 3,
+      "points": 18,
+      "goalsFor": 18,
+      "goalsAgainst": 14,
+      "goalDifference": 4,
+      "form": null
+    },
+    {
+      "position": 5,
       "team": {
         "id": 64,
         "name": "Liverpool FC",
@@ -78,26 +97,26 @@
       "form": null
     },
     {
-      "position": 5,
+      "position": 6,
       "team": {
-        "id": 61,
-        "name": "Chelsea FC",
-        "shortName": "Chelsea",
-        "tla": "CHE",
-        "crest": "https://crests.football-data.org/61.png"
+        "id": 341,
+        "name": "Leeds United FC",
+        "shortName": "Leeds United",
+        "tla": "LEE",
+        "crest": "https://crests.football-data.org/341.png"
       },
-      "playedGames": 10,
-      "won": 5,
-      "draw": 1,
-      "lost": 4,
-      "points": 16,
-      "goalsFor": 19,
-      "goalsAgainst": 16,
-      "goalDifference": 3,
+      "playedGames": 11,
+      "won": 4,
+      "draw": 5,
+      "lost": 2,
+      "points": 17,
+      "goalsFor": 14,
+      "goalsAgainst": 9,
+      "goalDifference": 5,
       "form": null
     },
     {
-      "position": 6,
+      "position": 7,
       "team": {
         "id": 62,
         "name": "Everton FC",
@@ -116,26 +135,45 @@
       "form": null
     },
     {
-      "position": 7,
+      "position": 8,
       "team": {
-        "id": 1044,
-        "name": "AFC Bournemouth",
-        "shortName": "Bournemouth",
-        "tla": "BOU",
-        "crest": "https://crests.football-data.org/bournemouth.png"
+        "id": 61,
+        "name": "Chelsea FC",
+        "shortName": "Chelsea",
+        "tla": "CHE",
+        "crest": "https://crests.football-data.org/61.png"
       },
-      "playedGames": 10,
-      "won": 4,
-      "draw": 3,
-      "lost": 3,
-      "points": 15,
-      "goalsFor": 16,
-      "goalsAgainst": 14,
-      "goalDifference": 2,
+      "playedGames": 11,
+      "won": 5,
+      "draw": 1,
+      "lost": 5,
+      "points": 16,
+      "goalsFor": 20,
+      "goalsAgainst": 20,
+      "goalDifference": 0,
       "form": null
     },
     {
-      "position": 8,
+      "position": 9,
+      "team": {
+        "id": 73,
+        "name": "Tottenham Hotspur FC",
+        "shortName": "Tottenham",
+        "tla": "TOT",
+        "crest": "https://crests.football-data.org/73.png"
+      },
+      "playedGames": 11,
+      "won": 4,
+      "draw": 3,
+      "lost": 4,
+      "points": 15,
+      "goalsFor": 12,
+      "goalsAgainst": 11,
+      "goalDifference": 1,
+      "form": null
+    },
+    {
+      "position": 10,
       "team": {
         "id": 402,
         "name": "Brentford FC",
@@ -154,26 +192,7 @@
       "form": null
     },
     {
-      "position": 9,
-      "team": {
-        "id": 341,
-        "name": "Leeds United FC",
-        "shortName": "Leeds United",
-        "tla": "LEE",
-        "crest": "https://crests.football-data.org/341.png"
-      },
-      "playedGames": 10,
-      "won": 3,
-      "draw": 5,
-      "lost": 2,
-      "points": 14,
-      "goalsFor": 10,
-      "goalsAgainst": 8,
-      "goalDifference": 2,
-      "form": null
-    },
-    {
-      "position": 10,
+      "position": 11,
       "team": {
         "id": 58,
         "name": "Aston Villa FC",
@@ -181,33 +200,14 @@
         "tla": "AVL",
         "crest": "https://crests.football-data.org/58.png"
       },
-      "playedGames": 10,
+      "playedGames": 11,
       "won": 3,
-      "draw": 4,
+      "draw": 5,
       "lost": 3,
-      "points": 13,
+      "points": 14,
       "goalsFor": 14,
       "goalsAgainst": 17,
       "goalDifference": -3,
-      "form": null
-    },
-    {
-      "position": 11,
-      "team": {
-        "id": 73,
-        "name": "Tottenham Hotspur FC",
-        "shortName": "Tottenham",
-        "tla": "TOT",
-        "crest": "https://crests.football-data.org/73.png"
-      },
-      "playedGames": 10,
-      "won": 3,
-      "draw": 3,
-      "lost": 4,
-      "points": 12,
-      "goalsFor": 10,
-      "goalsAgainst": 11,
-      "goalDifference": -1,
       "form": null
     },
     {
@@ -219,18 +219,37 @@
         "tla": "NEW",
         "crest": "https://crests.football-data.org/67.png"
       },
-      "playedGames": 10,
+      "playedGames": 11,
       "won": 3,
-      "draw": 3,
+      "draw": 4,
       "lost": 4,
-      "points": 12,
-      "goalsFor": 13,
-      "goalsAgainst": 16,
+      "points": 13,
+      "goalsFor": 15,
+      "goalsAgainst": 18,
       "goalDifference": -3,
       "form": null
     },
     {
       "position": 13,
+      "team": {
+        "id": 1076,
+        "name": "Coventry City FC",
+        "shortName": "Coventry City",
+        "tla": "COV",
+        "crest": "https://crests.football-data.org/1076.png"
+      },
+      "playedGames": 11,
+      "won": 4,
+      "draw": 0,
+      "lost": 7,
+      "points": 12,
+      "goalsFor": 13,
+      "goalsAgainst": 21,
+      "goalDifference": -8,
+      "form": null
+    },
+    {
+      "position": 14,
       "team": {
         "id": 322,
         "name": "Hull City AFC",
@@ -249,25 +268,6 @@
       "form": null
     },
     {
-      "position": 14,
-      "team": {
-        "id": 349,
-        "name": "Ipswich Town FC",
-        "shortName": "Ipswich Town",
-        "tla": "IPS",
-        "crest": "https://crests.football-data.org/349.png"
-      },
-      "playedGames": 10,
-      "won": 3,
-      "draw": 2,
-      "lost": 5,
-      "points": 11,
-      "goalsFor": 15,
-      "goalsAgainst": 20,
-      "goalDifference": -5,
-      "form": null
-    },
-    {
       "position": 15,
       "team": {
         "id": 63,
@@ -276,18 +276,37 @@
         "tla": "FUL",
         "crest": "https://crests.football-data.org/63.png"
       },
-      "playedGames": 10,
+      "playedGames": 11,
       "won": 2,
-      "draw": 4,
+      "draw": 5,
       "lost": 4,
-      "points": 10,
-      "goalsFor": 10,
-      "goalsAgainst": 12,
+      "points": 11,
+      "goalsFor": 11,
+      "goalsAgainst": 13,
       "goalDifference": -2,
       "form": null
     },
     {
       "position": 16,
+      "team": {
+        "id": 349,
+        "name": "Ipswich Town FC",
+        "shortName": "Ipswich Town",
+        "tla": "IPS",
+        "crest": "https://crests.football-data.org/349.png"
+      },
+      "playedGames": 11,
+      "won": 3,
+      "draw": 2,
+      "lost": 6,
+      "points": 11,
+      "goalsFor": 15,
+      "goalsAgainst": 22,
+      "goalDifference": -7,
+      "form": null
+    },
+    {
+      "position": 17,
       "team": {
         "id": 351,
         "name": "Nottingham Forest FC",
@@ -295,37 +314,37 @@
         "tla": "NOT",
         "crest": "https://crests.football-data.org/351.png"
       },
-      "playedGames": 10,
+      "playedGames": 11,
       "won": 2,
       "draw": 3,
-      "lost": 5,
+      "lost": 6,
       "points": 9,
       "goalsFor": 9,
-      "goalsAgainst": 13,
-      "goalDifference": -4,
-      "form": null
-    },
-    {
-      "position": 17,
-      "team": {
-        "id": 1076,
-        "name": "Coventry City FC",
-        "shortName": "Coventry City",
-        "tla": "COV",
-        "crest": "https://crests.football-data.org/1076.png"
-      },
-      "playedGames": 10,
-      "won": 3,
-      "draw": 0,
-      "lost": 7,
-      "points": 9,
-      "goalsFor": 10,
-      "goalsAgainst": 19,
-      "goalDifference": -9,
+      "goalsAgainst": 15,
+      "goalDifference": -6,
       "form": null
     },
     {
       "position": 18,
+      "team": {
+        "id": 71,
+        "name": "Sunderland AFC",
+        "shortName": "Sunderland",
+        "tla": "SUN",
+        "crest": "https://crests.football-data.org/71.png"
+      },
+      "playedGames": 11,
+      "won": 2,
+      "draw": 3,
+      "lost": 6,
+      "points": 9,
+      "goalsFor": 8,
+      "goalsAgainst": 17,
+      "goalDifference": -9,
+      "form": null
+    },
+    {
+      "position": 19,
       "team": {
         "id": 66,
         "name": "Manchester United FC",
@@ -344,25 +363,6 @@
       "form": null
     },
     {
-      "position": 19,
-      "team": {
-        "id": 71,
-        "name": "Sunderland AFC",
-        "shortName": "Sunderland",
-        "tla": "SUN",
-        "crest": "https://crests.football-data.org/71.png"
-      },
-      "playedGames": 10,
-      "won": 2,
-      "draw": 2,
-      "lost": 6,
-      "points": 8,
-      "goalsFor": 8,
-      "goalsAgainst": 17,
-      "goalDifference": -9,
-      "form": null
-    },
-    {
       "position": 20,
       "team": {
         "id": 354,
@@ -371,18 +371,193 @@
         "tla": "CRY",
         "crest": "https://crests.football-data.org/354.png"
       },
-      "playedGames": 10,
+      "playedGames": 11,
       "won": 2,
       "draw": 1,
-      "lost": 7,
+      "lost": 8,
       "points": 7,
-      "goalsFor": 10,
-      "goalsAgainst": 24,
-      "goalDifference": -14,
+      "goalsFor": 12,
+      "goalsAgainst": 27,
+      "goalDifference": -15,
       "form": null
     }
   ],
   "lastResults": [
+    {
+      "id": 560651,
+      "utcDate": "2026-11-21T17:30:00Z",
+      "status": "FINISHED",
+      "matchday": 11,
+      "homeTeam": {
+        "id": 67,
+        "name": "Newcastle United FC",
+        "shortName": "Newcastle",
+        "tla": "NEW",
+        "crest": "https://crests.football-data.org/67.png"
+      },
+      "awayTeam": {
+        "id": 57,
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "tla": "ARS",
+        "crest": "https://crests.football-data.org/57.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 2,
+        "winner": "DRAW"
+      }
+    },
+    {
+      "id": 560642,
+      "utcDate": "2026-11-21T15:00:00Z",
+      "status": "FINISHED",
+      "matchday": 11,
+      "homeTeam": {
+        "id": 61,
+        "name": "Chelsea FC",
+        "shortName": "Chelsea",
+        "tla": "CHE",
+        "crest": "https://crests.football-data.org/61.png"
+      },
+      "awayTeam": {
+        "id": 341,
+        "name": "Leeds United FC",
+        "shortName": "Leeds United",
+        "tla": "LEE",
+        "crest": "https://crests.football-data.org/341.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 4,
+        "winner": "AWAY_TEAM"
+      }
+    },
+    {
+      "id": 560644,
+      "utcDate": "2026-11-21T15:00:00Z",
+      "status": "FINISHED",
+      "matchday": 11,
+      "homeTeam": {
+        "id": 58,
+        "name": "Aston Villa FC",
+        "shortName": "Aston Villa",
+        "tla": "AVL",
+        "crest": "https://crests.football-data.org/58.png"
+      },
+      "awayTeam": {
+        "id": 71,
+        "name": "Sunderland AFC",
+        "shortName": "Sunderland",
+        "tla": "SUN",
+        "crest": "https://crests.football-data.org/71.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "winner": "DRAW"
+      }
+    },
+    {
+      "id": 560647,
+      "utcDate": "2026-11-21T15:00:00Z",
+      "status": "FINISHED",
+      "matchday": 11,
+      "homeTeam": {
+        "id": 1044,
+        "name": "AFC Bournemouth",
+        "shortName": "Bournemouth",
+        "tla": "BOU",
+        "crest": "https://crests.football-data.org/bournemouth.png"
+      },
+      "awayTeam": {
+        "id": 351,
+        "name": "Nottingham Forest FC",
+        "shortName": "Nottingham",
+        "tla": "NOT",
+        "crest": "https://crests.football-data.org/351.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 0,
+        "winner": "HOME_TEAM"
+      }
+    },
+    {
+      "id": 560648,
+      "utcDate": "2026-11-21T15:00:00Z",
+      "status": "FINISHED",
+      "matchday": 11,
+      "homeTeam": {
+        "id": 73,
+        "name": "Tottenham Hotspur FC",
+        "shortName": "Tottenham",
+        "tla": "TOT",
+        "crest": "https://crests.football-data.org/73.png"
+      },
+      "awayTeam": {
+        "id": 349,
+        "name": "Ipswich Town FC",
+        "shortName": "Ipswich Town",
+        "tla": "IPS",
+        "crest": "https://crests.football-data.org/349.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 0,
+        "winner": "HOME_TEAM"
+      }
+    },
+    {
+      "id": 560650,
+      "utcDate": "2026-11-21T15:00:00Z",
+      "status": "FINISHED",
+      "matchday": 11,
+      "homeTeam": {
+        "id": 1076,
+        "name": "Coventry City FC",
+        "shortName": "Coventry City",
+        "tla": "COV",
+        "crest": "https://crests.football-data.org/1076.png"
+      },
+      "awayTeam": {
+        "id": 354,
+        "name": "Crystal Palace FC",
+        "shortName": "Crystal Palace",
+        "tla": "CRY",
+        "crest": "https://crests.football-data.org/354.png"
+      },
+      "score": {
+        "home": 3,
+        "away": 2,
+        "winner": "HOME_TEAM"
+      }
+    },
+    {
+      "id": 560643,
+      "utcDate": "2026-11-21T12:30:00Z",
+      "status": "FINISHED",
+      "matchday": 11,
+      "homeTeam": {
+        "id": 65,
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "tla": "MCI",
+        "crest": "https://crests.football-data.org/65.png"
+      },
+      "awayTeam": {
+        "id": 63,
+        "name": "Fulham FC",
+        "shortName": "Fulham",
+        "tla": "FUL",
+        "crest": "https://crests.football-data.org/63.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 1,
+        "winner": "DRAW"
+      }
+    },
     {
       "id": 560639,
       "utcDate": "2026-11-08T16:30:00Z",
@@ -2886,188 +3061,6 @@
   ],
   "nextFixtures": [
     {
-      "id": 560643,
-      "utcDate": "2026-11-21T12:30:00Z",
-      "status": "TIMED",
-      "matchday": 11,
-      "homeTeam": {
-        "id": 65,
-        "name": "Manchester City FC",
-        "shortName": "Man City",
-        "tla": "MCI",
-        "crest": "https://crests.football-data.org/65.png"
-      },
-      "awayTeam": {
-        "id": 63,
-        "name": "Fulham FC",
-        "shortName": "Fulham",
-        "tla": "FUL",
-        "crest": "https://crests.football-data.org/63.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": "USA Network"
-    },
-    {
-      "id": 560642,
-      "utcDate": "2026-11-21T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 11,
-      "homeTeam": {
-        "id": 61,
-        "name": "Chelsea FC",
-        "shortName": "Chelsea",
-        "tla": "CHE",
-        "crest": "https://crests.football-data.org/61.png"
-      },
-      "awayTeam": {
-        "id": 341,
-        "name": "Leeds United FC",
-        "shortName": "Leeds United",
-        "tla": "LEE",
-        "crest": "https://crests.football-data.org/341.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": "Peacock"
-    },
-    {
-      "id": 560644,
-      "utcDate": "2026-11-21T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 11,
-      "homeTeam": {
-        "id": 58,
-        "name": "Aston Villa FC",
-        "shortName": "Aston Villa",
-        "tla": "AVL",
-        "crest": "https://crests.football-data.org/58.png"
-      },
-      "awayTeam": {
-        "id": 71,
-        "name": "Sunderland AFC",
-        "shortName": "Sunderland",
-        "tla": "SUN",
-        "crest": "https://crests.football-data.org/71.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": "Peacock"
-    },
-    {
-      "id": 560647,
-      "utcDate": "2026-11-21T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 11,
-      "homeTeam": {
-        "id": 1044,
-        "name": "AFC Bournemouth",
-        "shortName": "Bournemouth",
-        "tla": "BOU",
-        "crest": "https://crests.football-data.org/bournemouth.png"
-      },
-      "awayTeam": {
-        "id": 351,
-        "name": "Nottingham Forest FC",
-        "shortName": "Nottingham",
-        "tla": "NOT",
-        "crest": "https://crests.football-data.org/351.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": "Peacock"
-    },
-    {
-      "id": 560648,
-      "utcDate": "2026-11-21T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 11,
-      "homeTeam": {
-        "id": 73,
-        "name": "Tottenham Hotspur FC",
-        "shortName": "Tottenham",
-        "tla": "TOT",
-        "crest": "https://crests.football-data.org/73.png"
-      },
-      "awayTeam": {
-        "id": 349,
-        "name": "Ipswich Town FC",
-        "shortName": "Ipswich Town",
-        "tla": "IPS",
-        "crest": "https://crests.football-data.org/349.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": "USA Network"
-    },
-    {
-      "id": 560650,
-      "utcDate": "2026-11-21T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 11,
-      "homeTeam": {
-        "id": 1076,
-        "name": "Coventry City FC",
-        "shortName": "Coventry City",
-        "tla": "COV",
-        "crest": "https://crests.football-data.org/1076.png"
-      },
-      "awayTeam": {
-        "id": 354,
-        "name": "Crystal Palace FC",
-        "shortName": "Crystal Palace",
-        "tla": "CRY",
-        "crest": "https://crests.football-data.org/354.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": "Peacock"
-    },
-    {
-      "id": 560651,
-      "utcDate": "2026-11-21T17:30:00Z",
-      "status": "TIMED",
-      "matchday": 11,
-      "homeTeam": {
-        "id": 67,
-        "name": "Newcastle United FC",
-        "shortName": "Newcastle",
-        "tla": "NEW",
-        "crest": "https://crests.football-data.org/67.png"
-      },
-      "awayTeam": {
-        "id": 57,
-        "name": "Arsenal FC",
-        "shortName": "Arsenal",
-        "tla": "ARS",
-        "crest": "https://crests.football-data.org/57.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": "USA Network"
-    },
-    {
       "id": 560646,
       "utcDate": "2026-11-22T14:00:00Z",
       "status": "TIMED",
@@ -5486,23 +5479,23 @@
       "broadcast": null
     },
     {
-      "id": 560742,
-      "utcDate": "2027-01-16T15:00:00Z",
+      "id": 560748,
+      "utcDate": "2027-01-16T12:30:00Z",
       "status": "TIMED",
       "matchday": 21,
       "homeTeam": {
-        "id": 1044,
-        "name": "AFC Bournemouth",
-        "shortName": "Bournemouth",
-        "tla": "BOU",
-        "crest": "https://crests.football-data.org/bournemouth.png"
+        "id": 1076,
+        "name": "Coventry City FC",
+        "shortName": "Coventry City",
+        "tla": "COV",
+        "crest": "https://crests.football-data.org/1076.png"
       },
       "awayTeam": {
-        "id": 349,
-        "name": "Ipswich Town FC",
-        "shortName": "Ipswich Town",
-        "tla": "IPS",
-        "crest": "https://crests.football-data.org/349.png"
+        "id": 62,
+        "name": "Everton FC",
+        "shortName": "Everton",
+        "tla": "EVE",
+        "crest": "https://crests.football-data.org/62.png"
       },
       "score": {
         "home": null,
@@ -5555,110 +5548,6 @@
         "shortName": "Sunderland",
         "tla": "SUN",
         "crest": "https://crests.football-data.org/71.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560745,
-      "utcDate": "2027-01-16T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 21,
-      "homeTeam": {
-        "id": 402,
-        "name": "Brentford FC",
-        "shortName": "Brentford",
-        "tla": "BRE",
-        "crest": "https://crests.football-data.org/402.png"
-      },
-      "awayTeam": {
-        "id": 397,
-        "name": "Brighton & Hove Albion FC",
-        "shortName": "Brighton Hove",
-        "tla": "BHA",
-        "crest": "https://crests.football-data.org/397.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560746,
-      "utcDate": "2027-01-16T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 21,
-      "homeTeam": {
-        "id": 58,
-        "name": "Aston Villa FC",
-        "shortName": "Aston Villa",
-        "tla": "AVL",
-        "crest": "https://crests.football-data.org/58.png"
-      },
-      "awayTeam": {
-        "id": 66,
-        "name": "Manchester United FC",
-        "shortName": "Man United",
-        "tla": "MUN",
-        "crest": "https://crests.football-data.org/66.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560747,
-      "utcDate": "2027-01-16T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 21,
-      "homeTeam": {
-        "id": 73,
-        "name": "Tottenham Hotspur FC",
-        "shortName": "Tottenham",
-        "tla": "TOT",
-        "crest": "https://crests.football-data.org/73.png"
-      },
-      "awayTeam": {
-        "id": 341,
-        "name": "Leeds United FC",
-        "shortName": "Leeds United",
-        "tla": "LEE",
-        "crest": "https://crests.football-data.org/341.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560748,
-      "utcDate": "2027-01-16T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 21,
-      "homeTeam": {
-        "id": 1076,
-        "name": "Coventry City FC",
-        "shortName": "Coventry City",
-        "tla": "COV",
-        "crest": "https://crests.football-data.org/1076.png"
-      },
-      "awayTeam": {
-        "id": 62,
-        "name": "Everton FC",
-        "shortName": "Everton",
-        "tla": "EVE",
-        "crest": "https://crests.football-data.org/62.png"
       },
       "score": {
         "home": null,
@@ -5746,6 +5635,110 @@
       "broadcast": null
     },
     {
+      "id": 560746,
+      "utcDate": "2027-01-16T17:30:00Z",
+      "status": "TIMED",
+      "matchday": 21,
+      "homeTeam": {
+        "id": 58,
+        "name": "Aston Villa FC",
+        "shortName": "Aston Villa",
+        "tla": "AVL",
+        "crest": "https://crests.football-data.org/58.png"
+      },
+      "awayTeam": {
+        "id": 66,
+        "name": "Manchester United FC",
+        "shortName": "Man United",
+        "tla": "MUN",
+        "crest": "https://crests.football-data.org/66.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
+      "id": 560742,
+      "utcDate": "2027-01-17T14:00:00Z",
+      "status": "TIMED",
+      "matchday": 21,
+      "homeTeam": {
+        "id": 1044,
+        "name": "AFC Bournemouth",
+        "shortName": "Bournemouth",
+        "tla": "BOU",
+        "crest": "https://crests.football-data.org/bournemouth.png"
+      },
+      "awayTeam": {
+        "id": 349,
+        "name": "Ipswich Town FC",
+        "shortName": "Ipswich Town",
+        "tla": "IPS",
+        "crest": "https://crests.football-data.org/349.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
+      "id": 560747,
+      "utcDate": "2027-01-17T16:30:00Z",
+      "status": "TIMED",
+      "matchday": 21,
+      "homeTeam": {
+        "id": 73,
+        "name": "Tottenham Hotspur FC",
+        "shortName": "Tottenham",
+        "tla": "TOT",
+        "crest": "https://crests.football-data.org/73.png"
+      },
+      "awayTeam": {
+        "id": 341,
+        "name": "Leeds United FC",
+        "shortName": "Leeds United",
+        "tla": "LEE",
+        "crest": "https://crests.football-data.org/341.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
+      "id": 560745,
+      "utcDate": "2027-01-18T20:00:00Z",
+      "status": "TIMED",
+      "matchday": 21,
+      "homeTeam": {
+        "id": 402,
+        "name": "Brentford FC",
+        "shortName": "Brentford",
+        "tla": "BRE",
+        "crest": "https://crests.football-data.org/402.png"
+      },
+      "awayTeam": {
+        "id": 397,
+        "name": "Brighton & Hove Albion FC",
+        "shortName": "Brighton Hove",
+        "tla": "BHA",
+        "crest": "https://crests.football-data.org/397.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
       "id": 560752,
       "utcDate": "2027-01-23T15:00:00Z",
       "status": "TIMED",
@@ -5763,136 +5756,6 @@
         "shortName": "Hull City",
         "tla": "HUL",
         "crest": "https://crests.football-data.org/322.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560753,
-      "utcDate": "2027-01-23T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 22,
-      "homeTeam": {
-        "id": 62,
-        "name": "Everton FC",
-        "shortName": "Everton",
-        "tla": "EVE",
-        "crest": "https://crests.football-data.org/62.png"
-      },
-      "awayTeam": {
-        "id": 402,
-        "name": "Brentford FC",
-        "shortName": "Brentford",
-        "tla": "BRE",
-        "crest": "https://crests.football-data.org/402.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560754,
-      "utcDate": "2027-01-23T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 22,
-      "homeTeam": {
-        "id": 71,
-        "name": "Sunderland AFC",
-        "shortName": "Sunderland",
-        "tla": "SUN",
-        "crest": "https://crests.football-data.org/71.png"
-      },
-      "awayTeam": {
-        "id": 1076,
-        "name": "Coventry City FC",
-        "shortName": "Coventry City",
-        "tla": "COV",
-        "crest": "https://crests.football-data.org/1076.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560755,
-      "utcDate": "2027-01-23T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 22,
-      "homeTeam": {
-        "id": 351,
-        "name": "Nottingham Forest FC",
-        "shortName": "Nottingham",
-        "tla": "NOT",
-        "crest": "https://crests.football-data.org/351.png"
-      },
-      "awayTeam": {
-        "id": 1044,
-        "name": "AFC Bournemouth",
-        "shortName": "Bournemouth",
-        "tla": "BOU",
-        "crest": "https://crests.football-data.org/bournemouth.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560756,
-      "utcDate": "2027-01-23T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 22,
-      "homeTeam": {
-        "id": 57,
-        "name": "Arsenal FC",
-        "shortName": "Arsenal",
-        "tla": "ARS",
-        "crest": "https://crests.football-data.org/57.png"
-      },
-      "awayTeam": {
-        "id": 67,
-        "name": "Newcastle United FC",
-        "shortName": "Newcastle",
-        "tla": "NEW",
-        "crest": "https://crests.football-data.org/67.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560757,
-      "utcDate": "2027-01-23T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 22,
-      "homeTeam": {
-        "id": 341,
-        "name": "Leeds United FC",
-        "shortName": "Leeds United",
-        "tla": "LEE",
-        "crest": "https://crests.football-data.org/341.png"
-      },
-      "awayTeam": {
-        "id": 61,
-        "name": "Chelsea FC",
-        "shortName": "Chelsea",
-        "tla": "CHE",
-        "crest": "https://crests.football-data.org/61.png"
       },
       "score": {
         "home": null,
@@ -5928,23 +5791,23 @@
       "broadcast": null
     },
     {
-      "id": 560759,
-      "utcDate": "2027-01-23T15:00:00Z",
+      "id": 560756,
+      "utcDate": "2027-01-23T17:30:00Z",
       "status": "TIMED",
       "matchday": 22,
       "homeTeam": {
-        "id": 66,
-        "name": "Manchester United FC",
-        "shortName": "Man United",
-        "tla": "MUN",
-        "crest": "https://crests.football-data.org/66.png"
+        "id": 57,
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "tla": "ARS",
+        "crest": "https://crests.football-data.org/57.png"
       },
       "awayTeam": {
-        "id": 64,
-        "name": "Liverpool FC",
-        "shortName": "Liverpool",
-        "tla": "LIV",
-        "crest": "https://crests.football-data.org/64.png"
+        "id": 67,
+        "name": "Newcastle United FC",
+        "shortName": "Newcastle",
+        "tla": "NEW",
+        "crest": "https://crests.football-data.org/67.png"
       },
       "score": {
         "home": null,
@@ -5955,7 +5818,7 @@
     },
     {
       "id": 560760,
-      "utcDate": "2027-01-23T15:00:00Z",
+      "utcDate": "2027-01-23T20:00:00Z",
       "status": "TIMED",
       "matchday": 22,
       "homeTeam": {
@@ -5980,8 +5843,86 @@
       "broadcast": null
     },
     {
+      "id": 560753,
+      "utcDate": "2027-01-24T14:00:00Z",
+      "status": "TIMED",
+      "matchday": 22,
+      "homeTeam": {
+        "id": 62,
+        "name": "Everton FC",
+        "shortName": "Everton",
+        "tla": "EVE",
+        "crest": "https://crests.football-data.org/62.png"
+      },
+      "awayTeam": {
+        "id": 402,
+        "name": "Brentford FC",
+        "shortName": "Brentford",
+        "tla": "BRE",
+        "crest": "https://crests.football-data.org/402.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
+      "id": 560754,
+      "utcDate": "2027-01-24T14:00:00Z",
+      "status": "TIMED",
+      "matchday": 22,
+      "homeTeam": {
+        "id": 71,
+        "name": "Sunderland AFC",
+        "shortName": "Sunderland",
+        "tla": "SUN",
+        "crest": "https://crests.football-data.org/71.png"
+      },
+      "awayTeam": {
+        "id": 1076,
+        "name": "Coventry City FC",
+        "shortName": "Coventry City",
+        "tla": "COV",
+        "crest": "https://crests.football-data.org/1076.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
+      "id": 560755,
+      "utcDate": "2027-01-24T14:00:00Z",
+      "status": "TIMED",
+      "matchday": 22,
+      "homeTeam": {
+        "id": 351,
+        "name": "Nottingham Forest FC",
+        "shortName": "Nottingham",
+        "tla": "NOT",
+        "crest": "https://crests.football-data.org/351.png"
+      },
+      "awayTeam": {
+        "id": 1044,
+        "name": "AFC Bournemouth",
+        "shortName": "Bournemouth",
+        "tla": "BOU",
+        "crest": "https://crests.football-data.org/bournemouth.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
       "id": 560761,
-      "utcDate": "2027-01-23T15:00:00Z",
+      "utcDate": "2027-01-24T14:00:00Z",
       "status": "TIMED",
       "matchday": 22,
       "homeTeam": {
@@ -6006,23 +5947,23 @@
       "broadcast": null
     },
     {
-      "id": 560762,
-      "utcDate": "2027-01-30T15:00:00Z",
+      "id": 560759,
+      "utcDate": "2027-01-24T16:30:00Z",
       "status": "TIMED",
-      "matchday": 23,
+      "matchday": 22,
       "homeTeam": {
-        "id": 73,
-        "name": "Tottenham Hotspur FC",
-        "shortName": "Tottenham",
-        "tla": "TOT",
-        "crest": "https://crests.football-data.org/73.png"
+        "id": 66,
+        "name": "Manchester United FC",
+        "shortName": "Man United",
+        "tla": "MUN",
+        "crest": "https://crests.football-data.org/66.png"
       },
       "awayTeam": {
-        "id": 71,
-        "name": "Sunderland AFC",
-        "shortName": "Sunderland",
-        "tla": "SUN",
-        "crest": "https://crests.football-data.org/71.png"
+        "id": 64,
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "tla": "LIV",
+        "crest": "https://crests.football-data.org/64.png"
       },
       "score": {
         "home": null,
@@ -6032,23 +5973,49 @@
       "broadcast": null
     },
     {
-      "id": 560763,
-      "utcDate": "2027-01-30T15:00:00Z",
+      "id": 560757,
+      "utcDate": "2027-01-25T20:00:00Z",
+      "status": "TIMED",
+      "matchday": 22,
+      "homeTeam": {
+        "id": 341,
+        "name": "Leeds United FC",
+        "shortName": "Leeds United",
+        "tla": "LEE",
+        "crest": "https://crests.football-data.org/341.png"
+      },
+      "awayTeam": {
+        "id": 61,
+        "name": "Chelsea FC",
+        "shortName": "Chelsea",
+        "tla": "CHE",
+        "crest": "https://crests.football-data.org/61.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
+      "id": 560769,
+      "utcDate": "2027-01-30T12:30:00Z",
       "status": "TIMED",
       "matchday": 23,
       "homeTeam": {
-        "id": 402,
-        "name": "Brentford FC",
-        "shortName": "Brentford",
-        "tla": "BRE",
-        "crest": "https://crests.football-data.org/402.png"
+        "id": 64,
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "tla": "LIV",
+        "crest": "https://crests.football-data.org/64.png"
       },
       "awayTeam": {
-        "id": 66,
-        "name": "Manchester United FC",
-        "shortName": "Man United",
-        "tla": "MUN",
-        "crest": "https://crests.football-data.org/66.png"
+        "id": 62,
+        "name": "Everton FC",
+        "shortName": "Everton",
+        "tla": "EVE",
+        "crest": "https://crests.football-data.org/62.png"
       },
       "score": {
         "home": null,
@@ -6084,8 +6051,86 @@
       "broadcast": null
     },
     {
-      "id": 560765,
+      "id": 560771,
       "utcDate": "2027-01-30T15:00:00Z",
+      "status": "TIMED",
+      "matchday": 23,
+      "homeTeam": {
+        "id": 58,
+        "name": "Aston Villa FC",
+        "shortName": "Aston Villa",
+        "tla": "AVL",
+        "crest": "https://crests.football-data.org/58.png"
+      },
+      "awayTeam": {
+        "id": 349,
+        "name": "Ipswich Town FC",
+        "shortName": "Ipswich Town",
+        "tla": "IPS",
+        "crest": "https://crests.football-data.org/349.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
+      "id": 560768,
+      "utcDate": "2027-01-30T17:30:00Z",
+      "status": "TIMED",
+      "matchday": 23,
+      "homeTeam": {
+        "id": 61,
+        "name": "Chelsea FC",
+        "shortName": "Chelsea",
+        "tla": "CHE",
+        "crest": "https://crests.football-data.org/61.png"
+      },
+      "awayTeam": {
+        "id": 351,
+        "name": "Nottingham Forest FC",
+        "shortName": "Nottingham",
+        "tla": "NOT",
+        "crest": "https://crests.football-data.org/351.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
+      "id": 560762,
+      "utcDate": "2027-01-31T14:00:00Z",
+      "status": "TIMED",
+      "matchday": 23,
+      "homeTeam": {
+        "id": 73,
+        "name": "Tottenham Hotspur FC",
+        "shortName": "Tottenham",
+        "tla": "TOT",
+        "crest": "https://crests.football-data.org/73.png"
+      },
+      "awayTeam": {
+        "id": 71,
+        "name": "Sunderland AFC",
+        "shortName": "Sunderland",
+        "tla": "SUN",
+        "crest": "https://crests.football-data.org/71.png"
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "winner": null
+      },
+      "broadcast": null
+    },
+    {
+      "id": 560765,
+      "utcDate": "2027-01-31T14:00:00Z",
       "status": "TIMED",
       "matchday": 23,
       "homeTeam": {
@@ -6111,7 +6156,7 @@
     },
     {
       "id": 560766,
-      "utcDate": "2027-01-30T15:00:00Z",
+      "utcDate": "2027-01-31T14:00:00Z",
       "status": "TIMED",
       "matchday": 23,
       "homeTeam": {
@@ -6137,7 +6182,7 @@
     },
     {
       "id": 560767,
-      "utcDate": "2027-01-30T15:00:00Z",
+      "utcDate": "2027-01-31T14:00:00Z",
       "status": "TIMED",
       "matchday": 23,
       "homeTeam": {
@@ -6162,60 +6207,8 @@
       "broadcast": null
     },
     {
-      "id": 560768,
-      "utcDate": "2027-01-30T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 23,
-      "homeTeam": {
-        "id": 61,
-        "name": "Chelsea FC",
-        "shortName": "Chelsea",
-        "tla": "CHE",
-        "crest": "https://crests.football-data.org/61.png"
-      },
-      "awayTeam": {
-        "id": 351,
-        "name": "Nottingham Forest FC",
-        "shortName": "Nottingham",
-        "tla": "NOT",
-        "crest": "https://crests.football-data.org/351.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
-      "id": 560769,
-      "utcDate": "2027-01-30T15:00:00Z",
-      "status": "TIMED",
-      "matchday": 23,
-      "homeTeam": {
-        "id": 64,
-        "name": "Liverpool FC",
-        "shortName": "Liverpool",
-        "tla": "LIV",
-        "crest": "https://crests.football-data.org/64.png"
-      },
-      "awayTeam": {
-        "id": 62,
-        "name": "Everton FC",
-        "shortName": "Everton",
-        "tla": "EVE",
-        "crest": "https://crests.football-data.org/62.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": null
-    },
-    {
       "id": 560770,
-      "utcDate": "2027-01-30T15:00:00Z",
+      "utcDate": "2027-01-31T16:30:00Z",
       "status": "TIMED",
       "matchday": 23,
       "homeTeam": {
@@ -6240,23 +6233,23 @@
       "broadcast": null
     },
     {
-      "id": 560771,
-      "utcDate": "2027-01-30T15:00:00Z",
+      "id": 560763,
+      "utcDate": "2027-02-01T20:00:00Z",
       "status": "TIMED",
       "matchday": 23,
       "homeTeam": {
-        "id": 58,
-        "name": "Aston Villa FC",
-        "shortName": "Aston Villa",
-        "tla": "AVL",
-        "crest": "https://crests.football-data.org/58.png"
+        "id": 402,
+        "name": "Brentford FC",
+        "shortName": "Brentford",
+        "tla": "BRE",
+        "crest": "https://crests.football-data.org/402.png"
       },
       "awayTeam": {
-        "id": 349,
-        "name": "Ipswich Town FC",
-        "shortName": "Ipswich Town",
-        "tla": "IPS",
-        "crest": "https://crests.football-data.org/349.png"
+        "id": 66,
+        "name": "Manchester United FC",
+        "shortName": "Man United",
+        "tla": "MUN",
+        "crest": "https://crests.football-data.org/66.png"
       },
       "score": {
         "home": null,
