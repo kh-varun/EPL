@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-21T19:34:19.149Z",
+  "fetchedAt": "2026-11-22T18:41:57.008Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -4396,6 +4396,55 @@
         }
       },
       "scorers": []
+    },
+    "560646": {
+      "utcDate": "2026-11-22T14:00:00Z",
+      "homeTeamId": 322,
+      "awayTeamId": 397,
+      "stats": {
+        "322": {
+          "shots": 11,
+          "shotsOnTarget": 5,
+          "possession": 29.8,
+          "passes": 242,
+          "passAccuracy": 0.6,
+          "fouls": 7,
+          "corners": 3,
+          "offsides": 3,
+          "yellowCards": 2,
+          "redCards": 0
+        },
+        "397": {
+          "shots": 15,
+          "shotsOnTarget": 8,
+          "possession": 70.2,
+          "passes": 589,
+          "passAccuracy": 0.9,
+          "fouls": 17,
+          "corners": 5,
+          "offsides": 1,
+          "yellowCards": 2,
+          "redCards": 1
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 322,
+          "player": "Oliver McBurnie",
+          "minute": 90,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 322,
+          "player": "Oliver McBurnie",
+          "minute": 90,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
     },
     "560647": {
       "utcDate": "2026-11-21T15:00:00Z",
