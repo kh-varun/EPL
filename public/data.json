@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-22T18:41:56.207Z",
+  "fetchedAt": "2026-11-24T01:43:39.447Z",
   "standings": [
     {
       "position": 1,
@@ -99,6 +99,25 @@
     {
       "position": 6,
       "team": {
+        "id": 402,
+        "name": "Brentford FC",
+        "shortName": "Brentford",
+        "tla": "BRE",
+        "crest": "https://crests.football-data.org/402.png"
+      },
+      "playedGames": 11,
+      "won": 4,
+      "draw": 5,
+      "lost": 2,
+      "points": 17,
+      "goalsFor": 20,
+      "goalsAgainst": 11,
+      "goalDifference": 9,
+      "form": null
+    },
+    {
+      "position": 7,
+      "team": {
         "id": 341,
         "name": "Leeds United FC",
         "shortName": "Leeds United",
@@ -113,25 +132,6 @@
       "goalsFor": 14,
       "goalsAgainst": 9,
       "goalDifference": 5,
-      "form": null
-    },
-    {
-      "position": 7,
-      "team": {
-        "id": 62,
-        "name": "Everton FC",
-        "shortName": "Everton",
-        "tla": "EVE",
-        "crest": "https://crests.football-data.org/62.png"
-      },
-      "playedGames": 10,
-      "won": 4,
-      "draw": 4,
-      "lost": 2,
-      "points": 16,
-      "goalsFor": 12,
-      "goalsAgainst": 10,
-      "goalDifference": 2,
       "form": null
     },
     {
@@ -156,6 +156,25 @@
     {
       "position": 9,
       "team": {
+        "id": 62,
+        "name": "Everton FC",
+        "shortName": "Everton",
+        "tla": "EVE",
+        "crest": "https://crests.football-data.org/62.png"
+      },
+      "playedGames": 11,
+      "won": 4,
+      "draw": 4,
+      "lost": 3,
+      "points": 16,
+      "goalsFor": 12,
+      "goalsAgainst": 14,
+      "goalDifference": -2,
+      "form": null
+    },
+    {
+      "position": 10,
+      "team": {
         "id": 73,
         "name": "Tottenham Hotspur FC",
         "shortName": "Tottenham",
@@ -170,25 +189,6 @@
       "goalsFor": 12,
       "goalsAgainst": 11,
       "goalDifference": 1,
-      "form": null
-    },
-    {
-      "position": 10,
-      "team": {
-        "id": 402,
-        "name": "Brentford FC",
-        "shortName": "Brentford",
-        "tla": "BRE",
-        "crest": "https://crests.football-data.org/402.png"
-      },
-      "playedGames": 10,
-      "won": 3,
-      "draw": 5,
-      "lost": 2,
-      "points": 14,
-      "goalsFor": 16,
-      "goalsAgainst": 11,
-      "goalDifference": 5,
       "form": null
     },
     {
@@ -383,6 +383,31 @@
     }
   ],
   "lastResults": [
+    {
+      "id": 560649,
+      "utcDate": "2026-11-23T20:00:00Z",
+      "status": "FINISHED",
+      "matchday": 11,
+      "homeTeam": {
+        "id": 402,
+        "name": "Brentford FC",
+        "shortName": "Brentford",
+        "tla": "BRE",
+        "crest": "https://crests.football-data.org/402.png"
+      },
+      "awayTeam": {
+        "id": 62,
+        "name": "Everton FC",
+        "shortName": "Everton",
+        "tla": "EVE",
+        "crest": "https://crests.football-data.org/62.png"
+      },
+      "score": {
+        "home": 4,
+        "away": 0,
+        "winner": "HOME_TEAM"
+      }
+    },
     {
       "id": 560645,
       "utcDate": "2026-11-22T16:30:00Z",
@@ -3110,32 +3135,6 @@
     }
   ],
   "nextFixtures": [
-    {
-      "id": 560649,
-      "utcDate": "2026-11-23T20:00:00Z",
-      "status": "TIMED",
-      "matchday": 11,
-      "homeTeam": {
-        "id": 402,
-        "name": "Brentford FC",
-        "shortName": "Brentford",
-        "tla": "BRE",
-        "crest": "https://crests.football-data.org/402.png"
-      },
-      "awayTeam": {
-        "id": 62,
-        "name": "Everton FC",
-        "shortName": "Everton",
-        "tla": "EVE",
-        "crest": "https://crests.football-data.org/62.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": "USA Network"
-    },
     {
       "id": 560658,
       "utcDate": "2026-11-27T20:00:00Z",

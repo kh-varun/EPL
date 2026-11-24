@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-22T18:41:57.008Z",
+  "fetchedAt": "2026-11-24T01:43:39.991Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -4538,6 +4538,71 @@
           "teamId": 73,
           "player": "Dominic Solanke",
           "minute": 51,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        }
+      ]
+    },
+    "560649": {
+      "utcDate": "2026-11-23T20:00:00Z",
+      "homeTeamId": 402,
+      "awayTeamId": 62,
+      "stats": {
+        "62": {
+          "shots": 4,
+          "shotsOnTarget": 2,
+          "possession": 27.9,
+          "passes": 296,
+          "passAccuracy": 0.7,
+          "fouls": 9,
+          "corners": 3,
+          "offsides": 0,
+          "yellowCards": 1,
+          "redCards": 1
+        },
+        "402": {
+          "shots": 21,
+          "shotsOnTarget": 7,
+          "possession": 72.1,
+          "passes": 758,
+          "passAccuracy": 0.9,
+          "fouls": 8,
+          "corners": 6,
+          "offsides": 2,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 402,
+          "player": "Keane Lewis-Potter",
+          "minute": 23,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 402,
+          "player": "Keane Lewis-Potter",
+          "minute": 25,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 402,
+          "player": "Vitaly Janelt",
+          "minute": 67,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 402,
+          "player": "Fábio Carvalho",
+          "minute": 90,
           "extraMinute": null,
           "ownGoal": false,
           "penalty": false
