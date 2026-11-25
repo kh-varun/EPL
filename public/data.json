@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-24T01:43:39.447Z",
+  "fetchedAt": "2026-11-25T22:16:48.805Z",
   "standings": [
     {
       "position": 1,
@@ -3159,7 +3159,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560652,
@@ -3185,7 +3185,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560655,
@@ -3211,7 +3211,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560653,
@@ -3237,7 +3237,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560656,
@@ -3263,7 +3263,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560657,
@@ -3289,7 +3289,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560659,
@@ -3315,7 +3315,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560660,
@@ -3341,7 +3341,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560661,
@@ -3367,7 +3367,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "Peacock"
     },
     {
       "id": 560654,
@@ -3393,7 +3393,7 @@
         "away": null,
         "winner": null
       },
-      "broadcast": null
+      "broadcast": "USA Network"
     },
     {
       "id": 560668,
@@ -10158,128 +10158,130 @@
   ],
   "headlines": [
     {
-      "title": "England defender Carter joins Bay FC after Gotham exit",
-      "link": "https://www.bbc.co.uk/sport/football/articles/ck5y169v1262o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 18 Nov 2026 21:07:26 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2514/live/7b839f70-e392-11f1-b4f3-9f0685d52a1f.jpg",
+      "title": "Gordon stars in comfortable Barca win over Sabah",
+      "link": "https://www.bbc.co.uk/sport/football/videos/c6z74ljxjv2xo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 25 Nov 2026 22:07:02 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ebd6/live/0a4713c0-e903-11f1-a094-5fdc692f3e33.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "Strasbourg appoint Swansea boss Matos",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6174epxv1p4o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 18 Nov 2026 20:57:54 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d3f2/live/25bf9080-e356-11f1-acd4-25eaaa5def63.jpg",
+      "title": "Borussia Dortmund fight back to draw with Arsenal",
+      "link": "https://www.bbc.co.uk/sport/football/videos/cmedqg06d8vwo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 25 Nov 2026 22:05:57 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e240/live/832f36d0-e860-11f1-a094-5fdc692f3e33.jpg",
       "source": "BBC Sport",
-      "teams": []
-    },
-    {
-      "title": "Chelsea v Paris Saint-Germain: Women’s Champions League – live",
-      "link": "https://www.theguardian.com/football/live/2026/nov/18/chelsea-v-paris-saint-germain-psg-womens-champions-league-live-score-updates",
-      "pubDate": "Wed, 18 Nov 2026 20:55:07 GMT",
-      "image": "https://i.guim.co.uk/img/media/64df315f1b01a555bc5bf63971dee52c8778ae66/209_0_4174_3341/master/4174.jpg?width=460&quality=85&auto=format&fit=max&s=b5418ad7d7b074dc493beb8a410ed213",
-      "source": "The Guardian",
       "teams": [
-        61
+        57
       ]
     },
     {
-      "title": "FA explored legal challenge to Infantino staying on",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cm3eg1w4ypz5o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 18 Nov 2026 20:55:01 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c8c1/live/e7141200-e37f-11f1-b879-03485a55c082.jpg",
+      "title": "Blunt Villa beaten by late Galatasaray winner",
+      "link": "https://www.bbc.co.uk/sport/football/videos/c6r7g92p5k79o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 25 Nov 2026 22:05:53 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/af90/live/aa1d08d0-e860-11f1-99a1-253766e7ad8b.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "Hemp and Shaw star as Manchester City get vital win at Hacken",
-      "link": "https://www.bbc.co.uk/sport/football/videos/c32l50p1yk8vo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 18 Nov 2026 20:25:40 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9911/live/b9f39560-e385-11f1-a094-5fdc692f3e33.jpg",
+      "title": "Cherki rescues point for Man City against Napoli",
+      "link": "https://www.bbc.co.uk/sport/football/videos/cjy5xwygqg9do?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 25 Nov 2026 22:05:49 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7d0a/live/4cdf0f20-e85f-11f1-99a1-253766e7ad8b.jpg",
       "source": "BBC Sport",
       "teams": [
         65
       ]
     },
     {
-      "title": "‘An honour’: Pochettino up for challenge of leading Manchester United revival",
-      "link": "https://www.theguardian.com/football/2026/nov/18/mauricio-pochettino-arrives-manchester-united-head-coach-premier-league",
-      "pubDate": "Wed, 18 Nov 2026 19:58:26 GMT",
-      "image": "https://i.guim.co.uk/img/media/81d893bb0fe58708ee77594e5d12ed2e91325998/482_0_2695_2157/master/2695.jpg?width=460&quality=85&auto=format&fit=max&s=09c736f482e7eb0241ba23072698dd46",
-      "source": "The Guardian",
+      "title": "Real Madrid put in a five star second half to win against PSV",
+      "link": "https://www.bbc.co.uk/sport/football/videos/c5evr0y83197o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 25 Nov 2026 22:05:45 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1ba5/live/0ccb6090-e8f6-11f1-99a1-253766e7ad8b.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Ferguson's Glentoran reign hits early turbulence",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cxzd9v7457nro?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 25 Nov 2026 21:41:00 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/06c6/live/644041b0-e90f-11f1-8383-53f283141713.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Regulator chief 'has stomach' to face Man City",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c65y10z8k59jo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 25 Nov 2026 21:27:35 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/894b/live/46715940-e913-11f1-8383-53f283141713.jpg",
+      "source": "BBC Sport",
       "teams": [
-        66
+        65
       ]
     },
     {
-      "title": "Leicester split with sponsor after porn actress row",
-      "link": "https://www.bbc.co.uk/news/articles/cq4gnx28zp5lo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 18 Nov 2026 19:10:21 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7fc3/live/c94480c0-d9d4-11f1-9e5a-c30c5e3d8c85.jpg",
+      "title": "Liverpool mull Quansah return - Thursday's gossip",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6n831jk3x4mo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 25 Nov 2026 20:57:48 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7cda/live/3cd95070-e901-11f1-a094-5fdc692f3e33.png",
+      "source": "BBC Sport",
+      "teams": [
+        64
+      ]
+    },
+    {
+      "title": "EFL Trophy holders Luton face Palace U21s in last 32",
+      "link": "https://www.bbc.co.uk/sport/football/articles/ckzd9vqed5d7o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 25 Nov 2026 20:55:13 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8f8f/live/bd1aa2b0-e8da-11f1-99b6-a35a62fa4264.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "From kit boy to manager at 28 - Dumbarton appoint Fellowes",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c61k9mz9vvkyo?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 18 Nov 2026 19:09:00 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c880/live/28da6540-e37b-11f1-b879-03485a55c082.jpg",
+      "title": "Can Iordanescu make a difference at Watford & how do you become a free-kick specialist?",
+      "link": "https://www.bbc.co.uk/sounds/play/p0ppxp3z?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 25 Nov 2026 18:35:00 GMT",
+      "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0p3n9ks.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "Leicester part ways with BC Game after sponsor’s partnership with porn actor",
-      "link": "https://www.theguardian.com/football/2026/nov/18/leicester-city-bc-game-porn-star-eva-elfie-sponsorship",
-      "pubDate": "Wed, 18 Nov 2026 19:01:59 GMT",
-      "image": "https://i.guim.co.uk/img/media/7044644398bc3a27fb87871dca4a0fb85c58ff05/933_1200_2646_2118/master/2646.jpg?width=460&quality=85&auto=format&fit=max&s=471df66087878b175a80bd6456b1b838",
-      "source": "The Guardian",
-      "teams": []
-    },
-    {
-      "title": "Emma Hayes to assist in US Soccer hiring process for next USMNT coach",
-      "link": "https://www.theguardian.com/football/2026/nov/18/emma-hayes-usmnt-head-coach-hiring-process",
-      "pubDate": "Wed, 18 Nov 2026 18:44:26 GMT",
-      "image": "https://i.guim.co.uk/img/media/8ca83424102c163bcc76a3530cca7a176f8cfb56/18_0_2583_2067/master/2583.jpg?width=460&quality=85&auto=format&fit=max&s=d594c34947ba9a330477bd546ee02cc8",
-      "source": "The Guardian",
-      "teams": []
-    },
-    {
-      "title": "Ward close to new Republic of Ireland deal as Noonan returns",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6782xedd985o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 18 Nov 2026 18:06:04 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f568/live/9fbcb180-e36d-11f1-9f51-4bfc31543510.jpg",
+      "title": "Glasner criticises Forest players yet to learn English",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cw20xr4d7x55o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 25 Nov 2026 18:32:55 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c3f7/live/c0988ec0-e8ee-11f1-99a1-253766e7ad8b.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "Ward close to new deal as Noonan returns to squad",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6782xedd985o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 18 Nov 2026 18:06:04 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f568/live/9fbcb180-e36d-11f1-9f51-4bfc31543510.jpg",
+      "title": "'Justice for sport' - Afcon reaction as Senegal reinstated as winners",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6vg2e32e7vno?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 25 Nov 2026 17:32:30 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/46c6/live/764fb5d0-e8eb-11f1-8808-1d4222955d7e.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "Mauricio Pochettino’s USMNT time will be remembered fondly, but it wasn’t transformational",
-      "link": "https://www.theguardian.com/football/2026/nov/18/pochettino-usmnt-manchester-united",
-      "pubDate": "Wed, 18 Nov 2026 18:00:04 GMT",
-      "image": "https://i.guim.co.uk/img/media/2f985a22e8959925d729c3b1c44532a05b764c76/250_0_2500_2000/master/2500.jpg?width=460&quality=85&auto=format&fit=max&s=371947b265498d181a17b7b33bbf83a1",
-      "source": "The Guardian",
-      "teams": []
-    },
-    {
-      "title": "Rooney revelations important - Bradford boss Duff",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cvrlgke13e9go?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 18 Nov 2026 17:52:23 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3743/live/c2268860-e375-11f1-b879-03485a55c082.jpg",
+      "title": "'Best midfielder in the world' - where does Bellingham rank?",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmkgdjkr2y70o?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 25 Nov 2026 16:46:36 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4a9f/live/a0a1a1c0-e8e8-11f1-8808-1d4222955d7e.jpg",
       "source": "BBC Sport",
       "teams": []
     },
     {
-      "title": "From Dunfermline to Dubai - McPake on new life in Middle East",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6j9m1ygw427o?at_medium=RSS&at_campaign=rss",
-      "pubDate": "Wed, 18 Nov 2026 17:06:29 GMT",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1327/live/2ca4bf40-e371-11f1-9f51-4bfc31543510.jpg",
+      "title": "Confusion and anger - Yoro red card rescinded, but row goes on",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cvze7y6n2redo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 25 Nov 2026 16:28:10 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6250/live/db25bcb0-e8c9-11f1-ac76-db9e97f93d67.jpg",
+      "source": "BBC Sport",
+      "teams": []
+    },
+    {
+      "title": "Leicester no longer for sale as owner looks to future",
+      "link": "https://www.bbc.co.uk/sport/football/articles/ck1l0j77j43eo?at_medium=RSS&at_campaign=rss",
+      "pubDate": "Wed, 25 Nov 2026 16:19:45 GMT",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7a27/live/39af5f80-e8e7-11f1-8808-1d4222955d7e.jpg",
       "source": "BBC Sport",
       "teams": []
     }
@@ -11029,6 +11031,13 @@
     "63": {
       "coach": "Arbeloa",
       "squad": [
+        {
+          "id": 304210,
+          "name": "Dino Kaiser",
+          "position": null,
+          "dateOfBirth": "2007-02-09",
+          "nationality": "England"
+        },
         {
           "id": 3174,
           "name": "Bernd Leno",
@@ -12339,6 +12348,13 @@
           "position": "Midfield",
           "dateOfBirth": "2006-02-02",
           "nationality": "Sweden"
+        },
+        {
+          "id": 272687,
+          "name": "Luca Williams-Barnett",
+          "position": "Midfield",
+          "dateOfBirth": "2008-10-01",
+          "nationality": "England"
         },
         {
           "id": 7878,
