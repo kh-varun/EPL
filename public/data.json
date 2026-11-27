@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-25T22:16:48.805Z",
+  "fetchedAt": "2026-11-27T23:28:15.062Z",
   "standings": [
     {
       "position": 1,
@@ -143,14 +143,14 @@
         "tla": "CHE",
         "crest": "https://crests.football-data.org/61.png"
       },
-      "playedGames": 11,
+      "playedGames": 12,
       "won": 5,
       "draw": 1,
-      "lost": 5,
+      "lost": 6,
       "points": 16,
-      "goalsFor": 20,
-      "goalsAgainst": 20,
-      "goalDifference": 0,
+      "goalsFor": 22,
+      "goalsAgainst": 23,
+      "goalDifference": -1,
       "form": null
     },
     {
@@ -251,6 +251,25 @@
     {
       "position": 14,
       "team": {
+        "id": 351,
+        "name": "Nottingham Forest FC",
+        "shortName": "Nottingham",
+        "tla": "NOT",
+        "crest": "https://crests.football-data.org/351.png"
+      },
+      "playedGames": 12,
+      "won": 3,
+      "draw": 3,
+      "lost": 6,
+      "points": 12,
+      "goalsFor": 12,
+      "goalsAgainst": 17,
+      "goalDifference": -5,
+      "form": null
+    },
+    {
+      "position": 15,
+      "team": {
         "id": 1076,
         "name": "Coventry City FC",
         "shortName": "Coventry City",
@@ -268,7 +287,7 @@
       "form": null
     },
     {
-      "position": 15,
+      "position": 16,
       "team": {
         "id": 63,
         "name": "Fulham FC",
@@ -287,7 +306,7 @@
       "form": null
     },
     {
-      "position": 16,
+      "position": 17,
       "team": {
         "id": 349,
         "name": "Ipswich Town FC",
@@ -303,25 +322,6 @@
       "goalsFor": 15,
       "goalsAgainst": 22,
       "goalDifference": -7,
-      "form": null
-    },
-    {
-      "position": 17,
-      "team": {
-        "id": 351,
-        "name": "Nottingham Forest FC",
-        "shortName": "Nottingham",
-        "tla": "NOT",
-        "crest": "https://crests.football-data.org/351.png"
-      },
-      "playedGames": 11,
-      "won": 2,
-      "draw": 3,
-      "lost": 6,
-      "points": 9,
-      "goalsFor": 9,
-      "goalsAgainst": 15,
-      "goalDifference": -6,
       "form": null
     },
     {
@@ -383,6 +383,31 @@
     }
   ],
   "lastResults": [
+    {
+      "id": 560658,
+      "utcDate": "2026-11-27T20:00:00Z",
+      "status": "FINISHED",
+      "matchday": 12,
+      "homeTeam": {
+        "id": 351,
+        "name": "Nottingham Forest FC",
+        "shortName": "Nottingham",
+        "tla": "NOT",
+        "crest": "https://crests.football-data.org/351.png"
+      },
+      "awayTeam": {
+        "id": 61,
+        "name": "Chelsea FC",
+        "shortName": "Chelsea",
+        "tla": "CHE",
+        "crest": "https://crests.football-data.org/61.png"
+      },
+      "score": {
+        "home": 3,
+        "away": 2,
+        "winner": "HOME_TEAM"
+      }
+    },
     {
       "id": 560649,
       "utcDate": "2026-11-23T20:00:00Z",
@@ -3135,32 +3160,6 @@
     }
   ],
   "nextFixtures": [
-    {
-      "id": 560658,
-      "utcDate": "2026-11-27T20:00:00Z",
-      "status": "TIMED",
-      "matchday": 12,
-      "homeTeam": {
-        "id": 351,
-        "name": "Nottingham Forest FC",
-        "shortName": "Nottingham",
-        "tla": "NOT",
-        "crest": "https://crests.football-data.org/351.png"
-      },
-      "awayTeam": {
-        "id": 61,
-        "name": "Chelsea FC",
-        "shortName": "Chelsea",
-        "tla": "CHE",
-        "crest": "https://crests.football-data.org/61.png"
-      },
-      "score": {
-        "home": null,
-        "away": null,
-        "winner": null
-      },
-      "broadcast": "USA Network"
-    },
     {
       "id": 560652,
       "utcDate": "2026-11-28T15:00:00Z",

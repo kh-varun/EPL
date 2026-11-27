@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-24T01:43:39.991Z",
+  "fetchedAt": "2026-11-27T23:28:15.444Z",
   "stats": {
     "560542": {
       "utcDate": "2026-08-21T19:00:00Z",
@@ -4678,6 +4678,79 @@
           "minute": 85,
           "extraMinute": null,
           "ownGoal": true,
+          "penalty": false
+        }
+      ]
+    },
+    "560658": {
+      "utcDate": "2026-11-27T20:00:00Z",
+      "homeTeamId": 351,
+      "awayTeamId": 61,
+      "stats": {
+        "61": {
+          "shots": 9,
+          "shotsOnTarget": 3,
+          "possession": 64.8,
+          "passes": 582,
+          "passAccuracy": 0.9,
+          "fouls": 11,
+          "corners": 2,
+          "offsides": 0,
+          "yellowCards": 3,
+          "redCards": 0
+        },
+        "351": {
+          "shots": 10,
+          "shotsOnTarget": 7,
+          "possession": 35.2,
+          "passes": 319,
+          "passAccuracy": 0.8,
+          "fouls": 15,
+          "corners": 1,
+          "offsides": 1,
+          "yellowCards": 2,
+          "redCards": 0
+        }
+      },
+      "scorers": [
+        {
+          "teamId": 351,
+          "player": "Igor Jesus",
+          "minute": 5,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 351,
+          "player": "Morgan Gibbs-White",
+          "minute": 51,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": true
+        },
+        {
+          "teamId": 61,
+          "player": "Emmanuel Emegha",
+          "minute": 54,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 351,
+          "player": "Morgan Gibbs-White",
+          "minute": 72,
+          "extraMinute": null,
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "teamId": 61,
+          "player": "Emmanuel Emegha",
+          "minute": 89,
+          "extraMinute": null,
+          "ownGoal": false,
           "penalty": false
         }
       ]
